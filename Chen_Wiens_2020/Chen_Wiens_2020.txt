@@ -1,0 +1,15 @@
+Source
+
+1. Auto-Download Supplementary Data 3 at Source: 
+https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-020-14356-3/MediaObjects/41467_2020_14356_MOESM6_ESM.xlsx
+
+--> Primary or Equivalent
+
+41467_2020_14356_MOESM6_ESM.xlsx <-- USE THIS
+
+
+Note:
+1. Diel activity is available in Supplementary Data 4
+(found association with acoustic communication)
+
+2. Consider deleting because too encompassing. Almost all mammals, including all mammals in the sample for which there is data, have acoustic communication.
