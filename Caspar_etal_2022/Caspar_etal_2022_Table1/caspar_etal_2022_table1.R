@@ -1,8 +1,8 @@
-# Part 1
+# Table 1
 
 ## 1. Read direct from xl
 library(readxl)
-tabledirectxl <- read_excel("caspar_etal_2022_table1_primary or equivalent.xlsx")
+tabledirectxl <- read_excel("caspar_etal_2022_table1_primary_or_equivalent.xlsx")
 
 ## 2. Table name / header removal
 
@@ -79,6 +79,8 @@ options(scipen = 999)
 # Save the tabledirectxl data frame to a CSV file
 write.csv(tabledirectxl, file = "caspar_etal_2022_table1.csv", row.names = FALSE)
 
+## 8. Save as tsv with DOI file name
 
-
+# Save the tabledirectxl data frame to a TSV file
+write.csv(tabledirectxl, file = "10.7554%2eLife.77875_table1.tsv", row.names = FALSE)
 

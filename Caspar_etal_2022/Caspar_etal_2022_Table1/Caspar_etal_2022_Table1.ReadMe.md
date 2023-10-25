@@ -1,5 +1,3 @@
-PART 1
-
 Source
 
 1. Auto-Download Publication pdf at Source: 
@@ -28,13 +26,8 @@ Where there were merged cells, copied value into all cells included in the merge
 
 caspar_etal_2022_table1.csv <-- USE THIS
 
+--> Online database
 
-PART 2
+9. Added TSV copy named with DOI to https://github.com/r03ert0/comparative-data
 
-Source
-
-1. Download Supplementary file 3 from link in online publication https://doi.org/10.7554/eLife.77875
-
---> Primary or Equivalent
-
-elife-77875-supp3-v1.xlsx <-- USE THIS
+10.7554%2eLife.77875_table1.tsv <-- ONLINE COPY
