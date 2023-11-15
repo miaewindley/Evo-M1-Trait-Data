@@ -31,7 +31,7 @@ colnames(sheetfromtxt)[colnames(sheetfromtxt) == "...13"] ="Δ"
 # rename string in column names
 colnames(sheetfromtxt) = gsub("\\b..\\b", ". ", colnames(sheetfromtxt))
 # Save it as 'dossantos_etal_2017_primary_or_equivalent.csv'
-write.csv(sheetfromtxt, file = "dossantos_etal_2017_primary_or_equivalent.csv", row.names = FALSE)
+write.csv(sheetfromtxt, file = "dossantos_etal_2017_tables1_primary_or_equivalent.csv", row.names = FALSE)
 
 
 ## PART TWO: CORRECT ERRATUM
@@ -142,8 +142,10 @@ sheetfromtxt$Species[sheetfromtxt$Species == "M. fuliginosus"] <- "Macropus fuli
 # Delete the row "Δ"
 sheetfromtxt <- sheetfromtxt[!sheetfromtxt$Species == "Δ", ]
 
-## PART TEN: Save to CSV
-# Save it as 'dossantos_etal_2017.csv'
-write.csv(sheetfromtxt, file = "dossantos_etal_2017.csv", row.names = FALSE)
+## PART TEN: Save to CSV with item
+# Save it as 'dossantos_etal_2017_tables1.csv'
+write.csv(sheetfromtxt, file = "dossantos_etal_2017_tables1.csv", row.names = FALSE)
 
+## PART ELEVEN: Save to TSV with DOI file name
+write.csv(sheetfromtxt, file = "10.1159%2000452856_tableS1.tsv", row.names = FALSE)
 
