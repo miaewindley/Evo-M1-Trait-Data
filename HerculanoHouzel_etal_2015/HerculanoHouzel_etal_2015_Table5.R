@@ -68,14 +68,14 @@ write.csv(tabledirectxl, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/
 # Edit for your existing DATAFRAME and TABLE
 # Create a new dataframe with the desired structure
 new_dataframe <- data.frame(
-  Original_Term = rep("", ncol(tabledirectxl)),  # Empty character column with the same number of rows as columns in tabledirectxl
-  Standardized_Term = colnames(tabledirectxl),  # Column headers from tabledirectxl
-  Reference = rep("HerculanoHouzel_etal_2015_Table4", ncol(tabledirectxl)),  # Reference column
+  Original_Term = colnames(tabledirectxl),  # Column headers from tabledirectxl
+  Standardized_Term = rep("", ncol(tabledirectxl)),  # Empty character column with the same number of rows as columns in tabledirectxl
+  Reference = rep("HerculanoHouzel_etal_2015_Table5", ncol(tabledirectxl)),  # Reference column
   Description = rep("", ncol(tabledirectxl))  # Empty character column with the same number of rows as columns in tabledirectxl
 )
 
 # Save the new dataframe to a CSV file
-file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging/HerculanoHouzel_etal_2015_Table4_terms.csv"
+file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo M1 Trait Data/__merging/HerculanoHouzel_etal_2015_Table5_terms.csv"
 write.csv(new_dataframe, file_path, row.names = FALSE)
 
 # Print the new dataframe

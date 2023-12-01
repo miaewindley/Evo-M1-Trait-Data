@@ -153,8 +153,8 @@ write.csv(sheetfromtxt, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/S
 # Assuming sheetfromtxt is your existing dataframe
 # Create a new dataframe with the desired structure
 new_dataframe <- data.frame(
-  Original_Term = rep("", ncol(sheetfromtxt)),  # Empty character column with the same number of rows as columns in sheetfromtxt
-  Standardized_Term = colnames(sheetfromtxt),  # Column headers from sheetfromtxt
+  Original_Term = colnames(sheetfromtxt),  # Column headers from sheetfromtxt
+  Standardized_Term = rep("", ncol(sheetfromtxt)),  # Empty character column with the same number of rows as columns in sheetfromtxt
   Reference = rep("DosSantos_etal_2017_TableS1", ncol(sheetfromtxt)),  # Reference column
   Description = rep("", ncol(sheetfromtxt))  # Empty character column with the same number of rows as columns in sheetfromtxt
 )

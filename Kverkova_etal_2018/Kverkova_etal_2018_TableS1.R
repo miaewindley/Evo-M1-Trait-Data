@@ -152,8 +152,8 @@ write.csv(df1_combined, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/S
 # Edit for your existing DATAFRAME and TABLE
 # Create a new dataframe with the desired structure
 new_dataframe <- data.frame(
-  Original_Term = rep("", ncol(df1_combined)),  # Empty character column with the same number of rows as columns in df1_combined
-  Standardized_Term = colnames(df1_combined),  # Column headers from df1_combined
+  Original_Term = colnames(df1_combined),  # Column headers from df1_combined
+  Standardized_Term = rep("", ncol(df1_combined)),  # Empty character column with the same number of rows as columns in df1_combined
   Reference = rep("Kverkova_etal_2018_TableS1", ncol(df1_combined)),  # Reference column
   Description = rep("", ncol(df1_combined))  # Empty character column with the same number of rows as columns in df1_combined
 )

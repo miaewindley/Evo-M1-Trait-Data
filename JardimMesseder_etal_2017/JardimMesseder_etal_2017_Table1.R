@@ -123,8 +123,8 @@ write.csv(tabledirectxl, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/
 # Edit for your existing DATAFRAME and TABLE
 # Create a new dataframe with the desired structure
 new_dataframe <- data.frame(
-  Original_Term = rep("", ncol(tabledirectxl)),  # Empty character column with the same number of rows as columns in tabledirectxl
-  Standardized_Term = colnames(tabledirectxl),  # Column headers from tabledirectxl
+  Original_Term = colnames(tabledirectxl),  # Column headers from tabledirectxl
+  Standardized_Term = rep("", ncol(tabledirectxl)),  # Empty character column with the same number of rows as columns in tabledirectxl
   Reference = rep("JardimMesseder_etal_2017_Table1", ncol(tabledirectxl)),  # Reference column
   Description = rep("", ncol(tabledirectxl))  # Empty character column with the same number of rows as columns in tabledirectxl
 )

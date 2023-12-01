@@ -46,8 +46,8 @@ write.csv(df1, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Ev
 # Edit for your existing DATAFRAME and TABLE
 # Create a new dataframe with the desired structure
 new_dataframe <- data.frame(
-  Original_Term = rep("", ncol(df1)),  # Empty character column with the same number of rows as columns in df1
-  Standardized_Term = colnames(df1),  # Column headers from df1
+  Original_Term = colnames(df1),  # Column headers from df1
+  Standardized_Term = rep("", ncol(df1)),  # Empty character column with the same number of rows as columns in df1
   Reference = rep("HerculanoHouzel_etal_2020_Table2", ncol(df1)),  # Reference column
   Description = rep("", ncol(df1))  # Empty character column with the same number of rows as columns in df1
 )

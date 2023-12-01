@@ -112,8 +112,8 @@ write.csv(result_df, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Spec
 # Edit for your existing DATAFRAME and TABLE
 # Create a new dataframe with the desired structure
 new_dataframe <- data.frame(
-  Original_Term = rep("", ncol(result_df)),  # Empty character column with the same number of rows as columns in result_df
-  Standardized_Term = colnames(result_df),  # Column headers from result_df
+  Original_Term = colnames(result_df),  # Column headers from result_df
+  Standardized_Term = rep("", ncol(result_df)),  # Empty character column with the same number of rows as columns in result_df
   Reference = rep("DosSantos_etal_2020_Table1", ncol(result_df)),  # Reference column
   Description = rep("", ncol(result_df))  # Empty character column with the same number of rows as columns in result_df
 )

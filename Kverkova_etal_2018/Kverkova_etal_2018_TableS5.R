@@ -84,8 +84,8 @@ write.csv(df5, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Ev
 # Edit for your existing DATAFRAME and TABLE
 # Create a new dataframe with the desired structure
 new_dataframe <- data.frame(
-  Original_Term = rep("", ncol(df5)),  # Empty character column with the same number of rows as columns in df5
-  Standardized_Term = colnames(df5),  # Column headers from df5
+  Original_Term = colnames(df5),  # Column headers from df5
+  Standardized_Term = rep("", ncol(df5)),  # Empty character column with the same number of rows as columns in df5
   Reference = rep("Kverkova_etal_2018_TableS5", ncol(df5)),  # Reference column
   Description = rep("", ncol(df5))  # Empty character column with the same number of rows as columns in df5
 )
