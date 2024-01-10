@@ -21,4 +21,4 @@ Made numerical
 
 Added TSV copy named with DOI to https://github.com/r03ert0/comparative-data
 
-10.1038%2Fs41598-018-26062-8_tables1.tsv <-- ONLINE COPY
+10.1038%2Fs41598-018-26062-8_TableS1.tsv <-- ONLINE COPY

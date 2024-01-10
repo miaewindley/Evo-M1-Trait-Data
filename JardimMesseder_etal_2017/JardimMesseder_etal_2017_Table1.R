@@ -10,6 +10,8 @@ setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/
 library(readxl)
 tabledirectxl <- read_excel("Jardim-Messeder-2017-Dogs Have the Most N_Tables.xlsx", sheet=6)
 
+
+## 2. FIX FORMATTING AND SAVE SNAPSHOT
 # Remove table name header and bottom note
 # Set the next row as the new header
 colnames(tabledirectxl) <- as.character(unlist(tabledirectxl[1, ]))
@@ -21,11 +23,10 @@ tabledirectxl <- tabledirectxl[1:(nrow(tabledirectxl)-4), ]
 # Delete empty columns that contain only NA values and have no header names.
 tabledirectxl <- tabledirectxl[, colSums(is.na(tabledirectxl)) != nrow(tabledirectxl), drop = FALSE]
 
-# Save the dataframe to a CSV file #symbol not formatted for Excel, open in Numbers
+# Save snapshot to a CSV file 
 write.csv(tabledirectxl, file = "JardimMesseder_etal_2017_Table1_snapshot.csv", row.names = FALSE)
 
-## MAKE DATA READABLE
-
+## 3. MAKE DATA READABLE
 
 # TRANSPOSE
 # transpose the dataframe to a matrix
@@ -69,7 +70,7 @@ for (col in names(tabledirectxl)) {
   }
 }
 
-#SPLIT COLUMN
+# SPLIT COLUMN
 # Split the Species names (common and scientific) into two columns
 
 # Load the 'tidyr' package
@@ -91,7 +92,7 @@ for (i in seq_along(cols_to_split)) {
   )
 }
 
-#MOVE SPECIES COLUMN, TIDY CHARACTERS, RESTORE ABBREVIATED TERMS
+# MOVE SPECIES COLUMN, TIDY CHARACTERS, RESTORE ABBREVIATED TERMS
 # Identify the column indices for "Species" and "Common Name"
 species_col_index <- which(colnames(tabledirectxl) == "Species")
 common_name_col_index <- which(colnames(tabledirectxl) == "Common Name")
@@ -116,25 +117,25 @@ colnames(tabledirectxl) <- gsub("O.N", "O/N", colnames(tabledirectxl))
 # # replace ".g" with "..g" and ".kg" with "..kg"
 colnames(tabledirectxl) <- gsub("\\.\\.(g|kg)", ".\\1", colnames(tabledirectxl))
 
-##SAVE
+# Set the scipen option to a high value to turn off scientific notation
+options(scipen = 999)
 
-# Save the dataframe to a CSV file
-write.csv(tabledirectxl, file = "JardimMesseder_etal_2017_Table1.csv", row.names = FALSE)
+## 4. SAVE
+# Finalize dataframe (UPDATE!!!)
+final.dataframe <- tabledirectxl
 
-# Save the dataframe to a TSV file for online database
-write.csv(tabledirectxl, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/10.3389%2Ffnana.2017.00118_Table1.tsv", row.names = FALSE)
+# Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
+library(rstudioapi)
+item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path))
 
-## Export colnames to merge terms
-# Edit for your existing DATAFRAME and TABLE
-# Create a new dataframe with the desired structure
-new_dataframe <- data.frame(
-  Original_Term = colnames(tabledirectxl),  # Column headers from tabledirectxl
-  Reference = rep("JardimMesseder_etal_2017_Table1", ncol(tabledirectxl))  # Reference column
-)
+# Get Item encoded
+library(readxl) 
+filecodes <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx", sheet = "Sheet1")
+item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
 
-# Save the new dataframe to a CSV file
-file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging/JardimMesseder_etal_2017_Table1_terms.csv"
-write.csv(new_dataframe, file_path, row.names = FALSE)
+# Save dataframe to a CSV file
+write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
 
-# Print the new dataframe
-print(new_dataframe)
+# Save dataframe to a TSV file in the online database
+tsv_file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/"
+write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)

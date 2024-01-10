@@ -6,7 +6,7 @@
 # 2. Open 452856_sm10.doc in MS Word (double click it)
 # 3. Save as Plain Text (.txt)
 
-## READ FILE
+## 1. READ FILE
 # Set Working Directory. Store with the spreadsheet.
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2017")
 
@@ -16,9 +16,8 @@ library(readr)
 sheetfromtxt <- read_delim("452856_sm10.txt", 
                             delim = "\t", escape_double = FALSE, 
                             trim_ws = TRUE, skip = 1)
-View(sheetfromtxt)
 
-## PART ONE: FIX FORMATTING ERROR TO ALIGN CELLS AND SAVE SNAPSHOT
+## 2. FIX FORMATTING ERROR TO ALIGN CELLS AND SAVE SNAPSHOT
 # Delete 2 empty columns by column names #left one name since there will be shifting and hard to work with nameless column
 sheetfromtxt <- sheetfromtxt[, !colnames(sheetfromtxt) %in% c("?", "...15")]
 # Align column headers / Remove unwanted extra column header. Takes names from columns 1-7, adds next to them names from columns 9-last. Assigns new names to original df
@@ -34,7 +33,7 @@ colnames(sheetfromtxt) = gsub("\\b..\\b", ". ", colnames(sheetfromtxt))
 write.csv(sheetfromtxt, file = "DosSantos_etal_2017_TableS1_snapshot.csv", row.names = FALSE)
 
 
-## PART TWO: CORRECT ERRATUM
+## 3. CORRECT ERRATUM
 # "The correct number of neurons in the cerebral cortex (NCX) of the Tasmanian devil (Sarcophilus) in online supplementary Table S1 is 71.66 × 106"
 # must change cell [13,6] from 122.60x106 to 71.66×106
 # first confirm which cell it is
@@ -46,7 +45,7 @@ sheetfromtxt[13, "Sarcophilus"] <- "71.66x106"
 Sarcophilus_NCX_2 <- sheetfromtxt[13, "Sarcophilus"]
 print(Sarcophilus_NCX_2)
 
-## PART THREE: NAME AND TOUCH UP VARIABLES
+## 4. NAME AND TOUCH UP VARIABLES
 # remove unnecessary character in a specific column #"Δ" will not actually be used and could be removed earlier 
 sheetfromtxt$"Δ" = gsub("x", "", sheetfromtxt$"Δ")
 # remove unnecessary string in the whole dataset
@@ -57,7 +56,7 @@ colnames(sheetfromtxt)[colnames(sheetfromtxt) == "X_"] <- "_"
 # changing again since R didn't like the column names with "_" #next time find a better placeholder
 colnames(sheetfromtxt) = gsub("\\b..\\b", ". ", colnames(sheetfromtxt))
 
-## PART FIVE: CALCULATE DATA
+## 5. CALCULATE DATA
 # Assuming your data frame is named 'speciesfromtxt'
 for (row in 1:nrow(sheetfromtxt)) {
   for (col in 1:ncol(sheetfromtxt)) {
@@ -76,29 +75,8 @@ for (row in 1:nrow(sheetfromtxt)) {
   }
 }
 
-# ## PART SIX: CORRECT AND SPELL OUT ABBREVIATIONS
-# # Replace specific brain component endings at the end of a string with the corresponding strings prepended in the "_" column
-# sheetfromtxt$"_" <- sub("^(.*)MES\\+D\\+S$", "mesencephalon+diencephalon+striatum_\\1", sheetfromtxt$"_") #this needs to be before D+S 
-# sheetfromtxt$"_" <- sub("^(.*)BD$", "Body_\\1", sheetfromtxt$"_")
-# sheetfromtxt$"_" <- sub("^(.*)BR$", "whole_brain_\\1", sheetfromtxt$"_")
-# sheetfromtxt$"_" <- sub("^(.*)CX$", "Cerebral_Cortex_\\1", sheetfromtxt$"_")
-# sheetfromtxt$"_" <- sub("^(.*)HP$", "Hippocampus_\\1", sheetfromtxt$"_")
-# sheetfromtxt$"_" <- sub("^(.*)CB$", "Cerebellum_\\1", sheetfromtxt$"_")
-# sheetfromtxt$"_" <- sub("^(.*)ROB$", "RoB_\\1", sheetfromtxt$"_")
-# sheetfromtxt$"_" <- sub("^(.*)D\\+S$", "diencephalon+striatum_\\1", sheetfromtxt$"_")
-# sheetfromtxt$"_" <- sub("^(.*)D\\s*\\+\\s*S$", "diencephalon+striatum_\\1", sheetfromtxt$"_") #change those with spacing errors as well
-# sheetfromtxt$"_" <- sub("^(.*)D\\+S\\s*$", "diencephalon+striatum_\\1", sheetfromtxt$"_") #change those with spacing errors as well
-# sheetfromtxt$"_" <- sub("^(.*)MES$", "mesencephalon_\\1", sheetfromtxt$"_")
-# sheetfromtxt$"_" <- sub("^(.*)P\\+M$", "pons+medulla_\\1", sheetfromtxt$"_")
-# sheetfromtxt$"_" <- sub("^(.*)OB$", "Olfactory_bulb_\\1", sheetfromtxt$"_")
-# sheetfromtxt$"_" <- sub("^(.*)GM$", "Cerebral_Cortex_Grey_Matter_\\1", sheetfromtxt$"_")
-# # Replace specific cellular composition part of strings in the "_" column
-# sheetfromtxt$"_" <- sub("_M$", "_Mass_g", sheetfromtxt$"_") #Mass (g)
-# sheetfromtxt$"_" <- sub("_N$", "_N_n", sheetfromtxt$"_") #number of neurons
-# sheetfromtxt$"_" <- sub("_DN$", "_Nmg", sheetfromtxt$"_") #neuronal density (in neurons/mg)
-# sheetfromtxt$"_" <- sub("_O/N$", "_ON", sheetfromtxt$"_") #O/N, ratio between numbers of other (non-neuronal) cells and neurons
 
-## PART SEVEN: TRANSPOSE AND SHIFT INTO PLACE
+## 6. TRANSPOSE AND SHIFT INTO PLACE
 # transpose the dataframe to a matrix
 m <- t(sheetfromtxt)
 # convert from matrix to dataframe
@@ -124,7 +102,7 @@ for (col in names(sheetfromtxt)) {
   }
 }
 
-## PART EIGHT: COMPLETE SPECIES NAMES
+## 7. COMPLETE SPECIES NAMES
 # rename species so names are complete, according to the publication
 # rename string in column names (Genus)
 sheetfromtxt$Species[sheetfromtxt$Species == "Marmosops"] <- "Marmosops incanus"
@@ -138,28 +116,30 @@ sheetfromtxt$Species[sheetfromtxt$Species == "M. rufus"] <- "Macropus rufus"
 sheetfromtxt$Species[sheetfromtxt$Species == "Dendrolagus"] <- "Dendrolagus goodfellowi"
 sheetfromtxt$Species[sheetfromtxt$Species == "M. fuliginosus"] <- "Macropus fuliginosus"
 
-## PART NINE: DELETE CALCULATIONS THAT ARE REDUNDANT OR UNNEEDED
+## 8. DELETE CALCULATIONS THAT ARE REDUNDANT OR UNNEEDED
 # Delete the row "Δ"
 sheetfromtxt <- sheetfromtxt[!sheetfromtxt$Species == "Δ", ]
 
-## PART TEN: 
-# Save CSV
-write.csv(sheetfromtxt, file = "DosSantos_etal_2017_TableS1.csv", row.names = FALSE)
+# Set the scipen option to a high value to turn off scientific notation
+options(scipen = 999)
 
-## Save TSV with DOI file name in Online Database Folder
-write.csv(sheetfromtxt, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/10.1159%2F000452856_TableS1.tsv", row.names = FALSE)
+## 9. SAVE
 
-## Export colnames to merge terms
-# Assuming sheetfromtxt is your existing dataframe
-# Create a new dataframe with the desired structure
-new_dataframe <- data.frame(
-  Original_Term = colnames(sheetfromtxt),  # Column headers from sheetfromtxt
-  Reference = rep("DosSantos_etal_2017_TableS1", ncol(sheetfromtxt))  # Reference column
-)
+# Finalize dataframe (UPDATE!!!)
+final.dataframe <- sheetfromtxt
 
-# Save the new dataframe to a CSV file
-file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging/DosSantos_etal_2017_TableS1_terms.csv"
-write.csv(new_dataframe, file_path, row.names = FALSE)
+# Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
+library(rstudioapi)
+item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path))
 
-# Print the new dataframe
-print(new_dataframe)
+# Get Item encoded
+library(readxl) 
+filecodes <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx", sheet = "Sheet1")
+item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+
+# Save dataframe to a CSV file
+write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
+
+# Save dataframe to a TSV file in the online database
+tsv_file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/"
+write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)

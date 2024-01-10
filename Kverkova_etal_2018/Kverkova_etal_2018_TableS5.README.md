@@ -12,10 +12,11 @@ Copy and paste Table 1 (2 parts) and manually format it
 --> Data readable   
 
 Split Average from SD
+
 Made numerical
 
 --> Online database
 
 Added TSV copy named with DOI to https://github.com/r03ert0/comparative-data
 
-10.1038%2Fs41598-018-26062-8_tables5.tsv <-- ONLINE COPY
+10.1038%2Fs41598-018-26062-8_TableS5.tsv <-- ONLINE COPY

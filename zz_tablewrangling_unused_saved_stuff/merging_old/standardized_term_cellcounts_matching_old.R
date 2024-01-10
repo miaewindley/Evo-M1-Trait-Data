@@ -5,50 +5,42 @@ setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/
 
 ##MERGE TERM LISTS FROM HEADERS
 
-library(dplyr)
-library(readxl)
+# Check the names of all files in the folder
+file_names <- list.files("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging")
+print(file_names)
 
-# List of item names
-item_name <- c(
-  "DosSantos_etal_2017_TableS1",
-  "DosSantos_etal_2020_Table1",
-  "HerculanoHouzel_etal_2015_Table1",
-  "HerculanoHouzel_etal_2015_Table2",
-  "HerculanoHouzel_etal_2015_Table3",
-  "HerculanoHouzel_etal_2015_Table4",
-  "HerculanoHouzel_etal_2015_Table5",
-  "HerculanoHouzel_etal_2020_TABLE1",
-  "HerculanoHouzel_etal_2020_TABLE2",
-  "JardimMesseder_etal_2017_Table1",
-  "Kverkova_etal_2018_TableS1",
-  "Kverkova_etal_2018_TableS5"
+# Read all CSVs
+DosSantos_etal_2017_TableS1 <- read.csv("DosSantos_etal_2017_TableS1_terms.csv", stringsAsFactors = FALSE)
+DosSantos_etal_2020_Table1 <- read.csv("DosSantos_etal_2020_Table1_terms.csv", stringsAsFactors = FALSE)
+HerculanoHouzel_etal_2015_Table1 <- read.csv("HerculanoHouzel_etal_2015_Table1_terms.csv", stringsAsFactors = FALSE)
+HerculanoHouzel_etal_2015_Table2 <- read.csv("HerculanoHouzel_etal_2015_Table2_terms.csv", stringsAsFactors = FALSE)
+HerculanoHouzel_etal_2015_Table3 <- read.csv("HerculanoHouzel_etal_2015_Table3_terms.csv", stringsAsFactors = FALSE)
+HerculanoHouzel_etal_2015_Table4 <- read.csv("HerculanoHouzel_etal_2015_Table4_terms.csv", stringsAsFactors = FALSE)
+HerculanoHouzel_etal_2015_Table5 <- read.csv("HerculanoHouzel_etal_2015_Table5_terms.csv", stringsAsFactors = FALSE)
+HerculanoHouzel_etal_2020_Table1 <- read.csv("HerculanoHouzel_etal_2020_Table1_terms.csv", stringsAsFactors = FALSE)
+HerculanoHouzel_etal_2020_Table2 <- read.csv("HerculanoHouzel_etal_2020_Table2_terms.csv", stringsAsFactors = FALSE)
+JardimMesseder_etal_2017_Table1 <- read.csv("JardimMesseder_etal_2017_Table1_terms.csv", stringsAsFactors = FALSE)
+Kverkova_etal_2018_TableS1 <- read.csv("Kverkova_etal_2018_TableS1_terms.csv", stringsAsFactors = FALSE)
+Kverkova_etal_2018_TableS5 <- read.csv("Kverkova_etal_2018_TableS5_terms.csv", stringsAsFactors = FALSE)
+
+# Read header row from all the relevant csv or tsv files
+# csv version
+
+# Merge all terms into one dataframe
+merged_terms <- rbind(
+  DosSantos_etal_2017_TableS1,
+  DosSantos_etal_2020_Table1,
+  HerculanoHouzel_etal_2015_Table1,
+  HerculanoHouzel_etal_2015_Table2,
+  HerculanoHouzel_etal_2015_Table3,
+  HerculanoHouzel_etal_2015_Table4,
+  HerculanoHouzel_etal_2015_Table5,
+  HerculanoHouzel_etal_2020_Table1,
+  HerculanoHouzel_etal_2020_Table2,
+  JardimMesseder_etal_2017_Table1,
+  Kverkova_etal_2018_TableS1,
+  Kverkova_etal_2018_TableS5
 )
-
-# Read Excel file with list of item codes
-filecodes <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx", sheet = "Sheet1")
-
-# Initialize an empty list to store data frames
-item_data_list <- list()
-
-# Loop through item names, read data from TSV files, and store in the list
-for (i in seq_along(item_name)) {
-  item_encoded <- filecodes$"Item encoded"[match(item_name[i], filecodes$"Item name")]
-  item_encoded_terms <- read.table(file = paste0("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/", item_encoded, ".tsv"), header = TRUE, stringsAsFactors = FALSE, check.names = FALSE)
-  
-  # Create a data frame with Original_Term and Reference columns
-  terms <- data.frame(
-    Original_Term = colnames(item_encoded_terms),
-    Reference = rep(item_name[i])
-  )
-  
-  # Store data frame in the list
-  item_data_list[[item_name[i]]] <- terms
-}
-
-# Create a single data frame
-merged_terms <- bind_rows(item_data_list)
-
-
 
 ##COMPARE MERGED TERMS TO OLD KEY  
 
@@ -214,7 +206,46 @@ library(dplyr)
 standardized_term_cellcounts <- standardized_term_cellcounts %>%
   arrange(Reference, Original_Term)
 
+# CHECKS
+# The number of observations in dataframe X should match the number of observations where Reference is X in standardized_term_cellcounts   
+# List of dataframe names
+dataframe_names <- c(
+  "DosSantos_etal_2017_TableS1",
+  "DosSantos_etal_2020_Table1",
+  "HerculanoHouzel_etal_2015_Table1",
+  "HerculanoHouzel_etal_2015_Table2",
+  "HerculanoHouzel_etal_2015_Table3",
+  "HerculanoHouzel_etal_2015_Table4",
+  "HerculanoHouzel_etal_2015_Table5",
+  "HerculanoHouzel_etal_2020_Table1",
+  "HerculanoHouzel_etal_2020_Table2",
+  "JardimMesseder_etal_2017_Table1",
+  "Kverkova_etal_2018_TableS1",
+  "Kverkova_etal_2018_TableS5"
+)
+# Check for each dataframe
+for (df_name in dataframe_names) {
+  df <- get(df_name)  # Assuming the dataframes are in the global environment
+  if (nrow(df) == sum(standardized_term_cellcounts$Reference == df_name)) {
+    cat("The number of observations in", df_name, "matches the number of observations in standardized_term_cellcounts with the same name in Reference.\n")
+  } else {
+    cat("The number of observations in", df_name, "DOES NOT match the number of observations in standardized_term_cellcounts with the same name in Reference.\n")
+  }
+}
+
+# Check for consistency between Original_Term and Standardized_Term. If no inconsistencies are found, the code will not print anything. 
+reference_groups2 <- split(standardized_term_cellcounts, standardized_term_cellcounts$Reference)
+for (group in reference_groups2) {
+  for (col_name in c("Original_Term", "Standardized_Term")) {
+    if (any(duplicated(group$Original_Term) & duplicated(group$Standardized_Term) | 
+            duplicated(group$Original_Term, fromLast = TRUE) & duplicated(group$Standardized_Term, fromLast = TRUE))) {
+      cat("Inconsistent values in group with Reference:", group$Reference[1], "for column:", col_name, "\n")
+      cat("Original_Term values:", toString(group$Original_Term), "\n")
+      cat("Standardized_Term values:", toString(group$Standardized_Term), "\n\n")
+    }
+  }
+}
+
+
 # Save to a CSV file
 write.csv(standardized_term_cellcounts, "standardized_term_cellcounts.csv", row.names = FALSE)
-
-

@@ -72,25 +72,26 @@ df5[, -1] <- df5[, -1] * 10^6
 # Drop ", x 10ˆ6" from all column names
 colnames(df5) <- gsub(", x 10ˆ6", "_N.n", colnames(df5), fixed = TRUE)
 
+# Set the scipen option to a high value to turn off scientific notation
+options(scipen = 999)
+
 ## 5. SAVE
 
-# Save the dataframe to a CSV file
-write.csv(df5, file = "Kverkova_etal_2018_TableS5.csv", row.names = FALSE)
+# Finalize dataframe (UPDATE!!!)
+final.dataframe <- df5
 
-# Save the dataframe to a TSV file for online database
-write.csv(df5, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/10.1038%2Fs41598-018-26062-8_TableS5.tsv", row.names = FALSE)
+# Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
+library(rstudioapi)
+item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path))
 
-## Export colnames to merge terms
-# Edit for your existing DATAFRAME and TABLE
-# Create a new dataframe with the desired structure
-new_dataframe <- data.frame(
-  Original_Term = colnames(df5),  # Column headers from df5
-  Reference = rep("Kverkova_etal_2018_TableS5", ncol(df5))  # Reference column
-)
+# Get Item encoded
+library(readxl) 
+filecodes <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx", sheet = "Sheet1")
+item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
 
-# Save the new dataframe to a CSV file
-file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging/Kverkova_etal_2018_TableS5_terms.csv"
-write.csv(new_dataframe, file_path, row.names = FALSE)
+# Save dataframe to a CSV file
+write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
 
-# Print the new dataframe
-print(new_dataframe)
+# Save dataframe to a TSV file in the online database
+tsv_file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/"
+write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)

@@ -11,6 +11,7 @@ pdf_file <- "https://www.jneurosci.org/content/jneuro/40/24/4622.full.pdf"
 # Use extract_tables to get all tables on the specified page
 tables1 <- extract_tables(pdf_file,pages = c(4:6))
 
+## 2. FIX FORMATTING AND SAVE SNAPSHOT
 # Convert the matrices into data frames
 df1 <- as.data.frame(tables1[[1]])
 df2 <- as.data.frame(tables1[[2]])
@@ -64,9 +65,10 @@ combined_df[155,]=trimws(combined_df[155,])
 # in combined_df column "Structure" change string from "P1M" to "P+M"
 combined_df$Structure[combined_df$Structure == "P1M"] <- "P+M"
 
-# Save the data frame to a "primary or equivalent" to a CSV file
-write.csv(combined_df, file = "dossantos_etal_2020_Table1_snapshot.csv", row.names = FALSE)
+# Save snapshot as a CSV file
+write.csv(combined_df, file = "DosSantos_etal_2020_Table1_snapshot.csv", row.names = FALSE)
 
+## 3. MAKE DATA READABLE
 # Assuming combined_df is your data frame
 columns_to_clean <- c("Structure mass (g)", "C", "N", "I", "N/mg", "I/mg")
 
@@ -102,23 +104,28 @@ result_df <- combined_df %>%
   # Arrange columns alphabetically, including 'Species name'
   select("Species name", sort(colnames(.)))
 
-# Save the data frame to a CSV file
-write.csv(result_df, file = "DosSantos_etal_2020_Table1.csv", row.names = FALSE)
 
-# Save the data frame to a TSV file for online database
-write.csv(result_df, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/10.1523%2FJNEUROSCI.2339-19.2020%0A_table1.tsv", row.names = FALSE)
+# Set the scipen option to a high value to turn off scientific notation
+options(scipen = 999)
 
-## Export colnames to merge terms
-# Edit for your existing DATAFRAME and TABLE
-# Create a new dataframe with the desired structure
-new_dataframe <- data.frame(
-  Original_Term = colnames(result_df),  # Column headers from result_df
-  Reference = rep("DosSantos_etal_2020_Table1", ncol(result_df))  # Reference column
-)
+## 4. SAVE
 
-# Save the new dataframe to a CSV file
-file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging/DosSantos_etal_2020_Table1_terms.csv"
-write.csv(new_dataframe, file_path, row.names = FALSE)
+# Finalize dataframe (UPDATE!!!)
+final.dataframe <- result_df
 
-# Print the new dataframe
-print(new_dataframe)
+# Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
+library(rstudioapi)
+item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path))
+
+# Get Item encoded
+library(readxl) 
+filecodes <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx", sheet = "Sheet1")
+item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+
+# Save dataframe to a CSV file
+write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
+
+# Save dataframe to a TSV file in the online database
+tsv_file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/"
+write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)
+

@@ -57,24 +57,26 @@ columns_to_rename <- c("Mass, g", "Mass, g SD", "N, n", "N, n SD", "O, n", "O, n
 # Add structure at the beginning of each column name
 colnames(tabledirectxl)[match(columns_to_rename, colnames(tabledirectxl))] <- paste0(structure_name, " ", columns_to_rename)
 
+# Set the scipen option to a high value to turn off scientific notation
+options(scipen = 999)
+
 ## 7. Save
-# Save the dataframe to a CSV file
-write.csv(tabledirectxl, file = "HerculanoHouzel_etal_2015_Table3.csv", row.names = FALSE)
+# Finalize dataframe (UPDATE!!!)
+final.dataframe <- tabledirectxl
 
-# Save the data frame to a TSV file for online database
-write.csv(tabledirectxl, file = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/10.1159%2F000437413_Table3.tsv", row.names = FALSE)
+# Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
+library(rstudioapi)
+item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path))
 
-## Export colnames to merge terms
-# Edit for your existing DATAFRAME and TABLE
-# Create a new dataframe with the desired structure
-new_dataframe <- data.frame(
-  Original_Term = colnames(tabledirectxl),  # Column headers from tabledirectxl
-  Reference = rep("HerculanoHouzel_etal_2015_Table3", ncol(tabledirectxl))  # Reference column
-)
+# Get Item encoded
+library(readxl) 
+filecodes <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx", sheet = "Sheet1")
+item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
 
-# Save the new dataframe to a CSV file
-file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging/HerculanoHouzel_etal_2015_Table3_terms.csv"
-write.csv(new_dataframe, file_path, row.names = FALSE)
+# Save dataframe to a CSV file
+write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
 
-# Print the new dataframe
-print(new_dataframe)
+# Save dataframe to a TSV file in the online database
+tsv_file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/"
+write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)
+

@@ -18,10 +18,10 @@ formatted into primary or equivalent Table 1
 
 5. Pivoted to reorganize by "Structure"
 
-dossantos_etal_2020_2022_table1.csv <-- USE THIS
+DosSantos_etal_2020_Table1.csv <-- USE THIS
 
 --> Online database
 
 Added TSV copy named with DOI to https://github.com/r03ert0/comparative-data
 
-10.1523%2FJNEUROSCI.2339-19.2020%0A_table1.tsv <-- ONLINE COPY
+10.1523%2FJNEUROSCI.2339-19.2020%0A_Table1.tsv <-- ONLINE COPY
