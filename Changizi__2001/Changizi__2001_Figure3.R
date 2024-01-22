@@ -1,8 +1,8 @@
-# 1. Data comes from Fig 3 caption and was not tabulated, so a table was created, Changizi_2001_Figure3_snapshot.csv
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi_2001")
+# 1. Data comes from Fig 3 caption and was not tabulated, so a table was created, Changizi__2001_Figure3_snapshot.csv
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi__2001")
 
 # open file and read last two columns as numeric
-figdata <- read.csv("Changizi_2001_Figure3_snapshot.csv", check.names = FALSE)
+figdata <- read.csv("Changizi__2001_Figure3_snapshot.csv", check.names = FALSE)
 
 
 # 2. Make data readable

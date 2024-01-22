@@ -2,7 +2,7 @@ Source
 1. Publication pdf (paywall)
 
 --> Snapshot
-2. Data comes from Fig 3 caption and was not tabulated, so a table was created manually, Changizi_2001_Figure3.csv
+2. Data comes from Fig 3 caption and was not tabulated, so a table was created manually, Changizi__2001_Figure3.csv
 
 --> Data readable   
 3. Make data readable, Add unlogged data
