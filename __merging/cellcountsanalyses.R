@@ -5,9 +5,8 @@ setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/
 ## 1.1 Create a list with all the dataframes for cell count analyses
 ## 1.2 Change to standardized terminology for all variables in those dataframes
 ## 1.3 Calculate variables to match them across datasets (if needed) 
-## 1.4 Rename species to NCBI Taxonomy (if needed) 
-# - are species and subspecies both represented for any given species?
-## 1.5 Combine all data in all dataframes in cellcounts_data_list 
+## 1.4 Compare Species to NCBI Taxonomy and rename to this standard
+## 1.5 Combine all data in all dataframes in cellcounts_data_list as a long dataframe
 ## 1.6 Check for and address any conflicting datapoints across datasets 
 
 ## 2. Examine WholeBrain dataset
@@ -182,6 +181,22 @@ source_species_ids$Reference_Note <- ifelse(
   )
 )
 
+# Add a column with the dataframes that are the source of the 
+source_species_source <- list()
+# Loop through each dataframe in cellcounts_data_list
+for (i in seq_along(cellcounts_data_list)) {
+  current_species <- sort(unique(cellcounts_data_list[[i]]$Species))
+  source_species_list <- sort(unique(c(source_species_list, current_species)))
+  # Create a mapping of species to the dataframes that include them
+  for (species in current_species) {
+    if (!(species %in% names(source_species_source))) {
+      source_species_source[[species]] <- character(0)
+    }
+    source_species_source[[species]] <- sort(unique(c(source_species_source[[species]], names(cellcounts_data_list)[i])))
+  }
+}
+source_species_ids$Source_Species = sapply(source_species_list, function(species) paste(source_species_source[[species]], collapse = ", "))
+
 ## 1.4.2 Create a new column for updated species names if they are not all the NCBI default Preferred Name for their Taxonomic ID
 
 # Add a column called Species_Name with the Preferred_Name. If NA, leave blank (for now).
@@ -249,12 +264,7 @@ species_list_update2
 species_list
 source_species_list
 
-
 ## 1.5 Combine all data in all dataframes in cellcounts_data_list as a long dataframe
-library(dplyr)
-library(tidyr)
-
-# Assuming cellcounts_data_list is your list of dataframes
 combined_data <- lapply(names(cellcounts_data_list), function(source) {
   df <- cellcounts_data_list[[source]]
   
@@ -313,42 +323,7 @@ write_csv(combined_data, "combined_data.csv")
 ## 1.6.2 Limit dataset to best available data
 # remove any NA values in combined_data
 intermediate_data <- combined_data[!is.na(combined_data$Value), , drop = FALSE]
-write_csv(intermediate_data, "intermediate_data.csv")
 
-## TESTING ZONE START
-# Example dataframe
-df <- data.frame(
-  Species = c('HS', 'HS', 'HS', 'HS', 'LA', 'LA', 'LA'),  
-  Variable = c('WBNN', 'WBNN', 'WBNN', 'CNN', 'CNN', 'WBNN', 'CNN'),
-  Source = c('JM', 'HH', 'DS', 'DS', 'JM', 'JM', 'HH'),
-  priority = c('3', '1', '2', '2', '3', '3', '1'),
-  Value = c(10, 10, 20, 30, 40, 50, 60)
-)
-
-# Add a blank column "DECISION"
-df$DECISION <- ""
-
-# Convert dataframe to a list of dataframes
-df_list <- split(df, list(df$Species, df$Variable))
-
-# Create a loop to update "DECISION" based on the specified condition
-for (i in seq_along(df_list)) {
-  priority_values <- df_list[[i]]$priority
-  df_list[[i]]$DECISION[df_list[[i]]$priority > min(priority_values)] <- "WORSE"
-}
-
-# See the updated list of matrices
-df_list
-
-# Combine all rows from df_list into one dataframe excluding rows with DECISION:WORSE
-updated_df <- do.call(rbind, df_list)
-updated_df <- updated_df[updated_df$DECISION != "WORSE", ]
-
-# See the updated dataframe
-updated_df
-## TESTING ZONE END
-
-## APPLY TESTING ZONE START
 # Add a blank column "DECISION"
 intermediate_data$DECISION <- ""
 
@@ -361,13 +336,113 @@ for (i in seq_along(df_list)) {
   df_list[[i]]$DECISION[df_list[[i]]$priority > min(priority_values)] <- "WORSE"
 }
 
-# See the updated list of matrices
+# See the updated list of matrices #Use this for further comparisons as well
 df_list
 
 # Combine all rows from df_list into one dataframe excluding rows with DECISION:WORSE
-updated_df <- do.call(rbind, df_list)
-updated_df <- updated_df[updated_df$DECISION != "WORSE", ]
+best_data_long <- do.call(rbind, df_list)
+best_data_long <- best_data_long[best_data_long$DECISION != "WORSE", ]
 
-# See the updated dataframe
-updated_df
-## APPLY TESTING ZONE END
+# Convert to wide dataframe
+best_data_wide <- arrange(pivot_wider(best_data_long, id_cols = Species, names_from = Variable, values_from = Value), Species)
+# keep a record of sources for the datapoints
+source_best_data_wide <- arrange(pivot_wider(best_data_long, id_cols = Species, names_from = Variable, values_from = Source), Species)
+write_csv(best_data_wide, "best_data_wide.csv")
+
+## 1.6.3 Comparisons to do with the previously created list of dfs df_list
+
+## 1.6.3.1 Check if there are values that differ, and check if any differ by than 1% 
+
+# Filter the list of dataframes to only include those with more than one row
+comp_df_list <- lapply(df_list, function(df) {
+  if (nrow(df) > 1) {
+    return(df)
+  } else {
+    return(NULL)  # Returning NULL for dataframes with one or fewer rows
+  }
+})
+
+# Remove NULL elements from the list
+comp_df_list <- comp_df_list[!sapply(comp_df_list, is.null)]
+
+# See the filtered list of dataframes
+comp_df_list
+
+# Filter the list of dataframes to only include those where the "Value" column differs between rows
+comp_df_list_diff <- lapply(comp_df_list, function(df) {
+  if (anyDuplicated(df$Value) == 0) {
+    return(df)
+  } else {
+    return(NULL)  # Returning NULL for dataframes with duplicate "Value" values
+  }
+})
+comp_df_list_diff <- comp_df_list_diff[!sapply(comp_df_list_diff, is.null)] # Remove NULL elements from the list
+
+# See the filtered list of dataframes with differing "Value" values
+comp_df_list_diff
+
+# Numericize "Value" and filter the dataframe list, retaining only those with over 1% variation in consecutive "Value" column entries.
+
+# Convert the "Value" column to numerical in comp_df_list_diff
+comp_df_list_diff <- lapply(comp_df_list_diff, function(df) {
+  df$Value <- as.numeric(df$Value)
+  return(df)
+})
+
+# Filter the list of dataframes to only include those where the "Value" column differs between rows by more than 1% (absolute value)
+# comp_df_list_diff_more_than_1_percent <- lapply(comp_df_list_diff, function(df) {
+#   if (all(diff(df$Value) / df$Value[-length(df$Value)] > 0.01)) {
+#     return(df)
+#   } else {
+#     return(NULL)  # Returning NULL for dataframes that don't meet the criteria
+#   }
+# })
+comp_df_list_diff_more_than_1_percent <- lapply(comp_df_list_diff, function(df) {
+  if (all(abs(diff(df$Value) / df$Value[-length(df$Value)]) > 0.01)) {
+    return(df)
+  } else {
+    return(NULL)  # Returning NULL for dataframes that don't meet the criteria
+  }
+})
+comp_df_list_diff_more_than_1_percent <- comp_df_list_diff_more_than_1_percent[!sapply(comp_df_list_diff_more_than_1_percent, is.null)] # Remove NULL elements from the list
+
+# See the filtered list of dataframes with differing "Value" values by more than 1%
+comp_df_list_diff_more_than_1_percent
+
+#### NOTE: Conflicts that differ by > 1% are all between HerculanoHouzel_etal_2015 and DosSantos_etal_2020 (different method), or Kverkova (different specimens) 
+
+# Check for species in cellcounts_data_list$DosSantos_etal_2020* but not in cellcounts_data_list$HerculanoHouzel_etal_2015*
+# Initialize an empty list to store dataframes
+dataframes_list <- list()
+
+# Create a list of dataframes for DosSantos_etal_2020
+dos_santos_df_names <- grep(paste0("^", "DosSantos_etal_2020"), names(cellcounts_data_list), value = TRUE)
+for (dos_santos_df_name in dos_santos_df_names) {
+  dataframes_list[[length(dataframes_list) + 1]] <- cellcounts_data_list[[dos_santos_df_name]]
+}
+
+# Create a list of dataframes for HerculanoHouzel_etal_2015
+herculano_houzel_df_names <- grep(paste0("^", "HerculanoHouzel_etal_2015"), names(cellcounts_data_list), value = TRUE)
+for (herculano_houzel_df_name in herculano_houzel_df_names) {
+  dataframes_list[[length(dataframes_list) + 1]] <- cellcounts_data_list[[herculano_houzel_df_name]]
+}
+
+# Get species from DosSantos_etal_2020 dataframes
+dos_santos_2020_species <- unique(unlist(lapply(dataframes_list[grepl("DosSantos_etal_2020", names(cellcounts_data_list))], function(df) df$Species)))
+dos_santos_2020_species
+
+# Get species from HerculanoHouzel_etal_2015 dataframes
+herculano_houzel_2015_species <- unique(unlist(lapply(dataframes_list[grepl("HerculanoHouzel_etal_2015", names(cellcounts_data_list))], function(df) df$Species)))
+herculano_houzel_2015_species
+
+# Identify unique species from these combined
+unique_species <- unique(c(dos_santos_2020_species, herculano_houzel_2015_species))
+unique_species
+
+# Identify species in DosSantos_etal_2020 but not in HerculanoHouzel_etal_2015
+species_only_in_dos_santos <- setdiff(dos_santos_2020_species, herculano_houzel_2015_species)
+species_only_in_dos_santos
+
+# Identify species in HerculanoHouzel_etal_2015 but not in DosSantos_etal_2020
+species_only_in_herculano_houzel <- setdiff(herculano_houzel_2015_species, dos_santos_2020_species)
+species_only_in_herculano_houzel

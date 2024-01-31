@@ -1,3 +1,40 @@
+## TESTING ZONE START
+# Example dataframe
+df <- data.frame(
+  Species = c('HS', 'HS', 'HS', 'HS', 'LA', 'LA', 'LA'),  
+  Variable = c('WBNN', 'WBNN', 'WBNN', 'CNN', 'CNN', 'WBNN', 'CNN'),
+  Source = c('JM', 'HH', 'DS', 'DS', 'JM', 'JM', 'HH'),
+  priority = c('3', '1', '2', '2', '3', '3', '1'),
+  Value = c(10, 10, 20, 30, 40, 50, 60)
+)
+
+# Add a blank column "DECISION"
+df$DECISION <- ""
+
+# Convert dataframe to a list of dataframes 
+original_df_list <- split(df, list(df$Species, df$Variable))
+
+# Create a copy of the original df_list for further filtering
+df_list <-original_df_list
+
+# Create a loop to update "DECISION" based on the specified condition
+for (i in seq_along(df_list)) {
+  priority_values <- df_list[[i]]$priority
+  df_list[[i]]$DECISION[df_list[[i]]$priority > min(priority_values)] <- "WORSE"
+}
+
+# See the updated list of matrices
+df_list
+
+# Combine all rows from df_list into one dataframe excluding rows with DECISION:WORSE
+best_df <- do.call(rbind, df_list)
+best_df <- best_df[best_df$DECISION != "WORSE", ]
+
+# See the updated dataframe
+best_df
+## TESTING ZONE END
+
+
 # library(myTAI)
 # 
 # # Initialize an empty data frame to store results
