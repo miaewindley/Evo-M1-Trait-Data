@@ -706,14 +706,33 @@ stacked_long_dataframe <- stacked_long_dataframe[!is.na(stacked_long_dataframe$V
 # make Values numeric in stacked_long_dataframe
 stacked_long_dataframe$Value <- as.numeric(stacked_long_dataframe$Value)
 
-# # Calculate averages and create the new long dataframe
+# Calculate averages and create the new long dataframe
 best_data_long <- stacked_long_dataframe %>%
   group_by(Species, Variable) %>%
   summarize(Value = mean(Value),
             Source = paste0(unique(Source), collapse = "_"))
+write_csv(best_data_long, "best_data_long.csv")
 
 # Convert to wide dataframe
 best_data_wide <- arrange(pivot_wider(best_data_long, id_cols = Species, names_from = Variable, values_from = Value), Species)
 # keep a record of sources for the datapoints
 source_best_data_wide <- arrange(pivot_wider(best_data_long, id_cols = Species, names_from = Variable, values_from = Source), Species)
 write_csv(best_data_wide, "best_data_wide.csv")
+
+# For Project M1 Evo: Export WholeBrain and CerebralCortex N.n., I.mg and Source
+Br_Cx_Nn_On_Img_long <- filter(best_data_long, Variable %in% c("WholeBrain_N.n", "WholeBrain_O.n", "WholeBrain_I.p.mg", "CerebralCortex_N.n", "CerebralCortex_O.n", "CerebralCortex_I.p.mg"))
+# Pivot for variables and values
+Br_Cx_Nn_On_Img_values <- pivot_wider(Br_Cx_Nn_On_Img_long, id_cols = Species, names_from = Variable, values_from = Value)
+# Pivot for sources
+Br_Cx_Nn_On_Img_sources <- pivot_wider(Br_Cx_Nn_On_Img_long, id_cols = Species, names_from = Variable, values_from = Source)
+# Rename source columns
+colnames(Br_Cx_Nn_On_Img_sources)[-1] <- paste0(colnames(Br_Cx_Nn_On_Img_sources)[-1], "_Source")
+# Combine the two datasets based on the Species column and Arrange by Species
+Br_Cx_Nn_On_Img <- arrange(bind_cols(Br_Cx_Nn_On_Img_values, Br_Cx_Nn_On_Img_sources[,-1]), Species)
+# Rename columns for values
+colnames(Br_Cx_Nn_On_Img) <- gsub("_N.n", "_Neuron.n", colnames(Br_Cx_Nn_On_Img))
+colnames(Br_Cx_Nn_On_Img) <- gsub("_O.n", "_OtherCells.n", colnames(Br_Cx_Nn_On_Img))
+colnames(Br_Cx_Nn_On_Img) <- gsub("_I.p.mg", "_Microglia.per.mg", colnames(Br_Cx_Nn_On_Img))
+write_csv(Br_Cx_Nn_On_Img, "brain_cortex_neurons_other_microglia.csv")
+
+
