@@ -152,78 +152,11 @@ for (i in seq_along(item_name)) {
   cellcounts_data_list$HerculanoHouzel_etal_2020_TABLE2 <- df
 }
 
-# 3.5 Calculate microglia per cells (I/C) data which was not reported in Dos Santos et al. 2020 Table 1 but must have been their primary data
-# Formula: _I.p.C = _I.n/_C.n
-  
-  # Extract the specific dataframe
-  df <- cellcounts_data_list$DosSantos_etal_2020_Table1
-  # Extract unique prefixes from column names
-  prefixes <- unique(sub("_.*", "", colnames(df)))
-  # Add an initial step to create the _I.p.C column if the condition is satisfied
-  for (prefix in prefixes) {
-    In_column <- paste0(prefix, "_I.n")
-    Cn_column <- paste0(prefix, "_C.n")
-    IpC_column <- paste0(prefix, "_I.p.C")
-    if (In_column %in% colnames(df) && Cn_column %in% colnames(df) && 
-        !any(is.na(df[[In_column]])) && !any(is.na(df[[Cn_column]]))) {
-      df[[IpC_column]] <- df[[In_column]] / df[[Cn_column]]
-    }
-  }
-  # Loop through each unique prefix to handle remaining rows
-  for (prefix in prefixes) {
-    # Define column names
-    In_column <- paste0(prefix, "_I.n")
-    Cn_column <- paste0(prefix, "_C.n")
-    IpC_column <- paste0(prefix, "_I.p.C")
-    # Check if both In_column and Cn_column exist
-    if (In_column %in% colnames(df) && Cn_column %in% colnames(df)) {
-      # Check for NA values in both columns
-      if (!any(is.na(df[[In_column]])) && !any(is.na(df[[Cn_column]]))) {
-        # Skip rows with NA values and already calculated _I.p.C values
-        next
-      }
-      # Calculate _I.p.C based on the given formula
-      df[[IpC_column]] <- df[[In_column]] / df[[Cn_column]]
-    }
-  }
-  # Update the dataframe in the list
-  cellcounts_data_list$DosSantos_etal_2020_Table1 <- df
-  cellcounts_data_list$DosSantos_etal_2020_Table1$WholeBrain_I.p.C
-
-# Note: there is a big problem with Tragelaphus strepsiceros cell counts in Dos Santos et al., 2020. Do not use it.
-    
-# 3.6 Calculate Cell number where not already available (it was only reported in Dos Santos et al., 2020)
-# Formula _C.n = _N.n + _O.n
-  
-  # Extract unique prefixes from column names
-  prefixes <- unique(sub("_.*", "", colnames(df)))
-  # Loop through each dataframe in the list
-  for (i in seq_along(cellcounts_data_list)) {
-    # Extract the dataframe
-    df <- cellcounts_data_list[[i]]
-    # Loop through each unique prefix
-    for (prefix in prefixes) {
-      # Define column names
-      Nn_column <- paste0(prefix, "_N.n")
-      On_column <- paste0(prefix, "_O.n")
-      Cn_column <- paste0(prefix, "_C.n")
-      # Check if both _N.n and _O.n columns exist and there are no NA values
-      if (Nn_column %in% colnames(df) && On_column %in% colnames(df) && 
-          !any(is.na(df[[Nn_column]])) && !any(is.na(df[[On_column]]))) {
-        # Calculate _C.n based on the given formula
-        df[[Cn_column]] <- df[[Nn_column]] + df[[On_column]]
-        # Update the dataframe in the list
-        cellcounts_data_list[[i]] <- df
-      }
-    }
-  }
-
-# Note: there is a big problem with Tragelaphus strepsiceros cell counts in Dos Santos et al., 2020. Do not use it.
-    
 ## 4 Rename Species using NCBI Taxonomy as the standard
 
 # 4.1 Compare full source_species_list to NCBI Taxonomy ID 
 library(taxizedb)
+
 # Get a full list of species in alphabetical order to examine
 source_species_list <- character(0)
 for (i in seq_along(cellcounts_data_list)) {
@@ -365,192 +298,64 @@ write.csv(cellcounts_unfiltered, file = "cellcounts_unfiltered.csv", row.names =
 # Create a copy of cellcounts_data_list to filter
 filtered_cellcounts_data_list <- lapply(cellcounts_data_list, data.frame)
 
-# Extract suffixes from DosSantos_etal_2020_Table1 to determine secondary data variables to exclude.
-suffixes <- unique(sub(".*_", "", grep(".*_.*", colnames(cellcounts_data_list$DosSantos_etal_2020_Table1), value = TRUE)))
-# Ignore '_I.p.C' and '_S.n' which estimates the primary data and Species_Source which is not really a variable.
-suffixes <- suffixes[!(suffixes %in% c("I.p.C", "Source", "S.n"))]
-paste0("_",suffixes, collapse = "|") # Manually change the double quotes for single in the script
-
-# Initialize metadata_flags for each dataframe with names from filtered_cellcounts_data_list
+## 5.1 Flag problematic data for removal
+# Initialize metadata_flags for each dataframe with a common suffix
 metadata_flags <- list()
-for (df_name in names(filtered_cellcounts_data_list)) {
-  metadata_flags[[df_name]] <- data.frame(
+
+for (df in item_name) {
+  metadata_flags[[df]] <- data.frame(
     Flag_Description = c(NA),
-    Flag_Condition = c(NA),
-    Condition_Type = c(NA)
+    Flag_Condition = c(NA)
   )
 }
 
-# Modify metadata_flags DosSantos_etal_2020_Table1 to include multiple rows for flag conditions and descriptions
-metadata_flags$DosSantos_etal_2020_Table1 <- list(
-  Flag_Condition = c(
-    "filtered_cellcounts_data_list[[df_name]]$SPECIES == 'Tragelaphus strepsiceros'",
-    "grepl('_C.n|_I.n|_I.p.mg|_I.p.N|_N.n|_N.p.mg|_n.S|_Mass.g', colnames(filtered_cellcounts_data_list[[df_name]]))"
-  ),
-  Flag_Description = c(
-    "Omit Row SPECIES == Tragelaphus strepsiceros due to impossible numbers",
-    "Omit secondary data columns due to some typos/conflicts with primary sources, and illogical values."
-  ),
-  Condition_Type = c(
-    "row",
-    "column"
-  )
-)
+# Flag data in any relevant datasets
 
+# Extract suffixes from DosSantos_etal_2020_Table1 to determine secondary data variables to exclude.
+suffixes <- unique(sub(".*_", "", grep(".*_.*", colnames(cellcounts_data_list$DosSantos_etal_2020_Table1), value = TRUE)))
+# Ignore '_I.p.mg' and '_S.n' which are primary and Species_Source which is not really a variable.
+suffixes <- suffixes[!(suffixes %in% c("I.p.mg", "Source", "S.n"))]
+paste0("_",suffixes, collapse = "|") # Manually change the double quotes for single in the script
+
+# Define the changes for metadata_flags$DosSantos_etal_2020_Table1_metadata_flags
+metadata_flags$DosSantos_etal_2020_Table1$Flag_Condition <- c("grepl('_C.n|_I.n|_I.p.N|_N.n|_N.p.mg|_n.S|_Mass.g', colnames(filtered_cellcounts_data_list[[df_name]]))")
+metadata_flags$DosSantos_etal_2020_Table1$Flag_Description <- c("Omit secondary data due to some typos/conflicts with primary sources. Keep only I.mg.")
+
+# Loop through metadata_flags to save each dataframe as a separate CSV file
+for (df_name in names(metadata_flags)) {
+  # Save the dataframe as a CSV file
+  write.csv(metadata_flags[[df_name]], file = paste0(df_name, "_metadata_flags.csv"), row.names = FALSE)
+}
+
+# If metadata_flags dataframe Flag_Condition is a string, treat it as R script to identify a set of values in the corresponding dataframe in filtered_cellcounts_data_list, then delete that set
 # Loop through every dataframe in filtered_cellcounts_data_list
 for (df_name in names(filtered_cellcounts_data_list)) {
   # Find the corresponding metadata_flags dataframe
   flag_df <- metadata_flags[[df_name]]
-  # Loop through each Flag_Condition in the flag_df
-  for (i in seq_along(flag_df$Flag_Condition)) {  
-    # Extract Flag_Condition, Flag_Description, and Condition_Type
-    condition <- flag_df$Flag_Condition[i]
-    description <- flag_df$Flag_Description[i]
-    condition_type <- flag_df$Condition_Type[i]
-    # If Flag_Condition is a string, use it as an R script
-    if (is.character(condition)) {
-      # Assuming your R script is a valid condition
-      subset_condition <- eval(parse(text = condition), envir = filtered_cellcounts_data_list[[df_name]])
-      # Determine if columns, rows or values should be excluded based on Condition_Type
-      if (length(subset_condition) > 0) {
-        if (condition_type == "column") {
-          if (is.logical(subset_condition)) {
-            if (any(subset_condition)) {
-              # Exclude matching columns
-              filtered_cellcounts_data_list[[df_name]] <- filtered_cellcounts_data_list[[df_name]][, !subset_condition]
-            } else {}
-          } else {}
-        } else if (condition_type == "row") {
-          if (is.logical(subset_condition)) {
-            if (any(subset_condition)) {
-              # Exclude matching rows
-              filtered_cellcounts_data_list[[df_name]] <- filtered_cellcounts_data_list[[df_name]][!subset_condition, ]
-            } else {}
-          } else {}
-        } else if (condition_type == "value") {
-          if (any(subset_condition)) {
-            # Make matching values NA to exclude them
-            indices <- filtered_cellcounts_data_list[[df_name]] == subset_condition
-            filtered_cellcounts_data_list[[df_name]][indices] <- NA
-          } else {}
-        } else {}
-      } else {}
+  
+  # If Flag_Condition is a string, use it as an R script
+  if (is.character(flag_df$Flag_Condition)) {
+    
+    # Assuming your R script is a valid condition
+    delete_datapoints <- flag_df$Flag_Condition
+    
+    # Designate a set of datapoints in the dataframe and delete them
+    subset_condition <- eval(parse(text = delete_datapoints))
+    matching_indices <- which(subset_condition)
+    
+    # Determine if rows or columns should be excluded
+    if (length(matching_indices) > 1) {
+      # Exclude matching columns from the copy
+      filtered_cellcounts_data_list[[df_name]] <- filtered_cellcounts_data_list[[df_name]][, -matching_indices]
+    } else if (length(matching_indices) == 1) {
+      # Exclude matching rows from the copy
+      filtered_cellcounts_data_list[[df_name]] <- filtered_cellcounts_data_list[[df_name]][-matching_indices, ]
+    } else {
+      # Handle the case when no indices are found (no exclusions needed)
+      cat("No matching indices found for exclusion in", df_name, "\n")
     }
   }
 }
-
-# ## 5.1 Flag problematic data for removal
-# # Initialize metadata_flags for each dataframe with a common suffix
-# metadata_flags <- list()
-# 
-# for (df in item_name) {
-#   metadata_flags[[df]] <- data.frame(
-#     Flag_Description = c(NA),
-#     Flag_Condition = c(NA)
-#   )
-# }
-# 
-# # Flag data in any relevant datasets
-# 
-#
-# # Modify metadata_flags DosSantos_etal_2020_Table1 to include multiple rows for flag conditions and descriptions
-# metadata_flags$DosSantos_etal_2020_Table1 <- list(
-#   Flag_Condition = c(
-#     "grepl('_C.n', colnames(filtered_cellcounts_data_list[[df_name]]))",
-#     "grepl('_I.n', colnames(filtered_cellcounts_data_list[[df_name]]))",
-#     "grepl('_I.p.mg', colnames(filtered_cellcounts_data_list[[df_name]]))",
-#     "grepl('_I.p.N', colnames(filtered_cellcounts_data_list[[df_name]]))",
-#     "grepl('_N.n', colnames(filtered_cellcounts_data_list[[df_name]]))",
-#     "grepl('_N.p.mg', colnames(filtered_cellcounts_data_list[[df_name]]))",
-#     "grepl('_n.S', colnames(filtered_cellcounts_data_list[[df_name]]))",
-#     "grepl('_Mass.g', colnames(filtered_cellcounts_data_list[[df_name]]))"
-#   ),
-#   Flag_Description = c(
-#     "Omit secondary data due to _C.n",
-#     "Omit secondary data due to _I.n",
-#     "Omit secondary data due to _I.p.mg",
-#     "Omit secondary data due to _I.p.N",
-#     "Omit secondary data due to _N.n",
-#     "Omit secondary data due to _N.p.mg",
-#     "Omit secondary data due to _n.S",
-#     "Omit secondary data due to _Mass.g"
-#   )
-# )
-# 
-# # # Define the changes for metadata_flags$DosSantos_etal_2020_Table1_metadata_flags
-# # metadata_flags$DosSantos_etal_2020_Table1$Flag_Condition <- c("grepl('_C.n|_I.n|_I.p.mg|_I.p.N|_N.n|_N.p.mg|_n.S|_Mass.g', colnames(filtered_cellcounts_data_list[[df_name]]))")
-# # metadata_flags$DosSantos_etal_2020_Table1$Flag_Description <- c("Omit secondary data due to some typos/conflicts with primary sources, and illogical values.")
-# 
-# # Loop through metadata_flags to save each dataframe as a separate CSV file
-# for (df_name in names(metadata_flags)) {
-#   # Save the dataframe as a CSV file
-#   write.csv(metadata_flags[[df_name]], file = paste0(df_name, "_metadata_flags.csv"), row.names = FALSE)
-# }
-# 
-# # Loop through every dataframe in filtered_cellcounts_data_list
-# for (df_name in names(filtered_cellcounts_data_list)) {
-#   # Find the corresponding metadata_flags dataframe
-#   flag_df <- metadata_flags[[df_name]]
-#   
-#   # Check if flag_df is not empty
-#   if (!is.null(flag_df) && nrow(flag_df) > 0) {
-#     # Loop through each row in flag_df
-#     for (row_index in 1:nrow(flag_df)) {
-#       # Extract Flag_Condition and Flag_Description for this row
-#       delete_datapoints <- flag_df$Flag_Condition[row_index]
-#       flag_description <- flag_df$Flag_Description[row_index]
-#       
-#       # If Flag_Condition is a string, use it as an R script
-#       if (is.character(delete_datapoints)) {
-#         # Evaluate the condition
-#         subset_condition <- eval(parse(text = delete_datapoints))
-#         
-#         # Determine if rows or columns should be excluded
-#         if (length(subset_condition) > 0) {
-#           if (length(subset_condition) > 1) {
-#             # Exclude matching columns from the copy
-#             filtered_cellcounts_data_list[[df_name]] <- filtered_cellcounts_data_list[[df_name]][, -subset_condition]
-#           } else {
-#             # Exclude matching rows from the copy
-#             filtered_cellcounts_data_list[[df_name]] <- filtered_cellcounts_data_list[[df_name]][-subset_condition, ]
-#           }
-#         }
-#       }
-#     }
-#   } else {
-#     cat("No flag conditions found for", df_name, "\n")
-#   }
-# }
-#
-# # If metadata_flags dataframe Flag_Condition is a string, treat it as R script to identify a set of values in the corresponding dataframe in filtered_cellcounts_data_list, then delete that set
-# # Loop through every dataframe in filtered_cellcounts_data_list
-# for (df_name in names(filtered_cellcounts_data_list)) {
-#   # Find the corresponding metadata_flags dataframe
-#   flag_df <- metadata_flags[[df_name]]
-# 
-#   # If Flag_Condition is a string, use it as an R script
-#   if (is.character(flag_df$Flag_Condition)) {
-# 
-#     # Assuming your R script is a valid condition
-#     delete_datapoints <- flag_df$Flag_Condition
-# 
-#     # Designate a set of datapoints in the dataframe and delete them
-#     subset_condition <- eval(parse(text = delete_datapoints))
-#     matching_indices <- which(subset_condition)
-# 
-#     # Determine if rows or columns should be excluded
-#     if (length(matching_indices) > 1) {
-#       # Exclude matching columns from the copy
-#       filtered_cellcounts_data_list[[df_name]] <- filtered_cellcounts_data_list[[df_name]][, -matching_indices]
-#     } else if (length(matching_indices) == 1) {
-#       # Exclude matching rows from the copy
-#       filtered_cellcounts_data_list[[df_name]] <- filtered_cellcounts_data_list[[df_name]][-matching_indices, ]
-#     } else {
-#       # Handle the case when no indices are found (no exclusions needed)
-#       cat("No matching indices found for exclusion in", df_name, "\n")
-#     }
-#   }
-# }
 
 ## 6 Filter: Annex to Metadata any contingent variables
 

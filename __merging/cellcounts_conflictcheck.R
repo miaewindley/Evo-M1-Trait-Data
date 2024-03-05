@@ -1,3 +1,5 @@
+library(tidyverse)
+library(dplyr)
 ## Check for and address any conflicting datapoints across datasets (if problems found, redo and repeat steps)
 
 # 1 Compare unfiltered datasets 
@@ -66,3 +68,28 @@ comp_df_list_diff_more_than_1_percent
 ## HerculanoHouzel_etal_2015_Table5$WholeBrain_Mass.g for Loxodonta africana matches primary source Herculano-Houzel et al., 2014
 ## HerculanoHouzel_etal_2015_Table2$Cerebellum_N.n for Procavia capensis matches primary source Neves et al., 2014
 ## HerculanoHouzel_etal_2015_Table1$CerebralCortex_N.n for Macaca fascicularis matches primary source Gabi et al., 2010 (where it is rounded)
+
+# Load necessary libraries if not already loaded
+# library(dplyr)
+
+#### NOTE: there is a big problem with Tragelaphus strepsiceros cell counts in Dos Santos et al., 2020 .  It's WholeBrain_C.n was removed.
+Tragelaphus_strepsiceros_data <- intermediate_data %>%
+  filter(Species == "Tragelaphus strepsiceros",
+         startsWith(Source, "HerculanoHouzel_etal_2015") | Source %in% c("DosSantos_etal_2020_Table1", "HerculanoHouzel_etal_2015_Table5"))
+# Keep only rows that are duplicated based on the "Variable" column
+Tragelaphus_strepsiceros_data <- Tragelaphus_strepsiceros_data %>%
+  filter(duplicated(Variable) | duplicated(Variable, fromLast = TRUE))
+# Keep only rows that differ
+Tragelaphus_strepsiceros_data <- Tragelaphus_strepsiceros_data %>%
+  group_by(Variable) %>%
+  filter(n_distinct(Value) > 1)
+# Calculate percent difference
+Tragelaphus_strepsiceros_data <- Tragelaphus_strepsiceros_data %>%
+  mutate(Value = as.numeric(Value)) %>%
+  filter(duplicated(Variable) | duplicated(Variable, fromLast = TRUE)) %>%
+  group_by(Variable) %>%
+  filter(n_distinct(Value) > 1) %>%
+  summarise(percent_difference = format(((max(Value) - min(Value)) / ((max(Value) + min(Value)) / 2)) * 100, scientific = FALSE))
+Tragelaphus_strepsiceros_data
+
+
