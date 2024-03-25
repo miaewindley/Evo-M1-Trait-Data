@@ -10,6 +10,7 @@ library(readxl)
 
 # List of item names
 item_name <- c(
+  "Burish_etal_2010_Table1",
   "DosSantos_etal_2017_TableS1",
   "DosSantos_etal_2020_Table1",
   "HerculanoHouzel_etal_2015_Table1",
@@ -204,6 +205,51 @@ fillStandardizedTerm <- function(merged_terms_combined_key, DosSantos_etal_2020_
 }
 # Updated variable names
 merged_terms_combined_key <- fillStandardizedTerm(merged_terms_combined_key, DosSantos_etal_2020_definitions)
+
+
+## Burish_etal_2010_Table1
+# Match Original_Term from Burish_etal_2010* tables to Standardized_Term (or provide new one if not available)
+# Define the mapping rules for existing terms and (if available) Standardized Terms. Many of these are irregular so done for all terms.
+term_mapping <- c("Species" = "Species",
+                    "n" = "SpinalCord_n",
+                    "MSC" = "SpinalCord_Mass.g",
+                    "LSC" = "SpinalCord_Length.mm",
+                    "%NSC" = "SpinalCord_p.C.N",
+                    "NSC" = "SpinalCord_N.n",
+                    "OSC" = "SpinalCord_O.n",
+                    "DN" = "SpinalCord_N.p.mg",
+                    "DO" = "SpinalCord_O.p.mg",
+                    "MBD" = "Body_Mass.g",
+                    "MSC%\nMBD" = "SpinalCord_p.C.Body.mass",
+                    "MBR" = "Brain_Mass.g",
+                    "MSC%\nMCNS" = "SpinalCord_p.C.CNS.mass",
+                    "NBR" = "Brain_N.n",
+                    "NSC%\nNCNS" = "SpinalCord_p.C.CNS.neurons",
+                    "MSC_SD" = "SpinalCord_Mass.g_SD",
+                    "LSC_SD" = "SpinalCord_Length.mm_SD",
+                    "%NSC_SD" = "SpinalCord_p.C.N_SD",
+                    "NSC_SD" = "SpinalCord_N.n_SD",
+                    "OSC_SD" = "SpinalCord_O.n_SD",
+                    "DN_SD" = "SpinalCord_N.p.mg_SD",
+                    "DO_SD" = "SpinalCord_O.p.mg_SD",
+                    "MBD_SD" = "Body_Mass.g_SD"
+                  )
+
+# Filter rows where Reference starts with "Burish_etal_2010"
+filtered_rows <- merged_terms_combined_key[grep("^Burish_etal_2010", merged_terms_combined_key$Reference), ]
+# Loop through rows and apply the mapping
+for (i in 1:nrow(filtered_rows)) {
+  original_term <- filtered_rows$Original_Term[i]
+  # Check if the original term is in the mapping
+  if (original_term %in% names(term_mapping)) {
+    # Update Standardized_Term based on the mapping
+    filtered_rows$Standardized_Term[i] <- term_mapping[original_term]
+  }
+}
+merged_terms_combined_key[grep("^Burish_etal_2010", merged_terms_combined_key$Reference), ] <- filtered_rows # Update the original dataframe with the modified rows
+# Update Standardized_term to "Species" for rows where Original_term is "Species" or "Species name" and Standardized_term is NA
+merged_terms_combined_key$Standardized_Term <- ifelse(merged_terms_combined_key$Original_Term %in% c("Species", "Species name") & is.na(merged_terms_combined_key$Standardized_Term), "Species", merged_terms_combined_key$Standardized_Term)
+
 
 # Tidy up Standardized Term list
 # Delete unnecessary columns: Standard_old, DosSantos2017_old, JardimMessender2017_old

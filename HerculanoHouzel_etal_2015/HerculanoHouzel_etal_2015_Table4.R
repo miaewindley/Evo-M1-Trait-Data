@@ -1,10 +1,11 @@
 ## 1. SOURCE
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2015")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
 
 # Table 4
 ## 1. Read direct from xl
 library(readxl)
-tabledirectxl <- read_excel("HerculanoHouzel_etal_2015_Table4_snapshot.xlsx")
+folder_path <- "./HerculanoHouzel_etal_2015/"
+tabledirectxl <- read_excel(paste0(folder_path,"HerculanoHouzel_etal_2015_Table4_snapshot.xlsx"))
 
 ## 2. Check Table name
 # Assuming the first column header is "Table 4. Olfactory bulb"
@@ -70,12 +71,12 @@ item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$p
 
 # Get Item encoded
 library(readxl) 
-filecodes <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx", sheet = "Sheet1")
+filecodes <- read_excel("./__ReadMe.xlsx", sheet = "Sheet1")
 item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
 
 # Save dataframe to a CSV file
-write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
+write.csv(final.dataframe, file = paste0(folder_path, item_name, ".csv"), row.names = FALSE)
 
 # Save dataframe to a TSV file in the online database
-tsv_file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/"
+tsv_file_path <- "./__Public/comparative-data/"
 write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)

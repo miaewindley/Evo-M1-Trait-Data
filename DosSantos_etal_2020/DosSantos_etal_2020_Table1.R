@@ -1,5 +1,6 @@
 ## 1. SOURCE
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DosSantos_etal_2020")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
+folder_path <- "./DosSantos_etal_2020/"
 
 # Load the tabulizer library and rJava
 library(rJava)
@@ -66,7 +67,7 @@ combined_df[155,]=trimws(combined_df[155,])
 combined_df$Structure[combined_df$Structure == "P1M"] <- "P+M"
 
 # Save snapshot as a CSV file
-write.csv(combined_df, file = "DosSantos_etal_2020_Table1_snapshot.csv", row.names = FALSE)
+write.csv(combined_df, paste0(folder_path, file = "DosSantos_etal_2020_Table1_snapshot.csv"), row.names = FALSE)
 
 ## 3. MAKE DATA READABLE
 # Assuming combined_df is your data frame
@@ -108,7 +109,7 @@ result_df <- combined_df %>%
 # Set the scipen option to a high value to turn off scientific notation
 options(scipen = 999)
 
-## 4. SAVE
+## 4. Save
 
 # Finalize dataframe (UPDATE!!!)
 final.dataframe <- result_df
@@ -119,13 +120,13 @@ item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$p
 
 # Get Item encoded
 library(readxl) 
-filecodes <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx", sheet = "Sheet1")
+filecodes <- read_excel("./__ReadMe.xlsx", sheet = "Sheet1")
 item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
 
 # Save dataframe to a CSV file
-write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
+write.csv(final.dataframe, file = paste0(folder_path, item_name, ".csv"), row.names = FALSE)
 
 # Save dataframe to a TSV file in the online database
-tsv_file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/"
+tsv_file_path <- "./__Public/comparative-data/"
 write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)
 

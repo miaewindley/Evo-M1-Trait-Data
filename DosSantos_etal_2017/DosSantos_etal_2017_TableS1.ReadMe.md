@@ -1,5 +1,5 @@
 Source
-1. Auto-download from link
+1. Auto-download doc from link
 https://ndownloader.figstatic.com/files/7428211
 2. Open 452856_sm10.doc in MS Word (double click it)
 3. Save as Plain Text (.txt)
@@ -9,9 +9,6 @@ Fixed formatting
 
 --> Corrections
 Correct error from erratum
-
---> Variables
-Spell out variable abbreviations
 
 --> Data readable
 Make data readable
