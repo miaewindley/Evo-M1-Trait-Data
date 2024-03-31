@@ -97,7 +97,7 @@ sum_by_region_list <- lapply(modified_df_list, calculate_sum_by_region)
 # print(total_region_count)
 
 # # Read all Rachael xlsx files into R
-# directory <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_ProjectKaskan__Unpublished/Rachael_Robinson_dissertation_file_copies/Brains data for animals"
+# directory <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____Unpublished__ProjectKaskan/Rachael_Robinson_dissertation_file_copies/Brains data for animals"
 # excel_files <- list.files(directory, pattern = "\\.xlsx$", full.names = TRUE)
 # df_list <- lapply(excel_files, read_excel)
 # names(df_list) <- basename(excel_files)

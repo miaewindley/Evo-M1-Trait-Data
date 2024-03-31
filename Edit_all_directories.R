@@ -31,7 +31,6 @@ gsub_dir(ext = "R", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Specie
 
 ## PAST STEPS TAKEN
 # Update directory name Evo-M1-Trait-Data
-
 library(xfun)
 getwd()
 # Update directory name in all R files in the directory and its subdirectories
@@ -39,13 +38,23 @@ gsub_dir(ext = "R", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Specie
 
 
 # Update data pipeline step name in all R files in the directory and its subdirectories
-
 library(xfun)
-
 gsub_dir(ext = "R", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "Primary or Equivalent", replacement = "Snapshot")
 gsub_dir(ext = "R", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "primary_or_equivalent", replacement = "snapshot")
 # Update data pipeline step name in all md in the directory and its subdirectories
 gsub_dir(ext = "md", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "Primary or Equivalent", replacement = "Snapshot")
 gsub_dir(ext = "md", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "primary_or_equivalent", replacement = "snapshot")
 
+
+# Update directory names ____Unpublished__ProjectKaskan and ____EvoM1_TraitTable
+library(xfun)
+getwd()
+# Update directory name in all R, Rmd and md files in the directory and its subdirectories
+gsub_dir(ext = "R", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "_ProjectKaskan__Unpublished", replacement = "____Unpublished__ProjectKaskan")
+gsub_dir(ext = "Rmd", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "_ProjectKaskan__Unpublished", replacement = "____Unpublished__ProjectKaskan")
+gsub_dir(ext = "md", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "_ProjectKaskan__Unpublished", replacement = "____Unpublished__ProjectKaskan")
+
+gsub_dir(ext = "R", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "__EvoM1_TraitTable", replacement = "____EvoM1_TraitTable")
+gsub_dir(ext = "Rmd", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "__EvoM1_TraitTable", replacement = "____EvoM1_TraitTable")
+gsub_dir(ext = "md", dir = "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data", recursive = TRUE, pattern = "__EvoM1_TraitTable", replacement = "____EvoM1_TraitTable")
 

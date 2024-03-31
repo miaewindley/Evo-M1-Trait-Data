@@ -1,5 +1,5 @@
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
-folder_path <- "./__EvoM1_TraitTable/"
+folder_path <- "./______EvoM1_TraitTable/"
 
 library(tidyverse)
 library(writexl)

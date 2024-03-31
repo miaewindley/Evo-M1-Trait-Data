@@ -1,5 +1,5 @@
 ```{r}
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_ProjectKaskan__Unpublished")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____Unpublished__ProjectKaskan")
 ```
 
 ```{r}
@@ -12,15 +12,15 @@ library(purrr)
 # 1 Load csv final data used in dissertations
 ```{r}
 # Read Jack's means
-jack <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_ProjectKaskan__Unpublished/Jack_Gaston_dissertation_file_copies/Jack Gaston Raw Cortical Data.xlsx", sheet = "means")
+jack <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____Unpublished__ProjectKaskan/Jack_Gaston_dissertation_file_copies/Jack Gaston Raw Cortical Data.xlsx", sheet = "means")
 jack <- as.data.frame(jack)
 
 # Read Rachael's means
-rachael <- read_csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_ProjectKaskan__Unpublished/Rachael_Robinson_dissertation_file_copies/Rachael_data.csv")
+rachael <- read_csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____Unpublished__ProjectKaskan/Rachael_Robinson_dissertation_file_copies/Rachael_data.csv")
 rachael <- as.data.frame(rachael)
 
 # Read Summer's means
-summer <- read_csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_ProjectKaskan__Unpublished/Summer_Alznati_dissertation_file_copies/data_analysis.csv")
+summer <- read_csv("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____Unpublished__ProjectKaskan/Summer_Alznati_dissertation_file_copies/data_analysis.csv")
 summer <- as.data.frame(summer)
 ```
 
@@ -83,7 +83,7 @@ summer_compare <- select(summer_noneo, -MST...28, -MST...8, -Visual_Acuity, -Sou
 # 3.2 Recompile from all Rachael's excel files, and compare values as a check
 ```{r}
 # Read all the Sheets in the Excel files into a list of data frames
-directory <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_ProjectKaskan__Unpublished/Rachael_Robinson_dissertation_file_copies/Brains data for animals"
+directory <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____Unpublished__ProjectKaskan/Rachael_Robinson_dissertation_file_copies/Brains data for animals"
 excel_files <- list.files(directory, pattern = "\\.xlsx$", full.names = TRUE)
 # Function to import each sheet of an Excel file into a separate data frame
 import_excel_sheets <- function(file) {
