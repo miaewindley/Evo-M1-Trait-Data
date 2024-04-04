@@ -9,5 +9,5 @@ list.files("./__Public/comparative-data")
 
 # Get and write the list of files to Excel
 write.xlsx(data.frame(Files = list.files("./__Public/comparative-data")), 
-           "./file_list.xlsx", sheetName = "FileList", colNames = TRUE)
+           "./__file_list.xlsx", sheetName = "FileList", colNames = TRUE)
 
