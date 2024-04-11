@@ -12,7 +12,9 @@ Iwaniuk_etal_2001_Table4_snapshot.xlsx
 
 Updated names where shorthand spices names were use.
 
-Added family name to all rows
+Added family name to all rows.
+
+Corrected spelling error in species name. 
 
 Iwaniuk_etal_2001_Table4.csv <-- USE THIS
 
