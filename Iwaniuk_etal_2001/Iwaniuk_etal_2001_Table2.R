@@ -1,5 +1,6 @@
 ##1 Source
 setwd("C:/Users/MILONI/OneDrive - University of Bath/Research Schemes/Allen Institue/Evo-M1-Trait-Data/")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
 
 # Table 2
 ## 1. Read direct from xl
@@ -62,5 +63,3 @@ write.csv(final.dataframe, file = paste0(folder_path, item_name, ".csv"), row.na
 # Save dataframe to a TSV file in the online database
 tsv_file_path <- "./__Public/comparative-data/"
 write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)
-
-##To Do - Delete Extra Rows, Fix the Header - combine header and subheader, make sure everything is numberical 

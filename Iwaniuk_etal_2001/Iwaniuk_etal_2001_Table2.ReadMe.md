@@ -18,7 +18,7 @@ Renamed headers - added prefix play scores to Complexity index, Wrestling, Play 
 
 Converted columns - Brain Size, Play scores_Complexity index, Play scores_Wrestling, Play scores_Play fighting, Play scores_Locomotor play, Play scores_Total play, from categorical to numeric
 
-Updated names where shorthand spices names were use.
+Updated names where shorthand species names were use.
 
 Turned off scientific notation
 

@@ -10,9 +10,9 @@ Iwaniuk_etal_2001_Table3_snapshot.xlsx
 
 --> Data readable 
 
-Added Family names where applicable
+Copied Family names to all rows
 
-Added 2 columns - Play frequency Minimum and Maximum (for 2/3C value)
+Added 2 columns - Play frequency Minimum and Maximum (one each to accommodate the  2/3C value)
 
 Convert columns Play frequency Minimum and Maximum from character to numerical
 
