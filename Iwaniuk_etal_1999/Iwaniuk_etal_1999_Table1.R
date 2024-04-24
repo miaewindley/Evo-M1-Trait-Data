@@ -1,6 +1,8 @@
 ## 1. Source
 #setwd("C:/Users/MILONI/OneDrive - University of Bath/Research Schemes/Allen Institue/Evo-M1-Trait-Data/")
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
+#setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
+##B's wd
+setwd("C:/Users/Rigby/OneDrive - University of Bath/Evo-M1-Trait-Data/Iwaniuk_etal_1999")
 
 ## 2. Table 2
 #1. Read direct from xl
