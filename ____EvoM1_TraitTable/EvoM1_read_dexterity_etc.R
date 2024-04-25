@@ -1,4 +1,4 @@
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/______EvoM1_TraitTable")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable")
 # Heffner 1975 dexterity and corticospinal tract for EvoM1
 ## Need to add other Heffner paper
 
