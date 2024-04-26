@@ -1,5 +1,5 @@
 ## 1. Source
-#setwd("C:/Users/MILONI/OneDrive - University of Bath/Research Schemes/Allen Institue/Evo-M1-Trait-Data/")
+#setwd("C:/Users/MILONI/OneDrive - University of Bath/Research Schemes/Allen Institue/Evo-M1-Trait-Data/") #is this a typo? #check if " Institue" versus is a typo and/or throwing off the code for writing to?
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
 #setwd("C:/Users/Rigby/OneDrive - University of Bath/Evo-M1-Trait-Data/")
 

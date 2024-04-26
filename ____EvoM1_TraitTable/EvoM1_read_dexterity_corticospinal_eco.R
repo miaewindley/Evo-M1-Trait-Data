@@ -1,6 +1,7 @@
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/____EvoM1_TraitTable")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
+folder_path <- "./____EvoM1_TraitTable/"
 
-# Iwaniuk 1975 dexterity and corticospinal tract for EvoM1
+# Iwaniuk 1975 dexterity, corticospinal tract, and socioecological / behavioural data for EvoM1
 
 ## 1 Get data for cell count analyses
 library(tidyverse)
@@ -16,12 +17,12 @@ item_name <- c(
 data_list <- list()
 
 # Read Excel file with item name and item encoded TSVs
-filecodes <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx", sheet = "Sheet1")
+filecodes <- read_excel("./__ReadMe.xlsx", sheet = "Sheet1")
 
 # Loop through item names, read tables from TSVs, and store as dataframes in the list
 for (i in seq_along(item_name)) {
   item_encoded <- filecodes$"Item encoded"[match(item_name[i], filecodes$"Item name")]
-  item_data <- read.table(file = paste0("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/", item_encoded, ".tsv"), 
+  item_data <- read.table(file = paste0("./__Public/comparative-data/", item_encoded, ".tsv"), 
                           header = TRUE, stringsAsFactors = FALSE, check.names = FALSE, sep = "\t")
   
   # Store the data frame in the list with the corresponding item name
@@ -30,7 +31,7 @@ for (i in seq_along(item_name)) {
 
 Iwaniuk_etal_1999_Table1 <- data_list$Iwaniuk_etal_1999_Table1
 
-# Add Species names to use based on Genus level match or better
+# Add Species names to use based on Genus level match or better # Copied from Heffner which had more species so some are not relevant here.
 Iwaniuk_etal_1999_Table1$species_sci <- NA 
 Iwaniuk_etal_1999_Table1$species_sci[Iwaniuk_etal_1999_Table1$Species == "Homo sapiens"] <- "Homo sapiens"
 Iwaniuk_etal_1999_Table1$species_sci[Iwaniuk_etal_1999_Table1$Species == "Pan troglodytes"] <- "Pan troglodytes"
@@ -62,4 +63,4 @@ Iwaniuk_etal_1999_Table1$species_sci[Iwaniuk_etal_1999_Table1$Species == "Monode
 Iwaniuk_etal_1999_Table1 <- Iwaniuk_etal_1999_Table1[, c("species_sci", setdiff(names(Iwaniuk_etal_1999_Table1), "species_sci"))]
 
 # Write the dataframe to an Excel file
-write_xlsx(Iwaniuk_etal_1999_Table1, "corticospinaltract_etc.xlsx")
+write_xlsx(Iwaniuk_etal_1999_Table1, paste0(folder_path, "corticospinaltract_etc.xlsx"))
