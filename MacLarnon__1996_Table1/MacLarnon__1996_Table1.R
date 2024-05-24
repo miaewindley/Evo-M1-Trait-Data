@@ -1,21 +1,20 @@
 #1. Source
-setwd("C:/Users/MILONI/OneDrive - University of Bath/Research Schemes/Allen Institue/Evo-M1-Trait-Data/")
+#setwd("C:/Users/MILONI/OneDrive - University of Bath/Research Schemes/Allen Institue/Evo-M1-Trait-Data/")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
+
+## Install and load necessary libraries
+library(dplyr) #Better to load all libraries at the beginning. If they are not installed there wil be an error and they can be installed at the beginning
+library(readxl)
+library(rstudioapi)
 
 #2. Table 1
-
 ## Read direct from xl
-library(readxl)
-folder_path <- "./MacLarnon__1996_Table1/"
-tabledirectxl <- read_excel(paste0(folder_path,"MacLarnon_1996_Table1_snapshot.xlsx"))
+folder_path <- "./MacLarnon__1996_Table1/" #Note there are tow underscores in the file name -- this is because there is a single author.  See __ReadMe.xlsx
+tabledirectxl <- read_excel(paste0(folder_path,"MacLarnon__1996_Table1_snapshot.xlsx"))
 
 ## Create a new "Order" column 
 Order_column <- rep(NA, nrow(tabledirectxl))
 tabledirectxl <- cbind(Order = Order_column, tabledirectxl)
-
-## Install and load necessary libraries
-install.packages("dplyr")
-library(dplyr)
-library(readxl)
 
 ## Remove the rows with order names
 rows_to_delete <- c(1, 23, 29, 36, 41, 50)
@@ -104,11 +103,9 @@ tabledirectxl <- tabledirectxl[1:(nrow(tabledirectxl)-1), ]
 final.dataframe <- tabledirectxl
 
 ## Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
-library(rstudioapi)
 item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path))
 
 ## Get Item encoded
-library(readxl) 
 filecodes <- read_excel("./__ReadMe.xlsx", sheet = "Sheet1")
 item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
 
