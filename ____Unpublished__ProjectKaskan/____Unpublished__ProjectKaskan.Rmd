@@ -49,7 +49,7 @@ comparison_values <- compare_values(rachael, summer_noneo)
 comparison_df <- as.data.frame(comparison_values)
 print(comparison_df)
 ```
-## Conclusion: Rachael and Summer are the same although Summer also has Total neocortex added.
+## Conclusion: Rachael and Summer are the same although Summer also has Total neocortex added. Use Summer
 
 ## 2 Check Summer's work: check the difference between the sum of all areas and Total neocortex
 # remove the last for rows from summer which are not need  "Visual_Acuity"        "Sound_localisation"   "Auditory_acuity_Low"  "Auditory_Acuity_High"
@@ -61,15 +61,17 @@ print(comparison_df)
 summer$Species[!is.na(summer$MST...8)]
 summer$MST...8[summer$Species == "Galago_senegalensis"]
 summer$MST...8[summer$Species == "Otolemur_garnettii"]
+```
 
-# which Species have non NA values for MST...8?
+```{r}
+# which Species have non NA values for MST...28?
 summer$Species[!is.na(summer$MST...28)]
 summer$MST...28[summer$Species == "Aotus_trivirgatus"]
 summer$MST...28[summer$Species == "Macaca_mulatta"]
 ```
 # Conclusion: there is an error in the data. Recompile to figure out if there are any others
 
-# 3 Compare summer to compiled Rachel data
+# 3 Compare Summer to compiled Rachel data
 
 # 3.1 To make comparisons edit summer_noneo by merging MST versions and removing behaviour variables
 ```{r}

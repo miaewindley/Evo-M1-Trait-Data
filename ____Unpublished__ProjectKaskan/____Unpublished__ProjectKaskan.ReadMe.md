@@ -41,3 +41,8 @@ Kaas, J. H., Gharbawie, O., & Stepniewska, I. (2011). The organization and evolu
 
 
 Owl monkey (Aotus trivirgatus)
+
+II. 
+A. Each species row combines data from multiple sources. Thsi has been confirmed by looking at the data in. Sources are not always clear (e.g. figure number copied from old file and not updatetd)
+B. Some sources might not be usable because the schematic is nota. flat map and is not the full surface area
+
