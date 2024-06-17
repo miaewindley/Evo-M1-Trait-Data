@@ -6,6 +6,7 @@ setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/
 library(tidyverse)
 library(readxl)
 library(purrr)
+library(openxlsx)
 ```
 ## Compare and combine data from Summer Alznati, Jack Gaston and Rachael Robinson's dissertations
 
@@ -115,12 +116,57 @@ for (i in seq_along(df_list)) {
     names(df_list)[i] <- new_name
   }
 }
-## Only include the Sheets where there is a column that refers to AREA CONVERTED To mm2 #include cm2because it actually looks like it is mm2
-area_column_names <- c("AREA CONVERTED To mm2", "AREA CONVERTED TO (mm2)", "AREA CONVERTED To cm2")
-has_area_column <- sapply(df_list, function(df) any(area_column_names %in% names(df)))
-# Filter df_list to include only data frames with area columns
-area_df_list <- df_list[has_area_column]
 ```
+#UPDATED June 2024
+# Identify and modify dataframes in df_list where the second column's name is not "Area", and then delete the entire first row for those dataframes
+```{r}
+# Function to check and modify dataframes
+process_df <- function(df, df_name, df_index) {
+  if (ncol(df) > 1 && names(df)[2] != "Area") {
+    cat("DataFrame index:", df_index, "- name:", df_name, "- Second column name:", names(df)[2], "\n")
+    # Replace header with the first row
+    new_header <- as.character(df[1, ])
+
+    # Replace NA or empty names with a placeholder
+    new_header[is.na(new_header) | new_header == ""] <- paste0("V", seq_along(new_header)[is.na(new_header) | new_header == ""])
+
+    # Remove the first row
+    df <- df[-1, , drop = FALSE]
+
+    # Set new header
+    names(df) <- new_header
+  }
+  return(df)
+}
+
+# Apply the function to each dataframe in the list with names and indices
+area_df_list <- mapply(process_df, df_list, names(df_list), seq_along(df_list), SIMPLIFY = FALSE)
+```
+<!-- ######### THIS COULD ALL BE REMOVED START-->
+<!-- #ADDED June 2024 -->
+<!-- # Use the updated df_list -->
+<!-- ```{r} -->
+<!-- df_list<-area_df_list -->
+<!-- ``` -->
+<!-- ```{r} -->
+<!-- ## Only include the Sheets where there is a column that refers to AREA CONVERTED To mm2 #include cm2because it actually looks like it is mm2 -->
+<!-- area_column_names <- c("AREA CONVERTED To mm2", "AREA CONVERTED TO (mm2)", "AREA CONVERTED To cm2") -->
+<!-- has_area_column <- sapply(df_list, function(df) any(area_column_names %in% names(df))) -->
+<!-- ``` -->
+<!-- #ADDED June 2024 -->
+<!-- # !!! Wait a second! -->
+<!-- ```{r} -->
+<!-- # Check which ones get dropped. The problem is the first line has the species common name (this information is redundant since the binomial is also in the spreadsheet. So just delete the first row.   -->
+<!-- which(!has_area_column) -->
+<!-- ``` -->
+<!-- #COMMENT June 2024 -->
+<!-- # THIS DOES NOTHING BUT NEED TO KEEP THAT NEW DF NAME -->
+<!-- ```{r} -->
+<!-- # Filter df_list to include only data frames with area columns -->
+<!-- area_df_list <- df_list[has_area_column] -->
+<!-- ``` -->
+<!-- ######### THIS COULD ALL BE REMOVED END-->
+
 # For dataframes in area_df_list rename "AREA CONVERTED To mm2", "AREA CONVERTED TO (mm2)" or "AREA CONVERTED To cm2" to "Area.mm2" and "REGION (Kaskan 2005)" to "Region.Kaskan"
 ```{r}
 # Define the new column names
@@ -236,6 +282,7 @@ combined_df
 ```{r}
 # Create a lookup table for matching species names
 species_mapping <- c(
+  "Aotus triuirgatus" = "Aotus_trivirgatus",
   "Callithrix jacchus common marmoset" = "Callithrix_jacchus",
   "Cheirogaleus medius" = "Cheirogaleus_medius",
   "Tenrec" = "Echinops_telfairi",
@@ -309,7 +356,15 @@ area_mapping <- c(
   "VP" = "VP",
   "VPP" = "VPP",
   "VPp" = "VPP",
-  "Vr" = "Vr"
+  "Vr" = "Vr",
+#columns below are in combined_df complied data (e.g., surfaceareas_wide) but not in summer_compare
+"A2"	= "A2",
+"Ar"	= "Ar",
+"CT (visual area)"	= "CT (visual area)",
+"M"	= "M",
+"mef"	= "mef",
+"R not audio R instead motor"	= "R not audio R instead motor",
+"RV"	= "RV"
 )
 
 # Create a new column with the updated area names
@@ -321,7 +376,28 @@ combined_df$Region_Kaskan <- area_mapping[combined_df$Region.Kaskan]
 # Remove rows where "Area.mm2" is NA or zero
 filtered_df <- combined_df %>%
   filter(!is.na(Area.mm2) & Area.mm2 != 0)
+# Convert Area.mm2 to numeric, handling non-numeric values
+filtered_df$Area.mm2 <- as.numeric(filtered_df$Area.mm2)
 ```
+# NEW June 2024
+```{r}
+# Create a dataframe with unique sources
+unique_refs <- data.frame(
+  Source = unique(filtered_df$Source__Page),
+  Source_Checked = NA,
+  In_Kaskan = NA
+  )
+
+# Save the dataframe as CSV
+write.xlsx(unique_refs, "unique_refs.xlsx")
+```
+
+# !!! 
+# !!! NEW for JUNE 2024! Filter out non-flat maps. 
+```{r}
+# Get publication checklist to go through
+```
+# !!! 
 
 # Calculate averages and create the new long dataframe
 ```{r}
@@ -333,6 +409,21 @@ surfaceareas_long <- filtered_df %>%
 surfaceareas_long
 write_csv(surfaceareas_long, "surfaceareas_long.csv")
 ```
+# NEW June 2024
+```{r}
+library(openxlsx)
+# Create a dataframe with unique area names
+unique_area_names <- data.frame(
+  Region_Kaskan = unique(surfaceareas_long$Region_Kaskan),
+  Area_Name = NA,
+  Source_Checked = NA,
+  In_Kaskan = NA
+  )
+
+# Save the dataframe as CSV
+write.xlsx(unique_area_names, "unique_area_names.xlsx")
+```
+
 # Convert to wide dataframe
 ```{r}
 surfaceareas_wide <- arrange(pivot_wider(surfaceareas_long, id_cols = Species, names_from = Region_Kaskan, values_from = Area.mm2), Species)
