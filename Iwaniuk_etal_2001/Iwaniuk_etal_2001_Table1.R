@@ -1,11 +1,14 @@
+## Load Libraries
+library(readxl)
+library(rstudioapi)
+
 #1. Source
-setwd("C:/Users/MILONI/OneDrive - University of Bath/Research Schemes/Allen Institue/Evo-M1-Trait-Data/")
+setwd("C:/Users/MILONI/OneDrive - University of Bath/Research Schemes/Allen Institute/Evo-M1-Trait-Data/")
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
 
 #2. Table 1
 
 ## 1. Read direct from xl
-library(readxl)
 folder_path <- "./Iwaniuk_etal_2001/"
 tabledirectxl <- read_excel(paste0(folder_path,"Iwaniuk_etal_2001_Table1_snapshot.xlsx"))
 
@@ -15,11 +18,9 @@ tabledirectxl <- read_excel(paste0(folder_path,"Iwaniuk_etal_2001_Table1_snapsho
 final.dataframe <- tabledirectxl
 
 # Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
-library(rstudioapi)
 item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path))
 
 # Get Item encoded
-library(readxl) 
 filecodes <- read_excel("./__ReadMe.xlsx", sheet = "Sheet1")
 item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
 

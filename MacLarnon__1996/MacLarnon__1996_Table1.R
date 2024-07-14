@@ -1,15 +1,15 @@
-#1. Source
-#setwd("C:/Users/MILONI/OneDrive - University of Bath/Research Schemes/Allen Institue/Evo-M1-Trait-Data/")
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
-
 ## Install and load necessary libraries
-library(dplyr) #Better to load all libraries at the beginning. If they are not installed there wil be an error and they can be installed at the beginning
+library(dplyr) 
 library(readxl)
 library(rstudioapi)
 
+#1. Source
+#setwd("C:/Users/MILONI/OneDrive - University of Bath/Research Schemes/Allen Institute/Evo-M1-Trait-Data/")
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
+
 #2. Table 1
 ## Read direct from xl
-folder_path <- "./MacLarnon__1996/" #Note there are tow underscores in the file name -- this is because there is a single author.  See __ReadMe.xlsx
+folder_path <- "./MacLarnon__1996/" #Note there are two underscores in the file name -- this is because there is a single author.  See __ReadMe.xlsx
 tabledirectxl <- read_excel(paste0(folder_path,"MacLarnon__1996_Table1_snapshot.xlsx"))
 
 ## Create a new "Order" column 
