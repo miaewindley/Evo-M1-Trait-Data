@@ -1,0 +1,95 @@
+code,Stephan_Order,Species,Stephan81_Species,Eye HSE mm (1),Eye Origin of data (2),Eye n (3), Nervus opticus NOA mm2 (4),Nervus opticus origin of data (5), Nervus opticus n (6),Chiasma opticum CH II mm2 (7),Chiasma opticum n (8),Tractus opticus TRO mm3 (9),Corpus gen lat CGL mm3 (10),Corpus gen lat n (11),CGL data deviate from  STEPHAN et al. (1981)+
+,,,,,,,,,,,,,,,
+577,Insectivora,Tenrec ecaudatus,Tenrec ecaudatus,_,_,_,0.22,S,6,0.22,2,2.73,1.46,1,
+579,Insectivora,Setifer setosus,Setifer setosus,_,_,_,0.09,S,4,0.08,2,1.07,1.05,1,
+581,Insectivora,Hemicentetes semispinosus,Hemicentetes semispin.,_,_,_,0.08,S,2,0.07,1,0.51,0.37,1,
+585,Insectivora,Echinops telfairi,Echinops telfairi,_,_,_,0.1,S,3,0.11,2,0.61,0.37,1,
+689,Insectivora,Erinaceus algirus,Erinaceus algirus,151,S,3,0.52,S,9,0.3,2,_,5.02,1,
+695,Insectivora,Erinaceus europaeus,Erinaceus europaeus,99.2,"1, 9, S",4*,0.34,S,8,0.23,1,3.94,3.9,1,
+701,Insectivora,Hemiechinus auritus,Hemiechinus auritus,113,S,2,0.34,S,7,0.2,3,_,_,_,
+715,Insectivora,Sorex araneus,Sorex araneus,4.9,9,1*,0.02,S,7,0.03,3,0.14,0.07,1,
+769,Insectivora,Sorex minutus,Sorex minutus,5,9,1*,0.03,S,2,0.03,1,0.11,0.06,1,
+839,Insectivora,Neomys fodiens,Neomys fodiens,_,_,_,0.02,S,3,0.03,1,_,_,_,
+943,Insectivora,Crocidura flavescens,Crocidura flavescens,_,_,_,0.02,S,4,0.04,5,0.25,0.28,1,
+952,Insectivora,Crocidura giffardi,Crocidura giffardi,7.1,19,1,_,_,_,_,_,_,_,_,
+1071,Insectivora,Crocidura russula,Crocidura russula,3.5,4 (C. leuc.),1*,0.01,S,2,0.02,1,0.12,0.08,1,
+1085,Insectivora,Crocidura suaveolens,Crocidura suaveolens,2.5,5,1*,_,_,_,_,_,_,_,_,
+1137,Insectivora,Suncus murinus,Suncus murinus,_,_,_,0.04,"11, S",3*,0.05,1,0.23,0.18,1,
+1205,Insectivora,Desmana moschata,Desmana moschata,_,_,_,0.05,S,2,0.06,1,_,_,_,
+1207,Insectivora,Galemys pyrenaicus,Galemys pyrenaicus,_,_,_,0.03,S,2,0.03,1,_,_,_,
+1215,Insectivora,Talpa europaea,Talpa europaea,2.5,"1, 9",2*,0.01,S,2,0.01,1,_,_,_,
+,,,,,,,,,,,,,,,
+1263,Scandentia,Tupaia glis,Tupaia glis,219,S,8,3.15,S,3,4.57,3,39.3,12.9,4,12.9+
+1269,Scandentia,Tupaia minor,Tupaia minor,_,_,_,_,_,_,_,_,_,9.88,2,
+1289,Scandentia,Urogale everetti,Urogale everetti,226,"10, S",3*,3.04,"10, S",5*,5.83,1,_,9.98,1,
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,
+3199,Prosimians,Microcebus murinus,Microcebus murinus,299,"18, S",3*,0.68,S,12,0.94,1,6.17,7.07,5,7.07+
+3203,Prosimians,Cheirogaleus major,Cheirogaleus major,445,S,1,0.9,S,5,1.27,2,18,21.5,2,
+3205,Prosimians,Cheirogaleus medius,Cheirogaleus medius,387,S,1,0.79,S,5,0.66,1,_,10.8,2,
+3209,Prosimians,Phaner furcifer,Phaner furcifer,515,18,1*,_,_,_,_,_,_,_,_,
+3211,Prosimians,Lemur catta,Lemur catta,757,"7, 13",2*,3.7,S,2,4.79,1,_,_,_,
+3215,Prosimians,Lemur albifrons,Lemur albifrons,757,_,_,3.14,S,6,3.96,5,108,51.8,2,51.8+
+3227,Prosimians,Varecia variegata,Varecia variegata,942,"13, S",3*,3.87,S,4,3.16,2,_,68.9,1,
+3239,Prosimians,Lepilemur ruficaudatus,Lepilemur ruficaudatus,_,_,_,1.12,S,6,1.37,1,20.7,15.6,3,
+3243,Prosimians,Avahi laniger laniger,Avahi l. laniger,_,_,_,_,_,_,_,_,_,27.6,1,27.6+
+3244,Prosimians,Avahi laniger occidentalis,Avahi I. occidentalis,_,_,_,2.11,S,4,1.43,1,38.3,29.3,2,29.3+
+3247,Prosimians,Propithecus verreauxi,Propithecus verreauxi,_,_,_,3.18,S,4,3.18,1,125,64.5,2,64.5+
+3249,Prosimians,lndri indri,lndri indri,_,_,_,3.79,S,4,2.62,1,_,94.5,2,94.5+
+3251,Prosimians,Daubentonia madagascar.,Daubentonia madagascar.,966,7,1*,2.21,S,2,1.4,1,_,58.5,1,
+3253,Prosimians,Loris tardigradus,Loris tardigradus,788,"3,14, S",4*,0.94,S,4,1.06,3,15.7,24.6,1,
+3255,Prosimians,Nycticebus coucang,Nycticebus coucang,714,"7, 13, 14, S",7*,1.46,S,6,1.63,3,_,35.9,1,35.9+
+3259,Prosimians,Perodicticus potto,Perodicticus potto,531,"7, 14",2*,0.93,S,4,1.2,1,19.5,24.3,2,
+3265,Prosimians,Galago senegalensis,Galago senegalensis,423,7,1*,1.68,S,2,1.46,3,_,16,1,
+3267,Prosimians,Otolemur crassicaudatus,Otolemur crassicaudatus,731,"3, 13, 14, S",9*,1.7,"13,S",13*,1.89,2,33.9,23.2,1,23.2+
+3275,Prosimians,Galagoides demidoff,Galagoides demidoff,475,13,1*,1.13,"13, S",5*,1.07,2,11.5,10.9,2,
+3282,Prosimians,Tarsius sp.,Tarsius spp.,990,"7, 9, 10, 14, S",11*,3.3,"10, S",12*,2.35,2,15.5,20.8,2,
+,,,,,,,,,,,,,,,
+3287,Simians,Callithrix jacchus,Callithrix jacchus,465,"1, S",8*,3.35,S,12,3.01,3,_,25.1,2,25.1+
+3311,Simians,Saguinus oedipus,Saguinus oedipus,452,13,2*,4.72,S,8,3.65,1,50.5,34.2,1,34.2+
+3312,Simians,Saguinus oed. geoffroyi,Saguinus oed. geoffroyi,484,7,2*,_,_,_,_,_,_,_,_,
+3324,Simians,Cebus sp.,Cebus spp.,1197,"13, S",3*,10.9,"13, S",9*,8.34,1,207,137,2,
+3325,Simians,Aotus trivirgatus,Aotus trivirgatus,1193,"7,13, S",8*,3.53,S,10,3.58,1,_,32.9,2,32.9+
+3327,Simians,Callicebus moloch,Callicebus moloch,_,_,_,_,_,_,_,_,_,54.2,1,54.2+
+3333,Simians,Saimiri oerstedi,Saimiri oerstedi,586,7,1*,_,_,_,_,_,_,_,_,
+3335,Simians,Saimiri sciureus,Saimiri sciureus,698,"13, S",11,6.31,"13, S",11,6.11,2,117,62.9,1,
+3341,Simians,Pithecia monachus,Pithecia monachus,_,_,_,_,_,_,_,_,_,76.3,1,76.3+
+3366,Simians,Alouatta sp.,Alouatta spp.,962,"7, S",4*,7.65,S,6,6.21,3,_,87.4,1,87.4+
+3371,Simians,Ateles geoffroyi,Ateles geoffroyi,1143,7,1*,9.6,S,2,8.63,2,204,151,1,
+3379,Simians,Lagothrix lagothricha,Lagothrix lagothricha,1186,S,6,8.87,S,9,9.21,1,203,164,1,164+
+3387,Simians,Macaca fascicularis,Macaca fascicularis,985,"7, 13",22*,8.36,S,1,9.8,3,_,_,_,
+3391,Simians,Macaca mulatta,Macaca mulatta,1283,"7,10,13,S",12*,9.47,"13, S",8*,7.36,2,_,158,1,
+3393,Simians,Macaca nemestrina,Macaca nemestrina,1293,7,4*,_,_,_,_,_,308,_,_,
+3407,Simians,Cercocebus albigena,Cercocebus albigena,-1187,_,_,13.4,S,2,11.9,1,_,182,1,
+3414,Simians,Cercocebus sp.,Cercocebus spp.,1187,13,10*,18.4,13,10*,_,_,_,_,_,
+3415,Simians,Papio anubis,Papio anubis,1527,13,6*,27,"13, S",10*,14.7,1,601,395,1,
+3421,Simians,Papio papio,Papio papio,1265,13,3*,26.4,13,2*,_,_,_,_,_,
+3427,Simians,Mandrillus sphinx,Mandrillus sphinx,1660,7,1*,_,_,_,_,_,_,_,_,
+3431,Simians,Cercopithecus aethiops,Cercopithecus aethiops,1143,"7,13",4*,14.1,13,3*,_,_,_,_,_,
+3433,Simians,Cercopithecus ascanius,Cercopithecus ascanius,-1007,_,_,13.9,S,2,12,2,320,147,1,
+3453,Simians,Cercopithecus mitis,Cercopithecus mitis,1217,13,3*,13,"13, S",3*,10.2,1,_,150,1,
+3459,Simians,Cercopithecus nictitans,Cercopithecus nictitans,1007,13,9*,12.3,13,9*,_,_,_,_,_,
+3468,Simians,Cercopithecus spec.,Cercopithecus spec.,1196,7,1*,_,_,_,_,_,_,_,_,
+3469,Simians,Miopithecus talapoin,Miopithecus talapoin,840,S,4,6.29,S,7,5.71,1,_,109,1,109+
+3473,Simians,Erythrocebus patas,Erythrocebus patas,1605,"13, S",5*,13.7,"13, S",8*,14.7,1,_,_,_,
+3477,Simians,Colobus badius,Colobus badius,_,_,_,10.1,S,4,11.4,1,261,128,2,
+3499,Simians,Nasalis larvatus,Nasalis larvatus,1120,7,23*,12.1,S,2,10.6,1,304,_,_,
+3501,Simians,Presbytis aygula,Presbytis aygula,1261,7,1*,_,_,_,_,_,_,_,_,
+3503,Simians,Presbytis cristata,Presbytis cristata,1161,7,19*,_,_,_,_,_,_,_,_,
+3527,Simians,Presbytis rubicundus,Presbytis rubicundus,1374,7,11*,_,_,_,_,_,_,_,_,
+3539,Simians,Hylobates lar,Hylobates lar,1299,7,32*,12.7,S,2,6.94,1,302,175,1,
+3540,Simians,Hylobates moloch,Hylobates moloch,1259,7,5*,_,_,_,_,_,_,_,_,
+3544,Simians,Hylobates spec.,Hylobates spec.,1119,13,2*,17.1,13,1*,_,_,_,_,_,
+3545,Simians,Pongo pygmaeus,Pongo pygmaeus,1282,"7, 13",7*,16.1,13,2,_,_,_,_,_,
+3549,Simians,Pan troglodytes,Pan troglodytes,1446,"7, 10, 13",16*,21,"13, S",8*,12.6,3,630,356,1,
+3551,Simians,Gorilla gorilla,Gorilla gorilla,1774,"10, 13",4*,17.6,"10, 13, S",4*,13.1,3,671,384,1,
+3553,Simians,Homo sapiens,Homo sapiens,1855,"1, 6, 7, 9, 10, 20", 14*,22.8,"10, 20, S",5*,8.63,3,823,416,1,
+,,,,,,,,,,,,,,,
+3562,Domestic and laboratory animals,Canis familiaris,Canis familiaris,1543,"8, 9",5*,8.62,S,1,9.92,1,_,_,_,
+4010,Domestic and laboratory animals,Felis domestica,Felis domestica,1359,"2, 9, S",4*,4.51,"16, 17, S",8*,4,2,_,_,_,
+6918,Domestic and laboratory animals,Rattus norvegicus alba,Rattus norvegicus alba,141,"2, 12",11*,0.25,"12, S",10*,0.52,2,_,_,_,
+7244,Domestic and laboratory animals,Mus musculus alba,Mus musculus alba,34.8,"9, 12",6*,0.11,12,5*,_,_,_,_,_,
+7984,Domestic and laboratory animals,Oryctolagus cuniculus,Oryctolagus cuniculus,855,9,1*,1.72,"15, S",3*,1.96,1,_,_,_,
+,,,,,,,,,,,,,,,
+7993,Macroscelidea,Elephantulus fuscipes,Elephantulus fuscipes,_,_,_,0.64,S,4,1.17,1,_,_,_,
+8011,Macroscelidea,Rhynchocyon cirnei,Rhynchocyon cirnei,_,_,_,3.9,S,4,5.59,1,_,_,_,

@@ -1,0 +1,10 @@
+Original_Term,Reference,Standardized_Term
+"DN,CX",HerculanoHouzel_etal_2020_TABLE2,CerebralCortex_N.p.mg
+"DN,Cb",HerculanoHouzel_etal_2020_TABLE2,Cerebellum_N.p.mg
+"DN,RoB",HerculanoHouzel_etal_2020_TABLE2,RoB_N.p.mg
+Family,HerculanoHouzel_etal_2020_TABLE2,Family
+Micro/mega,HerculanoHouzel_etal_2020_TABLE2,Micro.or.mega
+NCB,HerculanoHouzel_etal_2020_TABLE2,Cerebellum_N.n
+NCX,HerculanoHouzel_etal_2020_TABLE2,CerebralCortex_N.n
+NRoB,HerculanoHouzel_etal_2020_TABLE2,RoB_N.n
+Species,HerculanoHouzel_etal_2020_TABLE2,Species

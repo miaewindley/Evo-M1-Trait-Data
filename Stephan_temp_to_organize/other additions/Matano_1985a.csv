@@ -1,0 +1,50 @@
+Species,code number_Matano1985,Order_Matano1985a,Species_Matano1985a,Number_Ventral_pons_85a,Body_weight_85a,Ventral_pons
+Matano85a,Matano85a,Matano85a,Matano85a,Matano85a,BoW,VPo
+Tenrec ecaudatus,577,Insectivora,Tenrec ecaudatus,1,832,2.51
+Echinops telfairi,585,Insectivora,Echinops telfairi,1,87.5,0.49
+Tupaia glis,1263,Scandentia,Tupaia glis,2,170,13.8
+Urogale everetti,1289,Scandentia,Urogale everetti,1,275,18.6
+Microcebus murinus,3199,Prosimians,Microcebus murinus,2,54,5.9
+Cheirogaleus major,3203,Prosimians,Cheirogaleus major,2,450,27.4
+Cheirogaleus medius,3205,Prosimians,Cheirogaleus medius,1,177,13
+Eulemur albifrons,3215,Prosimians,Lemur fulvus,2,"1,400",136.9
+Varecia variegata,3227,Prosimians,Varecia variegata,1,"3,000",168.8
+Lepilemur ruficaudatus,3239,Prosimians,Lepilemur ruficaudatus,1,915,26.2
+Avahi laniger,3243,Prosimians,Avahi laniger laniger,1,"1,285",60.9
+Avahi occidentalis,3244,Prosimians,Avahi l. occidentalis,1,860,60.3
+Propithecus verreauxi,3247,Prosimians,Propithecus verreauxi,2,"3,480",169.3
+Indri indri,3249,Prosimians,Indri indri,2,"6,250",186.3
+Daubentonia madagascariensis,3251,Prosimians,Daubentonia madagasc.,1,"2,800",304.8
+Loris tardigradus,3253,Prosimians,Loris tardigradus,2,322,28.9
+Nycticebus coucang,3255,Prosimians,Nycticebus coucang,2,800,63.8
+Perodicticus potto,3259,Prosimians,Perodicticus potto,2,"1,150",77.7
+Galago senegalensis,3265,Prosimians,Galago senegalensis,2,186,21
+Otolemur crassicaudatus,3267,Prosimians,Otolemur crassicaudatus,2,850,54.5
+Galagoides demidoff,3275,Prosimians,Galagoides demidoff,2,81,13.6
+Tarsius sp.,3282,Prosimians,Tarsius spp.,4,125,16.5
+Callithrix jacchus,3287,Simians,Callithrix jacchus,2,280,38.8
+Cebuella pygmaea,3289,Simians,Cebuella pygmaea,2,120,17.5
+Saguinus midas,3305,Simians,Saguinus midas,2,340,45.7
+Saguinus oedipus,3311,Simians,Saguinus oedipus,2,380,50.9
+Cebus albifrons,3317,Simians,Cebus albifrons,1,"3,100",682.2
+Aotus trivirgatus,3325,Simians,Aotus trivirgatus,2,830,112.1
+Callicebus moloch,3327,Simians,Callicebus moloch,2,900,105.9
+Saimiri sciureus,3335,Simians,Saimiri sciureus,2,660,135.2
+Pithecia monachus,3341,Simians,Pithecia monachus,2,"1,500",211.8
+Alouatta seniculus,3363,Simians,Alouatta seniculus,2,"6,400",394.3
+Ateles geoffroyi,3371,Simians,Ateles geoffroyi,1,"8,000",813.3
+Lagothrix lagothricha,3379,Simians,Lagothrix lagothricha,2,"5,200",725.6
+Macaca mulatta,3391,Simians,Macaca mulatta,2,"7,800",639.2
+Lophocebus albigena,3407,Simians,Cercocebus albigena,2,"7,900",873.3
+Papio anubis,3415,Simians,Papio anubis,2,"25,000",2177.7
+Cercopithecus ascanius,3433,Simians,Cercopithecus ascanius,2,"3,400",520.2
+Cercopithecus mitis,3453,Simians,Cercopithecus mitis,1,"6,300",517.6
+Miopithecus talapoin,3469,Simians,Miopithecus talapoin,2,"1,200",273.7
+Erythrocebus patas,3473,Simians,Erythrocebus patas,2,"7,800",814.5
+Procolobus badius,3477,Simians,Colobus badius,2,"7,000",646.4
+Pygathrix nemaeus,3493,Simians,Pygathrix nemaeus,1,"7,500",708.5
+Nasalis larvatus,3499,Simians,Nasalis larvatus,1,"14,000",967.4
+Hylobates lar,3539,Simians,Hylobates lar,1,"5,700",1167.9
+Pan troglodytes,3549,Simians,Pan troglodytes,1,"46,000",3990.6
+Gorilla gorilla,3551,Simians,Gorilla gorilla,2,"105,000",5400.6
+Homo sapiens,3553,Simians,Homo sapiens,2,"65,000",10477.9

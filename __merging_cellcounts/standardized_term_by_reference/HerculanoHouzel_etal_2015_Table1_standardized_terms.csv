@@ -1,0 +1,16 @@
+Original_Term,Reference,Standardized_Term
+"Cerebral cortex Mass, g",HerculanoHouzel_etal_2015_Table1,CerebralCortex_Mass.g
+"Cerebral cortex Mass, g SD",HerculanoHouzel_etal_2015_Table1,CerebralCortex_Mass.g_SD
+"Cerebral cortex N, n",HerculanoHouzel_etal_2015_Table1,CerebralCortex_N.n
+"Cerebral cortex N, n SD",HerculanoHouzel_etal_2015_Table1,CerebralCortex_N.n_SD
+Cerebral cortex N/mg,HerculanoHouzel_etal_2015_Table1,CerebralCortex_N.p.mg
+Cerebral cortex N/mg SD,HerculanoHouzel_etal_2015_Table1,CerebralCortex_N.p.mg_SD
+"Cerebral cortex O, n",HerculanoHouzel_etal_2015_Table1,CerebralCortex_O.n
+"Cerebral cortex O, n SD",HerculanoHouzel_etal_2015_Table1,CerebralCortex_O.n_SD
+Cerebral cortex O/N,HerculanoHouzel_etal_2015_Table1,CerebralCortex_O.p.N
+Cerebral cortex O/N SD,HerculanoHouzel_etal_2015_Table1,CerebralCortex_O.p.N_SD
+Cerebral cortex O/mg,HerculanoHouzel_etal_2015_Table1,CerebralCortex_O.p.mg
+Cerebral cortex O/mg SD,HerculanoHouzel_etal_2015_Table1,CerebralCortex_O.p.mg_SD
+Cerebral cortex Source,HerculanoHouzel_etal_2015_Table1,CerebralCortex_Source
+Order,HerculanoHouzel_etal_2015_Table1,Order
+Species,HerculanoHouzel_etal_2015_Table1,Species

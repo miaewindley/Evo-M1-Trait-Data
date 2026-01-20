@@ -437,7 +437,7 @@
 "Notamacropus rufogriseus","MesencephalonDiencephalonStriatum_Mass.g","DosSantos_etal_2017_TableS1","5.93"
 "Notamacropus rufogriseus","PonsMedulla_Mass.g","DosSantos_etal_2017_TableS1","1.39"
 "Notamacropus rufogriseus","OlfactoryBulb_Mass.g","DosSantos_etal_2017_TableS1",NA
-"Notamacropus rufogriseus","WholeBrain_N.n","DosSantos_etal_2017_TableS1","1320000000"
+"Notamacropus rufogriseus","WholeBrain_N.n","DosSantos_etal_2017_TableS1","1.32e+09"
 "Notamacropus rufogriseus","CerebralCortex_N.n","DosSantos_etal_2017_TableS1","256780000"
 "Notamacropus rufogriseus","CerebralCortexGrey_N.n","DosSantos_etal_2017_TableS1","207740000"
 "Notamacropus rufogriseus","Hippocampus_N.n","DosSantos_etal_2017_TableS1","10770000"
@@ -481,7 +481,7 @@
 "Wallabia bicolor","MesencephalonDiencephalonStriatum_Mass.g","DosSantos_etal_2017_TableS1","6.396"
 "Wallabia bicolor","PonsMedulla_Mass.g","DosSantos_etal_2017_TableS1","4.014"
 "Wallabia bicolor","OlfactoryBulb_Mass.g","DosSantos_etal_2017_TableS1",NA
-"Wallabia bicolor","WholeBrain_N.n","DosSantos_etal_2017_TableS1","1440000000"
+"Wallabia bicolor","WholeBrain_N.n","DosSantos_etal_2017_TableS1","1.44e+09"
 "Wallabia bicolor","CerebralCortex_N.n","DosSantos_etal_2017_TableS1","208110000"
 "Wallabia bicolor","CerebralCortexGrey_N.n","DosSantos_etal_2017_TableS1","170420000"
 "Wallabia bicolor","Hippocampus_N.n","DosSantos_etal_2017_TableS1","12970000"
@@ -569,7 +569,7 @@
 "Dendrolagus goodfellowi","MesencephalonDiencephalonStriatum_Mass.g","DosSantos_etal_2017_TableS1","5.066"
 "Dendrolagus goodfellowi","PonsMedulla_Mass.g","DosSantos_etal_2017_TableS1","2.676"
 "Dendrolagus goodfellowi","OlfactoryBulb_Mass.g","DosSantos_etal_2017_TableS1",NA
-"Dendrolagus goodfellowi","WholeBrain_N.n","DosSantos_etal_2017_TableS1","1550000000"
+"Dendrolagus goodfellowi","WholeBrain_N.n","DosSantos_etal_2017_TableS1","1.55e+09"
 "Dendrolagus goodfellowi","CerebralCortex_N.n","DosSantos_etal_2017_TableS1","273430000"
 "Dendrolagus goodfellowi","CerebralCortexGrey_N.n","DosSantos_etal_2017_TableS1","188300000"
 "Dendrolagus goodfellowi","Hippocampus_N.n","DosSantos_etal_2017_TableS1","18150000"
@@ -613,7 +613,7 @@
 "Macropus fuliginosus","MesencephalonDiencephalonStriatum_Mass.g","DosSantos_etal_2017_TableS1","10.81"
 "Macropus fuliginosus","PonsMedulla_Mass.g","DosSantos_etal_2017_TableS1","4.362"
 "Macropus fuliginosus","OlfactoryBulb_Mass.g","DosSantos_etal_2017_TableS1",NA
-"Macropus fuliginosus","WholeBrain_N.n","DosSantos_etal_2017_TableS1","2460000000"
+"Macropus fuliginosus","WholeBrain_N.n","DosSantos_etal_2017_TableS1","2.46e+09"
 "Macropus fuliginosus","CerebralCortex_N.n","DosSantos_etal_2017_TableS1","370170000"
 "Macropus fuliginosus","CerebralCortexGrey_N.n","DosSantos_etal_2017_TableS1","271030000"
 "Macropus fuliginosus","Hippocampus_N.n","DosSantos_etal_2017_TableS1","44770000"
@@ -1267,7 +1267,7 @@
 "Aotus trivirgatus","CerebralCortex_N.n","HerculanoHouzel_etal_2015_Table1","441900000"
 "Aotus trivirgatus","CerebralCortex_N.n_SD","HerculanoHouzel_etal_2015_Table1","111310000"
 "Aotus trivirgatus","CerebralCortex_O.n","HerculanoHouzel_etal_2015_Table1","695420000"
-"Aotus trivirgatus","CerebralCortex_O.n_SD","HerculanoHouzel_etal_2015_Table1","130000000"
+"Aotus trivirgatus","CerebralCortex_O.n_SD","HerculanoHouzel_etal_2015_Table1","1.3e+08"
 "Aotus trivirgatus","CerebralCortex_N.p.mg","HerculanoHouzel_etal_2015_Table1","41990"
 "Aotus trivirgatus","CerebralCortex_N.p.mg_SD","HerculanoHouzel_etal_2015_Table1","12900"
 "Aotus trivirgatus","CerebralCortex_O.p.mg","HerculanoHouzel_etal_2015_Table1","65330"
@@ -1296,10 +1296,10 @@
 "Saimiri sciureus","Order","HerculanoHouzel_etal_2015_Table1","Primata"
 "Saimiri sciureus","CerebralCortex_Mass.g","HerculanoHouzel_etal_2015_Table1","20.652"
 "Saimiri sciureus","CerebralCortex_Mass.g_SD","HerculanoHouzel_etal_2015_Table1","0.368"
-"Saimiri sciureus","CerebralCortex_N.n","HerculanoHouzel_etal_2015_Table1","1340000000"
-"Saimiri sciureus","CerebralCortex_N.n_SD","HerculanoHouzel_etal_2015_Table1","20000000"
-"Saimiri sciureus","CerebralCortex_O.n","HerculanoHouzel_etal_2015_Table1","1610000000"
-"Saimiri sciureus","CerebralCortex_O.n_SD","HerculanoHouzel_etal_2015_Table1","40000000"
+"Saimiri sciureus","CerebralCortex_N.n","HerculanoHouzel_etal_2015_Table1","1.34e+09"
+"Saimiri sciureus","CerebralCortex_N.n_SD","HerculanoHouzel_etal_2015_Table1","2e+07"
+"Saimiri sciureus","CerebralCortex_O.n","HerculanoHouzel_etal_2015_Table1","1.61e+09"
+"Saimiri sciureus","CerebralCortex_O.n_SD","HerculanoHouzel_etal_2015_Table1","4e+07"
 "Saimiri sciureus","CerebralCortex_N.p.mg","HerculanoHouzel_etal_2015_Table1","64930"
 "Saimiri sciureus","CerebralCortex_N.p.mg_SD","HerculanoHouzel_etal_2015_Table1","7420"
 "Saimiri sciureus","CerebralCortex_O.p.mg","HerculanoHouzel_etal_2015_Table1","77840"
@@ -1307,7 +1307,7 @@
 "Saimiri sciureus","CerebralCortex_O.p.N","HerculanoHouzel_etal_2015_Table1","1.201"
 "Saimiri sciureus","CerebralCortex_O.p.N_SD","HerculanoHouzel_etal_2015_Table1",NA
 "Saimiri sciureus","CerebralCortex_Source","HerculanoHouzel_etal_2015_Table1","Herculano-Houzel et al., 2007"
-"Saimiri sciureus","CerebralCortex_C.n","HerculanoHouzel_etal_2015_Table1","2950000000"
+"Saimiri sciureus","CerebralCortex_C.n","HerculanoHouzel_etal_2015_Table1","2.95e+09"
 "Saimiri sciureus","Species_Source","HerculanoHouzel_etal_2015_Table1","Saimiri sciureus"
 "Macaca fascicularis","Order","HerculanoHouzel_etal_2015_Table1","Primata"
 "Macaca fascicularis","CerebralCortex_Mass.g","HerculanoHouzel_etal_2015_Table1","36.226"
@@ -1328,9 +1328,9 @@
 "Sapajus apella","Order","HerculanoHouzel_etal_2015_Table1","Primata"
 "Sapajus apella","CerebralCortex_Mass.g","HerculanoHouzel_etal_2015_Table1","39.178"
 "Sapajus apella","CerebralCortex_Mass.g_SD","HerculanoHouzel_etal_2015_Table1",NA
-"Sapajus apella","CerebralCortex_N.n","HerculanoHouzel_etal_2015_Table1","1140000000"
+"Sapajus apella","CerebralCortex_N.n","HerculanoHouzel_etal_2015_Table1","1.14e+09"
 "Sapajus apella","CerebralCortex_N.n_SD","HerculanoHouzel_etal_2015_Table1",NA
-"Sapajus apella","CerebralCortex_O.n","HerculanoHouzel_etal_2015_Table1","2550000000"
+"Sapajus apella","CerebralCortex_O.n","HerculanoHouzel_etal_2015_Table1","2.55e+09"
 "Sapajus apella","CerebralCortex_O.n_SD","HerculanoHouzel_etal_2015_Table1",NA
 "Sapajus apella","CerebralCortex_N.p.mg","HerculanoHouzel_etal_2015_Table1","29180"
 "Sapajus apella","CerebralCortex_N.p.mg_SD","HerculanoHouzel_etal_2015_Table1",NA
@@ -1339,7 +1339,7 @@
 "Sapajus apella","CerebralCortex_O.p.N","HerculanoHouzel_etal_2015_Table1","2.237"
 "Sapajus apella","CerebralCortex_O.p.N_SD","HerculanoHouzel_etal_2015_Table1",NA
 "Sapajus apella","CerebralCortex_Source","HerculanoHouzel_etal_2015_Table1","Herculano-Houzel et al., 2007"
-"Sapajus apella","CerebralCortex_C.n","HerculanoHouzel_etal_2015_Table1","3690000000"
+"Sapajus apella","CerebralCortex_C.n","HerculanoHouzel_etal_2015_Table1","3.69e+09"
 "Sapajus apella","Species_Source","HerculanoHouzel_etal_2015_Table1","Cebus apella"
 "Macaca radiata","Order","HerculanoHouzel_etal_2015_Table1","Primata"
 "Macaca radiata","CerebralCortex_Mass.g","HerculanoHouzel_etal_2015_Table1","48.274"
@@ -1408,9 +1408,9 @@
 "Macaca mulatta","Order","HerculanoHouzel_etal_2015_Table1","Primata"
 "Macaca mulatta","CerebralCortex_Mass.g","HerculanoHouzel_etal_2015_Table1","69.832"
 "Macaca mulatta","CerebralCortex_Mass.g_SD","HerculanoHouzel_etal_2015_Table1",NA
-"Macaca mulatta","CerebralCortex_N.n","HerculanoHouzel_etal_2015_Table1","1710000000"
+"Macaca mulatta","CerebralCortex_N.n","HerculanoHouzel_etal_2015_Table1","1.71e+09"
 "Macaca mulatta","CerebralCortex_N.n_SD","HerculanoHouzel_etal_2015_Table1",NA
-"Macaca mulatta","CerebralCortex_O.n","HerculanoHouzel_etal_2015_Table1","5270000000"
+"Macaca mulatta","CerebralCortex_O.n","HerculanoHouzel_etal_2015_Table1","5.27e+09"
 "Macaca mulatta","CerebralCortex_O.n_SD","HerculanoHouzel_etal_2015_Table1",NA
 "Macaca mulatta","CerebralCortex_N.p.mg","HerculanoHouzel_etal_2015_Table1","24470"
 "Macaca mulatta","CerebralCortex_N.p.mg_SD","HerculanoHouzel_etal_2015_Table1",NA
@@ -1419,7 +1419,7 @@
 "Macaca mulatta","CerebralCortex_O.p.N","HerculanoHouzel_etal_2015_Table1","3.082"
 "Macaca mulatta","CerebralCortex_O.p.N_SD","HerculanoHouzel_etal_2015_Table1",NA
 "Macaca mulatta","CerebralCortex_Source","HerculanoHouzel_etal_2015_Table1","Herculano-Houzel et al., 2007"
-"Macaca mulatta","CerebralCortex_C.n","HerculanoHouzel_etal_2015_Table1","6980000000"
+"Macaca mulatta","CerebralCortex_C.n","HerculanoHouzel_etal_2015_Table1","6.98e+09"
 "Macaca mulatta","Species_Source","HerculanoHouzel_etal_2015_Table1","Macaca mulatta"
 "Damaliscus pygargus phillipsi","Order","HerculanoHouzel_etal_2015_Table1","Artiodactyla"
 "Damaliscus pygargus phillipsi","CerebralCortex_Mass.g","HerculanoHouzel_etal_2015_Table1","111.31"
@@ -1488,10 +1488,10 @@
 "Homo sapiens","Order","HerculanoHouzel_etal_2015_Table1","Primata"
 "Homo sapiens","CerebralCortex_Mass.g","HerculanoHouzel_etal_2015_Table1","1232.93"
 "Homo sapiens","CerebralCortex_Mass.g_SD","HerculanoHouzel_etal_2015_Table1","233.68"
-"Homo sapiens","CerebralCortex_N.n","HerculanoHouzel_etal_2015_Table1","16340000000"
-"Homo sapiens","CerebralCortex_N.n_SD","HerculanoHouzel_etal_2015_Table1","2170000000"
-"Homo sapiens","CerebralCortex_O.n","HerculanoHouzel_etal_2015_Table1","60840000000"
-"Homo sapiens","CerebralCortex_O.n_SD","HerculanoHouzel_etal_2015_Table1","7020000000"
+"Homo sapiens","CerebralCortex_N.n","HerculanoHouzel_etal_2015_Table1","1.634e+10"
+"Homo sapiens","CerebralCortex_N.n_SD","HerculanoHouzel_etal_2015_Table1","2.17e+09"
+"Homo sapiens","CerebralCortex_O.n","HerculanoHouzel_etal_2015_Table1","6.084e+10"
+"Homo sapiens","CerebralCortex_O.n_SD","HerculanoHouzel_etal_2015_Table1","7.02e+09"
 "Homo sapiens","CerebralCortex_N.p.mg","HerculanoHouzel_etal_2015_Table1","13520"
 "Homo sapiens","CerebralCortex_N.p.mg_SD","HerculanoHouzel_etal_2015_Table1","3636"
 "Homo sapiens","CerebralCortex_O.p.mg","HerculanoHouzel_etal_2015_Table1","49230"
@@ -1499,7 +1499,7 @@
 "Homo sapiens","CerebralCortex_O.p.N","HerculanoHouzel_etal_2015_Table1","3.723"
 "Homo sapiens","CerebralCortex_O.p.N_SD","HerculanoHouzel_etal_2015_Table1","0.675"
 "Homo sapiens","CerebralCortex_Source","HerculanoHouzel_etal_2015_Table1","Azevedo et al., 2009"
-"Homo sapiens","CerebralCortex_C.n","HerculanoHouzel_etal_2015_Table1","77180000000"
+"Homo sapiens","CerebralCortex_C.n","HerculanoHouzel_etal_2015_Table1","7.718e+10"
 "Homo sapiens","Species_Source","HerculanoHouzel_etal_2015_Table1","Homo sapiens"
 "Loxodonta africana","Order","HerculanoHouzel_etal_2015_Table1","Afrotheria"
 "Loxodonta africana","CerebralCortex_Mass.g","HerculanoHouzel_etal_2015_Table1","2847.594"
@@ -1856,8 +1856,8 @@
 "Aotus trivirgatus","Order","HerculanoHouzel_etal_2015_Table2","Primata"
 "Aotus trivirgatus","Cerebellum_Mass.g","HerculanoHouzel_etal_2015_Table2","1.732"
 "Aotus trivirgatus","Cerebellum_Mass.g_SD","HerculanoHouzel_etal_2015_Table2","0.218"
-"Aotus trivirgatus","Cerebellum_N.n","HerculanoHouzel_etal_2015_Table2","1040000000"
-"Aotus trivirgatus","Cerebellum_N.n_SD","HerculanoHouzel_etal_2015_Table2","20000000"
+"Aotus trivirgatus","Cerebellum_N.n","HerculanoHouzel_etal_2015_Table2","1.04e+09"
+"Aotus trivirgatus","Cerebellum_N.n_SD","HerculanoHouzel_etal_2015_Table2","2e+07"
 "Aotus trivirgatus","Cerebellum_O.n","HerculanoHouzel_etal_2015_Table2","145270000"
 "Aotus trivirgatus","Cerebellum_O.n_SD","HerculanoHouzel_etal_2015_Table2","45030000"
 "Aotus trivirgatus","Cerebellum_N.p.mg","HerculanoHouzel_etal_2015_Table2","605080"
@@ -1920,7 +1920,7 @@
 "Saimiri sciureus","Order","HerculanoHouzel_etal_2015_Table2","Primata"
 "Saimiri sciureus","Cerebellum_Mass.g","HerculanoHouzel_etal_2015_Table2","4.3"
 "Saimiri sciureus","Cerebellum_Mass.g_SD","HerculanoHouzel_etal_2015_Table2",NA
-"Saimiri sciureus","Cerebellum_N.n","HerculanoHouzel_etal_2015_Table2","1820000000"
+"Saimiri sciureus","Cerebellum_N.n","HerculanoHouzel_etal_2015_Table2","1.82e+09"
 "Saimiri sciureus","Cerebellum_N.n_SD","HerculanoHouzel_etal_2015_Table2",NA
 "Saimiri sciureus","Cerebellum_O.n","HerculanoHouzel_etal_2015_Table2","133020000"
 "Saimiri sciureus","Cerebellum_O.n_SD","HerculanoHouzel_etal_2015_Table2",NA
@@ -1936,7 +1936,7 @@
 "Sapajus apella","Order","HerculanoHouzel_etal_2015_Table2","Primata"
 "Sapajus apella","Cerebellum_Mass.g","HerculanoHouzel_etal_2015_Table2","4.6"
 "Sapajus apella","Cerebellum_Mass.g_SD","HerculanoHouzel_etal_2015_Table2",NA
-"Sapajus apella","Cerebellum_N.n","HerculanoHouzel_etal_2015_Table2","2490000000"
+"Sapajus apella","Cerebellum_N.n","HerculanoHouzel_etal_2015_Table2","2.49e+09"
 "Sapajus apella","Cerebellum_N.n_SD","HerculanoHouzel_etal_2015_Table2",NA
 "Sapajus apella","Cerebellum_O.n","HerculanoHouzel_etal_2015_Table2","245810000"
 "Sapajus apella","Cerebellum_O.n_SD","HerculanoHouzel_etal_2015_Table2",NA
@@ -1963,7 +1963,7 @@
 "Macaca fascicularis","Cerebellum_O.p.N","HerculanoHouzel_etal_2015_Table2","0.053"
 "Macaca fascicularis","Cerebellum_O.p.N_SD","HerculanoHouzel_etal_2015_Table2",NA
 "Macaca fascicularis","Cerebellum_Source","HerculanoHouzel_etal_2015_Table2","Gabi et al., 2010"
-"Macaca fascicularis","Cerebellum_C.n","HerculanoHouzel_etal_2015_Table2","2708000000"
+"Macaca fascicularis","Cerebellum_C.n","HerculanoHouzel_etal_2015_Table2","2.708e+09"
 "Macaca fascicularis","Species_Source","HerculanoHouzel_etal_2015_Table2","Macaca fascicularis"
 "Macaca radiata","Order","HerculanoHouzel_etal_2015_Table2","Primata"
 "Macaca radiata","Cerebellum_Mass.g","HerculanoHouzel_etal_2015_Table2","5.748"
@@ -2000,7 +2000,7 @@
 "Macaca mulatta","Order","HerculanoHouzel_etal_2015_Table2","Primata"
 "Macaca mulatta","Cerebellum_Mass.g","HerculanoHouzel_etal_2015_Table2","7.694"
 "Macaca mulatta","Cerebellum_Mass.g_SD","HerculanoHouzel_etal_2015_Table2",NA
-"Macaca mulatta","Cerebellum_N.n","HerculanoHouzel_etal_2015_Table2","4550000000"
+"Macaca mulatta","Cerebellum_N.n","HerculanoHouzel_etal_2015_Table2","4.55e+09"
 "Macaca mulatta","Cerebellum_N.n_SD","HerculanoHouzel_etal_2015_Table2",NA
 "Macaca mulatta","Cerebellum_O.n","HerculanoHouzel_etal_2015_Table2","931030000"
 "Macaca mulatta","Cerebellum_O.n_SD","HerculanoHouzel_etal_2015_Table2",NA
@@ -2096,9 +2096,9 @@
 "Pongo pygmaeus","Order","HerculanoHouzel_etal_2015_Table2","Primata"
 "Pongo pygmaeus","Cerebellum_Mass.g","HerculanoHouzel_etal_2015_Table2","35.06"
 "Pongo pygmaeus","Cerebellum_Mass.g_SD","HerculanoHouzel_etal_2015_Table2","4.34"
-"Pongo pygmaeus","Cerebellum_N.n","HerculanoHouzel_etal_2015_Table2","26300000000"
-"Pongo pygmaeus","Cerebellum_N.n_SD","HerculanoHouzel_etal_2015_Table2","2470000000"
-"Pongo pygmaeus","Cerebellum_O.n","HerculanoHouzel_etal_2015_Table2","2200000000"
+"Pongo pygmaeus","Cerebellum_N.n","HerculanoHouzel_etal_2015_Table2","2.63e+10"
+"Pongo pygmaeus","Cerebellum_N.n_SD","HerculanoHouzel_etal_2015_Table2","2.47e+09"
+"Pongo pygmaeus","Cerebellum_O.n","HerculanoHouzel_etal_2015_Table2","2.2e+09"
 "Pongo pygmaeus","Cerebellum_O.n_SD","HerculanoHouzel_etal_2015_Table2",NA
 "Pongo pygmaeus","Cerebellum_N.p.mg","HerculanoHouzel_etal_2015_Table2","750143"
 "Pongo pygmaeus","Cerebellum_N.p.mg_SD","HerculanoHouzel_etal_2015_Table2",NA
@@ -2107,14 +2107,14 @@
 "Pongo pygmaeus","Cerebellum_O.p.N","HerculanoHouzel_etal_2015_Table2","0.084"
 "Pongo pygmaeus","Cerebellum_O.p.N_SD","HerculanoHouzel_etal_2015_Table2",NA
 "Pongo pygmaeus","Cerebellum_Source","HerculanoHouzel_etal_2015_Table2","Herculano-Houzel and Kaas, 2011"
-"Pongo pygmaeus","Cerebellum_C.n","HerculanoHouzel_etal_2015_Table2","28500000000"
+"Pongo pygmaeus","Cerebellum_C.n","HerculanoHouzel_etal_2015_Table2","2.85e+10"
 "Pongo pygmaeus","Species_Source","HerculanoHouzel_etal_2015_Table2","Pongo pygmaeus"
 "Gorilla gorilla","Order","HerculanoHouzel_etal_2015_Table2","Primata"
 "Gorilla gorilla","Cerebellum_Mass.g","HerculanoHouzel_etal_2015_Table2","37.56"
 "Gorilla gorilla","Cerebellum_Mass.g_SD","HerculanoHouzel_etal_2015_Table2",NA
-"Gorilla gorilla","Cerebellum_N.n","HerculanoHouzel_etal_2015_Table2","26400000000"
+"Gorilla gorilla","Cerebellum_N.n","HerculanoHouzel_etal_2015_Table2","2.64e+10"
 "Gorilla gorilla","Cerebellum_N.n_SD","HerculanoHouzel_etal_2015_Table2",NA
-"Gorilla gorilla","Cerebellum_O.n","HerculanoHouzel_etal_2015_Table2","2900000000"
+"Gorilla gorilla","Cerebellum_O.n","HerculanoHouzel_etal_2015_Table2","2.9e+09"
 "Gorilla gorilla","Cerebellum_O.n_SD","HerculanoHouzel_etal_2015_Table2",NA
 "Gorilla gorilla","Cerebellum_N.p.mg","HerculanoHouzel_etal_2015_Table2","702875"
 "Gorilla gorilla","Cerebellum_N.p.mg_SD","HerculanoHouzel_etal_2015_Table2",NA
@@ -2123,7 +2123,7 @@
 "Gorilla gorilla","Cerebellum_O.p.N","HerculanoHouzel_etal_2015_Table2","0.11"
 "Gorilla gorilla","Cerebellum_O.p.N_SD","HerculanoHouzel_etal_2015_Table2",NA
 "Gorilla gorilla","Cerebellum_Source","HerculanoHouzel_etal_2015_Table2","Herculano-Houzel and Kaas, 2011"
-"Gorilla gorilla","Cerebellum_C.n","HerculanoHouzel_etal_2015_Table2","29300000000"
+"Gorilla gorilla","Cerebellum_C.n","HerculanoHouzel_etal_2015_Table2","2.93e+10"
 "Gorilla gorilla","Species_Source","HerculanoHouzel_etal_2015_Table2","Gorilla gorilla"
 "Giraffa camelopardalis","Order","HerculanoHouzel_etal_2015_Table2","Artiodactyla"
 "Giraffa camelopardalis","Cerebellum_Mass.g","HerculanoHouzel_etal_2015_Table2","67.73"
@@ -2144,9 +2144,9 @@
 "Homo sapiens","Order","HerculanoHouzel_etal_2015_Table2","Primata"
 "Homo sapiens","Cerebellum_Mass.g","HerculanoHouzel_etal_2015_Table2","154.02"
 "Homo sapiens","Cerebellum_Mass.g_SD","HerculanoHouzel_etal_2015_Table2","19.29"
-"Homo sapiens","Cerebellum_N.n","HerculanoHouzel_etal_2015_Table2","69030000000"
-"Homo sapiens","Cerebellum_N.n_SD","HerculanoHouzel_etal_2015_Table2","6650000000"
-"Homo sapiens","Cerebellum_O.n","HerculanoHouzel_etal_2015_Table2","16040000000"
+"Homo sapiens","Cerebellum_N.n","HerculanoHouzel_etal_2015_Table2","6.903e+10"
+"Homo sapiens","Cerebellum_N.n_SD","HerculanoHouzel_etal_2015_Table2","6.65e+09"
+"Homo sapiens","Cerebellum_O.n","HerculanoHouzel_etal_2015_Table2","1.604e+10"
 "Homo sapiens","Cerebellum_O.n_SD","HerculanoHouzel_etal_2015_Table2","2170000"
 "Homo sapiens","Cerebellum_N.p.mg","HerculanoHouzel_etal_2015_Table2","471660"
 "Homo sapiens","Cerebellum_N.p.mg_SD","HerculanoHouzel_etal_2015_Table2","90393"
@@ -2155,7 +2155,7 @@
 "Homo sapiens","Cerebellum_O.p.N","HerculanoHouzel_etal_2015_Table2","0.232"
 "Homo sapiens","Cerebellum_O.p.N_SD","HerculanoHouzel_etal_2015_Table2","0.019"
 "Homo sapiens","Cerebellum_Source","HerculanoHouzel_etal_2015_Table2","Azevedo et al., 2009"
-"Homo sapiens","Cerebellum_C.n","HerculanoHouzel_etal_2015_Table2","85070000000"
+"Homo sapiens","Cerebellum_C.n","HerculanoHouzel_etal_2015_Table2","8.507e+10"
 "Homo sapiens","Species_Source","HerculanoHouzel_etal_2015_Table2","Homo sapiens"
 "Loxodonta africana","Order","HerculanoHouzel_etal_2015_Table2","Afrotheria"
 "Loxodonta africana","Cerebellum_Mass.g","HerculanoHouzel_etal_2015_Table2","1171.628"
@@ -2635,7 +2635,7 @@
 "Macaca radiata","RoB_O.p.N","HerculanoHouzel_etal_2015_Table3","10.05"
 "Macaca radiata","RoB_O.p.N_SD","HerculanoHouzel_etal_2015_Table3",NA
 "Macaca radiata","RoB_Source","HerculanoHouzel_etal_2015_Table3","Gabi et al., 2010"
-"Macaca radiata","RoB_C.n","HerculanoHouzel_etal_2015_Table3","678000000"
+"Macaca radiata","RoB_C.n","HerculanoHouzel_etal_2015_Table3","6.78e+08"
 "Macaca radiata","Species_Source","HerculanoHouzel_etal_2015_Table3","Macaca radiata"
 "Sapajus apella","Order","HerculanoHouzel_etal_2015_Table3","Primata"
 "Sapajus apella","RoB_Mass.g","HerculanoHouzel_etal_2015_Table3","8.43"
@@ -2786,7 +2786,7 @@
 "Homo sapiens","RoB_Mass.g_SD","HerculanoHouzel_etal_2015_Table3","45.42"
 "Homo sapiens","RoB_N.n","HerculanoHouzel_etal_2015_Table3","690000000"
 "Homo sapiens","RoB_N.n_SD","HerculanoHouzel_etal_2015_Table3","120000000"
-"Homo sapiens","RoB_O.n","HerculanoHouzel_etal_2015_Table3","7730000000"
+"Homo sapiens","RoB_O.n","HerculanoHouzel_etal_2015_Table3","7.73e+09"
 "Homo sapiens","RoB_O.n_SD","HerculanoHouzel_etal_2015_Table3","1450000000"
 "Homo sapiens","RoB_N.p.mg","HerculanoHouzel_etal_2015_Table3","6560"
 "Homo sapiens","RoB_N.p.mg_SD","HerculanoHouzel_etal_2015_Table3","2115"
@@ -2795,7 +2795,7 @@
 "Homo sapiens","RoB_O.p.N","HerculanoHouzel_etal_2015_Table3","11.203"
 "Homo sapiens","RoB_O.p.N_SD","HerculanoHouzel_etal_2015_Table3","2.352"
 "Homo sapiens","RoB_Source","HerculanoHouzel_etal_2015_Table3","Azevedo et al., 2009"
-"Homo sapiens","RoB_C.n","HerculanoHouzel_etal_2015_Table3","8420000000"
+"Homo sapiens","RoB_C.n","HerculanoHouzel_etal_2015_Table3","8.42e+09"
 "Homo sapiens","Species_Source","HerculanoHouzel_etal_2015_Table3","Homo sapiens"
 "Loxodonta africana","Order","HerculanoHouzel_etal_2015_Table3","Afrotheria"
 "Loxodonta africana","RoB_Mass.g","HerculanoHouzel_etal_2015_Table3","564.674"
@@ -3563,7 +3563,7 @@
 "Otolemur garnettii","Body_Mass.g_SD","HerculanoHouzel_etal_2015_Table5","102.6"
 "Otolemur garnettii","WholeBrain_Mass.g","HerculanoHouzel_etal_2015_Table5","10.15"
 "Otolemur garnettii","WholeBrain_Mass.g_SD","HerculanoHouzel_etal_2015_Table5","0.06"
-"Otolemur garnettii","WholeBrain_N.n","HerculanoHouzel_etal_2015_Table5","936000000"
+"Otolemur garnettii","WholeBrain_N.n","HerculanoHouzel_etal_2015_Table5","9.36e+08"
 "Otolemur garnettii","WholeBrain_N.n_SD","HerculanoHouzel_etal_2015_Table5","115360000"
 "Otolemur garnettii","WholeBrain_O.n","HerculanoHouzel_etal_2015_Table5","666590000"
 "Otolemur garnettii","WholeBrain_O.n_SD","HerculanoHouzel_etal_2015_Table5","63500000"
@@ -3685,7 +3685,7 @@
 "Macaca radiata","Species_Source","HerculanoHouzel_etal_2015_Table5","Macaca radiata"
 "Sus scrofa domesticus","Order","HerculanoHouzel_etal_2015_Table5","Artiodactyla"
 "Sus scrofa domesticus","WholeBrain_n","HerculanoHouzel_etal_2015_Table5","1"
-"Sus scrofa domesticus","Body_Mass.g","HerculanoHouzel_etal_2015_Table5","100000"
+"Sus scrofa domesticus","Body_Mass.g","HerculanoHouzel_etal_2015_Table5","1e+05"
 "Sus scrofa domesticus","Body_Mass.g_SD","HerculanoHouzel_etal_2015_Table5",NA
 "Sus scrofa domesticus","WholeBrain_Mass.g","HerculanoHouzel_etal_2015_Table5","64.18"
 "Sus scrofa domesticus","WholeBrain_Mass.g_SD","HerculanoHouzel_etal_2015_Table5",NA
@@ -3801,17 +3801,17 @@
 "Homo sapiens","Body_Mass.g_SD","HerculanoHouzel_etal_2015_Table5",NA
 "Homo sapiens","WholeBrain_Mass.g","HerculanoHouzel_etal_2015_Table5","1508.91"
 "Homo sapiens","WholeBrain_Mass.g_SD","HerculanoHouzel_etal_2015_Table5","299.14"
-"Homo sapiens","WholeBrain_N.n","HerculanoHouzel_etal_2015_Table5","86060000000"
-"Homo sapiens","WholeBrain_N.n_SD","HerculanoHouzel_etal_2015_Table5","8120000000"
-"Homo sapiens","WholeBrain_O.n","HerculanoHouzel_etal_2015_Table5","84610000000"
-"Homo sapiens","WholeBrain_O.n_SD","HerculanoHouzel_etal_2015_Table5","9830000000"
+"Homo sapiens","WholeBrain_N.n","HerculanoHouzel_etal_2015_Table5","8.606e+10"
+"Homo sapiens","WholeBrain_N.n_SD","HerculanoHouzel_etal_2015_Table5","8.12e+09"
+"Homo sapiens","WholeBrain_O.n","HerculanoHouzel_etal_2015_Table5","8.461e+10"
+"Homo sapiens","WholeBrain_O.n_SD","HerculanoHouzel_etal_2015_Table5","9.83e+09"
 "Homo sapiens","WholeBrain_p.C.N","HerculanoHouzel_etal_2015_Table5","50.5"
 "Homo sapiens","WholeBrain_p.C.N_SD","HerculanoHouzel_etal_2015_Table5","3.6"
 "Homo sapiens","WholeBrain_Source","HerculanoHouzel_etal_2015_Table5","Azevedo et al., 2009"
 "Homo sapiens","Species_Source","HerculanoHouzel_etal_2015_Table5","Homo sapiens"
 "Loxodonta africana","Order","HerculanoHouzel_etal_2015_Table5","Afrotheria"
 "Loxodonta africana","WholeBrain_n","HerculanoHouzel_etal_2015_Table5","1"
-"Loxodonta africana","Body_Mass.g","HerculanoHouzel_etal_2015_Table5","5000000"
+"Loxodonta africana","Body_Mass.g","HerculanoHouzel_etal_2015_Table5","5e+06"
 "Loxodonta africana","Body_Mass.g_SD","HerculanoHouzel_etal_2015_Table5",NA
 "Loxodonta africana","WholeBrain_Mass.g","HerculanoHouzel_etal_2015_Table5","4618.62"
 "Loxodonta africana","WholeBrain_Mass.g_SD","HerculanoHouzel_etal_2015_Table5",NA
@@ -4165,7 +4165,7 @@
 "Mungos mungo","OlfactoryBulb_O.p.N","JardimMesseder_etal_2017_Table1",NA
 "Mungos mungo","Body_Mass.g","JardimMesseder_etal_2017_Table1","1500"
 "Mungos mungo","CerebralCortex_C.n","JardimMesseder_etal_2017_Table1","462330000"
-"Mungos mungo","Cerebellum_C.n","JardimMesseder_etal_2017_Table1","470000000"
+"Mungos mungo","Cerebellum_C.n","JardimMesseder_etal_2017_Table1","4.7e+08"
 "Mungos mungo","RoB_C.n","JardimMesseder_etal_2017_Table1","174050000"
 "Mungos mungo","Species_Source","JardimMesseder_etal_2017_Table1","Mungos mungo"
 "Procyon lotor","CommonName","JardimMesseder_etal_2017_Table1","Raccoon"
@@ -4186,7 +4186,7 @@
 "Procyon lotor","CerebralCortex_O.n","JardimMesseder_etal_2017_Table1","1766670000"
 "Procyon lotor","Hippocampus_O.n","JardimMesseder_etal_2017_Table1","70000000"
 "Procyon lotor","Cerebellum_O.n","JardimMesseder_etal_2017_Table1","241320000"
-"Procyon lotor","RoB_O.n","JardimMesseder_etal_2017_Table1","392000000"
+"Procyon lotor","RoB_O.n","JardimMesseder_etal_2017_Table1","3.92e+08"
 "Procyon lotor","OlfactoryBulb_O.n","JardimMesseder_etal_2017_Table1","79760000"
 "Procyon lotor","CerebralCortex_N.p.mg","JardimMesseder_etal_2017_Table1","18510"
 "Procyon lotor","Hippocampus_N.p.mg","JardimMesseder_etal_2017_Table1","16076"
@@ -4237,7 +4237,7 @@
 "Felis catus","OlfactoryBulb_O.p.N","JardimMesseder_etal_2017_Table1",NA
 "Felis catus","Body_Mass.g","JardimMesseder_etal_2017_Table1","4500"
 "Felis catus","CerebralCortex_C.n","JardimMesseder_etal_2017_Table1","1346930000"
-"Felis catus","Cerebellum_C.n","JardimMesseder_etal_2017_Table1","1269000000"
+"Felis catus","Cerebellum_C.n","JardimMesseder_etal_2017_Table1","1.269e+09"
 "Felis catus","RoB_C.n","JardimMesseder_etal_2017_Table1","328060000"
 "Felis catus","Species_Source","JardimMesseder_etal_2017_Table1","Felis catus"
 "Canis lupus familiaris","CommonName","JardimMesseder_etal_2017_Table1","Dog"
@@ -4329,7 +4329,7 @@
 "Panthera leo","WholeBrain_O.n","JardimMesseder_etal_2017_Table1","12398840000"
 "Panthera leo","CerebralCortex_O.n","JardimMesseder_etal_2017_Table1","7260970000"
 "Panthera leo","Hippocampus_O.n","JardimMesseder_etal_2017_Table1","177110000"
-"Panthera leo","Cerebellum_O.n","JardimMesseder_etal_2017_Table1","3044000000"
+"Panthera leo","Cerebellum_O.n","JardimMesseder_etal_2017_Table1","3.044e+09"
 "Panthera leo","RoB_O.n","JardimMesseder_etal_2017_Table1","2093860000"
 "Panthera leo","OlfactoryBulb_O.n","JardimMesseder_etal_2017_Table1",NA
 "Panthera leo","CerebralCortex_N.p.mg","JardimMesseder_etal_2017_Table1","3897"
@@ -4363,7 +4363,7 @@
 "Ursus arctos","RoB_N.n","JardimMesseder_etal_2017_Table1","81380000"
 "Ursus arctos","OlfactoryBulb_N.n","JardimMesseder_etal_2017_Table1",NA
 "Ursus arctos","WholeBrain_O.n","JardimMesseder_etal_2017_Table1","15113190000"
-"Ursus arctos","CerebralCortex_O.n","JardimMesseder_etal_2017_Table1","10154000000"
+"Ursus arctos","CerebralCortex_O.n","JardimMesseder_etal_2017_Table1","1.0154e+10"
 "Ursus arctos","Hippocampus_O.n","JardimMesseder_etal_2017_Table1","249160000"
 "Ursus arctos","Cerebellum_O.n","JardimMesseder_etal_2017_Table1","2296750000"
 "Ursus arctos","RoB_O.n","JardimMesseder_etal_2017_Table1","2662440000"
@@ -4381,7 +4381,7 @@
 "Ursus arctos","OlfactoryBulb_O.p.N","JardimMesseder_etal_2017_Table1",NA
 "Ursus arctos","Body_Mass.g","JardimMesseder_etal_2017_Table1","350000"
 "Ursus arctos","CerebralCortex_C.n","JardimMesseder_etal_2017_Table1","10404970000"
-"Ursus arctos","Cerebellum_C.n","JardimMesseder_etal_2017_Table1","11550000000"
+"Ursus arctos","Cerebellum_C.n","JardimMesseder_etal_2017_Table1","1.155e+10"
 "Ursus arctos","RoB_C.n","JardimMesseder_etal_2017_Table1","2743820000"
 "Ursus arctos","Species_Source","JardimMesseder_etal_2017_Table1","Ursus arctos"
 "Bathyergus suillus","Body_Mass.g","Kverkova_etal_2018_TableS1","907.82"

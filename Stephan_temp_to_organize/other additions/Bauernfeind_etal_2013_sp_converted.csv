@@ -1,0 +1,31 @@
+﻿Species,bauernfeind_2013,Number_of_individuals_13b,Body_weight_13b,Brain_weight_13b,Total_brain_net_volume_13b,Granular_insular_cortex,Dysgranular_insular_cortex,Agranular_insular_cortex,fronto_insular_cortex,Insula
+AAA_Anatomy,Species_Bauernfeind2013,Number_of_individuals_13b,Body_mass,Brain_mass,Brain_volume,Granular_volume,Dysgranular_volume,Agranular_volume,FI_volume,Total_insula_volume
+Alouatta caraya,Alouatta caraya,1,6420,55800,53861,89,141,42,,272
+Ateles geoffroyi,Ateles geoffroyi,1,7780,106400,102700,100,181,135,,416
+Avahi laniger,Avahi laniger,1,1030,9600,9256.8,13,18,7,,38
+Callithrix pygmaea,Callithrix pygmaea,1,110,4200,4005.8,3,7,1,,11
+Cebus albifrons,Cebus albifrons,1,3180,79800,77027,108,155,34,,297
+Cercocebus agilis,Cercocebus agilis,1,5660,95300,91988,158,116,105,,379
+Cercopithecus mitis,Cercopithecus kandti,1,5480,71600,69112,134,391,89,,614
+Colobus angolensis,Colobus angolensis,1,9680,74400,71815,38,152,32,,222
+Galagoides demidoff,Galagoides demidoff,1,63,3300,3185.3,5,5,2,,12
+Gorilla sp.,Gorilla gorilla,4,103517.5,416250,401785,394.5,948.75,570,232,2145.5
+Homo sapiens,Homo sapiens,5,70100,1406720,1357820,1873.8,2960.2,1200.6,444.6,6479
+Hylobates lar,Hylobates lar,1,5340,92000,88803,117,131,40,,289
+Hylobates muelleri,Hylobates muelleri,1,5710,101800,98263,111,286,142,,539
+Indri indri,Indri indri,1,5830,33700,32481,50,85,33,,167
+Leontopithecus rosalia,Leontopithecus rosalia,1,598,12700,12259,4,21,12,,37
+Lophocebus albigena,Lophocebus albigena,1,8250,110500,106660,171,270,95,,536
+Loris tardigradus,Loris tardigradus,1,264,6900,6612,3,6,3,,12
+Macaca maura,Macaca maura,1,6050,83300,80405,181,240,71,,492
+Pan paniscus,Pan paniscus,3,37133.33333,352000,339766.6667,260.666667,934.333333,351,144.666667,1690.333333
+Pan troglodytes,Pan troglodytes,3,46503.33333,342700,330790,667.333333,703.666667,164.666667,65.666667,1600.666667
+Perodicticus potto,Perodicticus potto,1,1250,11500,11100,16,10,4,,31
+Piliocolobus badius,Piliocolobus badius,1,7050,75000,72394,72,116,53,,241
+Pithecia pithecia,Pithecia pithecia,1,1580,30000,28958,40,135,104,,279
+Saguinus geoffroyi,Saguinus geoffroyi,1,482,10500,10135,9,9,6,,23
+Saguinus oedipus,Saguinus oedipus,1,418,9300,8938.2,7,13,6,,26
+Symphalangus syndactylus,Symphalangus syndactylus,1,11900,138700,133880,198,147,71,,416
+Trachypithecus francoisi,Trachypithecus francoisi,1,7700,102100,98552,249,217,160,,625
+Varecia variegata,Varecia variegata,1,3550,31500,30405,44,44,12,,100
+Pongo sp.,Pongo pygmaeus and Pongo abelii,4,61700,353200,340925,208.75,828.25,254.75,39.75,1331.5

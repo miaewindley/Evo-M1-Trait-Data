@@ -1,0 +1,49 @@
+﻿Species                                           ,Individual                ,Collection                  , Section thickness (mm),Age ,Sex estimates (kg),Body mass (kg),Social group size,Brain mass (g), Brain volume (cm3) ,Granular (cm3) _L,Dysgranular (cm3) _L,     Agranular (cm3) _L, FI (cm3) _L,Total insula volume (cm3) _L
+Homo sapiens,H9-88a,UCSD                                            ,35,21,Male                   ,72.1,148,1639.6,1582.6,2.356,3.321,1.518,0.539,7.734
+H. sapiens,MU-88-65a,Yakovlev-Haleem                   ,35,50,Male                   ,72.1,148,1483,1431.5,1.41,2.709,1.781,0.562,6.463
+H. sapiens,SN207-84a,UCSD                                            ,35,75,Male                   ,72.1,148,1349,1302.1,2.246,2.971,1.342,0.349,6.908
+H. sapiens,W2-2-70a,Yakovlev-Haleem                   ,35,25,Male                   ,72.1,148,1320,1274.1,1.959,3.85,0.973,0.442,7.222
+H. sapiens,STD-IIA-54a,Yakovlev-Haleem                   ,35,32,Female              ,62.1,148,1242,1198.8,1.398,1.95,0.389,0.331,4.068
+Pan paniscus,Nambob,GAAP,100,,Male,45,43.4,395,381.27,0.167,0.771,0.484,0.121,1.543
+P. paniscus,MCZ-2007-52a,GAAP,40,25,Female,33.2,43.4,337,325.29,0.267,1.067,0.356,0.086,1.775
+P. paniscus,Zahliaa,UCSD,20,11,Female,33.2,43.4,324,312.74,0.348,0.965,0.213,0.227,1.753
+Pan troglodytes,CA0171b,GAAP,100,39,Male,49.57,47.6,374,361,0.357,0.753,0.211,0.066,1.387
+P. troglodytes,YN01-92a,GAAP,40,40,Male,49.57,47.6,341.2,329.34,0.886,0.757,0.203,0.097,1.942
+P. troglodytes,YN00-170a,GAAP,40,45,Female,40.37,47.6,312.9,302.03,0.759,0.601,0.08,0.034,1.473
+Gorilla gorilla,OON1072b,GAAP,100,25,Male,169.37,15.8,450,434.36,0.642,0.793,0.554,0.522,2.51
+G. gorilla,862094b,GAAP,100,39,Female,80,15.8,420,405.41,0.466,0.875,0.479,0.161,1.982
+G. gorilla,439b,GAAP,100,33,Female,80,15.8,419,404.44,0.348,1.17,0.496,0.166,2.18
+G. gorilla,YN82-140a,UCSD,20,20,Female,80,15.8,376,362.93,0.122,0.957,0.751,0.079,1.91
+Pongo abelii,M00305b,GAAP,100,17,Female,35.6,,358,345.56,0.266,0.622,0.317,0,1.204
+P. abelii,Thelmab,GAAP,100,25,Female,35.6,,333.8,322.2,0.171,0.577,0.326,0.039,1.112
+Pongo pygmaeus,"Sabtub,c",GAAP,100,39,Female,35.6,1.5,376,362.93,,,,,
+P. pygmaeus,Briggsa,UCSD,20,34,Male,78.5,1.5,345,333.01,0.199,1.057,0.188,0.06,1.505
+Hylobates muelleri,970431a,GAAP,40,19,Male,5.71,3.4,101.8,98.263,0.111,0.286,0.142,,0.539
+Hylobates lar,YN81-146b,Stephan,20,,Female,5.34,3.8,92,88.803,0.117,0.131,0.04,,0.289
+Symphalangus syndactylus,880804a,GAAP,40,33,Male,11.9,4,138.7,133.88,0.198,0.147,0.071,,0.416
+Cercopithecus kandti,201202a,GAAP,40,,Male,5.48,,71.6,69.112,0.134,0.391,0.089,,0.614
+Cercocebus agilis,980820a,GAAP,40,19,Female,5.66,,95.3,91.988,0.158,0.116,0.105,,0.379
+Lophocebus albigena,3407b,Stephan,20,,Male,8.25,15.5,110.5,106.66,0.171,0.27,0.095,,0.536
+Macaca maura,M1005a,GAAP,40,5,Female,6.05,22,83.3,80.405,0.181,0.24,0.071,,0.492
+Colobus angolensis,M00652a,GAAP,40,18,Male,9.68,8.8,74.4,71.815,0.038,0.152,0.032,,0.222
+Piliocolobus badius,3477b,Stephan,15,,Female,7.05,30.2,75,72.394,0.072,0.116,0.053,,0.241
+Trachypithecus francoisi,51106a,GAAP,40,16,Male,7.7,17.1,102.1,98.552,0.249,0.217,0.16,,0.625
+Alouatta caraya,890708a,GAAP,40,21,Male,6.42,7.9,55.8,53.861,0.089,0.141,0.042,,0.272
+Ateles geoffroyi,3371b,Stephan,20,,Male,7.78,22.7,106.4,102.7,0.1,0.181,0.135,,0.416
+Callithrix pygmaea,3289b,Stephan,20,,Male,0.11,7.9,4.2,4.0058,0.003,0.007,0.001,,0.011
+Leontopithecus rosalia,950728a,GAAP,40,11,Female,0.598,4.5,12.7,12.259,0.004,0.021,0.012,,0.037
+Saguinus geoffroyi,900722a,GAAP,40,15,Male,0.482,5.2,10.5,10.135,0.009,0.009,0.006,,0.023
+Saguinus oedipus,3311b,Stephan,20,,Male,0.418,5.3,9.3,8.9382,0.007,0.013,0.006,,0.026
+Cebus albifrons,3317b,Stephan,20,,Male,3.18,19.2,79.8,77.027,0.108,0.155,0.034,,0.297
+Pithecia pithecia,M30709a,GAAP,40,1,Female,1.58,2.6,30,28.958,0.04,0.135,0.104,,0.279
+Avahi laniger,3244b,Stephan,15,,Male,1.03,2.5,9.6,9.2568,0.013,0.018,0.007,,0.038
+Indri indri,3249b,Stephan,15,,Male,5.83,4.3,33.7,32.481,0.05,0.085,0.033,,0.167
+Varecia variegata,3227b,Stephan,15,,Male,3.55,5.4,31.5,30.405,0.044,0.044,0.012,,0.1
+Perodicticus potto,3259b,Stephan,20,,Male,1.25,1,11.5,11.1,0.016,0.01,0.004,,0.031
+Galagoides demidoff,3275b,Stephan,20,,Male,0.063,3.5,3.3,3.1853,0.005,0.005,0.002,,0.012
+Loris tardigradus,3253b,Stephan,20,,Male,0.264,3,6.9,6.612,0.003,0.006,0.003,,0.012
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,

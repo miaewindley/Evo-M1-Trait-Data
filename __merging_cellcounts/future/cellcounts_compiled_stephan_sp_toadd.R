@@ -1,0 +1,21 @@
+# MORE cellcounts_compiled.R
+
+# # Add information about remaining species: Species_Name to use and reference note
+# source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Avahi laniger laniger"]        <- "Avahi laniger"
+# source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Avahi laniger laniger"]     <- "Eastern Woolly Lemur"
+# source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Avahi laniger occidentalis"]   <- "Avahi occidentalis"
+# source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Avahi laniger occidentalis"]<- "Western Woolly Lemur, once considered a subspecies of the Eastern Woolly Lemur"
+# source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Crocidura hildegardea"]        <- "Crocidura hildegardeae"
+# source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Crocidura hildegardea"]     <- "typo"
+# source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Crocidura jacksoni"]           <- "Crocidura jacksoni"
+# source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Crocidura jacksoni"]        <- "ITIS valid, missing from NCBI"
+# source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Lagothrix lagothricha"]        <- "Lagothrix lagotricha"
+# source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Lagothrix lagothricha"]     <- "typo"
+# source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Microsoex hoyi"]               <- "Sorex hoyi"
+# source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Microsoex hoyi"]            <- "typo, ITIS valid"
+# source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Ruwensorisorex suncoides"]     <- "Ruwenzorisorex suncoides"
+# source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Ruwensorisorex suncoides"]  <- "typo"
+# source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Scuisorex somereni"]           <- "Scutisorex somereni"
+# source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Scuisorex somereni"]        <- "typo"
+# source_species_ids$Species_Name[source_species_ids$Species_Name_Source == "Sylvisorex negalura"]          <- "Sylvisorex megalura"
+# source_species_ids$Reference_Note[source_species_ids$Species_Name_Source == "Sylvisorex negalura"]       <- "typo"

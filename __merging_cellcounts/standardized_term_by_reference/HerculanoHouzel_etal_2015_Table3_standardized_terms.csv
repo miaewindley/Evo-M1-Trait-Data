@@ -1,0 +1,16 @@
+Original_Term,Reference,Standardized_Term
+Order,HerculanoHouzel_etal_2015_Table3,Order
+"RoB Mass, g",HerculanoHouzel_etal_2015_Table3,RoB_Mass.g
+"RoB Mass, g SD",HerculanoHouzel_etal_2015_Table3,RoB_Mass.g_SD
+"RoB N, n",HerculanoHouzel_etal_2015_Table3,RoB_N.n
+"RoB N, n SD",HerculanoHouzel_etal_2015_Table3,RoB_N.n_SD
+RoB N/mg,HerculanoHouzel_etal_2015_Table3,RoB_N.p.mg
+RoB N/mg SD,HerculanoHouzel_etal_2015_Table3,RoB_N.p.mg_SD
+"RoB O, n",HerculanoHouzel_etal_2015_Table3,RoB_O.n
+"RoB O, n SD",HerculanoHouzel_etal_2015_Table3,RoB_O.n_SD
+RoB O/N,HerculanoHouzel_etal_2015_Table3,RoB_O.p.N
+RoB O/N SD,HerculanoHouzel_etal_2015_Table3,RoB_O.p.N_SD
+RoB O/mg,HerculanoHouzel_etal_2015_Table3,RoB_O.p.mg
+RoB O/mg SD,HerculanoHouzel_etal_2015_Table3,RoB_O.p.mg_SD
+RoB Source,HerculanoHouzel_etal_2015_Table3,RoB_Source
+Species,HerculanoHouzel_etal_2015_Table3,Species

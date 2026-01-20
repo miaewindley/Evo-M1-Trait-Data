@@ -1,0 +1,15 @@
+Original_Term,Reference,Standardized_Term
+"Body mass, g",HerculanoHouzel_etal_2015_Table5,Body_Mass.g
+"Body mass, g SD",HerculanoHouzel_etal_2015_Table5,Body_Mass.g_SD
+"Brain mass, g",HerculanoHouzel_etal_2015_Table5,WholeBrain_Mass.g
+"Brain mass, g SD",HerculanoHouzel_etal_2015_Table5,WholeBrain_Mass.g_SD
+Order,HerculanoHouzel_etal_2015_Table5,Order
+Species,HerculanoHouzel_etal_2015_Table5,Species
+Whole brain % Neurons,HerculanoHouzel_etal_2015_Table5,WholeBrain_p.C.N
+Whole brain % Neurons SD,HerculanoHouzel_etal_2015_Table5,WholeBrain_p.C.N_SD
+Whole brain Neurons,HerculanoHouzel_etal_2015_Table5,WholeBrain_N.n
+Whole brain Neurons SD,HerculanoHouzel_etal_2015_Table5,WholeBrain_N.n_SD
+Whole brain Other cells,HerculanoHouzel_etal_2015_Table5,WholeBrain_O.n
+Whole brain Other cells SD,HerculanoHouzel_etal_2015_Table5,WholeBrain_O.n_SD
+Whole brain Source,HerculanoHouzel_etal_2015_Table5,WholeBrain_Source
+Whole brain n,HerculanoHouzel_etal_2015_Table5,WholeBrain_n
