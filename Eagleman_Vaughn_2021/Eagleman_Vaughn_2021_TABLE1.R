@@ -23,6 +23,7 @@ library(rJava)
 library(tabulapdf)
 library(tidyverse)
 library(stringr)
+library(readxl)
 
 ## 2. EXTRACT TABLE 1 --------------------------------------------------------
 tables1 <- extract_tables(

@@ -1,5 +1,13 @@
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Masterton_1975")
 
+# Manually entered data (with some copying and pasting of particular parts)
+# 
+# Checked (and manually corrected)  using Claude Sonnet 4.6. 
+# Prompt:
+# 1. Get any tables from this PDF. Recreate in new tables as spreadsheets saved in Excel
+# 2. compare to the spreadsheet i made manually and tried to keep to original format. Heffner_Masterton_1975_TableI_snapshot
+
+
 ## 1. Read from xl
 library(readxl)
 tabledirectxl <- read_excel("Heffner_Masterton_1975_TableI_snapshot.xlsx")
