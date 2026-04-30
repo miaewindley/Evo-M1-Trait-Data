@@ -1,48 +1,26 @@
 "Species","Time_to_locomotion_days","Time_to_weaning_days","Time_to_adolescence_months","REM_sleep_percent","Phylogenetic_distance_Mya"
-"Eagleman and Vaughn",NA,NA,NA,NA,NA
-"TABLE 1 | Three behavioral correlates of plasticity and the proportion of REM (versus non-REM) sleep in 25 primate species.",NA,NA,NA,NA,NA
-"Coloquial name",NA,NA,NA,NA,NA
-"Vervet monkey",NA,21,NA,NA,NA
-"Mongoose lemur",NA,35,NA,NA,NA
-"Gray mouse lemur",NA,21,NA,NA,NA
-"Spider monkey",NA,NA,NA,NA,NA
-"Yellow baboon",NA,60,NA,NA,NA
-"Patas monkey",NA,150,NA,NA,NA
-"Black lemur",NA,43,NA,NA,NA
-"Barbary macaque",NA,NA,NA,NA,NA
-"Senegal galago",NA,7,NA,NA,NA
-"Green monkey",NA,NA,NA,NA,NA
-"Brown lemur",NA,NA,NA,NA,NA
-"Guinea baboon",NA,14,NA,NA,NA
-"Three-striped night monkey",NA,34,NA,NA,NA
-"Long-tailed macaque",NA,NA,NA,NA,NA
-"Pigtail macaque",NA,35,NA,NA,NA
-"Bornean orangutan",NA,120,NA,NA,NA
-"Hamadryas baboon",NA,NA,NA,NA,NA
-"Olive baboon",NA,14,NA,NA,NA
-"Bonnet macaque",NA,180,NA,NA,NA
-"Common marmoset",NA,14,NA,NA,NA
-"Stump-tailed macaque",NA,NA,NA,NA,NA
-"Common squirrel monkey",NA,160,NA,NA,NA
-"Chimpanzee",NA,70,NA,NA,NA
-"Rhesus monkey",NA,180,NA,NA,NA
-"Human",NA,318,NA,NA,NA
-"primates on behavioral measures of plasticity and the fraction of",NA,NA,NA,NA,NA
-"We began with a list",NA,NA,NA,NA,NA
-"it down to only those",NA,NA,NA,NA,NA
-"were known: (1) percentage",NA,NA,NA,NA,NA
-"the behavioral measures",NA,NA,NA,NA,NA
-"cortical plasticity, the",NA,NA,NA,NA,NA
-"species of primates.",NA,NA,NA,NA,NA
-"plasticity of different",NA,NA,NA,NA,NA
-"a species; if this is an",NA,NA,NA,NA,NA
-"statistically significant results. All data was collected on juvenile",NA,NA,NA,NA,NA
-"and adult primates,",NA,NA,NA,NA,NA
-"primates was available.",NA,NA,NA,NA,NA
-"between publications by averaging the values.",NA,NA,NA,NA,NA
-"Next, we collected",NA,NA,NA,NA,NA
-"species. Ideally, we",NA,NA,NA,NA,NA
-"and genetic changes",NA,NA,NA,NA,NA
-"potentiation or epigenetic modifications. However, because such",NA,NA,NA,NA,NA
-"data are extremely",NA,NA,NA,NA,NA
-"Frontiers in Neuroscience | www.frontiersin.org",NA,NA,NA,NA,NA
+"Vervet monkey",21,117,48,6,29
+"Mongoose lemur",35,150,36,7,74
+"Gray mouse lemur",21,51,2,7,74
+"Spider monkey",NA,821,NA,7,43
+"Yellow baboon",60,365,16,8,29
+"Patas monkey",150,216,22,9,29
+"Black lemur",43,170,18,9,74
+"Barbary macaque",NA,258,12,9,29
+"Senegal galago",7,105,2,9,74
+"Green monkey",NA,365,12,9,29
+"Brown lemur",NA,150,25,9,74
+"Guinea baboon",14,420,14,11,29
+"Three-striped night monkey",34,77,42,11,43
+"Long-tailed macaque",NA,385,NA,11,29
+"Pigtail macaque",35,342,11,12,29
+"Bornean orangutan",120,1637,60,12,16
+"Hamadryas baboon",NA,315,24,13,29
+"Olive baboon",14,390,14,13,29
+"Bonnet macaque",180,195,11,14,29
+"Common marmoset",14,81,5,14,43
+"Stump-tailed macaque",NA,270,18,15,29
+"Common squirrel monkey",160,177,24,15,43
+"Chimpanzee",70,1393,96,16,7
+"Rhesus monkey",180,365,78,18,29
+"Human",318,1095,162,21,0
