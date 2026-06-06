@@ -1,122 +1,118 @@
-## 1. SOURCE
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
-folder_path <- "./Garwicz_etal_2009/"
+## 0. PATHS (NO setwd) -------------------------------------------------------
+library(rstudioapi)
 
-# Load the tabulizer library and rJava
+script_path   <- rstudioapi::getActiveDocumentContext()$path
+paper_dir     <- dirname(script_path)
+dataset_root  <- dirname(paper_dir)
+table_name    <- tools::file_path_sans_ext(basename(script_path))
+
+snapshot_s1   <- file.path(paper_dir, "Garwicz_etal_2009_TableS1_snapshot.csv")
+snapshot_s2   <- file.path(paper_dir, "Garwicz_etal_2009_TableS2_snapshot.csv")
+final_csv     <- file.path(paper_dir, paste0(table_name, ".csv"))
+readme_xlsx   <- file.path(dataset_root, "__ReadMe.xlsx")
+public_tsv_dir<- file.path(dataset_root, "__Public", "comparative-data")
+
+pdf_file <- file.path(paper_dir, "0905777106si.pdf")
+
+## 1. PACKAGES ---------------------------------------------------------------
+# Uses 'tabulapdf' (maintained successor to 'tabulizer'). The old, orphaned
+# 'tabulizerjars' dependency has been removed -- tabulapdf does not need it.
 library(rJava)
-library(tabulapdf) #newer package that works 16/10/2024
-library(tabulizerjars)
+library(tabulapdf)
 library(dplyr)
 library(tidyr)
 library(stringr)
+library(readxl)
 
+## 2. EXTRACT BOTH TABLES + SAVE SNAPSHOTS -----------------------------------
+# Table S1 (taxonomy) is on page 5, Table S2 (database) on page 6. Target each
+# table's data rows with fixed column separators and assign headers directly
+# (so the old "first row as header" / PC-PN rename patches are no longer
+# needed). Coordinates are PDF points (1/72") from the top-left.
 
-# Define the PDF file path
-pdf_file <- paste0(folder_path,"0905777106si.pdf")
-# Use extract_tables to get all tables on the specified page
-tables2 <- extract_tables(pdf_file,pages = c(5,6))
+# --- Table S1: page 5, 4 columns ---
+s1 <- extract_tables(
+  pdf_file, pages = 5, guess = FALSE,
+  area = list(c(69, 30, 320, 545)),
+  columns = list(c(140, 290, 425)),
+  output = "matrix"
+)
+df2 <- as.data.frame(s1[[1]], stringsAsFactors = FALSE)
+colnames(df2) <- c("Lay term", "Order/suborder", "Family", "Genus/species")
 
-# Convert the matrix into a dataframe
-df1 <- as.data.frame(tables2[[2]])
-df2 <- as.data.frame(tables2[[1]])
+# --- Table S2: page 6, 9 columns ("WO, days" splits into PN and PC) ---
+s2 <- extract_tables(
+  pdf_file, pages = 6, guess = FALSE,
+  area = list(c(84, 30, 335, 575)),
+  columns = list(c(125, 188, 255, 322, 380, 431, 468, 515)),
+  output = "matrix"
+)
+df1 <- as.data.frame(s2[[1]], stringsAsFactors = FALSE)
+colnames(df1) <- c(
+  "Species (lay term)", "AbsBrM, g", "NeoBrM (1), g", "BoM, g", "Gest., days",
+  "WO, days_PN", "WO, days_PC", "Pre/Alt", "HSP"
+)
 
+write.csv(df1, snapshot_s2, row.names = FALSE)
+write.csv(df2, snapshot_s1, row.names = FALSE)
 
-## 2. FIX FORMATTING AND SAVE SNAPSHOT
-
-## A. Table S1
-# Save the current column names
-current_colnames <- colnames(df2)
-
-# Insert the column names as the first row
-df2 <- rbind(current_colnames, df2)
-
-# Change the first four column names
-colnames(df2)[1:4] <- c("Lay term", "Order/suborder", "Family", "Genus/species")
-
-## B. Table S2
-# Rename the column "PC" to "WO, days_PC"
-df1 <- df1 %>%
-  rename(`WO, days_PC` = PC) %>%
- rename(`WO, days_PN` = PN)
-
-# Save snapshot to a CSV file 
-write.csv(df1, file = paste0(folder_path,"Garwicz_etal_2009_TableS2_snapshot.csv"), row.names = FALSE)
-write.csv(df2, file = paste0(folder_path,"Garwicz_etal_2009_TableS1_snapshot.csv"), row.names = FALSE)
-
-## 3. MAKE DATA READABLE
-
-## Merge tables and df2 on 
-# Rename the species common names columns to a common name
+## 3. MAKE DATA READABLE -----------------------------------------------------
+# Merge taxonomy (S1) onto the database (S2) by the common (lay) name.
 colnames(df2)[colnames(df2) == "Lay term"] <- "Common name"
 colnames(df1)[colnames(df1) == "Species (lay term)"] <- "Common name"
 
-# Merge df1 and the "Genus/species" column from df2
 tog <- merge(df1, df2[, c("Common name", "Genus/species")], by = "Common name", all.x = TRUE)
 
-
-# Improve column names by spelling out all abbreviations
+# Spell out abbreviations; use the binomial (Genus/species) as Species.
 tog <- tog %>%
   rename(
-    `Absolute Brain Mass (g)` = `AbsBrM, g`,
-    `Neonatal Brain Mass (g)` = `NeoBrM (1), g`,
-    `Body Mass (g)` = `BoM, g`,
-    `Gestation (days)` = `Gest., days`,
-    `Walking onset (Postnatal days)`  = `WO, days_PN`,
+    `Absolute Brain Mass (g)`             = `AbsBrM, g`,
+    `Neonatal Brain Mass (g)`             = `NeoBrM (1), g`,
+    `Body Mass (g)`                       = `BoM, g`,
+    `Gestation (days)`                    = `Gest., days`,
+    `Walking onset (Postnatal days)`      = `WO, days_PN`,
     `Walking onset (Postconception days)` = `WO, days_PC`,
-    `Precocial/Altricial` = `Pre/Alt`,
-    `Hindlimb Standing Position` = `HSP`,
-    Species = `Genus/species`
+    `Precocial/Altricial`                 = `Pre/Alt`,
+    `Hindlimb Standing Position`          = `HSP`,
+    Species                               = `Genus/species`
   ) %>%
   select(Species, everything())
 
-# Split out the references from the values in strings
-# Function to separate values and references
+# Split the literature reference "(n)" out of the value columns into "<col> Ref".
 separate_ref <- function(df, col) {
   df %>%
     mutate(
       !!sym(paste0(col, " Ref")) := str_extract(!!sym(col), "\\(([^)]+)\\)"),
-      !!sym(col) := str_remove(!!sym(col), " \\([^)]*\\)")
+      !!sym(col)                 := str_remove(!!sym(col), " \\([^)]*\\)")
     )
 }
-
-# Apply the function to the specified columns
 tog <- tog %>%
   separate_ref("Absolute Brain Mass (g)") %>%
   separate_ref("Body Mass (g)") %>%
   separate_ref("Gestation (days)") %>%
   separate_ref("Walking onset (Postnatal days)")
 
-# Replace "—" with NA in the specified column
+# "—" means no value for neonatal brain mass.
 tog$`Neonatal Brain Mass (g)` <- ifelse(tog$`Neonatal Brain Mass (g)` == "—", NA, tog$`Neonatal Brain Mass (g)`)
 
-# Loop through columns and remove commas in numbers
-for (col in 3:8) {
-  tog[[col]] <- gsub(",", "", tog[[col]])
-}
-# Convert specified columns to numeric
+# Remove commas and coerce the six measure columns (positions 3:8) to numeric.
+for (col in 3:8) tog[[col]] <- gsub(",", "", tog[[col]])
 tog[, 3:8] <- lapply(tog[, 3:8], as.numeric)
 
-
-# Set the scipen option to a high value to turn off scientific notation
 options(scipen = 999)
 
-
-## 5. SAVE
-# Finalize dataframe (UPDATE!!!)
+## 4. SAVE (LOCAL CSV + PUBLIC TSV) ------------------------------------------
 final.dataframe <- tog
 
-# Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
-library(rstudioapi)
-item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path))
+filecodes    <- read_excel(readme_xlsx, sheet = "Sheet1")
+item_encoded <- filecodes$`Item encoded`[match(table_name, filecodes$`Item name`)]
+if (is.na(item_encoded)) stop("No 'Item encoded' in __ReadMe.xlsx for: ", table_name)
 
-# Get Item encoded
-library(readxl) 
-filecodes <- read_excel("./__ReadMe.xlsx", sheet = "Sheet1")
-item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+write.csv(final.dataframe, final_csv, row.names = FALSE)
 
-# Save dataframe to a CSV file
-write.csv(final.dataframe, file = paste0(folder_path, item_name, ".csv"), row.names = FALSE)
-
-# Save dataframe to a TSV file in the online database
-tsv_file_path <- "./__Public/comparative-data/"
-write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)
+dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
+write.table(
+  final.dataframe,
+  file = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
+  sep = "\t", row.names = FALSE
+)

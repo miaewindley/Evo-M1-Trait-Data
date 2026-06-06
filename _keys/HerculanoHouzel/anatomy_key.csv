@@ -1,0 +1,872 @@
+standardized_term,structure,measure,original_term_variant,reference
+Amygdala_Mass.g,Amygdala,Mass.g,"Amygdala_Mass, g",AvelinodeSouza_etal_2025_TABLE1
+Amygdala_N.n,Amygdala,N.n,Amygdala_Neurons,AvelinodeSouza_etal_2025_TABLE1
+Amygdala_N.p.mg,Amygdala,N.p.mg,Amygdala_Neurons/mg,AvelinodeSouza_etal_2025_TABLE1
+Amygdala_O.n,Amygdala,O.n,Amygdala_Non-neuronal cells,AvelinodeSouza_etal_2025_TABLE1
+Amygdala_O.p.N,Amygdala,O.p.N,Amygdala_Non-neuronal cells/neuron,AvelinodeSouza_etal_2025_TABLE1
+Amygdala_O.p.mg,Amygdala,O.p.mg,Amygdala_Non-neuronal cells/mg,AvelinodeSouza_etal_2025_TABLE1
+Amygdala_Vol.mm3,Amygdala,Vol.mm3,Amygdala_Vol.mm3,Kverkova_etal_2018_TableS1
+Amygdala_Vol.mm3_SD,Amygdala_Vol.mm3,SD,Amygdala_Vol.mm3_SD,Kverkova_etal_2018_TableS1
+Amygdala_p.C.Brain,Amygdala,p.C.Brain,Amygdala_p.C.Brain,Kverkova_etal_2018_TableS1
+Body_Mass.g,Body,Mass.g,"Body mass, g",Burish_etal_2010_Table1
+Body_Mass.g,Body,Mass.g,"Body mass, g",DosSantos_etal_2017_TableS1
+Body_Mass.g,Body,Mass.g,"Body mass, g",HerculanoHouzel_etal_2015_Table5
+Body_Mass.g,Body,Mass.g,"Body mass, g",HerculanoHouzel_etal_2020_TABLE1
+Body_Mass.g,Body,Mass.g,"Body mass, g",Kverkova_etal_2018_TableS1
+Body_Mass.g,Body,Mass.g,Body_Mass.g,Burish_etal_2010_Table1
+Body_Mass.g,Body,Mass.g,Body_Mass.g,DosSantos_etal_2017_TableS1
+Body_Mass.g,Body,Mass.g,Body_Mass.g,HerculanoHouzel_etal_2015_Table5
+Body_Mass.g,Body,Mass.g,Body_Mass.g,HerculanoHouzel_etal_2020_TABLE1
+Body_Mass.g,Body,Mass.g,Body_Mass.g,Kverkova_etal_2018_TableS1
+Body_Mass.g,Body,Mass.g,MBD,Burish_etal_2010_Table1
+Body_Mass.g,Body,Mass.g,MBD,DosSantos_etal_2017_TableS1
+Body_Mass.g,Body,Mass.g,MBD,HerculanoHouzel_etal_2015_Table5
+Body_Mass.g,Body,Mass.g,MBD,HerculanoHouzel_etal_2020_TABLE1
+Body_Mass.g,Body,Mass.g,MBD,Kverkova_etal_2018_TableS1
+Body_Mass.g,Body,Mass.g,"MBODY, g",Burish_etal_2010_Table1
+Body_Mass.g,Body,Mass.g,"MBODY, g",DosSantos_etal_2017_TableS1
+Body_Mass.g,Body,Mass.g,"MBODY, g",HerculanoHouzel_etal_2015_Table5
+Body_Mass.g,Body,Mass.g,"MBODY, g",HerculanoHouzel_etal_2020_TABLE1
+Body_Mass.g,Body,Mass.g,"MBODY, g",Kverkova_etal_2018_TableS1
+Body_Mass.g_SD,Body_Mass.g,SD,"Body mass, g SD",Burish_etal_2010_Table1
+Body_Mass.g_SD,Body_Mass.g,SD,"Body mass, g SD",HerculanoHouzel_etal_2015_Table5
+Body_Mass.g_SD,Body_Mass.g,SD,"Body mass, g SD",Kverkova_etal_2018_TableS1
+Body_Mass.g_SD,Body_Mass.g,SD,Body_Mass.g_SD,Burish_etal_2010_Table1
+Body_Mass.g_SD,Body_Mass.g,SD,Body_Mass.g_SD,HerculanoHouzel_etal_2015_Table5
+Body_Mass.g_SD,Body_Mass.g,SD,Body_Mass.g_SD,Kverkova_etal_2018_TableS1
+Body_Mass.g_SD,Body_Mass.g,SD,MBD_SD,Burish_etal_2010_Table1
+Body_Mass.g_SD,Body_Mass.g,SD,MBD_SD,HerculanoHouzel_etal_2015_Table5
+Body_Mass.g_SD,Body_Mass.g,SD,MBD_SD,Kverkova_etal_2018_TableS1
+Body_Mass.kg,Body,Mass.kg,MBD.kg,JardimMesseder_etal_2017_Table1
+Brain_Mass.g,Brain,Mass.g,MBR,Burish_etal_2010_Table1
+Brain_N.n,Brain,N.n,NBR,Burish_etal_2010_Table1
+Cerebellum_C.n,Cerebellum,C.n,Cb_C,DosSantos_etal_2020_Table1
+Cerebellum_I.n,Cerebellum,I.n,Cb_I,DosSantos_etal_2020_Table1
+Cerebellum_I.p.C,Cerebellum,I.p.C,Cb_I/C,DosSantos_etal_2020_unpublished
+Cerebellum_I.p.N,Cerebellum,I.p.N,Cb_I/N,DosSantos_etal_2020_Table1
+Cerebellum_I.p.mg,Cerebellum,I.p.mg,Cb_I/mg,DosSantos_etal_2020_Table1
+Cerebellum_Mass.g,Cerebellum,Mass.g,Cb_Structure mass (g),AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_Mass.g,Cerebellum,Mass.g,Cb_Structure mass (g),DosSantos_etal_2017_TableS1
+Cerebellum_Mass.g,Cerebellum,Mass.g,Cb_Structure mass (g),DosSantos_etal_2020_Table1
+Cerebellum_Mass.g,Cerebellum,Mass.g,Cb_Structure mass (g),HerculanoHouzel_etal_2015_Table2
+Cerebellum_Mass.g,Cerebellum,Mass.g,Cb_Structure mass (g),JardimMesseder_etal_2017_Table1
+Cerebellum_Mass.g,Cerebellum,Mass.g,"Cerebellum Mass, g",AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_Mass.g,Cerebellum,Mass.g,"Cerebellum Mass, g",DosSantos_etal_2017_TableS1
+Cerebellum_Mass.g,Cerebellum,Mass.g,"Cerebellum Mass, g",DosSantos_etal_2020_Table1
+Cerebellum_Mass.g,Cerebellum,Mass.g,"Cerebellum Mass, g",HerculanoHouzel_etal_2015_Table2
+Cerebellum_Mass.g,Cerebellum,Mass.g,"Cerebellum Mass, g",JardimMesseder_etal_2017_Table1
+Cerebellum_Mass.g,Cerebellum,Mass.g,"Cerebellum_Mass, g",AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_Mass.g,Cerebellum,Mass.g,"Cerebellum_Mass, g",DosSantos_etal_2017_TableS1
+Cerebellum_Mass.g,Cerebellum,Mass.g,"Cerebellum_Mass, g",DosSantos_etal_2020_Table1
+Cerebellum_Mass.g,Cerebellum,Mass.g,"Cerebellum_Mass, g",HerculanoHouzel_etal_2015_Table2
+Cerebellum_Mass.g,Cerebellum,Mass.g,"Cerebellum_Mass, g",JardimMesseder_etal_2017_Table1
+Cerebellum_Mass.g,Cerebellum,Mass.g,MCB,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_Mass.g,Cerebellum,Mass.g,MCB,DosSantos_etal_2017_TableS1
+Cerebellum_Mass.g,Cerebellum,Mass.g,MCB,DosSantos_etal_2020_Table1
+Cerebellum_Mass.g,Cerebellum,Mass.g,MCB,HerculanoHouzel_etal_2015_Table2
+Cerebellum_Mass.g,Cerebellum,Mass.g,MCB,JardimMesseder_etal_2017_Table1
+Cerebellum_Mass.g,Cerebellum,Mass.g,MCB.g,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_Mass.g,Cerebellum,Mass.g,MCB.g,DosSantos_etal_2017_TableS1
+Cerebellum_Mass.g,Cerebellum,Mass.g,MCB.g,DosSantos_etal_2020_Table1
+Cerebellum_Mass.g,Cerebellum,Mass.g,MCB.g,HerculanoHouzel_etal_2015_Table2
+Cerebellum_Mass.g,Cerebellum,Mass.g,MCB.g,JardimMesseder_etal_2017_Table1
+Cerebellum_Mass.g_SD,Cerebellum_Mass.g,SD,"Cerebellum Mass, g SD",HerculanoHouzel_etal_2015_Table2
+Cerebellum_N.n,Cerebellum,N.n,Cb_N,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_N.n,Cerebellum,N.n,Cb_N,DosSantos_etal_2017_TableS1
+Cerebellum_N.n,Cerebellum,N.n,Cb_N,DosSantos_etal_2020_Table1
+Cerebellum_N.n,Cerebellum,N.n,Cb_N,HerculanoHouzel_etal_2015_Table2
+Cerebellum_N.n,Cerebellum,N.n,Cb_N,HerculanoHouzel_etal_2020_TABLE2
+Cerebellum_N.n,Cerebellum,N.n,Cb_N,JardimMesseder_etal_2017_Table1
+Cerebellum_N.n,Cerebellum,N.n,Cb_N,Kverkova_etal_2018_TableS5
+Cerebellum_N.n,Cerebellum,N.n,"Cerebellum N, n",AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_N.n,Cerebellum,N.n,"Cerebellum N, n",DosSantos_etal_2017_TableS1
+Cerebellum_N.n,Cerebellum,N.n,"Cerebellum N, n",DosSantos_etal_2020_Table1
+Cerebellum_N.n,Cerebellum,N.n,"Cerebellum N, n",HerculanoHouzel_etal_2015_Table2
+Cerebellum_N.n,Cerebellum,N.n,"Cerebellum N, n",HerculanoHouzel_etal_2020_TABLE2
+Cerebellum_N.n,Cerebellum,N.n,"Cerebellum N, n",JardimMesseder_etal_2017_Table1
+Cerebellum_N.n,Cerebellum,N.n,"Cerebellum N, n",Kverkova_etal_2018_TableS5
+Cerebellum_N.n,Cerebellum,N.n,Cerebellum_N.n,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_N.n,Cerebellum,N.n,Cerebellum_N.n,DosSantos_etal_2017_TableS1
+Cerebellum_N.n,Cerebellum,N.n,Cerebellum_N.n,DosSantos_etal_2020_Table1
+Cerebellum_N.n,Cerebellum,N.n,Cerebellum_N.n,HerculanoHouzel_etal_2015_Table2
+Cerebellum_N.n,Cerebellum,N.n,Cerebellum_N.n,HerculanoHouzel_etal_2020_TABLE2
+Cerebellum_N.n,Cerebellum,N.n,Cerebellum_N.n,JardimMesseder_etal_2017_Table1
+Cerebellum_N.n,Cerebellum,N.n,Cerebellum_N.n,Kverkova_etal_2018_TableS5
+Cerebellum_N.n,Cerebellum,N.n,Cerebellum_Neurons,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_N.n,Cerebellum,N.n,Cerebellum_Neurons,DosSantos_etal_2017_TableS1
+Cerebellum_N.n,Cerebellum,N.n,Cerebellum_Neurons,DosSantos_etal_2020_Table1
+Cerebellum_N.n,Cerebellum,N.n,Cerebellum_Neurons,HerculanoHouzel_etal_2015_Table2
+Cerebellum_N.n,Cerebellum,N.n,Cerebellum_Neurons,HerculanoHouzel_etal_2020_TABLE2
+Cerebellum_N.n,Cerebellum,N.n,Cerebellum_Neurons,JardimMesseder_etal_2017_Table1
+Cerebellum_N.n,Cerebellum,N.n,Cerebellum_Neurons,Kverkova_etal_2018_TableS5
+Cerebellum_N.n,Cerebellum,N.n,NCB,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_N.n,Cerebellum,N.n,NCB,DosSantos_etal_2017_TableS1
+Cerebellum_N.n,Cerebellum,N.n,NCB,DosSantos_etal_2020_Table1
+Cerebellum_N.n,Cerebellum,N.n,NCB,HerculanoHouzel_etal_2015_Table2
+Cerebellum_N.n,Cerebellum,N.n,NCB,HerculanoHouzel_etal_2020_TABLE2
+Cerebellum_N.n,Cerebellum,N.n,NCB,JardimMesseder_etal_2017_Table1
+Cerebellum_N.n,Cerebellum,N.n,NCB,Kverkova_etal_2018_TableS5
+Cerebellum_N.n_SD,Cerebellum_N.n,SD,"Cerebellum N, n SD",HerculanoHouzel_etal_2015_Table2
+Cerebellum_N.n_SD,Cerebellum_N.n,SD,"Cerebellum N, n SD",Kverkova_etal_2018_TableS5
+Cerebellum_N.n_SD,Cerebellum_N.n,SD,Cerebellum_N.n_SD,HerculanoHouzel_etal_2015_Table2
+Cerebellum_N.n_SD,Cerebellum_N.n,SD,Cerebellum_N.n_SD,Kverkova_etal_2018_TableS5
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cb_N/mg,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cb_N/mg,DosSantos_etal_2017_TableS1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cb_N/mg,DosSantos_etal_2020_Table1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cb_N/mg,HerculanoHouzel_etal_2015_Table2
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cb_N/mg,HerculanoHouzel_etal_2020_TABLE2
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cb_N/mg,JardimMesseder_etal_2017_Table1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cerebellum N/mg,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cerebellum N/mg,DosSantos_etal_2017_TableS1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cerebellum N/mg,DosSantos_etal_2020_Table1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cerebellum N/mg,HerculanoHouzel_etal_2015_Table2
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cerebellum N/mg,HerculanoHouzel_etal_2020_TABLE2
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cerebellum N/mg,JardimMesseder_etal_2017_Table1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cerebellum_Neurons/mg,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cerebellum_Neurons/mg,DosSantos_etal_2017_TableS1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cerebellum_Neurons/mg,DosSantos_etal_2020_Table1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cerebellum_Neurons/mg,HerculanoHouzel_etal_2015_Table2
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cerebellum_Neurons/mg,HerculanoHouzel_etal_2020_TABLE2
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,Cerebellum_Neurons/mg,JardimMesseder_etal_2017_Table1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,"DN,Cb",AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,"DN,Cb",DosSantos_etal_2017_TableS1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,"DN,Cb",DosSantos_etal_2020_Table1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,"DN,Cb",HerculanoHouzel_etal_2015_Table2
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,"DN,Cb",HerculanoHouzel_etal_2020_TABLE2
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,"DN,Cb",JardimMesseder_etal_2017_Table1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,DNCB,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,DNCB,DosSantos_etal_2017_TableS1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,DNCB,DosSantos_etal_2020_Table1
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,DNCB,HerculanoHouzel_etal_2015_Table2
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,DNCB,HerculanoHouzel_etal_2020_TABLE2
+Cerebellum_N.p.mg,Cerebellum,N.p.mg,DNCB,JardimMesseder_etal_2017_Table1
+Cerebellum_N.p.mg_SD,Cerebellum_N.p.mg,SD,Cerebellum N/mg SD,HerculanoHouzel_etal_2015_Table2
+Cerebellum_O.n,Cerebellum,O.n,"Cerebellum O, n",AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_O.n,Cerebellum,O.n,"Cerebellum O, n",HerculanoHouzel_etal_2015_Table2
+Cerebellum_O.n,Cerebellum,O.n,"Cerebellum O, n",JardimMesseder_etal_2017_Table1
+Cerebellum_O.n,Cerebellum,O.n,Cerebellum_Non-neuronal cells,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_O.n,Cerebellum,O.n,Cerebellum_Non-neuronal cells,HerculanoHouzel_etal_2015_Table2
+Cerebellum_O.n,Cerebellum,O.n,Cerebellum_Non-neuronal cells,JardimMesseder_etal_2017_Table1
+Cerebellum_O.n,Cerebellum,O.n,OCB,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_O.n,Cerebellum,O.n,OCB,HerculanoHouzel_etal_2015_Table2
+Cerebellum_O.n,Cerebellum,O.n,OCB,JardimMesseder_etal_2017_Table1
+Cerebellum_O.n_SD,Cerebellum_O.n,SD,"Cerebellum O, n SD",HerculanoHouzel_etal_2015_Table2
+Cerebellum_O.p.N,Cerebellum,O.p.N,Cerebellum O/N,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_O.p.N,Cerebellum,O.p.N,Cerebellum O/N,DosSantos_etal_2017_TableS1
+Cerebellum_O.p.N,Cerebellum,O.p.N,Cerebellum O/N,HerculanoHouzel_etal_2015_Table2
+Cerebellum_O.p.N,Cerebellum,O.p.N,Cerebellum O/N,JardimMesseder_etal_2017_Table1
+Cerebellum_O.p.N,Cerebellum,O.p.N,Cerebellum_Non-neuronal cells/neuron,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_O.p.N,Cerebellum,O.p.N,Cerebellum_Non-neuronal cells/neuron,DosSantos_etal_2017_TableS1
+Cerebellum_O.p.N,Cerebellum,O.p.N,Cerebellum_Non-neuronal cells/neuron,HerculanoHouzel_etal_2015_Table2
+Cerebellum_O.p.N,Cerebellum,O.p.N,Cerebellum_Non-neuronal cells/neuron,JardimMesseder_etal_2017_Table1
+Cerebellum_O.p.N,Cerebellum,O.p.N,O/NCB,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_O.p.N,Cerebellum,O.p.N,O/NCB,DosSantos_etal_2017_TableS1
+Cerebellum_O.p.N,Cerebellum,O.p.N,O/NCB,HerculanoHouzel_etal_2015_Table2
+Cerebellum_O.p.N,Cerebellum,O.p.N,O/NCB,JardimMesseder_etal_2017_Table1
+Cerebellum_O.p.N_SD,Cerebellum_O.p.N,SD,Cerebellum O/N SD,HerculanoHouzel_etal_2015_Table2
+Cerebellum_O.p.mg,Cerebellum,O.p.mg,Cerebellum O/mg,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_O.p.mg,Cerebellum,O.p.mg,Cerebellum O/mg,HerculanoHouzel_etal_2015_Table2
+Cerebellum_O.p.mg,Cerebellum,O.p.mg,Cerebellum_Non-neuronal cells/mg,AvelinodeSouza_etal_2025_TABLE1
+Cerebellum_O.p.mg,Cerebellum,O.p.mg,Cerebellum_Non-neuronal cells/mg,HerculanoHouzel_etal_2015_Table2
+Cerebellum_O.p.mg_SD,Cerebellum_O.p.mg,SD,Cerebellum O/mg SD,HerculanoHouzel_etal_2015_Table2
+Cerebellum_S.n,Cerebellum,S.n,Cb_No. of samples,DosSantos_etal_2020_Table1
+Cerebellum_Source,Cerebellum,Source,Cerebellum Source,HerculanoHouzel_etal_2015_Table2
+Cerebellum_Vol.mm3,Cerebellum,Vol.mm3,Cerebellum_Vol.mm3,Kverkova_etal_2018_TableS1
+Cerebellum_Vol.mm3_SD,Cerebellum_Vol.mm3,SD,Cerebellum_Vol.mm3_SD,Kverkova_etal_2018_TableS1
+Cerebellum_p.C.Brain,Cerebellum,p.C.Brain,Cerebellum_p.C.Brain,Kverkova_etal_2018_TableS1
+CerebralCortexGrey_Mass.g,CerebralCortexGrey,Mass.g,"Cerebral cortical grey matter_Mass, g",AvelinodeSouza_etal_2025_TABLE1
+CerebralCortexGrey_N.n,CerebralCortexGrey,N.n,Cerebral cortical grey matter_Neurons,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortexGrey_N.n,CerebralCortexGrey,N.n,Cerebral cortical grey matter_Neurons,DosSantos_etal_2017_TableS1
+CerebralCortexGrey_N.n,CerebralCortexGrey,N.n,NGM,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortexGrey_N.n,CerebralCortexGrey,N.n,NGM,DosSantos_etal_2017_TableS1
+CerebralCortexGrey_N.p.mg,CerebralCortexGrey,N.p.mg,Cerebral cortical grey matter_Neurons/mg,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortexGrey_N.p.mg,CerebralCortexGrey,N.p.mg,Cerebral cortical grey matter_Neurons/mg,DosSantos_etal_2017_TableS1
+CerebralCortexGrey_N.p.mg,CerebralCortexGrey,N.p.mg,DNGM,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortexGrey_N.p.mg,CerebralCortexGrey,N.p.mg,DNGM,DosSantos_etal_2017_TableS1
+CerebralCortexGrey_O.n,CerebralCortexGrey,O.n,Cerebral cortical grey matter_Non-neuronal cells,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortexGrey_O.p.N,CerebralCortexGrey,O.p.N,Cerebral cortical grey matter_Non-neuronal cells/neuron,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortexGrey_O.p.N,CerebralCortexGrey,O.p.N,Cerebral cortical grey matter_Non-neuronal cells/neuron,DosSantos_etal_2017_TableS1
+CerebralCortexGrey_O.p.N,CerebralCortexGrey,O.p.N,O/NGM,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortexGrey_O.p.N,CerebralCortexGrey,O.p.N,O/NGM,DosSantos_etal_2017_TableS1
+CerebralCortexGrey_O.p.mg,CerebralCortexGrey,O.p.mg,Cerebral cortical grey matter_Non-neuronal cells/mg,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortexNoHippocampus_C.n,CerebralCortexNoHippocampus,C.n,Ctx_C,DosSantos_etal_2020_Table1
+CerebralCortexNoHippocampus_I.n,CerebralCortexNoHippocampus,I.n,Ctx_I,DosSantos_etal_2020_Table1
+CerebralCortexNoHippocampus_I.p.C,CerebralCortexNoHippocampus,I.p.C,Ctx_I/C,DosSantos_etal_2020_unpublished
+CerebralCortexNoHippocampus_I.p.N,CerebralCortexNoHippocampus,I.p.N,Ctx_I/N,DosSantos_etal_2020_Table1
+CerebralCortexNoHippocampus_I.p.mg,CerebralCortexNoHippocampus,I.p.mg,Ctx_I/mg,DosSantos_etal_2020_Table1
+CerebralCortexNoHippocampus_Mass.g,CerebralCortexNoHippocampus,Mass.g,Ctx_Structure mass (g),DosSantos_etal_2020_Table1
+CerebralCortexNoHippocampus_N.n,CerebralCortexNoHippocampus,N.n,Ctx_N,DosSantos_etal_2020_Table1
+CerebralCortexNoHippocampus_N.p.mg,CerebralCortexNoHippocampus,N.p.mg,Ctx_N/mg,DosSantos_etal_2020_Table1
+CerebralCortexNoHippocampus_S.n,CerebralCortexNoHippocampus,S.n,Ctx_No. of samples,DosSantos_etal_2020_Table1
+CerebralCortexWhite_Mass.g,CerebralCortexWhite,Mass.g,"Cerebral cortical white matter_Mass, g",AvelinodeSouza_etal_2025_TABLE1
+CerebralCortexWhite_N.n,CerebralCortexWhite,N.n,Cerebral cortical white matter_Neurons,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortexWhite_N.p.mg,CerebralCortexWhite,N.p.mg,Cerebral cortical white matter_Neurons/mg,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortexWhite_O.n,CerebralCortexWhite,O.n,Cerebral cortical white matter_Non-neuronal cells,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortexWhite_O.p.N,CerebralCortexWhite,O.p.N,Cerebral cortical white matter_Non-neuronal cells/neuron,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortexWhite_O.p.mg,CerebralCortexWhite,O.p.mg,Cerebral cortical white matter_Non-neuronal cells/mg,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_C.n,CerebralCortex,C.n,Cx_C,DosSantos_etal_2020_Table1
+CerebralCortex_I.n,CerebralCortex,I.n,Cx_I,DosSantos_etal_2020_Table1
+CerebralCortex_I.p.C,CerebralCortex,I.p.C,Cx_I/C,DosSantos_etal_2020_unpublished
+CerebralCortex_I.p.N,CerebralCortex,I.p.N,Cx_I/N,DosSantos_etal_2020_Table1
+CerebralCortex_I.p.mg,CerebralCortex,I.p.mg,Cx_I/mg,DosSantos_etal_2020_Table1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,"Cerebral cortex (including Hp + amygdala)_Mass, g",AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,"Cerebral cortex (including Hp + amygdala)_Mass, g",DosSantos_etal_2017_TableS1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,"Cerebral cortex (including Hp + amygdala)_Mass, g",DosSantos_etal_2020_Table1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,"Cerebral cortex (including Hp + amygdala)_Mass, g",HerculanoHouzel_etal_2015_Table1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,"Cerebral cortex (including Hp + amygdala)_Mass, g",JardimMesseder_etal_2017_Table1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,"Cerebral cortex Mass, g",AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,"Cerebral cortex Mass, g",DosSantos_etal_2017_TableS1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,"Cerebral cortex Mass, g",DosSantos_etal_2020_Table1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,"Cerebral cortex Mass, g",HerculanoHouzel_etal_2015_Table1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,"Cerebral cortex Mass, g",JardimMesseder_etal_2017_Table1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,Cx_Structure mass (g),AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,Cx_Structure mass (g),DosSantos_etal_2017_TableS1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,Cx_Structure mass (g),DosSantos_etal_2020_Table1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,Cx_Structure mass (g),HerculanoHouzel_etal_2015_Table1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,Cx_Structure mass (g),JardimMesseder_etal_2017_Table1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,MCX,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,MCX,DosSantos_etal_2017_TableS1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,MCX,DosSantos_etal_2020_Table1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,MCX,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,MCX,JardimMesseder_etal_2017_Table1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,MCxT.g,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,MCxT.g,DosSantos_etal_2017_TableS1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,MCxT.g,DosSantos_etal_2020_Table1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,MCxT.g,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_Mass.g,CerebralCortex,Mass.g,MCxT.g,JardimMesseder_etal_2017_Table1
+CerebralCortex_Mass.g_SD,CerebralCortex_Mass.g,SD,"Cerebral cortex Mass, g SD",HerculanoHouzel_etal_2015_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,Cerebral cortex (including Hp + amygdala)_Neurons,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_N.n,CerebralCortex,N.n,Cerebral cortex (including Hp + amygdala)_Neurons,DosSantos_etal_2017_TableS1
+CerebralCortex_N.n,CerebralCortex,N.n,Cerebral cortex (including Hp + amygdala)_Neurons,DosSantos_etal_2020_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,Cerebral cortex (including Hp + amygdala)_Neurons,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,Cerebral cortex (including Hp + amygdala)_Neurons,HerculanoHouzel_etal_2020_TABLE2
+CerebralCortex_N.n,CerebralCortex,N.n,Cerebral cortex (including Hp + amygdala)_Neurons,JardimMesseder_etal_2017_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,Cerebral cortex (including Hp + amygdala)_Neurons,Kverkova_etal_2018_TableS5
+CerebralCortex_N.n,CerebralCortex,N.n,"Cerebral cortex N, n",AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_N.n,CerebralCortex,N.n,"Cerebral cortex N, n",DosSantos_etal_2017_TableS1
+CerebralCortex_N.n,CerebralCortex,N.n,"Cerebral cortex N, n",DosSantos_etal_2020_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,"Cerebral cortex N, n",HerculanoHouzel_etal_2015_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,"Cerebral cortex N, n",HerculanoHouzel_etal_2020_TABLE2
+CerebralCortex_N.n,CerebralCortex,N.n,"Cerebral cortex N, n",JardimMesseder_etal_2017_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,"Cerebral cortex N, n",Kverkova_etal_2018_TableS5
+CerebralCortex_N.n,CerebralCortex,N.n,Cortex_N.n,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_N.n,CerebralCortex,N.n,Cortex_N.n,DosSantos_etal_2017_TableS1
+CerebralCortex_N.n,CerebralCortex,N.n,Cortex_N.n,DosSantos_etal_2020_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,Cortex_N.n,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,Cortex_N.n,HerculanoHouzel_etal_2020_TABLE2
+CerebralCortex_N.n,CerebralCortex,N.n,Cortex_N.n,JardimMesseder_etal_2017_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,Cortex_N.n,Kverkova_etal_2018_TableS5
+CerebralCortex_N.n,CerebralCortex,N.n,Cx_N,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_N.n,CerebralCortex,N.n,Cx_N,DosSantos_etal_2017_TableS1
+CerebralCortex_N.n,CerebralCortex,N.n,Cx_N,DosSantos_etal_2020_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,Cx_N,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,Cx_N,HerculanoHouzel_etal_2020_TABLE2
+CerebralCortex_N.n,CerebralCortex,N.n,Cx_N,JardimMesseder_etal_2017_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,Cx_N,Kverkova_etal_2018_TableS5
+CerebralCortex_N.n,CerebralCortex,N.n,NCX,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_N.n,CerebralCortex,N.n,NCX,DosSantos_etal_2017_TableS1
+CerebralCortex_N.n,CerebralCortex,N.n,NCX,DosSantos_etal_2020_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,NCX,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,NCX,HerculanoHouzel_etal_2020_TABLE2
+CerebralCortex_N.n,CerebralCortex,N.n,NCX,JardimMesseder_etal_2017_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,NCX,Kverkova_etal_2018_TableS5
+CerebralCortex_N.n,CerebralCortex,N.n,NCxT,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_N.n,CerebralCortex,N.n,NCxT,DosSantos_etal_2017_TableS1
+CerebralCortex_N.n,CerebralCortex,N.n,NCxT,DosSantos_etal_2020_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,NCxT,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,NCxT,HerculanoHouzel_etal_2020_TABLE2
+CerebralCortex_N.n,CerebralCortex,N.n,NCxT,JardimMesseder_etal_2017_Table1
+CerebralCortex_N.n,CerebralCortex,N.n,NCxT,Kverkova_etal_2018_TableS5
+CerebralCortex_N.n_SD,CerebralCortex_N.n,SD,"Cerebral cortex N, n SD",HerculanoHouzel_etal_2015_Table1
+CerebralCortex_N.n_SD,CerebralCortex_N.n,SD,"Cerebral cortex N, n SD",Kverkova_etal_2018_TableS5
+CerebralCortex_N.n_SD,CerebralCortex_N.n,SD,Cortex_N.n_SD,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_N.n_SD,CerebralCortex_N.n,SD,Cortex_N.n_SD,Kverkova_etal_2018_TableS5
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cerebral cortex (including Hp + amygdala)_Neurons/mg,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cerebral cortex (including Hp + amygdala)_Neurons/mg,DosSantos_etal_2017_TableS1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cerebral cortex (including Hp + amygdala)_Neurons/mg,DosSantos_etal_2020_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cerebral cortex (including Hp + amygdala)_Neurons/mg,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cerebral cortex (including Hp + amygdala)_Neurons/mg,HerculanoHouzel_etal_2020_TABLE2
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cerebral cortex (including Hp + amygdala)_Neurons/mg,JardimMesseder_etal_2017_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cerebral cortex N/mg,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cerebral cortex N/mg,DosSantos_etal_2017_TableS1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cerebral cortex N/mg,DosSantos_etal_2020_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cerebral cortex N/mg,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cerebral cortex N/mg,HerculanoHouzel_etal_2020_TABLE2
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cerebral cortex N/mg,JardimMesseder_etal_2017_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cx_N/mg,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cx_N/mg,DosSantos_etal_2017_TableS1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cx_N/mg,DosSantos_etal_2020_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cx_N/mg,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cx_N/mg,HerculanoHouzel_etal_2020_TABLE2
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,Cx_N/mg,JardimMesseder_etal_2017_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,"DN,CX",AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,"DN,CX",DosSantos_etal_2017_TableS1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,"DN,CX",DosSantos_etal_2020_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,"DN,CX",HerculanoHouzel_etal_2015_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,"DN,CX",HerculanoHouzel_etal_2020_TABLE2
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,"DN,CX",JardimMesseder_etal_2017_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,DNCX,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,DNCX,DosSantos_etal_2017_TableS1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,DNCX,DosSantos_etal_2020_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,DNCX,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,DNCX,HerculanoHouzel_etal_2020_TABLE2
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,DNCX,JardimMesseder_etal_2017_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,DNCxT,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,DNCxT,DosSantos_etal_2017_TableS1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,DNCxT,DosSantos_etal_2020_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,DNCxT,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,DNCxT,HerculanoHouzel_etal_2020_TABLE2
+CerebralCortex_N.p.mg,CerebralCortex,N.p.mg,DNCxT,JardimMesseder_etal_2017_Table1
+CerebralCortex_N.p.mg_SD,CerebralCortex_N.p.mg,SD,Cerebral cortex N/mg SD,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_O.n,CerebralCortex,O.n,Cerebral cortex (including Hp + amygdala)_Non-neuronal cells,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_O.n,CerebralCortex,O.n,Cerebral cortex (including Hp + amygdala)_Non-neuronal cells,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_O.n,CerebralCortex,O.n,Cerebral cortex (including Hp + amygdala)_Non-neuronal cells,JardimMesseder_etal_2017_Table1
+CerebralCortex_O.n,CerebralCortex,O.n,"Cerebral cortex O, n",AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_O.n,CerebralCortex,O.n,"Cerebral cortex O, n",HerculanoHouzel_etal_2015_Table1
+CerebralCortex_O.n,CerebralCortex,O.n,"Cerebral cortex O, n",JardimMesseder_etal_2017_Table1
+CerebralCortex_O.n,CerebralCortex,O.n,OCxT,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_O.n,CerebralCortex,O.n,OCxT,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_O.n,CerebralCortex,O.n,OCxT,JardimMesseder_etal_2017_Table1
+CerebralCortex_O.n_SD,CerebralCortex_O.n,SD,"Cerebral cortex O, n SD",HerculanoHouzel_etal_2015_Table1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,Cerebral cortex (including Hp + amygdala)_Non-neuronal cells/neuron,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,Cerebral cortex (including Hp + amygdala)_Non-neuronal cells/neuron,DosSantos_etal_2017_TableS1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,Cerebral cortex (including Hp + amygdala)_Non-neuronal cells/neuron,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,Cerebral cortex (including Hp + amygdala)_Non-neuronal cells/neuron,JardimMesseder_etal_2017_Table1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,Cerebral cortex O/N,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,Cerebral cortex O/N,DosSantos_etal_2017_TableS1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,Cerebral cortex O/N,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,Cerebral cortex O/N,JardimMesseder_etal_2017_Table1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,O/NCX,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,O/NCX,DosSantos_etal_2017_TableS1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,O/NCX,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,O/NCX,JardimMesseder_etal_2017_Table1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,O/NCXT,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,O/NCXT,DosSantos_etal_2017_TableS1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,O/NCXT,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_O.p.N,CerebralCortex,O.p.N,O/NCXT,JardimMesseder_etal_2017_Table1
+CerebralCortex_O.p.N_SD,CerebralCortex_O.p.N,SD,Cerebral cortex O/N SD,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_O.p.mg,CerebralCortex,O.p.mg,Cerebral cortex (including Hp + amygdala)_Non-neuronal cells/mg,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_O.p.mg,CerebralCortex,O.p.mg,Cerebral cortex (including Hp + amygdala)_Non-neuronal cells/mg,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_O.p.mg,CerebralCortex,O.p.mg,Cerebral cortex O/mg,AvelinodeSouza_etal_2025_TABLE1
+CerebralCortex_O.p.mg,CerebralCortex,O.p.mg,Cerebral cortex O/mg,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_O.p.mg_SD,CerebralCortex_O.p.mg,SD,Cerebral cortex O/mg SD,HerculanoHouzel_etal_2015_Table1
+CerebralCortex_S.n,CerebralCortex,S.n,Cx_No. of samples,DosSantos_etal_2020_Table1
+CerebralCortex_Source,CerebralCortex,Source,Cerebral cortex Source,HerculanoHouzel_etal_2015_Table1
+Clade,Clade,,Clade,HerculanoHouzel_etal_2020_TABLE1
+CommonName,CommonName,,Common Name,JardimMesseder_etal_2017_Table1
+DiencephalonStriatum_Mass.g,DiencephalonStriatum,Mass.g,"Diencephalon + Striatum_Mass, g",AvelinodeSouza_etal_2025_TABLE1
+DiencephalonStriatum_Mass.g,DiencephalonStriatum,Mass.g,"Diencephalon + Striatum_Mass, g",DosSantos_etal_2017_TableS1
+DiencephalonStriatum_Mass.g,DiencephalonStriatum,Mass.g,MD+S,AvelinodeSouza_etal_2025_TABLE1
+DiencephalonStriatum_Mass.g,DiencephalonStriatum,Mass.g,MD+S,DosSantos_etal_2017_TableS1
+DiencephalonStriatum_N.n,DiencephalonStriatum,N.n,Diencephalon + Striatum_Neurons,AvelinodeSouza_etal_2025_TABLE1
+DiencephalonStriatum_N.n,DiencephalonStriatum,N.n,Diencephalon + Striatum_Neurons,DosSantos_etal_2017_TableS1
+DiencephalonStriatum_N.n,DiencephalonStriatum,N.n,ND+S,AvelinodeSouza_etal_2025_TABLE1
+DiencephalonStriatum_N.n,DiencephalonStriatum,N.n,ND+S,DosSantos_etal_2017_TableS1
+DiencephalonStriatum_N.p.mg,DiencephalonStriatum,N.p.mg,DND + S,AvelinodeSouza_etal_2025_TABLE1
+DiencephalonStriatum_N.p.mg,DiencephalonStriatum,N.p.mg,DND + S,DosSantos_etal_2017_TableS1
+DiencephalonStriatum_N.p.mg,DiencephalonStriatum,N.p.mg,Diencephalon + Striatum_Neurons/mg,AvelinodeSouza_etal_2025_TABLE1
+DiencephalonStriatum_N.p.mg,DiencephalonStriatum,N.p.mg,Diencephalon + Striatum_Neurons/mg,DosSantos_etal_2017_TableS1
+DiencephalonStriatum_O.n,DiencephalonStriatum,O.n,Diencephalon + Striatum_Non-neuronal cells,AvelinodeSouza_etal_2025_TABLE1
+DiencephalonStriatum_O.p.N,DiencephalonStriatum,O.p.N,Diencephalon + Striatum_Non-neuronal cells/neuron,AvelinodeSouza_etal_2025_TABLE1
+DiencephalonStriatum_O.p.N,DiencephalonStriatum,O.p.N,Diencephalon + Striatum_Non-neuronal cells/neuron,DosSantos_etal_2017_TableS1
+DiencephalonStriatum_O.p.N,DiencephalonStriatum,O.p.N,O/ND+S,AvelinodeSouza_etal_2025_TABLE1
+DiencephalonStriatum_O.p.N,DiencephalonStriatum,O.p.N,O/ND+S,DosSantos_etal_2017_TableS1
+DiencephalonStriatum_O.p.mg,DiencephalonStriatum,O.p.mg,Diencephalon + Striatum_Non-neuronal cells/mg,AvelinodeSouza_etal_2025_TABLE1
+EntorhinalCortex_Vol.mm3,EntorhinalCortex,Vol.mm3,Entorhinal cortex_Vol.mm3,Kverkova_etal_2018_TableS1
+EntorhinalCortex_Vol.mm3_SD,EntorhinalCortex_Vol.mm3,SD,Entorhinal cortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1
+EntorhinalCortex_p.C.Brain,EntorhinalCortex,p.C.Brain,Entorhinal cortex_p.C.Brain,Kverkova_etal_2018_TableS1
+Family,Family,,Family,HerculanoHouzel_etal_2020_TABLE1
+Family,Family,,Family,HerculanoHouzel_etal_2020_TABLE2
+Hippocampus_C.n,Hippocampus,C.n,Hp_C,DosSantos_etal_2020_Table1
+Hippocampus_I.n,Hippocampus,I.n,Hp_I,DosSantos_etal_2020_Table1
+Hippocampus_I.p.C,Hippocampus,I.p.C,Hp_I/C,DosSantos_etal_2020_unpublished
+Hippocampus_I.p.N,Hippocampus,I.p.N,Hp_I/N,DosSantos_etal_2020_Table1
+Hippocampus_I.p.mg,Hippocampus,I.p.mg,Hp_I/mg,DosSantos_etal_2020_Table1
+Hippocampus_Mass.g,Hippocampus,Mass.g,"Hippocampus_Mass, g",AvelinodeSouza_etal_2025_TABLE1
+Hippocampus_Mass.g,Hippocampus,Mass.g,"Hippocampus_Mass, g",DosSantos_etal_2017_TableS1
+Hippocampus_Mass.g,Hippocampus,Mass.g,"Hippocampus_Mass, g",DosSantos_etal_2020_Table1
+Hippocampus_Mass.g,Hippocampus,Mass.g,"Hippocampus_Mass, g",JardimMesseder_etal_2017_Table1
+Hippocampus_Mass.g,Hippocampus,Mass.g,Hp_Structure mass (g),AvelinodeSouza_etal_2025_TABLE1
+Hippocampus_Mass.g,Hippocampus,Mass.g,Hp_Structure mass (g),DosSantos_etal_2017_TableS1
+Hippocampus_Mass.g,Hippocampus,Mass.g,Hp_Structure mass (g),DosSantos_etal_2020_Table1
+Hippocampus_Mass.g,Hippocampus,Mass.g,Hp_Structure mass (g),JardimMesseder_etal_2017_Table1
+Hippocampus_Mass.g,Hippocampus,Mass.g,MHP,AvelinodeSouza_etal_2025_TABLE1
+Hippocampus_Mass.g,Hippocampus,Mass.g,MHP,DosSantos_etal_2017_TableS1
+Hippocampus_Mass.g,Hippocampus,Mass.g,MHP,DosSantos_etal_2020_Table1
+Hippocampus_Mass.g,Hippocampus,Mass.g,MHP,JardimMesseder_etal_2017_Table1
+Hippocampus_Mass.g,Hippocampus,Mass.g,MHP.g,AvelinodeSouza_etal_2025_TABLE1
+Hippocampus_Mass.g,Hippocampus,Mass.g,MHP.g,DosSantos_etal_2017_TableS1
+Hippocampus_Mass.g,Hippocampus,Mass.g,MHP.g,DosSantos_etal_2020_Table1
+Hippocampus_Mass.g,Hippocampus,Mass.g,MHP.g,JardimMesseder_etal_2017_Table1
+Hippocampus_N.n,Hippocampus,N.n,Hippocampus_Neurons,AvelinodeSouza_etal_2025_TABLE1
+Hippocampus_N.n,Hippocampus,N.n,Hippocampus_Neurons,DosSantos_etal_2017_TableS1
+Hippocampus_N.n,Hippocampus,N.n,Hippocampus_Neurons,DosSantos_etal_2020_Table1
+Hippocampus_N.n,Hippocampus,N.n,Hippocampus_Neurons,JardimMesseder_etal_2017_Table1
+Hippocampus_N.n,Hippocampus,N.n,Hp_N,AvelinodeSouza_etal_2025_TABLE1
+Hippocampus_N.n,Hippocampus,N.n,Hp_N,DosSantos_etal_2017_TableS1
+Hippocampus_N.n,Hippocampus,N.n,Hp_N,DosSantos_etal_2020_Table1
+Hippocampus_N.n,Hippocampus,N.n,Hp_N,JardimMesseder_etal_2017_Table1
+Hippocampus_N.n,Hippocampus,N.n,NHP,AvelinodeSouza_etal_2025_TABLE1
+Hippocampus_N.n,Hippocampus,N.n,NHP,DosSantos_etal_2017_TableS1
+Hippocampus_N.n,Hippocampus,N.n,NHP,DosSantos_etal_2020_Table1
+Hippocampus_N.n,Hippocampus,N.n,NHP,JardimMesseder_etal_2017_Table1
+Hippocampus_N.p.mg,Hippocampus,N.p.mg,DNHP,AvelinodeSouza_etal_2025_TABLE1
+Hippocampus_N.p.mg,Hippocampus,N.p.mg,DNHP,DosSantos_etal_2017_TableS1
+Hippocampus_N.p.mg,Hippocampus,N.p.mg,DNHP,DosSantos_etal_2020_Table1
+Hippocampus_N.p.mg,Hippocampus,N.p.mg,DNHP,JardimMesseder_etal_2017_Table1
+Hippocampus_N.p.mg,Hippocampus,N.p.mg,Hippocampus_Neurons/mg,AvelinodeSouza_etal_2025_TABLE1
+Hippocampus_N.p.mg,Hippocampus,N.p.mg,Hippocampus_Neurons/mg,DosSantos_etal_2017_TableS1
+Hippocampus_N.p.mg,Hippocampus,N.p.mg,Hippocampus_Neurons/mg,DosSantos_etal_2020_Table1
+Hippocampus_N.p.mg,Hippocampus,N.p.mg,Hippocampus_Neurons/mg,JardimMesseder_etal_2017_Table1
+Hippocampus_N.p.mg,Hippocampus,N.p.mg,Hp_N/mg,AvelinodeSouza_etal_2025_TABLE1
+Hippocampus_N.p.mg,Hippocampus,N.p.mg,Hp_N/mg,DosSantos_etal_2017_TableS1
+Hippocampus_N.p.mg,Hippocampus,N.p.mg,Hp_N/mg,DosSantos_etal_2020_Table1
+Hippocampus_N.p.mg,Hippocampus,N.p.mg,Hp_N/mg,JardimMesseder_etal_2017_Table1
+Hippocampus_O.n,Hippocampus,O.n,Hippocampus_Non-neuronal cells,AvelinodeSouza_etal_2025_TABLE1
+Hippocampus_O.n,Hippocampus,O.n,Hippocampus_Non-neuronal cells,JardimMesseder_etal_2017_Table1
+Hippocampus_O.n,Hippocampus,O.n,OHP,AvelinodeSouza_etal_2025_TABLE1
+Hippocampus_O.n,Hippocampus,O.n,OHP,JardimMesseder_etal_2017_Table1
+Hippocampus_O.p.N,Hippocampus,O.p.N,Hippocampus_Non-neuronal cells/neuron,AvelinodeSouza_etal_2025_TABLE1
+Hippocampus_O.p.N,Hippocampus,O.p.N,Hippocampus_Non-neuronal cells/neuron,DosSantos_etal_2017_TableS1
+Hippocampus_O.p.N,Hippocampus,O.p.N,Hippocampus_Non-neuronal cells/neuron,JardimMesseder_etal_2017_Table1
+Hippocampus_O.p.N,Hippocampus,O.p.N,O/NHP,AvelinodeSouza_etal_2025_TABLE1
+Hippocampus_O.p.N,Hippocampus,O.p.N,O/NHP,DosSantos_etal_2017_TableS1
+Hippocampus_O.p.N,Hippocampus,O.p.N,O/NHP,JardimMesseder_etal_2017_Table1
+Hippocampus_O.p.mg,Hippocampus,O.p.mg,Hippocampus_Non-neuronal cells/mg,AvelinodeSouza_etal_2025_TABLE1
+Hippocampus_S.n,Hippocampus,S.n,Hp_No. of samples,DosSantos_etal_2020_Table1
+Hippocampus_Vol.mm3,Hippocampus,Vol.mm3,Hippocampus_Vol.mm3,Kverkova_etal_2018_TableS1
+Hippocampus_Vol.mm3_SD,Hippocampus_Vol.mm3,SD,Hippocampus_Vol.mm3_SD,Kverkova_etal_2018_TableS1
+Hippocampus_p.C.Brain,Hippocampus,p.C.Brain,Hippocampus_p.C.Brain,Kverkova_etal_2018_TableS1
+Hypothalamus_Vol.mm3,Hypothalamus,Vol.mm3,Hypothalamus_Vol.mm3,Kverkova_etal_2018_TableS1
+Hypothalamus_Vol.mm3_SD,Hypothalamus_Vol.mm3,SD,Hypothalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1
+Hypothalamus_p.C.Brain,Hypothalamus,p.C.Brain,Hypothalamus_p.C.Brain,Kverkova_etal_2018_TableS1
+Medulla_Mass.g,Medulla,Mass.g,"Medulla oblongata_Mass, g",AvelinodeSouza_etal_2025_TABLE1
+Medulla_N.n,Medulla,N.n,Medulla oblongata_Neurons,AvelinodeSouza_etal_2025_TABLE1
+Medulla_N.p.mg,Medulla,N.p.mg,Medulla oblongata_Neurons/mg,AvelinodeSouza_etal_2025_TABLE1
+Medulla_O.n,Medulla,O.n,Medulla oblongata_Non-neuronal cells,AvelinodeSouza_etal_2025_TABLE1
+Medulla_O.p.N,Medulla,O.p.N,Medulla oblongata_Non-neuronal cells/neuron,AvelinodeSouza_etal_2025_TABLE1
+Medulla_O.p.mg,Medulla,O.p.mg,Medulla oblongata_Non-neuronal cells/mg,AvelinodeSouza_etal_2025_TABLE1
+Medulla_Vol.mm3,Medulla,Vol.mm3,Medulla oblongata_Vol.mm3,Kverkova_etal_2018_TableS1
+Medulla_Vol.mm3_SD,Medulla_Vol.mm3,SD,Medulla oblongata_Vol.mm3_SD,Kverkova_etal_2018_TableS1
+Medulla_p.C.Brain,Medulla,p.C.Brain,Medulla oblongata_p.C.Brain,Kverkova_etal_2018_TableS1
+MesencephalonDiencephalonStriatum_Mass.g,MesencephalonDiencephalonStriatum,Mass.g,MMES+D+S,DosSantos_etal_2017_TableS1
+MesencephalonDiencephalonStriatum_N.n,MesencephalonDiencephalonStriatum,N.n,NMES+D+S,DosSantos_etal_2017_TableS1
+MesencephalonDiencephalonStriatum_N.p.mg,MesencephalonDiencephalonStriatum,N.p.mg,DNMES+D+S,DosSantos_etal_2017_TableS1
+MesencephalonDiencephalonStriatum_O.p.N,MesencephalonDiencephalonStriatum,O.p.N,O/NMES+D+S,DosSantos_etal_2017_TableS1
+MesencephalonMedulla_N.n,MesencephalonMedulla,N.n,Brain stem_N.n,Kverkova_etal_2018_TableS5
+MesencephalonMedulla_N.n_SD,MesencephalonMedulla_N.n,SD,Brain stem_N.n_SD,Kverkova_etal_2018_TableS5
+Mesencephalon_Mass.g,Mesencephalon,Mass.g,MMES,AvelinodeSouza_etal_2025_TABLE1
+Mesencephalon_Mass.g,Mesencephalon,Mass.g,MMES,DosSantos_etal_2017_TableS1
+Mesencephalon_Mass.g,Mesencephalon,Mass.g,"Mesencephalon_Mass, g",AvelinodeSouza_etal_2025_TABLE1
+Mesencephalon_Mass.g,Mesencephalon,Mass.g,"Mesencephalon_Mass, g",DosSantos_etal_2017_TableS1
+Mesencephalon_N.n,Mesencephalon,N.n,Mesencephalon_Neurons,AvelinodeSouza_etal_2025_TABLE1
+Mesencephalon_N.n,Mesencephalon,N.n,Mesencephalon_Neurons,DosSantos_etal_2017_TableS1
+Mesencephalon_N.n,Mesencephalon,N.n,NMES,AvelinodeSouza_etal_2025_TABLE1
+Mesencephalon_N.n,Mesencephalon,N.n,NMES,DosSantos_etal_2017_TableS1
+Mesencephalon_N.p.mg,Mesencephalon,N.p.mg,DNMES,AvelinodeSouza_etal_2025_TABLE1
+Mesencephalon_N.p.mg,Mesencephalon,N.p.mg,DNMES,DosSantos_etal_2017_TableS1
+Mesencephalon_N.p.mg,Mesencephalon,N.p.mg,Mesencephalon_Neurons/mg,AvelinodeSouza_etal_2025_TABLE1
+Mesencephalon_N.p.mg,Mesencephalon,N.p.mg,Mesencephalon_Neurons/mg,DosSantos_etal_2017_TableS1
+Mesencephalon_O.n,Mesencephalon,O.n,Mesencephalon_Non-neuronal cells,AvelinodeSouza_etal_2025_TABLE1
+Mesencephalon_O.p.N,Mesencephalon,O.p.N,Mesencephalon_Non-neuronal cells/neuron,AvelinodeSouza_etal_2025_TABLE1
+Mesencephalon_O.p.N,Mesencephalon,O.p.N,Mesencephalon_Non-neuronal cells/neuron,DosSantos_etal_2017_TableS1
+Mesencephalon_O.p.N,Mesencephalon,O.p.N,O/NMES,AvelinodeSouza_etal_2025_TABLE1
+Mesencephalon_O.p.N,Mesencephalon,O.p.N,O/NMES,DosSantos_etal_2017_TableS1
+Mesencephalon_O.p.mg,Mesencephalon,O.p.mg,Mesencephalon_Non-neuronal cells/mg,AvelinodeSouza_etal_2025_TABLE1
+Micro.or.mega,Micro.or.mega,,Micro/mega,HerculanoHouzel_etal_2020_TABLE1
+Micro.or.mega,Micro.or.mega,,Micro/mega,HerculanoHouzel_etal_2020_TABLE2
+Neocortex_Vol.mm3,Neocortex,Vol.mm3,Neocortex_Vol.mm3,Kverkova_etal_2018_TableS1
+Neocortex_Vol.mm3_SD,Neocortex_Vol.mm3,SD,Neocortex_Vol.mm3_SD,Kverkova_etal_2018_TableS1
+Neocortex_p.C.Brain,Neocortex,p.C.Brain,Neocortex_p.C.Brain,Kverkova_etal_2018_TableS1
+OlfactoryBulb_Mass.g,OlfactoryBulb,Mass.g,MOB,DosSantos_etal_2017_TableS1
+OlfactoryBulb_Mass.g,OlfactoryBulb,Mass.g,MOB,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_Mass.g,OlfactoryBulb,Mass.g,MOB,JardimMesseder_etal_2017_Table1
+OlfactoryBulb_Mass.g,OlfactoryBulb,Mass.g,MOB.g,DosSantos_etal_2017_TableS1
+OlfactoryBulb_Mass.g,OlfactoryBulb,Mass.g,MOB.g,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_Mass.g,OlfactoryBulb,Mass.g,MOB.g,JardimMesseder_etal_2017_Table1
+OlfactoryBulb_Mass.g,OlfactoryBulb,Mass.g,"Olfactory bulb Mass, g",DosSantos_etal_2017_TableS1
+OlfactoryBulb_Mass.g,OlfactoryBulb,Mass.g,"Olfactory bulb Mass, g",HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_Mass.g,OlfactoryBulb,Mass.g,"Olfactory bulb Mass, g",JardimMesseder_etal_2017_Table1
+OlfactoryBulb_Mass.g_SD,OlfactoryBulb_Mass.g,SD,"Olfactory bulb Mass, g SD",HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_N.n,OlfactoryBulb,N.n,NOB,DosSantos_etal_2017_TableS1
+OlfactoryBulb_N.n,OlfactoryBulb,N.n,NOB,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_N.n,OlfactoryBulb,N.n,NOB,JardimMesseder_etal_2017_Table1
+OlfactoryBulb_N.n,OlfactoryBulb,N.n,NOB,Kverkova_etal_2018_TableS5
+OlfactoryBulb_N.n,OlfactoryBulb,N.n,"Olfactory bulb N, n",DosSantos_etal_2017_TableS1
+OlfactoryBulb_N.n,OlfactoryBulb,N.n,"Olfactory bulb N, n",HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_N.n,OlfactoryBulb,N.n,"Olfactory bulb N, n",JardimMesseder_etal_2017_Table1
+OlfactoryBulb_N.n,OlfactoryBulb,N.n,"Olfactory bulb N, n",Kverkova_etal_2018_TableS5
+OlfactoryBulb_N.n,OlfactoryBulb,N.n,Olfactory bulbs_N.n,DosSantos_etal_2017_TableS1
+OlfactoryBulb_N.n,OlfactoryBulb,N.n,Olfactory bulbs_N.n,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_N.n,OlfactoryBulb,N.n,Olfactory bulbs_N.n,JardimMesseder_etal_2017_Table1
+OlfactoryBulb_N.n,OlfactoryBulb,N.n,Olfactory bulbs_N.n,Kverkova_etal_2018_TableS5
+OlfactoryBulb_N.n_SD,OlfactoryBulb_N.n,SD,"Olfactory bulb N, n SD",HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_N.n_SD,OlfactoryBulb_N.n,SD,"Olfactory bulb N, n SD",Kverkova_etal_2018_TableS5
+OlfactoryBulb_N.n_SD,OlfactoryBulb_N.n,SD,Olfactory bulbs_N.n_SD,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_N.n_SD,OlfactoryBulb_N.n,SD,Olfactory bulbs_N.n_SD,Kverkova_etal_2018_TableS5
+OlfactoryBulb_N.p.mg,OlfactoryBulb,N.p.mg,DNOB,DosSantos_etal_2017_TableS1
+OlfactoryBulb_N.p.mg,OlfactoryBulb,N.p.mg,DNOB,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_N.p.mg,OlfactoryBulb,N.p.mg,DNOB,JardimMesseder_etal_2017_Table1
+OlfactoryBulb_N.p.mg,OlfactoryBulb,N.p.mg,Olfactory bulb N/mg,DosSantos_etal_2017_TableS1
+OlfactoryBulb_N.p.mg,OlfactoryBulb,N.p.mg,Olfactory bulb N/mg,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_N.p.mg,OlfactoryBulb,N.p.mg,Olfactory bulb N/mg,JardimMesseder_etal_2017_Table1
+OlfactoryBulb_N.p.mg_SD,OlfactoryBulb_N.p.mg,SD,Olfactory bulb N/mg SD,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_O.n,OlfactoryBulb,O.n,OOB,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_O.n,OlfactoryBulb,O.n,OOB,JardimMesseder_etal_2017_Table1
+OlfactoryBulb_O.n,OlfactoryBulb,O.n,"Olfactory bulb O, n",HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_O.n,OlfactoryBulb,O.n,"Olfactory bulb O, n",JardimMesseder_etal_2017_Table1
+OlfactoryBulb_O.n_SD,OlfactoryBulb_O.n,SD,"Olfactory bulb O, n SD",HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_O.p.N,OlfactoryBulb,O.p.N,O/NOB,DosSantos_etal_2017_TableS1
+OlfactoryBulb_O.p.N,OlfactoryBulb,O.p.N,O/NOB,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_O.p.N,OlfactoryBulb,O.p.N,O/NOB,JardimMesseder_etal_2017_Table1
+OlfactoryBulb_O.p.N,OlfactoryBulb,O.p.N,Olfactory bulb O/N,DosSantos_etal_2017_TableS1
+OlfactoryBulb_O.p.N,OlfactoryBulb,O.p.N,Olfactory bulb O/N,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_O.p.N,OlfactoryBulb,O.p.N,Olfactory bulb O/N,JardimMesseder_etal_2017_Table1
+OlfactoryBulb_O.p.N_SD,OlfactoryBulb_O.p.N,SD,Olfactory bulb O/N SD,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_O.p.mg,OlfactoryBulb,O.p.mg,Olfactory bulb O/mg,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_O.p.mg_SD,OlfactoryBulb_O.p.mg,SD,Olfactory bulb O/mg SD,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_Source,OlfactoryBulb,Source,Olfactory bulb Source,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_Vol.mm3,OlfactoryBulb,Vol.mm3,Olfactory bulbs_Vol.mm3,Kverkova_etal_2018_TableS1
+OlfactoryBulb_Vol.mm3_SD,OlfactoryBulb_Vol.mm3,SD,Olfactory bulbs_Vol.mm3_SD,Kverkova_etal_2018_TableS1
+OlfactoryBulb_n,OlfactoryBulb,n,Olfactory bulb n,HerculanoHouzel_etal_2015_Table4
+OlfactoryBulb_p.C.Brain,OlfactoryBulb,p.C.Brain,Olfactory bulbs_p.C.Brain,Kverkova_etal_2018_TableS1
+OlfactoryCortices_Vol.mm3,OlfactoryCortices,Vol.mm3,Olfactory cortices_Vol.mm3,Kverkova_etal_2018_TableS1
+OlfactoryCortices_Vol.mm3_SD,OlfactoryCortices_Vol.mm3,SD,Olfactory cortices_Vol.mm3_SD,Kverkova_etal_2018_TableS1
+OlfactoryCortices_p.C.Brain,OlfactoryCortices,p.C.Brain,Olfactory cortices_p.C.Brain,Kverkova_etal_2018_TableS1
+Order,Order,,Order,HerculanoHouzel_etal_2015_Table1
+Order,Order,,Order,HerculanoHouzel_etal_2015_Table2
+Order,Order,,Order,HerculanoHouzel_etal_2015_Table3
+Order,Order,,Order,HerculanoHouzel_etal_2015_Table4
+Order,Order,,Order,HerculanoHouzel_etal_2015_Table5
+PonsMedulla_C.n,PonsMedulla,C.n,P+M_C,DosSantos_etal_2020_Table1
+PonsMedulla_I.n,PonsMedulla,I.n,P+M_I,DosSantos_etal_2020_Table1
+PonsMedulla_I.p.N,PonsMedulla,I.p.N,P+M_I/N,DosSantos_etal_2020_Table1
+PonsMedulla_I.p.mg,PonsMedulla,I.p.mg,P+M_I/mg,DosSantos_etal_2020_Table1
+PonsMedulla_Mass.g,PonsMedulla,Mass.g,MP+M,DosSantos_etal_2017_TableS1
+PonsMedulla_Mass.g,PonsMedulla,Mass.g,MP+M,DosSantos_etal_2020_Table1
+PonsMedulla_Mass.g,PonsMedulla,Mass.g,P+M_Structure mass (g),DosSantos_etal_2017_TableS1
+PonsMedulla_Mass.g,PonsMedulla,Mass.g,P+M_Structure mass (g),DosSantos_etal_2020_Table1
+PonsMedulla_N.n,PonsMedulla,N.n,NP+M,DosSantos_etal_2017_TableS1
+PonsMedulla_N.n,PonsMedulla,N.n,NP+M,DosSantos_etal_2020_Table1
+PonsMedulla_N.n,PonsMedulla,N.n,P+M_N,DosSantos_etal_2017_TableS1
+PonsMedulla_N.n,PonsMedulla,N.n,P+M_N,DosSantos_etal_2020_Table1
+PonsMedulla_N.p.mg,PonsMedulla,N.p.mg,DNP+M,DosSantos_etal_2017_TableS1
+PonsMedulla_N.p.mg,PonsMedulla,N.p.mg,DNP+M,DosSantos_etal_2020_Table1
+PonsMedulla_N.p.mg,PonsMedulla,N.p.mg,P+M_N/mg,DosSantos_etal_2017_TableS1
+PonsMedulla_N.p.mg,PonsMedulla,N.p.mg,P+M_N/mg,DosSantos_etal_2020_Table1
+PonsMedulla_O.p.N,PonsMedulla,O.p.N,O/NP+M,DosSantos_etal_2017_TableS1
+PonsMedulla_S.n,PonsMedulla,S.n,P+M_No. of samples,DosSantos_etal_2020_Table1
+Pons_Mass.g,Pons,Mass.g,"Pons_Mass, g",AvelinodeSouza_etal_2025_TABLE1
+Pons_N.n,Pons,N.n,Pons_Neurons,AvelinodeSouza_etal_2025_TABLE1
+Pons_N.p.mg,Pons,N.p.mg,Pons_Neurons/mg,AvelinodeSouza_etal_2025_TABLE1
+Pons_O.n,Pons,O.n,Pons_Non-neuronal cells,AvelinodeSouza_etal_2025_TABLE1
+Pons_O.p.N,Pons,O.p.N,Pons_Non-neuronal cells/neuron,AvelinodeSouza_etal_2025_TABLE1
+Pons_O.p.mg,Pons,O.p.mg,Pons_Non-neuronal cells/mg,AvelinodeSouza_etal_2025_TABLE1
+RoB_C.n,RoB,C.n,RoB_C,DosSantos_etal_2020_Table1
+RoB_I.n,RoB,I.n,RoB_I,DosSantos_etal_2020_Table1
+RoB_I.p.C,RoB,I.p.C,RoB_I/C,DosSantos_etal_2020_unpublished
+RoB_I.p.N,RoB,I.p.N,RoB_I/N,DosSantos_etal_2020_Table1
+RoB_I.p.mg,RoB,I.p.mg,RoB_I/mg,DosSantos_etal_2020_Table1
+RoB_Mass.g,RoB,Mass.g,MROB,AvelinodeSouza_etal_2025_TABLE1
+RoB_Mass.g,RoB,Mass.g,MROB,DosSantos_etal_2017_TableS1
+RoB_Mass.g,RoB,Mass.g,MROB,DosSantos_etal_2020_Table1
+RoB_Mass.g,RoB,Mass.g,MROB,HerculanoHouzel_etal_2015_Table3
+RoB_Mass.g,RoB,Mass.g,MROB,JardimMesseder_etal_2017_Table1
+RoB_Mass.g,RoB,Mass.g,MRoB.g,AvelinodeSouza_etal_2025_TABLE1
+RoB_Mass.g,RoB,Mass.g,MRoB.g,DosSantos_etal_2017_TableS1
+RoB_Mass.g,RoB,Mass.g,MRoB.g,DosSantos_etal_2020_Table1
+RoB_Mass.g,RoB,Mass.g,MRoB.g,HerculanoHouzel_etal_2015_Table3
+RoB_Mass.g,RoB,Mass.g,MRoB.g,JardimMesseder_etal_2017_Table1
+RoB_Mass.g,RoB,Mass.g,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Mass, g",AvelinodeSouza_etal_2025_TABLE1
+RoB_Mass.g,RoB,Mass.g,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Mass, g",DosSantos_etal_2017_TableS1
+RoB_Mass.g,RoB,Mass.g,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Mass, g",DosSantos_etal_2020_Table1
+RoB_Mass.g,RoB,Mass.g,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Mass, g",HerculanoHouzel_etal_2015_Table3
+RoB_Mass.g,RoB,Mass.g,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Mass, g",JardimMesseder_etal_2017_Table1
+RoB_Mass.g,RoB,Mass.g,"RoB Mass, g",AvelinodeSouza_etal_2025_TABLE1
+RoB_Mass.g,RoB,Mass.g,"RoB Mass, g",DosSantos_etal_2017_TableS1
+RoB_Mass.g,RoB,Mass.g,"RoB Mass, g",DosSantos_etal_2020_Table1
+RoB_Mass.g,RoB,Mass.g,"RoB Mass, g",HerculanoHouzel_etal_2015_Table3
+RoB_Mass.g,RoB,Mass.g,"RoB Mass, g",JardimMesseder_etal_2017_Table1
+RoB_Mass.g,RoB,Mass.g,RoB_Structure mass (g),AvelinodeSouza_etal_2025_TABLE1
+RoB_Mass.g,RoB,Mass.g,RoB_Structure mass (g),DosSantos_etal_2017_TableS1
+RoB_Mass.g,RoB,Mass.g,RoB_Structure mass (g),DosSantos_etal_2020_Table1
+RoB_Mass.g,RoB,Mass.g,RoB_Structure mass (g),HerculanoHouzel_etal_2015_Table3
+RoB_Mass.g,RoB,Mass.g,RoB_Structure mass (g),JardimMesseder_etal_2017_Table1
+RoB_Mass.g_SD,RoB_Mass.g,SD,"RoB Mass, g SD",HerculanoHouzel_etal_2015_Table3
+RoB_N.n,RoB,N.n,NROB,AvelinodeSouza_etal_2025_TABLE1
+RoB_N.n,RoB,N.n,NROB,DosSantos_etal_2017_TableS1
+RoB_N.n,RoB,N.n,NROB,DosSantos_etal_2020_Table1
+RoB_N.n,RoB,N.n,NROB,HerculanoHouzel_etal_2015_Table3
+RoB_N.n,RoB,N.n,NROB,HerculanoHouzel_etal_2020_TABLE2
+RoB_N.n,RoB,N.n,NROB,JardimMesseder_etal_2017_Table1
+RoB_N.n,RoB,N.n,NRoB,AvelinodeSouza_etal_2025_TABLE1
+RoB_N.n,RoB,N.n,NRoB,DosSantos_etal_2017_TableS1
+RoB_N.n,RoB,N.n,NRoB,DosSantos_etal_2020_Table1
+RoB_N.n,RoB,N.n,NRoB,HerculanoHouzel_etal_2015_Table3
+RoB_N.n,RoB,N.n,NRoB,HerculanoHouzel_etal_2020_TABLE2
+RoB_N.n,RoB,N.n,NRoB,JardimMesseder_etal_2017_Table1
+RoB_N.n,RoB,N.n,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Neurons",AvelinodeSouza_etal_2025_TABLE1
+RoB_N.n,RoB,N.n,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Neurons",DosSantos_etal_2017_TableS1
+RoB_N.n,RoB,N.n,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Neurons",DosSantos_etal_2020_Table1
+RoB_N.n,RoB,N.n,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Neurons",HerculanoHouzel_etal_2015_Table3
+RoB_N.n,RoB,N.n,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Neurons",HerculanoHouzel_etal_2020_TABLE2
+RoB_N.n,RoB,N.n,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Neurons",JardimMesseder_etal_2017_Table1
+RoB_N.n,RoB,N.n,"RoB N, n",AvelinodeSouza_etal_2025_TABLE1
+RoB_N.n,RoB,N.n,"RoB N, n",DosSantos_etal_2017_TableS1
+RoB_N.n,RoB,N.n,"RoB N, n",DosSantos_etal_2020_Table1
+RoB_N.n,RoB,N.n,"RoB N, n",HerculanoHouzel_etal_2015_Table3
+RoB_N.n,RoB,N.n,"RoB N, n",HerculanoHouzel_etal_2020_TABLE2
+RoB_N.n,RoB,N.n,"RoB N, n",JardimMesseder_etal_2017_Table1
+RoB_N.n,RoB,N.n,RoB_N,AvelinodeSouza_etal_2025_TABLE1
+RoB_N.n,RoB,N.n,RoB_N,DosSantos_etal_2017_TableS1
+RoB_N.n,RoB,N.n,RoB_N,DosSantos_etal_2020_Table1
+RoB_N.n,RoB,N.n,RoB_N,HerculanoHouzel_etal_2015_Table3
+RoB_N.n,RoB,N.n,RoB_N,HerculanoHouzel_etal_2020_TABLE2
+RoB_N.n,RoB,N.n,RoB_N,JardimMesseder_etal_2017_Table1
+RoB_N.n_SD,RoB_N.n,SD,"RoB N, n SD",HerculanoHouzel_etal_2015_Table3
+RoB_N.p.mg,RoB,N.p.mg,"DN,RoB",AvelinodeSouza_etal_2025_TABLE1
+RoB_N.p.mg,RoB,N.p.mg,"DN,RoB",DosSantos_etal_2017_TableS1
+RoB_N.p.mg,RoB,N.p.mg,"DN,RoB",DosSantos_etal_2020_Table1
+RoB_N.p.mg,RoB,N.p.mg,"DN,RoB",HerculanoHouzel_etal_2015_Table3
+RoB_N.p.mg,RoB,N.p.mg,"DN,RoB",HerculanoHouzel_etal_2020_TABLE2
+RoB_N.p.mg,RoB,N.p.mg,"DN,RoB",JardimMesseder_etal_2017_Table1
+RoB_N.p.mg,RoB,N.p.mg,DNROB,AvelinodeSouza_etal_2025_TABLE1
+RoB_N.p.mg,RoB,N.p.mg,DNROB,DosSantos_etal_2017_TableS1
+RoB_N.p.mg,RoB,N.p.mg,DNROB,DosSantos_etal_2020_Table1
+RoB_N.p.mg,RoB,N.p.mg,DNROB,HerculanoHouzel_etal_2015_Table3
+RoB_N.p.mg,RoB,N.p.mg,DNROB,HerculanoHouzel_etal_2020_TABLE2
+RoB_N.p.mg,RoB,N.p.mg,DNROB,JardimMesseder_etal_2017_Table1
+RoB_N.p.mg,RoB,N.p.mg,DNRoB,AvelinodeSouza_etal_2025_TABLE1
+RoB_N.p.mg,RoB,N.p.mg,DNRoB,DosSantos_etal_2017_TableS1
+RoB_N.p.mg,RoB,N.p.mg,DNRoB,DosSantos_etal_2020_Table1
+RoB_N.p.mg,RoB,N.p.mg,DNRoB,HerculanoHouzel_etal_2015_Table3
+RoB_N.p.mg,RoB,N.p.mg,DNRoB,HerculanoHouzel_etal_2020_TABLE2
+RoB_N.p.mg,RoB,N.p.mg,DNRoB,JardimMesseder_etal_2017_Table1
+RoB_N.p.mg,RoB,N.p.mg,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Neurons/mg",AvelinodeSouza_etal_2025_TABLE1
+RoB_N.p.mg,RoB,N.p.mg,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Neurons/mg",DosSantos_etal_2017_TableS1
+RoB_N.p.mg,RoB,N.p.mg,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Neurons/mg",DosSantos_etal_2020_Table1
+RoB_N.p.mg,RoB,N.p.mg,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Neurons/mg",HerculanoHouzel_etal_2015_Table3
+RoB_N.p.mg,RoB,N.p.mg,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Neurons/mg",HerculanoHouzel_etal_2020_TABLE2
+RoB_N.p.mg,RoB,N.p.mg,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Neurons/mg",JardimMesseder_etal_2017_Table1
+RoB_N.p.mg,RoB,N.p.mg,RoB N/mg,AvelinodeSouza_etal_2025_TABLE1
+RoB_N.p.mg,RoB,N.p.mg,RoB N/mg,DosSantos_etal_2017_TableS1
+RoB_N.p.mg,RoB,N.p.mg,RoB N/mg,DosSantos_etal_2020_Table1
+RoB_N.p.mg,RoB,N.p.mg,RoB N/mg,HerculanoHouzel_etal_2015_Table3
+RoB_N.p.mg,RoB,N.p.mg,RoB N/mg,HerculanoHouzel_etal_2020_TABLE2
+RoB_N.p.mg,RoB,N.p.mg,RoB N/mg,JardimMesseder_etal_2017_Table1
+RoB_N.p.mg,RoB,N.p.mg,RoB_N/mg,AvelinodeSouza_etal_2025_TABLE1
+RoB_N.p.mg,RoB,N.p.mg,RoB_N/mg,DosSantos_etal_2017_TableS1
+RoB_N.p.mg,RoB,N.p.mg,RoB_N/mg,DosSantos_etal_2020_Table1
+RoB_N.p.mg,RoB,N.p.mg,RoB_N/mg,HerculanoHouzel_etal_2015_Table3
+RoB_N.p.mg,RoB,N.p.mg,RoB_N/mg,HerculanoHouzel_etal_2020_TABLE2
+RoB_N.p.mg,RoB,N.p.mg,RoB_N/mg,JardimMesseder_etal_2017_Table1
+RoB_N.p.mg_SD,RoB_N.p.mg,SD,RoB N/mg SD,HerculanoHouzel_etal_2015_Table3
+RoB_O.n,RoB,O.n,ORoB,AvelinodeSouza_etal_2025_TABLE1
+RoB_O.n,RoB,O.n,ORoB,HerculanoHouzel_etal_2015_Table3
+RoB_O.n,RoB,O.n,ORoB,JardimMesseder_etal_2017_Table1
+RoB_O.n,RoB,O.n,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Non-neuronal cells",AvelinodeSouza_etal_2025_TABLE1
+RoB_O.n,RoB,O.n,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Non-neuronal cells",HerculanoHouzel_etal_2015_Table3
+RoB_O.n,RoB,O.n,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Non-neuronal cells",JardimMesseder_etal_2017_Table1
+RoB_O.n,RoB,O.n,"RoB O, n",AvelinodeSouza_etal_2025_TABLE1
+RoB_O.n,RoB,O.n,"RoB O, n",HerculanoHouzel_etal_2015_Table3
+RoB_O.n,RoB,O.n,"RoB O, n",JardimMesseder_etal_2017_Table1
+RoB_O.n_SD,RoB_O.n,SD,"RoB O, n SD",HerculanoHouzel_etal_2015_Table3
+RoB_O.p.N,RoB,O.p.N,O/NROB,AvelinodeSouza_etal_2025_TABLE1
+RoB_O.p.N,RoB,O.p.N,O/NROB,DosSantos_etal_2017_TableS1
+RoB_O.p.N,RoB,O.p.N,O/NROB,HerculanoHouzel_etal_2015_Table3
+RoB_O.p.N,RoB,O.p.N,O/NROB,JardimMesseder_etal_2017_Table1
+RoB_O.p.N,RoB,O.p.N,O/NRoB,AvelinodeSouza_etal_2025_TABLE1
+RoB_O.p.N,RoB,O.p.N,O/NRoB,DosSantos_etal_2017_TableS1
+RoB_O.p.N,RoB,O.p.N,O/NRoB,HerculanoHouzel_etal_2015_Table3
+RoB_O.p.N,RoB,O.p.N,O/NRoB,JardimMesseder_etal_2017_Table1
+RoB_O.p.N,RoB,O.p.N,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Non-neuronal cells/neuron",AvelinodeSouza_etal_2025_TABLE1
+RoB_O.p.N,RoB,O.p.N,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Non-neuronal cells/neuron",DosSantos_etal_2017_TableS1
+RoB_O.p.N,RoB,O.p.N,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Non-neuronal cells/neuron",HerculanoHouzel_etal_2015_Table3
+RoB_O.p.N,RoB,O.p.N,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Non-neuronal cells/neuron",JardimMesseder_etal_2017_Table1
+RoB_O.p.N,RoB,O.p.N,RoB O/N,AvelinodeSouza_etal_2025_TABLE1
+RoB_O.p.N,RoB,O.p.N,RoB O/N,DosSantos_etal_2017_TableS1
+RoB_O.p.N,RoB,O.p.N,RoB O/N,HerculanoHouzel_etal_2015_Table3
+RoB_O.p.N,RoB,O.p.N,RoB O/N,JardimMesseder_etal_2017_Table1
+RoB_O.p.N_SD,RoB_O.p.N,SD,RoB O/N SD,HerculanoHouzel_etal_2015_Table3
+RoB_O.p.mg,RoB,O.p.mg,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Non-neuronal cells/mg",AvelinodeSouza_etal_2025_TABLE1
+RoB_O.p.mg,RoB,O.p.mg,"Rest of brain (diencephalon+striatum, mesencephalon, pons and medulla)_Non-neuronal cells/mg",HerculanoHouzel_etal_2015_Table3
+RoB_O.p.mg,RoB,O.p.mg,RoB O/mg,AvelinodeSouza_etal_2025_TABLE1
+RoB_O.p.mg,RoB,O.p.mg,RoB O/mg,HerculanoHouzel_etal_2015_Table3
+RoB_O.p.mg_SD,RoB_O.p.mg,SD,RoB O/mg SD,HerculanoHouzel_etal_2015_Table3
+RoB_S.n,RoB,S.n,RoB_No. of samples,DosSantos_etal_2020_Table1
+RoB_Source,RoB,Source,RoB Source,HerculanoHouzel_etal_2015_Table3
+SampleInfo,SampleInfo,,SampleInfo,HerculanoHouzel_etal_2020_TABLE1
+Septum_Vol.mm3,Septum,Vol.mm3,Septum_Vol.mm3,Kverkova_etal_2018_TableS1
+Septum_Vol.mm3_SD,Septum_Vol.mm3,SD,Septum_Vol.mm3_SD,Kverkova_etal_2018_TableS1
+Septum_p.C.Brain,Septum,p.C.Brain,Septum_p.C.Brain,Kverkova_etal_2018_TableS1
+Species,Species,,Species,AvelinodeSouza_etal_2025_TABLE1
+Species,Species,,Species,Burish_etal_2010_Table1
+Species,Species,,Species,DosSantos_etal_2017_TableS1
+Species,Species,,Species,DosSantos_etal_2020_Table1
+Species,Species,,Species,DosSantos_etal_2020_unpublished
+Species,Species,,Species,HerculanoHouzel_etal_2015_Table1
+Species,Species,,Species,HerculanoHouzel_etal_2015_Table2
+Species,Species,,Species,HerculanoHouzel_etal_2015_Table3
+Species,Species,,Species,HerculanoHouzel_etal_2015_Table4
+Species,Species,,Species,HerculanoHouzel_etal_2015_Table5
+Species,Species,,Species,HerculanoHouzel_etal_2020_TABLE1
+Species,Species,,Species,HerculanoHouzel_etal_2020_TABLE2
+Species,Species,,Species,JardimMesseder_etal_2017_Table1
+Species,Species,,Species,Kverkova_etal_2018_TableS1
+Species,Species,,Species,Kverkova_etal_2018_TableS5
+Species,Species,,Species name,AvelinodeSouza_etal_2025_TABLE1
+Species,Species,,Species name,Burish_etal_2010_Table1
+Species,Species,,Species name,DosSantos_etal_2017_TableS1
+Species,Species,,Species name,DosSantos_etal_2020_Table1
+Species,Species,,Species name,DosSantos_etal_2020_unpublished
+Species,Species,,Species name,HerculanoHouzel_etal_2015_Table1
+Species,Species,,Species name,HerculanoHouzel_etal_2015_Table2
+Species,Species,,Species name,HerculanoHouzel_etal_2015_Table3
+Species,Species,,Species name,HerculanoHouzel_etal_2015_Table4
+Species,Species,,Species name,HerculanoHouzel_etal_2015_Table5
+Species,Species,,Species name,HerculanoHouzel_etal_2020_TABLE1
+Species,Species,,Species name,HerculanoHouzel_etal_2020_TABLE2
+Species,Species,,Species name,JardimMesseder_etal_2017_Table1
+Species,Species,,Species name,Kverkova_etal_2018_TableS1
+Species,Species,,Species name,Kverkova_etal_2018_TableS5
+SpinalCord_Length.mm,SpinalCord,Length.mm,LSC,Burish_etal_2010_Table1
+SpinalCord_Length.mm_SD,SpinalCord_Length.mm,SD,LSC_SD,Burish_etal_2010_Table1
+SpinalCord_Mass.g,SpinalCord,Mass.g,MSC,Burish_etal_2010_Table1
+SpinalCord_Mass.g_SD,SpinalCord_Mass.g,SD,MSC_SD,Burish_etal_2010_Table1
+SpinalCord_N.n,SpinalCord,N.n,NSC,Burish_etal_2010_Table1
+SpinalCord_N.n_SD,SpinalCord_N.n,SD,NSC_SD,Burish_etal_2010_Table1
+SpinalCord_N.p.mg,SpinalCord,N.p.mg,DN,Burish_etal_2010_Table1
+SpinalCord_N.p.mg_SD,SpinalCord_N.p.mg,SD,DN_SD,Burish_etal_2010_Table1
+SpinalCord_O.n,SpinalCord,O.n,OSC,Burish_etal_2010_Table1
+SpinalCord_O.n_SD,SpinalCord_O.n,SD,OSC_SD,Burish_etal_2010_Table1
+SpinalCord_O.p.mg,SpinalCord,O.p.mg,DO,Burish_etal_2010_Table1
+SpinalCord_O.p.mg_SD,SpinalCord_O.p.mg,SD,DO_SD,Burish_etal_2010_Table1
+SpinalCord_n,SpinalCord,n,n,Burish_etal_2010_Table1
+SpinalCord_p.C.Body.mass,SpinalCord,p.C.Body.mass,"MSC%
+MBD",Burish_etal_2010_Table1
+SpinalCord_p.C.CNS.mass,SpinalCord,p.C.CNS.mass,"MSC%
+MCNS",Burish_etal_2010_Table1
+SpinalCord_p.C.CNS.neurons,SpinalCord,p.C.CNS.neurons,"NSC%
+NCNS",Burish_etal_2010_Table1
+SpinalCord_p.C.N,SpinalCord,p.C.N,%NSC,Burish_etal_2010_Table1
+SpinalCord_p.C.N_SD,SpinalCord_p.C.N,SD,%NSC_SD,Burish_etal_2010_Table1
+Striatum_Vol.mm3,Striatum,Vol.mm3,Striatum_Vol.mm3,Kverkova_etal_2018_TableS1
+Striatum_Vol.mm3_SD,Striatum_Vol.mm3,SD,Striatum_Vol.mm3_SD,Kverkova_etal_2018_TableS1
+Striatum_p.C.Brain,Striatum,p.C.Brain,Striatum_p.C.Brain,Kverkova_etal_2018_TableS1
+SubcorticalForebrain_N.n,SubcorticalForebrain,N.n,Subcortical forebrain_N.n,Kverkova_etal_2018_TableS5
+SubcorticalForebrain_N.n_SD,SubcorticalForebrain_N.n,SD,Subcortical forebrain_N.n_SD,Kverkova_etal_2018_TableS5
+Tectum_Vol.mm3,Tectum,Vol.mm3,Tectum_Vol.mm3,Kverkova_etal_2018_TableS1
+Tectum_Vol.mm3_SD,Tectum_Vol.mm3,SD,Tectum_Vol.mm3_SD,Kverkova_etal_2018_TableS1
+Tectum_p.C.Brain,Tectum,p.C.Brain,Tectum_p.C.Brain,Kverkova_etal_2018_TableS1
+Tegmentum_Vol.mm3,Tegmentum,Vol.mm3,Tegmentum_Vol.mm3,Kverkova_etal_2018_TableS1
+Tegmentum_Vol.mm3_SD,Tegmentum_Vol.mm3,SD,Tegmentum_Vol.mm3_SD,Kverkova_etal_2018_TableS1
+Tegmentum_p.C.Brain,Tegmentum,p.C.Brain,Tegmentum_p.C.Brain,Kverkova_etal_2018_TableS1
+Thalamus_Vol.mm3,Thalamus,Vol.mm3,Thalamus_Vol.mm3,Kverkova_etal_2018_TableS1
+Thalamus_Vol.mm3_SD,Thalamus_Vol.mm3,SD,Thalamus_Vol.mm3_SD,Kverkova_etal_2018_TableS1
+Thalamus_p.C.Brain,Thalamus,p.C.Brain,Thalamus_p.C.Brain,Kverkova_etal_2018_TableS1
+WholeBrainOlfactoryBulb_Mass.g,WholeBrainOlfactoryBulb,Mass.g,Brain_Mass.g,Kverkova_etal_2018_TableS1
+WholeBrainOlfactoryBulb_Mass.g_SD,WholeBrainOlfactoryBulb_Mass.g,SD,Brain_Mass.g_SD,Kverkova_etal_2018_TableS1
+WholeBrainOlfactoryBulb_N.n,WholeBrainOlfactoryBulb,N.n,Whole brain_N.n,Kverkova_etal_2018_TableS5
+WholeBrainOlfactoryBulb_N.n_SD,WholeBrainOlfactoryBulb_N.n,SD,Whole brain_N.n_SD,Kverkova_etal_2018_TableS5
+WholeBrain_C.n,WholeBrain,C.n,Br_C,DosSantos_etal_2020_Table1
+WholeBrain_I.n,WholeBrain,I.n,Br_I,DosSantos_etal_2020_Table1
+WholeBrain_I.p.C,WholeBrain,I.p.C,Br_I/C,DosSantos_etal_2020_unpublished
+WholeBrain_I.p.N,WholeBrain,I.p.N,Br_I/N,DosSantos_etal_2020_Table1
+WholeBrain_I.p.mg,WholeBrain,I.p.mg,Br_I/mg,DosSantos_etal_2020_Table1
+WholeBrain_Mass.g,WholeBrain,Mass.g,Br_Structure mass (g),AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_Mass.g,WholeBrain,Mass.g,Br_Structure mass (g),DosSantos_etal_2017_TableS1
+WholeBrain_Mass.g,WholeBrain,Mass.g,Br_Structure mass (g),DosSantos_etal_2020_Table1
+WholeBrain_Mass.g,WholeBrain,Mass.g,Br_Structure mass (g),HerculanoHouzel_etal_2015_Table5
+WholeBrain_Mass.g,WholeBrain,Mass.g,Br_Structure mass (g),HerculanoHouzel_etal_2020_TABLE1
+WholeBrain_Mass.g,WholeBrain,Mass.g,Br_Structure mass (g),JardimMesseder_etal_2017_Table1
+WholeBrain_Mass.g,WholeBrain,Mass.g,"Brain mass, g",AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_Mass.g,WholeBrain,Mass.g,"Brain mass, g",DosSantos_etal_2017_TableS1
+WholeBrain_Mass.g,WholeBrain,Mass.g,"Brain mass, g",DosSantos_etal_2020_Table1
+WholeBrain_Mass.g,WholeBrain,Mass.g,"Brain mass, g",HerculanoHouzel_etal_2015_Table5
+WholeBrain_Mass.g,WholeBrain,Mass.g,"Brain mass, g",HerculanoHouzel_etal_2020_TABLE1
+WholeBrain_Mass.g,WholeBrain,Mass.g,"Brain mass, g",JardimMesseder_etal_2017_Table1
+WholeBrain_Mass.g,WholeBrain,Mass.g,MBR,AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_Mass.g,WholeBrain,Mass.g,MBR,DosSantos_etal_2017_TableS1
+WholeBrain_Mass.g,WholeBrain,Mass.g,MBR,DosSantos_etal_2020_Table1
+WholeBrain_Mass.g,WholeBrain,Mass.g,MBR,HerculanoHouzel_etal_2015_Table5
+WholeBrain_Mass.g,WholeBrain,Mass.g,MBR,HerculanoHouzel_etal_2020_TABLE1
+WholeBrain_Mass.g,WholeBrain,Mass.g,MBR,JardimMesseder_etal_2017_Table1
+WholeBrain_Mass.g,WholeBrain,Mass.g,MBR.g,AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_Mass.g,WholeBrain,Mass.g,MBR.g,DosSantos_etal_2017_TableS1
+WholeBrain_Mass.g,WholeBrain,Mass.g,MBR.g,DosSantos_etal_2020_Table1
+WholeBrain_Mass.g,WholeBrain,Mass.g,MBR.g,HerculanoHouzel_etal_2015_Table5
+WholeBrain_Mass.g,WholeBrain,Mass.g,MBR.g,HerculanoHouzel_etal_2020_TABLE1
+WholeBrain_Mass.g,WholeBrain,Mass.g,MBR.g,JardimMesseder_etal_2017_Table1
+WholeBrain_Mass.g,WholeBrain,Mass.g,"MBRAIN, g",AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_Mass.g,WholeBrain,Mass.g,"MBRAIN, g",DosSantos_etal_2017_TableS1
+WholeBrain_Mass.g,WholeBrain,Mass.g,"MBRAIN, g",DosSantos_etal_2020_Table1
+WholeBrain_Mass.g,WholeBrain,Mass.g,"MBRAIN, g",HerculanoHouzel_etal_2015_Table5
+WholeBrain_Mass.g,WholeBrain,Mass.g,"MBRAIN, g",HerculanoHouzel_etal_2020_TABLE1
+WholeBrain_Mass.g,WholeBrain,Mass.g,"MBRAIN, g",JardimMesseder_etal_2017_Table1
+WholeBrain_Mass.g,WholeBrain,Mass.g,"Whole brain_Mass, g",AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_Mass.g,WholeBrain,Mass.g,"Whole brain_Mass, g",DosSantos_etal_2017_TableS1
+WholeBrain_Mass.g,WholeBrain,Mass.g,"Whole brain_Mass, g",DosSantos_etal_2020_Table1
+WholeBrain_Mass.g,WholeBrain,Mass.g,"Whole brain_Mass, g",HerculanoHouzel_etal_2015_Table5
+WholeBrain_Mass.g,WholeBrain,Mass.g,"Whole brain_Mass, g",HerculanoHouzel_etal_2020_TABLE1
+WholeBrain_Mass.g,WholeBrain,Mass.g,"Whole brain_Mass, g",JardimMesseder_etal_2017_Table1
+WholeBrain_Mass.g_SD,WholeBrain_Mass.g,SD,"Brain mass, g SD",HerculanoHouzel_etal_2015_Table5
+WholeBrain_N.n,WholeBrain,N.n,Br_N,AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_N.n,WholeBrain,N.n,Br_N,DosSantos_etal_2017_TableS1
+WholeBrain_N.n,WholeBrain,N.n,Br_N,DosSantos_etal_2020_Table1
+WholeBrain_N.n,WholeBrain,N.n,Br_N,HerculanoHouzel_etal_2015_Table5
+WholeBrain_N.n,WholeBrain,N.n,Br_N,HerculanoHouzel_etal_2020_TABLE1
+WholeBrain_N.n,WholeBrain,N.n,Br_N,JardimMesseder_etal_2017_Table1
+WholeBrain_N.n,WholeBrain,N.n,NBR,AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_N.n,WholeBrain,N.n,NBR,DosSantos_etal_2017_TableS1
+WholeBrain_N.n,WholeBrain,N.n,NBR,DosSantos_etal_2020_Table1
+WholeBrain_N.n,WholeBrain,N.n,NBR,HerculanoHouzel_etal_2015_Table5
+WholeBrain_N.n,WholeBrain,N.n,NBR,HerculanoHouzel_etal_2020_TABLE1
+WholeBrain_N.n,WholeBrain,N.n,NBR,JardimMesseder_etal_2017_Table1
+WholeBrain_N.n,WholeBrain,N.n,NBRAIN,AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_N.n,WholeBrain,N.n,NBRAIN,DosSantos_etal_2017_TableS1
+WholeBrain_N.n,WholeBrain,N.n,NBRAIN,DosSantos_etal_2020_Table1
+WholeBrain_N.n,WholeBrain,N.n,NBRAIN,HerculanoHouzel_etal_2015_Table5
+WholeBrain_N.n,WholeBrain,N.n,NBRAIN,HerculanoHouzel_etal_2020_TABLE1
+WholeBrain_N.n,WholeBrain,N.n,NBRAIN,JardimMesseder_etal_2017_Table1
+WholeBrain_N.n,WholeBrain,N.n,Whole brain Neurons,AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_N.n,WholeBrain,N.n,Whole brain Neurons,DosSantos_etal_2017_TableS1
+WholeBrain_N.n,WholeBrain,N.n,Whole brain Neurons,DosSantos_etal_2020_Table1
+WholeBrain_N.n,WholeBrain,N.n,Whole brain Neurons,HerculanoHouzel_etal_2015_Table5
+WholeBrain_N.n,WholeBrain,N.n,Whole brain Neurons,HerculanoHouzel_etal_2020_TABLE1
+WholeBrain_N.n,WholeBrain,N.n,Whole brain Neurons,JardimMesseder_etal_2017_Table1
+WholeBrain_N.n,WholeBrain,N.n,Whole brain_Neurons,AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_N.n,WholeBrain,N.n,Whole brain_Neurons,DosSantos_etal_2017_TableS1
+WholeBrain_N.n,WholeBrain,N.n,Whole brain_Neurons,DosSantos_etal_2020_Table1
+WholeBrain_N.n,WholeBrain,N.n,Whole brain_Neurons,HerculanoHouzel_etal_2015_Table5
+WholeBrain_N.n,WholeBrain,N.n,Whole brain_Neurons,HerculanoHouzel_etal_2020_TABLE1
+WholeBrain_N.n,WholeBrain,N.n,Whole brain_Neurons,JardimMesseder_etal_2017_Table1
+WholeBrain_N.n_SD,WholeBrain_N.n,SD,Whole brain Neurons SD,HerculanoHouzel_etal_2015_Table5
+WholeBrain_N.p.mg,WholeBrain,N.p.mg,Br_N/mg,AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_N.p.mg,WholeBrain,N.p.mg,Br_N/mg,DosSantos_etal_2020_Table1
+WholeBrain_N.p.mg,WholeBrain,N.p.mg,Whole brain_Neurons/mg,AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_N.p.mg,WholeBrain,N.p.mg,Whole brain_Neurons/mg,DosSantos_etal_2020_Table1
+WholeBrain_O.n,WholeBrain,O.n,OBR,AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_O.n,WholeBrain,O.n,OBR,HerculanoHouzel_etal_2015_Table5
+WholeBrain_O.n,WholeBrain,O.n,OBR,JardimMesseder_etal_2017_Table1
+WholeBrain_O.n,WholeBrain,O.n,Whole brain Other cells,AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_O.n,WholeBrain,O.n,Whole brain Other cells,HerculanoHouzel_etal_2015_Table5
+WholeBrain_O.n,WholeBrain,O.n,Whole brain Other cells,JardimMesseder_etal_2017_Table1
+WholeBrain_O.n,WholeBrain,O.n,Whole brain_Non-neuronal cells,AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_O.n,WholeBrain,O.n,Whole brain_Non-neuronal cells,HerculanoHouzel_etal_2015_Table5
+WholeBrain_O.n,WholeBrain,O.n,Whole brain_Non-neuronal cells,JardimMesseder_etal_2017_Table1
+WholeBrain_O.n_SD,WholeBrain_O.n,SD,Whole brain Other cells SD,HerculanoHouzel_etal_2015_Table5
+WholeBrain_O.p.N,WholeBrain,O.p.N,O/NBR,AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_O.p.N,WholeBrain,O.p.N,O/NBR,DosSantos_etal_2017_TableS1
+WholeBrain_O.p.N,WholeBrain,O.p.N,O/NBR,JardimMesseder_etal_2017_Table1
+WholeBrain_O.p.N,WholeBrain,O.p.N,Whole brain_Non-neuronal cells/neuron,AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_O.p.N,WholeBrain,O.p.N,Whole brain_Non-neuronal cells/neuron,DosSantos_etal_2017_TableS1
+WholeBrain_O.p.N,WholeBrain,O.p.N,Whole brain_Non-neuronal cells/neuron,JardimMesseder_etal_2017_Table1
+WholeBrain_O.p.mg,WholeBrain,O.p.mg,Whole brain_Non-neuronal cells/mg,AvelinodeSouza_etal_2025_TABLE1
+WholeBrain_S.n,WholeBrain,S.n,Br_No. of samples,DosSantos_etal_2020_Table1
+WholeBrain_Source,WholeBrain,Source,Whole brain Source,HerculanoHouzel_etal_2015_Table5
+WholeBrain_n,WholeBrain,n,Whole brain n,HerculanoHouzel_etal_2015_Table5
+WholeBrain_n,WholeBrain,n,Whole brain n,HerculanoHouzel_etal_2020_TABLE1
+WholeBrain_n,WholeBrain,n,n,HerculanoHouzel_etal_2015_Table5
+WholeBrain_n,WholeBrain,n,n,HerculanoHouzel_etal_2020_TABLE1
+WholeBrain_p.C.N,WholeBrain,p.C.N,Whole brain % Neurons,HerculanoHouzel_etal_2015_Table5
+WholeBrain_p.C.N_SD,WholeBrain_p.C.N,SD,Whole brain % Neurons SD,HerculanoHouzel_etal_2015_Table5

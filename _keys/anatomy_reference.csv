@@ -1,0 +1,182 @@
+canonical_structure,domain,measures_seen
+Amygdala,cell_counts,Mass.g; N.n; N.p.mg; O.n; O.p.N; O.p.mg; Vol.mm3; p.C.Brain
+Amygdala_Vol.mm3,cell_counts,SD
+Body,cell_counts,Mass.g; Mass.kg
+Body_Mass.g,cell_counts,SD
+Brain,cell_counts,Mass.g; N.n
+Cerebellum,cell_counts,C.n; I.n; I.p.C; I.p.N; I.p.mg; Mass.g; N.n; N.p.mg; O.n; O.p.N; O.p.mg; S.n; Source; Vol.mm3; p.C.Brain
+Cerebellum_Mass.g,cell_counts,SD
+Cerebellum_N.n,cell_counts,SD
+Cerebellum_N.p.mg,cell_counts,SD
+Cerebellum_O.n,cell_counts,SD
+Cerebellum_O.p.N,cell_counts,SD
+Cerebellum_O.p.mg,cell_counts,SD
+Cerebellum_Vol.mm3,cell_counts,SD
+CerebralCortex,cell_counts,C.n; I.n; I.p.C; I.p.N; I.p.mg; Mass.g; N.n; N.p.mg; O.n; O.p.N; O.p.mg; S.n; Source
+CerebralCortexGrey,cell_counts,Mass.g; N.n; N.p.mg; O.n; O.p.N; O.p.mg
+CerebralCortexNoHippocampus,cell_counts,C.n; I.n; I.p.C; I.p.N; I.p.mg; Mass.g; N.n; N.p.mg; S.n
+CerebralCortexWhite,cell_counts,Mass.g; N.n; N.p.mg; O.n; O.p.N; O.p.mg
+CerebralCortex_Mass.g,cell_counts,SD
+CerebralCortex_N.n,cell_counts,SD
+CerebralCortex_N.p.mg,cell_counts,SD
+CerebralCortex_O.n,cell_counts,SD
+CerebralCortex_O.p.N,cell_counts,SD
+CerebralCortex_O.p.mg,cell_counts,SD
+Clade,cell_counts,
+CommonName,cell_counts,
+DiencephalonStriatum,cell_counts,Mass.g; N.n; N.p.mg; O.n; O.p.N; O.p.mg
+EntorhinalCortex,cell_counts,Vol.mm3; p.C.Brain
+EntorhinalCortex_Vol.mm3,cell_counts,SD
+Family,cell_counts,
+Hippocampus,cell_counts,C.n; I.n; I.p.C; I.p.N; I.p.mg; Mass.g; N.n; N.p.mg; O.n; O.p.N; O.p.mg; S.n; Vol.mm3; p.C.Brain
+Hippocampus_Vol.mm3,cell_counts,SD
+Hypothalamus,cell_counts,Vol.mm3; p.C.Brain
+Hypothalamus_Vol.mm3,cell_counts,SD
+Medulla,cell_counts,Mass.g; N.n; N.p.mg; O.n; O.p.N; O.p.mg; Vol.mm3; p.C.Brain
+Medulla_Vol.mm3,cell_counts,SD
+Mesencephalon,cell_counts,Mass.g; N.n; N.p.mg; O.n; O.p.N; O.p.mg
+MesencephalonDiencephalonStriatum,cell_counts,Mass.g; N.n; N.p.mg; O.p.N
+MesencephalonMedulla,cell_counts,N.n
+MesencephalonMedulla_N.n,cell_counts,SD
+Micro.or.mega,cell_counts,
+Neocortex,cell_counts,Vol.mm3; p.C.Brain
+Neocortex_Vol.mm3,cell_counts,SD
+OlfactoryBulb,cell_counts,Mass.g; N.n; N.p.mg; O.n; O.p.N; O.p.mg; Source; Vol.mm3; n; p.C.Brain
+OlfactoryBulb_Mass.g,cell_counts,SD
+OlfactoryBulb_N.n,cell_counts,SD
+OlfactoryBulb_N.p.mg,cell_counts,SD
+OlfactoryBulb_O.n,cell_counts,SD
+OlfactoryBulb_O.p.N,cell_counts,SD
+OlfactoryBulb_O.p.mg,cell_counts,SD
+OlfactoryBulb_Vol.mm3,cell_counts,SD
+OlfactoryCortices,cell_counts,Vol.mm3; p.C.Brain
+OlfactoryCortices_Vol.mm3,cell_counts,SD
+Order,cell_counts,
+Pons,cell_counts,Mass.g; N.n; N.p.mg; O.n; O.p.N; O.p.mg
+PonsMedulla,cell_counts,C.n; I.n; I.p.N; I.p.mg; Mass.g; N.n; N.p.mg; O.p.N; S.n
+RoB,cell_counts,C.n; I.n; I.p.C; I.p.N; I.p.mg; Mass.g; N.n; N.p.mg; O.n; O.p.N; O.p.mg; S.n; Source
+RoB_Mass.g,cell_counts,SD
+RoB_N.n,cell_counts,SD
+RoB_N.p.mg,cell_counts,SD
+RoB_O.n,cell_counts,SD
+RoB_O.p.N,cell_counts,SD
+RoB_O.p.mg,cell_counts,SD
+SampleInfo,cell_counts,
+Septum,cell_counts,Vol.mm3; p.C.Brain
+Septum_Vol.mm3,cell_counts,SD
+Species,cell_counts,
+SpinalCord,cell_counts,Length.mm; Mass.g; N.n; N.p.mg; O.n; O.p.mg; n; p.C.Body.mass; p.C.CNS.mass; p.C.CNS.neurons; p.C.N
+SpinalCord_Length.mm,cell_counts,SD
+SpinalCord_Mass.g,cell_counts,SD
+SpinalCord_N.n,cell_counts,SD
+SpinalCord_N.p.mg,cell_counts,SD
+SpinalCord_O.n,cell_counts,SD
+SpinalCord_O.p.mg,cell_counts,SD
+SpinalCord_p.C.N,cell_counts,SD
+Striatum,cell_counts,Vol.mm3; p.C.Brain
+Striatum_Vol.mm3,cell_counts,SD
+SubcorticalForebrain,cell_counts,N.n
+SubcorticalForebrain_N.n,cell_counts,SD
+Tectum,cell_counts,Vol.mm3; p.C.Brain
+Tectum_Vol.mm3,cell_counts,SD
+Tegmentum,cell_counts,Vol.mm3; p.C.Brain
+Tegmentum_Vol.mm3,cell_counts,SD
+Thalamus,cell_counts,Vol.mm3; p.C.Brain
+Thalamus_Vol.mm3,cell_counts,SD
+WholeBrain,cell_counts,C.n; I.n; I.p.C; I.p.N; I.p.mg; Mass.g; N.n; N.p.mg; O.n; O.p.N; O.p.mg; S.n; Source; n; p.C.N
+WholeBrainOlfactoryBulb,cell_counts,Mass.g; N.n
+WholeBrainOlfactoryBulb_Mass.g,cell_counts,SD
+WholeBrainOlfactoryBulb_N.n,cell_counts,SD
+WholeBrain_Mass.g,cell_counts,SD
+WholeBrain_N.n,cell_counts,SD
+WholeBrain_O.n,cell_counts,SD
+WholeBrain_p.C.N,cell_counts,SD
+Agranular_insular_cortex,brain_structure_volume,Volume_mm3
+Amygdala,brain_structure_volume,Volume_mm3
+Area_striata,brain_structure_volume,Volume_mm3
+Area_striata_grey_matter,brain_structure_volume,Volume_mm3
+Area_striata_lamina_1,brain_structure_volume,Volume_mm3
+Area_striata_laminae_2_6,brain_structure_volume,Volume_mm3
+Area_striata_white_matter,brain_structure_volume,Volume_mm3
+Body_weight,brain_structure_volume,Mass
+Brain_weight,brain_structure_volume,Mass
+Bulbus_olfactorius,brain_structure_volume,Volume_mm3
+Bulbus_olfactorius_accessorius,brain_structure_volume,Volume_mm3
+Bulbus_olfactorius_accessorius_layers_1_2,brain_structure_volume,Volume_mm3
+Bulbus_olfactorius_accessorius_layers_3_5,brain_structure_volume,Volume_mm3
+Bulbus_olfactorius_accessorius_layers_6,brain_structure_volume,Volume_mm3
+CA1,brain_structure_volume,Volume_mm3
+CA2,brain_structure_volume,Volume_mm3
+CA3,brain_structure_volume,Volume_mm3
+Capsula_interna,brain_structure_volume,Volume_mm3
+Cerebellar_nuclei_total,brain_structure_volume,Volume_mm3
+Cerebellum,brain_structure_volume,Volume_mm3
+Commissura_anterior,brain_structure_volume,Volume_mm3
+Complexus_centromedialis,brain_structure_volume,Volume_mm3
+Complexus_corticobasolateralis,brain_structure_volume,Volume_mm3
+Complexus_sensorius_trigeminalis,brain_structure_volume,Volume_mm3
+Complexus_vestibularis,brain_structure_volume,Volume_mm3
+Corpus_geniculatum_laterale,brain_structure_volume,Volume_mm3
+Corpus_geniculatum_laterale_data.deviate.from.STEPHAN.et.al.1981,brain_structure_volume,Volume_mm3
+Corpus_pineal,brain_structure_volume,Volume_mm3
+Corpus_subcommissurale,brain_structure_volume,Volume_mm3
+Corpus_subfornicale,brain_structure_volume,Volume_mm3
+Diencephalon,brain_structure_volume,Volume_mm3
+Dysgranular_insular_cortex,brain_structure_volume,Volume_mm3
+Epithalamus,brain_structure_volume,Volume_mm3
+Fascia_dentata,brain_structure_volume,Volume_mm3
+Granular_insular_cortex,brain_structure_volume,Volume_mm3
+HP_HS_fibers,brain_structure_volume,Volume_mm3
+Hilus,brain_structure_volume,Volume_mm3
+Hippocampus,brain_structure_volume,Volume_mm3
+Hippocampus_retrocommissuralis,brain_structure_volume,Volume_mm3
+Hypothalamus,brain_structure_volume,Volume_mm3
+Insula,brain_structure_volume,Volume_mm3
+Interpositus_cerebellar_nuclei,brain_structure_volume,Volume_mm3
+Lateral_cerebellar_nuclei,brain_structure_volume,Volume_mm3
+Lobus_piriformis,brain_structure_volume,Volume_mm3
+Medial_cerebellar_nuclei,brain_structure_volume,Volume_mm3
+Medulla_oblongata,brain_structure_volume,Volume_mm3
+Medulla_oblongata_SD,brain_structure_volume,Volume_mm3
+Meninges_hypophysis_nerves_etc.,brain_structure_volume,Volume_mm3
+Mesencephalon,brain_structure_volume,Volume_mm3
+Middle_temporal_visual_area,brain_structure_volume,Volume_mm3
+Neocortex,brain_structure_volume,Volume_mm3
+Neocortex_grey_matter,brain_structure_volume,Volume_mm3
+Neocortex_lam_1,brain_structure_volume,Volume_mm3
+Neocortex_lam_2_6,brain_structure_volume,Volume_mm3
+Neocortex_white_matter,brain_structure_volume,Volume_mm3
+Nucleus_amygdalae_basalis_pars_magnocellularis,brain_structure_volume,Volume_mm3
+Nucleus_habenularis_medialis,brain_structure_volume,Volume_mm3
+Nucleus_septalis_triangularis,brain_structure_volume,Volume_mm3
+Nucleus_subthalamicus,brain_structure_volume,Volume_mm3
+Nucleus_tractus_olfactorius,brain_structure_volume,Volume_mm3
+Nucleus_vestibularis_descendens,brain_structure_volume,Volume_mm3
+Nucleus_vestibularis_lateralis,brain_structure_volume,Volume_mm3
+Nucleus_vestibularis_medialis,brain_structure_volume,Volume_mm3
+Nucleus_vestibularis_superior,brain_structure_volume,Volume_mm3
+Palaeocortex,brain_structure_volume,Volume_mm3
+Pallidum,brain_structure_volume,Volume_mm3
+Prepiriform_cortex,brain_structure_volume,Volume_mm3
+Retrobulbar_cortex,brain_structure_volume,Volume_mm3
+Schizo_cortex,brain_structure_volume,Volume_mm3
+Septum,brain_structure_volume,Volume_mm3
+Striatum,brain_structure_volume,Volume_mm3
+Subiculum,brain_structure_volume,Volume_mm3
+Substantia_innominata,brain_structure_volume,Volume_mm3
+Subthalamus,brain_structure_volume,Volume_mm3
+Telencephalon,brain_structure_volume,Volume_mm3
+Thalamus,brain_structure_volume,Volume_mm3
+Total_brain_net_volume,brain_structure_volume,Volume_mm3
+Tractus_olfactorius_lateralis,brain_structure_volume,Volume_mm3
+Tractus_opticus,brain_structure_volume,Volume_mm3
+Tuberculum_olfactorium,brain_structure_volume,Volume_mm3
+VII,brain_structure_volume,Volume_mm3
+VII_SD,brain_structure_volume,Volume_mm3
+Ventral_pons,brain_structure_volume,Volume_mm3
+Ventricles,brain_structure_volume,Volume_mm3
+Vmo,brain_structure_volume,Volume_mm3
+Vmo_SD,brain_structure_volume,Volume_mm3
+XII,brain_structure_volume,Volume_mm3
+XII_SD,brain_structure_volume,Volume_mm3
+fronto_insular_cortex,brain_structure_volume,Volume_mm3

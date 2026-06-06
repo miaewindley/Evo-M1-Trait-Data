@@ -1,0 +1,25 @@
+Code,Definition,Structure,Measure,Stat,Reference,Note
+AOB,accessory olfactory bulb (total = measured layers 1+2 + 3-5 + 6),AccessoryOlfactoryBulb,,,Stephan_etal_1982_Table1,Latin synonym Bulbus_olfactorius_accessorius; distinct from the MAIN olfactory bulb (MOB)
+group,taxonomic grade/section as printed (Basal Insectivora; Progressive Insectivora; Macroscelidea; Scandentia; Prosimians; Simians),,,info,Stephan_etal_1982_Table1,snapshot column A; carried onto each species row by the R script
+family,family/subfamily as printed (Tenrecinae; Erinaceidae; ...),,,info,Stephan_etal_1982_Table1,snapshot column B; NA for grades printed without a family header (Macroscelidea/Scandentia/Progressive Insectivora/Simians)
+Species_Stephan1982,species name as printed in Stephan et al. 1982 (classification of the day; superscript removed),,,info,Stephan_etal_1982_Table1,faithful name with the former-name superscript stripped; current accepted name applied later via ../_keys/Stephan/species_key.csv
+former_name_ref,"the name superscript printed in the journal (1-11), if any",,,info,Stephan_etal_1982_Table1,kept as a superscript in the snapshot; turned into this reference number by the R script
+former_name,"former name used in earlier papers and in Stephan, Frahm & Baron (1981), per the journal legend",,,info,Stephan_etal_1982_Table1,"1 Aethechinus algirus; 2 Crocidura occidentalis; 3 Nesogale dobsoni; 4 Nesogale talazaci; 5 Chlorotalpa stuhlmanni; 6 Rhynchocyon stuhlmanni; 7 Lemur fulvus; 8 Lemur variegatus; 9 Galago crassicaudatus; 10 Galago demidovii; 11 Saguinus tamarin"
+n,number of individuals (sample size),AccessoryOlfactoryBulb,,n,Stephan_etal_1982_Table1,snapshot column 'n' (col 1); marker carried in n_note
+n_note,sample-size marker printed next to n,,,note,Stephan_etal_1982_Table1,"* / bullet next to n in the scan; see paper legend"
+AOB_volume_mm3,absolute total AOB volume in mm3 (both sides),AccessoryOlfactoryBulb,Vol.mm3,,Stephan_etal_1982_Table1,snapshot 'AOB_volume' (col 2)
+SEM_pct,standard error of the mean of the AOB volume as a percentage of the mean,AccessoryOlfactoryBulb,Vol.mm3,SEM,Stephan_etal_1982_Table1,snapshot 'SEM_pct' (col 3); printed only for n>1 (blank for n=1); empirical (transcribed from the scan)
+size_index,relative (allometric) size of the total AOB; 100 = the basal-Insectivora reference line,AccessoryOlfactoryBulb,size.index,,Stephan_etal_1982_Table1,snapshot 'size_index' (col 4); see Method note below
+permille_net_brain,AOB volume as per mille (0/00) of net brain volume,AccessoryOlfactoryBulb,permille.NetBrain,,Stephan_etal_1982_Table1,snapshot 'permille_net_brain' (col 5); header symbol may read %0 or 0/00 (= per mille)
+permille_MOB,AOB volume as per mille (0/00) of main-olfactory-bulb (MOB) volume,AccessoryOlfactoryBulb,permille.MOB,,Stephan_etal_1982_Table1,snapshot 'permille_MOB' (col 6)
+AOB_layer_1_2_mm3,volume of AOB layers 1+2 (combined) in mm3,AccessoryOlfactoryBulb_layers_1_2,Vol.mm3,,Stephan_etal_1982_Table1,snapshot 'AOB_layer_1_2' (col 7); layer 1 = vomeronasal-nerve layer
+AOB_layer_3_5_mm3,volume of AOB layers 3-5 (combined) in mm3,AccessoryOlfactoryBulb_layers_3_5,Vol.mm3,,Stephan_etal_1982_Table1,snapshot 'AOB_layer_3_5' (col 8)
+AOB_layer_6_mm3,volume of AOB layer 6 in mm3,AccessoryOlfactoryBulb_layer_6,Vol.mm3,,Stephan_etal_1982_Table1,snapshot 'AOB_layer_6' (col 9)
+pct_AOB_1_2,AOB layers 1+2 as a percentage of total AOB,AccessoryOlfactoryBulb_layers_1_2,pct.AOB,,Stephan_etal_1982_Table1,snapshot 'pct_AOB_1_2' (col 10); = layer/total x 100
+pct_AOB_3_5,AOB layers 3-5 as a percentage of total AOB,AccessoryOlfactoryBulb_layers_3_5,pct.AOB,,Stephan_etal_1982_Table1,snapshot 'pct_AOB_3_5' (col 11)
+pct_AOB_6,AOB layer 6 as a percentage of total AOB,AccessoryOlfactoryBulb_layer_6,pct.AOB,,Stephan_etal_1982_Table1,snapshot 'pct_AOB_6' (col 12)
+size_index_1_2,relative (allometric) size of AOB layers 1+2; 100 = basal-Insectivora reference line,AccessoryOlfactoryBulb_layers_1_2,size.index,,Stephan_etal_1982_Table1,snapshot 'size_index_1_2' (col 13)
+size_index_3_5,relative (allometric) size of AOB layers 3-5; 100 = basal-Insectivora reference line,AccessoryOlfactoryBulb_layers_3_5,size.index,,Stephan_etal_1982_Table1,snapshot 'size_index_3_5' (col 14)
+size_index_6,relative (allometric) size of AOB layer 6; 100 = basal-Insectivora reference line,AccessoryOlfactoryBulb_layer_6,size.index,,Stephan_etal_1982_Table1,snapshot 'size_index_6' (col 15)
+Method:size_index,"size index = 100 x observed / expected; expected from a reference line of fixed slope 0.57 (log-log) drawn through the mean log-volume and mean log-body-weight of the 'basal' Insectivora (n=12). All basal points average to 100 on the line.",,,method,Stephan_etal_1982_Table1,"Stephan, Baron & Frahm 1982 Methods (p.5); body weights from Stephan et al. 1981. Reconstructed indices reproduce every legible printed value to +/-1 and the printed basal mean (117) and grand mean (185) exactly."
+N,number of species,,,note,Stephan_etal_1982_Table1,applies to the Mean rows of Table 1 (not included in this per-species table)

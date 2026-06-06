@@ -1,67 +1,71 @@
-## 1. SOURCE
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2020")
+## 0. PATHS (NO setwd) -------------------------------------------------------
+library(rstudioapi)
 
-# Load the tabulizer library and rJava
+script_path   <- rstudioapi::getActiveDocumentContext()$path
+paper_dir     <- dirname(script_path)
+dataset_root  <- dirname(paper_dir)
+table_name    <- tools::file_path_sans_ext(basename(script_path))
+
+snapshot_csv  <- file.path(paper_dir, paste0(table_name, "_snapshot.csv"))
+final_csv     <- file.path(paper_dir, paste0(table_name, ".csv"))
+readme_xlsx   <- file.path(dataset_root, "__ReadMe.xlsx")
+public_tsv_dir<- file.path(dataset_root, "__Public", "comparative-data")
+
+# --- YOU SET THIS MANUALLY ---
+pdf_file <- file.path(paper_dir, "Herculano-Houze-2020-Microchiropterans have a.pdf")
+
+## 1. PACKAGES ---------------------------------------------------------------
+# Migrated from the retired 'tabulizer' package to 'tabulapdf' (its maintained
+# successor). Both wrap the same tabula-java engine.
 library(rJava)
-library(tabulizer)
-library(tabulizerjars)
+library(tabulapdf)
+library(tidyverse)
+library(readxl)
 
-# Define the PDF file path
-pdf_file <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel_etal_2020/Herculano-Houze-2020-Microchiropterans have a.pdf"
-# Use extract_tables to get all tables on the specified page
-tables1 <- extract_tables(pdf_file,pages = c(4))
+## 2. EXTRACT TABLE 2 --------------------------------------------------------
+# Table 2 is on page 4. Target the data rows with fixed column separators
+# (PDF points from top-left): area = c(top, left, bottom, right);
+# columns = x of the 8 separators between the 9 columns.
+tables1 <- extract_tables(
+  pdf_file,
+  pages   = 4,
+  guess   = FALSE,
+  area    = list(c(553, 48, 730, 545)),
+  columns = list(c(140, 196, 267, 322, 377, 430, 468, 511)),
+  output  = "matrix"
+)
 
-## 2. FIX FORMATTING AND SAVE SNAPSHOT
-# Convert the matrix into a dataframe
-df1 <- as.data.frame(tables1[[1]])
+df1 <- as.data.frame(tables1[[1]], stringsAsFactors = FALSE)
+colnames(df1) <- c(
+  "Species", "Micro/mega", "Family",
+  "NCX", "NCB", "NRoB", "DN,CX", "DN,Cb", "DN,RoB"
+)
 
-# Set the first row as the header
-colnames(df1) <- df1[1,]
+## 3. SAVE SNAPSHOT ----------------------------------------------------------
+write.csv(df1, snapshot_csv, row.names = FALSE)
 
-# Remove the first row (which is now the header)
-df1 <- df1[-1,]
+## 4. MAKE DATA READABLE -----------------------------------------------------
+num_cols <- c("NCX", "NCB", "NRoB", "DN,CX", "DN,Cb", "DN,RoB")
 
-# Renumber the rows
-rownames(df1) <- NULL
+result_df <- df1 %>%
+  mutate(across(all_of(num_cols), ~ as.numeric(gsub(",", "", .x)))) %>%
+  mutate(Species = if_else(Species == "Hypsignathus mostrosus",
+                           "Hypsignathus monstrosus", Species))
 
-# Save snapshot to a CSV file
-write.csv(df1, file = "HerculanoHouzel_etal_2020_TABLE2_snapshot.csv", row.names = FALSE)
-
-## 3. MAKE DATA READABLE
-# Loop through columns and remove commas in numbers
-columns_to_clean <- c("NCX","NCB","NRoB","DN,CX","DN,Cb","DN,RoB")
-for (col in columns_to_clean) {
-  df1[[col]] <- gsub(",", "", df1[[col]])
-}
-
-# Convert specified columns to numeric
-columns_to_convert <- c("NCX","NCB","NRoB","DN,CX","DN,Cb","DN,RoB")
-df1[, columns_to_convert] <- lapply(df1[, columns_to_convert], as.numeric)
-
-## 4. CORRECT SPECIES NAME TYPO
-# See paper text for correct spelling of species
-df1$Species[df1$Species == "Hypsignathus mostrosus"] <- "Hypsignathus monstrosus"
-
-
-# Set the scipen option to a high value to turn off scientific notation
 options(scipen = 999)
 
-## 5. SAVE
-# Finalize dataframe (UPDATE!!!)
-final.dataframe <- df1
+## 5. SAVE (LOCAL CSV + PUBLIC TSV) ------------------------------------------
+final.dataframe <- result_df
 
-# Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
-library(rstudioapi)
-item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path))
+filecodes    <- read_excel(readme_xlsx, sheet = "Sheet1")
+item_encoded <- filecodes$`Item encoded`[match(table_name, filecodes$`Item name`)]
+if (is.na(item_encoded)) stop("No 'Item encoded' in __ReadMe.xlsx for: ", table_name)
 
-# Get Item encoded
-library(readxl) 
-filecodes <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx", sheet = "Sheet1")
-item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+write.csv(final.dataframe, final_csv, row.names = FALSE)
 
-# Save dataframe to a CSV file
-write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
-
-# Save dataframe to a TSV file in the online database
-tsv_file_path <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/"
-write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)
+dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
+write.table(
+  final.dataframe,
+  file = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
+  sep = "\t", row.names = FALSE
+)

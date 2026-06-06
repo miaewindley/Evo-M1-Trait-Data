@@ -1,106 +1,107 @@
-## 1. SOURCE
-#downloaded pdf from https://ndownloader.figstatic.com/files/8705821
+## 0. PATHS (NO setwd) -------------------------------------------------------
+library(rstudioapi)
 
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
-folder_path <- "./Burish_etal_2010/"
+script_path   <- rstudioapi::getActiveDocumentContext()$path
+paper_dir     <- dirname(script_path)
+dataset_root  <- dirname(paper_dir)
+table_name    <- tools::file_path_sans_ext(basename(script_path))
 
-# Load the tabulizer library and rJava
+snapshot_csv  <- file.path(paper_dir, paste0(table_name, "_snapshot.csv"))
+final_csv     <- file.path(paper_dir, paste0(table_name, ".csv"))
+readme_xlsx   <- file.path(dataset_root, "__ReadMe.xlsx")
+public_tsv_dir<- file.path(dataset_root, "__Public", "comparative-data")
+
+# --- YOU SET THIS MANUALLY ---
+# Original source (the old script fetched this URL directly):
+#   https://ndownloader.figstatic.com/files/8705821
+pdf_file <- file.path(paper_dir, "000319019_sm_Table.pdf")
+
+## 1. PACKAGES ---------------------------------------------------------------
+# Migrated from the retired 'tabulizer' package to 'tabulapdf' (its maintained
+# successor). Both wrap the same tabula-java engine.
 library(rJava)
-library(tabulizer)
-library(tabulizerjars)
+library(tabulapdf)
 library(dplyr)
+library(readxl)
 
-# Define the PDF file path
-pdf_file <- paste0("https://ndownloader.figstatic.com/files/8705821")
+## 2. EXTRACT (4 pages) ------------------------------------------------------
+# The dataset spans pages 1-4 (one auto-detected table per page; the header is
+# only on page 1). Let tabula guess each page's table, then stack them.
+tables1 <- extract_tables(pdf_file, pages = c(1:4), guess = TRUE, output = "matrix")
 
-# Use extract_tables to get all tables on the specified page
-tables1 <- extract_tables(pdf_file,pages = c(1:4))
+combined <- as.data.frame(do.call(rbind, tables1), stringsAsFactors = FALSE)
 
-## 2. FIX FORMATTING AND SAVE SNAPSHOT
-# Convert the matrices into data frames
-df1 <- as.data.frame(tables1[[1]])
-df2 <- as.data.frame(tables1[[2]])
-df3 <- as.data.frame(tables1[[3]])
-df4 <- as.data.frame(tables1[[4]])
+# Drop the two stacked header rows (top of page 1) and assign names directly.
+combined <- combined[-c(1, 2), , drop = FALSE]
+colnames(combined) <- c(
+  "Species", "Case", "cord mass (g)", "body mass (g)", "# cells",
+  "% neurons", "# neurons", "# non-neurons", "length (mm)", "sex", "age (years)"
+)
+row.names(combined) <- NULL
 
-# Stack dataframes into a new combined data frame
-combined_df <- bind_rows(df1, df2, df3, df4)
+## 3. FOLD WRAPPED ROWS + SAVE SNAPSHOT --------------------------------------
+# Two kinds of cell wrap onto a separate line and must be folded into the next
+# row (this replaces the old hard-coded, row-number-specific fixes):
+#   (a) a Case prefix "07-" sitting alone above its number  -> "07-" + number
+#   (b) a Species name's first word sitting alone above the rest of its row
+is_blank <- function(x) is.na(x) | trimws(x) == ""
 
-# Combine the top two rows and set as the header row, adding spaces where collapsed
-header <- paste(combined_df[1, ], combined_df[2, ])
-# Trim whitespace from the header
-header=trimws(header)
-# Use the now first row as column names for the first matrix in tables1
-colnames(combined_df) <- header
-# Remove the rows that were combined
-combined_df <- combined_df[-c(1, 2), ]
+res <- vector("list", 0)
+i <- 1
+n <- nrow(combined)
+while (i <= n) {
+  sp   <- trimws(combined$Species[i])
+  case <- trimws(combined$Case[i])
+  data_empty <- all(is_blank(unlist(combined[i, 3:11], use.names = FALSE)))
 
-# Identify rows where Case is "07-" and the row below does not start with "07-"
-rows_to_combine <- which(combined_df$Case == "07-" & !startsWith(lead(combined_df$Case), "07-"))
-
-# Loop through the identified rows and combine with the row below
-for (i in rows_to_combine) {
-  combined_df[i, ] <- paste0(combined_df[i, ], combined_df[i+1, ], sep="")
+  if (i < n && case == "07-" && sp == "") {
+    nxt <- combined[i + 1, ]
+    nxt$Case <- paste0("07-", trimws(nxt$Case))
+    res[[length(res) + 1]] <- nxt
+    i <- i + 2
+  } else if (i < n && sp != "" && case == "" && data_empty) {
+    nxt <- combined[i + 1, ]
+    nxt$Species <- trimws(paste(sp, nxt$Species))
+    res[[length(res) + 1]] <- nxt
+    i <- i + 2
+  } else {
+    res[[length(res) + 1]] <- combined[i, ]
+    i <- i + 1
+  }
 }
-
-# Remove the rows that were combined
-combined_df <- combined_df[-(rows_to_combine + 1), ]
-
-# Reset row names of the data frame to NA
+combined_df <- do.call(rbind, res)
 row.names(combined_df) <- NULL
 
-#combine column 1 in rows 8 and 9 then delete row 9
-combined_df[9, 1] <- paste(combined_df[8, 1], combined_df[9, 1], sep=" ")
-combined_df <- combined_df[-c(8), ]
+write.csv(combined_df, snapshot_csv, row.names = FALSE)
 
-# Save snapshot as a CSV file
-write.csv(combined_df, paste0(folder_path, file = "Burish_etal_2010_SupplementaryTable1_snapshot.csv"), row.names = FALSE)
-
-# 3. Make data readable
-
+## 4. MAKE DATA READABLE -----------------------------------------------------
 cleaned_df <- combined_df
 
-# Find rows where all strings are ""
-all_empty_rows <- rowSums(cleaned_df == "") == ncol(cleaned_df)
+# drop blank separator rows
+all_empty <- apply(cleaned_df, 1, function(r) all(is_blank(r)))
+cleaned_df <- cleaned_df[!all_empty, , drop = FALSE]
+row.names(cleaned_df) <- NULL
 
-# Subset the dataframe to exclude rows where all strings are ""
-cleaned_df <- cleaned_df[!all_empty_rows, , drop = FALSE]
-
-# Reset row numbers in translating_time_dataset
-rownames(cleaned_df) <- NULL
-
-# Define the columns to convert to numeric
+# numeric columns (3:9 and 11); "unknown" / "n.a." coerce to NA
 columns_to_convert <- c(3:9, 11)
-
-# Loop through the columns and convert them to numeric
 for (col in columns_to_convert) {
-  cleaned_df[[col]] <- as.numeric(cleaned_df[[col]])
+  cleaned_df[[col]] <- suppressWarnings(as.numeric(gsub(",", "", cleaned_df[[col]])))
 }
 
-
-# Set the scipen option to a high value to turn off scientific notation
 options(scipen = 999)
 
-## 4. Species Update
-
-## 5. SAVE
-
-# Finalize dataframe (UPDATE!!!)
+## 5. SAVE (LOCAL CSV + PUBLIC TSV) ------------------------------------------
 final.dataframe <- cleaned_df
 
-# Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
-library(rstudioapi)
-item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path))
+filecodes    <- read_excel(readme_xlsx, sheet = "Sheet1")
+item_encoded <- filecodes$`Item encoded`[match(table_name, filecodes$`Item name`)]
+if (is.na(item_encoded)) stop("No 'Item encoded' in __ReadMe.xlsx for: ", table_name)
 
-# Get Item encoded
-library(readxl) 
-filecodes <- read_excel("./__ReadMe.xlsx", sheet = "Sheet1")
-item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+write.csv(final.dataframe, final_csv, row.names = FALSE)
 
-# Save dataframe to a CSV file
-write.csv(final.dataframe, file = paste0(folder_path, item_name, ".csv"), row.names = FALSE)
-
-# Save dataframe to a TSV file in the online database
-tsv_file_path <- "./__Public/comparative-data/"
-write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)
-
+dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
+write.table(
+  final.dataframe,
+  file = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
+  sep = "\t", row.names = FALSE
+)

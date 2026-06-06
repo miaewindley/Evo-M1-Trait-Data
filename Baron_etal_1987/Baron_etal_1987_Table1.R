@@ -3,20 +3,17 @@
 # Purpose
 #   Snapshot preparation. Turn the faithful snapshot of Baron et al. 1987
 #   Table 1 (paleocortical / olfactory structures) into a lean, analysis-ready
-#   CSV: the original and current species name, plus the seven structure-volume
-#   columns. Structure codes and units are defined in the definitions table
-#   (reference_tables/Baron_etal_1987_definitions.csv), not in this data table.
+#   CSV. Everything in the output comes from the paper via the snapshot only --
+#   no crosswalk, no comparison files. Structure codes and units are documented
+#   in reference_tables/Baron_etal_1987_definitions.csv, not in the data.
 #
-# Inputs
-#   Baron_etal_1987_Table1_snapshot.xlsx                      sheet: Table1_snapshot (values)
-#   reference_tables/Baron_etal_1987_species_crosswalk.csv    current names by species
+# Input
+#   Baron_etal_1987_Table1_snapshot.xlsx        sheet: Table1_snapshot
 #
 # Outputs
 #   Baron_etal_1987_Table1.csv                  one row per species (89 rows)
 #   <DOI>.tsv in __Public/comparative-data/     tab-separated copy named by the
 #                                               item's encoded DOI (from __ReadMe.xlsx)
-#
-# Values come only from the snapshot; the current name comes from the crosswalk.
 
 suppressPackageStartupMessages({
   library(readxl)
@@ -26,9 +23,13 @@ suppressPackageStartupMessages({
   library(stringr)
 })
 
+# Run from this script's own folder (RStudio), so the relative paths resolve.
+if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+}
+
 snapshot_file  <- "Baron_etal_1987_Table1_snapshot.xlsx"
 snapshot_sheet <- "Table1_snapshot"
-crosswalk_file <- file.path("reference_tables", "Baron_etal_1987_species_crosswalk.csv")
 output_file    <- "Baron_etal_1987_Table1.csv"
 
 structures <- c("BOL", "RB", "PRPI", "TOL", "TRL", "COA", "SIN")
@@ -44,42 +45,19 @@ read_snapshot <- function(path, sheet) {
   names(dat) <- header
   dat
 }
-read_text_csv <- function(path) read_csv(path, col_types = cols(.default = col_character()), na = c(""))
-parse_value   <- function(x) parse_number(x, na = c("", "-", "NA", "n.a.", "__"))
-norm_label    <- function(x) str_squish(tolower(str_remove_all(x, "\\.")))
+parse_value <- function(x) parse_number(x, na = c("", "-", "NA", "n.a.", "__"))
 
-# ---- snapshot: the 89 species rows -----------------------------------------
+# ---- snapshot: the 89 species rows (snapshot only) -------------------------
 
-snap <- read_snapshot(snapshot_file, snapshot_sheet) %>%
+final.dataframe <- read_snapshot(snapshot_file, snapshot_sheet) %>%
   rename(Species_Baron1987 = `species name`) %>%
-  filter(!is.na(Species_Baron1987)) %>%                # drops group + footnote rows
-  mutate(species_key = norm_label(Species_Baron1987))
-
-# ---- current names from the species crosswalk ------------------------------
-
-if (file.exists(crosswalk_file)) {
-  cw <- read_text_csv(crosswalk_file) %>%
-    transmute(species_key = norm_label(Species_Baron1987), Species = Species_MDD)
-  snap <- left_join(snap, cw, by = "species_key")
-} else {
-  warning("Crosswalk not found at '", crosswalk_file,
-          "'; 'Species' (current name) will fall back to the Baron 1987 name.")
-  snap$Species <- NA_character_
-}
-
-# ---- assemble the lean table -----------------------------------------------
-
-final.dataframe <- snap %>%
-  transmute(
-    Species_Baron1987,
-    Species = coalesce(Species, Species_Baron1987),
-    across(all_of(structures), parse_value)
-  )
+  filter(!is.na(Species_Baron1987)) %>%               # drops group + footnote rows
+  transmute(Species_Baron1987,
+            across(all_of(structures), parse_value))
 
 options(scipen = 999)
 
 ## ---- SAVE: local CSV + DOI-named TSV in the shared database folder --------
-# Mirrors the save step used across this dataset.
 item_name <- tryCatch(
   gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path)),
   error = function(e) tools::file_path_sans_ext(output_file)
@@ -103,6 +81,3 @@ if (is.na(item_encoded) || !nzchar(item_encoded)) {
               sep = "\t", row.names = FALSE)
   message("Wrote ", tsv_dir, item_encoded, ".tsv")
 }
-
-message("Current names filled from crosswalk: ",
-        sum(!is.na(final.dataframe$Species) & final.dataframe$Species != final.dataframe$Species_Baron1987))

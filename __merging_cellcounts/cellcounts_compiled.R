@@ -126,34 +126,50 @@ for (i in seq_along(item_name)) {
   cellcounts_data_list[[i]] <- df
 }
 
-# 3.4 Calculate Mass.g data which was not reported in Herculano-Houzel et al. 2020 TABLE 2 but can be calculated within it: CerebralCortex_Mass.g, Cerebellum_Mass.g, RoB_Mass.g
-# Extract unique prefixes from the column names in the dataframe where where the prefix is the portion of the column name before "_".
-# For each unique prefix, Check if:
-### The corresponding _Mass.g column has NA values,
-### The corresponding _N.n column has non-NA values,
-### The corresponding _N.p.mg column has non-NA values,
-# Formula: _Mass.g = (_N.n /_N.p.mg) * 1000
-# Extract the specific dataframe
-  df <- cellcounts_data_list$HerculanoHouzel_etal_2020_TABLE2
-  # Extract unique prefixes from column names
-  prefixes <- unique(sub("_.*", "", colnames(df)))
-  # Loop through each unique prefix
-  for (prefix in prefixes) {
-    # Check if the corresponding "_Mass.g" column exists
-    mass_column <- paste0(prefix, "_Mass.g")
-    if (!(mass_column %in% colnames(df))) {
-      # Check if corresponding "_N.n" and "_N.p.mg" columns are not NA
-      nn_column <- paste0(prefix, "_N.n")
-      npm_column <- paste0(prefix, "_N.p.mg")
-      if (nn_column %in% colnames(df) && npm_column %in% colnames(df) &&
-          !any(is.na(df[[nn_column]])) && !any(is.na(df[[npm_column]]))) {
-        # Calculate Mass.g based on the given formula
-        df[[mass_column]] <- (df[[nn_column]] / df[[npm_column]]) * 1000
-      }
+# 3.4 Derive regional Mass.g for Herculano-Houzel et al. 2020 TABLE 2
+#     (CerebralCortex_Mass.g, Cerebellum_Mass.g, RoB_Mass.g). That table does not
+#     report these masses, but they can be back-calculated from the neuron count
+#     and neuronal density it does report.
+#
+#     UNITS: _N.p.mg is neurons per MILLIGRAM, so
+#         _N.n / _N.p.mg = neurons / (neurons per mg) = mass in mg,
+#     which must be divided by 1000 to give grams:
+#         _Mass.g = (_N.n / _N.p.mg) / 1000
+#
+#     NOTE (corrected 2026-06): this step previously MULTIPLIED by 1000, which
+#     inflated the derived cortex/cerebellum/RoB masses of the ~13 HH-2020 bats by
+#     10^6 (mg x 1000 instead of mg / 1000). Whole-brain masses were reported
+#     directly and were never affected.
+#
+#     Fill _Mass.g only where it is absent but both _N.n and _N.p.mg are present.
+df <- cellcounts_data_list$HerculanoHouzel_etal_2020_TABLE2
+prefixes <- unique(sub("_.*", "", colnames(df)))
+for (prefix in prefixes) {
+  mass_column <- paste0(prefix, "_Mass.g")
+  if (!(mass_column %in% colnames(df))) {
+    nn_column  <- paste0(prefix, "_N.n")
+    npm_column <- paste0(prefix, "_N.p.mg")
+    if (nn_column %in% colnames(df) && npm_column %in% colnames(df) &&
+        !any(is.na(df[[nn_column]])) && !any(is.na(df[[npm_column]]))) {
+      df[[mass_column]] <- (df[[nn_column]] / df[[npm_column]]) / 1000  # mg -> g
     }
-  # Update the dataframe in the list
-  cellcounts_data_list$HerculanoHouzel_etal_2020_TABLE2 <- df
+  }
 }
+cellcounts_data_list$HerculanoHouzel_etal_2020_TABLE2 <- df
+
+# 3.4b Unit fix for Burish et al. 2010: cell COUNTS were tabulated in MILLIONS
+#      (e.g. Macaca mulatta brain "6380" = 6.38e9 neurons; the spinal-cord neuron and
+#      other-cell counts likewise). Convert to absolute counts to match every other
+#      dataset. Masses (g), densities (per mg) and percentages are already absolute and
+#      are left unchanged. (Burish's "Brain" = whole brain, so NBR is mapped to
+#      WholeBrain_N.n in its standardized-terms file; here we only rescale the counts.)
+df <- cellcounts_data_list$Burish_etal_2010_Table1
+for (col in c("WholeBrain_N.n", "SpinalCord_N.n", "SpinalCord_N.n_SD",
+              "SpinalCord_O.n", "SpinalCord_O.n_SD")) {
+  if (col %in% colnames(df)) df[[col]] <- df[[col]] * 1e6
+}
+cellcounts_data_list$Burish_etal_2010_Table1 <- df
+
 ### DosSantos_etal_2020_Table1 omit ###
 # # 3.5 Calculate microglia per cells (I/C) data which was not reported in Dos Santos et al. 2020 Table 1 but must have been their primary data
 # # Formula: _I.p.C = _I.n/_C.n

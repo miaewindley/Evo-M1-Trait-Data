@@ -9,14 +9,14 @@ LSC,Burish_etal_2010_Table1,SpinalCord_Length.mm
 LSC_SD,Burish_etal_2010_Table1,SpinalCord_Length.mm_SD
 MBD,Burish_etal_2010_Table1,Body_Mass.g
 MBD_SD,Burish_etal_2010_Table1,Body_Mass.g_SD
-MBR,Burish_etal_2010_Table1,Brain_Mass.g
+MBR,Burish_etal_2010_Table1,WholeBrain_Mass.g
 MSC,Burish_etal_2010_Table1,SpinalCord_Mass.g
 "MSC%
 MBD",Burish_etal_2010_Table1,SpinalCord_p.C.Body.mass
 "MSC%
 MCNS",Burish_etal_2010_Table1,SpinalCord_p.C.CNS.mass
 MSC_SD,Burish_etal_2010_Table1,SpinalCord_Mass.g_SD
-NBR,Burish_etal_2010_Table1,Brain_N.n
+NBR,Burish_etal_2010_Table1,WholeBrain_N.n
 NSC,Burish_etal_2010_Table1,SpinalCord_N.n
 "NSC%
 NCNS",Burish_etal_2010_Table1,SpinalCord_p.C.CNS.neurons

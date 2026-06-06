@@ -1,55 +1,79 @@
-## 1. SOURCE
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
-folder_path <- "./Burish_etal_2010/"
+## 0. PATHS (NO setwd) -------------------------------------------------------
+library(rstudioapi)
 
-# Load the tabulizer library and rJava
+script_path   <- rstudioapi::getActiveDocumentContext()$path
+paper_dir     <- dirname(script_path)
+dataset_root  <- dirname(paper_dir)
+table_name    <- tools::file_path_sans_ext(basename(script_path))
+
+snapshot_csv  <- file.path(paper_dir, paste0(table_name, "_snapshot.csv"))
+final_csv     <- file.path(paper_dir, paste0(table_name, ".csv"))
+readme_xlsx   <- file.path(dataset_root, "__ReadMe.xlsx")
+public_tsv_dir<- file.path(dataset_root, "__Public", "comparative-data")
+
+# --- YOU SET THIS MANUALLY ---
+# Original source (the old script fetched this URL directly):
+#   https://karger.com/bbe/article-pdf/76/1/45/2262181/000319019.pdf
+pdf_file <- file.path(paper_dir, "Burish-2010-Cellular scaling rules for primate.pdf")
+
+## 1. PACKAGES ---------------------------------------------------------------
+# Migrated from the retired 'tabulizer' package to 'tabulapdf' (its maintained
+# successor). Both wrap the same tabula-java engine.
 library(rJava)
-library(tabulizer)
-library(tabulizerjars)
+library(tabulapdf)
+library(tidyverse)
 library(stringr)
+library(readxl)
 
-# Define the PDF file path
-pdf_file <- "https://karger.com/bbe/article-pdf/76/1/45/2262181/000319019.pdf"
+## 2. EXTRACT TABLE 1 + SAVE SNAPSHOT ----------------------------------------
+# Table 1 ("Cellular composition of the spinal cord") is on page 3. Target the
+# data rows (caption + multi-line header excluded) with fixed column separators,
+# so the column names can be assigned directly instead of rebuilt from the two
+# stacked header rows. Coordinates are PDF points (1/72") from the top-left.
+#   area    = c(top, left, bottom, right)  -> data rows incl. the "Variation" row
+#   columns = x of the 14 separators between the 15 columns
+tables1 <- extract_tables(
+  pdf_file,
+  pages   = 3,
+  guess   = FALSE,
+  area    = list(c(122, 48, 274, 560)),
+  columns = list(c(119, 135, 169, 207, 237, 271, 307, 339, 377, 415, 440, 473, 500, 538)),
+  output  = "matrix"
+)
 
-# Use extract_tables to get all tables on the specified page
-tables1 <- extract_tables(pdf_file,pages = 3)
+df1 <- as.data.frame(tables1[[1]], stringsAsFactors = FALSE)
 
-## 2. FIX FORMATTING AND SAVE SNAPSHOT
-# Convert the matrices into data frames
-df1 <- as.data.frame(tables1[[1]])
+# Column names exactly as in the paper's stacked header (two-line headers keep
+# the line break, matching the standardized terms used downstream).
+colnames(df1) <- c(
+  "Species", "n", "MSC", "LSC", "%NSC", "NSC", "OSC", "DN", "DO", "MBD",
+  "MSC%\nMBD", "MBR", "MSC%\nMCNS", "NBR", "NSC%\nNCNS"
+)
 
-# Combine the top two rows and set as the header row, adding line break where collapsed
-header <- paste0(df1[1, ], "\n", df1[2, ])
-# Trim whitespace from the header
-header=trimws(header)
-# Use the now first row as column names for the first matrix in tables1
-colnames(df1) <- header
-# Remove the rows that were combined
-df1 <- df1[-c(1, 2), ]
-
-# Define the columns to check
+# In this PDF's text layer the "±" glyph extracts as a trailing "8" and the
+# "×" glyph as a trailing "!". For multi-individual species (n > 1) every mean
+# in the 8 measured columns carries a "±", so restore it; restore "×" in the
+# "Variation" (fold-change) row.
 columns_to_check <- c("MSC", "LSC", "%NSC", "NSC", "OSC", "DN", "DO", "MBD")
 
-# Identify rows where column "n" > 1
-rows_to_replace <- df1$n > 1
+rows_to_replace <- {
+  nnum <- suppressWarnings(as.numeric(df1$n))
+  !is.na(nnum) & nnum > 1
+}
+df1[rows_to_replace, columns_to_check] <- lapply(
+  df1[rows_to_replace, columns_to_check],
+  function(x) str_replace(x, "8$", "±")
+)
 
-# Loop through the specified columns and replace string end with "±" where applicable
-df1[rows_to_replace, columns_to_check] <- lapply(df1[rows_to_replace, columns_to_check], function(x) {
-  str_replace(x, "8$", "±")
-})
-
-# Subset the rows where "Species" column is equal to "Variation"
 variation_rows <- df1$Species == "Variation"
-
-# Replace string end with "×" where a string ends with "!" in the subsetted rows across the entire dataframe
 df1[variation_rows, ] <- apply(df1[variation_rows, ], 2, function(x) {
   ifelse(str_ends(x, "!"), str_replace(x, "!$", "×"), x)
 })
 
 # Save snapshot as a CSV file
-write.csv(df1, paste0(folder_path, file = "Burish_etal_2010_Table1_snapshot.csv"), row.names = FALSE)
+write.csv(df1, snapshot_csv, row.names = FALSE)
 
-# 3. Make data readable
+## 3. MAKE DATA READABLE -----------------------------------------------------
 result_df <- df1
 
 # Replace "n.a." with NA in the entire dataframe
@@ -57,90 +81,55 @@ result_df <- as.data.frame(sapply(result_df, function(x) gsub("n\\.a\\.", NA, x)
 
 # Delete the row where Species = "Variation"
 result_df <- result_df[-which(result_df$Species == "Variation"), , drop = FALSE]
-
-# Reset row names of the data frame to NA
 row.names(result_df) <- NULL
 
-# Iterate over column names
+# For every column that carries a "±" (mean ± SD), add an empty "<col>_SD" column
 for (col in colnames(result_df)) {
-  # Check if the column contains strings that end in "±"
   if (any(grepl("±$", result_df[[col]]))) {
-    # Create an empty column with the name from the left and "_SD"
     new_col_name <- paste0(col, "_SD")
     result_df[[new_col_name]] <- NA
   }
 }
 
-# Iterate over each row except the last one
+# Copy each SD (the row below a mean that ends in "±") into its "_SD" column
 for (i in 1:(nrow(result_df) - 1)) {
-  # Check if any cell in the current row ends with "±"
   if (any(sapply(result_df[i, ], function(cell) grepl("±$", cell)))) {
-    # Get the column names ending in "±" in the current row
     cols_with_pm <- colnames(result_df)[sapply(result_df[i, ], function(cell) grepl("±$", cell))]
-
-    # Iterate over the columns ending in "±" in the current row
     for (col_pm in cols_with_pm) {
-      # Get the corresponding "_SD" column name
       col_sd <- paste0(col_pm, "_SD")
-
-      # Copy the value from the row below to the "_SD" column
       result_df[i, col_sd] <- result_df[i + 1, col_pm]
-
-      # # Check if there's already a row with the same prefix plus the suffix "_SD"
-      # if (any(grepl(paste0("^", col_pm, "_SD$"), colnames(result_df)))) {
-      #   # Get the row index where the "_SD" column exists
-      #   row_sd <- which(grepl(paste0("^", col_pm, "_SD$"), colnames(result_df)))
-      # 
-      #   # Copy the value to the row with the same prefix plus the suffix "_SD"
-      #   result_df[row_sd, col_pm] <- result_df[i + 1, col_pm]
-      # }
     }
   }
 }
 
-# Delete rows where Species is NA
+# Delete rows where Species is NA, strip the trailing "±", drop blank Species rows
 result_df <- result_df[!is.na(result_df$Species), ]
-
-# Replace "±$" with "" in the whole dataframe
 result_df[] <- lapply(result_df, function(x) gsub("±$", "", x))
-
-# Delete rows where Species is blank
 result_df <- result_df[result_df$Species != "", ]
-
-# Reset row names of the data frame to NA
 row.names(result_df) <- NULL
 
-# Get the column names except "Species"
+# Remove commas and convert all non-Species columns to numeric
 columns_to_convert <- names(result_df)[names(result_df) != "Species"]
-
-# Remove commas from numeric columns
 result_df[columns_to_convert] <- lapply(result_df[, columns_to_convert], function(x) gsub(",", "", x))
-
-# Convert selected columns to numeric
 result_df[columns_to_convert] <- lapply(result_df[columns_to_convert], as.numeric)
 
-## 4. Correct species name
+## 4. CORRECT SPECIES NAME ---------------------------------------------------
 result_df$Species[result_df$Species == "Otolemur garnetti"] <- "Otolemur garnettii"
 
-# Set the scipen option to a high value to turn off scientific notation
 options(scipen = 999)
 
-## 5. Save
-# Finalize dataframe (UPDATE!!!)
+## 5. SAVE (LOCAL CSV + PUBLIC TSV) ------------------------------------------
 final.dataframe <- result_df
 
-# Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
-library(rstudioapi)
-item_name <- gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path))
+filecodes    <- read_excel(readme_xlsx, sheet = "Sheet1")
+item_encoded <- filecodes$`Item encoded`[match(table_name, filecodes$`Item name`)]
+if (is.na(item_encoded)) stop("No 'Item encoded' in __ReadMe.xlsx for: ", table_name)
 
-# Get Item encoded
-library(readxl) 
-filecodes <- read_excel("./__ReadMe.xlsx", sheet = "Sheet1")
-item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+write.csv(final.dataframe, final_csv, row.names = FALSE)
 
-# Save dataframe to a CSV file
-write.csv(final.dataframe, file = paste0(folder_path, item_name, ".csv"), row.names = FALSE)
-
-# Save dataframe to a TSV file in the online database
-tsv_file_path <- "./__Public/comparative-data/"
-write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)
+dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
+write.table(
+  final.dataframe,
+  file = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
+  sep = "\t", row.names = FALSE
+)

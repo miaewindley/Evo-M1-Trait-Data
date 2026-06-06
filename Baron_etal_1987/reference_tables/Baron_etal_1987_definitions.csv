@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,Reference,Note
+BOL,bulbus olfactorius (olfactory bulb),OlfactoryBulb,Vol.mm3,,Baron_etal_1987_Table1,absolute volume in mm3
+RB,retrobulbar cortex (regio retrobulbaris; = anterior olfactory nucleus in Anglo-American usage),RetrobulbarCortex,Vol.mm3,,Baron_etal_1987_Table1,
+PRPI,prepiriform cortex,PrepiriformCortex,Vol.mm3,,Baron_etal_1987_Table1,
+TOL,tuberculum olfactorium (olfactory tubercle),OlfactoryTubercle,Vol.mm3,,Baron_etal_1987_Table1,
+TRL,tractus olfactorius lateralis (lateral olfactory tract),LateralOlfactoryTract,Vol.mm3,,Baron_etal_1987_Table1,
+COA,commissura anterior (anterior commissure),AnteriorCommissure,Vol.mm3,,Baron_etal_1987_Table1,
+SIN,substantia innominata,SubstantiaInnominata,Vol.mm3,,Baron_etal_1987_Table1,
+Species_Baron1987,species name as printed in Baron et al. 1987 (Part VI),,,info,Baron_etal_1987_Table1,
+Species,current accepted species name,,,info,Baron_etal_1987_Table1,from reference_tables/Baron_etal_1987_species_crosswalk.csv (MDD v2.4)

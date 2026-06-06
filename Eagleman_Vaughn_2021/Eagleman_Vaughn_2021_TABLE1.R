@@ -25,64 +25,46 @@ library(tidyverse)
 library(stringr)
 library(readxl)
 
-## 2. EXTRACT TABLE 1 --------------------------------------------------------
+## 2. EXTRACT TABLE 1 + SAVE SNAPSHOT ----------------------------------------
+# Table 1 is on page 3. The previous version extracted the whole page with
+# guess = FALSE and then took a hard-coded row range (slice(7:31)); the current
+# tabula engine emits one extra header line, so that slice silently dropped the
+# last species (Human). Instead, target the table's data rows with fixed column
+# separators and assign headers directly. Coordinates are PDF points from
+# top-left:  area = c(top, left, bottom, right); columns = the 5 separators.
 tables1 <- extract_tables(
   pdf_file,
-  pages = 3,
-  guess = FALSE
+  pages   = 3,
+  guess   = FALSE,
+  area    = list(c(118, 40, 415, 560)),
+  columns = list(c(150, 230, 315, 400, 485)),
+  output  = "matrix"
 )
 
-df0 <- as.data.frame(tables1[[1]])
+df0 <- as.data.frame(tables1[[1]], stringsAsFactors = FALSE)
 
-# check the name of the columns
-colnames(df0)
-
-# Only keep rows from 7 to 31 and delete the 2nd column
-df1 <- df0 %>%
-  slice(7:31) %>%                          # rows 7 to 31
-  filter(str_detect(.[[1]], "^[A-Za-z]")) %>%  # first column
-  select(-2)                               # drop 2nd column
-
-# Add three columns and rename columns 
-df2 <- df1 %>%
-  add_column(.col4 = NA, .col5 = NA, .col6 = NA, .after = 3) %>%
-  `colnames<-`(c(
-    "Coloquial name",
-    "Time to \nlocomotion\n(Days)",
-    "Time to\n weaning\n (Days)",
-    "Time to\n adolescence\n (Months)",
-    "Percentage of \nsleep in REM",
-    "Phylogenetic\n distance from\n humans (M\n years)"
-  ))
-# check the name of the columns after adding and renaming
-colnames(df2) # check the name of the columns before separating
-df2[ , 3:6]
-# separate the space delimited value from column 3 into 4 columns and convert to numeric, if the value is "–" then convert to NA
-
-df3 <- df2 %>%
-  tidyr::separate(
-    col = 3,
-    into = colnames(df2)[3:6],
-    sep = "\\s+",
-    fill = "right",
-    convert = FALSE
+# Headers as printed in the table (two-line labels keep their line breaks).
+colnames(df0) <- c(
+  "Coloquial name",
+  "Time to \nlocomotion\n(Days)",
+  "Time to\n weaning\n (Days)",
+  "Time to\n adolescence\n (Months)",
+  "Percentage of \nsleep in REM",
+  "Phylogenetic\n distance from\n humans (M\n years)"
 )
-# check
-df3[ , 3:6]
-     
-write.csv(df3, snapshot_csv, row.names = FALSE)
 
-df<-df3
+# Keep only real species rows (drop any footnote / caption line that crept in).
+df_snapshot <- df0 %>%
+  filter(
+    str_detect(`Coloquial name`, "^[A-Za-z]"),
+    !str_detect(`Coloquial name`, "Supplementary|Material|Table|METHODS")
+  )
 
-## 3. REMOVE PDF ARTIFACT COLUMNS --------------------------------------------
-df <- df[, !grepl("^\\.\\.\\.", colnames(df)), drop = FALSE]
+write.csv(df_snapshot, snapshot_csv, row.names = FALSE)
 
-## 4. CHECK & RENAME COLUMNS SAFELY ------------------------------------------
-
-n_cols <- ncol(df)
-
-# Expected column meaning in order (Table 1)
-expected_names <- c(
+## 3. MAKE DATA READABLE -----------------------------------------------------
+final.dataframe <- df_snapshot
+colnames(final.dataframe) <- c(
   "Species",
   "Time_to_locomotion_days",
   "Time_to_weaning_days",
@@ -91,57 +73,26 @@ expected_names <- c(
   "Phylogenetic_distance_Mya"
 )
 
-# Assign only as many names as columns that exist
-colnames(df) <- expected_names[seq_len(n_cols)]
+# For every measure column: keep only digits and the decimal point (this turns
+# "–" into "", "6%" into "6", and "1,637" into "1637"), then coerce to numeric.
+final.dataframe <- final.dataframe %>%
+  mutate(across(
+    -Species,
+    ~ as.numeric(na_if(str_replace_all(str_trim(.x), "[^0-9.]", ""), ""))
+  ))
 
-## 5. REMOVE NON-TABLE TEXt --------------------------------------------------
-df <- df %>%
-  filter(
-    !is.na(Species),
-    str_detect(Species, "^[A-Za-z]"),
-    !str_detect(
-      Species,
-      "METHODS|Supplementary|sleep time|Table|Material"
-    )
-  )
+options(scipen = 999)
 
-## 5.5 REPLACE DASHES WITH NA ------------------------------------------------
-df <- df %>%
-  mutate(
-    across(
-      -Species,
-      ~ .x %>%
-        str_trim() %>%                      # remove spaces
-        str_replace_all("[^0-9.]", "") %>% # keep ONLY numbers + decimal
-        na_if("")                          # blank → NA
-    )
-  )
-
-
-## 6. CLEAN NUMERIC VALUES ---------------------------------------------------
-
-final.dataframe <- df %>%
-  mutate(
-    Time_to_locomotion_days = as.numeric(Time_to_locomotion_days),
-    Time_to_weaning_days = as.numeric(Time_to_weaning_days),
-    Time_to_adolescence_months = as.numeric(Time_to_adolescence_months),
-    REM_sleep_percent = as.numeric(str_remove(REM_sleep_percent, "%")),
-    Phylogenetic_distance_Mya = as.numeric(Phylogenetic_distance_Mya)
-  )
-
-## 7. SAVE (LOCAL CSV + PUBLIC TSV) ------------------------------------------
-final.dataframe <- final.dataframe
-
-# Item encoded lookup uses table_name (script filename)
-filecodes <- read_excel(file.path(dataset_root, "__ReadMe.xlsx"), sheet = "Sheet1")
+## 4. SAVE (LOCAL CSV + PUBLIC TSV) ------------------------------------------
+filecodes    <- read_excel(readme_xlsx, sheet = "Sheet1")
 item_encoded <- filecodes$`Item encoded`[match(table_name, filecodes$`Item name`)]
+if (is.na(item_encoded)) stop("No 'Item encoded' in __ReadMe.xlsx for: ", table_name)
 
-# Local output next to the paper
 write.csv(final.dataframe, final_csv, row.names = FALSE)
 
-# Public TSV output
 dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
-write.table(final.dataframe,
-file = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
-sep = "\t", row.names = FALSE)
-
+write.table(
+  final.dataframe,
+  file = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
+  sep = "\t", row.names = FALSE
+)
