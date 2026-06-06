@@ -1,0 +1,51 @@
+Specimen,Sex,Brain volume cm3,Cerebellum volume cm3,Vermis volume cm3,Hemisphere volume cm3
+Homo sapiens (139/95),M,1174.7,125.3,10.6,114.6
+Homo sapiens (H9/88),M,1582.6,182.1,15.7,166.3
+Homo sapiens (SN382/81),F,1102.3,138.2,9.6,128.6
+Homo sapiens (71/84) *,F,1093.6,133.2,12.3,120.9
+Homo sapiens (14/94),F,1137.2,136.9,14.7,122.1
+Homo sapiens (146/86),M,1387.1,138.6,9.5,129.0
+Homo sapiens (SN201/86) *,M,1176.6,132.0,9.9,122.1
+Homo sapiens (503/81) *,F,1264.5,139.8,11.2,128.7
+Gorilla gorilla (A375) †,M,434.4,60.1,7.2,52.9
+Gorilla gorilla (1001),NA,414.5,51.0,4.5,46.5
+Gorilla gorilla (YN82-140),F,362.9,48.5,5.8,42.8
+Pan paniscus (YN86-137),F,378.4,54.1,5.7,48.3
+Pan paniscus (Zahlia 1/97),F,312.7,53.0,7.8,45.2
+Pan troglodytes (YN89-278) *,M,405.4,53.5,4.2,49.3
+Pan troglodytes (1548) ‡,NA,265.0,28.2,3.7,24.5
+Pan troglodytes (PAN 1) †,F,424.7,56.5,7.5,49.0
+Pan troglodytes (Bathsheba 4/97),F,347.0,47.8,6.8,41.0
+Pan troglodytes (Schimpanse 280) †,M,445.0,45.3,5.7,39.6
+Pan troglodytes (Schimpanse 278) †§,F,405.4,53.3,NA,NA
+Pan troglodytes (Schimpanse A269) †*,M,333.5,40.6,3.4,37.2
+Pongo pygmaeus (0475),F,221.0,22.4,3.5,18.8
+Pongo pygmaeus (YN85-38),M,356.2,41.2,NA,NA
+Pongo pygmaeus (Harry 2/97),M,424.7,54.3,5.4,48.9
+Pongo pygmaeus (Briggs 5/97),M,333.0,39.2,3.7,35.5
+Hylobates lar (YN81-146),F,88.8,10.6,2.0,8.6
+Hylobates lar (2436) (LH) ‡,NA,107.9,14.5,2.3,12.2
+Hylobates lar (1547),M,79.3,12.3,2.4,9.9
+Hylobates lar (Disco 3/97),F,115.8,13.8,2.3,11.5
+Hylobates lar (1203) †,M,98.4,12.0,2.6,9.4
+Erythrocebus patas (1545) ‡,M,89.0,7.9,2.7,5.2
+Macaca mulatta (Rhesus 516),F,101.2,9.8,3.3,6.4
+Macaca mulatta (Rhesus R4) *‡,NA,108.3,9.4,3.0,6.3
+Cercopithecus sp. (S) ‡,NA,57.0,5.6,2.2,3.3
+Cercopithecus sp. (CER) ‡,M,71.0,6.8,3.1,3.6
+Cercocebus albigena (A221),M,112.0,11.7,4.0,7.7
+Papio cynocephalus (P3),F,141.9,12.8,3.5,9.3
+Papio cynocephalus (P4),F,150.7,15.3,4.4,11.0
+Ateles paniscus (2412) ‡,NA,107.3,10.7,3.9,6.8
+Ateles paniscus (1541) ‡,M,93.0,11.7,2.9,8.7
+Ateles paniscus (1538) ‡,M,71.8,8.7,2.3,6.4
+Alouatta seniculus (1961/8) ‡,M,36.5,4.3,1.6,2.7
+Alouatta seniculus (1961/9),F,38.3,4.0,1.3,2.7
+Cebus sp. 1 LH§ RH coronal ‡,M,79.1,7.3,2.5,4.8
+Cebus sp. 5 ‡,NA,73.9,6.8,2.2,4.6
+Saimiri sciureus (1064),F,19.0,1.9,0.9,1.0
+Saimiri sciureus (2408) ‡,M,20.7,1.9,1.0,0.9
+Aotus trivirgatus (1536) ‡,F,18.9,1.7,1.0,1.2
+Aotus trivirgatus (K197),F,15.8,1.7,0.8,0.9
+Aotus trivirgatus (888) ‡,NA,19.7,1.8,0.9,0.8
+Aotus trivirgatus (1535) ‡,F,22.1,1.8,0.9,0.9

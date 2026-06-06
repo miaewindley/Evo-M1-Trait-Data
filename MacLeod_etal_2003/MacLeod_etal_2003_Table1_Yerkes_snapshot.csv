@@ -1,0 +1,48 @@
+Specimen,Sex,Brain volume cm3,Cerebellum volume cm3,Vermis volume cm3,Hemisphere volume cm3
+Homo sapiens 1,F,1088,111.4,9.3,102.1
+Homo sapiens 2,M,1212,119.6,9.4,110.2
+Homo sapiens 3,F,1330,148.2,11.6,136.6
+Homo sapiens 4,F,1334,147.2,14.1,133.1
+Homo sapiens 5,M,1403,141.7,11.6,130.1
+Homo sapiens 6,M,1426,154.0,15.0,139.0
+Gorilla gorilla (Kinyani),F,330.7,56.1,4.9,51.2
+Gorilla gorilla (Kekla),M,463.9,81.2,9.1,72.1
+Pan paniscus (Brian),M,322.4,46.1,6.1,40.0
+Pan paniscus (Bosandjo),M,331.8,51.4,9.6,41.8
+Pan paniscus (Lorel),F,309.2,39.7,4.9,34.8
+Pan paniscus (Jill),F,281.4,39.5,4.8,34.7
+Pan troglodytes (Kengee),F,343.8,50.1,5.3,44.8
+Pan troglodytes (Merv),M,391.2,51.4,5.0,46.4
+Pan troglodytes (Jimmy Carter),M,311.4,51.8,4.9,46.9
+Pan troglodytes (Laz),M,365.9,45.7,4.9,40.8
+Pan troglodytes (Lulu),F,282.7,45.0,6.1,38.9
+Pan troglodytes (Mary),F,328.6,39.6,4.0,35.6
+Pan troglodytes (Panzee),F,317.9,46.1,4.7,41.4
+Pongo pygmaeus(Hati),F,343.0,42.7,4.7,38.0
+Pongo pygmaeus(Mentubar),M,383.2,45.2,5.1,40.1
+Pongo pygmaeus(Minyak),M,423.8,59.3,6.1,53.2
+Pongo pygmaeus(Molek),M,477.5,52.0,4.9,47.1
+Hylobates lar (Sunny),M,76.1,10.4,1.7,8.7
+Hylobates lar (Cherokee),F,99.7,13.5,2.4,11.1
+Hylobates lar (Cleo),F,80.0,13.6,1.9,11.7
+Hylobates lar (Buddy),M,76.3,9.0,1.8,7.2
+Papio cynocephalus (B263),M,159.2,14.8,3.9,10.9
+Papio cynocephalus (140M),M,127.4,12.4,3.3,9.1
+Cebus apella (Binkey),F,60.1,5.4,1.7,3.7
+Cebus apella (Diva),F,55.2,5.1,1.4,3.7
+Cebus apella (Andy),M,73.2,7.7,2.0,5.7
+Cebus apella (Vincent),M,77.3,7.6,2.2,5.5
+Macaca mulatta (153C),M,72.8,6.3,1.8,4.5
+Macaca mulatta (RAI5),M,82.3,7.7,2.8,4.9
+Macaca mulatta (REG3),M,85.4,7.5,2.3,5.2
+Macaca mulatta (RUL1),M,84.4,7.6,2.2,5.4
+Macaca mulatta (RPE1),M,99.5,8.3,3.0,5.2
+Macaca mulatta (RAK5),NA,NA,6.0,1.9,4.1
+Cercocebus torquatus atys (FYF),M,97.9,10.6,2.9,7.7
+Cercocebus torquatus atys (FSO),M,96.2,8.1,2.3,5.9
+Cercocebus torquatus atys (FFK),F,97.8,7.4,1.9,5.5
+Cercocebus torquatus atys (FWJ),M,103.5,8.5,2.1,6.4
+Saimiri sciureus (93M),M,23.6,2.1,1.0,1.1
+Saimiri sciureus (93I),F,23.7,1.9,0.8,1.1
+Saimiri sciureus (S104),M,20.8,2.0,0.8,1.2
+Saimiri sciureus (S105),M,24.3,2.2,0.9,1.2
