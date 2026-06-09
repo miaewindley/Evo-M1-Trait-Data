@@ -1,0 +1,3 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species_Baron1990,species name as printed in the paper,,,info,,,Baron_etal_1990_Table1,taxonomy applied later via ../_keys/Stephan/,
+Complexus_sensorius_trigeminalis_mm3,Complexus sensorius trigeminalis (Vol.mm3),Complexus_sensorius_trigeminalis,Vol.mm3,,primary,Insectivora & Primates,Baron_etal_1990_Table1,from comparison CSV column Complexus_sensorius_trigeminalis,

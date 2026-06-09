@@ -1,0 +1,1337 @@
+Species,Unpub_animal,Structure,Measure,published,unpublished,pct_diff,flag
+Antidorcas marsupialis,Antidorcas marsupialis,Br,C,8557909526.0,8557909526.0,0.0,match
+Antidorcas marsupialis,Antidorcas marsupialis,Br,N,2724595233.0,2730363073.0,0.212,match
+Antidorcas marsupialis,Antidorcas marsupialis,Br,I,402984165.0,403837263.8112449,0.212,match
+Antidorcas marsupialis,Antidorcas marsupialis,Br,I/N,0.148,0.14790606707390264,-0.063,match
+Antidorcas marsupialis,Antidorcas marsupialis,Br,N/mg,25686.0,25757.656204599913,0.279,match
+Antidorcas marsupialis,Antidorcas marsupialis,Br,I/mg,3810.0,3809.713626264079,-0.008,match
+Antidorcas marsupialis,Antidorcas marsupialis,Br,Mass,106.074,106.002,-0.068,match
+Antidorcas marsupialis,Antidorcas marsupialis,Br,I/C,0.04708908919587005,0.04718877461655054,0.212,match
+Antidorcas marsupialis,Antidorcas marsupialis,Cb,C,2724458750.0,2724458750.0,0.0,match
+Antidorcas marsupialis,Antidorcas marsupialis,Cb,N,2257214074.0,2274039777.0,0.745,match
+Antidorcas marsupialis,Antidorcas marsupialis,Cb,I,58539299.0,58975661.99999999,0.745,match
+Antidorcas marsupialis,Antidorcas marsupialis,Cb,I/N,0.026,0.025934314164813305,-0.253,match
+Antidorcas marsupialis,Antidorcas marsupialis,Cb,N/mg,196999.0,198467.42686332692,0.745,match
+Antidorcas marsupialis,Antidorcas marsupialis,Cb,I/mg,5147.0,5147.116599755628,0.002,match
+Antidorcas marsupialis,Antidorcas marsupialis,Cb,Mass,11.458,11.458,0.0,match
+Antidorcas marsupialis,Antidorcas marsupialis,Cb,I/C,0.02148657930680727,0.02164674433041058,0.745,match
+Antidorcas marsupialis,Antidorcas marsupialis,Ctx,C,4216083590.0,4216083590.0,0.0,match
+Antidorcas marsupialis,Antidorcas marsupialis,Ctx,N,376412018.0,365354155.0,-2.938,minor
+Antidorcas marsupialis,Antidorcas marsupialis,Ctx,I,254974497.0,247484106.733,-2.938,minor
+Antidorcas marsupialis,Antidorcas marsupialis,Ctx,I/N,0.677,0.6773813937684656,0.056,match
+Antidorcas marsupialis,Antidorcas marsupialis,Ctx,N/mg,5758.0,5595.010030627871,-2.831,minor
+Antidorcas marsupialis,Antidorcas marsupialis,Ctx,I/mg,3790.0,3789.9556926952528,-0.001,match
+Antidorcas marsupialis,Antidorcas marsupialis,Ctx,Mass,65.372,65.3,-0.11,match
+Antidorcas marsupialis,Antidorcas marsupialis,Ctx,I/C,0.060476622808135545,0.0587,-2.938,minor
+Antidorcas marsupialis,Antidorcas marsupialis,Cx,C,4443685152.0,4443685152.0,0.0,match
+Antidorcas marsupialis,Antidorcas marsupialis,Cx,N,396896159.0,385838296.0,-2.786,minor
+Antidorcas marsupialis,Antidorcas marsupialis,Cx,I,268018858.0,260551625.76546347,-2.786,minor
+Antidorcas marsupialis,Antidorcas marsupialis,Cx,I/N,0.675,0.6752871046410164,0.043,match
+Antidorcas marsupialis,Antidorcas marsupialis,Cx,N/mg,5768.0,5613.499810865074,-2.679,minor
+Antidorcas marsupialis,Antidorcas marsupialis,Cx,I/mg,3791.0,3790.7240341819693,-0.007,match
+Antidorcas marsupialis,Antidorcas marsupialis,Cx,Mass,68.806,68.734,-0.105,match
+Antidorcas marsupialis,Antidorcas marsupialis,Cx,I/C,0.06031454723550135,0.05863413289940112,-2.786,minor
+Antidorcas marsupialis,Antidorcas marsupialis,Hp,C,227601562.0,227601562.0,0.0,match
+Antidorcas marsupialis,Antidorcas marsupialis,Hp,N,20484141.0,20484140.58,-0.0,match
+Antidorcas marsupialis,Antidorcas marsupialis,Hp,I,12973289.0,12973289.034,0.0,match
+Antidorcas marsupialis,Antidorcas marsupialis,Hp,I/N,0.633,0.6333333333333334,0.053,match
+Antidorcas marsupialis,Antidorcas marsupialis,Hp,N/mg,5965.0,5965.096266744321,0.002,match
+Antidorcas marsupialis,Antidorcas marsupialis,Hp,I/mg,3778.0,3777.894302271404,-0.003,match
+Antidorcas marsupialis,Antidorcas marsupialis,Hp,Mass,3.434,3.434,0.0,match
+Antidorcas marsupialis,Antidorcas marsupialis,Hp,I/C,0.05699999985061614,0.057,0.0,match
+Antidorcas marsupialis,Antidorcas marsupialis,P+M,C,,335937500.0,,
+Antidorcas marsupialis,Antidorcas marsupialis,P+M,N,,22843750.0,,
+Antidorcas marsupialis,Antidorcas marsupialis,P+M,I,,33795312.5,,
+Antidorcas marsupialis,Antidorcas marsupialis,P+M,I/N,,1.4794117647058824,,
+Antidorcas marsupialis,Antidorcas marsupialis,P+M,N/mg,,2748.2856111645815,,
+Antidorcas marsupialis,Antidorcas marsupialis,P+M,I/mg,,4065.8460659287775,,
+Antidorcas marsupialis,Antidorcas marsupialis,P+M,Mass,,8.312,,
+Antidorcas marsupialis,Antidorcas marsupialis,P+M,I/C,,0.10060000000000001,,
+Antidorcas marsupialis,Antidorcas marsupialis,RoB,C,1389765624.0,1389765624.0,0.0,match
+Antidorcas marsupialis,Antidorcas marsupialis,RoB,N,70485000.0,70485000.0,0.0,match
+Antidorcas marsupialis,Antidorcas marsupialis,RoB,I,84309976.0,84309976.0,0.0,match
+Antidorcas marsupialis,Antidorcas marsupialis,RoB,I/N,1.196,1.196140682414698,0.012,match
+Antidorcas marsupialis,Antidorcas marsupialis,RoB,N/mg,2731.0,2730.918248740798,-0.003,match
+Antidorcas marsupialis,Antidorcas marsupialis,RoB,I/mg,3267.0,3266.5624176675706,-0.013,match
+Antidorcas marsupialis,Antidorcas marsupialis,RoB,Mass,25.81,25.81,0.0,match
+Antidorcas marsupialis,Antidorcas marsupialis,RoB,I/C,0.0606648880530952,0.0606648880530952,0.0,match
+Aotus trivirgatus,Aotus trivirgatus,Cx,C,1303931000.0,1293099000.0,-0.831,match
+Aotus trivirgatus,Aotus trivirgatus,Cx,N,451671982.0,450114419.0,-0.345,match
+Aotus trivirgatus,Aotus trivirgatus,Cx,I,23875354.0,23793021.599999998,-0.345,match
+Aotus trivirgatus,Aotus trivirgatus,Cx,I/N,0.053,0.052859940929819445,-0.264,match
+Aotus trivirgatus,Aotus trivirgatus,Cx,N/mg,49504.0,49857.600686752325,0.714,match
+Aotus trivirgatus,Aotus trivirgatus,Cx,I/mg,2635.0,2635.4698272042533,0.018,match
+Aotus trivirgatus,Aotus trivirgatus,Cx,Mass,9.124,9.028,-1.052,minor
+Aotus trivirgatus,Aotus trivirgatus,Cx,I/C,0.01831028942482386,0.0184,0.49,match
+Canis familiaris,Canis familiaris,Br,C,7445924000.0,7445924000.0,0.0,match
+Canis familiaris,Canis familiaris,Br,N,2252694404.0,2252694404.0,0.0,match
+Canis familiaris,Canis familiaris,Br,I,465370250.0,465348358.8,-0.005,match
+Canis familiaris,Canis familiaris,Br,I/N,0.207,0.20204491168109884,-2.394,minor
+Canis familiaris,Canis familiaris,Br,N/mg,26054.0,26993.103006401434,3.604,minor
+Canis familiaris,Canis familiaris,Br,I/mg,5382.0,5339.289951354994,-0.794,match
+Canis familiaris,Canis familiaris,Br,Mass,86.462,86.462,0.0,match
+Canis familiaris,Canis familiaris,Br,I/C,0.0625,0.06193333333333333,-0.907,match
+Canis familiaris,Canis familiaris,Cb,C,2525312500.0,2525312500.0,0.0,match
+Canis familiaris,Canis familiaris,Cb,N,1676633212.0,1676633212.0,0.0,match
+Canis familiaris,Canis familiaris,Cb,I,48233469.0,48153906.25,-0.165,match
+Canis familiaris,Canis familiaris,Cb,I/N,0.029,0.02990091378526377,3.107,minor
+Canis familiaris,Canis familiaris,Cb,N/mg,223194.0,238571.15200870822,6.89,minor
+Canis familiaris,Canis familiaris,Cb,I/mg,6421.0,7555.398633840366,17.667,MAJOR
+Canis familiaris,Canis familiaris,Cb,Mass,7.512,7.5120000000000005,0.0,match
+Canis familiaris,Canis familiaris,Cb,I/C,0.01910000009899765,0.020166666666666666,5.585,minor
+Canis familiaris,Canis familiaris,Ctx,C,3801711500.0,3801711500.0,0.0,match
+Canis familiaris,Canis familiaris,Ctx,N,519305298.0,519305298.6666667,0.0,match
+Canis familiaris,Canis familiaris,Ctx,I,302616235.0,302614321.2,-0.001,match
+Canis familiaris,Canis familiaris,Ctx,I/N,0.583,0.5635370535515136,-3.338,minor
+Canis familiaris,Canis familiaris,Ctx,N/mg,8180.0,8373.184323017644,2.362,minor
+Canis familiaris,Canis familiaris,Ctx,I/mg,4767.0,4615.314799677443,-3.182,minor
+Canis familiaris,Canis familiaris,Ctx,Mass,63.481,63.481,0.0,match
+Canis familiaris,Canis familiaris,Ctx,I/C,0.07959999989478424,0.07806666666666667,-1.926,minor
+Canis familiaris,Canis familiaris,Cx,C,3944367750.0,3944367750.0,0.0,match
+Canis familiaris,Canis familiaris,Cx,N,527911882.0,527911882.46666664,0.0,match
+Canis familiaris,Canis familiaris,Cx,I,313577236.0,313736821.625,0.051,match
+Canis familiaris,Canis familiaris,Cx,I/N,0.594,0.5759805893776981,-3.034,minor
+Canis familiaris,Canis familiaris,Cx,N/mg,8061.0,8247.731933279423,2.316,minor
+Canis familiaris,Canis familiaris,Cx,I/mg,4788.0,4655.928781319111,-2.758,minor
+Canis familiaris,Canis familiaris,Cx,Mass,65.491,65.491,0.0,match
+Canis familiaris,Canis familiaris,Cx,I/C,0.07949999996830924,0.07836666666666667,-1.426,minor
+Canis familiaris,Canis familiaris,Hp,C,142656250.0,142656250.0,0.0,match
+Canis familiaris,Canis familiaris,Hp,N,8606584.0,8606584.0,0.0,match
+Canis familiaris,Canis familiaris,Hp,I,11141453.0,11136932.291666668,-0.041,match
+Canis familiaris,Canis familiaris,Hp,I/N,1.295,1.3909385538157795,7.408,minor
+Canis familiaris,Canis familiaris,Hp,N/mg,4282.0,4279.897809720454,-0.049,match
+Canis familiaris,Canis familiaris,Hp,I/mg,5543.0,5949.763260686663,7.338,minor
+Canis familiaris,Canis familiaris,Hp,Mass,2.01,2.01,0.0,match
+Canis familiaris,Canis familiaris,Hp,I/C,0.0780999991237678,0.08443333333333333,8.109,minor
+Canis familiaris,Canis familiaris,P+M,C,,306212500.0,,
+Canis familiaris,Canis familiaris,P+M,N,,8590208.0,,
+Canis familiaris,Canis familiaris,P+M,I,,37190235.0,,
+Canis familiaris,Canis familiaris,P+M,I/N,,4.328582890404313,,
+Canis familiaris,Canis familiaris,P+M,N/mg,,2113.9496871670253,,
+Canis familiaris,Canis familiaris,P+M,I/mg,,9149.994615063017,,
+Canis familiaris,Canis familiaris,P+M,Mass,,4.2829999999999995,,
+Canis familiaris,Canis familiaris,P+M,I/C,,0.11909999999999998,,
+Canis familiaris,Canis familiaris,RoB,C,976243750.0,976243750.0,0.0,match
+Canis familiaris,Canis familiaris,RoB,N,48149310.0,48149310.666666664,0.0,match
+Canis familiaris,Canis familiaris,RoB,I,103384213.0,103352956.875,-0.03,match
+Canis familiaris,Canis familiaris,RoB,I/N,2.147,2.0932707113007405,-2.503,minor
+Canis familiaris,Canis familiaris,RoB,N/mg,3577.0,3768.054827867988,5.341,minor
+Canis familiaris,Canis familiaris,RoB,I/mg,7681.0,7754.295155989285,0.954,match
+Canis familiaris,Canis familiaris,RoB,Mass,13.459,13.459,0.0,match
+Canis familiaris,Canis familiaris,RoB,I/C,0.10589999987195821,0.10523333333333333,-0.63,match
+Cebus apella,Cebus apella,Cx,C,3035947220.0,3707354000.0,22.115,MAJOR
+Cebus apella,Cebus apella,Cx,N,970159664.0,966283267.0,-0.4,match
+Cebus apella,Cebus apella,Cx,I,106083459.0,105659589.0,-0.4,match
+Cebus apella,Cebus apella,Cx,I/N,0.109,0.10934639210719148,0.318,match
+Cebus apella,Cebus apella,Cx,N/mg,18038.0,18206.339582469758,0.933,match
+Cebus apella,Cebus apella,Cx,I/mg,1991.0,1990.7975468214192,-0.01,match
+Cebus apella,Cebus apella,Cx,Mass,53.784,53.074,-1.32,minor
+Cebus apella,Cebus apella,Cx,I/C,0.03494245825525254,0.0285,-18.437,MAJOR
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Br,C,918138000.0,918138000.0,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Br,N,504551401.0,504551401.0,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Br,I,27176885.0,27176884.8,-0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Br,I/N,0.052,0.053863461177863226,3.584,minor
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Br,N/mg,39412.0,39411.920090610845,-0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Br,I/mg,10129.0,2122.8624277456647,-79.042,MAJOR
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Br,Mass,12.802,12.802,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Br,I/C,0.029600000217832177,0.0296,-0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cb,C,438500000.0,438500000.0,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cb,N,360929350.0,360929350.0,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cb,I,2367900.0,2367900.0,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cb,I/N,0.007,0.006560563722512453,-6.278,minor
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cb,N/mg,188180.0,188180.0573514077,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cb,I/mg,1235.0,1234.5672575599583,-0.035,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cb,Mass,1.918,1.918,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cb,I/C,0.0054,0.0054,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Ctx,C,257310000.0,257310000.0,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Ctx,N,90644478.0,90644478.0,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Ctx,I,12325149.0,12325149.0,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Ctx,I/N,0.136,0.13597241963266643,-0.02,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Ctx,N/mg,13272.0,13271.519472913616,-0.004,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Ctx,I/mg,1805.0,1804.5606149341143,-0.024,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Ctx,Mass,6.83,6.83,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Ctx,I/C,0.0479,0.0479,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cx,C,282500000.0,282500000.0,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cx,N,98960000.0,98957178.0,-0.003,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cx,I,13842895.0,13842500.0,-0.003,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cx,I/N,0.14,0.1398837383984414,-0.083,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cx,N/mg,13098.0,13096.503176283748,-0.011,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cx,I/mg,1832.0,1831.9878242456325,-0.001,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cx,Mass,7.556,7.556,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Cx,I/C,0.0490013982300885,0.049,-0.003,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Hp,C,25190000.0,25190000.0,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Hp,N,8312700.0,8312700.0,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Hp,I,1516438.0,1516438.0,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Hp,I/N,0.182,0.18242424242424243,0.233,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Hp,N/mg,11450.0,11450.0,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Hp,I/mg,2089.0,2088.757575757576,-0.012,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Hp,Mass,0.726,0.726,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,Hp,I/C,0.0602,0.0602,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,P+M,C,,54600000.0,,
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,P+M,N,,13109460.0,,
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,P+M,I,,3685500.0000000005,,
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,P+M,I/N,,0.2811328613077885,,
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,P+M,N/mg,,15643.747016706444,,
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,P+M,I/mg,,4397.971360381862,,
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,P+M,Mass,,0.838,,
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,P+M,I/C,,0.0675,,
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,RoB,C,197138000.0,197138000.0,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,RoB,N,44671471.0,44664873.0,-0.015,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,RoB,I,10982209.0,10980586.6,-0.015,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,RoB,I/N,0.246,0.2458439006420101,-0.063,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,RoB,N/mg,13423.0,13420.935396634615,-0.015,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,RoB,I/mg,3299.0,3299.455108173077,0.014,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,RoB,Mass,3.328,3.328,0.0,match
+Dendrohyrax dorsalis,Dendrohyrax dorsalis,RoB,I/C,0.05570822976797979,0.0557,-0.015,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Br,C,3595788750.0,3595788750.0,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Br,N,1548311684.0,1548311684.0,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Br,I,120458923.0,120458923.125,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Br,I/N,0.078,0.0778001770378683,-0.256,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Br,N/mg,49078.0,49077.966400405734,-0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Br,I/mg,3818.0,3818.274474610118,0.007,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Br,Mass,31.548,31.548,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Br,I/C,0.033499999965237115,0.0335,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cb,C,1545500000.0,1545500000.0,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cb,N,1237018200.0,1237018200.0000002,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cb,I,10200300.0,10200300.0,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cb,I/N,0.008,0.008245877061469264,3.073,minor
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cb,N/mg,292025.0,292025.0708215298,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cb,I/mg,2408.0,2408.0028328611897,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cb,Mass,4.236,4.236,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cb,I/C,0.0066,0.0066,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Ctx,C,1431388750.0,1431388750.0,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Ctx,N,255280904.0,255280903.9,-0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Ctx,I,74289076.0,74289076.125,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Ctx,I/N,0.291,0.2910091393052295,0.003,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Ctx,N/mg,13965.0,13965.038506564551,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Ctx,I/mg,4064.0,4063.9538361597374,-0.001,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Ctx,Mass,18.82,18.28,-2.869,minor
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Ctx,I/C,0.051899999912672225,0.0519,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cx,C,1532188750.0,1532188750.0,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cx,N,273434984.0,273434983.9,-0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cx,I,80439909.0,80439909.375,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cx,I/N,0.294,0.29418294699415015,0.062,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cx,N/mg,13972.0,13972.15042922841,0.001,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cx,I/mg,4110.0,4110.3683891159935,0.009,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cx,Mass,19.57,19.57,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Cx,I/C,0.05249999975525209,0.0525,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Hp,C,100800000.0,100800000.0,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Hp,N,18154080.0,18154080.0,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Hp,I,6189120.0,6189120.0,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Hp,I/N,0.341,0.34092171016102163,-0.023,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Hp,N/mg,14073.0,14072.93023255814,-0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Hp,I/mg,4798.0,4797.767441860465,-0.005,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Hp,Mass,1.29,1.29,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,Hp,I/C,0.0614,0.061399999999999996,-0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,P+M,C,,132300000.0,,
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,P+M,N,,8229060.0,,
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,P+M,I,,9221310.0,,
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,P+M,I/N,,1.1205787781350482,,
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,P+M,N/mg,,3075.134529147982,,
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,P+M,I/mg,,3445.9304932735427,,
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,P+M,Mass,,2.676,,
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,P+M,I/C,,0.0697,,
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,RoB,C,518100000.0,518100000.0,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,RoB,N,37858500.0,37858500.0,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,RoB,I,29687130.0,29687130.000000004,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,RoB,I/N,0.784,0.7841602282182338,0.02,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,RoB,N/mg,4890.0,4890.015499870834,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,RoB,I/mg,3835.0,3834.555670369414,-0.012,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,RoB,Mass,7.742,7.742,0.0,match
+Dendrolagus goodfellowi,Dendrolagus goodfellowi,RoB,I/C,0.0573,0.057300000000000004,0.0,match
+Didelphis aurita,Didelphis aurita,Br,C,643138750.0,643138750.0,0.0,match
+Didelphis aurita,Didelphis aurita,Br,N,392497458.0,392147027.0,-0.089,match
+Didelphis aurita,Didelphis aurita,Br,I,25297939.0,25275352.875,-0.089,match
+Didelphis aurita,Didelphis aurita,Br,I/N,0.064,0.0644537664058333,0.709,match
+Didelphis aurita,Didelphis aurita,Br,N/mg,91449.0,92487.50636792452,1.136,minor
+Didelphis aurita,Didelphis aurita,Br,I/mg,5961.0,5961.168130896226,0.003,match
+Didelphis aurita,Didelphis aurita,Br,Mass,4.292,4.24,-1.212,minor
+Didelphis aurita,Didelphis aurita,Br,I/C,0.0393351185883295,0.0393,-0.089,match
+Didelphis aurita,Didelphis aurita,Cb,C,375031250.0,375031250.0,0.0,match
+Didelphis aurita,Didelphis aurita,Cb,N,334265353.0,334265353.125,0.0,match
+Didelphis aurita,Didelphis aurita,Cb,I,5362947.0,5362946.875,-0.0,match
+Didelphis aurita,Didelphis aurita,Cb,I/N,0.016,0.01604398070234489,0.275,match
+Didelphis aurita,Didelphis aurita,Cb,N/mg,429647.0,429646.9834511568,-0.0,match
+Didelphis aurita,Didelphis aurita,Cb,I/mg,6893.0,6893.247911311054,0.004,match
+Didelphis aurita,Didelphis aurita,Cb,Mass,0.778,0.778,0.0,match
+Didelphis aurita,Didelphis aurita,Cb,I/C,0.014300000333305559,0.0143,-0.0,match
+Didelphis aurita,Didelphis aurita,Ctx,C,133775000.0,129970000.0,-2.844,minor
+Didelphis aurita,Didelphis aurita,Ctx,N,35269454.0,34919023.0,-0.994,match
+Didelphis aurita,Didelphis aurita,Ctx,I,9740554.0,9643774.0,-0.994,match
+Didelphis aurita,Didelphis aurita,Ctx,I/N,0.276,0.2761753672203257,0.064,match
+Didelphis aurita,Didelphis aurita,Ctx,N/mg,20154.0,20564.795641931683,2.038,minor
+Didelphis aurita,Didelphis aurita,Ctx,I/mg,5679.0,5679.489988221437,0.009,match
+Didelphis aurita,Didelphis aurita,Ctx,Mass,1.75,1.698,-2.971,minor
+Didelphis aurita,Didelphis aurita,Ctx,I/C,0.07281296206316576,0.0742,1.905,minor
+Didelphis aurita,Didelphis aurita,Cx,C,163477500.0,159970000.0,-2.146,minor
+Didelphis aurita,Didelphis aurita,Cx,N,42499454.0,42149023.0,-0.825,match
+Didelphis aurita,Didelphis aurita,Cx,I,11581340.0,11485846.0,-0.825,match
+Didelphis aurita,Didelphis aurita,Cx,I/N,0.273,0.2725056284222768,-0.181,match
+Didelphis aurita,Didelphis aurita,Cx,N/mg,19897.0,20225.059021113244,1.649,minor
+Didelphis aurita,Didelphis aurita,Cx,I/mg,5511.0,5511.442418426103,0.008,match
+Didelphis aurita,Didelphis aurita,Cx,Mass,2.136,2.084,-2.434,minor
+Didelphis aurita,Didelphis aurita,Cx,I/C,0.07084363291584468,0.0718,1.35,minor
+Didelphis aurita,Didelphis aurita,Hp,C,30000000.0,30000000.0,0.0,match
+Didelphis aurita,Didelphis aurita,Hp,N,7230000.0,7230000.000000001,0.0,match
+Didelphis aurita,Didelphis aurita,Hp,I,1848000.0,1848000.0,0.0,match
+Didelphis aurita,Didelphis aurita,Hp,I/N,0.256,0.2556016597510373,-0.156,match
+Didelphis aurita,Didelphis aurita,Hp,N/mg,18731.0,18730.56994818653,-0.002,match
+Didelphis aurita,Didelphis aurita,Hp,I/mg,4788.0,4787.5647668393785,-0.009,match
+Didelphis aurita,Didelphis aurita,Hp,Mass,0.386,0.386,0.0,match
+Didelphis aurita,Didelphis aurita,Hp,I/C,0.0616,0.0616,0.0,match
+Didelphis aurita,Didelphis aurita,P+M,C,,39062500.0,,
+Didelphis aurita,Didelphis aurita,P+M,N,,4222656.25,,
+Didelphis aurita,Didelphis aurita,P+M,I,,3894531.2500000005,,
+Didelphis aurita,Didelphis aurita,P+M,I/N,,0.9222941720629049,,
+Didelphis aurita,Didelphis aurita,P+M,N/mg,,8151.846042471043,,
+Didelphis aurita,Didelphis aurita,P+M,I/mg,,7518.400096525097,,
+Didelphis aurita,Didelphis aurita,P+M,Mass,,0.518,,
+Didelphis aurita,Didelphis aurita,P+M,I/C,,0.09970000000000001,,
+Didelphis aurita,Didelphis aurita,RoB,C,108137500.0,108137500.0,0.0,match
+Didelphis aurita,Didelphis aurita,RoB,N,15732651.0,15732651.0,0.0,match
+Didelphis aurita,Didelphis aurita,RoB,I,8326588.0,8326587.5,-0.0,match
+Didelphis aurita,Didelphis aurita,RoB,I/N,0.529,0.5292552094367313,0.048,match
+Didelphis aurita,Didelphis aurita,RoB,N/mg,11417.0,11417.018142235123,0.0,match
+Didelphis aurita,Didelphis aurita,RoB,I/mg,6043.0,6042.516328011611,-0.008,match
+Didelphis aurita,Didelphis aurita,RoB,Mass,1.378,1.378,0.0,match
+Didelphis aurita,Didelphis aurita,RoB,I/C,0.07700000462374292,0.077,-0.0,match
+Elephantulus myurus,Elephantulus myurus,Br,C,195628000.0,207785000.0,6.214,minor
+Elephantulus myurus,Elephantulus myurus,Br,N,124766317.0,129190601.66666667,3.546,minor
+Elephantulus myurus,Elephantulus myurus,Br,I,2699666.0,2699666.4,0.0,match
+Elephantulus myurus,Elephantulus myurus,Br,I/N,0.022,0.021637782254965494,-1.646,minor
+Elephantulus myurus,Elephantulus myurus,Br,N/mg,130236.0,124514.77429687299,-4.393,minor
+Elephantulus myurus,Elephantulus myurus,Br,I/mg,2818.0,2818.023382045929,0.001,match
+Elephantulus myurus,Elephantulus myurus,Br,Mass,0.958,1.04,8.559,minor
+Elephantulus myurus,Elephantulus myurus,Br,I/C,0.013799997955302921,0.0138,0.0,match
+Elephantulus myurus,Elephantulus myurus,Cb,C,112681000.0,112681000.0,0.0,match
+Elephantulus myurus,Elephantulus myurus,Cb,N,89312372.0,89312371.66666667,-0.0,match
+Elephantulus myurus,Elephantulus myurus,Cb,I,822571.0,824575.3666666667,0.244,match
+Elephantulus myurus,Elephantulus myurus,Cb,I/N,0.009,0.009285262451131577,3.17,minor
+Elephantulus myurus,Elephantulus myurus,Cb,N/mg,531494.0,531536.73102944,0.008,match
+Elephantulus myurus,Elephantulus myurus,Cb,I/mg,4896.0,4917.854596846771,0.446,match
+Elephantulus myurus,Elephantulus myurus,Cb,Mass,0.168,0.168,0.0,match
+Elephantulus myurus,Elephantulus myurus,Cb,I/C,0.007299997337616812,0.007366666666666666,0.913,match
+Elephantulus myurus,Elephantulus myurus,Ctx,C,34554000.0,34554000.0,0.0,match
+Elephantulus myurus,Elephantulus myurus,Ctx,N,16422814.0,16422813.533333333,-0.0,match
+Elephantulus myurus,Elephantulus myurus,Ctx,I,580507.0,581224.0,0.124,match
+Elephantulus myurus,Elephantulus myurus,Ctx,I/N,0.035,0.03532124149473564,0.918,match
+Elephantulus myurus,Elephantulus myurus,Ctx,N/mg,46132.0,46225.33759025175,0.202,match
+Elephantulus myurus,Elephantulus myurus,Ctx,I/mg,1631.0,1630.8853801261414,-0.007,match
+Elephantulus myurus,Elephantulus myurus,Ctx,Mass,0.356,0.35533333333333333,-0.187,match
+Elephantulus myurus,Elephantulus myurus,Ctx,I/C,0.016799994211958096,0.0168,0.0,match
+Elephantulus myurus,Elephantulus myurus,Cx,C,46970000.0,52094000.0,10.909,MAJOR
+Elephantulus myurus,Elephantulus myurus,Cx,N,21847255.0,25865697.666666668,18.393,MAJOR
+Elephantulus myurus,Elephantulus myurus,Cx,I,1052128.0,1052128.0000000002,0.0,match
+Elephantulus myurus,Elephantulus myurus,Cx,I/N,0.048,0.0481583613135838,0.33,match
+Elephantulus myurus,Elephantulus myurus,Cx,N/mg,48549.0,54696.595044631234,12.663,MAJOR
+Elephantulus myurus,Elephantulus myurus,Cx,I/mg,2338.0,2338.0622222222228,0.003,match
+Elephantulus myurus,Elephantulus myurus,Cx,Mass,0.45,0.4713333333333333,4.741,minor
+Elephantulus myurus,Elephantulus myurus,Cx,I/C,0.0224,0.022400000000000003,0.0,match
+Elephantulus myurus,Elephantulus myurus,Hp,C,12080000.0,17540000.0,45.199,MAJOR
+Elephantulus myurus,Elephantulus myurus,Hp,N,5159368.0,9442884.0,83.024,MAJOR
+Elephantulus myurus,Elephantulus myurus,Hp,I,353944.0,353944.00000000006,0.0,match
+Elephantulus myurus,Elephantulus myurus,Hp,I/N,0.069,0.06860220088972138,-0.577,match
+Elephantulus myurus,Elephantulus myurus,Hp,N/mg,59993.0,78471.08731091606,30.8,MAJOR
+Elephantulus myurus,Elephantulus myurus,Hp,I/mg,4116.0,4115.627906976745,-0.009,match
+Elephantulus myurus,Elephantulus myurus,Hp,Mass,0.086,0.11599999999999999,34.884,MAJOR
+Elephantulus myurus,Elephantulus myurus,Hp,I/C,0.0293,0.029300000000000003,0.0,match
+Elephantulus myurus,Elephantulus myurus,RoB,C,43010000.0,43010000.0,0.0,match
+Elephantulus myurus,Elephantulus myurus,RoB,N,14012533.0,14012532.8,-0.0,match
+Elephantulus myurus,Elephantulus myurus,RoB,I,1324708.0,1325232.8,0.04,match
+Elephantulus myurus,Elephantulus myurus,RoB,I/N,0.095,0.09448386085299826,-0.543,match
+Elephantulus myurus,Elephantulus myurus,RoB,N/mg,34520.0,34632.01857371308,0.325,match
+Elephantulus myurus,Elephantulus myurus,RoB,I/mg,3295.0,3273.229790824325,-0.661,match
+Elephantulus myurus,Elephantulus myurus,RoB,Mass,0.401,0.4013333333333334,0.083,match
+Elephantulus myurus,Elephantulus myurus,RoB,I/C,0.0308,0.030933333333333334,0.433,match
+Felis catus,Felis catus,Br,C,2944001250.0,2944001250.0,0.0,match
+Felis catus,Felis catus,Br,N,1215209144.0,1215209144.0,0.0,match
+Felis catus,Felis catus,Br,I,105689645.0,105689644.875,-0.0,match
+Felis catus,Felis catus,Br,I/N,0.087,0.08697239104629384,-0.032,match
+Felis catus,Felis catus,Br,N/mg,34862.0,34861.70015491422,-0.001,match
+Felis catus,Felis catus,Br,I/mg,3032.0,3032.005418411842,0.0,match
+Felis catus,Felis catus,Br,Mass,34.858,34.858,0.0,match
+Felis catus,Felis catus,Br,I/C,0.03590000004245922,0.0359,-0.0,match
+Felis catus,Felis catus,Cb,C,1269000000.0,1269000000.0,0.0,match
+Felis catus,Felis catus,Cb,N,942902390.0,942902390.0,0.0,match
+Felis catus,Felis catus,Cb,I,21826800.0,21826800.0,0.0,match
+Felis catus,Felis catus,Cb,I/N,0.023,0.023148525479927993,0.646,match
+Felis catus,Felis catus,Cb,N/mg,184521.0,184521.0156555773,0.0,match
+Felis catus,Felis catus,Cb,I/mg,4271.0,4271.389432485323,0.009,match
+Felis catus,Felis catus,Cb,Mass,5.11,5.11,0.0,match
+Felis catus,Felis catus,Cb,I/C,0.0172,0.0172,0.0,match
+Felis catus,Felis catus,Ctx,C,1282938750.0,1282938750.0,0.0,match
+Felis catus,Felis catus,Ctx,N,241786292.0,241786292.0,0.0,match
+Felis catus,Felis catus,Ctx,I,71716276.0,71716276.125,0.0,match
+Felis catus,Felis catus,Ctx,I/N,0.297,0.296610182205863,-0.131,match
+Felis catus,Felis catus,Ctx,N/mg,10377.0,10377.09407725322,0.001,match
+Felis catus,Felis catus,Ctx,I/mg,3078.0,3077.9517650214593,-0.002,match
+Felis catus,Felis catus,Ctx,Mass,23.3,23.3,0.0,match
+Felis catus,Felis catus,Ctx,I/C,0.05589999990256744,0.0559,0.0,match
+Felis catus,Felis catus,Cx,C,1346938750.0,1346938750.0,0.0,match
+Felis catus,Felis catus,Cx,N,249834196.0,249834196.0,0.0,match
+Felis catus,Felis catus,Cx,I,73677550.0,73677549.625,-0.0,match
+Felis catus,Felis catus,Cx,I/N,0.295,0.29490578473492873,-0.032,match
+Felis catus,Felis catus,Cx,N/mg,10334.0,10333.975678358704,-0.0,match
+Felis catus,Felis catus,Cx,I/mg,3048.0,3047.549206858041,-0.015,match
+Felis catus,Felis catus,Cx,Mass,24.176,24.176,0.0,match
+Felis catus,Felis catus,Cx,I/C,0.05470000027840909,0.0547,-0.0,match
+Felis catus,Felis catus,Hp,C,64000000.0,64000000.0,0.0,match
+Felis catus,Felis catus,Hp,N,8047904.0,8047904.0,0.0,match
+Felis catus,Felis catus,Hp,I,1952000.0,1952000.0,0.0,match
+Felis catus,Felis catus,Hp,I/N,0.243,0.2425476248225625,-0.186,match
+Felis catus,Felis catus,Hp,N/mg,9187.0,9187.10502283105,0.001,match
+Felis catus,Felis catus,Hp,I/mg,2228.0,2228.310502283105,0.014,match
+Felis catus,Felis catus,Hp,Mass,0.876,0.876,0.0,match
+Felis catus,Felis catus,Hp,I/C,0.0305,0.0305,0.0,match
+Felis catus,Felis catus,P+M,C,,109750000.0,,
+Felis catus,Felis catus,P+M,N,,3858398.0,,
+Felis catus,Felis catus,P+M,I,,3248600.0,,
+Felis catus,Felis catus,P+M,I/N,,0.8419556510240779,,
+Felis catus,Felis catus,P+M,N/mg,,1883.9833984375,,
+Felis catus,Felis catus,P+M,I/mg,,1586.23046875,,
+Felis catus,Felis catus,P+M,Mass,,2.048,,
+Felis catus,Felis catus,P+M,I/C,,0.0296,,
+Felis catus,Felis catus,RoB,C,328062500.0,328062500.0,0.0,match
+Felis catus,Felis catus,RoB,N,22472558.0,22472558.0,0.0,match
+Felis catus,Felis catus,RoB,I,10202744.0,10202743.75,-0.0,match
+Felis catus,Felis catus,RoB,I/N,0.454,0.45400900734130933,0.002,match
+Felis catus,Felis catus,RoB,N/mg,4033.0,4033.1223977028,0.003,match
+Felis catus,Felis catus,RoB,I/mg,1831.0,1831.0738962670496,0.004,match
+Felis catus,Felis catus,RoB,Mass,5.572,5.572,0.0,match
+Felis catus,Felis catus,RoB,I/C,0.031100000762049915,0.0311,-0.0,match
+Giraffa camelopardalis,Giraffa camelopardalis,Br,C,48442643752.0,48442643752.0,0.0,match
+Giraffa camelopardalis,Giraffa camelopardalis,Br,N,10751287650.0,10803816244.0,0.489,match
+Giraffa camelopardalis,Giraffa camelopardalis,Br,I,3335932264.0,3352230947.6384,0.489,match
+Giraffa camelopardalis,Giraffa camelopardalis,Br,I/N,0.31,0.31028211438713543,0.091,match
+Giraffa camelopardalis,Giraffa camelopardalis,Br,N/mg,19678.0,20233.684383615007,2.824,minor
+Giraffa camelopardalis,Giraffa camelopardalis,Br,I/mg,6278.0,6278.150372390028,0.002,match
+Giraffa camelopardalis,Giraffa camelopardalis,Br,Mass,537.218,533.952,-0.608,match
+Giraffa camelopardalis,Giraffa camelopardalis,Br,I/C,0.06886354677664083,0.0692,0.489,match
+Giraffa camelopardalis,Giraffa camelopardalis,Cb,C,14398437500.0,14398437500.0,0.0,match
+Giraffa camelopardalis,Giraffa camelopardalis,Cb,N,8878076563.0,8878076562.499998,-0.0,match
+Giraffa camelopardalis,Giraffa camelopardalis,Cb,I,298047656.0,298047656.25,0.0,match
+Giraffa camelopardalis,Giraffa camelopardalis,Cb,I/N,0.034,0.03357119688614986,-1.261,minor
+Giraffa camelopardalis,Giraffa camelopardalis,Cb,N/mg,131080.0,131080.41580540378,0.0,match
+Giraffa camelopardalis,Giraffa camelopardalis,Cb,I/mg,4401.0,4400.526446921601,-0.011,match
+Giraffa camelopardalis,Giraffa camelopardalis,Cb,Mass,67.73,67.73,0.0,match
+Giraffa camelopardalis,Giraffa camelopardalis,Cb,I/C,0.020699999982637003,0.0207,0.0,match
+Giraffa camelopardalis,Giraffa camelopardalis,Ctx,C,28341393752.0,28341393752.0,0.0,match
+Giraffa camelopardalis,Giraffa camelopardalis,Ctx,N,1671925960.0,1724422493.0,3.14,minor
+Giraffa camelopardalis,Giraffa camelopardalis,Ctx,I,2365907262.0,2440194002.0471997,3.14,minor
+Giraffa camelopardalis,Giraffa camelopardalis,Ctx,I/N,1.415,1.4150789681489035,0.006,match
+Giraffa camelopardalis,Giraffa camelopardalis,Ctx,N/mg,4272.0,4436.201476141965,3.844,minor
+Giraffa camelopardalis,Giraffa camelopardalis,Ctx,I/mg,6278.0,6277.5754073596145,-0.007,match
+Giraffa camelopardalis,Giraffa camelopardalis,Ctx,Mass,391.322,388.716,-0.666,match
+Giraffa camelopardalis,Giraffa camelopardalis,Ctx,I/C,0.08347886073291799,0.0861,3.14,minor
+Giraffa camelopardalis,Giraffa camelopardalis,Cx,C,29244220002.0,29022643752.0,-0.758,match
+Giraffa camelopardalis,Giraffa camelopardalis,Cx,N,1730513460.0,1783009993.0,3.034,minor
+Giraffa camelopardalis,Giraffa camelopardalis,Cx,I,2430910509.0,2504654155.7976003,3.034,minor
+Giraffa camelopardalis,Giraffa camelopardalis,Cx,I/N,1.405,1.4047336614100514,-0.019,match
+Giraffa camelopardalis,Giraffa camelopardalis,Cx,N/mg,4339.0,4506.396856407742,3.858,minor
+Giraffa camelopardalis,Giraffa camelopardalis,Cx,I/mg,6330.0,6330.287355868393,0.005,match
+Giraffa camelopardalis,Giraffa camelopardalis,Cx,Mass,398.808,395.662,-0.789,match
+Giraffa camelopardalis,Giraffa camelopardalis,Cx,I/C,0.08312447754919608,0.0863,3.82,minor
+Giraffa camelopardalis,Giraffa camelopardalis,Hp,C,681250000.0,681250000.0,0.0,match
+Giraffa camelopardalis,Giraffa camelopardalis,Hp,N,58587500.0,58587499.99999999,-0.0,match
+Giraffa camelopardalis,Giraffa camelopardalis,Hp,I,64786875.0,64786875.0,0.0,match
+Giraffa camelopardalis,Giraffa camelopardalis,Hp,I/N,1.106,1.1058139534883722,-0.017,match
+Giraffa camelopardalis,Giraffa camelopardalis,Hp,N/mg,8435.0,8434.71062482004,-0.003,match
+Giraffa camelopardalis,Giraffa camelopardalis,Hp,I/mg,9327.0,9327.220702562627,0.002,match
+Giraffa camelopardalis,Giraffa camelopardalis,Hp,Mass,7.486,6.946,-7.213,minor
+Giraffa camelopardalis,Giraffa camelopardalis,Hp,I/C,0.0951,0.0951,0.0,match
+Giraffa camelopardalis,Giraffa camelopardalis,P+M,C,,1168437500.0,,
+Giraffa camelopardalis,Giraffa camelopardalis,P+M,N,,47465313.0,,
+Giraffa camelopardalis,Giraffa camelopardalis,P+M,I,,137992468.75,,
+Giraffa camelopardalis,Giraffa camelopardalis,P+M,I/N,,2.9072276158802532,,
+Giraffa camelopardalis,Giraffa camelopardalis,P+M,N/mg,,2214.9002799813347,,
+Giraffa camelopardalis,Giraffa camelopardalis,P+M,I/mg,,6439.219260382642,,
+Giraffa camelopardalis,Giraffa camelopardalis,P+M,Mass,,21.43,,
+Giraffa camelopardalis,Giraffa camelopardalis,P+M,I/C,,0.11810000000000001,,
+Giraffa camelopardalis,Giraffa camelopardalis,RoB,C,5021562500.0,5021562500.0,0.0,match
+Giraffa camelopardalis,Giraffa camelopardalis,RoB,N,142697625.0,142729688.0,0.022,match
+Giraffa camelopardalis,Giraffa camelopardalis,RoB,I,495014837.0,495126062.49999994,0.022,match
+Giraffa camelopardalis,Giraffa camelopardalis,RoB,I/N,3.469,3.468977403635885,-0.001,match
+Giraffa camelopardalis,Giraffa camelopardalis,RoB,N/mg,2019.0,2019.3787209960385,0.019,match
+Giraffa camelopardalis,Giraffa camelopardalis,RoB,I/mg,7005.0,7005.179152518392,0.003,match
+Giraffa camelopardalis,Giraffa camelopardalis,RoB,Mass,70.68,70.68,0.0,match
+Giraffa camelopardalis,Giraffa camelopardalis,RoB,I/C,0.09857785042006348,0.0986,0.022,match
+Homo sapiens sapiens,Homo sapiens sapiens,Ctx,C,58732501216.0,58278370486.0,-0.773,match
+Homo sapiens sapiens,Homo sapiens sapiens,Ctx,N,9513780748.0,9501996578.0,-0.124,match
+Homo sapiens sapiens,Homo sapiens sapiens,Ctx,I,1612228351.0,,,
+Homo sapiens sapiens,Homo sapiens sapiens,Ctx,I/N,0.169,,,
+Homo sapiens sapiens,Homo sapiens sapiens,Ctx,N/mg,13720.0,14053.0,2.427,minor
+Homo sapiens sapiens,Homo sapiens sapiens,Ctx,I/mg,2381.0,,,
+Homo sapiens sapiens,Homo sapiens sapiens,Ctx,Mass,693.422,676.17,-2.488,minor
+Homo sapiens sapiens,Homo sapiens sapiens,Ctx,I/C,0.027450360832935106,,,
+Homo sapiens sapiens,Homo sapiens sapiens,Cx,C,58983401216.0,58529270486.0,-0.77,match
+Homo sapiens sapiens,Homo sapiens sapiens,Cx,N,9547198728.0,9535414558.0,-0.123,match
+Homo sapiens sapiens,Homo sapiens sapiens,Cx,I,1634984719.0,1632966646.5594,-0.123,match
+Homo sapiens sapiens,Homo sapiens sapiens,Cx,I/N,0.171,0.17125282142970674,0.148,match
+Homo sapiens sapiens,Homo sapiens sapiens,Cx,N/mg,13703.0,14033.89558411435,2.415,minor
+Homo sapiens sapiens,Homo sapiens sapiens,Cx,I/mg,2403.0,2403.344214429485,0.014,match
+Homo sapiens sapiens,Homo sapiens sapiens,Cx,Mass,696.708,679.456,-2.476,minor
+Homo sapiens sapiens,Homo sapiens sapiens,Cx,I/C,0.027719403854189566,0.0279,0.652,match
+Homo sapiens sapiens,Homo sapiens sapiens,Hp,C,250900000.0,250900000.0,0.0,match
+Homo sapiens sapiens,Homo sapiens sapiens,Hp,N,33417980.0,33417980.0,0.0,match
+Homo sapiens sapiens,Homo sapiens sapiens,Hp,I,10136360.0,10136360.0,0.0,match
+Homo sapiens sapiens,Homo sapiens sapiens,Hp,I/N,0.303,0.30332054780091433,0.106,match
+Homo sapiens sapiens,Homo sapiens sapiens,Hp,N/mg,10170.0,10169.80523432745,-0.002,match
+Homo sapiens sapiens,Homo sapiens sapiens,Hp,I/mg,3085.0,3084.710894704808,-0.009,match
+Homo sapiens sapiens,Homo sapiens sapiens,Hp,Mass,3.286,3.286,0.0,match
+Homo sapiens sapiens,Homo sapiens sapiens,Hp,I/C,0.0404,0.0404,0.0,match
+Loxodonta africana,Loxodonta africana,Br,C,477844127344.0,477844127344.0,0.0,match
+Loxodonta africana,Loxodonta africana,Br,N,257043473412.0,257161859959.0,0.046,match
+Loxodonta africana,Loxodonta africana,Br,I,20919937679.0,20929572777.6672,0.046,match
+Loxodonta africana,Loxodonta africana,Br,I/N,0.081,0.08138676855504177,0.477,match
+Loxodonta africana,Loxodonta africana,Br,N/mg,56071.0,56054.95507287571,-0.029,match
+Loxodonta africana,Loxodonta africana,Br,I/mg,4562.0,4562.1316548794,0.003,match
+Loxodonta africana,Loxodonta africana,Br,Mass,4168.62,4587.674,10.053,MAJOR
+Loxodonta africana,Loxodonta africana,Br,I/C,0.04377983631457238,0.0438,0.046,match
+Loxodonta africana,Loxodonta africana,Cb,C,287226757500.0,287226757500.0,0.0,match
+Loxodonta africana,Loxodonta africana,Cb,N,250708527536.0,249066848503.0,-0.655,match
+Loxodonta africana,Loxodonta africana,Cb,I,7025615044.0,6979610207.250001,-0.655,match
+Loxodonta africana,Loxodonta africana,Cb,I/N,0.028,0.02802303979514131,0.082,match
+Loxodonta africana,Loxodonta africana,Cb,N/mg,213983.0,213477.57501679935,-0.236,match
+Loxodonta africana,Loxodonta africana,Cb,I/mg,5982.0,5982.290580066033,0.005,match
+Loxodonta africana,Loxodonta africana,Cb,Mass,1171.63,1166.712,-0.42,match
+Loxodonta africana,Loxodonta africana,Cb,I/C,0.024460169049535713,0.024300000000000002,-0.655,match
+Loxodonta africana,Loxodonta africana,Ctx,C,157990215478.0,157990215478.0,0.0,match
+Loxodonta africana,Loxodonta africana,Ctx,N,5556610521.0,5675144400.0,2.133,minor
+Loxodonta africana,Loxodonta africana,Ctx,I,11462555196.0,11707074966.9198,2.133,minor
+Loxodonta africana,Loxodonta africana,Ctx,I/N,2.063,2.0628682094714277,-0.006,match
+Loxodonta africana,Loxodonta africana,Ctx,N/mg,1968.0,2011.0904475102802,2.19,minor
+Loxodonta africana,Loxodonta africana,Ctx,I/mg,4149.0,4148.614550540624,-0.009,match
+Loxodonta africana,Loxodonta africana,Ctx,Mass,2823.53,2821.924,-0.057,match
+Loxodonta africana,Loxodonta africana,Ctx,I/C,0.07255231066886006,0.0741,2.133,minor
+Loxodonta africana,Loxodonta africana,Cx,C,160509115478.0,160509115478.0,0.0,match
+Loxodonta africana,Loxodonta africana,Cx,N,5593241033.0,5740270770.0,2.629,minor
+Loxodonta africana,Loxodonta africana,Cx,I,11667281742.0,11973980014.6588,2.629,minor
+Loxodonta africana,Loxodonta africana,Cx,I/N,2.086,2.085960836070247,-0.002,match
+Loxodonta africana,Loxodonta africana,Cx,N/mg,1964.0,2009.6960705643128,2.327,minor
+Loxodonta africana,Loxodonta africana,Cx,I/mg,4192.0,4192.147295601424,0.004,match
+Loxodonta africana,Loxodonta africana,Cx,Mass,2847.954,2856.288,0.293,match
+Loxodonta africana,Loxodonta africana,Cx,I/C,0.07268921585702191,0.0746,2.629,minor
+Loxodonta africana,Loxodonta africana,Hp,C,1763900000.0,1763900000.0,0.0,match
+Loxodonta africana,Loxodonta africana,Hp,N,36630512.0,36689120.0,0.16,match
+Loxodonta africana,Loxodonta africana,Hp,I,199354517.0,199673480.00000003,0.16,match
+Loxodonta africana,Loxodonta africana,Hp,I/N,5.442,5.442307692307693,0.006,match
+Loxodonta africana,Loxodonta africana,Hp,N/mg,1500.0,1502.0519118971588,0.137,match
+Loxodonta africana,Loxodonta africana,Hp,I/mg,8175.0,8174.628674363385,-0.005,match
+Loxodonta africana,Loxodonta africana,Hp,Mass,24.426,24.426,0.0,match
+Loxodonta africana,Loxodonta africana,Hp,I/C,0.11301917172175294,0.11320000000000001,0.16,match
+Loxodonta africana,Loxodonta africana,P+M,C,,6203939366.0,,
+Loxodonta africana,Loxodonta africana,P+M,N,,205047674.0,,
+Loxodonta africana,Loxodonta africana,P+M,I,,543465088.4616,,
+Loxodonta africana,Loxodonta africana,P+M,I/N,,2.6504328376902238,,
+Loxodonta africana,Loxodonta africana,P+M,N/mg,,1158.4221664802324,,
+Loxodonta africana,Loxodonta africana,P+M,I/mg,,3070.320149947459,,
+Loxodonta africana,Loxodonta africana,P+M,Mass,,177.006,,
+Loxodonta africana,Loxodonta africana,P+M,I/C,,0.0876,,
+Loxodonta africana,Loxodonta africana,RoB,C,28148254366.0,28148254366.0,0.0,match
+Loxodonta africana,Loxodonta africana,RoB,N,741704844.0,741660686.0,-0.006,match
+Loxodonta africana,Loxodonta africana,RoB,I,1947975176.0,1947859202.1272,-0.006,match
+Loxodonta africana,Loxodonta africana,RoB,I/N,2.626,2.6263481925037615,0.013,match
+Loxodonta africana,Loxodonta africana,RoB,N/mg,1314.0,1313.43161895182,-0.043,match
+Loxodonta africana,Loxodonta africana,RoB,I/mg,3450.0,3449.5287584114017,-0.014,match
+Loxodonta africana,Loxodonta africana,RoB,Mass,564.674,564.674,0.0,match
+Loxodonta africana,Loxodonta africana,RoB,I/C,0.06920412010888106,0.0692,-0.006,match
+Macaca fascicularis,Macaca fascicularis,Cx,C,4755230252.0,4604665786.0,-3.166,minor
+Macaca fascicularis,Macaca fascicularis,Cx,N,1404683000.0,1375016406.0,-2.112,minor
+Macaca fascicularis,Macaca fascicularis,Cx,I,192394153.0,188330830.6474,-2.112,minor
+Macaca fascicularis,Macaca fascicularis,Cx,I/N,0.137,0.13696624260307189,-0.025,match
+Macaca fascicularis,Macaca fascicularis,Cx,N/mg,35117.0,34515.196696621315,-1.714,minor
+Macaca fascicularis,Macaca fascicularis,Cx,I/mg,4727.0,4727.416804242181,0.009,match
+Macaca fascicularis,Macaca fascicularis,Cx,Mass,40.0,39.838,-0.405,match
+Macaca fascicularis,Macaca fascicularis,Cx,I/C,0.0404594820448665,0.0409,1.089,minor
+Macaca nemestrina,Macaca nemestrina,Cx,C,7787044390.0,7607293060.0,-2.308,minor
+Macaca nemestrina,Macaca nemestrina,Cx,N,2194785386.0,2181801745.0,-0.592,match
+Macaca nemestrina,Macaca nemestrina,Cx,I,277022786.0,275384008.772,-0.592,match
+Macaca nemestrina,Macaca nemestrina,Cx,I/N,0.126,0.1262186215604113,0.174,match
+Macaca nemestrina,Macaca nemestrina,Cx,N/mg,28517.0,29058.14481114485,1.898,minor
+Macaca nemestrina,Macaca nemestrina,Cx,I/mg,3668.0,3667.6789831655215,-0.009,match
+Macaca nemestrina,Macaca nemestrina,Cx,Mass,76.964,75.084,-2.443,minor
+Macaca nemestrina,Macaca nemestrina,Cx,I/C,0.035574830722134874,0.0362,1.757,minor
+Macropus fuliginosus,Macropus fuliginosus,Br,C,6708137500.0,6708137500.0,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Br,N,2457876490.0,2457876490.0,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Br,I,265642245.0,265642244.99999997,-0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Br,I/N,0.108,0.10807794699236493,0.072,match
+Macropus fuliginosus,Macropus fuliginosus,Br,N/mg,39186.0,39185.582711561765,-0.001,match
+Macropus fuliginosus,Macropus fuliginosus,Br,I/mg,4235.0,4235.097331165104,0.002,match
+Macropus fuliginosus,Macropus fuliginosus,Br,Mass,62.724,62.724,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Br,I/C,0.0396,0.039599999999999996,-0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Cb,C,2721875000.0,2721875000.0,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Cb,N,1989962813.0,1989962812.5,-0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Cb,I,22863750.0,22863750.0,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Cb,I/N,0.011,0.011489536315141567,4.45,minor
+Macropus fuliginosus,Macropus fuliginosus,Cb,N/mg,270449.0,270448.8736749117,-0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Cb,I/mg,3107.0,3107.332155477032,0.011,match
+Macropus fuliginosus,Macropus fuliginosus,Cb,Mass,7.358,7.358,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Cb,I/C,0.0084,0.0084,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Ctx,C,2513387500.0,2513387500.0,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Ctx,N,325403477.0,325403477.0,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Ctx,I,145776475.0,145776475.0,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Ctx,I/N,0.448,0.4479868388130346,-0.003,match
+Macropus fuliginosus,Macropus fuliginosus,Ctx,N/mg,8734.0,8734.256951900365,0.003,match
+Macropus fuliginosus,Macropus fuliginosus,Ctx,I/mg,3913.0,3912.8321612626155,-0.004,match
+Macropus fuliginosus,Macropus fuliginosus,Ctx,Mass,37.256,37.256,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Ctx,I/C,0.058,0.057999999999999996,-0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Cx,C,2740637500.0,2740637500.0,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Cx,N,370171727.0,370171727.0,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Cx,I,161697613.0,161697612.5,-0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Cx,I/N,0.437,0.43681783536104585,-0.042,match
+Macropus fuliginosus,Macropus fuliginosus,Cx,N/mg,9210.0,9209.626486540279,-0.004,match
+Macropus fuliginosus,Macropus fuliginosus,Cx,I/mg,4023.0,4022.929106334279,-0.002,match
+Macropus fuliginosus,Macropus fuliginosus,Cx,Mass,40.194,40.194,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Cx,I/C,0.059000000182439304,0.059000000000000004,-0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Hp,C,227250000.0,227250000.0,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Hp,N,44768250.0,44768249.99999999,-0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Hp,I,15975675.0,15975675.0,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Hp,I/N,0.357,0.35685279187817265,-0.041,match
+Macropus fuliginosus,Macropus fuliginosus,Hp,N/mg,15238.0,15237.661674608575,-0.002,match
+Macropus fuliginosus,Macropus fuliginosus,Hp,I/mg,5438.0,5437.602110279101,-0.007,match
+Macropus fuliginosus,Macropus fuliginosus,Hp,Mass,2.938,2.938,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,Hp,I/C,0.0703,0.0703,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,P+M,C,,273625000.0,,
+Macropus fuliginosus,Macropus fuliginosus,P+M,N,,21342750.0,,
+Macropus fuliginosus,Macropus fuliginosus,P+M,I,,23449662.5,,
+Macropus fuliginosus,Macropus fuliginosus,P+M,I/N,,1.0987179487179488,,
+Macropus fuliginosus,Macropus fuliginosus,P+M,N/mg,,4892.881705639615,,
+Macropus fuliginosus,Macropus fuliginosus,P+M,I/mg,,5375.896950939936,,
+Macropus fuliginosus,Macropus fuliginosus,P+M,Mass,,4.362,,
+Macropus fuliginosus,Macropus fuliginosus,P+M,I/C,,0.0857,,
+Macropus fuliginosus,Macropus fuliginosus,RoB,C,1245625000.0,1245625000.0,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,RoB,N,97741950.0,97741950.0,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,RoB,I,80965625.0,80965625.0,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,RoB,I/N,0.828,0.8283610568440675,0.044,match
+Macropus fuliginosus,Macropus fuliginosus,RoB,N/mg,6442.0,6442.2587661481675,0.004,match
+Macropus fuliginosus,Macropus fuliginosus,RoB,I/mg,5337.0,5336.516279989454,-0.009,match
+Macropus fuliginosus,Macropus fuliginosus,RoB,Mass,15.172,15.172,0.0,match
+Macropus fuliginosus,Macropus fuliginosus,RoB,I/C,0.065,0.065,0.0,match
+Macropus parma,Macropus parma,Br,C,1943470000.0,1943470000.0,0.0,match
+Macropus parma,Macropus parma,Br,N,711126467.0,711126467.0,0.0,match
+Macropus parma,Macropus parma,Br,I,73851860.0,73851860.0,0.0,match
+Macropus parma,Macropus parma,Br,I/N,0.104,0.1038519355235867,-0.142,match
+Macropus parma,Macropus parma,Br,N/mg,45254.0,45254.32525136821,0.001,match
+Macropus parma,Macropus parma,Br,I/mg,4700.0,4699.749268168513,-0.005,match
+Macropus parma,Macropus parma,Br,Mass,15.714,15.714,0.0,match
+Macropus parma,Macropus parma,Br,I/C,0.038,0.038,0.0,match
+Macropus parma,Macropus parma,Cb,C,721687500.0,721687500.0,0.0,match
+Macropus parma,Macropus parma,Cb,N,558080944.0,558080943.75,-0.0,match
+Macropus parma,Macropus parma,Cb,I,5268319.0,5268318.75,-0.0,match
+Macropus parma,Macropus parma,Cb,I/N,0.009,0.009440062071641019,4.89,minor
+Macropus parma,Macropus parma,Cb,N/mg,330225.0,330225.4105029586,0.0,match
+Macropus parma,Macropus parma,Cb,I/mg,3117.0,3117.348372781065,0.011,match
+Macropus parma,Macropus parma,Cb,Mass,1.69,1.69,0.0,match
+Macropus parma,Macropus parma,Cb,I/C,0.007300000346410323,0.0073,-0.0,match
+Macropus parma,Macropus parma,Ctx,C,750782500.0,750782500.0,0.0,match
+Macropus parma,Macropus parma,Ctx,N,127146723.0,127146723.0,0.0,match
+Macropus parma,Macropus parma,Ctx,I,40467177.0,40467176.75,-0.0,match
+Macropus parma,Macropus parma,Ctx,I/N,0.318,0.3182714882081546,0.085,match
+Macropus parma,Macropus parma,Ctx,N/mg,14655.0,14654.993430152144,-0.0,match
+Macropus parma,Macropus parma,Ctx,I/mg,4664.0,4664.266568695251,0.006,match
+Macropus parma,Macropus parma,Ctx,Mass,8.676,8.676,0.0,match
+Macropus parma,Macropus parma,Ctx,I/C,0.05390000033298592,0.053899999999999997,-0.0,match
+Macropus parma,Macropus parma,Cx,C,869532500.0,869532500.0,0.0,match
+Macropus parma,Macropus parma,Cx,N,135625473.0,135625473.0,0.0,match
+Macropus parma,Macropus parma,Cx,I,48259054.0,48259053.75,-0.0,match
+Macropus parma,Macropus parma,Cx,I/N,0.356,0.35582588346069766,-0.049,match
+Macropus parma,Macropus parma,Cx,N/mg,13680.0,13680.196994149688,0.001,match
+Macropus parma,Macropus parma,Cx,I/mg,4868.0,4867.768181359694,-0.005,match
+Macropus parma,Macropus parma,Cx,Mass,9.914,9.914,0.0,match
+Macropus parma,Macropus parma,Cx,I/C,0.055500000287510814,0.0555,-0.0,match
+Macropus parma,Macropus parma,Hp,C,118750000.0,118750000.0,0.0,match
+Macropus parma,Macropus parma,Hp,N,8478750.0,8478749.999999998,-0.0,match
+Macropus parma,Macropus parma,Hp,I,7801875.0,7801875.000000001,0.0,match
+Macropus parma,Macropus parma,Hp,I/N,0.92,0.920168067226891,0.018,match
+Macropus parma,Macropus parma,Hp,N/mg,6849.0,6848.747980613892,-0.004,match
+Macropus parma,Macropus parma,Hp,I/mg,6302.0,6301.999192245558,-0.0,match
+Macropus parma,Macropus parma,Hp,Mass,1.238,1.238,0.0,match
+Macropus parma,Macropus parma,Hp,I/C,0.0657,0.06570000000000001,0.0,match
+Macropus parma,Macropus parma,P+M,C,,78500000.0,,
+Macropus parma,Macropus parma,P+M,N,,4772800.0,,
+Macropus parma,Macropus parma,P+M,I,,4553000.0,,
+Macropus parma,Macropus parma,P+M,I/N,,0.9539473684210527,,
+Macropus parma,Macropus parma,P+M,N/mg,,4107.401032702238,,
+Macropus parma,Macropus parma,P+M,I/mg,,3918.2444061962133,,
+Macropus parma,Macropus parma,P+M,Mass,,1.162,,
+Macropus parma,Macropus parma,P+M,I/C,,0.057999999999999996,,
+Macropus parma,Macropus parma,RoB,C,352250000.0,352250000.0,0.0,match
+Macropus parma,Macropus parma,RoB,N,17420050.0,17420050.0,0.0,match
+Macropus parma,Macropus parma,RoB,I,20254375.0,20254375.0,0.0,match
+Macropus parma,Macropus parma,RoB,I/N,1.163,1.1627047568749802,-0.025,match
+Macropus parma,Macropus parma,RoB,N/mg,4238.0,4238.45498783455,0.011,match
+Macropus parma,Macropus parma,RoB,I/mg,4928.0,4928.071776155718,0.001,match
+Macropus parma,Macropus parma,RoB,Mass,4.11,4.11,0.0,match
+Macropus parma,Macropus parma,RoB,I/C,0.0575,0.0575,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Br,C,3475391250.0,3475391250.0,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Br,N,1321829777.0,1321829777.0,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Br,I,148746746.0,148746745.50000003,-0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Br,I/N,0.113,0.11253093861873262,-0.415,match
+Macropus rufogriseus,Macropus rufogriseus,Br,N/mg,48968.0,48967.5400829814,-0.001,match
+Macropus rufogriseus,Macropus rufogriseus,Br,I/mg,5510.0,5510.36324738831,0.007,match
+Macropus rufogriseus,Macropus rufogriseus,Br,Mass,26.994,26.994,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Br,I/C,0.04280000014386869,0.042800000000000005,-0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Cb,C,1479625000.0,1479625000.0,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Cb,N,1022568838.0,1022568837.5000001,-0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Cb,I,13612550.0,13612550.0,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Cb,I/N,0.013,0.013312111127188539,2.401,minor
+Macropus rufogriseus,Macropus rufogriseus,Cb,N/mg,286273.0,286273.4707446809,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Cb,I/mg,3811.0,3810.904255319149,-0.003,match
+Macropus rufogriseus,Macropus rufogriseus,Cb,Mass,3.572,3.572,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Cb,I/C,0.0092,0.0092,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Ctx,C,1259953750.0,1259953750.0,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Ctx,N,246009570.0,246009570.0,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Ctx,I,84038915.0,84038915.125,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Ctx,I/N,0.342,0.34160831680247233,-0.115,match
+Macropus rufogriseus,Macropus rufogriseus,Ctx,N/mg,17196.0,17196.251223262967,0.001,match
+Macropus rufogriseus,Macropus rufogriseus,Ctx,I/mg,5874.0,5874.382435691318,0.007,match
+Macropus rufogriseus,Macropus rufogriseus,Ctx,Mass,14.306,14.306,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Ctx,I/C,0.06669999990079001,0.0667,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Cx,C,1423953750.0,1423953750.0,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Cx,N,256784370.0,256784370.0,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Cx,I,98537600.0,98537599.5,-0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Cx,I/N,0.384,0.38373674963160725,-0.069,match
+Macropus rufogriseus,Macropus rufogriseus,Cx,N/mg,15947.0,15947.358713203328,0.002,match
+Macropus rufogriseus,Macropus rufogriseus,Cx,I/mg,6120.0,6119.587597813937,-0.007,match
+Macropus rufogriseus,Macropus rufogriseus,Cx,Mass,16.102,16.102,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Cx,I/C,0.069200000351135,0.0692,-0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Hp,C,164000000.0,164000000.0,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Hp,N,10774069.0,10774800.000000002,0.007,match
+Macropus rufogriseus,Macropus rufogriseus,Hp,I,14514000.0,14514000.0,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Hp,I/N,1.347,1.3470319634703194,0.002,match
+Macropus rufogriseus,Macropus rufogriseus,Hp,N/mg,5999.0,5999.33184855234,0.006,match
+Macropus rufogriseus,Macropus rufogriseus,Hp,I/mg,8081.0,8081.291759465479,0.004,match
+Macropus rufogriseus,Macropus rufogriseus,Hp,Mass,1.796,1.796,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,Hp,I/C,0.0885,0.0885,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,P+M,C,,130812500.0,,
+Macropus rufogriseus,Macropus rufogriseus,P+M,N,,7417068.75,,
+Macropus rufogriseus,Macropus rufogriseus,P+M,I,,10530406.25,,
+Macropus rufogriseus,Macropus rufogriseus,P+M,I/N,,1.4197530864197532,,
+Macropus rufogriseus,Macropus rufogriseus,P+M,N/mg,,5336.020683453237,,
+Macropus rufogriseus,Macropus rufogriseus,P+M,I/mg,,7575.831834532374,,
+Macropus rufogriseus,Macropus rufogriseus,P+M,Mass,,1.39,,
+Macropus rufogriseus,Macropus rufogriseus,P+M,I/C,,0.0805,,
+Macropus rufogriseus,Macropus rufogriseus,RoB,C,571812500.0,571812500.0,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,RoB,N,42476569.0,42476569.0,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,RoB,I,36538819.0,36538818.75,-0.0,match
+Macropus rufogriseus,Macropus rufogriseus,RoB,I/N,0.86,0.8602111613581596,0.025,match
+Macropus rufogriseus,Macropus rufogriseus,RoB,N/mg,5803.0,5802.809972677595,-0.003,match
+Macropus rufogriseus,Macropus rufogriseus,RoB,I/mg,4992.0,4991.641905737705,-0.007,match
+Macropus rufogriseus,Macropus rufogriseus,RoB,Mass,7.32,7.32,0.0,match
+Macropus rufogriseus,Macropus rufogriseus,RoB,I/C,0.06390000043720626,0.0639,-0.0,match
+Macropus rufus,Macropus rufus,Cb,C,1976624000.0,1976624000.0,0.0,match
+Macropus rufus,Macropus rufus,Cb,N,1532871912.0,1532871912.0,0.0,match
+Macropus rufus,Macropus rufus,Cb,I,31230659.0,31230659.200000003,0.0,match
+Macropus rufus,Macropus rufus,Cb,I/N,0.02,0.020373952288845906,1.87,minor
+Macropus rufus,Macropus rufus,Cb,N/mg,320282.0,320282.4722106143,0.0,match
+Macropus rufus,Macropus rufus,Cb,I/mg,6525.0,6525.4198077726705,0.006,match
+Macropus rufus,Macropus rufus,Cb,Mass,4.786,4.786,0.0,match
+Macropus rufus,Macropus rufus,Cb,I/C,0.015799999898817377,0.0158,0.0,match
+Macropus rufus,Macropus rufus,P+M,C,227500000.0,227500000.0,0.0,match
+Macropus rufus,Macropus rufus,P+M,N,19337500.0,19337500.0,0.0,match
+Macropus rufus,Macropus rufus,P+M,I,17881500.0,17881500.0,0.0,match
+Macropus rufus,Macropus rufus,P+M,I/N,0.925,0.9247058823529412,-0.032,match
+Macropus rufus,Macropus rufus,P+M,N/mg,6700.0,6700.45045045045,0.007,match
+Macropus rufus,Macropus rufus,P+M,I/mg,6196.0,6195.945945945946,-0.001,match
+Macropus rufus,Macropus rufus,P+M,Mass,2.886,2.886,0.0,match
+Macropus rufus,Macropus rufus,P+M,I/C,0.0786,0.0786,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Br,C,317343750.0,317343750.0,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Br,N,166594406.0,165594406.0,-0.6,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Br,I,8060531.0,8060531.25,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Br,I/N,0.049,0.04867634991244813,-0.661,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Br,N/mg,82467.0,82467.33366533865,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Br,I/mg,4014.0,4014.2087898406376,0.005,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Br,Mass,2.008,2.008,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Br,I/C,0.025399999212210735,0.0254,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cb,C,166312500.0,166312500.0,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cb,N,134131031.0,134131031.25000001,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cb,I,1729650.0,1729650.0,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cb,I/N,0.013,0.012895226286422814,-0.806,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cb,N/mg,392196.0,392195.9978070176,-0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cb,I/mg,5057.0,5057.456140350877,0.009,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cb,Mass,0.342,0.342,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cb,I/C,0.0104,0.0104,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Ctx,C,72625000.0,72625000.0,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Ctx,N,15999288.0,15999287.500000002,-0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Ctx,I,2222325.0,2222325.0,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Ctx,I/N,0.139,0.1389014979573309,-0.071,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Ctx,N/mg,18867.0,18867.084316037737,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Ctx,I/mg,2621.0,2620.666273584906,-0.013,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Ctx,Mass,0.848,0.848,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Ctx,I/C,0.0306,0.030600000000000002,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cx,C,84775000.0,84775000.0,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cx,N,20191038.0,20191038.0,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cx,I,2653458.0,2653457.5,-0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cx,I/N,0.131,0.1314175873474162,0.319,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cx,N/mg,20354.0,20353.8689516129,-0.001,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cx,I/mg,2675.0,2674.8563508064517,-0.005,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cx,Mass,0.992,0.992,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Cx,I/C,0.0313000058979652,0.0313,-0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Hp,C,12150000.0,12150000.0,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Hp,N,4191750.0,4191749.9999999995,-0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Hp,I,428895.0,428895.0,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Hp,I/N,0.102,0.10231884057971016,0.313,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Hp,N/mg,29109.0,29109.374999999996,0.001,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Hp,I/mg,2978.0,2978.4375,0.015,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Hp,Mass,0.144,0.144,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,Hp,I/C,0.0353,0.0353,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,P+M,C,,25025000.0,,
+Metachirus nudicaudatus,Metachirus nudicaudatus,P+M,N,,3761257.4999999995,,
+Metachirus nudicaudatus,Metachirus nudicaudatus,P+M,I,,1486485.0,,
+Metachirus nudicaudatus,Metachirus nudicaudatus,P+M,I/N,,0.3952095808383234,,
+Metachirus nudicaudatus,Metachirus nudicaudatus,P+M,N/mg,,13337.792553191488,,
+Metachirus nudicaudatus,Metachirus nudicaudatus,P+M,I/mg,,5271.223404255319,,
+Metachirus nudicaudatus,Metachirus nudicaudatus,P+M,Mass,,0.282,,
+Metachirus nudicaudatus,Metachirus nudicaudatus,P+M,I/C,,0.0594,,
+Metachirus nudicaudatus,Metachirus nudicaudatus,RoB,C,66256250.0,66256250.0,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,RoB,N,11272337.0,11272337.0,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,RoB,I,3670596.0,3670596.25,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,RoB,I/N,0.326,0.3256286828543185,-0.114,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,RoB,N/mg,16725.0,16724.535608308604,-0.003,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,RoB,I/mg,5446.0,5445.988501483679,-0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,RoB,Mass,0.674,0.674,0.0,match
+Metachirus nudicaudatus,Metachirus nudicaudatus,RoB,I/C,0.05539999622677106,0.0554,0.0,match
+Mungos mungo,Mungos mungo,Cb,C,470000000.0,470000000.0,0.0,match
+Mungos mungo,Mungos mungo,Cb,N,315738964.0,315738964.0,0.0,match
+Mungos mungo,Mungos mungo,Cb,I,8695000.0,8695000.000000002,0.0,match
+Mungos mungo,Mungos mungo,Cb,I/N,0.028,0.027538571387723948,-1.648,minor
+Mungos mungo,Mungos mungo,Cb,N/mg,203966.0,203965.73901808786,-0.0,match
+Mungos mungo,Mungos mungo,Cb,I/mg,5617.0,5616.925064599484,-0.001,match
+Mungos mungo,Mungos mungo,Cb,Mass,1.548,1.548,0.0,match
+Mungos mungo,Mungos mungo,Cb,I/C,0.0185,0.018500000000000003,0.0,match
+Mungos mungo,Mungos mungo,Hp,C,25625000.0,25625000.0,0.0,match
+Mungos mungo,Mungos mungo,Hp,N,2664224.0,2664224.0,0.0,match
+Mungos mungo,Mungos mungo,Hp,I,863563.0,863562.5,-0.0,match
+Mungos mungo,Mungos mungo,Hp,I/N,0.324,0.32413284318435687,0.041,match
+Mungos mungo,Mungos mungo,Hp,N/mg,6225.0,6224.822429906542,-0.003,match
+Mungos mungo,Mungos mungo,Hp,I/mg,2018.0,2017.6693925233644,-0.016,match
+Mungos mungo,Mungos mungo,Hp,Mass,0.428,0.428,0.0,match
+Mungos mungo,Mungos mungo,Hp,I/C,0.033700019512195124,0.0337,-0.0,match
+Mungos mungo,Mungos mungo,P+M,C,,49100000.0,,
+Mungos mungo,Mungos mungo,P+M,N,,5153070.0,,
+Mungos mungo,Mungos mungo,P+M,I,,2234050.0,,
+Mungos mungo,Mungos mungo,P+M,I/N,,0.43353767753979666,,
+Mungos mungo,Mungos mungo,P+M,N/mg,,4642.405405405405,,
+Mungos mungo,Mungos mungo,P+M,I/mg,,2012.6576576576576,,
+Mungos mungo,Mungos mungo,P+M,Mass,,1.11,,
+Mungos mungo,Mungos mungo,P+M,I/C,,0.0455,,
+Mungos mungo,Mungos mungo,RoB,C,174060000.0,174060000.0,0.0,match
+Mungos mungo,Mungos mungo,RoB,N,22514320.0,22514320.0,0.0,match
+Mungos mungo,Mungos mungo,RoB,I,6614280.0,6614280.0,0.0,match
+Mungos mungo,Mungos mungo,RoB,I/N,0.294,0.2937810246989472,-0.074,match
+Mungos mungo,Mungos mungo,RoB,N/mg,6518.0,6518.332368268674,0.005,match
+Mungos mungo,Mungos mungo,RoB,I/mg,1.915,1914.962362478286,99898.035,HUGE
+Mungos mungo,Mungos mungo,RoB,Mass,3.454,3.454,0.0,match
+Mungos mungo,Mungos mungo,RoB,I/C,0.038,0.038,0.0,match
+Mustela putorius furo,Mustela putorius furo,Br,C,877410700.0,877410700.0,0.0,match
+Mustela putorius furo,Mustela putorius furo,Br,N,404428012.0,404428011.3333333,-0.0,match
+Mustela putorius furo,Mustela putorius furo,Br,I,42115714.0,42104963.82666667,-0.026,match
+Mustela putorius furo,Mustela putorius furo,Br,I/N,0.104,0.10552788824770437,1.469,minor
+Mustela putorius furo,Mustela putorius furo,Br,N/mg,74494.0,74265.6894832971,-0.306,match
+Mustela putorius furo,Mustela putorius furo,Br,I/mg,7758.0,7765.45700474072,0.096,match
+Mustela putorius furo,Mustela putorius furo,Br,Mass,5.429,5.429,0.0,match
+Mustela putorius furo,Mustela putorius furo,Br,I/C,0.04800000045588685,0.04816666666666667,0.347,match
+Mustela putorius furo,Mustela putorius furo,Cb,C,430860000.0,430860000.0,0.0,match
+Mustela putorius furo,Mustela putorius furo,Cb,N,351264942.0,351264942.6666667,0.0,match
+Mustela putorius furo,Mustela putorius furo,Cb,I,8832630.0,8842044.0,0.107,match
+Mustela putorius furo,Mustela putorius furo,Cb,I/N,0.025,0.024750115901687315,-1.0,match
+Mustela putorius furo,Mustela putorius furo,Cb,N/mg,381810.0,379941.87702886533,-0.489,match
+Mustela putorius furo,Mustela putorius furo,Cb,I/mg,9601.0,9479.681290854887,-1.264,minor
+Mustela putorius furo,Mustela putorius furo,Cb,Mass,0.92,0.92,0.0,match
+Mustela putorius furo,Mustela putorius furo,Cb,I/C,0.0205,0.0202,-1.463,minor
+Mustela putorius furo,Mustela putorius furo,Ctx,C,270508200.0,270508200.0,0.0,match
+Mustela putorius furo,Mustela putorius furo,Ctx,N,35760238.0,35760237.333333336,-0.0,match
+Mustela putorius furo,Mustela putorius furo,Ctx,I,17528931.0,17537875.52,0.051,match
+Mustela putorius furo,Mustela putorius furo,Ctx,I/N,0.49,0.48868413242717024,-0.269,match
+Mustela putorius furo,Mustela putorius furo,Ctx,N/mg,12799.0,12816.322626402887,0.135,match
+Mustela putorius furo,Mustela putorius furo,Ctx,I/mg,6274.0,6214.1010048772905,-0.955,match
+Mustela putorius furo,Mustela putorius furo,Ctx,Mass,2.794,2.794,0.0,match
+Mustela putorius furo,Mustela putorius furo,Ctx,I/C,0.06479999866917158,0.06403333333333333,-1.183,minor
+Mustela putorius furo,Mustela putorius furo,Cx,C,303008200.0,303008200.0,0.0,match
+Mustela putorius furo,Mustela putorius furo,Cx,N,38952070.0,38952070.666666664,0.0,match
+Mustela putorius furo,Mustela putorius furo,Cx,I,20392452.0,20393729.153333332,0.006,match
+Mustela putorius furo,Mustela putorius furo,Cx,I/N,0.524,0.5254140554826677,0.27,match
+Mustela putorius furo,Mustela putorius furo,Cx,N/mg,12473.0,12476.487736638792,0.028,match
+Mustela putorius furo,Mustela putorius furo,Cx,I/mg,6530.0,6516.093398945313,-0.213,match
+Mustela putorius furo,Mustela putorius furo,Cx,Mass,3.123,3.123,0.0,match
+Mustela putorius furo,Mustela putorius furo,Cx,I/C,0.0673000004620337,0.067,-0.446,match
+Mustela putorius furo,Mustela putorius furo,Hp,C,32500000.0,32500000.0,0.0,match
+Mustela putorius furo,Mustela putorius furo,Hp,N,3191834.0,3191833.3333333335,-0.0,match
+Mustela putorius furo,Mustela putorius furo,Hp,I,2856750.0,2856314.0,-0.015,match
+Mustela putorius furo,Mustela putorius furo,Hp,I/N,0.895,0.9517677287351644,6.343,minor
+Mustela putorius furo,Mustela putorius furo,Hp,N/mg,9702.0,9457.605250952292,-2.519,minor
+Mustela putorius furo,Mustela putorius furo,Hp,I/mg,8683.0,8849.27104664499,1.915,minor
+Mustela putorius furo,Mustela putorius furo,Hp,Mass,0.329,0.329,0.0,match
+Mustela putorius furo,Mustela putorius furo,Hp,I/C,0.0879,0.08883333333333333,1.062,minor
+Mustela putorius furo,Mustela putorius furo,P+M,C,,50700000.0,,
+Mustela putorius furo,Mustela putorius furo,P+M,N,,7129688.0,,
+Mustela putorius furo,Mustela putorius furo,P+M,I,,5049720.0,,
+Mustela putorius furo,Mustela putorius furo,P+M,I/N,,0.708266616996424,,
+Mustela putorius furo,Mustela putorius furo,P+M,N/mg,,14730.760330578512,,
+Mustela putorius furo,Mustela putorius furo,P+M,I/mg,,10433.305785123966,,
+Mustela putorius furo,Mustela putorius furo,P+M,Mass,,0.484,,
+Mustela putorius furo,Mustela putorius furo,P+M,I/C,,0.09960000000000001,,
+Mustela putorius furo,Mustela putorius furo,RoB,C,143542500.0,143542500.0,0.0,match
+Mustela putorius furo,Mustela putorius furo,RoB,N,14210998.0,14210998.0,0.0,match
+Mustela putorius furo,Mustela putorius furo,RoB,I,12847054.0,12848584.75,0.012,match
+Mustela putorius furo,Mustela putorius furo,RoB,I/N,0.904,0.94132479245144,4.129,minor
+Mustela putorius furo,Mustela putorius furo,RoB,N/mg,10253.0,10598.475400627845,3.37,minor
+Mustela putorius furo,Mustela putorius furo,RoB,I/mg,9269.0,9226.565586347077,-0.458,match
+Mustela putorius furo,Mustela putorius furo,RoB,Mass,1.386,1.386,0.0,match
+Mustela putorius furo,Mustela putorius furo,RoB,I/C,0.08950000174164446,0.08933333333333333,-0.186,match
+Otolemur garnettii,Otolemur garnettii,Cx,C,494053510.0,466686000.0,-5.539,minor
+Otolemur garnettii,Otolemur garnettii,Cx,N,196070964.0,191936529.0,-2.109,minor
+Otolemur garnettii,Otolemur garnettii,Cx,I,39378618.0,38548263.599999994,-2.109,minor
+Otolemur garnettii,Otolemur garnettii,Cx,I/N,0.201,0.20083859909751725,-0.08,match
+Otolemur garnettii,Otolemur garnettii,Cx,N/mg,40211.0,41294.43395008606,2.694,minor
+Otolemur garnettii,Otolemur garnettii,Cx,I/mg,8294.0,8293.51626506024,-0.006,match
+Otolemur garnettii,Otolemur garnettii,Cx,Mass,4.876,4.648,-4.676,minor
+Otolemur garnettii,Otolemur garnettii,Cx,I/C,0.07970516796854657,0.08259999999999999,3.632,minor
+Panthera leo,Panthera leo,Br,C,17065870250.0,17065870250.0,0.0,match
+Panthera leo,Panthera leo,Br,N,4667034704.0,4667034704.0,0.0,match
+Panthera leo,Panthera leo,Br,I,1129760611.0,1129760610.55,-0.0,match
+Panthera leo,Panthera leo,Br,I/N,0.242,0.24207246832377527,0.03,match
+Panthera leo,Panthera leo,Br,N/mg,23459.0,23458.801403395897,-0.001,match
+Panthera leo,Panthera leo,Br,I/mg,5679.0,5678.729959637289,-0.005,match
+Panthera leo,Panthera leo,Br,Mass,198.946,198.946,0.0,match
+Panthera leo,Panthera leo,Br,I/C,0.06620000002636842,0.0662,-0.0,match
+Panthera leo,Panthera leo,Cb,C,7093750000.0,7093750000.0,0.0,match
+Panthera leo,Panthera leo,Cb,N,4049750938.0,4049750938.0,0.0,match
+Panthera leo,Panthera leo,Cb,I,124140625.0,124140625.00000001,0.0,match
+Panthera leo,Panthera leo,Cb,I/N,0.031,0.03065389128875856,-1.116,minor
+Panthera leo,Panthera leo,Cb,N/mg,162758.0,162758.2564906358,0.0,match
+Panthera leo,Panthera leo,Cb,I/mg,4989.0,4989.173900811832,0.003,match
+Panthera leo,Panthera leo,Cb,Mass,24.882,24.882,0.0,match
+Panthera leo,Panthera leo,Cb,I/C,0.0175,0.0175,0.0,match
+Panthera leo,Panthera leo,Ctx,C,7615560250.0,7615560250.0,0.0,match
+Panthera leo,Panthera leo,Ctx,N,531700630.0,531700630.0,0.0,match
+Panthera leo,Panthera leo,Ctx,I,784402706.0,784402705.7500001,-0.0,match
+Panthera leo,Panthera leo,Ctx,I/N,1.475,1.4752713491236602,0.018,match
+Panthera leo,Panthera leo,Ctx,N/mg,3902.0,3902.275382741057,0.007,match
+Panthera leo,Panthera leo,Ctx,I/mg,5757.0,5756.915068548447,-0.001,match
+Panthera leo,Panthera leo,Ctx,Mass,136.254,136.254,0.0,match
+Panthera leo,Panthera leo,Ctx,I/C,0.10300000003282753,0.10300000000000001,-0.0,match
+Panthera leo,Panthera leo,Cx,C,7806210250.0,7806210250.0,0.0,match
+Panthera leo,Panthera leo,Cx,N,545238686.0,545238685.6,-0.0,match
+Panthera leo,Panthera leo,Cx,I,795452825.0,795452824.4749999,-0.0,match
+Panthera leo,Panthera leo,Cx,I/N,1.459,1.4589075307443662,-0.006,match
+Panthera leo,Panthera leo,Cx,N/mg,3897.0,3897.29014310017,0.007,match
+Panthera leo,Panthera leo,Cx,I/mg,5686.0,5685.785939264628,-0.004,match
+Panthera leo,Panthera leo,Cx,Mass,139.902,139.902,0.0,match
+Panthera leo,Panthera leo,Cx,I/C,0.10190000006725415,0.10189999999999999,-0.0,match
+Panthera leo,Panthera leo,Hp,C,190650000.0,190650000.0,0.0,match
+Panthera leo,Panthera leo,Hp,N,13538056.0,13538056.0,0.0,match
+Panthera leo,Panthera leo,Hp,I,10886115.0,10886115.0,0.0,match
+Panthera leo,Panthera leo,Hp,I/N,0.804,0.8041121265859736,0.014,match
+Panthera leo,Panthera leo,Hp,N/mg,3711.0,3711.089912280702,0.002,match
+Panthera leo,Panthera leo,Hp,I/mg,2984.0,2984.1324013157896,0.004,match
+Panthera leo,Panthera leo,Hp,Mass,3.648,3.648,0.0,match
+Panthera leo,Panthera leo,Hp,I/C,0.0571,0.0571,0.0,match
+Panthera leo,Panthera leo,RoB,C,2165910000.0,2165910000.0,0.0,match
+Panthera leo,Panthera leo,RoB,N,72045082.0,72045082.0,0.0,match
+Panthera leo,Panthera leo,RoB,I,210743043.0,210743043.0,0.0,match
+Panthera leo,Panthera leo,RoB,I/N,2.925,2.925155154934795,0.005,match
+Panthera leo,Panthera leo,RoB,N/mg,2109.0,2108.9245945787716,-0.004,match
+Panthera leo,Panthera leo,RoB,I/mg,6169.0,6168.931649200867,-0.001,match
+Panthera leo,Panthera leo,RoB,Mass,34.162,34.162,0.0,match
+Panthera leo,Panthera leo,RoB,I/C,0.0973,0.0973,0.0,match
+Papio anubis cynocephalus,Papio anubis cynocephalus,Cx,C,4934116014.0,6740084000.0,36.602,MAJOR
+Papio anubis cynocephalus,Papio anubis cynocephalus,Cx,N,1144837998.0,1143294680.0,-0.135,match
+Papio anubis cynocephalus,Papio anubis cynocephalus,Cx,I,257818766.0,257471208.79999998,-0.135,match
+Papio anubis cynocephalus,Papio anubis cynocephalus,Cx,I/N,0.225,0.22520109058847365,0.089,match
+Papio anubis cynocephalus,Papio anubis cynocephalus,Cx,N/mg,12083.0,12312.025414602627,1.895,minor
+Papio anubis cynocephalus,Papio anubis cynocephalus,Cx,I/mg,2773.0,2772.681550721516,-0.011,match
+Papio anubis cynocephalus,Papio anubis cynocephalus,Cx,Mass,94.744,92.86,-1.989,minor
+Papio anubis cynocephalus,Papio anubis cynocephalus,Cx,I/C,0.052252270775244886,0.0382,-26.893,MAJOR
+Petrodromus tetradactylus,Petrodromus tetradactylus,Br,C,260180000.0,260180000.0,0.0,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Br,N,156830795.0,159741458.66666666,1.856,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,Br,I,6564788.0,6681751.666666667,1.782,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,Br,I/N,0.042,0.04129200966875091,-1.686,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,Br,N/mg,64104.0,65410.16848168614,2.038,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,Br,I/mg,2743.0,2721.9544791225217,-0.767,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Br,Mass,2.44,2.437333333333333,-0.109,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Br,I/C,0.025231716503958796,0.025333333333333333,0.403,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cb,C,145311000.0,145311000.0,0.0,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cb,N,110653150.0,110653149.6,-0.0,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cb,I,1278737.0,1281548.1333333333,0.22,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cb,I/N,0.012,0.011212605348604156,-6.562,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cb,N/mg,362537.0,363021.6981243816,0.134,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cb,I/mg,4206.0,4113.69546117345,-2.195,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cb,Mass,0.304,0.304,0.0,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cb,I/C,0.008800001376358293,0.008466666666666667,-3.788,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,Ctx,C,60480000.0,60480000.0,0.0,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Ctx,N,27651699.0,27651699.0,0.0,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Ctx,I,2921184.0,2921851.0,0.023,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Ctx,I/N,0.106,0.10422913291393208,-1.671,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,Ctx,N/mg,28566.0,28330.430725131602,-0.825,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Ctx,I/mg,3018.0,2980.5267097007154,-1.242,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,Ctx,Mass,0.968,0.968,0.0,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Ctx,I/C,0.0483,0.04753333333333334,-1.587,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cx,C,74433000.0,74433000.0,0.0,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cx,N,33947000.0,32515680.666666668,-4.216,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cx,I,3908787.0,3745265.166666667,-4.183,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cx,I/N,0.115,0.11494115075465504,-0.051,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cx,N/mg,27236.0,26089.514703762612,-4.209,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cx,I/mg,3019.0,3003.7860555942148,-0.504,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cx,Mass,1.239,1.2393333333333334,0.027,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Cx,I/C,0.05251416710330096,0.04986666666666667,-5.041,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,Hp,C,13953000.0,13953000.0,0.0,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Hp,N,6294000.0,4863981.6,-22.72,MAJOR
+Petrodromus tetradactylus,Petrodromus tetradactylus,Hp,I,1067062.0,824541.9,-22.728,MAJOR
+Petrodromus tetradactylus,Petrodromus tetradactylus,Hp,I/N,0.17,0.17329998964138277,1.941,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,Hp,N/mg,23164.0,18093.183037200004,-21.891,MAJOR
+Petrodromus tetradactylus,Petrodromus tetradactylus,Hp,I/mg,3032.0,3040.918120743486,0.294,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Hp,Mass,0.272,0.2713333333333333,-0.245,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,Hp,I/C,0.07647545330753243,0.05923333333333333,-22.546,MAJOR
+Petrodromus tetradactylus,Petrodromus tetradactylus,RoB,C,40436000.0,40436000.0,0.0,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,RoB,N,12231811.0,16572628.6,35.488,MAJOR
+Petrodromus tetradactylus,Petrodromus tetradactylus,RoB,I,1217665.0,1648531.7333333332,35.385,MAJOR
+Petrodromus tetradactylus,Petrodromus tetradactylus,RoB,I/N,0.1,0.10925070382638273,9.251,minor
+Petrodromus tetradactylus,Petrodromus tetradactylus,RoB,N/mg,13696.0,18628.25552716227,36.012,MAJOR
+Petrodromus tetradactylus,Petrodromus tetradactylus,RoB,I/mg,1845.0,1837.894196342267,-0.385,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,RoB,Mass,0.894,0.894,0.0,match
+Petrodromus tetradactylus,Petrodromus tetradactylus,RoB,I/C,0.03011338905925413,0.042166666666666665,40.026,MAJOR
+Procavia capensis,Procavia capensis,Br,C,1376275000.0,1376220437.3333333,-0.004,match
+Procavia capensis,Procavia capensis,Br,N,755653256.0,756581255.6666666,0.123,match
+Procavia capensis,Procavia capensis,Br,I,57043095.0,57132049.10213333,0.156,match
+Procavia capensis,Procavia capensis,Br,I/N,0.075,0.07667145590591294,2.229,minor
+Procavia capensis,Procavia capensis,Br,N/mg,45576.0,45391.100244042456,-0.406,match
+Procavia capensis,Procavia capensis,Br,I/mg,3389.0,3380.002393049643,-0.265,match
+Procavia capensis,Procavia capensis,Br,Mass,16.853,16.852,-0.006,match
+Procavia capensis,Procavia capensis,Br,I/C,0.04144745417885234,0.041999999999999996,1.333,minor
+Procavia capensis,Procavia capensis,Cb,C,579378000.0,579378000.0,0.0,match
+Procavia capensis,Procavia capensis,Cb,N,4883703000.0,489318420.0,-89.981,MAJOR
+Procavia capensis,Procavia capensis,Cb,I,7806491.0,7838413.800000001,0.409,match
+Procavia capensis,Procavia capensis,Cb,I/N,0.016,0.016098323665545217,0.615,match
+Procavia capensis,Procavia capensis,Cb,N/mg,242415.0,241208.25905573476,-0.498,match
+Procavia capensis,Procavia capensis,Cb,I/mg,3801.0,3840.688062544565,1.044,minor
+Procavia capensis,Procavia capensis,Cb,Mass,2.058,2.058,0.0,match
+Procavia capensis,Procavia capensis,Cb,I/C,0.013473916855662451,0.013666666666666667,1.431,minor
+Procavia capensis,Procavia capensis,Ctx,C,488188000.0,488188000.0,0.0,match
+Procavia capensis,Procavia capensis,Ctx,N,171217186.0,171217185.66666666,-0.0,match
+Procavia capensis,Procavia capensis,Ctx,I,33099146.0,33100606.73333333,0.004,match
+Procavia capensis,Procavia capensis,Ctx,I/N,0.193,0.20197757288618742,4.652,minor
+Procavia capensis,Procavia capensis,Ctx,N/mg,18643.0,18698.654022931536,0.299,match
+Procavia capensis,Procavia capensis,Ctx,I/mg,3604.0,3600.066276869035,-0.109,match
+Procavia capensis,Procavia capensis,Ctx,Mass,9.184,9.184,0.0,match
+Procavia capensis,Procavia capensis,Ctx,I/C,0.06779999918064353,0.06923333333333334,2.114,minor
+Procavia capensis,Procavia capensis,Cx,C,564554000.0,564499437.3333334,-0.01,match
+Procavia capensis,Procavia capensis,Cx,N,197933000.0,197909138.0,-0.012,match
+Procavia capensis,Procavia capensis,Cx,I,38108306.0,38099954.5408,-0.022,match
+Procavia capensis,Procavia capensis,Cx,I/N,0.193,0.19768900312321339,2.43,minor
+Procavia capensis,Procavia capensis,Cx,N/mg,19134.0,19052.023763666766,-0.428,match
+Procavia capensis,Procavia capensis,Cx,I/mg,3637.0,3627.4715233768457,-0.262,match
+Procavia capensis,Procavia capensis,Cx,Mass,10.478,10.477,-0.01,match
+Procavia capensis,Procavia capensis,Cx,I/C,0.06750161366317482,0.06816666666666667,0.985,match
+Procavia capensis,Procavia capensis,Hp,C,76311438.0,76311437.33333333,-0.0,match
+Procavia capensis,Procavia capensis,Hp,N,26712953.0,26691952.554733332,-0.079,match
+Procavia capensis,Procavia capensis,Hp,I,4994695.0,4993268.2084,-0.029,match
+Procavia capensis,Procavia capensis,Hp,I/N,0.187,0.18712064433256348,0.065,match
+Procavia capensis,Procavia capensis,Hp,N/mg,21712.0,21346.88600460868,-1.682,minor
+Procavia capensis,Procavia capensis,Hp,I/mg,3860.0,3995.130320124375,3.501,minor
+Procavia capensis,Procavia capensis,Hp,Mass,1.294,1.293,-0.077,match
+Procavia capensis,Procavia capensis,Hp,I/C,0.0654514595832934,0.0661,0.991,match
+Procavia capensis,Procavia capensis,P+M,C,,70350000.0,,
+Procavia capensis,Procavia capensis,P+M,N,,22378335.0,,
+Procavia capensis,Procavia capensis,P+M,I,,6092310.0,,
+Procavia capensis,Procavia capensis,P+M,I/N,,0.2722414335114744,,
+Procavia capensis,Procavia capensis,P+M,N/mg,,13882.341811414391,,
+Procavia capensis,Procavia capensis,P+M,I/mg,,3779.348635235732,,
+Procavia capensis,Procavia capensis,P+M,Mass,,1.612,,
+Procavia capensis,Procavia capensis,P+M,I/C,,0.0866,,
+Procavia capensis,Procavia capensis,RoB,C,232343000.0,232343000.0,0.0,match
+Procavia capensis,Procavia capensis,RoB,N,69358240.0,69353697.66666667,-0.007,match
+Procavia capensis,Procavia capensis,RoB,I,11199666.0,11199838.6,0.002,match
+Procavia capensis,Procavia capensis,RoB,I/N,0.161,0.16185743226111293,0.533,match
+Procavia capensis,Procavia capensis,RoB,N/mg,16436.0,16312.053005192067,-0.754,match
+Procavia capensis,Procavia capensis,RoB,I/mg,2594.0,2554.974587421283,-1.504,minor
+Procavia capensis,Procavia capensis,RoB,Mass,4.317,4.317,0.0,match
+Procavia capensis,Procavia capensis,RoB,I/C,0.04820315654011526,0.048,-0.421,match
+Saguinus midas,Saguinus midas,Cx,C,603175002.0,602884000.0,-0.048,match
+Saguinus midas,Saguinus midas,Cx,N,220924134.0,220924133.0,-0.0,match
+Saguinus midas,Saguinus midas,Cx,I,16398445.0,16398444.8,-0.0,match
+Saguinus midas,Saguinus midas,Cx,I/N,0.074,0.07422658890778583,0.306,match
+Saguinus midas,Saguinus midas,Cx,N/mg,43921.0,40972.57659495549,-6.713,minor
+Saguinus midas,Saguinus midas,Cx,I/mg,3041.0,3041.2545994065285,0.008,match
+Saguinus midas,Saguinus midas,Cx,Mass,5.03,5.392,7.197,minor
+Saguinus midas,Saguinus midas,Cx,I/C,0.027186877681645037,0.027200000000000002,0.048,match
+Sarcophilus harrisii,Sarcophilus harrisii,Br,C,1450131000.0,1450131000.0,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Br,N,693694737.0,693694737.0,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Br,I,22912070.0,22912069.8,-0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Br,I/N,0.033,0.03302903795852209,0.088,match
+Sarcophilus harrisii,Sarcophilus harrisii,Br,N/mg,70771.0,70770.73423791063,-0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Br,I/mg,2337.0,2337.4892674964294,0.021,match
+Sarcophilus harrisii,Sarcophilus harrisii,Br,Mass,9.802,9.802,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Br,I/C,0.015800000137918574,0.0158,-0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Cb,C,735437500.0,735437500.0,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Cb,N,601073069.0,601073068.75,-0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Cb,I,7722094.0,7722093.750000001,-0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Cb,I/N,0.013,0.012847179738162243,-1.176,minor
+Sarcophilus harrisii,Sarcophilus harrisii,Cb,N/mg,419158.0,419158.34640864714,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Cb,I/mg,5385.0,5385.002615062762,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Cb,Mass,1.434,1.434,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Cb,I/C,0.010500000339933714,0.0105,-0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Ctx,C,367941000.0,367941000.0,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Ctx,N,59013547.0,59013547.0,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Ctx,I,7248438.0,7248437.699999999,-0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Ctx,I/N,0.123,0.12282667401774713,-0.141,match
+Sarcophilus harrisii,Sarcophilus harrisii,Ctx,N/mg,12846.0,12845.787331301697,-0.002,match
+Sarcophilus harrisii,Sarcophilus harrisii,Ctx,I/mg,1578.0,1577.8053330430996,-0.012,match
+Sarcophilus harrisii,Sarcophilus harrisii,Ctx,Mass,4.594,4.594,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Ctx,I/C,0.019700000815348114,0.0197,-0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Cx,C,437941000.0,437941000.0,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Cx,N,71655547.0,71655547.0,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Cx,I,9547114.0,9547113.8,-0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Cx,I/N,0.133,0.13323621407844394,0.178,match
+Sarcophilus harrisii,Sarcophilus harrisii,Cx,N/mg,13706.0,13706.110749808722,0.001,match
+Sarcophilus harrisii,Sarcophilus harrisii,Cx,I/mg,1826.0,1826.1503060443765,0.008,match
+Sarcophilus harrisii,Sarcophilus harrisii,Cx,Mass,5.228,5.228,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Cx,I/C,0.02180000045668252,0.0218,-0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Hp,C,70000000.0,70000000.0,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Hp,N,12642000.0,12641999.999999998,-0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Hp,I,2275000.0,2275000.0,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Hp,I/N,0.18,0.1799557032115172,-0.025,match
+Sarcophilus harrisii,Sarcophilus harrisii,Hp,N/mg,19940.0,19940.063091482647,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Hp,I/mg,3588.0,3588.328075709779,0.009,match
+Sarcophilus harrisii,Sarcophilus harrisii,Hp,Mass,0.634,0.634,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,Hp,I/C,0.0325,0.0325,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,P+M,C,,90230000.0,,
+Sarcophilus harrisii,Sarcophilus harrisii,P+M,N,,6559721.0,,
+Sarcophilus harrisii,Sarcophilus harrisii,P+M,I,,1912876.0,,
+Sarcophilus harrisii,Sarcophilus harrisii,P+M,I/N,,0.29160935350756534,,
+Sarcophilus harrisii,Sarcophilus harrisii,P+M,N/mg,,5754.141228070175,,
+Sarcophilus harrisii,Sarcophilus harrisii,P+M,I/mg,,1677.961403508772,,
+Sarcophilus harrisii,Sarcophilus harrisii,P+M,Mass,,1.14,,
+Sarcophilus harrisii,Sarcophilus harrisii,P+M,I/C,,0.0212,,
+Sarcophilus harrisii,Sarcophilus harrisii,RoB,C,276752500.0,276752500.0,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,RoB,N,20966121.0,20966121.0,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,RoB,I,5590401.0,5590400.5,-0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,RoB,I/N,0.267,0.2666397136599565,-0.135,match
+Sarcophilus harrisii,Sarcophilus harrisii,RoB,N/mg,6677.0,6677.108598726115,0.002,match
+Sarcophilus harrisii,Sarcophilus harrisii,RoB,I/mg,1780.0,1780.3823248407643,0.021,match
+Sarcophilus harrisii,Sarcophilus harrisii,RoB,Mass,3.14,3.14,0.0,match
+Sarcophilus harrisii,Sarcophilus harrisii,RoB,I/C,0.020200001806668415,0.0202,-0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Br,C,6839205942.0,6839205942.0,0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Br,N,2224112553.0,2219110623.0,-0.225,match
+Sus scrofa domesticus,Sus scrofa domesticus,Br,I,598831830.0,597485084.0,-0.225,match
+Sus scrofa domesticus,Sus scrofa domesticus,Br,I/N,0.269,0.2692452903462127,0.091,match
+Sus scrofa domesticus,Sus scrofa domesticus,Br,N/mg,34654.0,34576.35747896541,-0.224,match
+Sus scrofa domesticus,Sus scrofa domesticus,Br,I/mg,9310.0,9309.521408538485,-0.005,match
+Sus scrofa domesticus,Sus scrofa domesticus,Br,Mass,64.18,64.18,0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Br,I/C,0.08755867787553165,0.08736176232547788,-0.225,match
+Sus scrofa domesticus,Sus scrofa domesticus,Cb,C,2207031250.0,2207031250.0,0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Cb,N,1858320313.0,1858320312.5000002,-0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Cb,I,85632813.0,85632812.5,-0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Cb,I/N,0.046,0.04608076009501187,0.176,match
+Sus scrofa domesticus,Sus scrofa domesticus,Cb,N/mg,228632.0,228631.92821112208,-0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Cb,I/mg,10536.0,10535.533033956694,-0.004,match
+Sus scrofa domesticus,Sus scrofa domesticus,Cb,Mass,8.128,8.128,0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Cb,I/C,0.03880000022654867,0.0388,-0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Ctx,C,3300354380.0,3330354380.0,0.909,match
+Sus scrofa domesticus,Sus scrofa domesticus,Ctx,N,289142456.0,289142456.0,0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Ctx,I,359715940.0,359715940.0,0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Ctx,I/N,1.244,1.2440785935635823,0.006,match
+Sus scrofa domesticus,Sus scrofa domesticus,Ctx,N/mg,7179.0,7179.382628991409,0.005,match
+Sus scrofa domesticus,Sus scrofa domesticus,Ctx,I/mg,8932.0,8931.716243730447,-0.003,match
+Sus scrofa domesticus,Sus scrofa domesticus,Ctx,Mass,40.274,40.274,0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Ctx,I/C,0.10899312576245221,0.10801131019576361,-0.901,match
+Sus scrofa domesticus,Sus scrofa domesticus,Cx,C,3476643442.0,3476643442.0,0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Cx,N,307082404.0,302045151.0,-1.64,minor
+Sus scrofa domesticus,Sus scrofa domesticus,Cx,I,388217638.0,381849476.0,-1.64,minor
+Sus scrofa domesticus,Sus scrofa domesticus,Cx,I/N,1.264,1.264213230160414,0.017,match
+Sus scrofa domesticus,Sus scrofa domesticus,Cx,N/mg,7276.0,7157.128832756742,-1.634,minor
+Sus scrofa domesticus,Sus scrofa domesticus,Cx,I/mg,9048.0,9048.136960333633,0.002,match
+Sus scrofa domesticus,Sus scrofa domesticus,Cx,Mass,42.202,42.202,0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Cx,I/C,0.11166449607977946,0.10983279774595879,-1.64,minor
+Sus scrofa domesticus,Sus scrofa domesticus,Hp,C,146289062.0,146289062.0,0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Hp,N,12907084.0,12902695.2684,-0.034,match
+Sus scrofa domesticus,Sus scrofa domesticus,Hp,I,22141064.0,22133535.0806,-0.034,match
+Sus scrofa domesticus,Sus scrofa domesticus,Hp,I/N,1.715,1.715419501133787,0.024,match
+Sus scrofa domesticus,Sus scrofa domesticus,Hp,N/mg,6692.0,6692.269330082988,0.004,match
+Sus scrofa domesticus,Sus scrofa domesticus,Hp,I/mg,11480.0,11480.0493156639,0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Hp,Mass,1.928,1.928,0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,Hp,I/C,0.15135146604467256,0.15130000000000002,-0.034,match
+Sus scrofa domesticus,Sus scrofa domesticus,P+M,C,,302343750.0,,
+Sus scrofa domesticus,Sus scrofa domesticus,P+M,N,,11882109.375,,
+Sus scrofa domesticus,Sus scrofa domesticus,P+M,I,,38669765.62499999,,
+Sus scrofa domesticus,Sus scrofa domesticus,P+M,I/N,,3.254452926208651,,
+Sus scrofa domesticus,Sus scrofa domesticus,P+M,N/mg,,2483.718514841137,,
+Sus scrofa domesticus,Sus scrofa domesticus,P+M,I/mg,,8083.144988503343,,
+Sus scrofa domesticus,Sus scrofa domesticus,P+M,Mass,,4.784,,
+Sus scrofa domesticus,Sus scrofa domesticus,P+M,I/C,,0.12789999999999999,,
+Sus scrofa domesticus,Sus scrofa domesticus,RoB,C,1155531250.0,1155531250.0,0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,RoB,N,58709836.0,58745159.0,0.06,match
+Sus scrofa domesticus,Sus scrofa domesticus,RoB,I,129924626.0,130002796.0,0.06,match
+Sus scrofa domesticus,Sus scrofa domesticus,RoB,I/N,2.213,2.2129958997983135,-0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,RoB,N/mg,4238.0,4241.527725631769,0.083,match
+Sus scrofa domesticus,Sus scrofa domesticus,RoB,I/mg,9386.0,9386.483465703972,0.005,match
+Sus scrofa domesticus,Sus scrofa domesticus,RoB,Mass,13.85,13.85,0.0,match
+Sus scrofa domesticus,Sus scrofa domesticus,RoB,I/C,0.11243713746382887,0.11250478600210942,0.06,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Br,C,21751929.0,21751929128.0,99900.001,HUGE
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Br,N,4911651549.0,4900969316.0,-0.217,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Br,I,1204929478.0,1202308906.0,-0.217,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Br,I/N,0.245,0.2453206352618593,0.131,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Br,N/mg,16006.0,15488.222796683016,-3.235,minor
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Br,I/mg,3800.0,3799.580655559488,-0.011,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Br,Mass,306.86,316.432,3.119,minor
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Br,I/C,55.39414357227812,0.055273667862973004,-99.9,MAJOR
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cb,C,5308593750.0,5308593750.0,0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cb,N,4042494141.0,4042494140.6250005,-0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cb,I,96616406.0,96616406.25,0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cb,I/N,0.024,0.023900196979645433,-0.416,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cb,N/mg,127218.0,127218.47119288144,0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cb,I/mg,3041.0,3040.5465209592144,-0.015,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cb,Mass,31.776,31.776,0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cb,I/C,0.01819999995290655,0.0182,0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Ctx,C,12392809376.0,12392809376.0,0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Ctx,N,726411196.0,726411196.0,0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Ctx,I,799590074.0,799590074.0,0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Ctx,I/N,1.101,1.1007402947572411,-0.024,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Ctx,N/mg,3588.0,3426.4032565423295,-4.504,minor
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Ctx,I/mg,3772.0,3771.580130563574,-0.011,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Ctx,Mass,202.434,212.004,4.727,minor
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Ctx,I/C,0.06452048520559767,0.06452048520559767,0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cx,C,13064871626.0,12927965626.0,-1.048,minor
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cx,N,762567178.0,754774477.0,-1.022,minor
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cx,I,837474821.0,828916636.0,-1.022,minor
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cx,I/N,1.098,1.0982308772478537,0.021,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cx,N/mg,3574.0,3385.549820579528,-5.273,minor
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cx,I/mg,3718.0,3718.115349421369,0.003,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cx,Mass,213.37,222.94,4.485,minor
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Cx,I/C,0.06410126673830971,0.06411810334125033,0.026,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Hp,C,535156250.0,535156250.0,0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Hp,N,28363281.0,28363281.25,0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Hp,I,29326563.0,29326562.5,-0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Hp,I/N,3.946,1.0339622641509434,-73.797,MAJOR
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Hp,N/mg,2594.0,2593.5699753108997,-0.017,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Hp,I/mg,4710.0,2681.6534839063643,-43.065,MAJOR
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Hp,Mass,10.936,10.936,0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,Hp,I/C,0.05480000093430657,0.0548,-0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,P+M,C,,759375000.0,,
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,P+M,N,,21958125.0,,
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,P+M,I,,86647502.0,,
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,P+M,I/N,,3.946033734665414,,
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,P+M,N/mg,,1193.6358447488585,,
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,P+M,I/mg,,4710.1273102848445,,
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,P+M,Mass,,18.396,,
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,P+M,I/C,,0.11410370633744855,,
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,RoB,C,3515369752.0,3515369752.0,0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,RoB,N,106590230.0,103700698.0,-2.711,minor
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,RoB,I,284487989.0,276775864.0,-2.711,minor
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,RoB,I/N,2.669,2.6689874739319497,-0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,RoB,N/mg,1727.0,1680.2887095728822,-2.705,minor
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,RoB,I/mg,4485.0,4484.669518439303,-0.007,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,RoB,Mass,61.716,61.716,0.0,match
+Tragelaphus strepsiceros,Tragelaphus strepsiceros,RoB,I/C,0.0809269035890595,0.07873307319735964,-2.711,minor
+Ursus arctos,Ursus arctos,Br,C,24698792500.0,24698792500.0,0.0,match
+Ursus arctos,Ursus arctos,Br,N,9585604080.0,9585604080.0,0.0,match
+Ursus arctos,Ursus arctos,Br,I,1131204697.0,1131204696.5,-0.0,match
+Ursus arctos,Ursus arctos,Br,I/N,0.118,0.11801078858036874,0.009,match
+Ursus arctos,Ursus arctos,Br,N/mg,30430.0,30430.102728854235,0.0,match
+Ursus arctos,Ursus arctos,Br,I/mg,3591.0,3591.080419613719,0.002,match
+Ursus arctos,Ursus arctos,Br,Mass,315.004,315.004,0.0,match
+Ursus arctos,Ursus arctos,Br,I/C,0.045800000020243904,0.0458,-0.0,match
+Ursus arctos,Ursus arctos,Cb,C,11550000000.0,11550000000.0,0.0,match
+Ursus arctos,Ursus arctos,Cb,N,9253250478.0,9253250478.0,0.0,match
+Ursus arctos,Ursus arctos,Cb,I,188265000.0,188264999.99999997,-0.0,match
+Ursus arctos,Ursus arctos,Cb,I/N,0.02,0.0203458233890467,1.729,minor
+Ursus arctos,Ursus arctos,Cb,N/mg,205145.0,205144.55899436882,-0.0,match
+Ursus arctos,Ursus arctos,Cb,I/mg,4174.0,4173.8349665233,-0.004,match
+Ursus arctos,Ursus arctos,Cb,Mass,45.106,45.106,0.0,match
+Ursus arctos,Ursus arctos,Cb,I/C,0.0163,0.0163,0.0,match
+Ursus arctos,Ursus arctos,Ctx,C,10147192500.0,10147192500.0,0.0,match
+Ursus arctos,Ursus arctos,Ctx,N,242359888.0,242359888.0,0.0,match
+Ursus arctos,Ursus arctos,Ctx,I,835113943.0,835113942.75,-0.0,match
+Ursus arctos,Ursus arctos,Ctx,I/N,3.446,3.4457597321137565,-0.007,match
+Ursus arctos,Ursus arctos,Ctx,N/mg,1112.0,1112.405966860972,0.037,match
+Ursus arctos,Ursus arctos,Ctx,I/mg,3833.0,3833.0836863726076,0.002,match
+Ursus arctos,Ursus arctos,Ctx,Mass,217.87,217.87,0.0,match
+Ursus arctos,Ursus arctos,Ctx,I/C,0.08230000002463736,0.0823,-0.0,match
+Ursus arctos,Ursus arctos,Cx,C,10404967500.0,10404967500.0,0.0,match
+Ursus arctos,Ursus arctos,Cx,N,250969270.0,250969269.6,-0.0,match
+Ursus arctos,Ursus arctos,Cx,I,843842866.0,843842864.2499999,-0.0,match
+Ursus arctos,Ursus arctos,Cx,I/N,3.362,3.3623354189735424,0.01,match
+Ursus arctos,Ursus arctos,Cx,N/mg,1130.0,1130.4922054054055,0.044,match
+Ursus arctos,Ursus arctos,Cx,I/mg,3801.0,3801.0939831081078,0.002,match
+Ursus arctos,Ursus arctos,Cx,Mass,222.0,222.0,0.0,match
+Ursus arctos,Ursus arctos,Cx,I/C,0.0811000001681889,0.08109999999999999,-0.0,match
+Ursus arctos,Ursus arctos,Hp,C,257775000.0,257775000.0,0.0,match
+Ursus arctos,Ursus arctos,Hp,N,8609382.0,8609382.0,0.0,match
+Ursus arctos,Ursus arctos,Hp,I,8815905.0,8815905.0,0.0,match
+Ursus arctos,Ursus arctos,Hp,I/N,1.024,1.0239881329461278,-0.001,match
+Ursus arctos,Ursus arctos,Hp,N/mg,2085.0,2084.5961259079904,-0.019,match
+Ursus arctos,Ursus arctos,Hp,I/mg,2135.0,2134.601694915254,-0.019,match
+Ursus arctos,Ursus arctos,Hp,Mass,4.13,4.13,0.0,match
+Ursus arctos,Ursus arctos,Hp,I/C,0.0342,0.0342,0.0,match
+Ursus arctos,Ursus arctos,P+M,C,,525700000.0,,
+Ursus arctos,Ursus arctos,P+M,N,,13704790.0,,
+Ursus arctos,Ursus arctos,P+M,I,,22184539.999999996,,
+Ursus arctos,Ursus arctos,P+M,I/N,,1.6187435196015405,,
+Ursus arctos,Ursus arctos,P+M,N/mg,,1197.9711538461538,,
+Ursus arctos,Ursus arctos,P+M,I/mg,,1939.2080419580416,,
+Ursus arctos,Ursus arctos,P+M,Mass,,11.44,,
+Ursus arctos,Ursus arctos,P+M,I/C,,0.042199999999999994,,
+Ursus arctos,Ursus arctos,RoB,C,2743825000.0,2743825000.0,0.0,match
+Ursus arctos,Ursus arctos,RoB,N,81384332.0,81384332.0,0.0,match
+Ursus arctos,Ursus arctos,RoB,I,98777700.0,98777700.00000001,0.0,match
+Ursus arctos,Ursus arctos,RoB,I/N,1.214,1.2137188765031581,-0.023,match
+Ursus arctos,Ursus arctos,RoB,N/mg,1699.0,1699.1175414422314,0.007,match
+Ursus arctos,Ursus arctos,RoB,I/mg,2062.0,2062.251033446073,0.012,match
+Ursus arctos,Ursus arctos,RoB,Mass,47.898,47.898,0.0,match
+Ursus arctos,Ursus arctos,RoB,I/C,0.036,0.036000000000000004,0.0,match
+Wallabia bicolor,Wallabia bicolor,Br,C,3455754750.0,3455754750.0,0.0,match
+Wallabia bicolor,Wallabia bicolor,Br,N,1435919989.0,1435919989.0,0.0,match
+Wallabia bicolor,Wallabia bicolor,Br,I,175897917.0,175897916.775,-0.0,match
+Wallabia bicolor,Wallabia bicolor,Br,I/N,0.122,0.12249841086027252,0.409,match
+Wallabia bicolor,Wallabia bicolor,Br,N/mg,47845.0,47844.86168865787,-0.0,match
+Wallabia bicolor,Wallabia bicolor,Br,I/mg,5861.0,5860.9195246901245,-0.001,match
+Wallabia bicolor,Wallabia bicolor,Br,Mass,30.012,30.012,0.0,match
+Wallabia bicolor,Wallabia bicolor,Br,I/C,0.05090000006510879,0.0509,-0.0,match
+Wallabia bicolor,Wallabia bicolor,Cb,C,1528750000.0,1528750000.0,0.0,match
+Wallabia bicolor,Wallabia bicolor,Cb,N,1195941125.0,1195941125.0,0.0,match
+Wallabia bicolor,Wallabia bicolor,Cb,I,26141625.0,26141625.0,0.0,match
+Wallabia bicolor,Wallabia bicolor,Cb,I/N,0.022,0.02185862201201585,-0.643,match
+Wallabia bicolor,Wallabia bicolor,Cb,N/mg,270575.0,270574.91515837103,-0.0,match
+Wallabia bicolor,Wallabia bicolor,Cb,I/mg,5914.0,5914.39479638009,0.007,match
+Wallabia bicolor,Wallabia bicolor,Cb,Mass,4.42,4.42,0.0,match
+Wallabia bicolor,Wallabia bicolor,Cb,I/C,0.0171,0.0171,0.0,match
+Wallabia bicolor,Wallabia bicolor,Ctx,C,1115954750.0,1115954750.0,0.0,match
+Wallabia bicolor,Wallabia bicolor,Ctx,N,195142154.0,195142154.0,0.0,match
+Wallabia bicolor,Wallabia bicolor,Ctx,I,88272021.0,88272020.72500001,-0.0,match
+Wallabia bicolor,Wallabia bicolor,Ctx,I/N,0.452,0.452347270518496,0.077,match
+Wallabia bicolor,Wallabia bicolor,Ctx,N/mg,14332.0,14331.826821386603,-0.001,match
+Wallabia bicolor,Wallabia bicolor,Ctx,I/mg,6483.0,6482.962744198003,-0.001,match
+Wallabia bicolor,Wallabia bicolor,Ctx,Mass,13.616,13.616,0.0,match
+Wallabia bicolor,Wallabia bicolor,Ctx,I/C,0.07910000024642576,0.0791,-0.0,match
+Wallabia bicolor,Wallabia bicolor,Cx,C,1239254750.0,1239254750.0,0.0,match
+Wallabia bicolor,Wallabia bicolor,Cx,N,208113314.0,208113314.0,0.0,match
+Wallabia bicolor,Wallabia bicolor,Cx,I,95174765.0,95174764.8,-0.0,match
+Wallabia bicolor,Wallabia bicolor,Cx,I/N,0.457,0.4573218453481549,0.07,match
+Wallabia bicolor,Wallabia bicolor,Cx,N/mg,13708.0,13707.898432354104,-0.001,match
+Wallabia bicolor,Wallabia bicolor,Cx,I/mg,6269.0,6268.921406929258,-0.001,match
+Wallabia bicolor,Wallabia bicolor,Cx,Mass,15.182,15.182,0.0,match
+Wallabia bicolor,Wallabia bicolor,Cx,I/C,0.07680000016138731,0.0768,-0.0,match
+Wallabia bicolor,Wallabia bicolor,Hp,C,123300000.0,123300000.0,0.0,match
+Wallabia bicolor,Wallabia bicolor,Hp,N,12971160.0,12971160.0,0.0,match
+Wallabia bicolor,Wallabia bicolor,Hp,I,6892470.0,6892470.0,0.0,match
+Wallabia bicolor,Wallabia bicolor,Hp,I/N,0.531,0.5313688212927756,0.069,match
+Wallabia bicolor,Wallabia bicolor,Hp,N/mg,8283.0,8282.988505747126,-0.0,match
+Wallabia bicolor,Wallabia bicolor,Hp,I/mg,4401.0,4401.3218390804595,0.007,match
+Wallabia bicolor,Wallabia bicolor,Hp,Mass,1.566,1.566,0.0,match
+Wallabia bicolor,Wallabia bicolor,Hp,I/C,0.0559,0.0559,0.0,match
+Wallabia bicolor,Wallabia bicolor,P+M,C,,229500000.0,,
+Wallabia bicolor,Wallabia bicolor,P+M,N,,10511100.0,,
+Wallabia bicolor,Wallabia bicolor,P+M,I,,20241900.0,,
+Wallabia bicolor,Wallabia bicolor,P+M,I/N,,1.925764192139738,,
+Wallabia bicolor,Wallabia bicolor,P+M,N/mg,,2618.6098654708517,,
+Wallabia bicolor,Wallabia bicolor,P+M,I/mg,,5042.825112107623,,
+Wallabia bicolor,Wallabia bicolor,P+M,Mass,,4.014,,
+Wallabia bicolor,Wallabia bicolor,P+M,I/C,,0.0882,,
+Wallabia bicolor,Wallabia bicolor,RoB,C,687750000.0,687750000.0,0.0,match
+Wallabia bicolor,Wallabia bicolor,RoB,N,31865550.0,31865550.0,0.0,match
+Wallabia bicolor,Wallabia bicolor,RoB,I,54676125.0,54676125.0,0.0,match
+Wallabia bicolor,Wallabia bicolor,RoB,I/N,1.716,1.715838107297693,-0.009,match
+Wallabia bicolor,Wallabia bicolor,RoB,N/mg,3061.0,3061.0518731988473,0.002,match
+Wallabia bicolor,Wallabia bicolor,RoB,I/mg,5252.0,5252.269452449567,0.005,match
+Wallabia bicolor,Wallabia bicolor,RoB,Mass,10.41,10.41,0.0,match
+Wallabia bicolor,Wallabia bicolor,RoB,I/C,0.0795,0.0795,0.0,match

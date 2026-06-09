@@ -1,0 +1,7 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,species binomial,,Species,,primary,Apes & humans,Semendeferi_etal_1998,reconcile to _keys/Stephan/species_key.csv,
+brain_volume_mm3,total brain volume,WholeBrain,Volume.mm3,,primary,Apes & humans,Semendeferi_etal_1998,one individual/species; matches Stephan/Zilles,
+area13_volume_mm3,cytoarchitectonic area 13 (posterior orbitofrontal) volume,Area13,Volume.mm3,,primary,Apes & humans,Semendeferi_etal_1998,right hemisphere,
+area13_hemisphere,hemisphere measured,,Method,,primary,Apes & humans,Semendeferi_etal_1998,,
+n,number of individuals,,n,,primary,Apes & humans,Semendeferi_etal_1998,,
+source,source identifier,,Source,,primary,Apes & humans,Semendeferi_etal_1998,,

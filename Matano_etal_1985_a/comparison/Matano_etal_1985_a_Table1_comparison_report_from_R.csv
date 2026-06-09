@@ -1,0 +1,59 @@
+species,status,nmis,TCN_mm3_match,MCN_mm3_match,ICN_mm3_match,LCN_mm3_match
+Suncus murinus,matched,0,True,True,True,True
+Tenrec ecaudatus,matched,0,True,True,True,True
+Setifer setosus,matched,0,True,True,True,True
+Hemicentetes semispin.,matched,0,True,True,True,True
+Echinops telfairi,matched,0,True,True,True,True
+Erinaceus europaeus,matched,0,True,True,True,True
+Sorex araneus,matched,0,True,True,True,True
+Sorex minutus,matched,0,True,True,True,True
+Crocidura flavescens,matched,0,True,True,True,True
+Crocidura r. russula,matched,0,True,True,True,True
+Tupaia glis,matched,0,True,True,True,True
+Urogale everetti,matched,0,True,True,True,True
+Microcebus murinus,matched,0,True,True,True,True
+Cheirogaleus major,matched,0,True,True,True,True
+Cheirogaleus medius,matched,0,True,True,True,True
+Lemur fulvus,matched,0,True,True,True,True
+Varecia variegata,matched,0,True,True,True,True
+Lepilemur ruficaudatus,matched,0,True,True,True,True
+Avahi l. laniger,matched,0,True,True,True,True
+Avahi l. occidentalis,matched,0,True,True,True,True
+Propithecus verreauxi,matched,0,True,True,True,True
+lndri indri,matched,0,True,True,True,True
+Daubentonia madagasc.,matched,0,True,True,True,True
+Loris tardigradus,matched,0,True,True,True,True
+Nycticebus coucang,matched,0,True,True,True,True
+Perodicticus potto,matched,0,True,True,True,True
+Galago senegalensis,matched,0,True,True,True,True
+Otolemur crassicaudatus,matched,0,True,True,True,True
+Galagoides demidoff,matched,0,True,True,True,True
+Tarsius spp.,matched,0,True,True,True,True
+Callithrix jacchus,matched,0,True,True,True,True
+Cebuella pygmaea,matched,0,True,True,True,True
+Saguinus midas,matched,0,True,True,True,True
+Saguinus oedipus,matched,0,True,True,True,True
+Cebus albifrons,matched,0,True,True,True,True
+Aotus trivirgatus,matched,0,True,True,True,True
+Callicebus moloch,matched,0,True,True,True,True
+Saimiri sciureus,matched,0,True,True,True,True
+Pithecia monachus,matched,0,True,True,True,True
+Alouatta seniculus,matched,0,True,True,True,True
+Ateles geoffroyi,matched,0,True,True,True,True
+Lagothrix lagothricha,matched,0,True,True,True,True
+Macaca mulatta,matched,0,True,True,True,True
+Cercocebus albigena,matched,0,True,True,True,True
+Papio anubis,matched,0,True,True,True,True
+Cercopithecus ascanius,matched,0,True,True,True,True
+Cercopithecus mitis,matched,0,True,True,True,True
+Miopithecus talapoin,matched,0,True,True,True,True
+Erythrocebus patas,matched,0,True,True,True,True
+Colobus badius,matched,0,True,True,True,True
+Pygathrix nemaeus,matched,0,True,True,True,True
+Nasalis larvatus,matched,0,True,True,True,True
+Hylobates lar,matched,0,True,True,True,True
+Pan troglodytes,matched,0,True,True,True,True
+Gorilla gorilla,matched,0,True,True,True,True
+Homo sapiens,matched,0,True,True,True,True
+Rattus norvegicus (csv-only: no paper species name),csv_only_not_in_snapshot,0,,,,
+Spalax ehrenbergi (csv-only: no paper species name),csv_only_not_in_snapshot,0,,,,

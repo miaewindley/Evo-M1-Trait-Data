@@ -209,6 +209,48 @@ min(merged_df$Percentage_Difference, na.rm = TRUE)
 max(merged_df$Percentage_Difference, na.rm = TRUE)
 ```
 ```{r}
+# "Cerebellum" N (number of NEURONS)   <-- ADDED
+# This script checked Cerebellum C and I/N but never N, so the published Cb_N typo for
+# Procavia capensis was missed. This block compares published Cb_N to the unpublished neuron
+# counts and flags Procavia (published Cb_N is ~10x too high -> ~ -90%).
+unpublished <- data.frame(tabledirect_summary$`Neurons, 2H`[tabledirect_summary$Structure == c("Cerebellum")], tabledirect_summary$`Animal Latin Name`[tabledirect_summary$Structure == c("Cerebellum")])
+paper <- data.frame(DosSantos_etal_2020_Table1$Cb_N, DosSantos_etal_2020_Table1$"Species name")
+colnames(paper)=c("Cb_N", "Species")
+colnames(unpublished)=c("Cb_N_U", "Species")
+merged_df<- merge(paper,unpublished, all = T)
+## the different ones
+paper[!paper$Cb_N %in% unpublished$Cb_N_U, ]
+## Calculate percentage difference
+merged_df$Percentage_Difference <- ((merged_df$Cb_N_U - merged_df$Cb_N) / merged_df$Cb_N) * 100
+merged_df
+min(merged_df$Percentage_Difference, na.rm = TRUE)
+max(merged_df$Percentage_Difference, na.rm = TRUE)
+## FLAG large differences -> Procavia capensis shows up here
+subset(merged_df, abs(Percentage_Difference) > 10, select = c("Species", "Cb_N", "Cb_N_U", "Percentage_Difference"))
+```
+
+```{r}
+# SANITY CHECK (ADDED): in the PUBLISHED table, neurons (N) and microglia (I) must never exceed
+# total cells (C) of the same structure -- if they do, the value is impossible (a transcription typo).
+# This is the robust, general catch: it finds Procavia capensis cerebellum (Cb_N > Cb_C) and
+# Tragelaphus strepsiceros whole brain (Br_N > Br_C, Br_I > Br_C), regardless of structure mapping.
+structures <- c("Br","Cb","Ctx","Cx","Hp","P+M","RoB")
+impossible <- do.call(rbind, lapply(structures, function(st){
+  C <- DosSantos_etal_2020_Table1[[paste0(st,"_C")]]
+  N <- DosSantos_etal_2020_Table1[[paste0(st,"_N")]]
+  I <- DosSantos_etal_2020_Table1[[paste0(st,"_I")]]
+  sp <- DosSantos_etal_2020_Table1$"Species name"
+  out <- data.frame()
+  if (!is.null(N)) { bad <- which(!is.na(N) & !is.na(C) & N > C)
+    if (length(bad)) out <- rbind(out, data.frame(Species=sp[bad], Structure=st, problem="N > C (impossible)", value=N[bad], total_cells_C=C[bad])) }
+  if (!is.null(I)) { bad <- which(!is.na(I) & !is.na(C) & I > C)
+    if (length(bad)) out <- rbind(out, data.frame(Species=sp[bad], Structure=st, problem="I > C (impossible)", value=I[bad], total_cells_C=C[bad])) }
+  out
+}))
+print(impossible)
+```
+
+```{r}
 # 6. "Hippocampus"
 # "Hippocampus" C (number of cells)
 unpublished <- data.frame(tabledirect_summary$`Number cells 2H`[tabledirect_summary$Structure == c("Hippocampus")], tabledirect_summary$`Animal Latin Name`[tabledirect_summary$Structure == c("Hippocampus")])

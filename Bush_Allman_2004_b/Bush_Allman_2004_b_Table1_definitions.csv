@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,binomial harmonized to key,,Species,,primary,Primates,Bush_Allman_2004_b,via _keys/Allman/species_key.csv,
+species_as_published,as printed,,Species,,primary,,Bush_Allman_2004_b,,
+V1_grey_cm3,V1 (primary visual) grey matter volume,V1,Volume.cm3,,primary,,Bush_Allman_2004_b,differs from de Sousa V1,
+LGN_cm3,lateral geniculate nucleus volume,LGN,Volume.cm3,,primary,,Bush_Allman_2004_b,,
+V1_surface_cm2,V1 surface area,V1,Area.cm2,,primary,,Bush_Allman_2004_b,,
+horizontal_meridian_mm,V1 horizontal meridian length,V1,Length.mm,,primary,,Bush_Allman_2004_b,,
+whole_brain_cm3,whole brain volume,WholeBrain,Volume.cm3,,primary,,Bush_Allman_2004_b,,
+neocortex_white_cm3,neocortex white matter volume,NeocortexWhite,Volume.cm3,,primary,,Bush_Allman_2004_b,,
+neocortex_grey_cm3,neocortex grey matter volume,NeocortexGrey,Volume.cm3,,primary,,Bush_Allman_2004_b,,
+source,source id,,Source,,primary,,Bush_Allman_2004_b,,

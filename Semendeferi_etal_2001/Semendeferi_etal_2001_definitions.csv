@@ -1,0 +1,8 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,species binomial,,Species,,primary,Apes & humans,Semendeferi_etal_2001,reconcile to _keys/Stephan/species_key.csv,
+brain_volume_mm3,total brain volume,WholeBrain,Volume.mm3,,primary,Apes & humans,Semendeferi_etal_2001,one individual/species; matches 1998 + Stephan/Zilles,
+area10_volume_mm3,cytoarchitectonic area 10 (frontal pole) volume,Area10,Volume.mm3,,primary,Apes & humans,Semendeferi_etal_2001,right hemisphere,
+area10_hemisphere,hemisphere measured,,Method,,primary,Apes & humans,Semendeferi_etal_2001,,
+n,number of individuals,,n,,primary,Apes & humans,Semendeferi_etal_2001,,
+source,source identifier,,Source,,primary,Apes & humans,Semendeferi_etal_2001,,
+note,specimen/region caveat,,Note,,primary,Apes & humans,Semendeferi_etal_2001,gorilla area 10 = frontal pole cortex,

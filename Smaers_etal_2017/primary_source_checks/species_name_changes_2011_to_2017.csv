@@ -1,0 +1,20 @@
+name_2011,name_2017,change_type,note
+Alouatta seniculus,Alouatta seniculus,unchanged,
+Ateles geoffroyi,Ateles geoffroyi,unchanged,
+Cebus albifrons,Cebus albifrons,unchanged,
+Cercocebus albigena,Lophocebus albigena,genus revision,grey-cheeked mangabey reassigned Cercocebus -> Lophocebus; same specimen (values identical)
+Cercopithecus ascianus,Cercopithecus ascanius,spelling correction,2011 'ascianus' is a misspelling of ascanius
+Cercopithecus mitis,Cercopithecus mitis,unchanged,
+Erythrocebus patas,Erythrocebus patas,unchanged,
+Gorilla gorilla,Gorilla gorilla gorilla,subspecies added,trinomial (western lowland gorilla); same specimen
+Homo sapiens,Homo sapiens,unchanged,
+Hylobates lar,Hylobates lar,unchanged,
+Lagothrix lagotricha,Lagothrix lagotricha,unchanged,
+Miopithecus talapoin,Miopithecus talapoin,unchanged,
+Nasalis larvatus,Nasalis larvatus,unchanged,
+Pan paniscus,Pan paniscus,unchanged,
+Pan troglodytes,Pan troglodytes troglodytes,subspecies added,trinomial (central chimpanzee); same specimen
+Papio anubis,Papio anubis,unchanged,
+Pithecia monachus,Pithecia pithecia,species epithet change,same specimen relabeled (values identical); monachus -> pithecia
+Pongo pygmaeus,Pongo pygmaeus,unchanged,
+Procolobus badius,Piliocolobus badius,genus revision,red colobus reassigned Procolobus -> Piliocolobus; same specimen

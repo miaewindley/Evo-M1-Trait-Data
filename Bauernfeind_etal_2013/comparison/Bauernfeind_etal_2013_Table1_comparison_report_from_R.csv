@@ -1,0 +1,30 @@
+csv_label,paper_species,status,n_indiv,n_measure_mismatch,granular_mm3_snap,granular_mm3_csv,granular_mm3_match,dysgranular_mm3_snap,dysgranular_mm3_csv,dysgranular_mm3_match,agranular_mm3_snap,agranular_mm3_csv,agranular_mm3_match,FI_mm3_snap,FI_mm3_csv,FI_mm3_match,total_insula_mm3_snap,total_insula_mm3_csv,total_insula_mm3_match,brain_volume_mm3_snap,brain_volume_mm3_csv,brain_volume_mm3_match,brain_mass_mg_snap,brain_mass_mg_csv,brain_mass_mg_match
+Homo sapiens,Homo sapiens,matched_by_species,5,0,1873.8,1873.8,True,2960.2,2960.2,True,1200.6,1200.6,True,444.6,444.6,True,6479.0,6479.0,True,1357820.0,1357820.0,True,1406720.0,1406720.0,True
+Pan paniscus,Pan paniscus,matched_by_species,3,0,260.667,260.666667,True,934.333,934.333333,True,351.0,351.0,True,144.667,144.666667,True,1690.333,1690.333333,True,339766.667,339766.6667,True,352000.0,352000.0,True
+Pan troglodytes,Pan troglodytes,matched_by_species,3,0,667.333,667.333333,True,703.667,703.666667,True,164.667,164.666667,True,65.667,65.666667,True,1600.667,1600.666667,True,330790.0,330790.0,True,342700.0,342700.0,True
+Gorilla gorilla,Gorilla gorilla,matched_by_species,4,0,394.5,394.5,True,948.75,948.75,True,570.0,570.0,True,232.0,232.0,True,2145.5,2145.5,True,401785.0,401785.0,True,416250.0,416250.0,True
+Pongo pygmaeus and Pongo abelii,Pongo abelii; Pongo pygmaeus,matched_by_species,4,0,208.75,208.75,True,828.25,828.25,True,254.75,254.75,True,39.75,39.75,True,1331.5,1331.5,True,340925.0,340925.0,True,353200.0,353200.0,True
+Hylobates muelleri,Hylobates muelleri,matched_by_species,1,0,111.0,111.0,True,286.0,286.0,True,142.0,142.0,True,,,True,539.0,539.0,True,98263.0,98263.0,True,101800.0,101800.0,True
+Hylobates lar,Hylobates lar,matched_by_species,1,0,117.0,117.0,True,131.0,131.0,True,40.0,40.0,True,,,True,289.0,289.0,True,88803.0,88803.0,True,92000.0,92000.0,True
+Symphalangus syndactylus,Symphalangus syndactylus,matched_by_species,1,0,198.0,198.0,True,147.0,147.0,True,71.0,71.0,True,,,True,416.0,416.0,True,133880.0,133880.0,True,138700.0,138700.0,True
+Cercopithecus kandti,Cercopithecus kandti,matched_by_species,1,0,134.0,134.0,True,391.0,391.0,True,89.0,89.0,True,,,True,614.0,614.0,True,69112.0,69112.0,True,71600.0,71600.0,True
+Cercocebus agilis,Cercocebus agilis,matched_by_species,1,0,158.0,158.0,True,116.0,116.0,True,105.0,105.0,True,,,True,379.0,379.0,True,91988.0,91988.0,True,95300.0,95300.0,True
+Lophocebus albigena,Lophocebus albigena,matched_by_species,1,0,171.0,171.0,True,270.0,270.0,True,95.0,95.0,True,,,True,536.0,536.0,True,106660.0,106660.0,True,110500.0,110500.0,True
+Macaca maura,Macaca maura,matched_by_species,1,0,181.0,181.0,True,240.0,240.0,True,71.0,71.0,True,,,True,492.0,492.0,True,80405.0,80405.0,True,83300.0,83300.0,True
+Colobus angolensis,Colobus angolensis,matched_by_species,1,0,38.0,38.0,True,152.0,152.0,True,32.0,32.0,True,,,True,222.0,222.0,True,71815.0,71815.0,True,74400.0,74400.0,True
+Piliocolobus badius,Piliocolobus badius,matched_by_species,1,0,72.0,72.0,True,116.0,116.0,True,53.0,53.0,True,,,True,241.0,241.0,True,72394.0,72394.0,True,75000.0,75000.0,True
+Trachypithecus francoisi,Trachypithecus francoisi,matched_by_species,1,0,249.0,249.0,True,217.0,217.0,True,160.0,160.0,True,,,True,625.0,625.0,True,98552.0,98552.0,True,102100.0,102100.0,True
+Alouatta caraya,Alouatta caraya,matched_by_species,1,0,89.0,89.0,True,141.0,141.0,True,42.0,42.0,True,,,True,272.0,272.0,True,53861.0,53861.0,True,55800.0,55800.0,True
+Ateles geoffroyi,Ateles geoffroyi,matched_by_species,1,0,100.0,100.0,True,181.0,181.0,True,135.0,135.0,True,,,True,416.0,416.0,True,102700.0,102700.0,True,106400.0,106400.0,True
+Callithrix pygmaea,Callithrix pygmaea,matched_by_species,1,0,3.0,3.0,True,7.0,7.0,True,1.0,1.0,True,,,True,11.0,11.0,True,4005.8,4005.8,True,4200.0,4200.0,True
+Leontopithecus rosalia,Leontopithecus rosalia,matched_by_species,1,0,4.0,4.0,True,21.0,21.0,True,12.0,12.0,True,,,True,37.0,37.0,True,12259.0,12259.0,True,12700.0,12700.0,True
+Saguinus geoffroyi,Saguinus geoffroyi,matched_by_species,1,0,9.0,9.0,True,9.0,9.0,True,6.0,6.0,True,,,True,23.0,23.0,True,10135.0,10135.0,True,10500.0,10500.0,True
+Saguinus oedipus,Saguinus oedipus,matched_by_species,1,0,7.0,7.0,True,13.0,13.0,True,6.0,6.0,True,,,True,26.0,26.0,True,8938.2,8938.2,True,9300.0,9300.0,True
+Cebus albifrons,Cebus albifrons,matched_by_species,1,0,108.0,108.0,True,155.0,155.0,True,34.0,34.0,True,,,True,297.0,297.0,True,77027.0,77027.0,True,79800.0,79800.0,True
+Pithecia pithecia,Pithecia pithecia,matched_by_species,1,0,40.0,40.0,True,135.0,135.0,True,104.0,104.0,True,,,True,279.0,279.0,True,28958.0,28958.0,True,30000.0,30000.0,True
+Avahi laniger,Avahi laniger,matched_by_species,1,0,13.0,13.0,True,18.0,18.0,True,7.0,7.0,True,,,True,38.0,38.0,True,9256.8,9256.8,True,9600.0,9600.0,True
+Indri indri,Indri indri,matched_by_species,1,0,50.0,50.0,True,85.0,85.0,True,33.0,33.0,True,,,True,167.0,167.0,True,32481.0,32481.0,True,33700.0,33700.0,True
+Varecia variegata,Varecia variegata,matched_by_species,1,0,44.0,44.0,True,44.0,44.0,True,12.0,12.0,True,,,True,100.0,100.0,True,30405.0,30405.0,True,31500.0,31500.0,True
+Perodicticus potto,Perodicticus potto,matched_by_species,1,0,16.0,16.0,True,10.0,10.0,True,4.0,4.0,True,,,True,31.0,31.0,True,11100.0,11100.0,True,11500.0,11500.0,True
+Galagoides demidoff,Galagoides demidoff,matched_by_species,1,0,5.0,5.0,True,5.0,5.0,True,2.0,2.0,True,,,True,12.0,12.0,True,3185.3,3185.3,True,3300.0,3300.0,True
+Loris tardigradus,Loris tardigradus,matched_by_species,1,0,3.0,3.0,True,6.0,6.0,True,3.0,3.0,True,,,True,12.0,12.0,True,6612.0,6612.0,True,6900.0,6900.0,True

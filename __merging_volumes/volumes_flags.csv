@@ -1,0 +1,8 @@
+Species,Variable,flag,detail
+Crocidura flavescens,Amygdala_Vol.mm3,deviation,Stephan_etal_1987_Table1=13 vs Stephan_etal_1981_Table1=6.82
+Crocidura flavescens,Complexus_centromedialis_Vol.mm3,deviation,Stephan_etal_1987_Table1=6.4 vs Stephan_etal_1981_Table1=3.23
+Crocidura flavescens,Complexus_corticobasolateralis_Vol.mm3,deviation,Stephan_etal_1987_Table1=6.6 vs Stephan_etal_1981_Table1=3.59
+Crocidura flavescens,Nucleus_tractus_olfactorius_Vol.mm3,deviation,Stephan_etal_1987_Table1=0.43 vs Stephan_etal_1981_Table1=0.233
+Homo sapiens,Amygdala_Vol.mm3,deviation,Stephan_etal_1987_Table1=5286.6 vs Stephan_etal_1981_Table1=3015
+Homo sapiens,Complexus_centromedialis_Vol.mm3,deviation,Stephan_etal_1987_Table1=1306.4 vs Stephan_etal_1981_Table1=592
+Homo sapiens,Complexus_corticobasolateralis_Vol.mm3,deviation,Stephan_etal_1987_Table1=3980.2 vs Stephan_etal_1981_Table1=2424

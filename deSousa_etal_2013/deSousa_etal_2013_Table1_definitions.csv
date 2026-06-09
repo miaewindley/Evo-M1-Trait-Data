@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,binomial harmonized to key,,Species,,primary,Catarrhine primates,deSousa_etal_2013,via _keys,
+species_as_published,as printed,,Species,,primary,,deSousa_etal_2013,,
+leaflets,parvocellular lamination: Y=4 leaflets / N=2 layers,LGN,Lamination,,primary,,deSousa_etal_2013,,
+n_leaflets,n specimens for lamination,,n,,primary,,deSousa_etal_2013,,
+brain_weight_g,species mean brain weight,WholeBrain,Mass.g,,primary,,deSousa_etal_2013,,
+n_brain,n for brain weight,,n,,primary,,deSousa_etal_2013,,
+LGN_volume_cm3,LGN volume,LGN,Volume.cm3,,primary,,deSousa_etal_2013,,
+n_LGN,n for LGN volume,,n,,primary,,deSousa_etal_2013,,
+LGN_residual,LGN residual (from paper),LGN,residual,,secondary,,deSousa_etal_2013,derived,
+source,source id,,Source,,primary,,deSousa_etal_2013,,

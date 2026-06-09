@@ -1,0 +1,50 @@
+species,status,nmis,ventral_pons_mm3_match
+Tenrec ecaudatus,matched,0,True
+Echinops telfairi,matched,0,True
+Tupaia glis,matched,0,True
+Urogale everetti,matched,0,True
+Microcebus murinus,matched,0,True
+Cheirogaleus major,matched,0,True
+Cheirogaleus medius,matched,0,True
+Lemur fulvus,matched,0,True
+Varecia variegata,matched,0,True
+Lepilemur ruficaudatus,matched,0,True
+Avahi laniger laniger,matched,0,True
+Avahi l. occidentalis,matched,0,True
+Propithecus verreauxi,matched,0,True
+Indri indri,matched,0,True
+Daubentonia madagasc.,matched,0,True
+Loris tardigradus,matched,0,True
+Nycticebus coucang,matched,0,True
+Perodicticus potto,matched,0,True
+Galago senegalensis,matched,0,True
+Otolemur crassicaudatus,matched,0,True
+Galagoides demidoff,matched,0,True
+Tarsius spp.,matched,0,True
+Callithrix jacchus,matched,0,True
+Cebuella pygmaea,matched,0,True
+Saguinus midas,matched,0,True
+Saguinus oedipus,matched,0,True
+Cebus albifrons,matched,0,True
+Aotus trivirgatus,matched,0,True
+Callicebus moloch,matched,0,True
+Saimiri sciureus,matched,0,True
+Pithecia monachus,matched,0,True
+Alouatta seniculus,matched,0,True
+Ateles geoffroyi,matched,0,True
+Lagothrix lagothricha,matched,0,True
+Macaca mulatta,matched,0,True
+Cercocebus albigena,matched,0,True
+Papio anubis,matched,0,True
+Cercopithecus ascanius,matched,0,True
+Cercopithecus mitis,matched,0,True
+Miopithecus talapoin,matched,0,True
+Erythrocebus patas,matched,0,True
+Colobus badius,matched,0,True
+Pygathrix nemaeus,matched,0,True
+Nasalis larvatus,matched,0,True
+Hylobates lar,matched,0,True
+Pan troglodytes,matched,0,True
+Gorilla gorilla,matched,0,True
+Homo sapiens,matched,0,True
+Pongo sp. (csv-only: no paper species name),csv_only_not_in_snapshot,0,

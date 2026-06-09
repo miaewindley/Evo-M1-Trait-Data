@@ -1,0 +1,30 @@
+species,code,collection,brain mass (g),correction factor,brain vol. (cm3),left V1 vol. (cm3),left LGN vol. (cm3),neocortex vol. (cm3)
+Homo sapiensb,14686,Zilles,1437,2.01,1387.1,9.4,0.2,1116.8
+Homo sapiensb,1696,Zilles,1757,2.44,1695.9,10.4,0.3,NA
+Homo sapiensb,18992,Zilles,1270,2.19,1225.9,7.5,0.2,NA
+Homo sapiensb,20784,Zilles,1349,2.14,1302.1,8.5,0.2,NA
+Homo sapiensb,28193,Zilles,1360,2.12,1312.7,9.2,0.2,NA
+Homo sapiensb,295,Zilles,1046,1.66,1009.7,5.3,0.1,NA
+Homo sapiensb,SN382/81,Zilles,1142,2.05,1102.3,6.0,0.1,865.2
+Homo sapiensb,54491,Zilles,1350,1.92,1303.1,7.6,0.2,NA
+Homo sapiensb,5694,Zilles,1216,1.81,1173.7,5.4,0.1,NA
+Homo sapiensb,6895,Zilles,1110,1.46,1071.4,7.0,0.2,NA
+Pan troglodytes,1548,Zilles,NA,2.05c,265.0,2.8,0.1,198.3
+Pan troglodytes,Bathsheba 4/97,Zilles,359.5,2.00,347.0,4.7,0.2,262.8
+Pan troglodytes,Schimp 1,Zilles,440,1.99,424.7,4.8,0.2,297.4
+Pan troglodytes,YN89–278,Zilles,420,2.24,405.4,5.2,0.2,300.1
+Pan troglodytes,3.1.1.0.1,Yakovlev-Haleem,NA,2.05c,261.1,4.0,0.1,NA
+Pan troglodytes,3.1.1.0.3,Yakovlev-Haleem,NA,2.05c,276.8,3.8,0.1,NA
+Pan troglodytes,56_49,Welker,NA,2.05c,257.7,3.7,NA,NA
+Pan paniscus,YN86–137,Zilles,392,2.60,378.4,7.3,0.2,279.0
+Pan paniscus,Zahlia 1/97,Zilles,324,1.63,312.7,5.7,0.1,214.4
+Pan paniscus,MCZ-2007-52,GWU,337,2.74,325.3,4.4,0.1,NA
+Gorilla gorilla,YN82–140,Zilles,376,2.04,362.9,4.0,0.2,254.3
+Gorilla gorilla,A375,Stephan,450,1.87,434.4,5.1,0.2,313.1
+Pongo pygmaeus,Harry 2/97,Zilles,440,2.28,424.7,4.2,0.1,298.9
+Pongo pygmaeus,YN85–38,Zilles,369,2.08,356.2,3.5,0.1,268.5
+Pongo pygmaeus,Briggs 5/97,Zilles,345,2.15,333.0,4.7,0.2,240.3
+Hylobates lar,YN81–146,Zilles,92,2.09,88.8,1.8,0.1,59.6
+Hylobates lar,Disco 3/97,Zilles,120,2.16,115.8,2.3,0.1,77.0
+Symphalagus syndactylus,880804,GWU,138.7,2.91,133.9,2.7,NA,NA
+Macaca fascicularis,ma22,Zilles,57.6,1.90,55.6,1.4,0.0,NA

@@ -38,7 +38,7 @@ parse_value <- function(x) parse_number(as.character(x), na = c("", "-", "NA", "
 norm_label  <- function(x) str_squish(tolower(str_remove_all(str_remove_all(x, "[¹²³⁴⁵⁶⁷⁸⁹⁰]"), "\\.")))
 
 # --- snapshot side: read by position (multi-row journal header), keep species rows ---
-pos <- c("group_raw","family_raw","species_disp","n_raw","volume","SEM_pct","size_index",
+pos <- c("species_disp","n_raw","volume","SEM_pct","size_index",
   "permille_net_brain","permille_MOB","AOB_layer_1_2","AOB_layer_3_5","AOB_layer_6",
   "pct_AOB_1_2","pct_AOB_3_5","pct_AOB_6","size_index_1_2","size_index_3_5","size_index_6")
 raw <- read_excel(snapshot_file, sheet = snapshot_sheet, col_names = FALSE, col_types = "text")

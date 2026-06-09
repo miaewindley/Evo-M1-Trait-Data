@@ -1,0 +1,13 @@
+heiss_structure_DeCasien,study3_column,study3_N,DeCasien_N_species,additional_species,note
+V1 (GM),ASG_Sousa (V1),45,51,6,more species available
+LGN,LGN_Sousa,49,48,0,
+Amygdala,Amygdala,18,25,7,more species available
+Pallidum,Pallidum,27,25,0,
+Subthalamic Nucleus,Nucleus_subthalamicus,26,25,0,
+Striatum,Striatum,46,49,3,more species available
+Neocortex (GM),NeoG_Frahm,24,31,7,more species available
+Cerebellum,Cerebellum,46,52,6,more species available
+Hippocampus,Hippocampus,46,48,2,more species available
+Mesencephalon,Mesencephalon,46,45,0,
+Insula (GM),Total_insula_volume_L,30,30,0,
+Thalamus,(add: Heiss medial thalamus),0,27,27,new Heiss-matching structure

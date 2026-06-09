@@ -1,0 +1,11 @@
+status,species_key,species_snapshot,species_csv,primary_visual_surface_snap,primary_visual_surface_csv,primary_visual_surface_match,prefrontal_surface_snap,prefrontal_surface_csv,prefrontal_surface_match,other_association_surface_snap,other_association_surface_csv,other_association_surface_match,frontal_motor_surface_snap,frontal_motor_surface_csv,frontal_motor_surface_match,n_measure_mismatch
+matched_by_species,callithrix jacchus,Callithrix jacchus,Callithrix_jacchus,341.0,341.0,True,148.0,148.0,True,993.0,993.0,True,167.0,167.0,True,0
+matched_by_species,cebus apella,Cebus apella,Cebus_apella,1786.0,1786.0,True,1260.0,1260.0,True,8814.0,8814.0,True,1822.0,1822.0,True,0
+matched_by_species,homo sapiens,Homo sapiens,Homo_sapiens,3495.0,3495.0,True,30234.0,30234.0,True,68355.0,68355.0,True,6117.0,6117.0,True,0
+matched_by_species,hylobates lar,Hylobates lar,Hylobates_lar,1899.0,1899.0,True,1839.0,1839.0,True,10912.0,10912.0,True,1651.0,1651.0,True,0
+matched_by_species,macaca mulatta,Macaca mulatta,Macaca_mulatta,1866.0,1866.0,True,1733.0,1733.0,True,9892.0,9892.0,True,1817.0,1817.0,True,0
+matched_by_species,mandrillus sphinx,Mandrillus sphinx,Mandrillus_sphinx,3537.0,3537.0,True,2168.0,2168.0,True,23422.0,23422.0,True,2194.0,2194.0,True,0
+matched_by_species,pan troglodytes,Pan troglodytes troglodytes,Pan_troglodytes_troglodytes,3212.0,3212.0,True,6719.0,6719.0,True,24252.0,24252.0,True,5389.0,5389.0,True,0
+matched_by_species,papio cynocephalus,Papio cynocephalus,Papio_cynocephalus,2559.0,2559.0,True,2111.0,2111.0,True,13506.0,13506.0,True,2200.0,2200.0,True,0
+matched_by_species,papio hamadryas,Papio hamadryas,Papio_hamadryas,2130.0,2130.0,True,1967.0,1967.0,True,13599.0,13599.0,True,2898.0,2898.0,True,0
+matched_by_species,saimiri sciureus,Saimiri sciureus,Saimiri_sciureus,744.0,744.0,True,,,True,,,True,,,True,0

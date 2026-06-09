@@ -1,0 +1,8 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,species binomial as printed in Table S1 (spaces -> underscores; trinomials kept),,Species,,both,Primates,Smaers_etal_2017_TableS1_part2_surfacearea,reconcile to _keys/Stephan/species_key.csv at the compilation step,Smaers et al. 2017 Curr Biol Table S1 'Brodmann data' block
+primary_visual_surface,primary visual cortex surface area,PrimaryVisualCortex,surface area,,both,Primates,Smaers_etal_2017_TableS1_part2_surfacearea,mm2; from Brodmann 1909 [S3]; cytoarchitectonic granular/agranular criteria,compiled in Smaers 2017 Table S1 (Brodmann data)
+prefrontal_surface,prefrontal cortex surface area,PrefrontalCortex,surface area,,both,Primates,Smaers_etal_2017_TableS1_part2_surfacearea,mm2; Brodmann 1909 [S3]; blank for Saimiri sciureus,compiled in Smaers 2017 Table S1 (Brodmann data)
+other_association_surface,other cortical association areas surface area,AssociationCortex,surface area,,both,Primates,Smaers_etal_2017_TableS1_part2_surfacearea,mm2; Brodmann 1909 [S3]; blank for Saimiri sciureus,compiled in Smaers 2017 Table S1 (Brodmann data)
+frontal_motor_surface,frontal motor areas surface area,FrontalMotor,surface area,,both,Primates,Smaers_etal_2017_TableS1_part2_surfacearea,mm2; Brodmann 1909 [S3]; blank for Saimiri sciureus,compiled in Smaers 2017 Table S1 (Brodmann data)
+source,source identifier,,Source,,both,Primates,Smaers_etal_2017_TableS1_part2_surfacearea,Brodmann 1909 [S3] as reproduced in Smaers 2017 Table S1,
+Note:coverage,"only 9 of 10 species carry the full 4-region set; Saimiri sciureus has primary visual only (the others were not measured by Brodmann).",,,method,,,Smaers_etal_2017_TableS1_part2_surfacearea,as printed,

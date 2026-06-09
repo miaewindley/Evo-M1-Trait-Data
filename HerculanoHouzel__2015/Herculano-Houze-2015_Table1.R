@@ -18,13 +18,12 @@
 ## -----------------------------------------------------------------------------
 ## The snapshot is the FROZEN, FAITHFUL copy of the table AS PUBLISHED. It keeps
 ## the reference citations [n], the footnote markers (*, a, b, c), the units,
-## the scientific notation and the clade header rows. It is written BEFORE any
-## cleaning, and every step below operates on it -- so the clean data is always
-## traceable back to the source.
-##   The committed *_snapshot.csv is AUTHORITATIVE. The scrape block only
-##   regenerates it if it is missing, so a re-run never clobbers the verified
-##   hardcopy. (This satisfies the pipeline rule: "save a reference hardcopy
-##   file even if it can be accessed through URL.")
+## the scientific notation and the clade header rows. It is scraped and SAVED
+## BEFORE any cleaning, on every run, and every step below operates on it -- so
+## the clean data is always traceable back to the source. Re-running re-fetches
+## the PMC page and rewrites the snapshot; because the save happens before any
+## bracket/footnote removal, the rewritten snapshot stays faithful (references
+## and footnote markers intact).
 ## =============================================================================
 
 
@@ -40,23 +39,21 @@ snapshot_csv  <- file.path(paper_dir, paste0(table_name, "_snapshot.csv"))
 final_csv     <- file.path(paper_dir, paste0(table_name, ".csv"))
 
 
-## 1. SOURCE  -->  SNAPSHOT (faithful capture, written before any cleaning) -----
+## 1. SOURCE  -->  SNAPSHOT (scraped and saved every run, before any cleaning) --
 library(rvest)
 library(tidyverse)
 
-if (!file.exists(snapshot_csv)) {
-  page <- read_html("https://pmc.ncbi.nlm.nih.gov/articles/PMC4614783/")
-  raw  <- (page |> html_elements("table") |> html_table(fill = TRUE))[[1]]
+page <- read_html("https://pmc.ncbi.nlm.nih.gov/articles/PMC4614783/")
+raw  <- (page |> html_elements("table") |> html_table(fill = TRUE))[[1]]
 
-  # The scraped header row is split/garbled by html_table(); restore the column
-  # labels exactly as printed in the published Table 1 so the snapshot can be
-  # eyeballed against the paper.
-  colnames(raw) <- c("species", "brain mass (g or cm3)", "daily sleep (h)",
-                     "D/A (N mg−1 mm−2)", "NCX", "DNCX (N mg−1)",
-                     "ACX (mm2)", "O/N", "T", "MCX (g or cm3)")
+# The scraped header row is split/garbled by html_table(); restore the column
+# labels exactly as printed in the published Table 1 so the snapshot can be
+# eyeballed against the paper.
+colnames(raw) <- c("species", "brain mass (g or cm3)", "daily sleep (h)",
+                   "D/A (N mg−1 mm−2)", "NCX", "DNCX (N mg−1)",
+                   "ACX (mm2)", "O/N", "T", "MCX (g or cm3)")
 
-  write.csv(raw, snapshot_csv, row.names = FALSE)   # <== SNAPSHOT FROZEN HERE
-}
+write.csv(raw, snapshot_csv, row.names = FALSE)   # <== SNAPSHOT SAVED HERE (before any cleaning)
 
 
 ## 2. DATA READABLE (snapshot --> analysis-ready) ------------------------------

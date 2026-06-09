@@ -1,0 +1,18 @@
+reference,canonical_structure,measure,anatomy_code,original_column
+Bush_Allman_2003,CerebellumWhite,Volume.cm3,Cer White,cer_white_cm3
+Bush_Allman_2003,CerebellumGrey,Volume.cm3,Cer Gray,cer_gray_cm3
+Bush_Allman_2003,NeocortexWhite,Volume.cm3,Neo White,neo_white_cm3
+Bush_Allman_2003,NeocortexGrey,Volume.cm3,Neo Gray,neo_gray_cm3
+Bush_Allman_2004_b,V1,Volume.cm3,V1G,V1_grey_cm3
+Bush_Allman_2004_b,LGN,Volume.cm3,LGN,LGN_cm3
+Bush_Allman_2004_b,V1,Area.cm2,V1surf,V1_surface_cm2
+Bush_Allman_2004_b,V1,Length.mm,Hmerid,horizontal_meridian_mm
+Bush_Allman_2004_b,WholeBrain,Volume.cm3,Wb,whole_brain_cm3
+Bush_Allman_2004_b,NeocortexWhite,Volume.cm3,NeoW,neocortex_white_cm3
+Bush_Allman_2004_b,NeocortexGrey,Volume.cm3,NeoG,neocortex_grey_cm3
+Bush_Allman_2004_a,FrontalGrey,Volume.cm3,FrG,frontal_grey_cm3
+Bush_Allman_2004_a,CortexGreyRest,Volume.cm3,RoG,rest_of_cortex_grey_cm3
+Bush_Allman_2004_a,FrontalGrey,ratio,FrRat,frontal_ratio
+Bush_Allman_2004_a,WholeBrain,Volume.cm3,WhBr,whole_brain_cm3
+Bush_Allman_2004_a,NeocortexGrey,Volume.cm3,NeoG,neocortex_grey_cm3
+Bush_Allman_2004_a,NeocortexWhite,Volume.cm3,NeoW,neocortex_white_cm3

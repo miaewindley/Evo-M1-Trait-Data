@@ -1,13 +1,13 @@
-Code,Definition,Structure,Measure,Stat,Reference,Note
-species,species binomial as printed (subspecies kept where given),,Species,,MacLeod_etal_2003,reconcile to _keys/Stephan/species_key.csv
-specimen,individual specimen label as printed (footnote markers removed),,Specimen,,MacLeod_etal_2003,
-sex,sex of specimen (F/M/NA),,Sex,,MacLeod_etal_2003,
-sample,collection the specimen came from,,Sample,,MacLeod_etal_2003,Yerkes (Table 1) or Hirnforschung (Table 2)
-brain_volume_cm3,whole brain volume,WholeBrain,Volume.cm3,,MacLeod_etal_2003,
-cerebellum_volume_cm3,whole cerebellum volume,Cerebellum,Volume.cm3,,MacLeod_etal_2003,
-vermis_volume_cm3,cerebellar vermis volume,CerebellarVermis,Volume.cm3,,MacLeod_etal_2003,
-hemisphere_volume_cm3,cerebellar (lateral) hemisphere volume,CerebellarHemisphere,Volume.cm3,,MacLeod_etal_2003,sum of both hemispheres
-stephan_collection,TRUE if specimen is from the Stephan Collection (printed marker †),,Provenance,,MacLeod_etal_2003,same physical brains as Stephan/Frahm
-section_plane,histological sectioning plane,,Method,,MacLeod_etal_2003,coronal (default) / horizontal (*) / sagittal (§) / mixed
-brainweight_known,FALSE if post-mortem brain weight not known (printed marker ‡),,Method,,MacLeod_etal_2003,
-source,source identifier,,Source,,MacLeod_etal_2003,
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,species binomial as printed (subspecies kept where given),,Species,,primary,Apes (Hominoidea),MacLeod_etal_2003,reconcile to _keys/Stephan/species_key.csv,
+specimen,individual specimen label as printed (footnote markers removed),,Specimen,,primary,Apes (Hominoidea),MacLeod_etal_2003,,
+sex,sex of specimen (F/M/NA),,Sex,,primary,Apes (Hominoidea),MacLeod_etal_2003,,
+sample,collection the specimen came from,,Sample,,primary,Apes (Hominoidea),MacLeod_etal_2003,Yerkes (Table 1) or Hirnforschung (Table 2),
+brain_volume_cm3,whole brain volume,WholeBrain,Volume.cm3,,primary,Apes (Hominoidea),MacLeod_etal_2003,,
+cerebellum_volume_cm3,whole cerebellum volume,Cerebellum,Volume.cm3,,primary,Apes (Hominoidea),MacLeod_etal_2003,,
+vermis_volume_cm3,cerebellar vermis volume,CerebellarVermis,Volume.cm3,,primary,Apes (Hominoidea),MacLeod_etal_2003,,
+hemisphere_volume_cm3,cerebellar (lateral) hemisphere volume,CerebellarHemisphere,Volume.cm3,,primary,Apes (Hominoidea),MacLeod_etal_2003,sum of both hemispheres,
+stephan_collection,TRUE if specimen is from the Stephan Collection (printed marker †),,Provenance,,primary,Apes (Hominoidea),MacLeod_etal_2003,same physical brains as Stephan/Frahm,
+section_plane,histological sectioning plane,,Method,,primary,Apes (Hominoidea),MacLeod_etal_2003,coronal (default) / horizontal (*) / sagittal (§) / mixed,
+brainweight_known,FALSE if post-mortem brain weight not known (printed marker ‡),,Method,,primary,Apes (Hominoidea),MacLeod_etal_2003,,
+source,source identifier,,Source,,primary,Apes (Hominoidea),MacLeod_etal_2003,,

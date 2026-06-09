@@ -50,3 +50,16 @@ Most recent addition: `AvelinodeSouza_etal_2025_TABLE1` (*Balaenoptera acutorost
   densities (per mg) and percentages were already absolute and are unchanged. A density sanity scan
   (neurons / (mass×1000) should be ~50–3,000,000 /mg) flagged only Burish; JardimMesseder et al. 2017
   and the other datasets were within range. Re-run `standardized_term.R` then `cellcounts_compiled.R`.
+
+- **Dos Santos et al. 2020 — published Table 1 excluded; authors' unpublished data used instead.**
+  The published Table 1 (main PDF) contains transcription/typographical errors in several cell-count
+  values, some physically impossible (neurons or microglia exceeding total cells; e.g. *Tragelaphus
+  strepsiceros* whole-brain cells = 21,751,929, ~1000× too small — the unpublished value is
+  21,751,929,128). The authors supplied an updated **unpublished** spreadsheet
+  (`2020-PublishedDataMammalsMicroglia - cópia.xlsx`; received 22 Mar 2024 via O. S. Todorov from the
+  authors' team). Independent checks (`DosSantos_etal_2020/DosSantos_etal_2020_Table1_check.R`; summary
+  `DosSantos_etal_2020_comparison_summary.md`) show the unpublished data is internally consistent and
+  agrees with older publications (Herculano-Houzel et al. 2015). Therefore `item_name` uses
+  `DosSantos_etal_2020_unpublished` (commented out `DosSantos_etal_2020_Table1`). The unpublished file
+  contributes the microglia/cell ratio (`*_I.p.C`); cell **numbers** for these species come from older
+  primary sources. The published Table 1 is kept only as a reference snapshot.

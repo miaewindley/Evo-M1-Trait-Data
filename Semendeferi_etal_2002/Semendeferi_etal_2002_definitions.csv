@@ -1,0 +1,8 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,species binomial,,Species,,primary,Apes & humans,Semendeferi_etal_2002,reconcile to _keys/Stephan/species_key.csv,
+frontal_cortex_pct_of_cortex_volume,frontal cortex as percent of cerebral cortex VOLUME (present study),FrontalCortex,pct.of.cortex.volume,mean,primary,Apes & humans,Semendeferi_etal_2002,PERCENT not absolute volume,
+sd,standard deviation of present-study percent,,,SD,,,Semendeferi_etal_2002,blank where n<=2,
+brodmann1909_surface_pct,frontal cortex as percent of cortical SURFACE (Brodmann 1909),FrontalCortex,pct.of.cortex.surface,,primary,Apes & humans,Semendeferi_etal_2002,historical comparison,
+blinkov_glezer1965_surface_pct,frontal cortex as percent of cortical SURFACE (Blinkov & Glezer 1965),FrontalCortex,pct.of.cortex.surface,,primary,Apes & humans,Semendeferi_etal_2002,historical comparison,
+note,caveat,,Note,,primary,Apes & humans,Semendeferi_etal_2002,,
+source,source identifier,,Source,,primary,Apes & humans,Semendeferi_etal_2002,,

@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,species binomial,,Species,,both,Primates,Smaers_etal_2017,reconcile to _keys/Stephan/species_key.csv,
+primary_visual_gray,primary visual cortex grey matter volume,PrimaryVisualCortex,Volume,,both,Primates,Smaers_etal_2017,units mm3 per source but appear cm3,
+prefrontal_gray,prefrontal cortex grey matter volume,PrefrontalCortex,Volume,,both,Primates,Smaers_etal_2017,,
+other_association_gray,other cortical association areas grey matter volume,AssociationCortex,Volume,,both,Primates,Smaers_etal_2017,,
+frontal_motor_gray,frontal motor areas grey matter volume,FrontalMotor,Volume,,both,Primates,Smaers_etal_2017,,
+primary_visual_white,primary visual white matter volume,PrimaryVisualCortex,Volume,,both,Primates,Smaers_etal_2017,,
+prefrontal_white,prefrontal white matter volume,PrefrontalCortex,Volume,,both,Primates,Smaers_etal_2017,,
+other_association_white,other cortical association white matter volume,AssociationCortex,Volume,,both,Primates,Smaers_etal_2017,,
+frontal_motor_white,frontal motor white matter volume,FrontalMotor,Volume,,both,Primates,Smaers_etal_2017,,
+source,source identifier,,Source,,both,Primates,Smaers_etal_2017,compiled from Smaers 2010/2011 + Brodmann,

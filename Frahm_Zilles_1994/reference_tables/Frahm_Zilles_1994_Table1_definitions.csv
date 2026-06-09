@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species_Frahm1994,species name as printed in Frahm & Zilles 1994,,,info,,,Frahm_Zilles_1994_Table1,journal names kept (e.g. Lemur albifrons; Cebuella pygmaea; Cercocebus albigena; Colobus badius); taxonomy applied later via ../_keys/Stephan/,
+body_weight_g,body weight in g,Body_weight,Mass.g,,secondary,Insectivora & Primates,Frahm_Zilles_1994_Table1,Table 1 col 1; re-used (Insectivora from Stephan et al. 1991; Primates from Stephan et al. 1981),
+hippocampus_total_mm3,total hippocampus volume in mm3 (= retrocommissural + HP/HS fibres),Hippocampus,Vol.mm3,,primary,Insectivora & Primates,Frahm_Zilles_1994_Table1,"Table 1 'Hippocampus total'; from Stephan et al. 1981/1988 (same serial sections)",
+HP_HS_fibers_mm3,"volume of pre- (HP) + supra-commissural (HS) hippocampus plus hippocampal fibres (mainly fimbria/fornix), in mm3",HP_HS_fibers,Vol.mm3,,primary,Insectivora & Primates,Frahm_Zilles_1994_Table1,Table 1 'HP + HS + fibers'; = total hippocampus - retrocommissural (not measured directly),
+hippocampus_retrocommissuralis_mm3,volume of the retrocommissural hippocampus in mm3 (= sum of the six retrohippocampal subfields),Hippocampus_retrocommissuralis,Vol.mm3,,primary,Insectivora & Primates,Frahm_Zilles_1994_Table1,Table 1 'Hippocampus retrocommissuralis'; sum of Table 2 subfields,
+subiculum_mm3,volume of the subiculum in mm3,Subiculum,Vol.mm3,,primary,Insectivora & Primates,Frahm_Zilles_1994_Table1,Table 2,
+CA1_mm3,volume of hippocampal field CA1 in mm3,CA1,Vol.mm3,,primary,Insectivora & Primates,Frahm_Zilles_1994_Table1,Table 2,
+CA2_mm3,volume of hippocampal field CA2 in mm3,CA2,Vol.mm3,,primary,Insectivora & Primates,Frahm_Zilles_1994_Table1,Table 2,
+CA3_mm3,volume of hippocampal field CA3 in mm3 (CA4 cells of the hilus measured with the hilus region),CA3,Vol.mm3,,primary,Insectivora & Primates,Frahm_Zilles_1994_Table1,Table 2,
+hilus_mm3,volume of the hilus region of the fascia dentata in mm3 (includes CA4),Hilus,Vol.mm3,,primary,Insectivora & Primates,Frahm_Zilles_1994_Table1,Table 2,
+fascia_dentata_mm3,volume of the fascia dentata (dentate gyrus) in mm3,Fascia_dentata,Vol.mm3,,primary,Insectivora & Primates,Frahm_Zilles_1994_Table1,Table 2,
+Method:structure,"Total hippocampus = retrocommissural hippocampus + HP/HS fibres. Retrocommissural = subiculum + CA1 + CA2 + CA3 + hilus + fascia dentata. The paper also reports allometric size indices (vs body weight) for each region; those are derived and recomputed downstream (not snapshotted).",,,method,,,Frahm_Zilles_1994_Table1,"Volumes in mm3. 48 species (4 Insectivora + 44 primates) in printed taxonomic order.",

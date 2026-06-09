@@ -71,21 +71,28 @@ later, in the script. Not here.
    or `.csv`, download it and use that file as the snapshot. Easiest and most
    faithful.
 
-2. **PDF → Excel (our default for printed tables).** Open the PDF in Adobe
+2. **Web-scrape the publisher's HTML.** Pull the table from the open-access
+   HTML version (PMC, journal site) in R with `rvest` — handy when the PDF won't
+   extract (e.g. a wide, rotated table). **The scraping script must also save
+   the snapshot**: write it to `..._snapshot.csv` *before* any cleaning, so the
+   scrape is captured as a hardcopy on every run (don't rely on the live URL
+   alone). Cross-check against the PDF and note the HTML source in the ReadMe.
+   *(Worked example in the repo: `HerculanoHouzel__2015/` Table 1.)*
+
+3. **Extract from a PDF of the paper.** If the table is published in a PDF, write
+   a script to use a tool like tabulapdf (R) to extract it programmatically. This 
+   works best for text-based PDFs; scanned documents may require OCR (e.g., 
+   tesseract).  
+
+4. **PDF → Excel (our default for printed tables).** Open the PDF in Adobe
    Acrobat Pro → *Export a PDF → Microsoft Excel Workbook*. Copy/paste the table
    and lightly reformat so it matches the printed layout. Save as
    `..._snapshot.xlsx`.
 
-3. **Manual entry** (when the PDF is a scan or export is garbled). Type it in,
+5. **Manual entry** (when the PDF is a scan or export is garbled). Type it in,
    keeping the original layout. Then double-check it — e.g. ask an AI assistant
    to read the table from the PDF and diff it against your file, and correct any
    mismatches by hand.
-
-4. **Web-scrape the publisher's HTML** (when the PDF won't extract — e.g. a
-   wide, rotated table). Pull the table from the open-access HTML version (PMC,
-   journal site) in R with `rvest`. **Then cross-check it against the PDF**, and
-   document in the ReadMe that the source was the HTML version. *(Worked example
-   in the repo: `HerculanoHouzel__2015/` Table 1.)*
 
 Whatever the method, the result is the same kind of file: a faithful, frozen
 copy you can compare to the paper.

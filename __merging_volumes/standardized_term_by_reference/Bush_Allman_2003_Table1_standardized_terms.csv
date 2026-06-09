@@ -1,0 +1,6 @@
+Original_Term,Reference,Standardized_Term
+species,Bush_Allman_2003_Table1,Species
+cer_white_cm3,Bush_Allman_2003_Table1,Cerebellum_white_matter_Vol.mm3
+cer_gray_cm3,Bush_Allman_2003_Table1,Cerebellum_grey_matter_Vol.mm3
+neo_white_cm3,Bush_Allman_2003_Table1,Neocortex_white_matter_Vol.mm3
+neo_gray_cm3,Bush_Allman_2003_Table1,Neocortex_grey_matter_Vol.mm3

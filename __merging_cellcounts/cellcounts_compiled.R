@@ -21,8 +21,13 @@ item_name <- c(
   "AvelinodeSouza_etal_2025_TABLE1",
   "Burish_etal_2010_Table1",
   "DosSantos_etal_2017_TableS1",
- # "DosSantos_etal_2020_Table1",
-  "DosSantos_etal_2020_unpublished",
+ # "DosSantos_etal_2020_Table1",   # EXCLUDED: published Table 1 (main PDF) has transcription typos in cell
+                                  #   counts (some impossible, e.g. Tragelaphus strepsiceros whole-brain cells
+                                  #   ~1000x too small). Superseded by the authors' unpublished data (next line).
+                                  #   See DosSantos_etal_2020 ReadMes + DosSantos_etal_2020_Table1_check.R.
+  "DosSantos_etal_2020_unpublished",   # USED INSTEAD of Table 1: authors' unpublished spreadsheet; internally
+                                       #   consistent and matches older pubs (HH 2015). Contributes microglia/cell
+                                       #   (I/C, *_I.p.C) ratios; cell NUMBERS for these species come from older sources.
   "HerculanoHouzel_etal_2015_Table1",
   "HerculanoHouzel_etal_2015_Table2",
   "HerculanoHouzel_etal_2015_Table3",
@@ -236,7 +241,10 @@ cellcounts_data_list$Burish_etal_2010_Table1 <- df
     }
   }
 
-# Note: there is a big problem with Tragelaphus strepsiceros cell counts in Dos Santos et al., 2020. Flag it.
+# Note: the published Dos Santos et al. (2020) Table 1 has transcription typos in its cell counts
+#   (e.g. Tragelaphus strepsiceros whole-brain cells). RESOLVED upstream: Table 1 is excluded from
+#   item_name (above) and the authors' unpublished data is used instead. Verification:
+#   DosSantos_etal_2020/DosSantos_etal_2020_Table1_check.R + DosSantos_etal_2020_comparison_summary.md.
   
 ## 4 Rename Species using NCBI Taxonomy as the standard
 

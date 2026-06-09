@@ -180,3 +180,11 @@ Vmo_SD,brain_structure_volume,Volume_mm3
 XII,brain_structure_volume,Volume_mm3
 XII_SD,brain_structure_volume,Volume_mm3
 fronto_insular_cortex,brain_structure_volume,Volume_mm3
+NeocortexGrey,brain_structure_volume,Volume.cm3
+NeocortexWhite,brain_structure_volume,Volume.cm3
+CerebellumGrey,brain_structure_volume,Volume.cm3
+CerebellumWhite,brain_structure_volume,Volume.cm3
+FrontalGrey,brain_structure_volume,Volume.cm3; ratio
+CortexGreyRest,brain_structure_volume,Volume.cm3
+V1,brain_structure_volume,Volume.cm3; Area.cm2; Length.mm
+LGN,brain_structure_volume,Volume.cm3

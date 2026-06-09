@@ -1,3 +1,14 @@
+# =====================================================================================
+# Dos Santos et al. (2020) — authors' UNPUBLISHED data (used INSTEAD of the published Table 1).
+# The published Table 1 (main PDF) has transcription typos in several cell counts (some impossible).
+# The authors supplied this updated spreadsheet ("2020-PublishedDataMammalsMicroglia - cópia.xlsx",
+#   received 22 Mar 2024 via O. S. Todorov from the authors' team). Checks
+#   (DosSantos_etal_2020_Table1_check.R; summary DosSantos_etal_2020_comparison_summary.md) show it is
+#   internally consistent and agrees with older publications (Herculano-Houzel et al. 2015), so it is
+#   used in the merged cell-counts dataset. This script extracts the microglia/cell ratio (I/C =
+#   %Iba1+) per structure -> DosSantos_etal_2020_unpublished.csv ("USE THIS").
+# =====================================================================================
+
 setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
 folder_path <- "./DosSantos_etal_2020/"
 

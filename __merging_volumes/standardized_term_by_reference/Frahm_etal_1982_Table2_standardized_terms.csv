@@ -1,0 +1,7 @@
+Original_Term,Reference,Standardized_Term
+Species_Frahm1982,Frahm_etal_1982_Table2,Species
+total_neocortex_mm3,Frahm_etal_1982_Table2,Neocortex_Vol.mm3
+white_matter_mm3,Frahm_etal_1982_Table2,Neocortex_white_matter_Vol.mm3
+grey_matter_mm3,Frahm_etal_1982_Table2,Neocortex_grey_matter_Vol.mm3
+lamina_1_mm3,Frahm_etal_1982_Table2,Neocortex_lamina_1_Vol.mm3
+laminae_2_6_mm3,Frahm_etal_1982_Table2,Neocortex_laminae_2_6_Vol.mm3

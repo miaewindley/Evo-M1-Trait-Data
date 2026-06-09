@@ -1,0 +1,18 @@
+Ashwell_Code,Proposed_Standardized_Term,Exact_Overlap_In_Standardized_File,Comment
+group,TaxonGroup,FALSE,No matching taxonomic-group standard found in provided file.
+species,Species,TRUE,Exact overlap with existing standardized term.
+common_name,CommonName,FALSE,No common-name standard found in provided file.
+brain_volume_mm3,Total_brain_net_volume_Vol.mm3,TRUE,Exact overlap with existing standardized term.
+total_cb_volume_mm3,Cerebellum_Vol.mm3,TRUE,Exact overlap with existing standardized term.
+vermis_excl_cb10_mm3,CerebellarVermis_Vol.mm3,TRUE,Exact overlap with existing standardized term.
+hemisphere_excl_fl_mm3,CerebellarHemisphere_Vol.mm3,TRUE,Exact overlap with existing standardized term.
+flocculo_nodular_cb_cx_mm3,FlocculonodularLobe_Vol.mm3,FALSE,Suggested new standardized term; no exact match in provided file.
+ratio_hemisph_vermis,CerebellarHemisphere_to_CerebellarVermis_Ratio,FALSE,Suggested new standardized term; no exact match in provided file.
+total_cb_cx_volume_mm3,CerebellarCortex_Vol.mm3,FALSE,Suggested new standardized term; no exact match in provided file.
+cb_white_matter_mm3,Cerebellum_white_matter_Vol.mm3,TRUE,Exact overlap with existing standardized term.
+pn_rttg_volume_mm3,Pontine_and_reticulotegmental_nuclei_Vol.mm3,FALSE,Suggested new standardized term; no exact match in provided file.
+deep_cb_nu_volume_mm3,Cerebellar_nuclei_total_Vol.mm3,TRUE,Exact overlap with existing standardized term.
+cb_ext_surface_esa_mm2,Cerebellum_external_surface_Area.mm2,FALSE,Suggested new standardized term; no exact match in provided file.
+cb_pial_surface_psa_mm2,Cerebellum_pial_surface_Area.mm2,FALSE,Suggested new standardized term; no exact match in provided file.
+foliation_index,Cerebellum_foliation_index,FALSE,Suggested new standardized term; no exact match in provided file.
+source,Source,FALSE,"Project metadata field, not a biological quantity standard."

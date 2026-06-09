@@ -1,7 +1,7 @@
-Code,Definition,Structure,Measure,Stat,Reference,Note
-VC,complexus vestibularis (vestibular nuclear complex; sum of VI+VL+VM+VS),VestibularComplex,Vol.mm3,,Baron_etal_1988_Table1,both sides
-VI,nucleus vestibularis descendens (inferior/descending vestibular nucleus),VestibularNucleusDescending,Vol.mm3,,Baron_etal_1988_Table1,both sides
-VL,nucleus vestibularis lateralis (lateral vestibular nucleus),VestibularNucleusLateral,Vol.mm3,,Baron_etal_1988_Table1,both sides
-VM,nucleus vestibularis medialis (medial vestibular nucleus),VestibularNucleusMedial,Vol.mm3,,Baron_etal_1988_Table1,both sides
-VS,nucleus vestibularis superior (superior vestibular nucleus),VestibularNucleusSuperior,Vol.mm3,,Baron_etal_1988_Table1,both sides
-Species_Baron1988,species name as printed in Baron et al. 1988,,,info,Baron_etal_1988_Table1,
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+VC,complexus vestibularis (vestibular nuclear complex; sum of VI+VL+VM+VS),VestibularComplex,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Baron_etal_1988_Table1,both sides,
+VI,nucleus vestibularis descendens (inferior/descending vestibular nucleus),VestibularNucleusDescending,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Baron_etal_1988_Table1,both sides,
+VL,nucleus vestibularis lateralis (lateral vestibular nucleus),VestibularNucleusLateral,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Baron_etal_1988_Table1,both sides,
+VM,nucleus vestibularis medialis (medial vestibular nucleus),VestibularNucleusMedial,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Baron_etal_1988_Table1,both sides,
+VS,nucleus vestibularis superior (superior vestibular nucleus),VestibularNucleusSuperior,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Baron_etal_1988_Table1,both sides,
+Species_Baron1988,species name as printed in Baron et al. 1988,,,info,,,Baron_etal_1988_Table1,,

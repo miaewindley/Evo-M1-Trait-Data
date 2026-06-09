@@ -1,0 +1,17 @@
+species,smaers2017_pv_gray_cm3,smaers_x1000_mm3,deSousa_V1grey_mm3(ASG_Sousa),abs_diff_mm3,pct_diff
+Cercopithecus_ascanius,4.272,4272.0,4272.0,0.0,0.0
+Cercopithecus_mitis,4.232,4232.0,4232.0,0.0,0.0
+Miopithecus_talapoin,2.339,2339.0,2339.0,0.0,0.0
+Alouatta_seniculus,1.918,1918.0,1918.0,0.0,0.0
+Ateles_geoffroyi,3.753,3753.0,3753.0,0.0,0.0
+Lagothrix_lagotricha,4.856,4856.0,4856.0,0.0,0.0
+Cebus_albifrons,3.764,3764.0,3764.0,0.0,0.0
+Gorilla_gorilla,12.062,12062.0,9129.0,2933.0,32.1
+Homo_sapiens,14.787,14787.0,15247.5,-460.5,-3.0
+Hylobates_lar,4.574,4574.0,4086.7,487.3,11.9
+Pan_troglodytes,10.593,10593.0,8268.3,2324.7,28.1
+Pongo_pygmaeus,7.008,7008.0,8233.7,-1225.7,-14.9
+Pithecia_pithecia,1.679,1679.0,,,
+Lophocebus_albigena,5.42,5420.0,5420.0,0.0,0.0
+Papio_anubis,10.001,10001.0,10001.0,0.0,0.0
+Piliocolobus_badius,3.053,3053.0,3053.0,0.0,0.0

@@ -1,0 +1,20 @@
+Original_Term,Reference,Standardized_Term
+Species_Zilles1988,Zilles_Rehkämper_1988_Table12-2,Species
+Medulla oblongata,Zilles_Rehkämper_1988_Table12-2,Medulla_oblongata_Vol.mm3
+Cerebellum (without pons),Zilles_Rehkämper_1988_Table12-2,Cerebellum_Vol.mm3
+Pons,Zilles_Rehkämper_1988_Table12-2,Pons_Vol.mm3
+Mesencephalon,Zilles_Rehkämper_1988_Table12-2,Mesencephalon_Vol.mm3
+Diencephalon,Zilles_Rehkämper_1988_Table12-2,Diencephalon_Vol.mm3
+Telencephalon,Zilles_Rehkämper_1988_Table12-2,Telencephalon_Vol.mm3
+Neocortex,Zilles_Rehkämper_1988_Table12-2,Neocortex_Vol.mm3
+Gray (without area striata),Zilles_Rehkämper_1988_Table12-2,Neocortex_grey_matter_Vol.mm3
+Gray area striata,Zilles_Rehkämper_1988_Table12-2,Area_striata_grey_matter_Vol.mm3
+White matter,Zilles_Rehkämper_1988_Table12-2,Neocortex_white_matter_Vol.mm3
+Hippocampus,Zilles_Rehkämper_1988_Table12-2,Hippocampus_Vol.mm3
+Regio entorhinalis,Zilles_Rehkämper_1988_Table12-2,EntorhinalCortex_Vol.mm3
+Paleocortex,Zilles_Rehkämper_1988_Table12-2,Palaeocortex_Vol.mm3
+Regio praepiriformis,Zilles_Rehkämper_1988_Table12-2,Prepiriform_cortex_Vol.mm3
+Corpus amygdaloideum,Zilles_Rehkämper_1988_Table12-2,Amygdala_Vol.mm3
+Septum,Zilles_Rehkämper_1988_Table12-2,Septum_Vol.mm3
+Corpus striatum,Zilles_Rehkämper_1988_Table12-2,Striatum_Vol.mm3
+Globus pallidus,Zilles_Rehkämper_1988_Table12-2,Pallidum_Vol.mm3

@@ -1,16 +1,12 @@
-Code,Definition,Structure,Measure,Stat,Reference,Note
-NV,total neocortex volume,Neocortex,,,Frahm_etal_1982_Table2,
-group,taxonomic grade/section as printed (Basal Insectivora; Progressive Insectivora; Scandentia; Prosimians; Simians),,,info,Frahm_etal_1982_Table2,snapshot col A; carried onto each species row by the R script
-family,family as printed (Tenrecinae; Erinaceidae; ...; Callitrichidae; Cebidae; Cercopithecidae; Pongidae; Hominidae),,,info,Frahm_etal_1982_Table2,snapshot col B; NA for grades printed without a family header
-Species_Frahm1982,species name as printed in Frahm & Stephan 1982 (superscript removed),,,info,Frahm_etal_1982_Table2,current accepted name applied later via ../_keys/Stephan/species_key.csv
-former_name_ref,name superscript printed in the journal (1-11),,,info,Frahm_etal_1982_Table2,this paper's legend differs from Stephan 1982's numbering
-former_name,former name per the journal legend,,,info,Frahm_etal_1982_Table2,"1 Aethechinus algirus; 2 Crocidura occidentalis; 3 Nesogale dobsoni; 4 Nesogale talazaci; 5 Chlorotalpa stuhlmanni; 6 Lemur fulvus; 7 Lemur variegatus; 8 Galago crassicaudatus; 9 Galago demidovii; 10 Saguinus tamarin; 11 Cercopithecus talapoin"
-n,number of individuals,Neocortex,,n,Frahm_etal_1982_Table2,snapshot col D; most species n = 1
-total_neocortex_mm3,total neocortex volume in mm3 (grey + white matter),Neocortex,Vol.mm3,,Frahm_etal_1982_Table2,Table 2 col 1
-white_matter_mm3,neocortical white matter volume in mm3,Neocortex_white_matter,Vol.mm3,,Frahm_etal_1982_Table2,Table 2 col 2
-white_pct_neocortex,white matter as a percentage of total neocortex,Neocortex_white_matter,pct.neocortex,,Frahm_etal_1982_Table2,Table 2 col 3; computed = white/total x 100
-grey_matter_mm3,neocortical grey matter volume in mm3 (laminae 1-6),Neocortex_grey_matter,Vol.mm3,,Frahm_etal_1982_Table2,Table 2 col 4; = lamina 1 + laminae 2-6
-lamina_1_mm3,volume of lamina 1 (molecular layer) in mm3,Neocortex_lamina_1,Vol.mm3,,Frahm_etal_1982_Table2,Table 2 col 5
-lamina_1_pct_grey,lamina 1 as a percentage of grey matter,Neocortex_lamina_1,pct.grey,,Frahm_etal_1982_Table2,Table 2 col 6; computed = lam1/grey x 100
-laminae_2_6_mm3,volume of laminae 2-6 (cell-dense layers) in mm3,Neocortex_laminae_2_6,Vol.mm3,,Frahm_etal_1982_Table2,Table 2 col 7
-Method:size_index,"size index = 100 x observed / expected; expected from a reference line of FIXED, STRUCTURE-SPECIFIC slope (log-log vs body weight) through the basal-Insectivora centroid: total neocortex 0.67, white matter 0.86, grey matter 0.63, lamina 1 0.65, laminae 2-6 0.62.",,,method,Frahm_etal_1982_Table2,"Frahm & Stephan 1982 Methods. NOT recomputed in the snapshot-only R script (needs body weights, external to this volumes table); recompute downstream with body weights from Stephan et al. 1981. The printed Table 1 of this paper gives the total-neocortex size index for validation."
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+NV,total neocortex volume,Neocortex,,,primary,"Insectivora, Scandentia & Primates",Frahm_etal_1982_Table2,,
+Species_Frahm1982,species name as printed in Frahm & Stephan 1982,,,info,,,Frahm_etal_1982_Table2,current accepted name + taxonomy applied later via ../_keys/Stephan/,
+n,number of individuals,Neocortex,,n,primary,"Insectivora, Scandentia & Primates",Frahm_etal_1982_Table2,printed in parentheses after the name when > 1; otherwise 1,
+total_neocortex_mm3,total neocortex volume in mm3 (grey + white matter),Neocortex,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Frahm_etal_1982_Table2,Table 2 col 1,
+white_matter_mm3,neocortical white matter volume in mm3,Neocortex_white_matter,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Frahm_etal_1982_Table2,Table 2 col 2,
+white_pct_neocortex,white matter as a percentage of total neocortex,Neocortex_white_matter,pct.neocortex,,primary,"Insectivora, Scandentia & Primates",Frahm_etal_1982_Table2,Table 2 col 3,
+grey_matter_mm3,neocortical grey matter volume in mm3 (laminae 1-6),Neocortex_grey_matter,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Frahm_etal_1982_Table2,Table 2 col 4; = lamina 1 + laminae 2-6,
+lamina_1_mm3,volume of lamina 1 (molecular layer) in mm3,Neocortex_lamina_1,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Frahm_etal_1982_Table2,Table 2 col 5,
+lamina_1_pct_grey,lamina 1 as a percentage of grey matter,Neocortex_lamina_1,pct.grey,,primary,"Insectivora, Scandentia & Primates",Frahm_etal_1982_Table2,Table 2 col 6,
+laminae_2_6_mm3,volume of laminae 2-6 (cell-dense layers) in mm3,Neocortex_laminae_2_6,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Frahm_etal_1982_Table2,Table 2 col 7,
+Method:size_index,"size index = 100 x observed / expected; expected from a reference line of FIXED, STRUCTURE-SPECIFIC slope (log-log vs body weight) through the basal-Insectivora centroid: total neocortex 0.67, white matter 0.86, grey matter 0.63, lamina 1 0.65, laminae 2-6 0.62.",,,method,,,Frahm_etal_1982_Table2,Frahm & Stephan 1982 Methods. NOT in the volumes snapshot; recompute downstream with body weights from Stephan et al. 1981. The paper's Table 1 gives the total-neocortex size index for validation.,

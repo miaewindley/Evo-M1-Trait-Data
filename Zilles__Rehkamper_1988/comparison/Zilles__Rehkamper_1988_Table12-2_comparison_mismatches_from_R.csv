@@ -1,0 +1,10 @@
+structure,status,volume_mm3_snap,value_csv,csv_column
+Pons,snapshot_only_not_in_csv,4300.0,,
+Gray (without area striata),snapshot_only_not_in_csv,129900.0,,
+Gray area striata,snapshot_only_not_in_csv,8400.0,,
+White matter,snapshot_only_not_in_csv,81500.0,,
+Regio entorhinalis,snapshot_only_not_in_csv,1300.0,,
+Regio praepiriformis,snapshot_only_not_in_csv,1000.0,,
+Body_weight,csv_only_not_in_snapshot,,54000.0,Body_weight
+Brain_weight,csv_only_not_in_snapshot,,333000.0,Brain_weight
+Lobus_piriformis,csv_only_not_in_snapshot,,3800.0,Lobus_piriformis

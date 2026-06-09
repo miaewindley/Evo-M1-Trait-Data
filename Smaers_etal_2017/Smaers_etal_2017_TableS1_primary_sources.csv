@@ -1,0 +1,9 @@
+column,region,matter,secondary_source,primary_source,smaers_supp_ref,primary_raw_in_repo,check_status
+primary_visual_gray,Primary visual,gray,Smaers_etal_2017 (Table S1),"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,de Sousa V1 grey = ASG_Sousa in Stephan_primates.csv,to_check
+primary_visual_white,Primary visual,white,Smaers_etal_2017 (Table S1),"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,Primary.visual.White.Smaers in Stephan_primates.csv,to_check
+prefrontal_gray,Prefrontal,gray,Smaers_etal_2017 (Table S1),Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,Smaers_etal_2011_SupplementaryTable1/2 (frontal raw),to_check
+prefrontal_white,Prefrontal,white,Smaers_etal_2017 (Table S1),Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,Smaers_etal_2011_SupplementaryTable1/2 (frontal raw),to_check
+other_association_gray,Other cortical association,gray,Smaers_etal_2017 (Table S1),de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,verify in supplement Table S1 footnote,to_check
+other_association_white,Other cortical association,white,Smaers_etal_2017 (Table S1),de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,verify,to_check
+frontal_motor_gray,Frontal motor,gray,Smaers_etal_2017 (Table S1),Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,Smaers_etal_2011_SupplementaryTable1/2,to_check
+frontal_motor_white,Frontal motor,white,Smaers_etal_2017 (Table S1),Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,Smaers_etal_2011_SupplementaryTable1/2,to_check

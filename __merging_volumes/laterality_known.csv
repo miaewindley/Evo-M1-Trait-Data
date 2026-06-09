@@ -1,0 +1,11 @@
+Reference,Original_Term,side,required_suffix,note
+Stephan_etal_1981_Table1,Complexus_vestibularis,unilateral,_unilateral,Baron et al. 1988 states the Stephan 1981 vestibular volumes were measured from one side only
+Stephan_etal_1981_Table1,Nucleus_vestibularis_superior,unilateral,_unilateral,
+Stephan_etal_1981_Table1,Nucleus_vestibularis_lateralis,unilateral,_unilateral,
+Stephan_etal_1981_Table1,Nucleus_vestibularis_medialis,unilateral,_unilateral,
+Stephan_etal_1981_Table1,Nucleus_vestibularis_descendens,unilateral,_unilateral,
+Bauernfeind_etal_2013_Table1,granular_mm3,left,_left,Bauernfeind Table 1 is the LEFT insula only; right hemisphere is the paper's Table 2 (not snapshotted)
+Bauernfeind_etal_2013_Table1,dysgranular_mm3,left,_left,
+Bauernfeind_etal_2013_Table1,agranular_mm3,left,_left,
+Bauernfeind_etal_2013_Table1,FI_mm3,left,_left,
+Bauernfeind_etal_2013_Table1,total_insula_mm3,left,_left,

@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,species binomial (corrected),,Species,,primary,Primates (strepsirrhine-ape/human),deSousa_etal_2010,reconcile to _keys/Stephan/species_key.csv,7 binomials corrected from published spellings (see species_as_published / correction)
+species_as_published,species binomial exactly as printed in published Supp. Table 2,,Species,,provenance,Primates,deSousa_etal_2010,kept for audit against snapshot,
+brain_volume_cm3,whole brain volume,WholeBrain,Volume.cm3,mean,primary,Primates,deSousa_etal_2010,= Brainvol; table labels units 'g' (values are cm3),published mean (N animals)
+brain_N,number of specimens for brain volume,WholeBrain,Count,N,metadata,Primates,deSousa_etal_2010,,
+neocortex_volume_cm3,neocortex volume,Neocortex,Volume.cm3,mean,primary,Primates,deSousa_etal_2010,17 prosimian values corrected (mis-copy from Stephan); see correction column,non-hominoid from Stephan et al 1981/1988
+neocortex_N,number of specimens for neocortex volume,Neocortex,Count,N,metadata,Primates,deSousa_etal_2010,,
+V1_area_striata_volume_cm3,primary visual cortex (area striata) volume,V1_AreaStriata,Volume.cm3,mean,primary,Primates,deSousa_etal_2010,= ASG_Sousa,published mean (N animals)
+V1_N,number of specimens for V1 volume,V1_AreaStriata,Count,N,metadata,Primates,deSousa_etal_2010,,
+LGN_volume_cm3,lateral geniculate nucleus volume,LGN,Volume.cm3,mean,primary,Primates,deSousa_etal_2010,= LGN_Sousa,published mean (N animals)
+LGN_N,number of specimens for LGN volume,LGN,Count,N,metadata,Primates,deSousa_etal_2010,,
+source,source identifier,,Source,,provenance,Primates,deSousa_etal_2010,,
+correction,description of any correction applied vs the published table,,Note,,provenance,Primates,deSousa_etal_2010,distinguishes value errors (neocortex) from species-name errors,

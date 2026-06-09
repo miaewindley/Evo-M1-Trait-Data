@@ -1,0 +1,139 @@
+species,region,matter,value_smaers2017,secondary_source,primary_source,smaers_supp_ref,primary_value,abs_diff,note
+Cercopithecus ascanius,Primary visual,gray,4.272,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,4.272,0.0,EXACT match (=your de Sousa V1)
+Cercopithecus ascanius,Primary visual,white,0.834,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,primary_value to be filled from S6
+Cercopithecus ascanius,Prefrontal,gray,1.154,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Cercopithecus ascanius,Prefrontal,white,0.159,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Cercopithecus ascanius,Other cortical association,gray,16.06,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Cercopithecus ascanius,Other cortical association,white,8.297,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Cercopithecus ascanius,Frontal motor,gray,1.351,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Cercopithecus ascanius,Frontal motor,white,0.93,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Cercopithecus mitis,Primary visual,gray,4.232,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,4.232,0.0,EXACT match (=your de Sousa V1)
+Cercopithecus mitis,Primary visual,white,1.042,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,primary_value to be filled from S6
+Cercopithecus mitis,Prefrontal,gray,1.38,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Cercopithecus mitis,Prefrontal,white,0.205,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Cercopithecus mitis,Other cortical association,gray,19.385,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Cercopithecus mitis,Other cortical association,white,9.911,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Cercopithecus mitis,Frontal motor,gray,1.852,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Cercopithecus mitis,Frontal motor,white,0.946,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Erythrocebus patas,Prefrontal,gray,1.56,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Erythrocebus patas,Prefrontal,white,0.272,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Erythrocebus patas,Frontal motor,gray,2.552,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Erythrocebus patas,Frontal motor,white,1.848,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Miopithecus talapoin,Primary visual,gray,2.339,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,2.339,0.0,EXACT match (=your de Sousa V1)
+Miopithecus talapoin,Primary visual,white,0.709,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,primary_value to be filled from S6
+Miopithecus talapoin,Prefrontal,gray,1.018,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Miopithecus talapoin,Prefrontal,white,0.152,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Miopithecus talapoin,Other cortical association,gray,12.218,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Miopithecus talapoin,Other cortical association,white,4.642,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Miopithecus talapoin,Frontal motor,gray,0.906,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Miopithecus talapoin,Frontal motor,white,0.548,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Alouatta seniculus,Primary visual,gray,1.918,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,1.918,0.0,EXACT match (=your de Sousa V1)
+Alouatta seniculus,Primary visual,white,0.543,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,primary_value to be filled from S6
+Alouatta seniculus,Prefrontal,gray,1.015,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Alouatta seniculus,Prefrontal,white,0.177,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Alouatta seniculus,Other cortical association,gray,12.394,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Alouatta seniculus,Other cortical association,white,4.212,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Alouatta seniculus,Frontal motor,gray,1.077,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Alouatta seniculus,Frontal motor,white,0.866,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Ateles geoffroyi,Primary visual,gray,3.753,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,3.753,0.0,EXACT match (=your de Sousa V1)
+Ateles geoffroyi,Primary visual,white,0.985,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,primary_value to be filled from S6
+Ateles geoffroyi,Prefrontal,gray,2.773,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Ateles geoffroyi,Prefrontal,white,0.286,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Ateles geoffroyi,Other cortical association,gray,32.933,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Ateles geoffroyi,Other cortical association,white,10.332,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Ateles geoffroyi,Frontal motor,gray,3.119,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Ateles geoffroyi,Frontal motor,white,1.586,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Lagothrix lagotricha,Primary visual,gray,4.856,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,4.856,0.0,EXACT match (=your de Sousa V1)
+Lagothrix lagotricha,Primary visual,white,1.226,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,primary_value to be filled from S6
+Lagothrix lagotricha,Prefrontal,gray,1.887,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Lagothrix lagotricha,Prefrontal,white,0.226,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Lagothrix lagotricha,Other cortical association,gray,24.188,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Lagothrix lagotricha,Other cortical association,white,12.496,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Lagothrix lagotricha,Frontal motor,gray,2.434,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Lagothrix lagotricha,Frontal motor,white,1.625,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Cebus albifrons,Primary visual,gray,3.764,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,3.764,0.0,EXACT match (=your de Sousa V1)
+Cebus albifrons,Primary visual,white,0.939,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,primary_value to be filled from S6
+Cebus albifrons,Prefrontal,gray,1.434,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Cebus albifrons,Prefrontal,white,0.257,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Cebus albifrons,Other cortical association,gray,21.024,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Cebus albifrons,Other cortical association,white,12.053,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Cebus albifrons,Frontal motor,gray,1.977,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Cebus albifrons,Frontal motor,white,1.425,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Gorilla gorilla gorilla,Primary visual,gray,12.062,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,9.129,2.933,DIVERGES from your de Sousa V1 (ape) - investigate ape V1 source
+Gorilla gorilla gorilla,Primary visual,white,3.123,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,primary_value to be filled from S6
+Gorilla gorilla gorilla,Prefrontal,gray,11.642,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Gorilla gorilla gorilla,Prefrontal,white,2.608,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Gorilla gorilla gorilla,Other cortical association,gray,125.539,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Gorilla gorilla gorilla,Other cortical association,white,60.386,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Gorilla gorilla gorilla,Frontal motor,gray,14.854,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Gorilla gorilla gorilla,Frontal motor,white,10.295,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Homo sapiens,Primary visual,gray,14.787,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,15.248,-0.461,DIVERGES from your de Sousa V1 (ape) - investigate ape V1 source
+Homo sapiens,Primary visual,white,5.439,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,primary_value to be filled from S6
+Homo sapiens,Prefrontal,gray,46.323,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Homo sapiens,Prefrontal,white,28.135,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Homo sapiens,Other cortical association,gray,271.891,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Homo sapiens,Other cortical association,white,258.218,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Homo sapiens,Frontal motor,gray,29.013,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Homo sapiens,Frontal motor,white,29.755,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Hylobates lar,Primary visual,gray,4.574,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,4.087,0.487,DIVERGES from your de Sousa V1 (ape) - investigate ape V1 source
+Hylobates lar,Primary visual,white,1.176,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,primary_value to be filled from S6
+Hylobates lar,Prefrontal,gray,2.588,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Hylobates lar,Prefrontal,white,0.51,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Hylobates lar,Other cortical association,gray,28.424,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Hylobates lar,Other cortical association,white,12.915,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Hylobates lar,Frontal motor,gray,2.744,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Hylobates lar,Frontal motor,white,1.743,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pan paniscus,Prefrontal,gray,7.956,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pan paniscus,Prefrontal,white,2.056,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pan paniscus,Frontal motor,gray,8.356,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pan paniscus,Frontal motor,white,5.243,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pan troglodytes troglodytes,Primary visual,gray,10.593,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,8.268,2.325,DIVERGES from your de Sousa V1 (ape) - investigate ape V1 source
+Pan troglodytes troglodytes,Primary visual,white,4.004,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,primary_value to be filled from S6
+Pan troglodytes troglodytes,Prefrontal,gray,14.209,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pan troglodytes troglodytes,Prefrontal,white,4.607,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pan troglodytes troglodytes,Other cortical association,gray,112.75,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Pan troglodytes troglodytes,Other cortical association,white,76.6,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Pan troglodytes troglodytes,Frontal motor,gray,13.407,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pan troglodytes troglodytes,Frontal motor,white,12.78,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pongo pygmaeus,Primary visual,gray,7.008,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,8.234,-1.226,DIVERGES from your de Sousa V1 (ape) - investigate ape V1 source
+Pongo pygmaeus,Prefrontal,gray,8.596,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pongo pygmaeus,Prefrontal,white,2.52,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pongo pygmaeus,Other cortical association,gray,76.924,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Pongo pygmaeus,Frontal motor,gray,6.353,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pongo pygmaeus,Frontal motor,white,4.745,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pithecia pithecia,Primary visual,gray,1.679,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,no de Sousa V1 for this species
+Pithecia pithecia,Primary visual,white,0.451,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,primary_value to be filled from S6
+Pithecia pithecia,Prefrontal,gray,0.6,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pithecia pithecia,Prefrontal,white,0.081,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pithecia pithecia,Other cortical association,gray,9.242,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Pithecia pithecia,Other cortical association,white,4.2,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Pithecia pithecia,Frontal motor,gray,0.819,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Pithecia pithecia,Frontal motor,white,0.496,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Lophocebus albigena,Primary visual,gray,5.42,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,5.42,0.0,EXACT match (=your de Sousa V1)
+Lophocebus albigena,Primary visual,white,1.411,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,primary_value to be filled from S6
+Lophocebus albigena,Prefrontal,gray,2.311,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Lophocebus albigena,Prefrontal,white,0.424,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Lophocebus albigena,Other cortical association,gray,29.102,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Lophocebus albigena,Other cortical association,white,17.092,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Lophocebus albigena,Frontal motor,gray,3.926,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Lophocebus albigena,Frontal motor,white,3.063,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Papio anubis,Primary visual,gray,10.001,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,10.001,0.0,EXACT match (=your de Sousa V1)
+Papio anubis,Primary visual,white,3.74,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,primary_value to be filled from S6
+Papio anubis,Prefrontal,gray,3.921,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Papio anubis,Prefrontal,white,0.845,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Papio anubis,Other cortical association,gray,45.24,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Papio anubis,Other cortical association,white,33.835,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Papio anubis,Frontal motor,gray,4.686,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Papio anubis,Frontal motor,white,3.325,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Nasalis larvatus,Prefrontal,gray,0.813,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Nasalis larvatus,Prefrontal,white,0.074,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Nasalis larvatus,Frontal motor,gray,1.749,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Nasalis larvatus,Frontal motor,white,0.933,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Piliocolobus badius,Primary visual,gray,3.053,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,3.053,0.0,EXACT match (=your de Sousa V1)
+Piliocolobus badius,Primary visual,white,0.926,Smaers_etal_2017,"de Sousa et al. 2010, Cereb Cortex (striate, V1)",S6,,,primary_value to be filled from S6
+Piliocolobus badius,Prefrontal,gray,1.591,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Piliocolobus badius,Prefrontal,white,0.201,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Piliocolobus badius,Other cortical association,gray,22.629,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Piliocolobus badius,Other cortical association,white,9.665,Smaers_etal_2017,de Sousa 2010 (extrastriate) / derived — VERIFY,S6?,,,primary_value to be filled from S6?
+Piliocolobus badius,Frontal motor,gray,2.26,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2
+Piliocolobus badius,Frontal motor,white,1.317,Smaers_etal_2017,Smaers 2010 PLoS One + Smaers 2011 BBE,S1;S2,,,primary_value to be filled from S1;S2

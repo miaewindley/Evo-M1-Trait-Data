@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,binomial harmonized to key,,Species,,primary,Mammals (incl. primates),Bush_Allman_2003,via _keys/Allman/species_key.csv,
+species_as_published,as printed,,Species,,primary,,Bush_Allman_2003,,
+group,taxonomic group header from table,,Group,,primary,,Bush_Allman_2003,,
+cer_white_cm3,cerebellar white matter volume,CerebellumWhite,Volume.cm3,,primary,,Bush_Allman_2003,,
+cer_gray_cm3,cerebellar grey matter volume,CerebellumGrey,Volume.cm3,,primary,,Bush_Allman_2003,,
+neo_white_cm3,neocortex white matter volume,NeocortexWhite,Volume.cm3,,primary,,Bush_Allman_2003,,
+neo_gray_cm3,neocortex grey matter volume,NeocortexGrey,Volume.cm3,,primary,,Bush_Allman_2003,,
+source,source id,,Source,,primary,,Bush_Allman_2003,,

@@ -1,0 +1,7 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,species binomial,,Species,,primary,Primates (strepsirrhine-ape/human),deSousa_etal_2010,reconcile to _keys/Stephan/species_key.csv,
+V1_area_striata_grey_mm3,primary visual cortex (area striata) grey matter volume,V1_AreaStriata,Volume.mm3,,primary,Primates,deSousa_etal_2010,= ASG_Sousa,from your Stephan_primates.csv compilation
+LGN_mm3,lateral geniculate nucleus volume,LGN,Volume.mm3,,primary,Primates,deSousa_etal_2010,= LGN_Sousa,
+brain_volume_mm3,brain volume,WholeBrain,Volume.mm3,,primary,Primates,deSousa_etal_2010,= Brainvol,
+source,source identifier,,Source,,primary,Primates,deSousa_etal_2010,,
+note,provenance caveat,,Note,,primary,Primates,deSousa_etal_2010,,add de Sousa 2010 source PDF for a faithful snapshot

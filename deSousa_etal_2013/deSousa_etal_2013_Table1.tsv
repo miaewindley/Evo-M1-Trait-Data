@@ -1,0 +1,21 @@
+species	species_as_published	leaflets	n_leaflets	brain_weight_g	n_brain	LGN_volume_cm3	n_LGN	LGN_residual	source
+Homo sapiens	Y	10	1303.7	10	0.335	10.0	–13.35		deSousa_etal_2013
+Pan troglodytes	Y	6	406.5	3	0.344	3.0	5.12		deSousa_etal_2013
+Pan paniscus	Y	2	364.5	2	0.282	2.0	0.21		deSousa_etal_2013
+Gorilla gorilla	Y	1	376.0	1	0.3	1.0	1.64		deSousa_etal_2013
+Pongo pygmaeus	N	5	384.7	3	0.259	3.0	–2.73		deSousa_etal_2013
+Hylobates lar	N	2	106.0	2	0.166	2.0	–0.41		deSousa_etal_2013
+Hylobates muelleri	N	1	101.8	1	0.162	1.0	–0.60		deSousa_etal_2013
+Symphalangus syndactylus	N	1	138.7	1					deSousa_etal_2013
+Cercopithecus ascanius	Y	1	61.5	1	0.147	1.0	1.03		deSousa_etal_2013
+Cercopithecus mitis	Y	2	73.3	2	0.167	2.0	2.04		deSousa_etal_2013
+Erythrocebus patas	Y	1	94.2	1	0.267	1.0	10.45		deSousa_etal_2013
+Lophocebus albigena	Y	1	110.5	1	0.182	1.0	0.88		deSousa_etal_2013
+Macaca fascicularis	Y	1	57.6	1	0.092	1.0	–4.13		deSousa_etal_2013
+Macaca mulatta	Y	1	78.0	1	0.158	1.0	0.75		deSousa_etal_2013
+Miopithecus talapoin	Y	1	41.1	1	0.109	1.0	–0.72		deSousa_etal_2013
+Papio anubis	Y	1	206.5	2	0.395	1.0	17.22		deSousa_etal_2013
+Nasalis larvatus	Y	1	64.3	1	0.157	1.0	1.75		deSousa_etal_2013
+Pygathrix nemaeus	N	1	69.0	1	0.115	1.0	–2.85		deSousa_etal_2013
+Piliocolobus badius	N	2	76.9	2	0.128	2.0	–2.16		deSousa_etal_2013
+Colobus angolensis	Y	1	74.4	1	0.103	1.0	–4.46		deSousa_etal_2013
