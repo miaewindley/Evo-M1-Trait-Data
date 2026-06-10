@@ -1,0 +1,8 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species as named in Bauernfeind et al. 2013 Table 3,,,info,,,Bauernfeind_etal_2013_Table3,,
+hemisphere,hemisphere the species mean refers to (left or right),,,info,,,Bauernfeind_etal_2013_Table3,Table 3 prints left and right blocks side by side,
+n,number of individuals contributing to the species mean for that hemisphere,,,info,,,Bauernfeind_etal_2013_Table3,can differ between hemispheres (e.g. Pongo pygmaeus n=1 left / 2 right),
+subdivision,insular subdivision (Granular / Dysgranular / Agranular / FI / Total),,,info,,,Bauernfeind_etal_2013_Table3,Total = whole insula for that hemisphere,
+mean_mm3,species mean subdivision volume in mm3 (printed in cm3 as mean +/- SD; x1000),Insula,Vol.mm3,Mean,primary,Primates,Bauernfeind_etal_2013_Table3,species-mean summary of the per-individual Tables 1 (left) and 2 (right),
+sd_mm3,standard deviation of the subdivision volume in mm3 (printed in cm3; x1000),Insula,Vol.mm3,SD,primary,Primates,Bauernfeind_etal_2013_Table3,NA where n=1 (single specimen; no SD printed),
+Method:units,"printed units cm3 converted to project units mm3 (x1000). Table 3 is a species-mean summary (mean +/- SD) of the per-individual left (Table 1) and right (Table 2) insula volumes; it is kept for traceability and is not re-merged (the merge recomputes species means from Tables 1 and 2).",,,method,,,Bauernfeind_etal_2013_Table3,,

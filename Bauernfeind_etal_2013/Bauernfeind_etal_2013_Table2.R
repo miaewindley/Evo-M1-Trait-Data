@@ -1,174 +1,82 @@
-#!/usr/bin/env Rscript
-
-# Extract Table 2 from Bauernfeind et al. 2013, printed page 271
-# and write a text-readable Excel snapshot.
+# Bauernfeind_etal_2013_Table2.R
 #
-# Input:  bauernfeind_etal_2013.pdf in the current working directory
-# Output: Bauernfeind_etal_2013_Table2_snapshot.xlsx
+# Preparation step. Turn the journal-faithful snapshot of Bauernfeind et al. (2013)
+# Table 2 -- the per-INDIVIDUAL, shrinkage-corrected volumes of the RIGHT insula and
+# its subdivisions in humans and great apes -- into a lean, analysis-ready CSV/TSV.
+# Output comes from the snapshot only.  This is the right-hemisphere counterpart of
+# Table 1 (left); together they give whole-insula (both-hemisphere) volumes downstream
+# (see __merging_volumes/volumes_compiled.R, Phase-4 hemisphere reconciliation).
 #
-# Notes:
-# - The article's printed page 271 is PDF page 9.
-# - Coordinates are PDF points in Tabula/tabulizer's top-left origin:
-#   area = c(top, left, bottom, right).
-# - The crop targets the bottom-left Table 2 block only.
+# Snapshot layout (Bauernfeind_etal_2013_Table2_snapshot.xlsx, sheet Table2): a single
+# header row (Species, Individual, Granular, Dysgranular, Agranular, FI, Total insula)
+# then 15 individual rows.  Full binomial on the first individual of each species,
+# abbreviated ("H. sapiens") thereafter.  Volumes are cm3, exactly as printed.
+#
+# THIS script expands the abbreviated species names (carry the genus down) and converts
+# cm3 -> mm3 (x1000).  Because the table is the RIGHT insula, the five insula columns
+# carry the Barger-style _R side tag.  One row per individual (15).
+#
+# Input  : Bauernfeind_etal_2013_Table2_snapshot.xlsx   sheet: Table2
+# Outputs: Bauernfeind_etal_2013_Table2.csv             one row per individual (15)
+#          <DOI>_Table2.tsv in __Public/comparative-data/
 
-pdf_file <- "bauernfeind_etal_2013.pdf"
-out_file <- "Bauernfeind_etal_2013_Table2_snapshot.xlsx"
-pdf_page <- 9L
+suppressPackageStartupMessages({
+  library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr)
+})
+setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bauernfeind_etal_2013")
+options(scipen = 999)
 
-# Table 2 crop on PDF page 9 / printed page 271.
-# The table caption begins at y ~520; the tabular body begins at y ~548.
-caption_area <- c(518, 40, 545, 300)
-table_area   <- c(548, 40, 741, 300)
+snapshot_file  <- "Bauernfeind_etal_2013_Table2_snapshot.xlsx"
+snapshot_sheet <- "Table2"
+output_file    <- "Bauernfeind_etal_2013_Table2.csv"
 
-# Column separators estimated from the Table 2 x positions.
-# These split into: Species, Individual, Granular, Dysgranular,
-# Agranular, FI, Total insula volume.
-col_separators <- c(89, 136, 171, 205, 237, 259)
+num <- function(x) parse_number(as.character(x), na = c("", "-", "\u2013", "\u2014", "NA", "n.a."))
 
-required <- c("openxlsx")
-missing <- required[!vapply(required, requireNamespace, logical(1), quietly = TRUE)]
-if (length(missing) > 0) {
-  stop("Install missing package(s): ", paste(missing, collapse = ", "), call. = FALSE)
+raw <- read_excel(snapshot_file, sheet = snapshot_sheet, col_types = "text")
+names(raw) <- c("species_disp", "individual", "granular_cm3", "dysgranular_cm3",
+                "agranular_cm3", "FI_cm3", "total_insula_cm3")
+
+# expand abbreviated species: carry the most recent full genus down onto "H. sapiens" rows
+dat <- raw %>%
+  filter(!is.na(individual), str_squish(individual) != "") %>%
+  mutate(genus_tok  = word(str_squish(species_disp), 1),
+         full_genus = ifelse(str_detect(genus_tok, "\\.$"), NA_character_, genus_tok)) %>%
+  fill(full_genus, .direction = "down") %>%
+  mutate(Species_Bauernfeind2013 = ifelse(str_detect(genus_tok, "\\.$"),
+            str_squish(paste(full_genus, word(str_squish(species_disp), 2, -1))),
+            str_squish(species_disp)))
+
+final.dataframe <- dat %>% transmute(
+  Species_Bauernfeind2013,
+  Individual         = str_squish(individual),
+  # Table 2 is the RIGHT insula; tag the five insula measures with _R. cm3 -> mm3.
+  granular_R_mm3     = num(granular_cm3)     * 1000,
+  dysgranular_R_mm3  = num(dysgranular_cm3)  * 1000,
+  agranular_R_mm3    = num(agranular_cm3)    * 1000,
+  FI_R_mm3           = num(FI_cm3)           * 1000,
+  total_insula_R_mm3 = num(total_insula_cm3) * 1000)
+
+write.csv(final.dataframe, output_file, row.names = FALSE)
+message("Wrote ", output_file, "  (", nrow(final.dataframe), " individuals, ",
+        dplyr::n_distinct(final.dataframe$Species_Bauernfeind2013), " species)")
+
+## ---- also write the DOI-coded TSV to __Public/comparative-data/ ----
+## Item-name "Bauernfeind_etal_2013_Table2" should be added to __ReadMe.xlsx (manually, to
+## preserve its formula columns); until then fall back to the Table-1 DOI with a _Table2 tag.
+item_name <- "Bauernfeind_etal_2013_Table2"
+base      <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
+tsv_dir   <- file.path(base, "__Public/comparative-data")
+enc_fallback <- "10.1016%2Fj.jhevol.2012.12.003_Table2"
+enc <- tryCatch({
+  fc <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  e <- fc$"Item encoded"[match(item_name, fc$"Item name")]
+  if (length(e) && !is.na(e) && nzchar(e)) e else enc_fallback
+}, error = function(e) enc_fallback)
+if (dir.exists(path.expand(tsv_dir))) {
+  write.table(final.dataframe, file = file.path(tsv_dir, paste0(enc, ".tsv")),
+              sep = "\t", row.names = FALSE)
+  message("Wrote ", file.path(tsv_dir, paste0(enc, ".tsv")))
+} else {
+  write.table(final.dataframe, file = paste0(enc, ".tsv"), sep = "\t", row.names = FALSE)
+  warning("Shared folder not found; wrote local TSV: ", paste0(enc, ".tsv"))
 }
-if (!file.exists(pdf_file)) {
-  stop("PDF not found: ", normalizePath(pdf_file, mustWork = FALSE), call. = FALSE)
-}
-
-squish_matrix <- function(x) {
-  x <- as.matrix(x)
-  x[is.na(x)] <- ""
-  x <- apply(x, c(1, 2), function(z) {
-    z <- gsub("\\r|\\n", " ", z)
-    z <- gsub("[[:space:]]+", " ", z)
-    trimws(z)
-  })
-  x <- x[rowSums(x != "") > 0, , drop = FALSE]
-  x <- x[, colSums(x != "") > 0, drop = FALSE]
-  x
-}
-
-extract_with_tabula <- function() {
-  if (!requireNamespace("tabulizer", quietly = TRUE)) return(NULL)
-
-  attempts <- list(
-    list(method = "stream",  area = list(table_area), columns = list(col_separators)),
-    list(method = "lattice", area = list(table_area), columns = NULL),
-    list(method = "stream",  area = list(c(518, 40, 741, 300)), columns = list(col_separators))
-  )
-
-  for (a in attempts) {
-    res <- tryCatch(
-      tabulizer::extract_tables(
-        file = pdf_file,
-        pages = pdf_page,
-        guess = FALSE,
-        area = a$area,
-        columns = a$columns,
-        method = a$method,
-        output = "matrix"
-      ),
-      error = function(e) NULL
-    )
-    if (length(res) >= 1) {
-      mat <- squish_matrix(res[[1]])
-      if (nrow(mat) >= 8 && ncol(mat) >= 4) return(mat)
-    }
-  }
-  NULL
-}
-
-extract_with_pdftools <- function() {
-  if (!requireNamespace("pdftools", quietly = TRUE)) {
-    stop(
-      "Could not extract with tabulizer, and pdftools is not installed.\n",
-      "Install tabulizer plus Java/rJava, or install pdftools for the coordinate fallback.",
-      call. = FALSE
-    )
-  }
-
-  dat <- pdftools::pdf_data(pdf_file)[[pdf_page]]
-  dat <- dat[dat$x >= table_area[2] & dat$x <= table_area[4] &
-               dat$y >= table_area[1] & dat$y <= table_area[3], ]
-  if (nrow(dat) == 0) stop("No text found in the specified Table 2 crop.", call. = FALSE)
-
-  dat <- dat[order(dat$y, dat$x), ]
-
-  # Cluster text lines by y coordinate. A 3-point tolerance handles superscript-like
-  # offsets while keeping adjacent table rows separated.
-  y_sorted <- sort(unique(dat$y))
-  row_map <- integer(length(y_sorted))
-  row_map[1] <- 1L
-  for (i in seq_along(y_sorted)[-1]) {
-    row_map[i] <- row_map[i - 1] + as.integer((y_sorted[i] - y_sorted[i - 1]) > 3)
-  }
-  names(row_map) <- as.character(y_sorted)
-  dat$row_id <- unname(row_map[as.character(dat$y)])
-
-  # Assign words to the seven visual table columns.
-  dat$col_id <- findInterval(dat$x, vec = c(-Inf, col_separators, Inf), rightmost.closed = TRUE)
-
-  nr <- max(dat$row_id)
-  nc <- 7L
-  mat <- matrix("", nrow = nr, ncol = nc)
-  for (r in seq_len(nr)) {
-    for (c in seq_len(nc)) {
-      words <- dat$text[dat$row_id == r & dat$col_id == c]
-      if (length(words) > 0) mat[r, c] <- paste(words, collapse = " ")
-    }
-  }
-  colnames(mat) <- c("Species", "Individual", "Granular", "Dysgranular", "Agranular", "FI", "Total insula volume")
-  squish_matrix(mat)
-}
-
-message("Extracting Table 2 from ", pdf_file, " page ", pdf_page, " ...")
-tbl <- extract_with_tabula()
-extractor <- "tabulizer"
-if (is.null(tbl)) {
-  message("tabulizer extraction unavailable or low quality; falling back to pdftools coordinates.")
-  tbl <- extract_with_pdftools()
-  extractor <- "pdftools"
-}
-
-# Build a text-readable Excel snapshot. Values are kept as text to preserve the
-# visual layout rather than forcing a tidy analytical table.
-wb <- openxlsx::createWorkbook()
-openxlsx::addWorksheet(wb, "Table2_snapshot", gridLines = FALSE)
-openxlsx::addWorksheet(wb, "Extraction_notes", gridLines = FALSE)
-
-caption <- c(
-  "Table 2",
-  "Stereologic estimates of shrinkage-corrected volumes (cm^3) for right insula and its subdivisions in each human and great ape sampled."
-)
-
-openxlsx::writeData(wb, "Table2_snapshot", caption[1], startRow = 1, startCol = 1)
-openxlsx::writeData(wb, "Table2_snapshot", caption[2], startRow = 2, startCol = 1)
-openxlsx::writeData(wb, "Table2_snapshot", as.data.frame(tbl, stringsAsFactors = FALSE),
-                    startRow = 4, startCol = 1, colNames = FALSE)
-
-# Formatting for readability.
-title_style <- openxlsx::createStyle(textDecoration = "bold", fontSize = 12)
-caption_style <- openxlsx::createStyle(wrapText = TRUE, valign = "top")
-header_style <- openxlsx::createStyle(textDecoration = "bold", border = "bottom", valign = "top")
-body_style <- openxlsx::createStyle(wrapText = TRUE, valign = "top")
-
-openxlsx::addStyle(wb, "Table2_snapshot", title_style, rows = 1, cols = 1, gridExpand = TRUE)
-openxlsx::addStyle(wb, "Table2_snapshot", caption_style, rows = 2, cols = 1:7, gridExpand = TRUE)
-openxlsx::addStyle(wb, "Table2_snapshot", body_style, rows = 4:(nrow(tbl) + 3), cols = 1:ncol(tbl), gridExpand = TRUE)
-openxlsx::addStyle(wb, "Table2_snapshot", header_style, rows = 4:min(6, nrow(tbl) + 3), cols = 1:ncol(tbl), gridExpand = TRUE, stack = TRUE)
-openxlsx::mergeCells(wb, "Table2_snapshot", cols = 1:7, rows = 2)
-openxlsx::setColWidths(wb, "Table2_snapshot", cols = 1:7, widths = c(18, 16, 11, 14, 12, 8, 14))
-openxlsx::setRowHeights(wb, "Table2_snapshot", rows = 1:(nrow(tbl) + 3), heights = "auto")
-openxlsx::freezePane(wb, "Table2_snapshot", firstActiveRow = 4)
-
-notes <- data.frame(
-  field = c("source_pdf", "printed_page", "pdf_page", "extractor", "table_area_top_left_bottom_right_pts", "column_separators_pts", "output"),
-  value = c(pdf_file, "271", as.character(pdf_page), extractor,
-            paste(table_area, collapse = ", "), paste(col_separators, collapse = ", "), out_file),
-  stringsAsFactors = FALSE
-)
-openxlsx::writeData(wb, "Extraction_notes", notes, startRow = 1, startCol = 1, colNames = TRUE)
-openxlsx::setColWidths(wb, "Extraction_notes", cols = 1:2, widths = c(36, 80))
-
-openxlsx::saveWorkbook(wb, out_file, overwrite = TRUE)
-message("Wrote: ", normalizePath(out_file, mustWork = FALSE))

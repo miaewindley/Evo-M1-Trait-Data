@@ -51,7 +51,10 @@ registry and the term map disagree):
 | Source | Columns | Side | Suffix |
 |---|---|---|---|
 | Stephan 1981 | Complexus vestibularis + 4 vestibular nuclei (codes 35–39) | one side (per Baron 1988) | `_unilateral` |
-| Bauernfeind 2013 | insula: granular, dysgranular, agranular, FI, total | **left** (paper's Table 1; right is its Table 2, not snapshotted) | `_left` |
+| Bauernfeind 2013 | insula: granular, dysgranular, agranular, FI, total | **left** = Table 1 (`_left`); **right** = Table 2 (`_right`) | `_left` / `_right` |
+
+Left (Table 1) and right (Table 2) are combined into whole-insula both-hemisphere volumes in
+`volumes_compiled.R` (step 7): both sides → left + right; left-only species → 2× left, flagged.
 
 Numeric values are **not** doubled; a both-sides estimate, if needed, is derived downstream as `2 ×` and
 flagged (`estimated_bilateral_from_unilateral = TRUE`), never overwriting the original. Individual-hemisphere
@@ -101,6 +104,11 @@ within ±25 % (only Homo and Crocidura deviate). They resolve as:
    NTO `0` → `NA` (not-determinable sentinel).
    Outputs: `volumes_long.csv`, `volumes_wide.csv`, `volumes_flags.csv`; audit
    `volumes_unfiltered.csv`; inventory `volumes_source_species_ids.csv`.
+3. **Hemisphere reconciliation** (step 7 of `volumes_compiled.R`; see `volumes_wide.NOTE.md`).
+   Add whole-structure both-hemisphere variables (no laterality suffix): sum left + right where
+   both sides exist (Bauernfeind insula = Table 1 + Table 2); otherwise estimate as 2× the one
+   measured side and flag it (`estimated_bilateral_from_unilateral`), preferring a genuine
+   both-sides value over an estimate. One-side columns are kept for traceability.
 
 ## Current state
 

@@ -1,47 +1,64 @@
 compat_key,canonical_structure,measure_class,n_variables,n_papers,papers,taxa,roles,poolable
+WholeBrain | volume,WholeBrain,volume,10,8,Ashwell__2020; Bush_Allman_2004_a; Bush_Allman_2004_b; deSousa_etal_2010; MacLeod_etal_2003; Semendeferi_etal_1998; Semendeferi_etal_2001; Smaers_etal_2011,Apes & humans; Apes (Hominoidea); Mammalia; Primates,both; primary,TRUE
 (structure-agnostic; see data columns) | count (number),(structure-agnostic; see data columns),count (number),14,7,AvelinodeSouza_etal_2025; Burish_etal_2010; DosSantos_etal_2017; DosSantos_etal_2020; HerculanoHouzel_etal_2015; JardimMesseder_etal_2017; Kverkova_etal_2018,Carnivores & other companion mammals; Cetaceans & other placental mammals; Mammals; Marsupials; Primates (+ other mammals); Rodents (African mole-rats +),both; primary; review,TRUE
 (structure-agnostic; see data columns) | mass,(structure-agnostic; see data columns),mass,11,7,AvelinodeSouza_etal_2025; Burish_etal_2010; DosSantos_etal_2017; DosSantos_etal_2020; HerculanoHouzel_etal_2015; JardimMesseder_etal_2017; Kverkova_etal_2018,Carnivores & other companion mammals; Cetaceans & other placental mammals; Mammals; Marsupials; Primates (+ other mammals); Rodents (African mole-rats +),both; primary; review,TRUE
-WholeBrain | volume,WholeBrain,volume,9,7,Bush_Allman_2004_a; Bush_Allman_2004_b; MacLeod_etal_2003; Semendeferi_etal_1998; Semendeferi_etal_2001; Smaers_etal_2011; deSousa_etal_2010,; Apes & humans; Apes (Hominoidea); Primates,both; primary,TRUE
+Body_weight | mass,Body_weight,mass,7,7,Bauernfeind_etal_2013; Frahm_etal_1997; Frahm_etal_1998; Frahm_Zilles_1994; Matano_etal_1985_a; Matano_etal_1985_b; Stephan_etal_1981,"Insectivora & Primates; Insectivora, Scandentia & Primates; Primates; Rodentia & Insectivora",primary; secondary,TRUE
 (structure-agnostic; see data columns) | density (per mass/volume),(structure-agnostic; see data columns),density (per mass/volume),10,6,AvelinodeSouza_etal_2025; Burish_etal_2010; DosSantos_etal_2017; DosSantos_etal_2020; HerculanoHouzel_etal_2015; JardimMesseder_etal_2017,Carnivores & other companion mammals; Cetaceans & other placental mammals; Mammals; Marsupials; Primates (+ other mammals),both; primary; review,TRUE
+Neocortex | volume,Neocortex,volume,14,5,deSousa_etal_2010; Frahm_etal_1982; Frahm_etal_1997; Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora & Primates; Insectivora, Scandentia & Primates; Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
+Cerebellum | volume,Cerebellum,volume,10,5,Ashwell__2020; Frahm_etal_1997; MacLeod_etal_2003; Stephan_etal_1981; Zilles__Rehkamper_1988,"Apes (Hominoidea); Insectivora, Scandentia & Primates; Mammalia; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
 (structure-agnostic; see data columns) | ratio (per neuron),(structure-agnostic; see data columns),ratio (per neuron),5,5,AvelinodeSouza_etal_2025; DosSantos_etal_2017; DosSantos_etal_2020; HerculanoHouzel_etal_2015; JardimMesseder_etal_2017,Carnivores & other companion mammals; Cetaceans & other placental mammals; Mammals; Marsupials,both; primary,TRUE
-Body_weight | mass,Body_weight,mass,5,5,Bauernfeind_etal_2013; Frahm_Zilles_1994; Matano_etal_1985_a; Matano_etal_1985_b; Stephan_etal_1981,"Insectivora & Primates; Insectivora, Scandentia & Primates; Primates",primary; secondary,TRUE
-Neocortex | volume,Neocortex,volume,10,4,Frahm_etal_1982; Stephan_etal_1981; Zilles__Rehkamper_1988; deSousa_etal_2010,"; Insectivora, Scandentia & Primates; Primates; Primates (Pongo)",primary,TRUE
-Amygdala | volume,Amygdala,volume,6,3,Stephan_etal_1981; Stephan_etal_1987; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Insectivora–Primates (incl. Homo); Primates (Pongo)",primary,TRUE
-Cerebellum | volume,Cerebellum,volume,6,3,MacLeod_etal_2003; Stephan_etal_1981; Zilles__Rehkamper_1988,"Apes (Hominoidea); Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
-Hippocampus | volume,Hippocampus,volume,6,3,Frahm_Zilles_1994; Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora & Primates; Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
-LGN | volume,LGN,volume,5,3,Bush_Allman_2004_b; deSousa_etal_2010; deSousa_etal_2013,; Primates,primary,TRUE
+Brain_weight | mass,Brain_weight,mass,5,5,Bauernfeind_etal_2013; deSousa_etal_2013; Frahm_etal_1997; Frahm_etal_1998; Stephan_etal_1981,"Insectivora & Primates; Insectivora, Scandentia & Primates; Primates; Rodentia & Insectivora",primary; secondary,TRUE
+Corpus_geniculatum_laterale | volume,Corpus_geniculatum_laterale,volume,5,5,deSousa_etal_2010; deSousa_etal_2013; Frahm_etal_1998; Stephan_etal_1981; Stephan_etal_1984,"Insectivora & Primates; Insectivora, Scandentia & Primates",primary,TRUE
+Amygdala | volume,Amygdala,volume,10,4,Frahm_etal_1997; Stephan_etal_1981; Stephan_etal_1987; Zilles__Rehkamper_1988,"Insectivora–Primates (incl. Homo); Insectivora & Primates; Insectivora, Scandentia & Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
+Hippocampus | volume,Hippocampus,volume,8,4,Frahm_etal_1997; Frahm_Zilles_1994; Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora & Primates; Insectivora, Scandentia & Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
+Area_striata_grey_matter | volume,Area_striata_grey_matter,volume,4,4,deSousa_etal_2010; Frahm_etal_1984; Frahm_etal_1998; Zilles__Rehkamper_1988,Insectivora & Primates; Primates (Pongo),primary,TRUE
+Septum | volume,Septum,volume,6,3,Frahm_etal_1997; Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
+Striatum | volume,Striatum,volume,6,3,Frahm_etal_1997; Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
+LGN | volume,LGN,volume,5,3,Bush_Allman_2004_b; deSousa_etal_2010; deSousa_etal_2013,Primates,primary,TRUE
 (structure-agnostic; see data columns) | proportion (of CNS/body/brain),(structure-agnostic; see data columns),proportion (of CNS/body/brain),4,3,Burish_etal_2010; HerculanoHouzel_etal_2015; Kverkova_etal_2018,Mammals; Primates (+ other mammals); Rodents (African mole-rats +),both; primary; review,TRUE
+Diencephalon | volume,Diencephalon,volume,3,3,Frahm_etal_1997; Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
 NeocortexGrey | volume,NeocortexGrey,volume,3,3,Bush_Allman_2003; Bush_Allman_2004_a; Bush_Allman_2004_b,,primary,TRUE
 NeocortexWhite | volume,NeocortexWhite,volume,3,3,Bush_Allman_2003; Bush_Allman_2004_a; Bush_Allman_2004_b,,primary,TRUE
-FrontalGrey | volume,FrontalGrey,volume,7,2,Bush_Allman_2004_a; Smaers_etal_2011,; Primates,both; primary,TRUE
+Palaeocortex | volume,Palaeocortex,volume,3,3,Frahm_etal_1997; Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
+Telencephalon | volume,Telencephalon,volume,3,3,Frahm_etal_1997; Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo); Rodentia & Insectivora",primary,TRUE
+Total_brain_net_volume | volume,Total_brain_net_volume,volume,3,3,Bauernfeind_etal_2013; deSousa_etal_2010; Stephan_etal_1981,"Insectivora & Primates; Insectivora, Scandentia & Primates; Primates",primary,TRUE
+FrontalGrey | volume,FrontalGrey,volume,7,2,Bush_Allman_2004_a; Smaers_etal_2011,Primates,both; primary,TRUE
 Mesencephalon | volume,Mesencephalon,volume,4,2,Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
-Septum | volume,Septum,volume,4,2,Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
-Striatum | volume,Striatum,volume,4,2,Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
 OlfactoryBulb | volume,OlfactoryBulb,volume,3,2,Baron_etal_1983; Baron_etal_1987,"Insectivora, Scandentia & Primates",primary,TRUE
 VisualCortex | density (per mass/volume),VisualCortex,density (per mass/volume),3,2,Lewitus_etal_2013; Lewitus_etal_2014,Mammals,primary; secondary,TRUE
-Brain_weight | mass,Brain_weight,mass,2,2,Bauernfeind_etal_2013; Stephan_etal_1981,"Insectivora, Scandentia & Primates; Primates",primary,TRUE
-Diencephalon | volume,Diencephalon,volume,2,2,Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
+Area_striata | volume,Area_striata,volume,2,2,Frahm_etal_1984; Stephan_etal_1981,"Insectivora & Primates; Insectivora, Scandentia & Primates",primary,TRUE
+Bulbus_olfactorius | volume,Bulbus_olfactorius,volume,2,2,Frahm_etal_1997; Stephan_etal_1981,"Insectivora, Scandentia & Primates; Rodentia & Insectivora",primary,TRUE
+CerebellarHemisphere | volume,CerebellarHemisphere,volume,2,2,Ashwell__2020; MacLeod_etal_2003,Apes (Hominoidea); Mammalia,primary,TRUE
+CerebellarVermis | volume,CerebellarVermis,volume,2,2,Ashwell__2020; MacLeod_etal_2003,Apes (Hominoidea); Mammalia,primary,TRUE
+Complexus_centromedialis | volume,Complexus_centromedialis,volume,2,2,Stephan_etal_1981; Stephan_etal_1987,"Insectivora & Primates; Insectivora, Scandentia & Primates",primary,TRUE
+Complexus_corticobasolateralis | volume,Complexus_corticobasolateralis,volume,2,2,Stephan_etal_1981; Stephan_etal_1987,"Insectivora & Primates; Insectivora, Scandentia & Primates",primary,TRUE
 Medulla_oblongata | volume,Medulla_oblongata,volume,2,2,Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
 Neocortex_grey_matter | volume,Neocortex_grey_matter,volume,2,2,Frahm_etal_1982; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
 Neocortex_white_matter | volume,Neocortex_white_matter,volume,2,2,Frahm_etal_1982; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
-Palaeocortex | volume,Palaeocortex,volume,2,2,Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
+Nucleus_amygdalae_basalis_pars_magnocellularis | volume,Nucleus_amygdalae_basalis_pars_magnocellularis,volume,2,2,Stephan_etal_1981; Stephan_etal_1987,"Insectivora & Primates; Insectivora, Scandentia & Primates",primary,TRUE
+Nucleus_tractus_olfactorius | volume,Nucleus_tractus_olfactorius,volume,2,2,Stephan_etal_1981; Stephan_etal_1987,"Insectivora & Primates; Insectivora, Scandentia & Primates",primary,TRUE
 Pallidum | volume,Pallidum,volume,2,2,Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
 Prepiriform_cortex | volume,Prepiriform_cortex,volume,2,2,Baron_etal_1987; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
-Telencephalon | volume,Telencephalon,volume,2,2,Stephan_etal_1981; Zilles__Rehkamper_1988,"Insectivora, Scandentia & Primates; Primates (Pongo)",primary,TRUE
-Total_brain_net_volume | volume,Total_brain_net_volume,volume,2,2,Bauernfeind_etal_2013; Stephan_etal_1981,"Insectivora, Scandentia & Primates; Primates",primary,TRUE
+Schizo_cortex | volume,Schizo_cortex,volume,2,2,Frahm_etal_1997; Stephan_etal_1981,"Insectivora, Scandentia & Primates; Rodentia & Insectivora",primary,TRUE
 WholeBrain | mass,WholeBrain,mass,2,2,deSousa_etal_2010; deSousa_etal_2013,,primary,TRUE
 FrontalWhite | volume,FrontalWhite,volume,6,1,Smaers_etal_2011,Primates,both,FALSE
+Cerebellum | surface area,Cerebellum,surface area,4,1,Ashwell__2020,Mammalia,primary,FALSE
+Insula | volume,Insula,volume,4,1,Bauernfeind_etal_2013,Primates,primary,FALSE
 AccessoryBasalNucleus | volume,AccessoryBasalNucleus,volume,3,1,Barger_etal_2007,Apes & humans,primary,FALSE
 AmygdaloidComplex | volume,AmygdaloidComplex,volume,3,1,Barger_etal_2007,Apes & humans,primary,FALSE
 BasalNucleus | volume,BasalNucleus,volume,3,1,Barger_etal_2007,Apes & humans,primary,FALSE
 BasolateralDivision | volume,BasolateralDivision,volume,3,1,Barger_etal_2007,Apes & humans,primary,FALSE
 LateralNucleus | volume,LateralNucleus,volume,3,1,Barger_etal_2007,Apes & humans,primary,FALSE
-V1_AreaStriata | volume,V1_AreaStriata,volume,3,1,deSousa_etal_2010,; Primates,primary,FALSE
+V1_AreaStriata | volume,V1_AreaStriata,volume,3,1,deSousa_etal_2010,Primates,primary,FALSE
 AccessoryOlfactoryBulb | per mille (relative),AccessoryOlfactoryBulb,per mille (relative),2,1,Stephan_etal_1982,"Insectivora, Scandentia & Primates",primary,FALSE
 AccessoryOlfactoryBulb | volume,AccessoryOlfactoryBulb,volume,2,1,Stephan_etal_1982,"Insectivora, Scandentia & Primates",primary,FALSE
+Agranular_insular_cortex | volume,Agranular_insular_cortex,volume,2,1,Bauernfeind_etal_2013,Primates,primary,FALSE
 AssociationCortex | volume,AssociationCortex,volume,2,1,Smaers_etal_2017,Primates,both,FALSE
+Cerebellum | size index (allometric),Cerebellum,size index (allometric),2,1,Ashwell__2020,Mammalia,derived,FALSE
+Dysgranular_insular_cortex | volume,Dysgranular_insular_cortex,volume,2,1,Bauernfeind_etal_2013,Primates,primary,FALSE
 FrontalCortex | surface area,FrontalCortex,surface area,2,1,Semendeferi_etal_2002,Apes & humans,primary,FALSE
 FrontalMotor | volume,FrontalMotor,volume,2,1,Smaers_etal_2017,Primates,both,FALSE
+Granular_insular_cortex | volume,Granular_insular_cortex,volume,2,1,Bauernfeind_etal_2013,Primates,primary,FALSE
 Hypothalamus | volume,Hypothalamus,volume,2,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 Neocortex | count (number),Neocortex,count (number),2,1,deSousa_etal_2010,Primates,metadata,FALSE
 OlfactoryBulb | per mille (relative),OlfactoryBulb,per mille (relative),2,1,Baron_etal_1983,"Insectivora, Scandentia & Primates",primary,FALSE
@@ -49,13 +66,16 @@ PrefrontalCortex | volume,PrefrontalCortex,volume,2,1,Smaers_etal_2017,Primates,
 PrimaryVisualCortex | volume,PrimaryVisualCortex,volume,2,1,Smaers_etal_2017,Primates,both,FALSE
 Thalamus | volume,Thalamus,volume,2,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 VisualCortex | G.p.N.Stereology,VisualCortex,G.p.N.Stereology,2,1,Lewitus_etal_2014,Mammals,secondary,FALSE
+fronto_insular_cortex | volume,fronto_insular_cortex,volume,2,1,Bauernfeind_etal_2013,Primates,primary,FALSE
 (structure-agnostic; see data columns) | ActivityPattern,(structure-agnostic; see data columns),ActivityPattern,1,1,Bush_Allman_2004_a,,secondary,FALSE
+(structure-agnostic; see data columns) | CommonName,(structure-agnostic; see data columns),CommonName,1,1,Ashwell__2020,Mammalia,primary,FALSE
 (structure-agnostic; see data columns) | CorrectionFactor,(structure-agnostic; see data columns),CorrectionFactor,1,1,deSousa_etal_2010,,primary,FALSE
 (structure-agnostic; see data columns) | Diet,(structure-agnostic; see data columns),Diet,1,1,Bush_Allman_2004_a,,secondary,FALSE
 (structure-agnostic; see data columns) | Group,(structure-agnostic; see data columns),Group,1,1,Bush_Allman_2003,,primary,FALSE
 (structure-agnostic; see data columns) | GroupSize,(structure-agnostic; see data columns),GroupSize,1,1,Bush_Allman_2004_a,,secondary,FALSE
 (structure-agnostic; see data columns) | SocialGroup,(structure-agnostic; see data columns),SocialGroup,1,1,Bush_Allman_2004_a,,secondary,FALSE
 (structure-agnostic; see data columns) | Taxon,(structure-agnostic; see data columns),Taxon,1,1,Stephan_etal_1987,Insectivora–Primates (incl. Homo),primary,FALSE
+(structure-agnostic; see data columns) | TaxonGroup,(structure-agnostic; see data columns),TaxonGroup,1,1,Ashwell__2020,Mammalia,primary,FALSE
 (structure-agnostic; see data columns) | length,(structure-agnostic; see data columns),length,1,1,Burish_etal_2010,Primates (+ other mammals),review,FALSE
 (structure-agnostic; see data columns) | ratio,(structure-agnostic; see data columns),ratio,1,1,DosSantos_etal_2020,Mammals,primary,FALSE
 (structure-agnostic; see data columns) | volume,(structure-agnostic; see data columns),volume,1,1,Kverkova_etal_2018,Rodents (African mole-rats +),primary,FALSE
@@ -69,48 +89,45 @@ AccessoryOlfactoryBulb_layers_1_2 | volume,AccessoryOlfactoryBulb_layers_1_2,vol
 AccessoryOlfactoryBulb_layers_3_5 | percentage (relative),AccessoryOlfactoryBulb_layers_3_5,percentage (relative),1,1,Stephan_etal_1982,"Insectivora, Scandentia & Primates",primary,FALSE
 AccessoryOlfactoryBulb_layers_3_5 | size index (allometric),AccessoryOlfactoryBulb_layers_3_5,size index (allometric),1,1,Stephan_etal_1982,"Insectivora, Scandentia & Primates",primary,FALSE
 AccessoryOlfactoryBulb_layers_3_5 | volume,AccessoryOlfactoryBulb_layers_3_5,volume,1,1,Stephan_etal_1982,"Insectivora, Scandentia & Primates",primary,FALSE
-Agranular_insular_cortex | volume,Agranular_insular_cortex,volume,1,1,Bauernfeind_etal_2013,Primates,primary,FALSE
 AnteriorCommissure | volume,AnteriorCommissure,volume,1,1,Baron_etal_1987,"Insectivora, Scandentia & Primates",primary,FALSE
 Area10 | volume,Area10,volume,1,1,Semendeferi_etal_2001,Apes & humans,primary,FALSE
 Area13 | volume,Area13,volume,1,1,Semendeferi_etal_1998,Apes & humans,primary,FALSE
-Area_striata | volume,Area_striata,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
-Area_striata_grey_matter | volume,Area_striata_grey_matter,volume,1,1,Zilles__Rehkamper_1988,Primates (Pongo),primary,FALSE
+Area_striata_lamina_1 | volume,Area_striata_lamina_1,volume,1,1,Frahm_etal_1984,Insectivora & Primates,primary,FALSE
+Area_striata_laminae_2_6 | volume,Area_striata_laminae_2_6,volume,1,1,Frahm_etal_1984,Insectivora & Primates,primary,FALSE
+Area_striata_white_matter | volume,Area_striata_white_matter,volume,1,1,Frahm_etal_1984,Insectivora & Primates,primary,FALSE
 AssociationCortex | surface area,AssociationCortex,surface area,1,1,Smaers_etal_2017,Primates,both,FALSE
 BasalNucleusMagnocellular | volume,BasalNucleusMagnocellular,volume,1,1,Stephan_etal_1987,Insectivora–Primates (incl. Homo),primary,FALSE
-Bulbus_olfactorius | volume,Bulbus_olfactorius,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 Bulbus_olfactorius_accessorius | volume,Bulbus_olfactorius_accessorius,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 CA1 | volume,CA1,volume,1,1,Frahm_Zilles_1994,Insectivora & Primates,primary,FALSE
 CA2 | volume,CA2,volume,1,1,Frahm_Zilles_1994,Insectivora & Primates,primary,FALSE
 CA3 | volume,CA3,volume,1,1,Frahm_Zilles_1994,Insectivora & Primates,primary,FALSE
 Capsula_interna | volume,Capsula_interna,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 CentromedialAmygdala | volume,CentromedialAmygdala,volume,1,1,Stephan_etal_1987,Insectivora–Primates (incl. Homo),primary,FALSE
-CerebellarHemisphere | volume,CerebellarHemisphere,volume,1,1,MacLeod_etal_2003,Apes (Hominoidea),primary,FALSE
-CerebellarVermis | volume,CerebellarVermis,volume,1,1,MacLeod_etal_2003,Apes (Hominoidea),primary,FALSE
+CerebellarCortex | volume,CerebellarCortex,volume,1,1,Ashwell__2020,Mammalia,primary,FALSE
+CerebellarOrganization | Ratio,CerebellarOrganization,Ratio,1,1,Ashwell__2020,Mammalia,derived,FALSE
+CerebellarWhiteMatter | volume,CerebellarWhiteMatter,volume,1,1,Ashwell__2020,Mammalia,primary,FALSE
 Cerebellar_nuclei_total | volume,Cerebellar_nuclei_total,volume,1,1,Matano_etal_1985_a,"Insectivora, Scandentia & Primates",primary,FALSE
 CerebellumGrey | volume,CerebellumGrey,volume,1,1,Bush_Allman_2003,,primary,FALSE
 CerebellumWhite | volume,CerebellumWhite,volume,1,1,Bush_Allman_2003,,primary,FALSE
-Complexus_centromedialis | volume,Complexus_centromedialis,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
-Complexus_corticobasolateralis | volume,Complexus_corticobasolateralis,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
+Complexus_sensorius_trigeminalis | volume,Complexus_sensorius_trigeminalis,volume,1,1,Baron_etal_1990,Insectivora & Primates,primary,FALSE
 Complexus_vestibularis | volume,Complexus_vestibularis,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
-Corpus_geniculatum_laterale | volume,Corpus_geniculatum_laterale,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 Corpus_pineal | volume,Corpus_pineal,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 Corpus_subcommissurale | volume,Corpus_subcommissurale,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 Corpus_subfornicale | volume,Corpus_subfornicale,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 CortexGreyRest | volume,CortexGreyRest,volume,1,1,Bush_Allman_2004_a,,primary,FALSE
 CorticobasolateralAmygdala | volume,CorticobasolateralAmygdala,volume,1,1,Stephan_etal_1987,Insectivora–Primates (incl. Homo),primary,FALSE
-Dysgranular_insular_cortex | volume,Dysgranular_insular_cortex,volume,1,1,Bauernfeind_etal_2013,Primates,primary,FALSE
+DeepCerebellarNuclei | volume,DeepCerebellarNuclei,volume,1,1,Ashwell__2020,Mammalia,primary,FALSE
 EntorhinalCortex | volume,EntorhinalCortex,volume,1,1,Zilles__Rehkamper_1988,Primates (Pongo),primary,FALSE
 Epithalamus | volume,Epithalamus,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 Fascia_dentata | volume,Fascia_dentata,volume,1,1,Frahm_Zilles_1994,Insectivora & Primates,primary,FALSE
+FlocculonodularLobe | volume,FlocculonodularLobe,volume,1,1,Ashwell__2020,Mammalia,primary,FALSE
 FrontalCortex | volume,FrontalCortex,volume,1,1,Semendeferi_etal_2002,Apes & humans,primary,FALSE
 FrontalGrey | ratio,FrontalGrey,ratio,1,1,Bush_Allman_2004_a,,primary,FALSE
 FrontalMotor | surface area,FrontalMotor,surface area,1,1,Smaers_etal_2017,Primates,both,FALSE
-Granular_insular_cortex | volume,Granular_insular_cortex,volume,1,1,Bauernfeind_etal_2013,Primates,primary,FALSE
 HP_HS_fibers | volume,HP_HS_fibers,volume,1,1,Frahm_Zilles_1994,Insectivora & Primates,primary,FALSE
 Hemispheres | volume,Hemispheres,volume,1,1,Barger_etal_2007,Apes & humans,primary,FALSE
 Hilus | volume,Hilus,volume,1,1,Frahm_Zilles_1994,Insectivora & Primates,primary,FALSE
 Hippocampus_retrocommissuralis | volume,Hippocampus_retrocommissuralis,volume,1,1,Frahm_Zilles_1994,Insectivora & Primates,primary,FALSE
-Insula | volume,Insula,volume,1,1,Bauernfeind_etal_2013,Primates,primary,FALSE
 Interpositus_cerebellar_nuclei | volume,Interpositus_cerebellar_nuclei,volume,1,1,Matano_etal_1985_a,"Insectivora, Scandentia & Primates",primary,FALSE
 LGN | Lamination,LGN,Lamination,1,1,deSousa_etal_2013,,primary,FALSE
 LGN | count (number),LGN,count (number),1,1,deSousa_etal_2010,Primates,metadata,FALSE
@@ -120,16 +137,15 @@ Lateral_cerebellar_nuclei | volume,Lateral_cerebellar_nuclei,volume,1,1,Matano_e
 Lobus_piriformis | volume,Lobus_piriformis,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 Medial_cerebellar_nuclei | volume,Medial_cerebellar_nuclei,volume,1,1,Matano_etal_1985_a,"Insectivora, Scandentia & Primates",primary,FALSE
 Meninges_hypophysis_nerves_etc. | volume,Meninges_hypophysis_nerves_etc.,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
+Middle_temporal_visual_area | volume,Middle_temporal_visual_area,volume,1,1,Frahm_etal_1998,Insectivora & Primates,primary,FALSE
 Neocortex_lamina_1 | percentage (relative),Neocortex_lamina_1,percentage (relative),1,1,Frahm_etal_1982,"Insectivora, Scandentia & Primates",primary,FALSE
 Neocortex_lamina_1 | volume,Neocortex_lamina_1,volume,1,1,Frahm_etal_1982,"Insectivora, Scandentia & Primates",primary,FALSE
 Neocortex_laminae_2_6 | volume,Neocortex_laminae_2_6,volume,1,1,Frahm_etal_1982,"Insectivora, Scandentia & Primates",primary,FALSE
 Neocortex_white_matter | percentage (relative),Neocortex_white_matter,percentage (relative),1,1,Frahm_etal_1982,"Insectivora, Scandentia & Primates",primary,FALSE
 NucleusLateralOlfactoryTract | volume,NucleusLateralOlfactoryTract,volume,1,1,Stephan_etal_1987,Insectivora–Primates (incl. Homo),primary,FALSE
-Nucleus_amygdalae_basalis_pars_magnocellularis | volume,Nucleus_amygdalae_basalis_pars_magnocellularis,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 Nucleus_habenularis_medialis | volume,Nucleus_habenularis_medialis,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 Nucleus_septalis_triangularis | volume,Nucleus_septalis_triangularis,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 Nucleus_subthalamicus | volume,Nucleus_subthalamicus,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
-Nucleus_tractus_olfactorius | volume,Nucleus_tractus_olfactorius,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 Nucleus_vestibularis_descendens | volume,Nucleus_vestibularis_descendens,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 Nucleus_vestibularis_lateralis | volume,Nucleus_vestibularis_lateralis,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 Nucleus_vestibularis_medialis | volume,Nucleus_vestibularis_medialis,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
@@ -137,10 +153,10 @@ Nucleus_vestibularis_superior | volume,Nucleus_vestibularis_superior,volume,1,1,
 OlfactoryBulb | size index (allometric),OlfactoryBulb,size index (allometric),1,1,Baron_etal_1983,"Insectivora, Scandentia & Primates",primary,FALSE
 OlfactoryTubercle | volume,OlfactoryTubercle,volume,1,1,Baron_etal_1987,"Insectivora, Scandentia & Primates",primary,FALSE
 Pons | volume,Pons,volume,1,1,Zilles__Rehkamper_1988,Primates (Pongo),primary,FALSE
+PontinePrecerebellarNuclei | volume,PontinePrecerebellarNuclei,volume,1,1,Ashwell__2020,Mammalia,primary,FALSE
 PrefrontalCortex | surface area,PrefrontalCortex,surface area,1,1,Smaers_etal_2017,Primates,both,FALSE
 PrimaryVisualCortex | surface area,PrimaryVisualCortex,surface area,1,1,Smaers_etal_2017,Primates,both,FALSE
 Retrobulbar_cortex | volume,Retrobulbar_cortex,volume,1,1,Baron_etal_1987,"Insectivora, Scandentia & Primates",primary,FALSE
-Schizo_cortex | volume,Schizo_cortex,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
 Subiculum | volume,Subiculum,volume,1,1,Frahm_Zilles_1994,Insectivora & Primates,primary,FALSE
 Substantia_innominata | volume,Substantia_innominata,volume,1,1,Baron_etal_1987,"Insectivora, Scandentia & Primates",primary,FALSE
 Subthalamus | volume,Subthalamus,volume,1,1,Stephan_etal_1981,"Insectivora, Scandentia & Primates",primary,FALSE
@@ -157,4 +173,3 @@ VestibularNucleusLateral | volume,VestibularNucleusLateral,volume,1,1,Baron_etal
 VestibularNucleusMedial | volume,VestibularNucleusMedial,volume,1,1,Baron_etal_1988,"Insectivora, Scandentia & Primates",primary,FALSE
 VestibularNucleusSuperior | volume,VestibularNucleusSuperior,volume,1,1,Baron_etal_1988,"Insectivora, Scandentia & Primates",primary,FALSE
 WholeBrain | count (number),WholeBrain,count (number),1,1,deSousa_etal_2010,Primates,metadata,FALSE
-fronto_insular_cortex | volume,fronto_insular_cortex,volume,1,1,Bauernfeind_etal_2013,Primates,primary,FALSE

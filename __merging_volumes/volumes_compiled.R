@@ -40,15 +40,22 @@ papers <- tribble(
   "deSousa_etal_2013_Table1",          "Zilles",            2013,  "deSousa2013",    "Species_deSousa2013",
   "MacLeod_etal_2003_",                "Zilles",            2003,  NA,               "species",
   "Bauernfeind_etal_2013_Table1",      "Zilles",        2013,  "Bauernfeind2013","Species_Bauernfeind2013",
+  "Bauernfeind_etal_2013_Table2",      "Zilles",        2013,  "Bauernfeind2013","Species_Bauernfeind2013",
   "Bush_Allman_2003_Table1",           "Bush",               2003,  NA,               "species",
   "Smaers_etal_2011_SupplementaryTable1","Zilles",            2011,  NA,               "species",
   "Ashwell__2020_SupplementaryTable",  "Ashwell",            2020,    "Ashwell2020",    "species",
   "Barger_etal_2007_TABLE1",           "Zilles",             2007,  "Barger2007",     "species"
 )
 filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-read_item <- function(it) read.table(file.path(base, "__Public/comparative-data",
-  paste0(filecodes$"Item encoded"[match(it, filecodes$"Item name")], ".tsv")),
-  header = TRUE, sep = "\t", stringsAsFactors = FALSE, check.names = FALSE)
+# Fallback encodings for items not yet given a row in __ReadMe.xlsx (the registry sheet is
+# maintained by hand to preserve its formula columns). Remove an entry once its row exists.
+enc_override <- c("Bauernfeind_etal_2013_Table2" = "10.1016%2Fj.jhevol.2012.12.003_Table2")
+read_item <- function(it) {
+  enc <- filecodes$"Item encoded"[match(it, filecodes$"Item name")]
+  if ((is.na(enc) || !nzchar(enc)) && it %in% names(enc_override)) enc <- enc_override[[it]]
+  read.table(file.path(base, "__Public/comparative-data", paste0(enc, ".tsv")),
+             header = TRUE, sep = "\t", stringsAsFactors = FALSE, check.names = FALSE)
+}
 
 ## 2 Standardized terms + 3 reshape/convert -> long (Species, Variable, Value) per paper ----
 terms <- read.csv("standardized_term_volumes.csv", check.names = FALSE)
@@ -94,6 +101,14 @@ paper_long <- function(row) {
     spm <- df %>% group_by(Species_Bauernfeind2013, lab) %>% summarise(across(all_of(meas), ~mean(num(.x), na.rm=TRUE)), .groups="drop")
     df  <- spm %>% group_by(lab) %>% summarise(across(all_of(meas), ~mean(.x, na.rm=TRUE)), .groups="drop") %>%
            mutate(brain_mass_mg = brain_mass_mg/1000) %>% rename(Species_Bauernfeind2013 = lab)
+  }
+  if (it == "Bauernfeind_etal_2013_Table2") {                   # per-individual RIGHT insula -> species means (Pongo merge), already mm3
+    df <- df %>% mutate(lab = ifelse(Species_Bauernfeind2013 %in% c("Pongo abelii","Pongo pygmaeus"),
+                                     "Pongo pygmaeus and Pongo abelii", Species_Bauernfeind2013))
+    meas <- c("granular_R_mm3","dysgranular_R_mm3","agranular_R_mm3","FI_R_mm3","total_insula_R_mm3")
+    spm <- df %>% group_by(Species_Bauernfeind2013, lab) %>% summarise(across(all_of(meas), ~mean(num(.x), na.rm=TRUE)), .groups="drop")
+    df  <- spm %>% group_by(lab) %>% summarise(across(all_of(meas), ~mean(.x, na.rm=TRUE)), .groups="drop") %>%
+           rename(Species_Bauernfeind2013 = lab)
   }
   if (it == "MacLeod_etal_2003_") {                             # per-individual -> species means, cm3->mm3
     meas <- c("cerebellum_volume_cm3","vermis_volume_cm3","hemisphere_volume_cm3","brain_volume_cm3")
@@ -155,6 +170,57 @@ volumes_long <- teamvals %>% group_by(Species, Variable) %>% summarise(
   Teams = paste(sort(unique(Team)), collapse="; "), n_teams = n_distinct(Team), .groups="drop") %>%
   arrange(Species, Variable)
 write_csv(volumes_long, "volumes_long.csv")
+
+## 7 Phase-4 hemisphere reconciliation -> whole-structure both-hemisphere volumes ----
+## See README__merging.md "Hemispheres". For structures measured per hemisphere we add a
+## whole-structure both-sides variable (no laterality suffix):
+##   both sides measured -> SUM (left + right)         [Bauernfeind insula: Table 1 + Table 2]
+##   one side only       -> ESTIMATE as 2x, flagged    [left-only insula species; Stephan vestibular]
+## Estimates never overwrite the one-side value; they are added as new both-sides variables and
+## recorded in volumes_flags.csv (flag = estimated_bilateral_from_unilateral).
+wide_v <- volumes_long %>% select(Species, Variable, Value) %>%
+  pivot_wider(names_from = Variable, values_from = Value)
+mk <- function(stem) c(left = paste0(stem, "_left_Vol.mm3"),
+                       right = paste0(stem, "_right_Vol.mm3"),
+                       both = paste0(stem, "_Vol.mm3"))
+insula_stems <- c("Granular_insular_cortex","Dysgranular_insular_cortex",
+                  "Agranular_insular_cortex","fronto_insular_cortex","Insula")
+vestib_unil  <- grep("_unilateral_Vol\\.mm3$", names(wide_v), value = TRUE)
+getcol <- function(nm) if (nm %in% names(wide_v)) wide_v[[nm]] else rep(NA_real_, nrow(wide_v))
+
+bilat <- list()
+for (st in insula_stems) {                                   # left (+right) -> both
+  m <- mk(st); L <- getcol(m["left"]); R <- getcol(m["right"])
+  both <- ifelse(!is.na(L) & !is.na(R), L + R,
+          ifelse(!is.na(L), 2*L, ifelse(!is.na(R), 2*R, NA_real_)))
+  est  <- xor(!is.na(L), !is.na(R))                          # only one side present -> doubled
+  src  <- ifelse(!is.na(L), m["left"], m["right"])
+  k <- !is.na(both)
+  bilat[[unname(m["both"])]] <- tibble(Species = wide_v$Species[k], Variable = unname(m["both"]),
+                                       Value = both[k], est = est[k], src = src[k])
+}
+for (uv in vestib_unil) {                                    # one side only -> 2x (flagged)
+  bv <- sub("_unilateral_Vol\\.mm3$", "_Vol.mm3", uv); U <- getcol(uv); k <- !is.na(U)
+  bilat[[bv]] <- tibble(Species = wide_v$Species[k], Variable = bv, Value = 2*U[k],
+                        est = TRUE, src = uv)
+}
+bilat <- bind_rows(bilat)
+# Prefer a real both-sides value over a doubled estimate: drop any estimate whose both-sides
+# variable already exists for that species (e.g. Baron 1988 measured the vestibular complex
+# bilaterally, so its real value wins over 2x the Stephan one-side figure).
+bilat <- bilat %>% anti_join(volumes_long %>% distinct(Species, Variable), by = c("Species","Variable"))
+src_meta <- volumes_long %>% transmute(Species, src = Variable, Teams, n_teams)
+bilat_long <- bilat %>% left_join(src_meta, by = c("Species","src")) %>%
+  transmute(Species, Variable, Value, Teams, n_teams)
+volumes_long <- bind_rows(volumes_long, bilat_long) %>% arrange(Species, Variable)
+write_csv(volumes_long, "volumes_long.csv")
+
+flags <- bind_rows(flags,
+  bilat %>% filter(est) %>%
+    transmute(Species, Variable, flag = "estimated_bilateral_from_unilateral",
+              detail = paste0("both-hemisphere estimated as 2x ", src, " (only one side measured)")))
+write_csv(flags, "volumes_flags.csv")
+
 volumes_wide <- volumes_long %>% pivot_wider(id_cols=Species, names_from=Variable, values_from=Value) %>% arrange(Species)
 write_csv(volumes_wide, "volumes_wide.csv")
 long %>% group_by(Species_Name = Species) %>% summarise(n_sources=n_distinct(Source), Sources=paste(sort(unique(Source)),collapse="; ")) %>%

@@ -1,139 +1,139 @@
-smaers2017_species,smaers2017_variable,smaers2017_value_cm3,matched_source,matched_variable,matched_value_mm3,pct_diff
-Cercopithecus_ascanius,primary_visual_gray,4.272,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,4272.0,0.0
-Cercopithecus_ascanius,prefrontal_gray,1.154,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),1150.0,0.35
-Cercopithecus_ascanius,other_association_gray,16.06,(no match),,,
-Cercopithecus_ascanius,frontal_motor_gray,1.351,(no match),,,
-Cercopithecus_ascanius,primary_visual_white,0.834,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,834.0,0.0
-Cercopithecus_ascanius,prefrontal_white,0.159,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3(2011 sp.mean),160.0,0.62
-Cercopithecus_ascanius,other_association_white,8.297,Stephan_etal_1981_Table1,Nucleus_vestibularis_superior_Vol.mm3,8.21,1.06
-Cercopithecus_ascanius,frontal_motor_white,0.93,Frahm_Zilles_1994_Table1,Hippocampus_retrocommissuralis_Vol.mm3,939.4,1.0
-Cercopithecus_mitis,primary_visual_gray,4.232,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,4232.0,0.0
-Cercopithecus_mitis,prefrontal_gray,1.38,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),1380.0,0.0
-Cercopithecus_mitis,other_association_gray,19.385,(no match),,,
-Cercopithecus_mitis,frontal_motor_gray,1.852,(no match),,,
-Cercopithecus_mitis,primary_visual_white,1.042,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,1042.0,0.0
-Cercopithecus_mitis,prefrontal_white,0.205,(no match),,,
-Cercopithecus_mitis,other_association_white,9.911,(no match),,,
-Cercopithecus_mitis,frontal_motor_white,0.946,(no match),,,
-Erythrocebus_patas,prefrontal_gray,1.56,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),1560.0,0.0
-Erythrocebus_patas,frontal_motor_gray,2.552,(no match),,,
-Erythrocebus_patas,prefrontal_white,0.272,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3(2011 sp.mean),270.0,0.74
-Erythrocebus_patas,frontal_motor_white,1.848,(no match),,,
-Miopithecus_talapoin,primary_visual_gray,2.339,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,2339.0,0.0
-Miopithecus_talapoin,prefrontal_gray,1.018,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),1010.0,0.79
-Miopithecus_talapoin,other_association_gray,12.218,(no match),,,
-Miopithecus_talapoin,frontal_motor_gray,0.906,(no match),,,
-Miopithecus_talapoin,primary_visual_white,0.709,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,709.0,0.0
-Miopithecus_talapoin,prefrontal_white,0.152,(no match),,,
-Miopithecus_talapoin,other_association_white,4.642,(no match),,,
-Miopithecus_talapoin,frontal_motor_white,0.548,(no match),,,
-Alouatta_seniculus,primary_visual_gray,1.918,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,1918.0,0.0
-Alouatta_seniculus,prefrontal_gray,1.015,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),1010.0,0.5
-Alouatta_seniculus,other_association_gray,12.394,(no match),,,
-Alouatta_seniculus,frontal_motor_gray,1.077,(no match),,,
-Alouatta_seniculus,primary_visual_white,0.543,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,543.0,0.0
-Alouatta_seniculus,prefrontal_white,0.177,(no match),,,
-Alouatta_seniculus,other_association_white,4.212,(no match),,,
-Alouatta_seniculus,frontal_motor_white,0.866,(no match),,,
-Ateles_geoffroyi,primary_visual_gray,3.753,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,3753.0,0.0
-Ateles_geoffroyi,prefrontal_gray,2.773,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),2770.0,0.11
-Ateles_geoffroyi,other_association_gray,32.933,(no match),,,
+smaers2017_species,smaers2017_variable,smaers2017_value,matched_source,matched_variable,matched_value,pct_diff
+Alouatta_seniculus,frontal_motor_gray,1.077,(no match),,NA,NA
 Ateles_geoffroyi,frontal_motor_gray,3.119,Stephan_etal_1981_Table1,Corpus_pineal_Vol.mm3,3.1,0.61
-Ateles_geoffroyi,primary_visual_white,0.985,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,985.0,0.0
-Ateles_geoffroyi,prefrontal_white,0.286,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3(2011 sp.mean),290.0,1.38
-Ateles_geoffroyi,other_association_white,10.332,(no match),,,
-Ateles_geoffroyi,frontal_motor_white,1.586,(no match),,,
-Lagothrix_lagotricha,primary_visual_gray,4.856,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,4856.0,0.0
-Lagothrix_lagotricha,prefrontal_gray,1.887,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),1890.0,0.16
-Lagothrix_lagotricha,other_association_gray,24.188,(no match),,,
-Lagothrix_lagotricha,frontal_motor_gray,2.434,(no match),,,
-Lagothrix_lagotricha,primary_visual_white,1.226,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,1226.0,0.0
-Lagothrix_lagotricha,prefrontal_white,0.226,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3(2011 sp.mean),230.0,1.74
-Lagothrix_lagotricha,other_association_white,12.496,(no match),,,
-Lagothrix_lagotricha,frontal_motor_white,1.625,(no match),,,
-Cebus_albifrons,primary_visual_gray,3.764,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,3764.0,0.0
-Cebus_albifrons,prefrontal_gray,1.434,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),1430.0,0.28
+Cebus_albifrons,frontal_motor_gray,1.977,(no match),,NA,NA
+Cercopithecus_ascanius,frontal_motor_gray,1.351,(no match),,NA,NA
+Cercopithecus_mitis,frontal_motor_gray,1.852,(no match),,NA,NA
+Erythrocebus_patas,frontal_motor_gray,2.552,(no match),,NA,NA
+Gorilla_gorilla_gorilla,frontal_motor_gray,14.854,(no match),,NA,NA
+Homo_sapiens,frontal_motor_gray,29.013,Stephan_etal_1981_Table1,Striatum_Vol.mm3,28689,1.13
+Hylobates_lar,frontal_motor_gray,2.744,(no match),,NA,NA
+Lagothrix_lagotricha,frontal_motor_gray,2.434,(no match),,NA,NA
+Lophocebus_albigena,frontal_motor_gray,3.926,(no match),,NA,NA
+Miopithecus_talapoin,frontal_motor_gray,0.906,(no match),,NA,NA
+Nasalis_larvatus,frontal_motor_gray,1.749,(no match),,NA,NA
+Pan_paniscus,frontal_motor_gray,8.356,(no match),,NA,NA
+Pan_troglodytes_troglodytes,frontal_motor_gray,13.407,(no match),,NA,NA
+Papio_anubis,frontal_motor_gray,4.686,(no match),,NA,NA
+Piliocolobus_badius,frontal_motor_gray,2.26,Stephan_etal_1981_Table1,Nucleus_septalis_triangularis_Vol.mm3,2.26,0
+Pithecia_pithecia,frontal_motor_gray,0.819,Stephan_etal_1981_Table1,Hippocampus_Vol.mm3,834,1.8
+Pongo_pygmaeus,frontal_motor_gray,6.353,(no match),,NA,NA
+Alouatta_seniculus,frontal_motor_white,0.866,(no match),,NA,NA
+Ateles_geoffroyi,frontal_motor_white,1.586,(no match),,NA,NA
+Cebus_albifrons,frontal_motor_white,1.425,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1430,0.35
+Cercopithecus_ascanius,frontal_motor_white,0.93,Frahm_Zilles_1994_Table1,Hippocampus_retrocommissuralis_Vol.mm3,939.4,1
+Cercopithecus_mitis,frontal_motor_white,0.946,(no match),,NA,NA
+Erythrocebus_patas,frontal_motor_white,1.848,(no match),,NA,NA
+Gorilla_gorilla_gorilla,frontal_motor_white,10.295,(no match),,NA,NA
+Homo_sapiens,frontal_motor_white,29.755,(no match),,NA,NA
+Hylobates_lar,frontal_motor_white,1.743,(no match),,NA,NA
+Lagothrix_lagotricha,frontal_motor_white,1.625,(no match),,NA,NA
+Lophocebus_albigena,frontal_motor_white,3.063,(no match),,NA,NA
+Miopithecus_talapoin,frontal_motor_white,0.548,(no match),,NA,NA
+Nasalis_larvatus,frontal_motor_white,0.933,(no match),,NA,NA
+Pan_paniscus,frontal_motor_white,5.243,(no match),,NA,NA
+Pan_troglodytes_troglodytes,frontal_motor_white,12.78,(no match),,NA,NA
+Papio_anubis,frontal_motor_white,3.325,(no match),,NA,NA
+Piliocolobus_badius,frontal_motor_white,1.317,Stephan_etal_1981_Table1,Mesencephalon_Vol.mm3,1333,1.2
+Pithecia_pithecia,frontal_motor_white,0.496,(no match),,NA,NA
+Pongo_pygmaeus,frontal_motor_white,4.745,(no match),,NA,NA
+Alouatta_seniculus,other_association_gray,12.394,(no match),,NA,NA
+Ateles_geoffroyi,other_association_gray,32.933,(no match),,NA,NA
 Cebus_albifrons,other_association_gray,21.024,Baron_etal_1988_Table1,Nucleus_vestibularis_superior_Vol.mm3,21.2,0.83
-Cebus_albifrons,frontal_motor_gray,1.977,(no match),,,
-Cebus_albifrons,primary_visual_white,0.939,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,939.0,0.0
-Cebus_albifrons,prefrontal_white,0.257,(no match),,,
-Cebus_albifrons,other_association_white,12.053,(no match),,,
-Cebus_albifrons,frontal_motor_white,1.425,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),1430.0,0.35
-Gorilla_gorilla_gorilla,primary_visual_gray,12.062,(no match),,,
-Gorilla_gorilla_gorilla,prefrontal_gray,11.642,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),11640.0,0.02
-Gorilla_gorilla_gorilla,other_association_gray,125.539,(no match),,,
-Gorilla_gorilla_gorilla,frontal_motor_gray,14.854,(no match),,,
-Gorilla_gorilla_gorilla,primary_visual_white,3.123,(no match),,,
-Gorilla_gorilla_gorilla,prefrontal_white,2.608,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3(2011 sp.mean),2610.0,0.08
-Gorilla_gorilla_gorilla,other_association_white,60.386,(no match),,,
-Gorilla_gorilla_gorilla,frontal_motor_white,10.295,(no match),,,
-Homo_sapiens,primary_visual_gray,14.787,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,14787.0,0.0
-Homo_sapiens,prefrontal_gray,46.323,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),46323.75,0.0
-Homo_sapiens,other_association_gray,271.891,(no match),,,
-Homo_sapiens,frontal_motor_gray,29.013,Stephan_etal_1981_Table1,Striatum_Vol.mm3,28689.0,1.13
-Homo_sapiens,primary_visual_white,5.439,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,5439.0,0.0
-Homo_sapiens,prefrontal_white,28.135,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3(2011 sp.mean),28136.25,0.0
-Homo_sapiens,other_association_white,258.218,(no match),,,
-Homo_sapiens,frontal_motor_white,29.755,(no match),,,
-Hylobates_lar,primary_visual_gray,4.574,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,4574.0,0.0
-Hylobates_lar,prefrontal_gray,2.588,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),2580.0,0.31
+Cercopithecus_ascanius,other_association_gray,16.06,(no match),,NA,NA
+Cercopithecus_mitis,other_association_gray,19.385,(no match),,NA,NA
+Gorilla_gorilla_gorilla,other_association_gray,125.539,(no match),,NA,NA
+Homo_sapiens,other_association_gray,271.891,(no match),,NA,NA
 Hylobates_lar,other_association_gray,28.424,Baron_etal_1988_Table1,Nucleus_vestibularis_superior_Vol.mm3,28.9,1.65
-Hylobates_lar,frontal_motor_gray,2.744,(no match),,,
-Hylobates_lar,primary_visual_white,1.176,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,1176.0,0.0
-Hylobates_lar,prefrontal_white,0.51,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3(2011 sp.mean),510.0,0.0
-Hylobates_lar,other_association_white,12.915,Bush_Allman_2003_Table1,Cerebellum_grey_matter_Vol.mm3,12800.0,0.9
-Hylobates_lar,frontal_motor_white,1.743,(no match),,,
-Pan_paniscus,prefrontal_gray,7.956,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),7950.0,0.08
-Pan_paniscus,frontal_motor_gray,8.356,(no match),,,
-Pan_paniscus,prefrontal_white,2.056,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3(2011 sp.mean),2050.0,0.29
-Pan_paniscus,frontal_motor_white,5.243,(no match),,,
-Pan_troglodytes_troglodytes,primary_visual_gray,10.593,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,10593.0,0.0
-Pan_troglodytes_troglodytes,prefrontal_gray,14.209,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),14210.0,0.01
-Pan_troglodytes_troglodytes,other_association_gray,112.75,(no match),,,
-Pan_troglodytes_troglodytes,frontal_motor_gray,13.407,(no match),,,
-Pan_troglodytes_troglodytes,primary_visual_white,4.004,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,4004.0,0.0
-Pan_troglodytes_troglodytes,prefrontal_white,4.607,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3(2011 sp.mean),4610.0,0.07
-Pan_troglodytes_troglodytes,other_association_white,76.6,(no match),,,
-Pan_troglodytes_troglodytes,frontal_motor_white,12.78,(no match),,,
-Pongo_pygmaeus,primary_visual_gray,7.008,(no match),,,
-Pongo_pygmaeus,prefrontal_gray,8.596,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),8600.0,0.05
-Pongo_pygmaeus,other_association_gray,76.924,(no match),,,
-Pongo_pygmaeus,frontal_motor_gray,6.353,(no match),,,
-Pongo_pygmaeus,prefrontal_white,2.52,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3(2011 sp.mean),2520.0,0.0
-Pongo_pygmaeus,frontal_motor_white,4.745,(no match),,,
-Pithecia_pithecia,primary_visual_gray,1.679,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,1679.0,0.0
-Pithecia_pithecia,prefrontal_gray,0.6,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),600.0,0.0
-Pithecia_pithecia,other_association_gray,9.242,Baron_etal_1987_Table1,Retrobulbar_cortex_Vol.mm3,9.2,0.46
-Pithecia_pithecia,frontal_motor_gray,0.819,Stephan_etal_1981_Table1,Hippocampus_Vol.mm3,834.0,1.8
-Pithecia_pithecia,primary_visual_white,0.451,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,451.0,0.0
-Pithecia_pithecia,prefrontal_white,0.081,(no match),,,
-Pithecia_pithecia,other_association_white,4.2,(no match),,,
-Pithecia_pithecia,frontal_motor_white,0.496,(no match),,,
-Lophocebus_albigena,primary_visual_gray,5.42,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,5420.0,0.0
-Lophocebus_albigena,prefrontal_gray,2.311,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),2310.0,0.04
-Lophocebus_albigena,other_association_gray,29.102,(no match),,,
-Lophocebus_albigena,frontal_motor_gray,3.926,(no match),,,
-Lophocebus_albigena,primary_visual_white,1.411,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,1411.0,0.0
-Lophocebus_albigena,prefrontal_white,0.424,Frahm_Zilles_1994_Table1,HP_HS_fibers_Vol.mm3,426.37,0.56
-Lophocebus_albigena,other_association_white,17.092,(no match),,,
-Lophocebus_albigena,frontal_motor_white,3.063,(no match),,,
-Papio_anubis,primary_visual_gray,10.001,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,10001.0,0.0
-Papio_anubis,prefrontal_gray,3.921,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),3920.0,0.03
-Papio_anubis,other_association_gray,45.24,(no match),,,
-Papio_anubis,frontal_motor_gray,4.686,(no match),,,
-Papio_anubis,primary_visual_white,3.74,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,3740.0,0.0
-Papio_anubis,prefrontal_white,0.845,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3(2011 sp.mean),850.0,0.59
-Papio_anubis,other_association_white,33.835,Stephan_etal_1981_Table1,Nucleus_vestibularis_descendens_Vol.mm3,33.9,0.19
-Papio_anubis,frontal_motor_white,3.325,(no match),,,
-Nasalis_larvatus,prefrontal_gray,0.813,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),820.0,0.85
-Nasalis_larvatus,frontal_motor_gray,1.749,(no match),,,
-Nasalis_larvatus,prefrontal_white,0.074,(no match),,,
-Nasalis_larvatus,frontal_motor_white,0.933,(no match),,,
-Piliocolobus_badius,primary_visual_gray,3.053,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,3053.0,0.0
-Piliocolobus_badius,prefrontal_gray,1.591,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3(2011 sp.mean),1590.0,0.06
+Lagothrix_lagotricha,other_association_gray,24.188,(no match),,NA,NA
+Lophocebus_albigena,other_association_gray,29.102,(no match),,NA,NA
+Miopithecus_talapoin,other_association_gray,12.218,(no match),,NA,NA
+Pan_troglodytes_troglodytes,other_association_gray,112.75,Bauernfeind_etal_2013_Table2,fronto_insular_cortex_right_Vol.mm3,114,1.1
+Papio_anubis,other_association_gray,45.24,(no match),,NA,NA
 Piliocolobus_badius,other_association_gray,22.629,Baron_etal_1987_Table1,Tractus_olfactorius_lateralis_Vol.mm3,22.8,0.75
-Piliocolobus_badius,frontal_motor_gray,2.26,Stephan_etal_1981_Table1,Nucleus_septalis_triangularis_Vol.mm3,2.26,0.0
-Piliocolobus_badius,primary_visual_white,0.926,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,926.0,0.0
-Piliocolobus_badius,prefrontal_white,0.201,Stephan_etal_1981_Table1,Tractus_opticus_Vol.mm3,201.0,0.0
-Piliocolobus_badius,other_association_white,9.665,(no match),,,
-Piliocolobus_badius,frontal_motor_white,1.317,Stephan_etal_1981_Table1,Mesencephalon_Vol.mm3,1333.0,1.2
+Pithecia_pithecia,other_association_gray,9.242,Baron_etal_1987_Table1,Retrobulbar_cortex_Vol.mm3,9.2,0.46
+Pongo_pygmaeus,other_association_gray,76.924,(no match),,NA,NA
+Alouatta_seniculus,other_association_white,4.212,(no match),,NA,NA
+Ateles_geoffroyi,other_association_white,10.332,(no match),,NA,NA
+Cebus_albifrons,other_association_white,12.053,(no match),,NA,NA
+Cercopithecus_ascanius,other_association_white,8.297,Stephan_etal_1981_Table1,Nucleus_vestibularis_superior_unilateral_Vol.mm3,8.21,1.06
+Cercopithecus_mitis,other_association_white,9.911,(no match),,NA,NA
+Gorilla_gorilla_gorilla,other_association_white,60.386,(no match),,NA,NA
+Homo_sapiens,other_association_white,258.218,(no match),,NA,NA
+Hylobates_lar,other_association_white,12.915,Bush_Allman_2003_Table1,Cerebellum_grey_matter_Vol.mm3,12800,0.9
+Lagothrix_lagotricha,other_association_white,12.496,(no match),,NA,NA
+Lophocebus_albigena,other_association_white,17.092,(no match),,NA,NA
+Miopithecus_talapoin,other_association_white,4.642,(no match),,NA,NA
+Pan_troglodytes_troglodytes,other_association_white,76.6,(no match),,NA,NA
+Papio_anubis,other_association_white,33.835,Stephan_etal_1981_Table1,Nucleus_vestibularis_descendens_unilateral_Vol.mm3,33.9,0.19
+Piliocolobus_badius,other_association_white,9.665,(no match),,NA,NA
+Pithecia_pithecia,other_association_white,4.2,(no match),,NA,NA
+Alouatta_seniculus,prefrontal_gray,1.015,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1010,0.5
+Ateles_geoffroyi,prefrontal_gray,2.773,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,2770,0.11
+Cebus_albifrons,prefrontal_gray,1.434,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1430,0.28
+Cercopithecus_ascanius,prefrontal_gray,1.154,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1150,0.35
+Cercopithecus_mitis,prefrontal_gray,1.38,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1380,0
+Erythrocebus_patas,prefrontal_gray,1.56,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1560,0
+Gorilla_gorilla_gorilla,prefrontal_gray,11.642,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,11640,0.02
+Homo_sapiens,prefrontal_gray,46.323,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,46323.75,0
+Hylobates_lar,prefrontal_gray,2.588,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,2580,0.31
+Lagothrix_lagotricha,prefrontal_gray,1.887,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1890,0.16
+Lophocebus_albigena,prefrontal_gray,2.311,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,2310,0.04
+Miopithecus_talapoin,prefrontal_gray,1.018,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1010,0.79
+Nasalis_larvatus,prefrontal_gray,0.813,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,820,0.85
+Pan_paniscus,prefrontal_gray,7.956,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,7950,0.08
+Pan_troglodytes_troglodytes,prefrontal_gray,14.209,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,14210,0.01
+Papio_anubis,prefrontal_gray,3.921,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,3920,0.03
+Piliocolobus_badius,prefrontal_gray,1.591,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,1590,0.06
+Pithecia_pithecia,prefrontal_gray,0.6,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,600,0
+Pongo_pygmaeus,prefrontal_gray,8.596,Smaers_etal_2011_SupplementaryTable2,sec5_grey_total_cm3,8600,0.05
+Alouatta_seniculus,prefrontal_white,0.177,(no match),,NA,NA
+Ateles_geoffroyi,prefrontal_white,0.286,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,290,1.38
+Cebus_albifrons,prefrontal_white,0.257,(no match),,NA,NA
+Cercopithecus_ascanius,prefrontal_white,0.159,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,160,0.62
+Cercopithecus_mitis,prefrontal_white,0.205,(no match),,NA,NA
+Erythrocebus_patas,prefrontal_white,0.272,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,270,0.74
+Gorilla_gorilla_gorilla,prefrontal_white,2.608,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,2610,0.08
+Homo_sapiens,prefrontal_white,28.135,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,28136.25,0
+Hylobates_lar,prefrontal_white,0.51,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,510,0
+Lagothrix_lagotricha,prefrontal_white,0.226,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,230,1.74
+Lophocebus_albigena,prefrontal_white,0.424,Frahm_Zilles_1994_Table1,HP_HS_fibers_Vol.mm3,426.37,0.56
+Miopithecus_talapoin,prefrontal_white,0.152,(no match),,NA,NA
+Nasalis_larvatus,prefrontal_white,0.074,(no match),,NA,NA
+Pan_paniscus,prefrontal_white,2.056,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,2050,0.29
+Pan_troglodytes_troglodytes,prefrontal_white,4.607,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,4610,0.07
+Papio_anubis,prefrontal_white,0.845,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,850,0.59
+Piliocolobus_badius,prefrontal_white,0.201,Stephan_etal_1981_Table1,Tractus_opticus_Vol.mm3,201,0
+Pithecia_pithecia,prefrontal_white,0.081,(no match),,NA,NA
+Pongo_pygmaeus,prefrontal_white,2.52,Smaers_etal_2011_SupplementaryTable2,sec5_white_total_cm3,2520,0
+Alouatta_seniculus,primary_visual_gray,1.918,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,1918,0
+Ateles_geoffroyi,primary_visual_gray,3.753,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,3753,0
+Cebus_albifrons,primary_visual_gray,3.764,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,3764,0
+Cercopithecus_ascanius,primary_visual_gray,4.272,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,4272,0
+Cercopithecus_mitis,primary_visual_gray,4.232,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,4232,0
+Gorilla_gorilla_gorilla,primary_visual_gray,12.062,(no match),,NA,NA
+Homo_sapiens,primary_visual_gray,14.787,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,14787,0
+Hylobates_lar,primary_visual_gray,4.574,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,4574,0
+Lagothrix_lagotricha,primary_visual_gray,4.856,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,4856,0
+Lophocebus_albigena,primary_visual_gray,5.42,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,5420,0
+Miopithecus_talapoin,primary_visual_gray,2.339,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,2339,0
+Pan_troglodytes_troglodytes,primary_visual_gray,10.593,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,10593,0
+Papio_anubis,primary_visual_gray,10.001,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,10001,0
+Piliocolobus_badius,primary_visual_gray,3.053,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,3053,0
+Pithecia_pithecia,primary_visual_gray,1.679,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,1679,0
+Pongo_pygmaeus,primary_visual_gray,7.008,(no match),,NA,NA
+Alouatta_seniculus,primary_visual_white,0.543,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,543,0
+Ateles_geoffroyi,primary_visual_white,0.985,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,985,0
+Cebus_albifrons,primary_visual_white,0.939,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,939,0
+Cercopithecus_ascanius,primary_visual_white,0.834,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,834,0
+Cercopithecus_mitis,primary_visual_white,1.042,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,1042,0
+Gorilla_gorilla_gorilla,primary_visual_white,3.123,(no match),,NA,NA
+Homo_sapiens,primary_visual_white,5.439,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,5439,0
+Hylobates_lar,primary_visual_white,1.176,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,1176,0
+Lagothrix_lagotricha,primary_visual_white,1.226,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,1226,0
+Lophocebus_albigena,primary_visual_white,1.411,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,1411,0
+Miopithecus_talapoin,primary_visual_white,0.709,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,709,0
+Pan_troglodytes_troglodytes,primary_visual_white,4.004,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,4004,0
+Papio_anubis,primary_visual_white,3.74,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,3740,0
+Piliocolobus_badius,primary_visual_white,0.926,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,926,0
+Pithecia_pithecia,primary_visual_white,0.451,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,451,0

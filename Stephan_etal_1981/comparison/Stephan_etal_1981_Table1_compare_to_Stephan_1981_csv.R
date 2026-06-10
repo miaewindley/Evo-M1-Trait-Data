@@ -43,7 +43,10 @@ csv <- read_csv(comparison_file, col_types = cols(.default = col_character()), n
 
 # map each snapshot measurement column to a CSV column by normalised name
 csv_lookup <- setNames(names(csv), norm_name(names(csv)))
-pairs <- tibble(col = meas_cols, csv_col = csv_lookup[norm_name(meas_cols)]) %>% filter(!is.na(csv_col))
+# unname(): csv_lookup[...] is a named vector (names = normalised keys); without this the
+# names make tidyselect all_of() treat csv_col as a rename spec, so the later pivot_longer
+# can't find the original column names.
+pairs <- tibble(col = meas_cols, csv_col = unname(csv_lookup[norm_name(meas_cols)])) %>% filter(!is.na(csv_col))
 
 snap_long <- snap %>%
   transmute(key = norm_name(Species_Stephan1981), Species_Stephan1981,

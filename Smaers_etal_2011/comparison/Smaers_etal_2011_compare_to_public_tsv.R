@@ -26,15 +26,17 @@ audit <- function(snapshot, pretsv, nval, outbase) {
   snap <- read_csv(snapshot, show_col_types = FALSE)
   pre  <- read_tsv(pretsv, col_names = FALSE, skip = 1, show_col_types = FALSE)  # skip garbled header; read by position
   pre  <- pre %>% rename(Individual = 1)
-  rep <- snap %>% mutate(Individual = as.character(.[[1]])) %>%
-    rowwise() %>%
-    mutate(status = {
-      pv <- pre %>% filter(Individual == cur_data()$Individual)
-      if (nrow(pv) == 0) "snapshot_only_not_in_pretsv"
-      else if (all(mapply(function(a,b) isTRUE(abs(num(a)-num(b)) <= 1e-6),
-                          as.numeric(cur_data()[2:(1+nval)]), as.numeric(pv[1,2:(1+nval)])))) "matched"
-      else "MISMATCH"
-    }) %>% ungroup()
+  snap <- snap %>% mutate(Individual = as.character(.[[1]]))
+  # Compare row-by-row (matched on Individual). Avoid rowwise()/cur_data() (deprecated in
+  # dplyr 1.1.0 and no longer coercible via as.numeric here), which silently NA-ed every
+  # value and reported all rows as MISMATCH.
+  status <- vapply(seq_len(nrow(snap)), function(i) {
+    pv <- pre[pre$Individual == snap$Individual[i], , drop = FALSE]
+    if (nrow(pv) == 0) return("snapshot_only_not_in_pretsv")
+    a <- num(unlist(snap[i, 2:(1 + nval)])); b <- num(unlist(pv[1, 2:(1 + nval)]))
+    if (all(mapply(function(x, y) isTRUE(abs(x - y) <= 1e-6), a, b))) "matched" else "MISMATCH"
+  }, character(1))
+  rep <- snap %>% mutate(status = status)
   write_csv(rep, paste0(outbase, "_comparison_report_from_R.csv"))
   write_csv(filter(rep, status != "matched"), paste0(outbase, "_comparison_mismatches_from_R.csv"))
   message(outbase, ": matched ", sum(rep$status == "matched"), " | mismatch ", sum(rep$status != "matched"))
