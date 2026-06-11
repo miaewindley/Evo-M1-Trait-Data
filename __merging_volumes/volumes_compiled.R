@@ -20,6 +20,7 @@ base <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Dat
 papers <- tribble(
   ~item,                               ~team,                ~year, ~token,           ~spcol,
 
+  "Stephan_etal_1970_Tables1-6",       "Stephan_collection", 1970,  "Stephan1970",    "species",
   "Stephan_etal_1981_Table1",          "Stephan_collection", 1981,  "Stephan1981",    "Species_Stephan1981",
   "Stephan_etal_1982_Table1",          "Stephan_collection", 1982,  "Stephan1982",    "Species_Stephan1982",
   "Stephan_etal_1984_Table1",          "Stephan_collection", 1984,  "Stephan1984",    "Species_Stephan1984",
@@ -42,14 +43,20 @@ papers <- tribble(
   "Bauernfeind_etal_2013_Table1",      "Zilles",        2013,  "Bauernfeind2013","Species_Bauernfeind2013",
   "Bauernfeind_etal_2013_Table2",      "Zilles",        2013,  "Bauernfeind2013","Species_Bauernfeind2013",
   "Bush_Allman_2003_Table1",           "Bush",               2003,  NA,               "species",
+  "Bush_Allman_2004_b_TABLE1",         "Bush",               2004,  NA,               "species",
   "Smaers_etal_2011_SupplementaryTable1","Zilles",            2011,  NA,               "species",
   "Ashwell__2020_SupplementaryTable",  "Ashwell",            2020,    "Ashwell2020",    "species",
+  "Semendeferi_etal_1998_Table2",      "Semendeferi",        1998,  "Semendeferi",    "species",
+  "Semendeferi_etal_2001_Table2",      "Semendeferi",        2001,  "Semendeferi",    "species",
+  "Sherwood_etal_2005_Table1",         "Sherwood",          2005,  "Sherwood_2005", "species",
   "Barger_etal_2007_TABLE1",           "Zilles",             2007,  "Barger2007",     "species"
 )
 filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
 # Fallback encodings for items not yet given a row in __ReadMe.xlsx (the registry sheet is
 # maintained by hand to preserve its formula columns). Remove an entry once its row exists.
-enc_override <- c("Bauernfeind_etal_2013_Table2" = "10.1016%2Fj.jhevol.2012.12.003_Table2")
+enc_override <- c("Bauernfeind_etal_2013_Table2" = "10.1016%2Fj.jhevol.2012.12.003_Table2",
+                  "Semendeferi_etal_1998_Table2" = "Semendeferi_etal_1998_Table2",
+                  "Semendeferi_etal_2001_Table2" = "Semendeferi_etal_2001_Table2")
 read_item <- function(it) {
   enc <- filecodes$"Item encoded"[match(it, filecodes$"Item name")]
   if ((is.na(enc) || !nzchar(enc)) && it %in% names(enc_override)) enc <- enc_override[[it]]
@@ -116,6 +123,8 @@ paper_long <- function(row) {
   }
   if (it == "Bush_Allman_2003_Table1")                           # cm3 -> mm3
     df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
+  if (it == "Bush_Allman_2004_b_TABLE1")                         # cm3 -> mm3 (V1 grey, LGN, whole brain, neocortex grey/white)
+    df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
   if (it == "Smaers_etal_2011_SupplementaryTable1") {            # per-individual frontal -> species means of COMBINED L+R (cm3->mm3)
     fix <- c("Cercopithecus ascianus"="Cercopithecus ascanius","Cercocebus albigena"="Lophocebus albigena",
              "Procolobus badius"="Piliocolobus badius","Lagothrix lagotricha"="Lagothrix lagothricha")
@@ -127,9 +136,11 @@ paper_long <- function(row) {
   if (it == "Stephan_etal_1987_Table1")                          # NTO printed "0" = "not determinable with certainty" (data dictionary), not a true zero -> NA
     df <- df %>% mutate(Nucleus_tractus_olfactorius_mm3 =
             ifelse(num(Nucleus_tractus_olfactorius_mm3) == 0, NA_real_, num(Nucleus_tractus_olfactorius_mm3)))
-  if (it == "Barger_etal_2007_TABLE1")                           # per-specimen amygdaloid complex -> species means; cm3 -> mm3
+  if (it == "Barger_etal_2007_TABLE1") {                         # per-specimen amygdala subnuclei (both-hemisphere _total) -> species means; cm3 -> mm3
+    meas <- c("hemispheres_cm3","AC_total","BLD_total","lateral_total","basal_total","accessory_basal_total")
     df <- df %>% group_by(species) %>%
-      summarise(AC_total = mean(num(AC_total) * 1000, na.rm = TRUE), .groups = "drop")
+      summarise(across(all_of(meas), ~ mean(num(.x) * 1000, na.rm = TRUE)), .groups = "drop")
+  }
   # --- generic wide -> long via standardized terms ---
   keep <- intersect(names(df), tmap$Original_Term)
   df %>% transmute(Species = accepted(row$token, .data[[row$spcol]]),

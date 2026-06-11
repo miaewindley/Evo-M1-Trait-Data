@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+category,region grouping (Cerebral cortex / Forebrain nuclei / Brain stem nuclei / Cerebellum / White matter),,Grouping,,primary,Homo sapiens,Heiss_etal_2004,,
+Region,brain region,Region,,primary,,Homo sapiens,Heiss_etal_2004,,
+Both hemispheres Mean,regional cerebral metabolic rate of glucose (CMRgl); both-hemisphere mean,Region,CMRgl,mean,primary,Homo sapiens,Heiss_etal_2004,units umol glucose / 100 g / min (per paper; verify),
+Both hemispheres SD,SD of CMRgl,Region,CMRgl,SD,secondary,Homo sapiens,Heiss_etal_2004,,
+Left minus right hemisphere Difference,left-minus-right hemisphere CMRgl difference,Region,CMRgl.asymmetry,mean,secondary,Homo sapiens,Heiss_etal_2004,,
+Left minus right hemisphere SD,SD of the L-R difference,Region,CMRgl.asymmetry,SD,secondary,Homo sapiens,Heiss_etal_2004,,
+P,p-value for the hemispheric asymmetry,,Stat,p,secondary,Homo sapiens,Heiss_etal_2004,,
+Data of Heiss et al. (21),comparison CMRgl from the earlier Heiss et al. study (ref 21 in the paper),Region,CMRgl,mean,secondary,Homo sapiens,Heiss_etal_2004,historical comparison column,

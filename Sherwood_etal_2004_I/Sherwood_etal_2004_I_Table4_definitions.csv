@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species binomial,,Species,,primary,Primates,Sherwood_etal_2004_I,,
+n,number of specimens,,n,,primary,,Sherwood_etal_2004_I,,
+Layer II,mean grey-level index (GLI) of M1 layer II,M1_layerII,GLI,mean,primary,,Sherwood_etal_2004_I,GLI = percent of area occupied by Nissl-stained cell bodies; NOT a volume,
+Layer II SEM,SEM of layer II GLI,M1_layerII,GLI,SEM,secondary,,Sherwood_etal_2004_I,,
+Layer III,mean GLI of M1 layer III,M1_layerIII,GLI,mean,primary,,Sherwood_etal_2004_I,,
+Layer III SEM,SEM of layer III GLI,M1_layerIII,GLI,SEM,secondary,,Sherwood_etal_2004_I,,
+Layer V,mean GLI of M1 layer V,M1_layerV,GLI,mean,primary,,Sherwood_etal_2004_I,,
+Layer V SEM,SEM of layer V GLI,M1_layerV,GLI,SEM,secondary,,Sherwood_etal_2004_I,,
+Layer VI,mean GLI of M1 layer VI,M1_layerVI,GLI,mean,primary,,Sherwood_etal_2004_I,,
+Layer VI SEM,SEM of layer VI GLI,M1_layerVI,GLI,SEM,secondary,,Sherwood_etal_2004_I,,
+Cortical mean,mean GLI across the M1 cortical depth,M1_cortex,GLI,mean,primary,,Sherwood_etal_2004_I,,
+Cortical mean SEM,SEM of cortical-mean GLI,M1_cortex,GLI,SEM,secondary,,Sherwood_etal_2004_I,,

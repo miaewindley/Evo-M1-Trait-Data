@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,species (Mus musculus; single-species experimental dataset),,Species,,primary,Mus musculus,BarbeitoAndres_etal_2019,,
+reference,source identifier,,Source,,primary,,BarbeitoAndres_etal_2019,,
+group,nutrition group: C = control / LP = low protein / LCP = low calorie+protein,,Condition,,primary,,BarbeitoAndres_etal_2019,labels as published; verify exact diet definitions against the paper,
+specimen,specimen index within the absolute-volume table (NA for cell tables),,Specimen,,primary,,BarbeitoAndres_etal_2019,cell number/density tables report per-animal rows labelled only by group,
+region,brain region; volumes use 13 regions incl Total; cell tables use 5 region groups (Cerebellum/Cortex/Olfactory/Hippocampus/Rest),Region,,primary,,BarbeitoAndres_etal_2019,,
+cell_type,Total / Neurons / Non-neurons (cell tables only; NA for volumes),,CellType,,primary,,BarbeitoAndres_etal_2019,,
+measure,absolute_volume | cell_number | cell_density,,MeasureType,,primary,,BarbeitoAndres_etal_2019,,
+value,numeric value for the (group x region x measure[x cell_type]) cell,,Value,,primary,,BarbeitoAndres_etal_2019,,
+units,mm3 (volumes); cells (cell number; likely x1e6 - verify); cells_per_mg (density - verify),,Units,,primary,,BarbeitoAndres_etal_2019,cell-count/density scaling needs a user verification pass against the paper,

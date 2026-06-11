@@ -14,3 +14,8 @@ Bauernfeind_etal_2013_Table2,dysgranular_R_mm3,right,_right,
 Bauernfeind_etal_2013_Table2,agranular_R_mm3,right,_right,
 Bauernfeind_etal_2013_Table2,FI_R_mm3,right,_right,
 Bauernfeind_etal_2013_Table2,total_insula_R_mm3,right,_right,
+Semendeferi_etal_1998_Table2,area13_volume_mm3,right,_right,Semendeferi 1998 area 13 (orbitofrontal) measured from the right hemisphere only; n=1/species
+Semendeferi_etal_2001_Table2,area10_volume_mm3,right,_right,Semendeferi 2001 area 10 (frontal pole) measured from the right hemisphere only; n=1/species
+Sherwood_etal_2005_Table1,facial_VII_mm3,left,_left,Sherwood 2005 cranial motor nuclei measured on the left side only
+Sherwood_etal_2005_Table1,trigeminal_motor_Vmo_mm3,left,_left,
+Sherwood_etal_2005_Table1,hypoglossal_XII_mm3,left,_left,

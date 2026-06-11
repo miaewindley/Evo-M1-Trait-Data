@@ -1,0 +1,7 @@
+decasien_taxon,decasien_name,merge_accepted_name,structure,dec_value,matched_value,matched_source,proposed
+Eulemur_fulvus_fulvus,Eulemur fulvus fulvus,Eulemur fulvus,Total_brain_net_volume_Vol.mm3,22106,22106,Stephan_etal_1981_Table1,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv
+Gorilla_gorilla_gorilla,Gorilla gorilla gorilla,Gorilla sp,Total_brain_net_volume_Vol.mm3,470359,470359,Stephan_etal_1981_Table1,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv
+Lagothrix_lagotricha,Lagothrix lagotricha,Lagothrix lagothricha,Total_brain_net_volume_Vol.mm3,95503,95503,Stephan_etal_1981_Table1,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv
+Pan_troglodytes_troglodytes,Pan troglodytes troglodytes,Pan troglodytes,Total_brain_net_volume_Vol.mm3,382103,382103,Stephan_etal_1981_Table1,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv
+Tarsius_syrichta,Tarsius syrichta,Tarsius sp,Total_brain_net_volume_Vol.mm3,3393,3393,Stephan_etal_1981_Table1,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv
+Varecia_variegata_variegata,Varecia variegata variegata,Varecia variegata,Total_brain_net_volume_Vol.mm3,29713,29713,Stephan_etal_1981_Table1,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv

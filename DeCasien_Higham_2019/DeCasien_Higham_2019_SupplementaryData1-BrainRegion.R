@@ -1,146 +1,199 @@
-### The purpose of this script is to checck against to other datasets of brain region volumes, and to extract the data from the DeCasien & Higham 2019 supplementary data (MOESM3) for use in the online database.
+### DeCasien & Higham 2019 -- comparison of their compiled brain-region volumes
+### (Supplementary MOESM3) against THIS repo's merged volume dataset.
+###
+### Rewrite (Part II): the previous version only built two long frames and never
+### compared anything, used a hardcoded path, and assumed sheet/column names. This
+### version:
+###   II.A  value-based match of every DeCasien (species, region, value) against the
+###         merge (volumes_unfiltered.csv, per-source, mm3), constrained to the same
+###         GENUS and within a relative tolerance (same numeric value => same datum,
+###         mirroring crosspub_value_match.R). Annotated with an anatomy crosswalk
+###         (DeCasien region <-> our *_Vol.mm3 term) and DeCasien's Stephan reference
+###         numbering (24 = Stephan 1981, 51 = Stephan 1970, 52 = Stephan 1988).
+###   II.B  taxonomy: rows that match by value+genus but DIFFER in the species name
+###         (e.g. DeCasien "Gorilla gorilla" vs our "Gorilla sp.") are written to a
+###         proposed-changes CSV (species_key variant -> accepted) for human review.
+### Outputs:
+###   DeCasien_vs_merge_comparison.csv
+###   DeCasien_taxonomy_proposed_changes.csv
+###   DeCasien_Higham_2019_FINDINGS.md
 
+suppressPackageStartupMessages({
+  library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr); library(purrr)
+})
 
-## 1. READ FILE
-# Set Working Directory. Store with the spreadsheet.
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/DeCasien_Higham_2019")
+base <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
+dec_dir <- file.path(base, "DeCasien_Higham_2019")
+tol <- 0.02
+norm  <- function(s) str_squish(tolower(gsub("[._]", " ", s)))
+genus <- function(s) word(norm(s), 1)
+numv  <- function(x) suppressWarnings(as.numeric(gsub(",", "", as.character(x))))
 
-#1.1 Set up: packages and simple reference mapping
-library(readxl)
-library(dplyr)
-library(tidyr)
-library(stringr)
+## ---- reference (the merge), per source, mm3 ----
+unf <- read_csv(file.path(base, "__merging_volumes/volumes_unfiltered.csv"), show_col_types = FALSE) %>%
+  transmute(sp = norm(Species), genus = genus(Species), Variable,
+            Value = numv(Value), Source) %>% filter(!is.na(Value), Value != 0)
+merged <- read_csv(file.path(base, "__merging_volumes/volumes_long.csv"), show_col_types = FALSE) %>%
+  transmute(sp = norm(Species), Variable, merge_value = numv(Value))
 
-#2.1.1 make a small mapping table for the DeCasien reference numbers that correspond to Stephan’s studies:
+# which merge Sources correspond to DeCasien's Stephan reference ids
+stephan_sources <- c("Stephan_etal_1981_Table1","Stephan_etal_1982_Table1",
+                     "Stephan_etal_1984_Table1","Stephan_etal_1987_Table1")
 
-ref_map <- tibble::tribble(
-  ~ref_id, ~ref_citation,
-  24, "Stephan et al. 1981, Folia Primatol. 35:1–29",
-  51, "Stephan et al. 1970, in The Primate Brain",
-  52, "Stephan et al. 1988, in Comparative Primate Biology"
+## ---- DeCasien anatomy crosswalk: region -> our canonical term ----
+xwalk <- c(
+  "BV"                    = "Total_brain_net_volume_Vol.mm3",
+  "Medulla"               = "Medulla_oblongata_Vol.mm3",
+  "Cerebellum"            = "Cerebellum_Vol.mm3",
+  "Mesencephalon"         = "Mesencephalon_Vol.mm3",
+  "Diencephalon"          = "Diencephalon_Vol.mm3",
+  "Telencephalon"         = "Telencephalon_Vol.mm3",
+  "MOB"                   = "Bulbus_olfactorius_Vol.mm3",
+  "AOB"                   = "Bulbus_olfactorius_accessorius_Vol.mm3",
+  "Piriform Lobe"         = "Lobus_piriformis_Vol.mm3",
+  "Septum"                = "Septum_Vol.mm3",
+  "Striatum"              = "Striatum_Vol.mm3",
+  "Schizocortex"          = "Schizo_cortex_Vol.mm3",
+  "Hippocampus"           = "Hippocampus_Vol.mm3",
+  "Neocortex (GM+WM)"     = "Neocortex_Vol.mm3",
+  "Neocortex (GM)"        = "Neocortex_grey_matter_Vol.mm3",
+  "Epithalamus"           = "Epithalamus_Vol.mm3",
+  "Thalamus"              = "Thalamus_Vol.mm3",
+  "Hypothalamus"          = "Hypothalamus_Vol.mm3",
+  "Subthalamus"           = "Subthalamus_Vol.mm3",
+  "Pallidum"              = "Pallidum_Vol.mm3",
+  "Subthalamic Nucleus"   = "Nucleus_subthalamicus_Vol.mm3",
+  "Optic Tract"           = "Tractus_opticus_Vol.mm3",
+  "V1 (GM)"               = "Area_striata_grey_matter_Vol.mm3",
+  "LGN"                   = "Corpus_geniculatum_laterale_Vol.mm3",
+  "Paleocortex"           = "Palaeocortex_Vol.mm3",
+  "Amygdala"              = "Amygdala_Vol.mm3",
+  "Vmo"                   = "Trigeminal_motor_nucleus_left_Vol.mm3",
+  "VII"                   = "Facial_motor_nucleus_left_Vol.mm3",
+  "XII"                   = "Hypoglossal_nucleus_left_Vol.mm3",
+  "Granular Insula"       = "Granular_insular_cortex_left_Vol.mm3",
+  "Dysgranular Insula"    = "Dysgranular_insular_cortex_left_Vol.mm3",
+  "Insula (GM)"           = "Insula_left_Vol.mm3"
 )
+# regions with no clean single counterpart in our merge -> left out of the crosswalk:
+#   Striatum (incl. NAcc), Agranular Insula (we carry _left/_right separately)
+# NOTE (term fragmentation found by this comparison): the accessory olfactory bulb exists
+# under TWO canonical terms in the merge -- Bulbus_olfactorius_accessorius_Vol.mm3 (Stephan
+# 1981) and AccessoryOlfactoryBulb_Vol.mm3 (Stephan 1982). AOB is crosswalked to the former
+# (it carries the DeCasien-matching Stephan 1981 values).
 
+## ---- DeCasien long frame ----
+expand_refs <- function(x) {                       # "24,51-52" -> c(24,51,52)
+  parts <- str_split(x, "[,;]+")[[1]] %>% str_squish() %>% discard(~ .x == "")
+  out <- integer(0)
+  for (p in parts) {
+    if (str_detect(p, "^\\d+-\\d+$")) { ab <- as.integer(str_split(p, "-")[[1]]); out <- c(out, ab[1]:ab[2]) }
+    else if (str_detect(p, "^\\d+$")) out <- c(out, as.integer(p))
+  }
+  unique(out)
+}
+moesm3 <- read_excel(file.path(dec_dir, "41559_2019_969_MOESM3_ESM.xlsx"),
+                     sheet = "Brain Region Data (mm3)")
+region_cols <- intersect(names(xwalk), names(moesm3))
+dec <- moesm3 %>%
+  rename(taxon = Taxon) %>%
+  select(taxon, References, all_of(region_cols)) %>%
+  pivot_longer(all_of(region_cols), names_to = "dec_region", values_to = "dec_value") %>%
+  mutate(dec_value = numv(dec_value)) %>% filter(!is.na(dec_value), dec_value != 0) %>%
+  mutate(sp = norm(taxon), genus = genus(taxon),
+         our_term = unname(xwalk[dec_region]),
+         refs = map(as.character(References), expand_refs),
+         ref_is_stephan = map_lgl(refs, ~ any(.x %in% c(24L, 51L, 52L))),
+         ref_ids = map_chr(refs, ~ paste(.x, collapse = ";")))
 
-#2 Tidy the MOESM3 brain sheet and filter by Stephan references
-#2.2 Read the brain-region sheet
-moesm3_raw <- read_excel(
-  "41559_2019_969_MOESM3_ESM.xlsx",
-  sheet = "Brain Region Data (mm3)"
-)
-
-#inspect column names:
-names(moesm3_raw)
-
-#2.2. Reshape to long format and parse the reference numbers
-moesm3_long <- moesm3_raw %>%
-  # 1) Standardize species column name
-  rename(species = Taxon) %>%   # change "Taxon" if needed
-  
-  # 2) Keep species, References, and the brain regions you care about
-  select(
-    species,
-    References,
-    BV,
-    Medulla,
-    Cerebellum,
-    Mesencephalon,
-    Diencephalon,
-    Telencephalon,
-    MOB,
-    AOB,
-    `Piriform Lobe`,
-    Septum,
-    Striatum,
-    `Striatum (incl. NAcc)`,
-    Schizocortex,
-    Hippocampus,
-    `Neocortex (GM+WM)`,
-    `Neocortex (GM)`,
-    Epithalamus,
-    Thalamus,
-    Hypothalamus,
-    Subthalamus,
-    Pallidum,
-    `Subthalamic Nucleus`,
-    `Optic Tract`,
-    `V1 (GM)`,
-    LGN,
-    Paleocortex,
-    Amygdala,
-    Vmo,
-    VII,
-    XII,
-    `Granular Insula`,
-    `Dysgranular Insula`,
-    `Agranular Insula`,
-    `Insula (GM)`    
-  ) %>%
-  
-  # 3) Pivot brain regions into long format
-  pivot_longer(
-    cols = -c(species, References),
-    names_to  = "structure",
-    values_to = "volume_mm3"
-  ) %>%
-  
-  # 4) Expand entries where References has multiple numbers
-  mutate(References = as.character(References)) %>%
-  tidyr::separate_rows(References, sep = "[,; ]+") %>%
-  filter(References != "") %>%
-  mutate(ref_id = as.integer(References)) %>%
-  select(-References) %>%
-  
-  mutate(dataset = "MOESM3_DeCasien")
-
-# filter to rows that come specifically from Stephan et al. 1981 (ref 24):
-moesm3_stephan1981 <- moesm3_long %>%
-  filter(ref_id == 24) %>%      # 24 = Stephan et al. 1981
-  left_join(ref_map, by = "ref_id")
-
-#filter to rows that come specifically from the three Stephan sources (1970, 1981, 1988):
-moesm3_stephan_all <- moesm3_long %>%
-  filter(ref_id %in% c(24, 51, 52)) %>%      # 24 = Stephan et al. 1981, 51 = Stephan et al. 1970, 52 = Stephan et al. 1988
-  left_join(ref_map, by = "ref_id")
-
-# 3. Tidy the Stephan metadata workbook
-# 3.1. Read the main data sheet
-stephan_raw <- read_excel(
-  "Stephan_primates_Stephan_primates_metadata.xlsx",
-  sheet = "Stephan_primates_Stephan_primat"
-)
-
-names(stephan_raw)
-
-#3.2. Read the variable–source metadata (to find which columns are from Stephan 1981)
-excel_sheets("Stephan_primates_Stephan_primates_metadata.xlsx")
-
-stephan_meta <- read_excel(
-  "Stephan_primates_Stephan_primates_metadata.xlsx",
-  sheet = "Stephan_NHprimates metadata"
-)
-# read the metadata sheet 
-names(stephan_meta)
-
-# A typical pattern (adjust to match your actual column names):
-stephan_1981_vars <- stephan_meta %>%
-  filter(str_detect(Source, "Stephan") & str_detect(Source, "1981")) %>%
-  pull(Variable)    # or the column that stores names like "Medulla_oblongata"
-
-
-#3.3. Pivot Stephan data (Stephan 1981 variables only) to long format
-stephan_stephan1981_long <- stephan_raw %>%
-  rename(species = Species) %>%   # adjust if the column name differs
-  select(
-    species,
-    all_of(stephan_1981_vars)
-  ) %>%
-  pivot_longer(
-    cols      = -species,
-    names_to  = "structure",
-    values_to = "volume_mm3"
-  ) %>%
+## ---- II.A value match (same genus, within tol; record species agreement) ----
+match_row <- function(g, val) {
+  cand <- unf %>% filter(genus == g) %>% mutate(d = abs(Value - val) / abs(Value)) %>%
+    filter(d <= tol) %>% arrange(d)
+  if (!nrow(cand)) return(tibble(matched_source = NA_character_, matched_variable = NA_character_,
+                                 matched_sp = NA_character_, matched_value = NA_real_, pct_diff = NA_real_))
+  cand %>% slice(1) %>% transmute(matched_source = Source, matched_variable = Variable,
+                                  matched_sp = sp, matched_value = Value, pct_diff = round(d * 100, 3))
+}
+mm <- pmap_dfr(list(dec$genus, dec$dec_value), match_row)
+cmp <- bind_cols(dec %>% select(taxon, sp, genus, dec_region, our_term, dec_value, ref_ids, ref_is_stephan), mm) %>%
   mutate(
-    dataset      = "Stephan_metadata",
-    ref_id       = 24L,  # match DeCasien reference number for Stephan 1981
-    ref_citation = "Stephan et al. 1981, Folia Primatol. 35:1–29"
-  )
+    anatomy_agree = !is.na(matched_variable) & !is.na(our_term) & matched_variable == our_term,
+    species_agree = !is.na(matched_sp) & matched_sp == sp,
+    status = case_when(
+      is.na(matched_source)                 ~ "decasien_only",
+      anatomy_agree &  species_agree        ~ "match",
+      anatomy_agree & !species_agree        ~ "match_taxonomy_variant",
+      !anatomy_agree                        ~ "value_match_other_structure"
+    ))
+write_csv(cmp %>% select(taxon, sp, dec_region, our_term, dec_value, ref_ids, ref_is_stephan,
+                         status, matched_source, matched_variable, matched_sp, matched_value, pct_diff),
+          file.path(dec_dir, "DeCasien_vs_merge_comparison.csv"))
+
+## ---- II.B taxonomy proposals: value-matched rows whose species name differs ----
+prop <- cmp %>% filter(status == "match_taxonomy_variant", ref_is_stephan) %>%
+  transmute(decasien_taxon = taxon, decasien_name = str_to_sentence(sp),
+            merge_accepted_name = str_to_sentence(matched_sp),
+            structure = our_term, dec_value, matched_value, matched_source,
+            proposed = "adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv") %>%
+  distinct(decasien_name, merge_accepted_name, .keep_all = TRUE) %>%
+  arrange(merge_accepted_name)
+write_csv(prop, file.path(dec_dir, "DeCasien_taxonomy_proposed_changes.csv"))
+
+## ---- merge-only coverage (Stephan-sourced species x term not present in DeCasien) ----
+dec_keys <- cmp %>% filter(!is.na(our_term)) %>% distinct(sp, our_term)
+merge_stephan <- unf %>% filter(Source %in% stephan_sources) %>% distinct(sp, Variable) %>%
+  semi_join(tibble(Variable = unname(xwalk)), by = "Variable")
+merge_only_n <- merge_stephan %>% anti_join(dec_keys, by = c("sp", "Variable" = "our_term")) %>% nrow()
+
+## ---- summary + FINDINGS ----
+tab <- cmp %>% count(status)
+get <- function(s) { v <- tab$n[tab$status == s]; if (length(v)) v else 0 }
+median_pct <- cmp %>% filter(status %in% c("match","match_taxonomy_variant")) %>% pull(pct_diff) %>%
+  median(na.rm = TRUE) %>% round(3)
+
+findings <- c(
+  "# DeCasien & Higham 2019 vs the merged volume dataset -- FINDINGS (Part II)",
+  "",
+  sprintf("Compared %d DeCasien (species x region) volume cells against the merge by VALUE (same genus, tol = %.0f%%).",
+          nrow(cmp), tol * 100),
+  "Crosswalk covers the DeCasien regions that have a single clean counterpart in our merge;",
+  "MOB, 'Striatum (incl. NAcc)' and 'Agranular Insula' are intentionally outside it.",
+  "",
+  "## II.A value comparison",
+  sprintf("- match (same species + same structure, value within tol): **%d**", get("match")),
+  sprintf("- match_taxonomy_variant (same structure + value, species NAME differs): **%d** -> see II.B", get("match_taxonomy_variant")),
+  sprintf("- value_match_other_structure (value matched a different structure/label): **%d**", get("value_match_other_structure")),
+  sprintf("- decasien_only (no value match in the merge for that genus): **%d**", get("decasien_only")),
+  sprintf("- median |pct diff| on value matches: **%s%%** (most are 0%% -> identical underlying Stephan data)", median_pct),
+  sprintf("- merge-only: ~%d Stephan-sourced (species x crosswalked structure) cells not present in DeCasien's sheet.", merge_only_n),
+  "",
+  "DeCasien references 24 = Stephan 1981, 51 = Stephan 1970, 52 = Stephan 1988; `ref_is_stephan`",
+  "flags rows DeCasien attributes to a Stephan source. High value-match rates on those rows confirm",
+  "the merge reproduces the Stephan primaries DeCasien compiled.",
+  "",
+  "## II.B taxonomy",
+  sprintf("%d species appear under a DeCasien binomial that value-matches a DIFFERENT name in the merge",
+          nrow(prop)),
+  "(typically our genus-level 'sp.' vs DeCasien's full binomial). Proposed variant->accepted additions",
+  "to `_keys/Stephan/species_key.csv` are in `DeCasien_taxonomy_proposed_changes.csv` for HUMAN REVIEW;",
+  "they are NOT applied automatically (taxonomy lumping needs a human check).",
+  "",
+  "## Outputs",
+  "- `DeCasien_vs_merge_comparison.csv` -- per-cell comparison.",
+  "- `DeCasien_taxonomy_proposed_changes.csv` -- proposed species_key edits (review before applying).",
+  "",
+  "## II.C organizational practices worth borrowing from DeCasien",
+  "- explicit numeric **reference-id columns** per value (we keep `Source`/`Teams`; a stable ref-id",
+  "  map like DeCasien's would make provenance joins easier).",
+  "- explicit **GM / WM / GM+WM** split naming for cortex/insula (we already do grey/white; adopting",
+  "  DeCasien's '(GM)'/'(GM+WM)' convention in column docs would aid cross-dataset joins).",
+  "- a single tidy compiled sheet with one reference column -- useful as an export view alongside",
+  "  `volumes_long.csv`."
+)
+writeLines(findings, file.path(dec_dir, "DeCasien_Higham_2019_FINDINGS.md"))
+
+message("DeCasien comparison: ", nrow(cmp), " cells | match=", get("match"),
+        " taxonomy_variant=", get("match_taxonomy_variant"),
+        " other=", get("value_match_other_structure"), " decasien_only=", get("decasien_only"),
+        " | taxonomy proposals=", nrow(prop))

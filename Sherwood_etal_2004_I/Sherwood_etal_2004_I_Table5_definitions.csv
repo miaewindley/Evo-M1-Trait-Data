@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species binomial,,Species,,primary,Primates,Sherwood_etal_2004_I,,
+meany.o,mean of y (GLI) of the original M1 layer GLI profile,M1_GLIprofile,GLI.profile.moment,mean,primary,,Sherwood_etal_2004_I,profile feature vector; NOT a volume,
+meanx.o,mean of x (cortical depth) of the original profile,M1_GLIprofile,GLI.profile.moment,mean,primary,,Sherwood_etal_2004_I,,
+sd.o,standard deviation of the original profile,M1_GLIprofile,GLI.profile.moment,SD,primary,,Sherwood_etal_2004_I,,
+skew.o,skewness of the original profile,M1_GLIprofile,GLI.profile.moment,skew,primary,,Sherwood_etal_2004_I,,
+kurt.o,kurtosis of the original profile,M1_GLIprofile,GLI.profile.moment,kurtosis,primary,,Sherwood_etal_2004_I,,
+meany.d,mean of y of the first-derivative profile,M1_GLIprofile,GLI.profile.moment,mean,primary,,Sherwood_etal_2004_I,,
+meanx.d,mean of x of the first-derivative profile,M1_GLIprofile,GLI.profile.moment,mean,primary,,Sherwood_etal_2004_I,,
+sd.d,standard deviation of the derivative profile,M1_GLIprofile,GLI.profile.moment,SD,primary,,Sherwood_etal_2004_I,,
+skew.d,skewness of the derivative profile,M1_GLIprofile,GLI.profile.moment,skew,primary,,Sherwood_etal_2004_I,,
+kurt.d,kurtosis of the derivative profile,M1_GLIprofile,GLI.profile.moment,kurtosis,primary,,Sherwood_etal_2004_I,,

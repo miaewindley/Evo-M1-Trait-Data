@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,species binomial as published,,Species,,primary,Primates & insectivores,Sherwood_etal_2005,reconcile to _keys/Stephan/species_key.csv (token Sherwood_2005),
+N,number of specimens,,n,,primary,,Sherwood_etal_2005,,
+medulla_oblongata_mm3,volume of the medulla oblongata (whole structure),Medulla_oblongata,Volume.mm3,mean,primary,,Sherwood_etal_2005,independent variable in the paper's allometry; both-sides midline structure,
+medulla_oblongata_SD,SD of medulla volume,Medulla_oblongata,Volume.mm3,SD,secondary,,Sherwood_etal_2005,blank where N=1,
+trigeminal_motor_Vmo_mm3,trigeminal motor nucleus (Vmo) volume,Trigeminal_motor_nucleus,Volume.mm3,mean,primary,,Sherwood_etal_2005,LEFT side only (one side analyzed; nuclei symmetric per Nara et al.),
+trigeminal_motor_Vmo_SD,SD of Vmo volume,Trigeminal_motor_nucleus,Volume.mm3,SD,secondary,,Sherwood_etal_2005,blank where N=1,
+facial_VII_mm3,facial motor nucleus (VII) volume,Facial_motor_nucleus,Volume.mm3,mean,primary,,Sherwood_etal_2005,LEFT side only,
+facial_VII_SD,SD of VII volume,Facial_motor_nucleus,Volume.mm3,SD,secondary,,Sherwood_etal_2005,blank where N=1,
+hypoglossal_XII_mm3,hypoglossal nucleus (XII) volume,Hypoglossal_nucleus,Volume.mm3,mean,primary,,Sherwood_etal_2005,LEFT side only,
+hypoglossal_XII_SD,SD of XII volume,Hypoglossal_nucleus,Volume.mm3,SD,secondary,,Sherwood_etal_2005,blank where N=1,
+source,source identifier,,Source,,primary,,Sherwood_etal_2005,,
