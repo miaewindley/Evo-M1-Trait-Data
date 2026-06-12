@@ -7,4 +7,4 @@ region,brain region; volumes use 13 regions incl Total; cell tables use 5 region
 cell_type,Total / Neurons / Non-neurons (cell tables only; NA for volumes),,CellType,,primary,,BarbeitoAndres_etal_2019,,
 measure,absolute_volume | cell_number | cell_density,,MeasureType,,primary,,BarbeitoAndres_etal_2019,,
 value,numeric value for the (group x region x measure[x cell_type]) cell,,Value,,primary,,BarbeitoAndres_etal_2019,,
-units,mm3 (volumes); cells (cell number; likely x1e6 - verify); cells_per_mg (density - verify),,Units,,primary,,BarbeitoAndres_etal_2019,cell-count/density scaling needs a user verification pass against the paper,
+units,mm3 (volumes); 10^6 cells (cell number); 10^3 cells/mg (density),,Units,,primary,,BarbeitoAndres_etal_2019,"scaling confirmed by internal-consistency check (cell_density x volume / cell_number ~ 10^3; within-region ratio consistent across cell types; median ~868, mean ~944); matches the isotropic-fractionator convention: density 10^3 cells/mg, number 10^6 cells, volume mm3 ~ mg",

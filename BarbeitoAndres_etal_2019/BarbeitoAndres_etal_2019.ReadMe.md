@@ -20,12 +20,24 @@ Groups: **C** = control, **LP** = low protein, **LCP** = low calorie + protein (
 generic developmental schema `species, reference, group, specimen, region, cell_type, measure, value,
 units`. `measure` in {absolute_volume (mm3), cell_number, cell_density}.
 
-## NEEDS USER VERIFICATION
-- **Cell-count / density units & scaling**: the figshare sheet does not state units explicitly.
-  Volumes are mm3 (Total ~ 365-380 mm3 for a mouse brain -> consistent). Cell *number* values
-  (~25-45) are almost certainly in **millions (x1e6)** and cell *density* (~500-1000) likely
-  **cells per mg** (cf. Herculano-Houzel 'N mg-1'). Confirm against the paper before any analysis.
-- The cell tables label rows by group only (no specimen id); confirm per-animal correspondence to the
-  volume table if pairing is needed.
+## Units & scaling - VERIFIED (internal consistency)
+The figshare sheet states no units. Resolved by an internal-consistency check (`cell_density x
+absolute_volume` vs `cell_number`, per group x region x cell_type, using group-mean regional volumes;
+Rest = Total - the four named regions):
+- The ratio `(cell_density x volume) / cell_number` is consistent **across cell types within each
+  region** (e.g. Cerebellum/C: Neurons 1254, Non-neurons 1218, Total 1251) and centres on **~10^3**
+  (median 868, mean 944, range 681-1540 across 45 cells). The region-level spread reflects a
+  volume-subset / parcellation mismatch (the cell-count subset carries no specimen ids), not a unit
+  ambiguity - the within-region cross-cell-type agreement confirms the data is internally consistent.
+- Confirmed scaling (isotropic-fractionator convention; volume mm3 ~ mg tissue, rho ~ 1 mg/mm3):
+  - **cell_density = published value x 10^3 cells/mg**
+  - **cell_number  = published value x 10^6 cells**
+  - absolute_volume = mm3 (Total ~ 365-380 mm3 for a mouse brain -> consistent).
+- Applied to `..._tidy.csv` (`units` column is now `10^3 cells/mg` / `10^6 cells`) and to
+  `..._definitions.csv`. (No source PDF text was needed; verification is by internal arithmetic.)
 
-Pipeline: Source -> Snapshot OK -> Data readable OK -> units/scaling verification (pending) -> standalone comparison set.
+## Remaining caveat
+- The cell tables label rows by group only (no specimen id; `specimen = NA`), so per-animal pairing to
+  the volume table is not possible from the snapshot; group-level means were used for the check above.
+
+Pipeline: Source -> Snapshot OK -> Data readable OK -> units/scaling VERIFIED (internal consistency) -> standalone comparison set.

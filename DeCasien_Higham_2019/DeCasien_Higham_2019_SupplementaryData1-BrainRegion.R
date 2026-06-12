@@ -82,6 +82,17 @@ xwalk <- c(
 # 1981) and AccessoryOlfactoryBulb_Vol.mm3 (Stephan 1982). AOB is crosswalked to the former
 # (it carries the DeCasien-matching Stephan 1981 values).
 
+## ---- adopted DeCasien taxonomy reconciliation (species_key 'DeCasien' token) ----
+## variant (DeCasien binomial) -> accepted (merge name) pairs adopted from
+## DeCasien_taxonomy_proposed_changes.csv. Applied to the DeCasien species name before the
+## species-agreement test so adopted synonyms count as matches, not taxonomy variants.
+spkey_dec <- read_csv(file.path(base, "_keys/Stephan/species_key.csv"), show_col_types = FALSE) %>%
+  filter(source_publication == "DeCasien")
+dec_remap <- function(s) {
+  i <- match(s, norm(spkey_dec$variant_name))
+  ifelse(is.na(i), s, norm(spkey_dec$accepted_name)[i])
+}
+
 ## ---- DeCasien long frame ----
 expand_refs <- function(x) {                       # "24,51-52" -> c(24,51,52)
   parts <- str_split(x, "[,;]+")[[1]] %>% str_squish() %>% discard(~ .x == "")
@@ -100,7 +111,7 @@ dec <- moesm3 %>%
   select(taxon, References, all_of(region_cols)) %>%
   pivot_longer(all_of(region_cols), names_to = "dec_region", values_to = "dec_value") %>%
   mutate(dec_value = numv(dec_value)) %>% filter(!is.na(dec_value), dec_value != 0) %>%
-  mutate(sp = norm(taxon), genus = genus(taxon),
+  mutate(sp = dec_remap(norm(taxon)), genus = genus(taxon),
          our_term = unname(xwalk[dec_region]),
          refs = map(as.character(References), expand_refs),
          ref_is_stephan = map_lgl(refs, ~ any(.x %in% c(24L, 51L, 52L))),

@@ -5,19 +5,19 @@ Crosswalk covers the DeCasien regions that have a single clean counterpart in ou
 MOB, 'Striatum (incl. NAcc)' and 'Agranular Insula' are intentionally outside it.
 
 ## II.A value comparison
-- match (same species + same structure, value within tol): **923**
-- match_taxonomy_variant (same structure + value, species NAME differs): **270** -> see II.B
-- value_match_other_structure (value matched a different structure/label): **289**
-- decasien_only (no value match in the merge for that genus): **670**
+- match (same species + same structure, value within tol): **1104**
+- match_taxonomy_variant (same structure + value, species NAME differs): **91** -> see II.B
+- value_match_other_structure (value matched a different structure/label): **337**
+- decasien_only (no value match in the merge for that genus): **620**
 - median |pct diff| on value matches: **0%** (most are 0% -> identical underlying Stephan data)
-- merge-only: ~766 Stephan-sourced (species x crosswalked structure) cells not present in DeCasien's sheet.
+- merge-only: ~637 Stephan-sourced (species x crosswalked structure) cells not present in DeCasien's sheet.
 
 DeCasien references 24 = Stephan 1981, 51 = Stephan 1970, 52 = Stephan 1988; `ref_is_stephan`
 flags rows DeCasien attributes to a Stephan source. High value-match rates on those rows confirm
 the merge reproduces the Stephan primaries DeCasien compiled.
 
 ## II.B taxonomy
-6 species appear under a DeCasien binomial that value-matches a DIFFERENT name in the merge
+2 species appear under a DeCasien binomial that value-matches a DIFFERENT name in the merge
 (typically our genus-level 'sp.' vs DeCasien's full binomial). Proposed variant->accepted additions
 to `_keys/Stephan/species_key.csv` are in `DeCasien_taxonomy_proposed_changes.csv` for HUMAN REVIEW;
 they are NOT applied automatically (taxonomy lumping needs a human check).

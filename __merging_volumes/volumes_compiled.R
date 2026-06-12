@@ -55,8 +55,7 @@ filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
 # Fallback encodings for items not yet given a row in __ReadMe.xlsx (the registry sheet is
 # maintained by hand to preserve its formula columns). Remove an entry once its row exists.
 enc_override <- c("Bauernfeind_etal_2013_Table2" = "10.1016%2Fj.jhevol.2012.12.003_Table2",
-                  "Semendeferi_etal_1998_Table2" = "Semendeferi_etal_1998_Table2",
-                  "Semendeferi_etal_2001_Table2" = "Semendeferi_etal_2001_Table2")
+                  "Stephan_etal_1970_Tables1-6" = "Stephan_etal_1970_Tables1-6")
 read_item <- function(it) {
   enc <- filecodes$"Item encoded"[match(it, filecodes$"Item name")]
   if ((is.na(enc) || !nzchar(enc)) && it %in% names(enc_override)) enc <- enc_override[[it]]
