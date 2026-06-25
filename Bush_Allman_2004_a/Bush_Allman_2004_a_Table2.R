@@ -30,7 +30,23 @@ clean <- data.frame(
   activity = tab$Act, diet = tab$Diet, group_type = tab$Gr, group_size = tab$Grsz,
   source = "Bush_Allman_2004_a", stringsAsFactors = FALSE)
 write.csv(clean, "Bush_Allman_2004_a_Table2.csv", row.names = FALSE)
-write.table(clean, "Bush_Allman_2004_a_Table2.tsv", sep = "\t", row.names = FALSE, quote = FALSE)
+message("Bush & Allman 2004a Table 2: ", nrow(clean), " species written.")
+
+## ---- public TSV: look up the DOI/PMID code from __ReadMe.xlsx (don't write a local-named TSV) ----
+base_dir     <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
+item_name    <- "Bush_Allman_2004_a_Table2"
+tsv_dir      <- file.path(base_dir, "__Public/comparative-data/")
+filecodes    <- readxl::read_excel(file.path(base_dir, "__ReadMe.xlsx"), sheet = "Sheet1")
+item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+if (is.na(item_encoded) || !nzchar(item_encoded)) {
+  warning("No 'Item encoded' (DOI) for '", item_name, "' in __ReadMe.xlsx; TSV skipped.")
+} else if (!dir.exists(path.expand(tsv_dir))) {
+  warning("Shared folder not found: ", tsv_dir, "; TSV skipped.")
+} else {
+  write.table(clean, file.path(path.expand(tsv_dir), paste0(item_encoded, ".tsv")),
+              sep = "\t", row.names = FALSE)
+  message("Wrote ", tsv_dir, item_encoded, ".tsv")
+}
 
 ## 4. COMPARE to the digitized copy (comparison/bush_neocortex.xls)  -> comparison/check_Table2_vs_digitized.csv
 ## 5. COMPARE to a SIMILAR dataset: neocortex grey vs Frahm (Stephan_primates.csv NeoG_Frahm, mm3)

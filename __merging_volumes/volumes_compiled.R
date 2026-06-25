@@ -49,16 +49,51 @@ papers <- tribble(
   "Semendeferi_etal_1998_Table2",      "Semendeferi",        1998,  "Semendeferi",    "species",
   "Semendeferi_etal_2001_Table2",      "Semendeferi",        2001,  "Semendeferi",    "species",
   "Sherwood_etal_2005_Table1",         "Sherwood",          2005,  "Sherwood_2005", "species",
-  "Barger_etal_2007_TABLE1",           "Zilles",             2007,  "Barger2007",     "species"
+  "Sherwood_etal_2004_TABLEI",         "Sherwood",          2004,  NA,               "Species",
+  "Barger_etal_2007_TABLE1",           "Zilles",             2007,  "Barger2007",     "species",
+
+  # --- DeCasien-referenced sources extracted from DeCasien & Higham 2019 MOESM3
+  #     "Brain Region Data (mm3)" (the *_viaDeCasien.tsv pattern; values already mm3,
+  #     species-mean rows). Each is its own independent Tier-2 team. See
+  #     DeCasien_Higham_2019/ and standardized_term_by_reference/*_viaDeCasien_*.csv.
+  # Real primary tables (species means; units converted in step 3 reshapes):
+  "Barks_etal_2014_TABLE1",            "Barks",              2014,  NA,               "species",
+  "Rilling_Insel_1998_Table1",         "RillingInsel",       1998,  NA,               "species",
+  "Stimpson_etal_2015_TableS1",        "Stimpson",           2015,  NA,               "species",
+  # DeCasien-extracted, restricted to structures the primaries DON'T provide.
+  # NB: the 62-63 NEOCORTEX is Rilling & Insel 1999 (ref 63), NOT the 1998 cerebellum paper.
+  "Barks_etal_2014_viaDeCasien",       "Barks",              2014,  NA,               "species",
+  "Rilling_Insel_1999_viaDeCasien",    "RillingInsel",       1999,  NA,               "species",
+  "Stimpson_etal_2015_viaDeCasien",    "Stimpson",           2015,  NA,               "species"
 )
 filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
 # Fallback encodings for items not yet given a row in __ReadMe.xlsx (the registry sheet is
 # maintained by hand to preserve its formula columns). Remove an entry once its row exists.
 enc_override <- c("Bauernfeind_etal_2013_Table2" = "10.1016%2Fj.jhevol.2012.12.003_Table2",
-                  "Stephan_etal_1970_Tables1-6" = "Stephan_etal_1970_Tables1-6")
+                  "Stephan_etal_1970_Tables1-6" = "ISBN%3A0390672505_Tables1-6",
+                  # item names below differ in name/case from their __ReadMe.xlsx rows
+                  # (registry uses MacLeod_..._Table1 / Semendeferi_..._TABLE2), so the
+                  # exact-match lookup returns NA -> resolve them here.
+                  "MacLeod_etal_2003_" = "10.1016%2Fs0047-2484(03)00028-9_Table1",
+                  "Semendeferi_etal_1998_Table2" = "10.1002%2F(SICI)1096-8644(199806)106%3A2%3C129%3A%3AAID-AJPA3%3E3.0.CO;2-L_TABLE2",
+                  "Semendeferi_etal_2001_Table2" = "10.1002%2F1096-8644(200103)114%3A3%3C224%3A%3AAID-AJPA1022%3E3.0.CO;2-I_TABLE2",
+                  # viaDeCasien sources: TSV filename == item name (not in __ReadMe.xlsx registry)
+                  "Rilling_Insel_1999_viaDeCasien" = "Rilling_Insel_1999_viaDeCasien",
+                  "Barks_etal_2014_viaDeCasien"    = "Barks_etal_2014_viaDeCasien",
+                  "Stimpson_etal_2015_viaDeCasien" = "Stimpson_etal_2015_viaDeCasien")
 read_item <- function(it) {
-  enc <- filecodes$"Item encoded"[match(it, filecodes$"Item name")]
+  # Match item names CASE-INSENSITIVELY (registry drifts e.g. Table2 vs TABLE2) and
+  # strip stray spaces from the encoding (cloud-edit typos like "ISBN%3A 0390..."),
+  # but keep the encoding's case (DOIs/filenames are case-sensitive).
+  norm <- function(x) tolower(gsub(" ", "", x))
+  i   <- match(norm(it), norm(filecodes$"Item name"))
+  enc <- if (!is.na(i)) gsub(" ", "", filecodes$"Item encoded"[i]) else NA_character_
   if ((is.na(enc) || !nzchar(enc)) && it %in% names(enc_override)) enc <- enc_override[[it]]
+  # robustness: if the registry-resolved file is missing but we have a manual
+  # override, prefer the override (guards against mid-migration filename drift).
+  if (!is.na(enc) && nzchar(enc) && it %in% names(enc_override) &&
+      !file.exists(file.path(base, "__Public/comparative-data", paste0(enc, ".tsv"))))
+    enc <- enc_override[[it]]
   read.table(file.path(base, "__Public/comparative-data", paste0(enc, ".tsv")),
              header = TRUE, sep = "\t", stringsAsFactors = FALSE, check.names = FALSE)
 }
@@ -139,6 +174,31 @@ paper_long <- function(row) {
     meas <- c("hemispheres_cm3","AC_total","BLD_total","lateral_total","basal_total","accessory_basal_total")
     df <- df %>% group_by(species) %>%
       summarise(across(all_of(meas), ~ mean(num(.x) * 1000, na.rm = TRUE)), .groups = "drop")
+  }
+  if (it == "Sherwood_etal_2004_TABLEI") {                       # per-specimen great-ape volumes (cm3): fill species (NA = same as above),
+    meas <- c("Whole Brain","Neocortex","Hippocampus","Striatum","Thalamus","Cerebellum")  #  subspecies->binomial, species-mean, cm3->mm3
+    df <- df %>%
+      mutate(Species = na_if(str_squish(as.character(Species)), "NA")) %>%
+      fill(Species, .direction = "down") %>%
+      mutate(Species = word(Species, 1, 2)) %>%
+      group_by(Species) %>%
+      summarise(across(all_of(meas), ~ mean(num(.x) * 1000, na.rm = TRUE)), .groups = "drop")
+  }
+  if (it == "Barks_etal_2014_TABLE1") {                          # per-specimen gorilla brain volume (cm3): subspecies->binomial, species-mean, cm3->mm3
+    df <- df %>% mutate(species = word(str_squish(species), 1, 2)) %>%
+      group_by(species) %>%
+      summarise(`Brain volume (cm3)` = mean(num(`Brain volume (cm3)`) * 1000, na.rm = TRUE), .groups = "drop")
+  }
+  if (it == "Rilling_Insel_1998_Table1") {                       # one row/species; cc->mm3 (vol) and kg->g (body mass); harmonize Cercocebus
+    df <- df %>%
+      mutate(species = ifelse(species == "Cercocebus atys", "Cercocebus torquatus", species),
+             brain_volume_cc      = num(brain_volume_cc)      * 1000,
+             cerebellum_volume_cc = num(cerebellum_volume_cc) * 1000,
+             body_weight_kg       = num(body_weight_kg)       * 1000)
+  }
+  if (it == "Stimpson_etal_2015_TableS1") {                      # per-subject brain MASS (g): species-mean, g->mg
+    df <- df %>% group_by(species) %>%
+      summarise(brain_mass_g = mean(num(brain_mass_g) * 1000, na.rm = TRUE), .groups = "drop")
   }
   # --- generic wide -> long via standardized terms ---
   keep <- intersect(names(df), tmap$Original_Term)

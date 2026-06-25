@@ -21,7 +21,7 @@ suppressPackageStartupMessages({ library(readr); library(dplyr); library(tidyr);
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
   setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 base <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
-input <- file.path(base, "Smaers_etal_2017/Smaers_etal_2017_TableS1_part1_volumes.csv")
+input <- file.path(base, "Smaers_etal_2017/Smaers_etal_2017_TableS1part1.csv")
 out   <- "crosspub_Smaers2017_value_match.csv"
 tol   <- 0.02
 norm  <- function(s) str_squish(tolower(gsub("[._]", " ", s)))

@@ -297,10 +297,10 @@ Cebus_apella,cebus apella,BV,Total_brain_net_volume_Vol.mm3,73200,61,FALSE,value
 Cebus_apella,cebus apella,Cerebellum,Cerebellum_Vol.mm3,7700,61,FALSE,decasien_only,NA,NA,NA,NA,NA
 Cebus_apella,cebus apella,BV,Total_brain_net_volume_Vol.mm3,77300,61,FALSE,match_taxonomy_variant,Bauernfeind_etal_2013_Table1,Total_brain_net_volume_Vol.mm3,cebus albifrons,77027,0.354
 Cebus_apella,cebus apella,Cerebellum,Cerebellum_Vol.mm3,7600,61,FALSE,decasien_only,NA,NA,NA,NA,NA
-Cebus_apella,cebus apella,BV,Total_brain_net_volume_Vol.mm3,66500,62;63,FALSE,match,MacLeod_etal_2003_,Total_brain_net_volume_Vol.mm3,cebus apella,66450,0.075
-Cebus_apella,cebus apella,Cerebellum,Cerebellum_Vol.mm3,6500,62;63,FALSE,match,MacLeod_etal_2003_,Cerebellum_Vol.mm3,cebus apella,6450,0.775
-Cebus_apella,cebus apella,Neocortex (GM+WM),Neocortex_Vol.mm3,45000,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
-Cebus_apella,cebus apella,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,31900,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
+Cebus_apella,cebus apella,BV,Total_brain_net_volume_Vol.mm3,66500,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Total_brain_net_volume_Vol.mm3,cebus apella,66500,0
+Cebus_apella,cebus apella,Cerebellum,Cerebellum_Vol.mm3,6500,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Cerebellum_Vol.mm3,cebus apella,6500,0
+Cebus_apella,cebus apella,Neocortex (GM+WM),Neocortex_Vol.mm3,45000,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_Vol.mm3,cebus apella,45000,0
+Cebus_apella,cebus apella,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,31900,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_grey_matter_Vol.mm3,cebus apella,31900,0
 Cercocebus_agilis,cercocebus agilis,BV,Total_brain_net_volume_Vol.mm3,91988,43,FALSE,match,Bauernfeind_etal_2013_Table1,Total_brain_net_volume_Vol.mm3,cercocebus agilis,91988,0
 Cercocebus_agilis,cercocebus agilis,Granular Insula,Granular_insular_cortex_left_Vol.mm3,316,43,FALSE,decasien_only,NA,NA,NA,NA,NA
 Cercocebus_agilis,cercocebus agilis,Dysgranular Insula,Dysgranular_insular_cortex_left_Vol.mm3,232,43,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -318,10 +318,10 @@ Cercocebus_torquatus_atys,cercocebus torquatus atys,Neocortex (GM+WM),Neocortex_
 Cercocebus_torquatus_atys,cercocebus torquatus atys,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,47920,54;55,FALSE,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,cercocebus torquatus,47920,0
 Cercocebus_torquatus_atys,cercocebus torquatus atys,V1 (GM),Area_striata_grey_matter_Vol.mm3,5120,54;55,FALSE,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,cercocebus torquatus,5120,0
 Cercocebus_torquatus_atys,cercocebus torquatus atys,LGN,Corpus_geniculatum_laterale_Vol.mm3,200,54;55,FALSE,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,cercocebus torquatus,200,0
-Cercocebus_torquatus_atys,cercocebus torquatus atys,BV,Total_brain_net_volume_Vol.mm3,98900,62;63,FALSE,match,MacLeod_etal_2003_,Total_brain_net_volume_Vol.mm3,cercocebus torquatus atys,98850,0.051
-Cercocebus_torquatus_atys,cercocebus torquatus atys,Cerebellum,Cerebellum_Vol.mm3,9200,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
-Cercocebus_torquatus_atys,cercocebus torquatus atys,Neocortex (GM+WM),Neocortex_Vol.mm3,63900,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
-Cercocebus_torquatus_atys,cercocebus torquatus atys,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,42700,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
+Cercocebus_torquatus_atys,cercocebus torquatus atys,BV,Total_brain_net_volume_Vol.mm3,98900,62;63,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Total_brain_net_volume_Vol.mm3,cercocebus torquatus,98900,0
+Cercocebus_torquatus_atys,cercocebus torquatus atys,Cerebellum,Cerebellum_Vol.mm3,9200,62;63,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Cerebellum_Vol.mm3,cercocebus torquatus,9200,0
+Cercocebus_torquatus_atys,cercocebus torquatus atys,Neocortex (GM+WM),Neocortex_Vol.mm3,63900,62;63,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Neocortex_Vol.mm3,cercocebus torquatus,63900,0
+Cercocebus_torquatus_atys,cercocebus torquatus atys,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,42700,62;63,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Neocortex_grey_matter_Vol.mm3,cercocebus torquatus,42700,0
 Cercopithecus_ascanius,cercopithecus ascanius,BV,Total_brain_net_volume_Vol.mm3,64849.6240601504,34,FALSE,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,cercopithecus nictitans,64740,0.169
 Cercopithecus_ascanius,cercopithecus ascanius,V1 (GM),Area_striata_grey_matter_Vol.mm3,4272,34,FALSE,match,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,cercopithecus ascanius,4272,0
 Cercopithecus_ascanius,cercopithecus ascanius,BV,Total_brain_net_volume_Vol.mm3,60420.6615,53,FALSE,value_match_other_structure,deSousa_etal_2013_Table1,Brain_Mass.mg,cercopithecus ascanius,61500,1.755
@@ -584,16 +584,16 @@ Gorilla_beringei,gorilla beringei,BV,Total_brain_net_volume_Vol.mm3,460600,64,FA
 Gorilla_beringei,gorilla beringei,Thalamus,Thalamus_Vol.mm3,8300,64,FALSE,value_match_other_structure,Sherwood_etal_2005_Table1,Medulla_oblongata_Vol.mm3,gorilla sp,8393.91,1.119
 Gorilla_beringei,gorilla beringei,BV,Total_brain_net_volume_Vol.mm3,486700,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Thalamus,Thalamus_Vol.mm3,10200,64,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_beringei,gorilla beringei,BV,Total_brain_net_volume_Vol.mm3,445620,65,FALSE,match_taxonomy_variant,Stephan_etal_1970_Tables1-6,Total_brain_net_volume_Vol.mm3,gorilla gorilla,437433,1.872
+Gorilla_beringei,gorilla beringei,BV,Total_brain_net_volume_Vol.mm3,445620,65,FALSE,match,Sherwood_etal_2004_viaDeCasien,Total_brain_net_volume_Vol.mm3,gorilla beringei,449633.3333,0.893
 Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,50939.5833333334,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,10759.5833333333,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,10759.5833333333,65,FALSE,value_match_other_structure,Sherwood_etal_2004_viaDeCasien,Thalamus_Vol.mm3,gorilla gorilla,10766.6667,0.066
 Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,2846.66666666667,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,292357.5,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,196935,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Amygdala,Amygdala_Vol.mm3,1053.75,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Insula (GM),Insula_left_Vol.mm3,4200,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,BV,Total_brain_net_volume_Vol.mm3,488910,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,58717.3611111111,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,58717.3611111111,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Cerebellum_Vol.mm3,gorilla gorilla,57953.0908,1.319
 Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,7836.59722222222,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,2838.88888888889,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,288076.25,65,FALSE,match_taxonomy_variant,deSousa_etal_2010_Table1,Neocortex_Vol.mm3,gorilla sp,283700,1.543
@@ -602,22 +602,22 @@ Gorilla_beringei,gorilla beringei,Amygdala,Amygdala_Vol.mm3,1150.625,65,FALSE,va
 Gorilla_beringei,gorilla beringei,Insula (GM),Insula_left_Vol.mm3,3281.25,65,FALSE,value_match_other_structure,Frahm_Zilles_1994_Table1,Hippocampus_retrocommissuralis_Vol.mm3,gorilla sp,3305.43,0.732
 Gorilla_beringei,gorilla beringei,BV,Total_brain_net_volume_Vol.mm3,411670,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,50001.3888888889,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,8908.47222222222,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,8908.47222222222,65,FALSE,value_match_other_structure,Sherwood_etal_2004_viaDeCasien,Thalamus_Vol.mm3,gorilla beringei,8900,0.095
 Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,2815.55555555556,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Subthalamus_Vol.mm3,gorilla sp,2782,1.206
-Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,243460,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_beringei,gorilla beringei,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,159486.25,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,243460,65,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Neocortex_Vol.mm3,gorilla gorilla,246900,1.393
+Gorilla_beringei,gorilla beringei,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,159486.25,65,FALSE,match,Barks_etal_2014_viaDeCasien,Neocortex_grey_matter_Vol.mm3,gorilla beringei,159055.4235,0.271
 Gorilla_beringei,gorilla beringei,Amygdala,Amygdala_Vol.mm3,1728.125,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_beringei,gorilla beringei,Insula (GM),Insula_left_Vol.mm3,2485,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Capsula_interna_Vol.mm3,gorilla sp,2471,0.567
+Gorilla_beringei,gorilla beringei,Insula (GM),Insula_left_Vol.mm3,2485,65,FALSE,value_match_other_structure,Barks_etal_2014_viaDeCasien,Insula_Vol.mm3,gorilla gorilla,2491.8503,0.275
 Gorilla_beringei,gorilla beringei,BV,Total_brain_net_volume_Vol.mm3,369430,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Telencephalon_Vol.mm3,gorilla sp,369878,0.121
-Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,43611.4583333333,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,43611.4583333333,65,FALSE,match,Barks_etal_2014_viaDeCasien,Cerebellum_Vol.mm3,gorilla beringei,44135.0942,1.186
 Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,7550.76388888889,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Medulla_oblongata_Vol.mm3,gorilla sp,7509,0.556
 Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,3328.88888888889,65,FALSE,value_match_other_structure,Frahm_Zilles_1994_Table1,Hippocampus_retrocommissuralis_Vol.mm3,gorilla sp,3305.43,0.71
 Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,227071.25,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,123392.5,65,FALSE,value_match_other_structure,Stephan_etal_1970_Tables1-6,Body_Mass.g,gorilla gorilla,125000,1.286
 Gorilla_beringei,gorilla beringei,Amygdala,Amygdala_Vol.mm3,1137.5,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_beringei,gorilla beringei,Insula (GM),Insula_left_Vol.mm3,2668.75,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_beringei,gorilla beringei,Insula (GM),Insula_left_Vol.mm3,2668.75,65,FALSE,value_match_other_structure,Barks_etal_2014_viaDeCasien,Insula_Vol.mm3,gorilla beringei,2714.7171,1.693
 Gorilla_beringei,gorilla beringei,BV,Total_brain_net_volume_Vol.mm3,398130,65,FALSE,match_taxonomy_variant,deSousa_etal_2010_Table1,Total_brain_net_volume_Vol.mm3,gorilla sp,398648.6,0.13
-Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,43684.0709771707,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,43684.0709771707,65,FALSE,match,Barks_etal_2014_viaDeCasien,Cerebellum_Vol.mm3,gorilla beringei,44135.0942,1.022
 Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,8480.97167584813,65,FALSE,value_match_other_structure,Sherwood_etal_2005_Table1,Medulla_oblongata_Vol.mm3,gorilla sp,8393.91,1.037
 Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,2890.22686823307,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,234115.178639068,65,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -634,8 +634,8 @@ Gorilla_beringei,gorilla beringei,Amygdala,Amygdala_Vol.mm3,1062.5,65,FALSE,deca
 Gorilla_beringei,gorilla beringei,Insula (GM),Insula_left_Vol.mm3,2656.25,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,BV,Total_brain_net_volume_Vol.mm3,360490,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,49668.4027777778,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,8765.55555555555,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,2916.66666666667,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,8765.55555555555,65,FALSE,match,Barks_etal_2014_viaDeCasien,Striatum_Vol.mm3,gorilla beringei,8658.0126,1.242
+Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,2916.66666666667,65,FALSE,match,Barks_etal_2014_viaDeCasien,Hippocampus_Vol.mm3,gorilla beringei,2969.4748,1.778
 Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,210988.75,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,142563.75,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Amygdala,Amygdala_Vol.mm3,988.75,65,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -644,7 +644,7 @@ Gorilla_beringei,gorilla beringei,BV,Total_brain_net_volume_Vol.mm3,405960,65,FA
 Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,42046.1805555555,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,8074.79166666667,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,3274.44444444444,65,FALSE,value_match_other_structure,Frahm_Zilles_1994_Table1,Hippocampus_retrocommissuralis_Vol.mm3,gorilla sp,3305.43,0.937
-Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,246207.5,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,246207.5,65,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Neocortex_Vol.mm3,gorilla gorilla,246900,0.28
 Gorilla_beringei,gorilla beringei,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,140656.25,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Amygdala,Amygdala_Vol.mm3,1067.5,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Insula (GM),Insula_left_Vol.mm3,2738.75,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Schizo_cortex_Vol.mm3,gorilla sp,2729,0.357
@@ -653,38 +653,38 @@ Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,37124.3055555556
 Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,7360.20833333333,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Medulla_oblongata_Vol.mm3,gorilla sp,7509,1.982
 Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,2877.77777777778,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,268738.75,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_beringei,gorilla beringei,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,158182.5,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_beringei,gorilla beringei,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,158182.5,65,FALSE,match,Barks_etal_2014_viaDeCasien,Neocortex_grey_matter_Vol.mm3,gorilla beringei,159055.4235,0.549
 Gorilla_beringei,gorilla beringei,Amygdala,Amygdala_Vol.mm3,1351.875,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Insula (GM),Insula_left_Vol.mm3,2231.25,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Hypothalamus_Vol.mm3,gorilla sp,2215,0.734
-Gorilla_beringei,gorilla beringei,BV,Total_brain_net_volume_Vol.mm3,434580,65,FALSE,match_taxonomy_variant,Stephan_etal_1970_Tables1-6,Total_brain_net_volume_Vol.mm3,gorilla gorilla,437433,0.652
-Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,44145.633987,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,8853.7025850000009,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,3975.225345,65,FALSE,value_match_other_structure,Stephan_etal_1970_Tables1-6,Mesencephalon_Vol.mm3,gorilla gorilla,4047,1.774
+Gorilla_beringei,gorilla beringei,BV,Total_brain_net_volume_Vol.mm3,434580,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Total_brain_net_volume_Vol.mm3,gorilla gorilla,431846.8421,0.633
+Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,44145.633987,65,FALSE,match,Barks_etal_2014_viaDeCasien,Cerebellum_Vol.mm3,gorilla beringei,44135.0942,0.024
+Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,8853.7025850000009,65,FALSE,value_match_other_structure,Sherwood_etal_2004_viaDeCasien,Thalamus_Vol.mm3,gorilla beringei,8900,0.52
+Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,3975.225345,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Hippocampus_Vol.mm3,gorilla gorilla,3927.9239,1.204
 Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,284096.410325,65,FALSE,match_taxonomy_variant,deSousa_etal_2010_Table1,Neocortex_Vol.mm3,gorilla sp,283700,0.14
-Gorilla_beringei,gorilla beringei,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,165943.115065,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_beringei,gorilla beringei,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,165943.115065,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Neocortex_grey_matter_Vol.mm3,gorilla gorilla,164322.0256,0.987
 Gorilla_beringei,gorilla beringei,Amygdala,Amygdala_Vol.mm3,1631.661122,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Insula (GM),Insula_left_Vol.mm3,2899.270465,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,BV,Total_brain_net_volume_Vol.mm3,359840,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,36448.0723658,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,8589.5153469,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,8589.5153469,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Striatum_Vol.mm3,gorilla gorilla,8614.96,0.295
 Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,4126.0845189,65,FALSE,value_match_other_structure,Stephan_etal_1970_Tables1-6,Mesencephalon_Vol.mm3,gorilla gorilla,4047,1.954
 Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,235423.3656032,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,138294.9856507,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Amygdala,Amygdala_Vol.mm3,957.1521909,65,FALSE,value_match_other_structure,Frahm_Zilles_1994_Table1,CA3_Vol.mm3,gorilla sp,951.51,0.593
-Gorilla_beringei,gorilla beringei,Insula (GM),Insula_left_Vol.mm3,2678.4899963,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Schizo_cortex_Vol.mm3,gorilla sp,2729,1.851
+Gorilla_beringei,gorilla beringei,Insula (GM),Insula_left_Vol.mm3,2678.4899963,65,FALSE,value_match_other_structure,Barks_etal_2014_viaDeCasien,Insula_Vol.mm3,gorilla beringei,2714.7171,1.334
 Gorilla_beringei,gorilla beringei,BV,Total_brain_net_volume_Vol.mm3,336430,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Neocortex_Vol.mm3,gorilla sp,341444,1.468
 Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,35989.2361111111,65,FALSE,value_match_other_structure,Smaers_etal_2011_SupplementaryTable1,FrontalCortex_white_matter_Vol.mm3,gorilla gorilla,35330,1.866
 Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,8193.88888888889,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,2162.22222222222,65,FALSE,value_match_other_structure,Bauernfeind_etal_2013_Table1,Insula_left_Vol.mm3,gorilla sp,2145.5,0.779
 Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,231122.5,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_beringei,gorilla beringei,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,151480,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_beringei,gorilla beringei,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,151480,65,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Neocortex_grey_matter_Vol.mm3,gorilla gorilla,152700,0.799
 Gorilla_beringei,gorilla beringei,Amygdala,Amygdala_Vol.mm3,511.875,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Insula (GM),Insula_left_Vol.mm3,1855,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,BV,Total_brain_net_volume_Vol.mm3,363500,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Telencephalon_Vol.mm3,gorilla sp,369878,1.724
 Gorilla_beringei,gorilla beringei,Cerebellum,Cerebellum_Vol.mm3,42106.9444444444,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,9027.56944444445,65,FALSE,value_match_other_structure,deSousa_etal_2010_Table1,Area_striata_grey_matter_Vol.mm3,gorilla sp,9129,1.111
-Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,2504.44444444444,65,FALSE,value_match_other_structure,Stephan_etal_1970_Tables1-6,Schizo_cortex_Vol.mm3,gorilla gorilla,2537,1.283
-Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,272352.5,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,2504.44444444444,65,FALSE,value_match_other_structure,Barks_etal_2014_viaDeCasien,Insula_Vol.mm3,gorilla gorilla,2491.8503,0.505
+Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,272352.5,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Neocortex_Vol.mm3,gorilla gorilla,275074.1287,0.989
 Gorilla_beringei,gorilla beringei,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,196875,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_beringei,gorilla beringei,Amygdala,Amygdala_Vol.mm3,1159.375,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Septum_Vol.mm3,gorilla sp,1173,1.162
 Gorilla_beringei,gorilla beringei,Insula (GM),Insula_left_Vol.mm3,2415,65,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -694,9 +694,9 @@ Gorilla_beringei,gorilla beringei,Striatum,Striatum_Vol.mm3,10456.7361111111,65,
 Gorilla_beringei,gorilla beringei,Hippocampus,Hippocampus_Vol.mm3,2621.11111111111,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Pallidum_Vol.mm3,gorilla sp,2604,0.657
 Gorilla_beringei,gorilla beringei,Neocortex (GM+WM),Neocortex_Vol.mm3,282756.25,65,FALSE,match_taxonomy_variant,deSousa_etal_2010_Table1,Neocortex_Vol.mm3,gorilla sp,283700,0.333
 Gorilla_beringei,gorilla beringei,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,205082.5,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_beringei,gorilla beringei,Amygdala,Amygdala_Vol.mm3,1185.625,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Septum_Vol.mm3,gorilla sp,1173,1.076
+Gorilla_beringei,gorilla beringei,Amygdala,Amygdala_Vol.mm3,1185.625,65,FALSE,match,Barks_etal_2014_viaDeCasien,Amygdala_Vol.mm3,gorilla beringei,1198.4802,1.073
 Gorilla_beringei,gorilla beringei,Insula (GM),Insula_left_Vol.mm3,2590,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Pallidum_Vol.mm3,gorilla sp,2604,0.538
-Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,434360,43,FALSE,match_taxonomy_variant,Stephan_etal_1970_Tables1-6,Total_brain_net_volume_Vol.mm3,gorilla gorilla,437433,0.703
+Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,434360,43,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Total_brain_net_volume_Vol.mm3,gorilla gorilla,431846.8421,0.582
 Gorilla_gorilla_gorilla,gorilla sp,Granular Insula,Granular_insular_cortex_left_Vol.mm3,1284,43,FALSE,value_match_other_structure,Barger_etal_2007_TABLE1,Amygdala_Vol.mm3,gorilla sp,1306,1.685
 Gorilla_gorilla_gorilla,gorilla sp,Dysgranular Insula,Dysgranular_insular_cortex_left_Vol.mm3,1586,43,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Insula (GM),Insula_left_Vol.mm3,5020,43,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -718,9 +718,9 @@ Gorilla_gorilla_gorilla,gorilla sp,Vmo,Trigeminal_motor_nucleus_left_Vol.mm3,18.
 Gorilla_gorilla_gorilla,gorilla sp,VII,Facial_motor_nucleus_left_Vol.mm3,26.52,53,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,XII,Hypoglossal_nucleus_left_Vol.mm3,20.4,53,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,362900,60,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Telencephalon_Vol.mm3,gorilla sp,369878,1.887
-Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,254300,60,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,254300,60,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Neocortex_Vol.mm3,gorilla beringei,251206.0682,1.232
 Gorilla_gorilla_gorilla,gorilla sp,V1 (GM),Area_striata_grey_matter_Vol.mm3,8000,60,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,434400,60,FALSE,match_taxonomy_variant,Stephan_etal_1970_Tables1-6,Total_brain_net_volume_Vol.mm3,gorilla gorilla,437433,0.693
+Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,434400,60,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Total_brain_net_volume_Vol.mm3,gorilla gorilla,431846.8421,0.591
 Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,313100,60,FALSE,match_taxonomy_variant,Stephan_etal_1970_Tables1-6,Neocortex_Vol.mm3,gorilla gorilla,317542,1.399
 Gorilla_gorilla_gorilla,gorilla sp,V1 (GM),Area_striata_grey_matter_Vol.mm3,10200,60,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,398600,60,FALSE,match,deSousa_etal_2010_Table1,Total_brain_net_volume_Vol.mm3,gorilla sp,398648.6,0.012
@@ -731,7 +731,7 @@ Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,362900,61,F
 Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,48500,61,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,414500,61,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,51000,61,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,434400,61,FALSE,match_taxonomy_variant,Stephan_etal_1970_Tables1-6,Total_brain_net_volume_Vol.mm3,gorilla gorilla,437433,0.693
+Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,434400,61,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Total_brain_net_volume_Vol.mm3,gorilla gorilla,431846.8421,0.591
 Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,60100,61,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,463900,61,FALSE,value_match_other_structure,Stephan_etal_1970_Tables1-6,Brain_Mass.mg,gorilla gorilla,465000,0.237
 Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,81200,61,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -742,8 +742,8 @@ Gorilla_gorilla_gorilla,gorilla sp,Thalamus,Thalamus_Vol.mm3,11400,64,FALSE,deca
 Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,564300,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Thalamus,Thalamus_Vol.mm3,11000,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,461500,65,FALSE,value_match_other_structure,Stephan_etal_1970_Tables1-6,Brain_Mass.mg,gorilla gorilla,465000,0.753
-Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,58780.5555555556,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_gorilla_gorilla,gorilla sp,Striatum,Striatum_Vol.mm3,8711.11111111111,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,58780.5555555556,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Cerebellum_Vol.mm3,gorilla gorilla,57953.0908,1.428
+Gorilla_gorilla_gorilla,gorilla sp,Striatum,Striatum_Vol.mm3,8711.11111111111,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Striatum_Vol.mm3,gorilla beringei,8658.0126,0.613
 Gorilla_gorilla_gorilla,gorilla sp,Hippocampus,Hippocampus_Vol.mm3,3093.33333333333,65,FALSE,value_match_other_structure,Frahm_etal_1984_Table1,Area_striata_white_matter_Vol.mm3,gorilla sp,3123,0.95
 Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,241710,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,143740,65,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -765,7 +765,7 @@ Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,225980.70
 Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,130843.011341224,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Amygdala,Amygdala_Vol.mm3,1085.043400434,65,FALSE,value_match_other_structure,Stephan_etal_1970_Tables1-6,Septum_Vol.mm3,gorilla gorilla,1090,0.455
 Gorilla_gorilla_gorilla,gorilla sp,Insula (GM),Insula_left_Vol.mm3,1991.190756352,65,FALSE,value_match_other_structure,Stephan_etal_1987_Table1,Complexus_corticobasolateralis_Vol.mm3,gorilla sp,1998.1,0.346
-Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,445680,65,FALSE,match_taxonomy_variant,Stephan_etal_1970_Tables1-6,Total_brain_net_volume_Vol.mm3,gorilla gorilla,437433,1.885
+Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,445680,65,FALSE,match_taxonomy_variant,Sherwood_etal_2004_viaDeCasien,Total_brain_net_volume_Vol.mm3,gorilla beringei,449633.3333,0.879
 Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,72268.5185185185,65,FALSE,value_match_other_structure,Smaers_etal_2011_SupplementaryTable1,FrontalCortex_grey_matter_Vol.mm3,gorilla gorilla,71110,1.629
 Gorilla_gorilla_gorilla,gorilla sp,Striatum,Striatum_Vol.mm3,11179.2592592593,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Hippocampus,Hippocampus_Vol.mm3,3567.40740740741,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Ventricles_Vol.mm3,gorilla sp,3608,1.125
@@ -774,15 +774,15 @@ Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,
 Gorilla_gorilla_gorilla,gorilla sp,Amygdala,Amygdala_Vol.mm3,1462.22222222222,65,FALSE,value_match_other_structure,Frahm_Zilles_1994_Table1,HP_HS_fibers_Vol.mm3,gorilla sp,1475.05,0.87
 Gorilla_gorilla_gorilla,gorilla sp,Insula (GM),Insula_left_Vol.mm3,3640,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Ventricles_Vol.mm3,gorilla sp,3608,0.887
 Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,380700,65,FALSE,value_match_other_structure,deSousa_etal_2013_Table1,Brain_Mass.mg,gorilla sp,376000,1.25
-Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,57477.7777777778,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,57477.7777777778,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Cerebellum_Vol.mm3,gorilla gorilla,57953.0908,0.82
 Gorilla_gorilla_gorilla,gorilla sp,Striatum,Striatum_Vol.mm3,6764.72222222222,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Hippocampus,Hippocampus_Vol.mm3,3632.22222222222,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Ventricles_Vol.mm3,gorilla sp,3608,0.671
 Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,233597.777777778,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,142006.666666667,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Amygdala,Amygdala_Vol.mm3,1470,65,FALSE,value_match_other_structure,Frahm_Zilles_1994_Table1,HP_HS_fibers_Vol.mm3,gorilla sp,1475.05,0.342
 Gorilla_gorilla_gorilla,gorilla sp,Insula (GM),Insula_left_Vol.mm3,1680,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,433370,65,FALSE,match_taxonomy_variant,Stephan_etal_1970_Tables1-6,Total_brain_net_volume_Vol.mm3,gorilla gorilla,437433,0.929
-Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,57630.9027777778,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,433370,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Total_brain_net_volume_Vol.mm3,gorilla gorilla,431846.8421,0.353
+Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,57630.9027777778,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Cerebellum_Vol.mm3,gorilla gorilla,57953.0908,0.556
 Gorilla_gorilla_gorilla,gorilla sp,Striatum,Striatum_Vol.mm3,9146.66666666667,65,FALSE,value_match_other_structure,deSousa_etal_2010_Table1,Area_striata_grey_matter_Vol.mm3,gorilla sp,9129,0.194
 Gorilla_gorilla_gorilla,gorilla sp,Hippocampus,Hippocampus_Vol.mm3,3647.77777777778,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Ventricles_Vol.mm3,gorilla sp,3608,1.102
 Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,236652.5,65,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -797,12 +797,12 @@ Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,298627.77
 Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,173588.333333333,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Amygdala,Amygdala_Vol.mm3,2065,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Insula (GM),Insula_left_Vol.mm3,1960,65,FALSE,value_match_other_structure,Semendeferi_etal_2001_Table2,Area_10_right_Vol.mm3,gorilla sp,1942.5,0.901
-Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,449220,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,449220,65,FALSE,match_taxonomy_variant,Sherwood_etal_2004_viaDeCasien,Total_brain_net_volume_Vol.mm3,gorilla beringei,449633.3333,0.092
 Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,69781.25,65,FALSE,match,Stephan_etal_1981_Table1,Cerebellum_Vol.mm3,gorilla sp,69249,0.769
 Gorilla_gorilla_gorilla,gorilla sp,Hippocampus,Hippocampus_Vol.mm3,4262.22222222222,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,290838.333333333,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,172235,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_gorilla_gorilla,gorilla sp,Amygdala,Amygdala_Vol.mm3,1316.875,65,FALSE,match,Barger_etal_2007_TABLE1,Amygdala_Vol.mm3,gorilla sp,1306,0.833
+Gorilla_gorilla_gorilla,gorilla sp,Amygdala,Amygdala_Vol.mm3,1316.875,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Amygdala_Vol.mm3,gorilla gorilla,1312.923,0.301
 Gorilla_gorilla_gorilla,gorilla sp,Insula (GM),Insula_left_Vol.mm3,1388.33333333333,65,FALSE,value_match_other_structure,Frahm_Zilles_1994_Table1,CA1_Vol.mm3,gorilla sp,1405.57,1.226
 Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,540440,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,77063.1944444444,65,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -816,9 +816,9 @@ Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,459400,65,F
 Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,69371.622936,65,FALSE,match,Stephan_etal_1981_Table1,Cerebellum_Vol.mm3,gorilla sp,69249,0.177
 Gorilla_gorilla_gorilla,gorilla sp,Striatum,Striatum_Vol.mm3,11335.126408,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Hippocampus,Hippocampus_Vol.mm3,4283.702,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Mesencephalon_Vol.mm3,gorilla sp,4352,1.569
-Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,277038.506698,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,277038.506698,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Neocortex_Vol.mm3,gorilla gorilla,275074.1287,0.714
 Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,172179.343646,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_gorilla_gorilla,gorilla sp,Amygdala,Amygdala_Vol.mm3,1204.847552,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_gorilla_gorilla,gorilla sp,Amygdala,Amygdala_Vol.mm3,1204.847552,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Amygdala_Vol.mm3,gorilla beringei,1198.4802,0.531
 Gorilla_gorilla_gorilla,gorilla sp,Insula (GM),Insula_left_Vol.mm3,3381.87,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,490670,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Brain_Mass.mg,gorilla sp,500000,1.866
 Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,59159.6579819962,65,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -833,7 +833,7 @@ Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,48078.311963675
 Gorilla_gorilla_gorilla,gorilla sp,Striatum,Striatum_Vol.mm3,6264.76447195025,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Hippocampus,Hippocampus_Vol.mm3,4495.735379576,65,FALSE,value_match_other_structure,Stephan_etal_1970_Tables1-6,Palaeocortex_plus_amygdala_Vol.mm3,gorilla gorilla,4530,0.756
 Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,263463.31599427,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,152714.997305528,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,152714.997305528,65,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Neocortex_grey_matter_Vol.mm3,gorilla gorilla,152700,0.01
 Gorilla_gorilla_gorilla,gorilla sp,Amygdala,Amygdala_Vol.mm3,647.525900259,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Insula (GM),Insula_left_Vol.mm3,2733.998245538,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Schizo_cortex_Vol.mm3,gorilla sp,2729,0.183
 Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,417200,65,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -857,14 +857,14 @@ Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,48781.25,65,FAL
 Gorilla_gorilla_gorilla,gorilla sp,Striatum,Striatum_Vol.mm3,8098.61111111111,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Hippocampus,Hippocampus_Vol.mm3,5040,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,263841.666666667,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,159246.111111111,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,159246.111111111,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Neocortex_grey_matter_Vol.mm3,gorilla beringei,159055.4235,0.12
 Gorilla_gorilla_gorilla,gorilla sp,Amygdala,Amygdala_Vol.mm3,1478.75,65,FALSE,value_match_other_structure,Frahm_Zilles_1994_Table1,HP_HS_fibers_Vol.mm3,gorilla sp,1475.05,0.251
 Gorilla_gorilla_gorilla,gorilla sp,Insula (GM),Insula_left_Vol.mm3,1711.11111111111,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,490200,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Brain_Mass.mg,gorilla sp,500000,1.96
 Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,78079.3935774,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Striatum,Striatum_Vol.mm3,6685.06314,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Hippocampus,Hippocampus_Vol.mm3,5262.2946,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,275778.9292044,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,275778.9292044,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Neocortex_Vol.mm3,gorilla gorilla,275074.1287,0.256
 Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,148233.7714872,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_gorilla,gorilla sp,Amygdala,Amygdala_Vol.mm3,1151.4680184,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Septum_Vol.mm3,gorilla sp,1173,1.836
 Gorilla_gorilla_gorilla,gorilla sp,Insula (GM),Insula_left_Vol.mm3,3047.8430724,65,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -874,7 +874,7 @@ Gorilla_gorilla_gorilla,gorilla sp,Diencephalon,Diencephalon_Vol.mm3,19370,24;51
 Gorilla_gorilla_gorilla,gorilla sp,Telencephalon,Telencephalon_Vol.mm3,369878,24;51;52,TRUE,match,Stephan_etal_1981_Table1,Telencephalon_Vol.mm3,gorilla sp,369878,0
 Gorilla_gorilla_gorilla,gorilla sp,MOB,Bulbus_olfactorius_Vol.mm3,316,24;51;52,TRUE,match,Stephan_etal_1981_Table1,Bulbus_olfactorius_Vol.mm3,gorilla sp,316,0
 Gorilla_gorilla_gorilla,gorilla sp,Piriform Lobe,Lobus_piriformis_Vol.mm3,4871,24;51;52,TRUE,match,Stephan_etal_1981_Table1,Lobus_piriformis_Vol.mm3,gorilla sp,4871,0
-Gorilla_gorilla_gorilla,gorilla sp,Septum,Septum_Vol.mm3,1193,24;51;52,TRUE,match,Stephan_etal_1981_Table1,Septum_Vol.mm3,gorilla sp,1173,1.705
+Gorilla_gorilla_gorilla,gorilla sp,Septum,Septum_Vol.mm3,1193,24;51;52,TRUE,value_match_other_structure,Barks_etal_2014_viaDeCasien,Amygdala_Vol.mm3,gorilla beringei,1198.4802,0.457
 Gorilla_gorilla_gorilla,gorilla sp,Striatum,Striatum_Vol.mm3,14567,24;51;52,TRUE,match,Stephan_etal_1981_Table1,Striatum_Vol.mm3,gorilla sp,14567,0
 Gorilla_gorilla_gorilla,gorilla sp,Schizocortex,Schizo_cortex_Vol.mm3,2729,24;51;52,TRUE,match,Stephan_etal_1981_Table1,Schizo_cortex_Vol.mm3,gorilla sp,2729,0
 Gorilla_gorilla_gorilla,gorilla sp,Hippocampus,Hippocampus_Vol.mm3,4781,24;51;52,TRUE,match,Stephan_etal_1981_Table1,Hippocampus_Vol.mm3,gorilla sp,4781,0
@@ -887,20 +887,20 @@ Gorilla_gorilla_gorilla,gorilla sp,Subthalamic Nucleus,Nucleus_subthalamicus_Vol
 Gorilla_gorilla_gorilla,gorilla sp,Optic Tract,Tractus_opticus_Vol.mm3,671,24;51;52,TRUE,match,Stephan_etal_1981_Table1,Tractus_opticus_Vol.mm3,gorilla sp,671,0
 Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,362900,56;57,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Telencephalon_Vol.mm3,gorilla sp,369878,1.887
 Gorilla_gorilla_gorilla,gorilla sp,Striatum,Striatum_Vol.mm3,9252,56;57,FALSE,value_match_other_structure,deSousa_etal_2010_Table1,Area_striata_grey_matter_Vol.mm3,gorilla sp,9129,1.347
-Gorilla_gorilla_gorilla,gorilla sp,Hippocampus,Hippocampus_Vol.mm3,2700,56;57,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Schizo_cortex_Vol.mm3,gorilla sp,2729,1.063
+Gorilla_gorilla_gorilla,gorilla sp,Hippocampus,Hippocampus_Vol.mm3,2700,56;57,FALSE,value_match_other_structure,Barks_etal_2014_viaDeCasien,Insula_Vol.mm3,gorilla beringei,2714.7171,0.542
 Gorilla_gorilla_gorilla,gorilla sp,Amygdala,Amygdala_Vol.mm3,1306,56;57,FALSE,match,Barger_etal_2007_TABLE1,Amygdala_Vol.mm3,gorilla sp,1306,0
 Gorilla_gorilla_gorilla,gorilla sp,BV,Total_brain_net_volume_Vol.mm3,397300,62;63,FALSE,match_taxonomy_variant,MacLeod_etal_2003_,Total_brain_net_volume_Vol.mm3,gorilla gorilla,397300,0
-Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,64700,62;63,FALSE,match_taxonomy_variant,Stephan_etal_1970_Tables1-6,Cerebellum_Vol.mm3,gorilla gorilla,64402,0.463
-Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,246900,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,152700,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_gorilla_gorilla,gorilla sp,Cerebellum,Cerebellum_Vol.mm3,64700,62;63,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Cerebellum_Vol.mm3,gorilla gorilla,64700,0
+Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM+WM),Neocortex_Vol.mm3,246900,62;63,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Neocortex_Vol.mm3,gorilla gorilla,246900,0
+Gorilla_gorilla_gorilla,gorilla sp,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,152700,62;63,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Neocortex_grey_matter_Vol.mm3,gorilla gorilla,152700,0
 Gorilla_gorilla_graueri,gorilla gorilla graueri,BV,Total_brain_net_volume_Vol.mm3,442650,65,FALSE,match_taxonomy_variant,Stephan_etal_1970_Tables1-6,Total_brain_net_volume_Vol.mm3,gorilla gorilla,437433,1.193
 Gorilla_gorilla_graueri,gorilla gorilla graueri,Cerebellum,Cerebellum_Vol.mm3,52504.8611111111,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_gorilla_graueri,gorilla gorilla graueri,Striatum,Striatum_Vol.mm3,8527.36111111111,65,FALSE,value_match_other_structure,Sherwood_etal_2005_Table1,Medulla_oblongata_Vol.mm3,gorilla sp,8393.91,1.59
-Gorilla_gorilla_graueri,gorilla gorilla graueri,Hippocampus,Hippocampus_Vol.mm3,2940,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_gorilla_graueri,gorilla gorilla graueri,Striatum,Striatum_Vol.mm3,8527.36111111111,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Striatum_Vol.mm3,gorilla gorilla,8614.96,1.017
+Gorilla_gorilla_graueri,gorilla gorilla graueri,Hippocampus,Hippocampus_Vol.mm3,2940,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Hippocampus_Vol.mm3,gorilla beringei,2969.4748,0.993
 Gorilla_gorilla_graueri,gorilla gorilla graueri,Neocortex (GM+WM),Neocortex_Vol.mm3,261222.5,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_graueri,gorilla gorilla graueri,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,137760,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_graueri,gorilla gorilla graueri,Amygdala,Amygdala_Vol.mm3,1246.875,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_gorilla_graueri,gorilla gorilla graueri,Insula (GM),Insula_left_Vol.mm3,3018.75,65,FALSE,decasien_only,NA,NA,NA,NA,NA
+Gorilla_gorilla_graueri,gorilla gorilla graueri,Insula (GM),Insula_left_Vol.mm3,3018.75,65,FALSE,value_match_other_structure,Barks_etal_2014_viaDeCasien,Hippocampus_Vol.mm3,gorilla beringei,2969.4748,1.659
 Gorilla_gorilla_graueri,gorilla gorilla graueri,BV,Total_brain_net_volume_Vol.mm3,372350,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Telencephalon_Vol.mm3,gorilla sp,369878,0.668
 Gorilla_gorilla_graueri,gorilla gorilla graueri,Cerebellum,Cerebellum_Vol.mm3,49527.4305555555,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_graueri,gorilla gorilla graueri,Striatum,Striatum_Vol.mm3,9551.59722222222,65,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -908,10 +908,10 @@ Gorilla_gorilla_graueri,gorilla gorilla graueri,Hippocampus,Hippocampus_Vol.mm3,
 Gorilla_gorilla_graueri,gorilla gorilla graueri,Neocortex (GM+WM),Neocortex_Vol.mm3,226003.75,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_graueri,gorilla gorilla graueri,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,149590,65,FALSE,decasien_only,NA,NA,NA,NA,NA
 Gorilla_gorilla_graueri,gorilla gorilla graueri,Amygdala,Amygdala_Vol.mm3,1863.75,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_gorilla_graueri,gorilla gorilla graueri,Insula (GM),Insula_left_Vol.mm3,2957.5,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_gorilla_graueri,gorilla gorilla graueri,BV,Total_brain_net_volume_Vol.mm3,430650,65,FALSE,match_taxonomy_variant,Stephan_etal_1970_Tables1-6,Total_brain_net_volume_Vol.mm3,gorilla gorilla,437433,1.551
+Gorilla_gorilla_graueri,gorilla gorilla graueri,Insula (GM),Insula_left_Vol.mm3,2957.5,65,FALSE,value_match_other_structure,Barks_etal_2014_viaDeCasien,Hippocampus_Vol.mm3,gorilla beringei,2969.4748,0.403
+Gorilla_gorilla_graueri,gorilla gorilla graueri,BV,Total_brain_net_volume_Vol.mm3,430650,65,FALSE,match_taxonomy_variant,Barks_etal_2014_viaDeCasien,Total_brain_net_volume_Vol.mm3,gorilla gorilla,431846.8421,0.277
 Gorilla_gorilla_graueri,gorilla gorilla graueri,Cerebellum,Cerebellum_Vol.mm3,45760.0694444444,65,FALSE,decasien_only,NA,NA,NA,NA,NA
-Gorilla_gorilla_graueri,gorilla gorilla graueri,Striatum,Striatum_Vol.mm3,10742.5694444444,65,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Thalamus_Vol.mm3,gorilla sp,10547,1.854
+Gorilla_gorilla_graueri,gorilla gorilla graueri,Striatum,Striatum_Vol.mm3,10742.5694444444,65,FALSE,value_match_other_structure,Sherwood_etal_2004_viaDeCasien,Thalamus_Vol.mm3,gorilla gorilla,10766.6667,0.224
 Gorilla_gorilla_graueri,gorilla gorilla graueri,Hippocampus,Hippocampus_Vol.mm3,3243.33333333333,65,FALSE,value_match_other_structure,Frahm_Zilles_1994_Table1,Hippocampus_retrocommissuralis_Vol.mm3,gorilla sp,3305.43,1.879
 Gorilla_gorilla_graueri,gorilla gorilla graueri,Neocortex (GM+WM),Neocortex_Vol.mm3,300046.25,65,FALSE,value_match_other_structure,Barger_etal_2007_TABLE1,Cerebral_hemispheres_Vol.mm3,gorilla sp,300000,0.015
 Gorilla_gorilla_graueri,gorilla gorilla graueri,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,198546.25,65,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -981,10 +981,10 @@ Hylobates_lar,hylobates lar,BV,Total_brain_net_volume_Vol.mm3,88800,56;57,FALSE,
 Hylobates_lar,hylobates lar,Striatum,Striatum_Vol.mm3,3020,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
 Hylobates_lar,hylobates lar,Hippocampus,Hippocampus_Vol.mm3,1610,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
 Hylobates_lar,hylobates lar,Amygdala,Amygdala_Vol.mm3,407,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
-Hylobates_lar,hylobates lar,BV,Total_brain_net_volume_Vol.mm3,83000,62;63,FALSE,match,MacLeod_etal_2003_,Total_brain_net_volume_Vol.mm3,hylobates lar,83025,0.03
-Hylobates_lar,hylobates lar,Cerebellum,Cerebellum_Vol.mm3,10900,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
-Hylobates_lar,hylobates lar,Neocortex (GM+WM),Neocortex_Vol.mm3,56600,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
-Hylobates_lar,hylobates lar,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,39900,62;63,FALSE,value_match_other_structure,Frahm_etal_1982_Table2,Neocortex_laminae_2_6_Vol.mm3,hylobates lar,40367,1.157
+Hylobates_lar,hylobates lar,BV,Total_brain_net_volume_Vol.mm3,83000,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Total_brain_net_volume_Vol.mm3,hylobates lar,83000,0
+Hylobates_lar,hylobates lar,Cerebellum,Cerebellum_Vol.mm3,10900,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Cerebellum_Vol.mm3,hylobates lar,10900,0
+Hylobates_lar,hylobates lar,Neocortex (GM+WM),Neocortex_Vol.mm3,56600,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_Vol.mm3,hylobates lar,56600,0
+Hylobates_lar,hylobates lar,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,39900,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_grey_matter_Vol.mm3,hylobates lar,39900,0
 Hylobates_muelleri,hylobates muelleri,BV,Total_brain_net_volume_Vol.mm3,98263,43,FALSE,match,Bauernfeind_etal_2013_Table1,Total_brain_net_volume_Vol.mm3,hylobates muelleri,98263,0
 Hylobates_muelleri,hylobates muelleri,Granular Insula,Granular_insular_cortex_left_Vol.mm3,222,43,FALSE,value_match_other_structure,Frahm_Zilles_1994_Table1,Hilus_Vol.mm3,hylobates lar,226.25,1.878
 Hylobates_muelleri,hylobates muelleri,Dysgranular Insula,Dysgranular_insular_cortex_left_Vol.mm3,572,43,FALSE,value_match_other_structure,Frahm_etal_1984_Table1,Area_striata_lamina_1_Vol.mm3,hylobates lar,562,1.779
@@ -1193,10 +1193,10 @@ Macaca_mulatta,macaca mulatta,BV,Total_brain_net_volume_Vol.mm3,65760,54;55,FALS
 Macaca_mulatta,macaca mulatta,Neocortex (GM+WM),Neocortex_Vol.mm3,46890,54;55,FALSE,decasien_only,NA,NA,NA,NA,NA
 Macaca_mulatta,macaca mulatta,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,30540,54;55,FALSE,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,macaca mulatta,30540,0
 Macaca_mulatta,macaca mulatta,V1 (GM),Area_striata_grey_matter_Vol.mm3,3260,54;55,FALSE,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,macaca mulatta,3260,0
-Macaca_mulatta,macaca mulatta,BV,Total_brain_net_volume_Vol.mm3,79100,62;63,FALSE,value_match_other_structure,deSousa_etal_2013_Table1,Brain_Mass.mg,macaca mulatta,78000,1.41
-Macaca_mulatta,macaca mulatta,Cerebellum,Cerebellum_Vol.mm3,7100,62;63,FALSE,match,MacLeod_etal_2003_,Cerebellum_Vol.mm3,macaca mulatta,7233.33333333333,1.843
-Macaca_mulatta,macaca mulatta,Neocortex (GM+WM),Neocortex_Vol.mm3,55700,62;63,FALSE,value_match_other_structure,deSousa_etal_2010_Table1,Total_brain_net_volume_Vol.mm3,macaca fascicularis,55598.5,0.183
-Macaca_mulatta,macaca mulatta,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,36500,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
+Macaca_mulatta,macaca mulatta,BV,Total_brain_net_volume_Vol.mm3,79100,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Total_brain_net_volume_Vol.mm3,macaca mulatta,79100,0
+Macaca_mulatta,macaca mulatta,Cerebellum,Cerebellum_Vol.mm3,7100,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Cerebellum_Vol.mm3,macaca mulatta,7100,0
+Macaca_mulatta,macaca mulatta,Neocortex (GM+WM),Neocortex_Vol.mm3,55700,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_Vol.mm3,macaca mulatta,55700,0
+Macaca_mulatta,macaca mulatta,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,36500,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_grey_matter_Vol.mm3,macaca mulatta,36500,0
 Mandrillus_sphinx,mandrillus sphinx,BV,Total_brain_net_volume_Vol.mm3,127610,54;55,FALSE,decasien_only,NA,NA,NA,NA,NA
 Mandrillus_sphinx,mandrillus sphinx,Neocortex (GM+WM),Neocortex_Vol.mm3,99260,54;55,FALSE,decasien_only,NA,NA,NA,NA,NA
 Mandrillus_sphinx,mandrillus sphinx,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,71330,54;55,FALSE,match,Bush_Allman_2003_Table1,Neocortex_grey_matter_Vol.mm3,mandrillus sphinx,71300,0.042
@@ -1350,7 +1350,7 @@ Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,325290,43,FALSE,valu
 Pan_paniscus,pan paniscus,Granular Insula,Granular_insular_cortex_left_Vol.mm3,517,43,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_paniscus,pan paniscus,Dysgranular Insula,Dysgranular_insular_cortex_left_Vol.mm3,1823,43,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_paniscus,pan paniscus,Insula (GM),Insula_left_Vol.mm3,3245,43,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,312740,43,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Telencephalon_Vol.mm3,pan troglodytes,313493,0.24
+Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,312740,43,FALSE,match,Stimpson_etal_2015_viaDeCasien,Total_brain_net_volume_Vol.mm3,pan paniscus,312532.175,0.066
 Pan_paniscus,pan paniscus,Granular Insula,Granular_insular_cortex_left_Vol.mm3,600,43,FALSE,value_match_other_structure,Matano_etal_1985_a_Table1,Cerebellar_nuclei_total_Vol.mm3,pan troglodytes,601.42,0.236
 Pan_paniscus,pan paniscus,Dysgranular Insula,Dysgranular_insular_cortex_left_Vol.mm3,1867,43,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Ventricles_Vol.mm3,pan troglodytes,1899,1.685
 Pan_paniscus,pan paniscus,Insula (GM),Insula_left_Vol.mm3,3418,43,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -1371,8 +1371,8 @@ Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,302316.602316602,58,
 Pan_paniscus,pan paniscus,Amygdala,Amygdala_Vol.mm3,1291.34,58,FALSE,match,Barger_etal_2007_TABLE1,Amygdala_Vol.mm3,pan paniscus,1285.5,0.454
 Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,294498.06949807,58,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Neocortex_Vol.mm3,pan troglodytes,291592,0.997
 Pan_paniscus,pan paniscus,Amygdala,Amygdala_Vol.mm3,1202.76,58,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,312700,60,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Telencephalon_Vol.mm3,pan troglodytes,313493,0.253
-Pan_paniscus,pan paniscus,Neocortex (GM+WM),Neocortex_Vol.mm3,214400,60,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,312700,60,FALSE,match,Stimpson_etal_2015_viaDeCasien,Total_brain_net_volume_Vol.mm3,pan paniscus,312532.175,0.054
+Pan_paniscus,pan paniscus,Neocortex (GM+WM),Neocortex_Vol.mm3,214400,60,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_Vol.mm3,pan paniscus,218500,1.876
 Pan_paniscus,pan paniscus,V1 (GM),Area_striata_grey_matter_Vol.mm3,11400,60,FALSE,match,deSousa_etal_2010_Table1,Area_striata_grey_matter_Vol.mm3,pan paniscus,11606.5,1.779
 Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,325300,60,FALSE,value_match_other_structure,Stephan_etal_1970_Tables1-6,Telencephalon_Vol.mm3,pan troglodytes,325104,0.06
 Pan_paniscus,pan paniscus,V1 (GM),Area_striata_grey_matter_Vol.mm3,8800,60,FALSE,value_match_other_structure,Bush_Allman_2003_Table1,Cerebellum_white_matter_Vol.mm3,pan troglodytes,8630,1.97
@@ -1385,7 +1385,7 @@ Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,281400,61,FALSE,valu
 Pan_paniscus,pan paniscus,Cerebellum,Cerebellum_Vol.mm3,39500,61,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,309200,61,FALSE,value_match_other_structure,Barger_etal_2007_TABLE1,Cerebral_hemispheres_Vol.mm3,pan troglodytes,310000,0.258
 Pan_paniscus,pan paniscus,Cerebellum,Cerebellum_Vol.mm3,39700,61,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,312700,61,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Telencephalon_Vol.mm3,pan troglodytes,313493,0.253
+Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,312700,61,FALSE,match,Stimpson_etal_2015_viaDeCasien,Total_brain_net_volume_Vol.mm3,pan paniscus,312532.175,0.054
 Pan_paniscus,pan paniscus,Cerebellum,Cerebellum_Vol.mm3,53000,61,FALSE,match_taxonomy_variant,Ashwell__2020_SupplementaryTable,Cerebellum_Vol.mm3,pan troglodytes,52101,1.725
 Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,322400,61,FALSE,value_match_other_structure,Stephan_etal_1970_Tables1-6,Telencephalon_Vol.mm3,pan troglodytes,325104,0.832
 Pan_paniscus,pan paniscus,Cerebellum,Cerebellum_Vol.mm3,46100,61,FALSE,value_match_other_structure,Stephan_etal_1970_Tables1-6,Body_Mass.g,pan troglodytes,46000,0.217
@@ -1397,14 +1397,14 @@ Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,378400,56;57,FALSE,m
 Pan_paniscus,pan paniscus,Striatum,Striatum_Vol.mm3,11290,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_paniscus,pan paniscus,Hippocampus,Hippocampus_Vol.mm3,3420,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_paniscus,pan paniscus,Amygdala,Amygdala_Vol.mm3,1288,56;57,FALSE,match,Barger_etal_2007_TABLE1,Amygdala_Vol.mm3,pan paniscus,1285.5,0.194
-Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,312700,56;57,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Telencephalon_Vol.mm3,pan troglodytes,313493,0.253
+Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,312700,56;57,FALSE,match,Stimpson_etal_2015_viaDeCasien,Total_brain_net_volume_Vol.mm3,pan paniscus,312532.175,0.054
 Pan_paniscus,pan paniscus,Striatum,Striatum_Vol.mm3,8800,56;57,FALSE,value_match_other_structure,Bush_Allman_2003_Table1,Cerebellum_white_matter_Vol.mm3,pan troglodytes,8630,1.97
 Pan_paniscus,pan paniscus,Hippocampus,Hippocampus_Vol.mm3,3190,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_paniscus,pan paniscus,Amygdala,Amygdala_Vol.mm3,1283,56;57,FALSE,match,Barger_etal_2007_TABLE1,Amygdala_Vol.mm3,pan paniscus,1285.5,0.194
 Pan_paniscus,pan paniscus,BV,Total_brain_net_volume_Vol.mm3,311200,62;63,FALSE,match,MacLeod_etal_2003_,Total_brain_net_volume_Vol.mm3,pan paniscus,311200,0
-Pan_paniscus,pan paniscus,Cerebellum,Cerebellum_Vol.mm3,41300,62;63,FALSE,value_match_other_structure,MacLeod_etal_2003_,CerebellarHemisphere_Vol.mm3,pan troglodytes,42114.2857142857,1.934
-Pan_paniscus,pan paniscus,Neocortex (GM+WM),Neocortex_Vol.mm3,218500,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_paniscus,pan paniscus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,142900,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_paniscus,pan paniscus,Cerebellum,Cerebellum_Vol.mm3,41300,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Cerebellum_Vol.mm3,pan paniscus,41300,0
+Pan_paniscus,pan paniscus,Neocortex (GM+WM),Neocortex_Vol.mm3,218500,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_Vol.mm3,pan paniscus,218500,0
+Pan_paniscus,pan paniscus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,142900,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_grey_matter_Vol.mm3,pan paniscus,142900,0
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,391382.453882454,34,FALSE,match,Stephan_etal_1970_Tables1-6,Total_brain_net_volume_Vol.mm3,pan troglodytes,396255,1.23
 Pan_troglodytes_troglodytes,pan troglodytes,V1 (GM),Area_striata_grey_matter_Vol.mm3,10593,34,FALSE,match,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,pan troglodytes,10593,0
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,361000,43,FALSE,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,pan troglodytes,364140,0.862
@@ -1429,24 +1429,24 @@ Pan_troglodytes_troglodytes,pan troglodytes,Amygdala,Amygdala_Vol.mm3,2130.76,58
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,334555.984555985,58,FALSE,match,MacLeod_etal_2003_,Total_brain_net_volume_Vol.mm3,pan troglodytes,334500,0.017
 Pan_troglodytes_troglodytes,pan troglodytes,Amygdala,Amygdala_Vol.mm3,1925.88,58,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Pallidum_Vol.mm3,pan troglodytes,1951,1.288
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,387837.837837838,58,FALSE,match,Ashwell__2020_SupplementaryTable,Total_brain_net_volume_Vol.mm3,pan troglodytes,383220,1.205
-Pan_troglodytes_troglodytes,pan troglodytes,Amygdala,Amygdala_Vol.mm3,1403.02,58,FALSE,match,Stephan_etal_1987_Table1,Amygdala_Vol.mm3,pan troglodytes,1421.8,1.321
+Pan_troglodytes_troglodytes,pan troglodytes,Amygdala,Amygdala_Vol.mm3,1403.02,58,FALSE,match_taxonomy_variant,Stimpson_etal_2015_viaDeCasien,Amygdala_Vol.mm3,pan paniscus,1397.5133,0.394
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,316409.266409266,58,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Telencephalon_Vol.mm3,pan troglodytes,313493,0.93
 Pan_troglodytes_troglodytes,pan troglodytes,Amygdala,Amygdala_Vol.mm3,1918.42,58,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Ventricles_Vol.mm3,pan troglodytes,1899,1.023
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,362451.737451737,58,FALSE,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,pan troglodytes,364140,0.464
-Pan_troglodytes_troglodytes,pan troglodytes,Amygdala,Amygdala_Vol.mm3,1714.14,58,FALSE,value_match_other_structure,Bauernfeind_etal_2013_Table1,Insula_left_Vol.mm3,pan paniscus,1690.33333333333,1.408
-Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,336003.861003861,58,FALSE,match,MacLeod_etal_2003_,Total_brain_net_volume_Vol.mm3,pan troglodytes,334500,0.45
-Pan_troglodytes_troglodytes,pan troglodytes,Amygdala,Amygdala_Vol.mm3,1380.32,58,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,Amygdala,Amygdala_Vol.mm3,1714.14,58,FALSE,match,Stimpson_etal_2015_viaDeCasien,Amygdala_Vol.mm3,pan troglodytes,1702.5314,0.682
+Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,336003.861003861,58,FALSE,match,Rilling_Insel_1998_viaDeCasien,Total_brain_net_volume_Vol.mm3,pan troglodytes,337300,0.384
+Pan_troglodytes_troglodytes,pan troglodytes,Amygdala,Amygdala_Vol.mm3,1380.32,58,FALSE,match_taxonomy_variant,Stimpson_etal_2015_viaDeCasien,Amygdala_Vol.mm3,pan paniscus,1397.5133,1.23
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,302027.027027027,58,FALSE,value_match_other_structure,Stephan_etal_1970_Tables1-6,Neocortex_Vol.mm3,pan troglodytes,302392,0.121
 Pan_troglodytes_troglodytes,pan troglodytes,Amygdala,Amygdala_Vol.mm3,1445.18,58,FALSE,match,Stephan_etal_1987_Table1,Amygdala_Vol.mm3,pan troglodytes,1421.8,1.644
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,257700,60,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,V1 (GM),Area_striata_grey_matter_Vol.mm3,7400,60,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,V1 (GM),Area_striata_grey_matter_Vol.mm3,7400,60,FALSE,value_match_other_structure,Sherwood_etal_2004_viaDeCasien,Thalamus_Vol.mm3,pan troglodytes,7525,1.661
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,261100,60,FALSE,value_match_other_structure,deSousa_etal_2010_Table1,Neocortex_Vol.mm3,pan troglodytes,264650,1.341
 Pan_troglodytes_troglodytes,pan troglodytes,V1 (GM),Area_striata_grey_matter_Vol.mm3,8000,60,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Thalamus_Vol.mm3,pan troglodytes,7987,0.163
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,265000,60,FALSE,value_match_other_structure,deSousa_etal_2010_Table1,Neocortex_Vol.mm3,pan troglodytes,264650,0.132
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM+WM),Neocortex_Vol.mm3,198300,60,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,V1 (GM),Area_striata_grey_matter_Vol.mm3,5600,60,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,276800,60,FALSE,value_match_other_structure,Barger_etal_2007_TABLE1,Cerebral_hemispheres_Vol.mm3,pan paniscus,276000,0.29
-Pan_troglodytes_troglodytes,pan troglodytes,V1 (GM),Area_striata_grey_matter_Vol.mm3,7600,60,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,V1 (GM),Area_striata_grey_matter_Vol.mm3,7600,60,FALSE,value_match_other_structure,Sherwood_etal_2004_viaDeCasien,Thalamus_Vol.mm3,pan troglodytes,7525,0.997
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,347000,60,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM+WM),Neocortex_Vol.mm3,262800,60,FALSE,match,deSousa_etal_2010_Table1,Neocortex_Vol.mm3,pan troglodytes,264650,0.699
 Pan_troglodytes_troglodytes,pan troglodytes,V1 (GM),Area_striata_grey_matter_Vol.mm3,9400,60,FALSE,value_match_other_structure,Frahm_etal_1984_Table1,Area_striata_laminae_2_6_Vol.mm3,pan troglodytes,9437,0.392
@@ -1469,7 +1469,7 @@ Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,46100,
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,328600,61,FALSE,match,Bauernfeind_etal_2013_Table1,Total_brain_net_volume_Vol.mm3,pan troglodytes,330790,0.662
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,39600,61,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,333500,61,FALSE,match,MacLeod_etal_2003_,Total_brain_net_volume_Vol.mm3,pan troglodytes,334500,0.299
-Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,40600,61,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,40600,61,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Cerebellum_Vol.mm3,pan paniscus,41300,1.695
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,343800,61,FALSE,match_taxonomy_variant,Bauernfeind_etal_2013_Table1,Total_brain_net_volume_Vol.mm3,pan paniscus,339766.666666667,1.187
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,50100,61,FALSE,value_match_other_structure,Smaers_etal_2011_SupplementaryTable1,FrontalCortex_grey_matter_Vol.mm3,pan paniscus,50660,1.105
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,347000,61,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -1488,10 +1488,10 @@ Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,44
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,45300,61,FALSE,match,Stephan_etal_1970_Tables1-6,Cerebellum_Vol.mm3,pan troglodytes,45280,0.044
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,299000,64,FALSE,value_match_other_structure,Stephan_etal_1970_Tables1-6,Neocortex_Vol.mm3,pan troglodytes,302392,1.122
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,42000,64,FALSE,value_match_other_structure,MacLeod_etal_2003_,CerebellarHemisphere_Vol.mm3,pan troglodytes,42114.2857142857,0.271
-Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,6800,64,FALSE,value_match_other_structure,Ashwell__2020_SupplementaryTable,Cerebellum_white_matter_Vol.mm3,pan troglodytes,6675,1.873
+Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,6800,64,FALSE,match,Sherwood_etal_2004_viaDeCasien,Striatum_Vol.mm3,pan troglodytes,6725,1.115
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,2700,64,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Lobus_piriformis_Vol.mm3,pan troglodytes,2750,1.818
-Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,142800,64,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,6700,64,FALSE,value_match_other_structure,Ashwell__2020_SupplementaryTable,Cerebellum_white_matter_Vol.mm3,pan troglodytes,6675,0.375
+Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,142800,64,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Neocortex_grey_matter_Vol.mm3,pan paniscus,142900,0.07
+Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,6700,64,FALSE,value_match_other_structure,Sherwood_etal_2004_viaDeCasien,Striatum_Vol.mm3,pan troglodytes,6725,0.372
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,262000,64,FALSE,value_match_other_structure,deSousa_etal_2010_Table1,Neocortex_Vol.mm3,pan troglodytes,264650,1.001
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,43800,64,FALSE,match,Stephan_etal_1981_Table1,Cerebellum_Vol.mm3,pan troglodytes,43663,0.314
 Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,5800,64,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Medulla_oblongata_Vol.mm3,pan troglodytes,5817,0.292
@@ -1503,25 +1503,25 @@ Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,44400,
 Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,6300,64,FALSE,value_match_other_structure,MacLeod_etal_2003_,CerebellarVermis_Vol.mm3,pan paniscus,6350,0.787
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,2500,64,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Capsula_interna_Vol.mm3,pan troglodytes,2510,0.398
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,154700,64,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,7600,64,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,7600,64,FALSE,match,Sherwood_etal_2004_viaDeCasien,Thalamus_Vol.mm3,pan troglodytes,7525,0.997
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,229200,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,35600,64,FALSE,value_match_other_structure,Bush_Allman_2003_Table1,Cerebellum_grey_matter_Vol.mm3,pan troglodytes,36100,1.385
 Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,4600,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,2500,64,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Capsula_interna_Vol.mm3,pan troglodytes,2510,0.398
-Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,142100,64,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,142100,64,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Neocortex_grey_matter_Vol.mm3,pan paniscus,142900,0.56
 Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,5900,64,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Medulla_oblongata_Vol.mm3,pan troglodytes,5817,1.427
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,354300,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,44200,64,FALSE,match_taxonomy_variant,MacLeod_etal_2003_,Cerebellum_Vol.mm3,pan paniscus,44175,0.057
 Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,7900,64,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Thalamus_Vol.mm3,pan troglodytes,7987,1.089
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,3100,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,166600,64,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,6800,64,FALSE,value_match_other_structure,Ashwell__2020_SupplementaryTable,Cerebellum_white_matter_Vol.mm3,pan troglodytes,6675,1.873
+Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,6800,64,FALSE,value_match_other_structure,Sherwood_etal_2004_viaDeCasien,Striatum_Vol.mm3,pan troglodytes,6725,1.115
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,314300,64,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Telencephalon_Vol.mm3,pan troglodytes,313493,0.257
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,45200,64,FALSE,match,Stephan_etal_1970_Tables1-6,Cerebellum_Vol.mm3,pan troglodytes,45280,0.177
 Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,6400,64,FALSE,value_match_other_structure,Ashwell__2020_SupplementaryTable,CerebellarVermis_Vol.mm3,pan troglodytes,6403,0.047
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,3100,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,154000,64,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,7400,64,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,7400,64,FALSE,match,Sherwood_etal_2004_viaDeCasien,Thalamus_Vol.mm3,pan troglodytes,7525,1.661
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,373500,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,50200,64,FALSE,value_match_other_structure,Smaers_etal_2011_SupplementaryTable1,FrontalCortex_grey_matter_Vol.mm3,pan paniscus,50660,0.908
 Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,7900,64,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Thalamus_Vol.mm3,pan troglodytes,7987,1.089
@@ -1548,19 +1548,19 @@ Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter
 Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,6400,64,FALSE,value_match_other_structure,Ashwell__2020_SupplementaryTable,CerebellarVermis_Vol.mm3,pan troglodytes,6403,0.047
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,370700,64,FALSE,value_match_other_structure,deSousa_etal_2013_Table1,Brain_Mass.mg,pan paniscus,364500,1.701
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,42800,64,FALSE,value_match_other_structure,MacLeod_etal_2003_,CerebellarHemisphere_Vol.mm3,pan troglodytes,42114.2857142857,1.628
-Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,6700,64,FALSE,value_match_other_structure,Ashwell__2020_SupplementaryTable,Cerebellum_white_matter_Vol.mm3,pan troglodytes,6675,0.375
+Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,6700,64,FALSE,match,Sherwood_etal_2004_viaDeCasien,Striatum_Vol.mm3,pan troglodytes,6725,0.372
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,3300,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,174300,64,FALSE,match,Frahm_etal_1982_Table2,Neocortex_grey_matter_Vol.mm3,pan troglodytes,172597,0.987
 Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,7700,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,345300,64,FALSE,match_taxonomy_variant,Bauernfeind_etal_2013_Table1,Total_brain_net_volume_Vol.mm3,pan paniscus,339766.666666667,1.629
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,43600,64,FALSE,match,Stephan_etal_1981_Table1,Cerebellum_Vol.mm3,pan troglodytes,43663,0.144
-Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,7500,64,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,7500,64,FALSE,value_match_other_structure,Sherwood_etal_2004_viaDeCasien,Thalamus_Vol.mm3,pan troglodytes,7525,0.332
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,3600,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,155400,64,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,6800,64,FALSE,value_match_other_structure,Ashwell__2020_SupplementaryTable,Cerebellum_white_matter_Vol.mm3,pan troglodytes,6675,1.873
+Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,6800,64,FALSE,value_match_other_structure,Sherwood_etal_2004_viaDeCasien,Striatum_Vol.mm3,pan troglodytes,6725,1.115
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,327800,64,FALSE,value_match_other_structure,Stephan_etal_1970_Tables1-6,Telencephalon_Vol.mm3,pan troglodytes,325104,0.829
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,47800,64,FALSE,match,MacLeod_etal_2003_,Cerebellum_Vol.mm3,pan troglodytes,47100,1.486
-Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,6800,64,FALSE,value_match_other_structure,Ashwell__2020_SupplementaryTable,Cerebellum_white_matter_Vol.mm3,pan troglodytes,6675,1.873
+Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,6800,64,FALSE,match,Sherwood_etal_2004_viaDeCasien,Striatum_Vol.mm3,pan troglodytes,6725,1.115
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,2900,64,FALSE,value_match_other_structure,Stephan_etal_1970_Tables1-6,Palaeocortex_plus_amygdala_Vol.mm3,pan troglodytes,2852,1.683
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,152600,64,FALSE,value_match_other_structure,Frahm_etal_1982_Table2,Neocortex_laminae_2_6_Vol.mm3,pan troglodytes,150637,1.303
 Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,9100,64,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -1569,34 +1569,34 @@ Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,48800,
 Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,5800,64,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Medulla_oblongata_Vol.mm3,pan troglodytes,5817,0.292
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,3400,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,149100,64,FALSE,value_match_other_structure,Frahm_etal_1982_Table2,Neocortex_laminae_2_6_Vol.mm3,pan troglodytes,150637,1.02
-Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,7400,64,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,7400,64,FALSE,match,Sherwood_etal_2004_viaDeCasien,Thalamus_Vol.mm3,pan troglodytes,7525,1.661
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,332900,64,FALSE,match,MacLeod_etal_2003_,Total_brain_net_volume_Vol.mm3,pan troglodytes,334500,0.478
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,50800,64,FALSE,value_match_other_structure,Smaers_etal_2011_SupplementaryTable1,FrontalCortex_grey_matter_Vol.mm3,pan paniscus,50660,0.276
 Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,6400,64,FALSE,value_match_other_structure,Ashwell__2020_SupplementaryTable,CerebellarVermis_Vol.mm3,pan troglodytes,6403,0.047
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,3400,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,163100,64,FALSE,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,pan troglodytes,163180,0.049
 Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,7000,64,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,312900,64,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Telencephalon_Vol.mm3,pan troglodytes,313493,0.189
-Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,41000,64,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,312900,64,FALSE,match_taxonomy_variant,Stimpson_etal_2015_viaDeCasien,Total_brain_net_volume_Vol.mm3,pan paniscus,312532.175,0.118
+Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,41000,64,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Cerebellum_Vol.mm3,pan paniscus,41300,0.726
 Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,5200,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,2800,64,FALSE,value_match_other_structure,Semendeferi_etal_2001_Table2,Area_10_right_Vol.mm3,pan paniscus,2804.9,0.175
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,168700,64,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,6700,64,FALSE,value_match_other_structure,Ashwell__2020_SupplementaryTable,Cerebellum_white_matter_Vol.mm3,pan troglodytes,6675,0.375
+Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,6700,64,FALSE,value_match_other_structure,Sherwood_etal_2004_viaDeCasien,Striatum_Vol.mm3,pan troglodytes,6725,0.372
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,344600,64,FALSE,match_taxonomy_variant,Bauernfeind_etal_2013_Table1,Total_brain_net_volume_Vol.mm3,pan paniscus,339766.666666667,1.423
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,45200,64,FALSE,match,Stephan_etal_1970_Tables1-6,Cerebellum_Vol.mm3,pan troglodytes,45280,0.177
 Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,6500,64,FALSE,value_match_other_structure,Ashwell__2020_SupplementaryTable,CerebellarVermis_Vol.mm3,pan troglodytes,6403,1.515
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,3100,64,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,159600,64,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,6800,64,FALSE,value_match_other_structure,Ashwell__2020_SupplementaryTable,Cerebellum_white_matter_Vol.mm3,pan troglodytes,6675,1.873
+Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,159600,64,FALSE,match,Sherwood_etal_2004_viaDeCasien,Neocortex_grey_matter_Vol.mm3,pan troglodytes,159450,0.094
+Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,6800,64,FALSE,value_match_other_structure,Sherwood_etal_2004_viaDeCasien,Striatum_Vol.mm3,pan troglodytes,6725,1.115
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,353500,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,47800,64,FALSE,match,MacLeod_etal_2003_,Cerebellum_Vol.mm3,pan troglodytes,47100,1.486
 Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,7700,64,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,3000,64,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,3000,64,FALSE,match,Sherwood_etal_2004_viaDeCasien,Hippocampus_Vol.mm3,pan troglodytes,2954.1667,1.551
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,162400,64,FALSE,match,Bush_Allman_2003_Table1,Neocortex_grey_matter_Vol.mm3,pan troglodytes,163000,0.368
-Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,7400,64,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,7400,64,FALSE,match,Sherwood_etal_2004_viaDeCasien,Thalamus_Vol.mm3,pan troglodytes,7525,1.661
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,384000,64,FALSE,match,Ashwell__2020_SupplementaryTable,Total_brain_net_volume_Vol.mm3,pan troglodytes,383220,0.204
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,59800,64,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,7500,64,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,7500,64,FALSE,value_match_other_structure,Sherwood_etal_2004_viaDeCasien,Thalamus_Vol.mm3,pan troglodytes,7525,0.332
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,3100,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,200900,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,7900,64,FALSE,match,Stephan_etal_1981_Table1,Thalamus_Vol.mm3,pan troglodytes,7987,1.089
@@ -1615,21 +1615,21 @@ Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,11000,64,F
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,345400,64,FALSE,match_taxonomy_variant,Bauernfeind_etal_2013_Table1,Total_brain_net_volume_Vol.mm3,pan paniscus,339766.666666667,1.658
 Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,50400,64,FALSE,value_match_other_structure,Smaers_etal_2011_SupplementaryTable1,FrontalCortex_grey_matter_Vol.mm3,pan paniscus,50660,0.513
 Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,6400,64,FALSE,value_match_other_structure,Ashwell__2020_SupplementaryTable,CerebellarVermis_Vol.mm3,pan troglodytes,6403,0.047
-Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,3000,64,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,3000,64,FALSE,match,Sherwood_etal_2004_viaDeCasien,Hippocampus_Vol.mm3,pan troglodytes,2954.1667,1.551
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,149800,64,FALSE,value_match_other_structure,Frahm_etal_1982_Table2,Neocortex_laminae_2_6_Vol.mm3,pan troglodytes,150637,0.556
 Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,7700,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,341200,64,FALSE,match_taxonomy_variant,Bauernfeind_etal_2013_Table1,Total_brain_net_volume_Vol.mm3,pan paniscus,339766.666666667,0.422
-Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,41400,64,FALSE,value_match_other_structure,MacLeod_etal_2003_,CerebellarHemisphere_Vol.mm3,pan troglodytes,42114.2857142857,1.696
+Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,41400,64,FALSE,match_taxonomy_variant,Rilling_Insel_1998_viaDeCasien,Cerebellum_Vol.mm3,pan paniscus,41300,0.242
 Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,7200,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,3200,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,155400,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,8000,64,FALSE,match,Stephan_etal_1981_Table1,Thalamus_Vol.mm3,pan troglodytes,7987,0.163
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,377200,64,FALSE,match,Stephan_etal_1981_Table1,Total_brain_net_volume_Vol.mm3,pan troglodytes,382103,1.283
-Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,46800,64,FALSE,match,MacLeod_etal_2003_,Cerebellum_Vol.mm3,pan troglodytes,47100,0.637
-Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,7600,64,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,46800,64,FALSE,match,Sherwood_etal_2004_viaDeCasien,Cerebellum_Vol.mm3,pan troglodytes,47058.3333,0.549
+Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,7600,64,FALSE,value_match_other_structure,Sherwood_etal_2004_viaDeCasien,Thalamus_Vol.mm3,pan troglodytes,7525,0.997
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,3500,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,167300,64,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,7500,64,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,Thalamus,Thalamus_Vol.mm3,7500,64,FALSE,match,Sherwood_etal_2004_viaDeCasien,Thalamus_Vol.mm3,pan troglodytes,7525,0.332
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,382103,24;51;52,TRUE,match,Stephan_etal_1981_Table1,Total_brain_net_volume_Vol.mm3,pan troglodytes,382103,0
 Pan_troglodytes_troglodytes,pan troglodytes,Mesencephalon,Mesencephalon_Vol.mm3,3739,24;51;52,TRUE,match,Stephan_etal_1981_Table1,Mesencephalon_Vol.mm3,pan troglodytes,3739,0
 Pan_troglodytes_troglodytes,pan troglodytes,Diencephalon,Diencephalon_Vol.mm3,15392,24;51;52,TRUE,match,Stephan_etal_1981_Table1,Diencephalon_Vol.mm3,pan troglodytes,15392,0
@@ -1663,11 +1663,11 @@ Pan_troglodytes_troglodytes,pan troglodytes,Striatum,Striatum_Vol.mm3,8746,56;57
 Pan_troglodytes_troglodytes,pan troglodytes,Hippocampus,Hippocampus_Vol.mm3,3040,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Amygdala,Amygdala_Vol.mm3,1145,56;57,FALSE,value_match_other_structure,Frahm_etal_1984_Table1,Area_striata_lamina_1_Vol.mm3,pan troglodytes,1156,0.952
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,405400,56;57,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Brain_Mass.mg,pan troglodytes,405000,0.099
-Pan_troglodytes_troglodytes,pan troglodytes,Amygdala,Amygdala_Vol.mm3,1382,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,337300,62;63,FALSE,match_taxonomy_variant,deSousa_etal_2010_Table1,Total_brain_net_volume_Vol.mm3,pan paniscus,338803.1,0.444
-Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,46400,62;63,FALSE,value_match_other_structure,Bauernfeind_etal_2013_Table1,Body_Mass.g,pan troglodytes,46503.3333333333,0.222
-Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM+WM),Neocortex_Vol.mm3,238000,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,147100,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,Amygdala,Amygdala_Vol.mm3,1382,56;57,FALSE,match_taxonomy_variant,Stimpson_etal_2015_viaDeCasien,Amygdala_Vol.mm3,pan paniscus,1397.5133,1.11
+Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,337300,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Total_brain_net_volume_Vol.mm3,pan troglodytes,337300,0
+Pan_troglodytes_troglodytes,pan troglodytes,Cerebellum,Cerebellum_Vol.mm3,46400,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Cerebellum_Vol.mm3,pan troglodytes,46400,0
+Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM+WM),Neocortex_Vol.mm3,238000,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_Vol.mm3,pan troglodytes,238000,0
+Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,147100,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_grey_matter_Vol.mm3,pan troglodytes,147100,0
 Papio_anubis,papio anubis,BV,Total_brain_net_volume_Vol.mm3,195051.669316375,34,FALSE,match,deSousa_etal_2010_Table1,Total_brain_net_volume_Vol.mm3,papio anubis,194015.4,0.534
 Papio_anubis,papio anubis,V1 (GM),Area_striata_grey_matter_Vol.mm3,10001,34,FALSE,match,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,papio anubis,10001,0
 Papio_anubis,papio anubis,BV,Total_brain_net_volume_Vol.mm3,191340.581,53,FALSE,match,Stephan_etal_1981_Table1,Total_brain_net_volume_Vol.mm3,papio anubis,190957,0.201
@@ -1703,9 +1703,9 @@ Papio_cynocephalus,papio cynocephalus,Cerebellum,Cerebellum_Vol.mm3,15300,61,FAL
 Papio_cynocephalus,papio cynocephalus,BV,Total_brain_net_volume_Vol.mm3,159200,61,FALSE,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,papio hamadryas,159110,0.057
 Papio_cynocephalus,papio cynocephalus,Cerebellum,Cerebellum_Vol.mm3,14800,61,FALSE,decasien_only,NA,NA,NA,NA,NA
 Papio_cynocephalus,papio cynocephalus,BV,Total_brain_net_volume_Vol.mm3,143300,62;63,FALSE,match,MacLeod_etal_2003_,Total_brain_net_volume_Vol.mm3,papio cynocephalus,143300,0
-Papio_cynocephalus,papio cynocephalus,Cerebellum,Cerebellum_Vol.mm3,13700,62;63,FALSE,value_match_other_structure,Frahm_etal_1984_Table1,Area_striata_Vol.mm3,papio anubis,13741,0.298
-Papio_cynocephalus,papio cynocephalus,Neocortex (GM+WM),Neocortex_Vol.mm3,100100,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
-Papio_cynocephalus,papio cynocephalus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,65000,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
+Papio_cynocephalus,papio cynocephalus,Cerebellum,Cerebellum_Vol.mm3,13700,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Cerebellum_Vol.mm3,papio cynocephalus,13700,0
+Papio_cynocephalus,papio cynocephalus,Neocortex (GM+WM),Neocortex_Vol.mm3,100100,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_Vol.mm3,papio cynocephalus,100100,0
+Papio_cynocephalus,papio cynocephalus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,65000,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_grey_matter_Vol.mm3,papio cynocephalus,65000,0
 Papio_hamadryas,papio hamadryas,BV,Total_brain_net_volume_Vol.mm3,159110,54;55,FALSE,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,papio hamadryas,159110,0
 Papio_hamadryas,papio hamadryas,Neocortex (GM+WM),Neocortex_Vol.mm3,118780,54;55,FALSE,decasien_only,NA,NA,NA,NA,NA
 Papio_hamadryas,papio hamadryas,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,79100,54;55,FALSE,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,papio hamadryas,79100,0
@@ -1806,7 +1806,7 @@ Pithecia_pithecia,pithecia pithecia,BV,Total_brain_net_volume_Vol.mm3,28958,43,F
 Pithecia_pithecia,pithecia pithecia,Granular Insula,Granular_insular_cortex_left_Vol.mm3,80,43,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pithecia_pithecia,pithecia pithecia,Dysgranular Insula,Dysgranular_insular_cortex_left_Vol.mm3,270,43,FALSE,value_match_other_structure,Stephan_etal_1987_Table1,Complexus_corticobasolateralis_Vol.mm3,pithecia monachus,273.7,1.352
 Pithecia_pithecia,pithecia pithecia,Insula (GM),Insula_left_Vol.mm3,558,43,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pongo_abelii,pongo abelii,BV,Total_brain_net_volume_Vol.mm3,345560,43,FALSE,match_taxonomy_variant,Bauernfeind_etal_2013_Table1,Total_brain_net_volume_Vol.mm3,pongo sp,340925,1.36
+Pongo_abelii,pongo abelii,BV,Total_brain_net_volume_Vol.mm3,345560,43,FALSE,match_taxonomy_variant,Sherwood_etal_2004_viaDeCasien,Total_brain_net_volume_Vol.mm3,pongo pygmaeus,348833.3333,0.938
 Pongo_abelii,pongo abelii,Granular Insula,Granular_insular_cortex_left_Vol.mm3,452,43,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pongo_abelii,pongo abelii,Dysgranular Insula,Dysgranular_insular_cortex_left_Vol.mm3,1274,43,FALSE,value_match_other_structure,Zilles_Rehkämper_1988_Table12-2,EntorhinalCortex_Vol.mm3,pongo sp,1300,2
 Pongo_abelii,pongo abelii,Insula (GM),Insula_left_Vol.mm3,2403,43,FALSE,value_match_other_structure,Zilles_Rehkämper_1988_Table12-2,Palaeocortex_Vol.mm3,pongo sp,2400,0.125
@@ -1863,7 +1863,7 @@ Pongo_pygmaeus,pongo pygmaeus,Cerebellum,Cerebellum_Vol.mm3,54300,61,FALSE,decas
 Pongo_pygmaeus,pongo pygmaeus,BV,Total_brain_net_volume_Vol.mm3,343000,61,FALSE,match_taxonomy_variant,Bauernfeind_etal_2013_Table1,Total_brain_net_volume_Vol.mm3,pongo sp,340925,0.609
 Pongo_pygmaeus,pongo pygmaeus,Cerebellum,Cerebellum_Vol.mm3,42700,61,FALSE,match_taxonomy_variant,Zilles_Rehkämper_1988_Table12-2,Cerebellum_Vol.mm3,pongo sp,42900,0.466
 Pongo_pygmaeus,pongo pygmaeus,BV,Total_brain_net_volume_Vol.mm3,383200,61,FALSE,value_match_other_structure,deSousa_etal_2013_Table1,Brain_Mass.mg,pongo sp,384667,0.381
-Pongo_pygmaeus,pongo pygmaeus,Cerebellum,Cerebellum_Vol.mm3,45200,61,FALSE,value_match_other_structure,MacLeod_etal_2003_,CerebellarHemisphere_Vol.mm3,pongo pygmaeus,44600,1.345
+Pongo_pygmaeus,pongo pygmaeus,Cerebellum,Cerebellum_Vol.mm3,45200,61,FALSE,match,Sherwood_etal_2004_viaDeCasien,Cerebellum_Vol.mm3,pongo pygmaeus,44866.6667,0.743
 Pongo_pygmaeus,pongo pygmaeus,BV,Total_brain_net_volume_Vol.mm3,423800,61,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pongo_pygmaeus,pongo pygmaeus,Cerebellum,Cerebellum_Vol.mm3,59300,61,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pongo_pygmaeus,pongo pygmaeus,BV,Total_brain_net_volume_Vol.mm3,477500,61,FALSE,decasien_only,NA,NA,NA,NA,NA
@@ -1889,7 +1889,7 @@ Pongo_pygmaeus,pongo pygmaeus,Thalamus,Thalamus_Vol.mm3,6800,64,FALSE,decasien_o
 Pongo_pygmaeus,pongo pygmaeus,BV,Total_brain_net_volume_Vol.mm3,374100,64,FALSE,match_taxonomy_variant,deSousa_etal_2010_Table1,Total_brain_net_volume_Vol.mm3,pongo sp,371299.9,0.754
 Pongo_pygmaeus,pongo pygmaeus,Cerebellum,Cerebellum_Vol.mm3,46200,64,FALSE,value_match_other_structure,Bauernfeind_etal_2013_Table1,Body_Mass.g,pongo sp,46325,0.27
 Pongo_pygmaeus,pongo pygmaeus,Striatum,Striatum_Vol.mm3,9000,64,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pongo_pygmaeus,pongo pygmaeus,Hippocampus,Hippocampus_Vol.mm3,2600,64,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pongo_pygmaeus,pongo pygmaeus,Hippocampus,Hippocampus_Vol.mm3,2600,64,FALSE,match,Sherwood_etal_2004_viaDeCasien,Hippocampus_Vol.mm3,pongo pygmaeus,2566.6667,1.299
 Pongo_pygmaeus,pongo pygmaeus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,170800,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pongo_pygmaeus,pongo pygmaeus,Thalamus,Thalamus_Vol.mm3,8500,64,FALSE,value_match_other_structure,Zilles_Rehkämper_1988_Table12-2,Area_striata_grey_matter_Vol.mm3,pongo sp,8400,1.19
 Pongo_pygmaeus,pongo pygmaeus,BV,Total_brain_net_volume_Vol.mm3,344700,64,FALSE,match_taxonomy_variant,Bauernfeind_etal_2013_Table1,Total_brain_net_volume_Vol.mm3,pongo sp,340925,1.107
@@ -1903,20 +1903,20 @@ Pongo_pygmaeus,pongo pygmaeus,Cerebellum,Cerebellum_Vol.mm3,43800,64,FALSE,value
 Pongo_pygmaeus,pongo pygmaeus,Striatum,Striatum_Vol.mm3,6800,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pongo_pygmaeus,pongo pygmaeus,Hippocampus,Hippocampus_Vol.mm3,3000,64,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pongo_pygmaeus,pongo pygmaeus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,174300,64,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pongo_pygmaeus,pongo pygmaeus,Thalamus,Thalamus_Vol.mm3,7200,64,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pongo_pygmaeus,pongo pygmaeus,Thalamus,Thalamus_Vol.mm3,7200,64,FALSE,value_match_other_structure,Sherwood_etal_2004_viaDeCasien,Striatum_Vol.mm3,pongo pygmaeus,7333.3333,1.818
 Pongo_pygmaeus,pongo pygmaeus,BV,Total_brain_net_volume_Vol.mm3,356200,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pongo_pygmaeus,pongo pygmaeus,Hippocampus,Hippocampus_Vol.mm3,2510,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pongo_pygmaeus,pongo pygmaeus,Amygdala,Amygdala_Vol.mm3,1151,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pongo_pygmaeus,pongo pygmaeus,BV,Total_brain_net_volume_Vol.mm3,333000,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pongo_pygmaeus,pongo pygmaeus,Striatum,Striatum_Vol.mm3,7378,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pongo_pygmaeus,pongo pygmaeus,Striatum,Striatum_Vol.mm3,7378,56;57,FALSE,match,Sherwood_etal_2004_viaDeCasien,Striatum_Vol.mm3,pongo pygmaeus,7333.3333,0.609
 Pongo_pygmaeus,pongo pygmaeus,Hippocampus,Hippocampus_Vol.mm3,2830,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pongo_pygmaeus,pongo pygmaeus,Amygdala,Amygdala_Vol.mm3,1048,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pongo_pygmaeus,pongo pygmaeus,BV,Total_brain_net_volume_Vol.mm3,424700,56;57,FALSE,decasien_only,NA,NA,NA,NA,NA
 Pongo_pygmaeus,pongo pygmaeus,Amygdala,Amygdala_Vol.mm3,1348,56;57,FALSE,value_match_other_structure,Bauernfeind_etal_2013_Table1,Insula_left_Vol.mm3,pongo sp,1331.5,1.239
-Pongo_pygmaeus,pongo pygmaeus,BV,Total_brain_net_volume_Vol.mm3,406900,62;63,FALSE,match,MacLeod_etal_2003_,Total_brain_net_volume_Vol.mm3,pongo pygmaeus,406875,0.006
-Pongo_pygmaeus,pongo pygmaeus,Cerebellum,Cerebellum_Vol.mm3,46000,62;63,FALSE,value_match_other_structure,Bauernfeind_etal_2013_Table1,Body_Mass.g,pongo sp,46325,0.702
-Pongo_pygmaeus,pongo pygmaeus,Neocortex (GM+WM),Neocortex_Vol.mm3,287700,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
-Pongo_pygmaeus,pongo pygmaeus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,193300,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
+Pongo_pygmaeus,pongo pygmaeus,BV,Total_brain_net_volume_Vol.mm3,406900,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Total_brain_net_volume_Vol.mm3,pongo pygmaeus,406900,0
+Pongo_pygmaeus,pongo pygmaeus,Cerebellum,Cerebellum_Vol.mm3,46000,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Cerebellum_Vol.mm3,pongo pygmaeus,46000,0
+Pongo_pygmaeus,pongo pygmaeus,Neocortex (GM+WM),Neocortex_Vol.mm3,287700,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_Vol.mm3,pongo pygmaeus,287700,0
+Pongo_pygmaeus,pongo pygmaeus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,193300,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_grey_matter_Vol.mm3,pongo pygmaeus,193300,0
 Propithecus_verreauxi,propithecus verreauxi,BV,Total_brain_net_volume_Vol.mm3,25645.3932924521,34,FALSE,match,deSousa_etal_2010_Table1,Total_brain_net_volume_Vol.mm3,propithecus verreauxi,25772.2,0.492
 Propithecus_verreauxi,propithecus verreauxi,V1 (GM),Area_striata_grey_matter_Vol.mm3,1106,34,FALSE,match,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,propithecus verreauxi,1106,0
 Propithecus_verreauxi,propithecus verreauxi,BV,Total_brain_net_volume_Vol.mm3,25194,53,FALSE,match,Stephan_etal_1981_Table1,Total_brain_net_volume_Vol.mm3,propithecus verreauxi,25194,0
@@ -2038,7 +2038,7 @@ Saimiri_sciureus,saimiri sciureus,Cerebellum,Cerebellum_Vol.mm3,1900,61,FALSE,va
 Saimiri_sciureus,saimiri sciureus,BV,Total_brain_net_volume_Vol.mm3,20700,61,FALSE,match,Stephan_etal_1970_Tables1-6,Total_brain_net_volume_Vol.mm3,saimiri sciureus,20691,0.043
 Saimiri_sciureus,saimiri sciureus,Cerebellum,Cerebellum_Vol.mm3,1900,61,FALSE,value_match_other_structure,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,saimiri sciureus,1884,0.849
 Saimiri_sciureus,saimiri sciureus,BV,Total_brain_net_volume_Vol.mm3,20800,61,FALSE,match,Stephan_etal_1970_Tables1-6,Total_brain_net_volume_Vol.mm3,saimiri sciureus,20691,0.527
-Saimiri_sciureus,saimiri sciureus,Cerebellum,Cerebellum_Vol.mm3,2000,61,FALSE,decasien_only,NA,NA,NA,NA,NA
+Saimiri_sciureus,saimiri sciureus,Cerebellum,Cerebellum_Vol.mm3,2000,61,FALSE,match,Rilling_Insel_1998_viaDeCasien,Cerebellum_Vol.mm3,saimiri sciureus,2000,0
 Saimiri_sciureus,saimiri sciureus,BV,Total_brain_net_volume_Vol.mm3,23600,61,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Brain_Mass.mg,saimiri sciureus,24000,1.667
 Saimiri_sciureus,saimiri sciureus,Cerebellum,Cerebellum_Vol.mm3,2100,61,FALSE,match,Stephan_etal_1970_Tables1-6,Cerebellum_Vol.mm3,saimiri sciureus,2071,1.4
 Saimiri_sciureus,saimiri sciureus,BV,Total_brain_net_volume_Vol.mm3,23700,61,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Brain_Mass.mg,saimiri sciureus,24000,1.25
@@ -2073,9 +2073,9 @@ Saimiri_sciureus,saimiri sciureus,Neocortex (GM+WM),Neocortex_Vol.mm3,14140,54;5
 Saimiri_sciureus,saimiri sciureus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,10440,54;55,FALSE,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,saimiri sciureus,10440,0
 Saimiri_sciureus,saimiri sciureus,V1 (GM),Area_striata_grey_matter_Vol.mm3,1430,54;55,FALSE,value_match_other_structure,Stephan_etal_1981_Table1,Diencephalon_Vol.mm3,saimiri sciureus,1430,0
 Saimiri_sciureus,saimiri sciureus,BV,Total_brain_net_volume_Vol.mm3,23100,62;63,FALSE,match,MacLeod_etal_2003_,Total_brain_net_volume_Vol.mm3,saimiri sciureus,23100,0
-Saimiri_sciureus,saimiri sciureus,Cerebellum,Cerebellum_Vol.mm3,2000,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
-Saimiri_sciureus,saimiri sciureus,Neocortex (GM+WM),Neocortex_Vol.mm3,16500,62;63,FALSE,decasien_only,NA,NA,NA,NA,NA
-Saimiri_sciureus,saimiri sciureus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,11700,62;63,FALSE,match,Frahm_etal_1982_Table2,Neocortex_grey_matter_Vol.mm3,saimiri sciureus,11832,1.116
+Saimiri_sciureus,saimiri sciureus,Cerebellum,Cerebellum_Vol.mm3,2000,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Cerebellum_Vol.mm3,saimiri sciureus,2000,0
+Saimiri_sciureus,saimiri sciureus,Neocortex (GM+WM),Neocortex_Vol.mm3,16500,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_Vol.mm3,saimiri sciureus,16500,0
+Saimiri_sciureus,saimiri sciureus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,11700,62;63,FALSE,match,Rilling_Insel_1998_viaDeCasien,Neocortex_grey_matter_Vol.mm3,saimiri sciureus,11700,0
 Semnopithecus_entellus,semnopithecus entellus,BV,Total_brain_net_volume_Vol.mm3,107540,54;55,FALSE,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,semnopithecus entellus,107540,0
 Semnopithecus_entellus,semnopithecus entellus,Neocortex (GM+WM),Neocortex_Vol.mm3,76110,54;55,FALSE,decasien_only,NA,NA,NA,NA,NA
 Semnopithecus_entellus,semnopithecus entellus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,51850,54;55,FALSE,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,semnopithecus entellus,51850,0

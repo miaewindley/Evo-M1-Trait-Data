@@ -110,8 +110,10 @@ Inside the paper's folder (e.g. `JardimMesseder_etal_2017/`):
 
 The ReadMe follows the team pipeline:
 `Source → Snapshot → Data readable → (Transpose / Variables / Species notes) →
-Online database`. See the `Pipeline` sheet in `__ReadMe.xlsx` for the full
-sequence, and any existing `*.ReadMe.md` for the format.
+Online database`. The full, authoritative sequence — and what happens to the
+snapshot after this guide — is in **`__HOWTO_build_a_dataset_file.md`** (the old
+`Pipeline` sheet in `__ReadMe.xlsx` has been retired in favour of that file).
+Copy the format of any existing `*.README.md`.
 
 ## Quick self-check before you move on
 

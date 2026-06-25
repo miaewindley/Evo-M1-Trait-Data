@@ -3,28 +3,24 @@
 # In: The Primate Brain (Advances in Primatology vol 1), pp. 289-297. DeCasien ref 51.
 #
 # Tables 1-3 = body weight (g), brain weight (mg), total brain NET volume and the five
-#   fundamental brain sections (Medulla, Cerebellum, Mesencephalon, Diencephalon,
-#   Telencephalon), in mm3, for Insectivores / Prosimians / Simians.
-# Tables 4-6 = the seven telencephalon COMPONENTS (Bulbus olfactorius, Palaeocortex+NA,
-#   Septum, Striatum, Schizocortex, Hippocampus, Neocortex), in mm3, same species.
+#   fundamental brain sections; Tables 4-6 = the seven telencephalon components (all mm3).
 #
-# Both snapshots were transcribed from the high-resolution page renders (the embedded PDF
-# text layer and the figshare xlsx are corrupted OCR). Promoted to non-DRAFT snapshots and
-# activated into the volume merge (run 3); the _DRAFT.csv copies are kept for provenance.
-script_path   <- rstudioapi::getActiveDocumentContext()$path
-paper_dir     <- dirname(script_path)
-dataset_root  <- dirname(paper_dir)
-table_name    <- tools::file_path_sans_ext(basename(script_path))
-
-# outputs
-snapshot_xlsx  <- file.path(paper_dir, paste0(table_name, "_snapshot.xlsx"))
-final_csv     <- file.path(paper_dir, paste0(table_name, ".csv"))
-readme_xlsx   <- file.path(dataset_root, "__ReadMe.xlsx")
-public_tsv_dir<- file.path(dataset_root, "__Public", "comparative-data")
-
+# Output: local CSV + TSV here, and the ISBN-named TSV in __Public/comparative-data/ that
+# volumes_compiled.R requires (registry "Item encoded" = ISBN%3A0390672505_Tables1-6).
+# The Primate Brain is a book (no DOI); ISBN 0390672505 -> ISBN%3A0390672505.
 library(tidyverse)
-base <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
-folder <- file.path(base, "Stephan_etal_1970")
+
+## --- locate paths (portable: Rscript or RStudio) ---
+.this <- tryCatch({
+  a <- commandArgs(FALSE); f <- sub("^--file=", "", a[grepl("^--file=", a)])
+  if (length(f) && nzchar(f[1])) normalizePath(f[1])
+  else if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
+    normalizePath(rstudioapi::getActiveDocumentContext()$path)
+  else NA_character_
+}, error = function(e) NA_character_)
+folder         <- if (!is.na(.this)) dirname(.this) else getwd()
+dataset_root   <- dirname(folder)
+public_tsv_dir <- file.path(dataset_root, "__Public", "comparative-data")
 
 t13 <- read_csv(file.path(folder, "Stephan_etal_1970_Tables1-3_snapshot.csv"), show_col_types = FALSE)
 t46 <- read_csv(file.path(folder, "Stephan_etal_1970_Tables4-6_snapshot.csv"), show_col_types = FALSE)
@@ -40,7 +36,12 @@ clean <- t13 %>%
             source = "Stephan_etal_1970")
 
 write_csv(clean, file.path(folder, "Stephan_etal_1970_Tables1-6.csv"))
-write_tsv(clean, file.path(folder, "Stephan_etal_1970_Tables1-6.tsv"))
+
+## --- public TSV for the volume merge (ISBN-encoded; matches __ReadMe.xlsx + volumes_compiled.R) ---
+item_encoded <- "ISBN%3A0390672505_Tables1-6"
+dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
+write.table(clean, file.path(public_tsv_dir, paste0(item_encoded, ".tsv")), sep = "\t", row.names = FALSE)
+message("Wrote ", file.path(public_tsv_dir, paste0(item_encoded, ".tsv")))
 
 # --- internal validation: telencephalon components should sum to the telencephalon total ---
 chk <- clean %>%
@@ -48,28 +49,5 @@ chk <- clean %>%
                     striatum_mm3 + schizocortex_mm3 + hippocampus_mm3 + neocortex_mm3,
          pct = 100 * abs(comp_sum - telencephalon_mm3) / telencephalon_mm3)
 message("Stephan 1970 Tables 1-6: ", nrow(clean), " species.")
-message(sprintf("Telencephalon components-vs-total check: max |diff| = %.2f%%, median = %.3f%% (n>1%%: %d)",
-                max(chk$pct, na.rm = TRUE), median(chk$pct, na.rm = TRUE), sum(chk$pct > 1, na.rm = TRUE)))
-bad <- chk %>% filter(pct > 1) %>% select(species, telencephalon_mm3, comp_sum, pct)
-if (nrow(bad)) { message("Rows >1% (verify these):"); print(as.data.frame(round_df <- bad %>% mutate(pct = round(pct,2)))) }
-
-
-# ------------------------------------------------------------
-# 8) Save (LOCAL CSV + PUBLIC TSV)
-# ------------------------------------------------------------
-
-final.dataframe <- clean
-
-# Item encoded lookup uses table_name (script filename)
-filecodes <- read_excel(file.path(dataset_root, "__ReadMe.xlsx"), sheet = "Sheet1")
-item_encoded <- filecodes$`Item encoded`[match(table_name, filecodes$`Item name`)]
-
-# Local output next to the paper
-write.csv(final.dataframe, final_csv, row.names = FALSE)
-
-# Public TSV output
-dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
-write.table(final.dataframe,
-            file = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
-            sep = "\t", row.names = FALSE)
-
+message(sprintf("Telencephalon components-vs-total check: max |diff| = %.2f%%, median = %.3f%%",
+                max(chk$pct, na.rm = TRUE), median(chk$pct, na.rm = TRUE)))

@@ -32,8 +32,18 @@ clean <- tibble(
 )
 
 write_csv(clean, file.path(folder, "Sherwood_etal_2005_Table1.csv"))
-write_tsv(clean, file.path(folder, "Sherwood_etal_2005_Table1.tsv"))
-# TSV for the merge (encoded name registered in __ReadMe.xlsx)
-write_tsv(clean, file.path(base, "__Public/comparative-data/10.1016%2Fj.jhevol.2004.10.003_Table1.tsv"))
-
 message("Sherwood 2005 Table 1: ", nrow(clean), " species written.")
+
+## ---- TSV for the merge: look up the DOI/PMID code from __ReadMe.xlsx (don't hardcode) ----
+item_name    <- "Sherwood_etal_2005_Table1"
+tsv_dir      <- file.path(base, "__Public/comparative-data/")
+filecodes    <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+if (is.na(item_encoded) || !nzchar(item_encoded)) {
+  warning("No 'Item encoded' (DOI) for '", item_name, "' in __ReadMe.xlsx; TSV skipped.")
+} else if (!dir.exists(path.expand(tsv_dir))) {
+  warning("Shared folder not found: ", tsv_dir, "; TSV skipped.")
+} else {
+  write_tsv(clean, file.path(tsv_dir, paste0(item_encoded, ".tsv")))
+  message("Wrote ", tsv_dir, item_encoded, ".tsv")
+}

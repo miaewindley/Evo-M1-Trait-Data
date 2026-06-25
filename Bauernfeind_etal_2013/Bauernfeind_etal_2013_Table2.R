@@ -77,6 +77,5 @@ if (dir.exists(path.expand(tsv_dir))) {
               sep = "\t", row.names = FALSE)
   message("Wrote ", file.path(tsv_dir, paste0(enc, ".tsv")))
 } else {
-  write.table(final.dataframe, file = paste0(enc, ".tsv"), sep = "\t", row.names = FALSE)
-  warning("Shared folder not found; wrote local TSV: ", paste0(enc, ".tsv"))
+  warning("Shared folder not found; TSV skipped (no local copy written): ", paste0(enc, ".tsv"))
 }

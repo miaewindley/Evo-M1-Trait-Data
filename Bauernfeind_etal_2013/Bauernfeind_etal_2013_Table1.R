@@ -102,9 +102,7 @@ if (file.exists(path.expand(readme_file))) {
 if (is.na(item_encoded) || !nzchar(item_encoded)) {
   warning("No 'Item encoded' (DOI) for '", item_name, "' in __ReadMe.xlsx; TSV skipped.")
 } else if (!dir.exists(path.expand(tsv_dir))) {
-  local_tsv <- paste0(item_encoded, ".tsv")
-  write.table(final.dataframe, file = local_tsv, sep = "\t", row.names = FALSE)
-  warning("Shared folder not found: ", tsv_dir, "; wrote local TSV instead: ", local_tsv)
+  warning("Shared folder not found: ", tsv_dir, "; TSV skipped (no local copy written).")
 } else {
   write.table(final.dataframe, file = paste0(tsv_dir, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)
   message("Wrote ", tsv_dir, item_encoded, ".tsv")

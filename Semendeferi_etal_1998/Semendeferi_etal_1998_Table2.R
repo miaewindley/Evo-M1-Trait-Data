@@ -1,20 +1,56 @@
 ## Semendeferi K, Armstrong E, Schleicher A, Zilles K, Van Hoesen GW (1998),
 ## Am J Phys Anthropol 106(2):129-155 — "Limbic Frontal Cortex in Hominoids: A Comparative Study of Area 13"
 ## Table 2: Volumes of the brain and area 13 (mm3). Snapshot -> clean.
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Semendeferi_etal_1998")
-script_path   <- rstudioapi::getActiveDocumentContext()$path
-paper_dir     <- dirname(script_path)
-dataset_root  <- dirname(paper_dir)
-table_name    <- tools::file_path_sans_ext(basename(script_path))
-
-# outputs
-snapshot_xlsx  <- file.path(paper_dir, paste0(table_name, "_snapshot.xlsx"))
-final_csv     <- file.path(paper_dir, paste0(table_name, ".csv"))
-readme_xlsx   <- file.path(dataset_root, "__ReadMe.xlsx")
-public_tsv_dir<- file.path(dataset_root, "__Public", "comparative-data")
-
 options(scipen = 999)
-raw <- read.csv("Semendeferi_etal_1998_TABLE2_snapshot.csv", check.names = FALSE, stringsAsFactors = FALSE)
+
+# ------------------------------------------------------------
+# Paths: use this R script's filename and folder
+# ------------------------------------------------------------
+
+is_blank <- function(x) {
+  length(x) == 0 || is.na(x[1]) || !nzchar(x[1])
+}
+
+get_script_path <- function() {
+  path <- NA_character_
+  
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    path <- rstudioapi::getActiveDocumentContext()$path
+  }
+  
+  if (is_blank(path)) {
+    args <- commandArgs(FALSE)
+    file_arg <- sub("^--file=", "", args[grepl("^--file=", args)])
+    
+    if (!is_blank(file_arg)) {
+      path <- file_arg[1]
+    }
+  }
+  
+  if (is_blank(path)) {
+    stop("Save the R script before running it.")
+  }
+  
+  normalizePath(path, mustWork = TRUE)
+}
+
+script_path <- get_script_path()
+
+folder    <- dirname(script_path)
+base      <- dirname(folder)
+item_name <- tools::file_path_sans_ext(basename(script_path))
+
+snapshot_csv <- file.path(folder, paste0(item_name, "_snapshot.csv"))
+csv_file     <- file.path(folder, paste0(item_name, ".csv"))
+
+readme_xlsx <- file.path(base, "__ReadMe.xlsx")
+tsv_dir     <- file.path(base, "__Public", "comparative-data")
+
+if (!file.exists(snapshot_csv)) {
+  stop("Snapshot CSV not found: ", snapshot_csv)
+}
+
+raw <- read.csv(snapshot_csv, check.names = FALSE, stringsAsFactors = FALSE)
 binom <- c(Human="Homo sapiens", Chimpanzee="Pan troglodytes", Bonobo="Pan paniscus",
            Gorilla="Gorilla gorilla", Orangutan="Pongo pygmaeus", Gibbon="Hylobates lar")
 num <- function(x) as.numeric(gsub(",", "", x))
@@ -24,24 +60,61 @@ clean <- data.frame(species = unname(binom[raw$Species]),
                     area13_hemisphere = "right", n = 1L, source = "Semendeferi_etal_1998",
                     stringsAsFactors = FALSE)
 # Footnotes: brain = total brain structure (mm3); area 13 = right hemisphere; one individual/species.
-write.csv(clean, "Semendeferi_etal_1998_TABLE2.csv", row.names = FALSE)
-
 # ------------------------------------------------------------
-# 8) Save (LOCAL CSV + PUBLIC TSV)
+# Local CSV
 # ------------------------------------------------------------
 
-final.dataframe <- clean
+write.csv(clean, csv_file, row.names = FALSE)
 
-# Item encoded lookup uses table_name (script filename)
-filecodes <- read_excel(file.path(dataset_root, "__ReadMe.xlsx"), sheet = "Sheet1")
-item_encoded <- filecodes$`Item encoded`[match(table_name, filecodes$`Item name`)]
+message(
+  item_name,
+  ": ",
+  nrow(clean),
+  " rows written to ",
+  basename(csv_file)
+)
 
-# Local output next to the paper
-write.csv(final.dataframe, final_csv, row.names = FALSE)
+# ------------------------------------------------------------
+# Public TSV: look up encoded item name from __ReadMe.xlsx
+# ------------------------------------------------------------
 
-# Public TSV output
-dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
-write.table(final.dataframe,
-            file = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
-            sep = "\t", row.names = FALSE)
-
+if (!file.exists(readme_xlsx)) {
+  warning("__ReadMe.xlsx not found: ", readme_xlsx, "; TSV skipped.")
+  
+} else if (!dir.exists(tsv_dir)) {
+  warning("Shared folder not found: ", tsv_dir, "; TSV skipped.")
+  
+} else {
+  if (!requireNamespace("readxl", quietly = TRUE)) {
+    stop("Package 'readxl' is required to read __ReadMe.xlsx.")
+  }
+  
+  filecodes <- readxl::read_excel(readme_xlsx, sheet = "Sheet1")
+  
+  item_encoded <- as.character(
+    filecodes$`Item encoded`[
+      match(item_name, filecodes$`Item name`)
+    ]
+  )
+  
+  if (is.na(item_encoded) || !nzchar(item_encoded)) {
+    warning(
+      "No 'Item encoded' for '",
+      item_name,
+      "' in __ReadMe.xlsx; TSV skipped."
+    )
+    
+  } else {
+    tsv_file <- file.path(tsv_dir, paste0(item_encoded, ".tsv"))
+    
+    write.table(
+      clean,
+      tsv_file,
+      sep = "\t",
+      row.names = FALSE,
+      quote = FALSE
+    )
+    
+    message("Wrote ", tsv_file)
+  }
+}

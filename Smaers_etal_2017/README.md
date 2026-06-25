@@ -10,9 +10,9 @@ Supplemental Table S1 prints **two different measure classes** under one heading
 as two independent items (each: journal-faithful snapshot → reformat R → CSV + public TSV →
 definitions → comparison → README):
 
-- **Part 1 — volumes** (`Smaers_etal_2017_TableS1_part1_volumes*`): the "Smaers data" block, 4
+- **Part 1 — volumes** (`Smaers_etal_2017_TableS1part1*`): the "Smaers data" block, 4
   cortical regions × {gray, white} = 8 volume columns, 19 species. `Measure = Volume`.
-- **Part 2 — surface areas** (`Smaers_etal_2017_TableS1_part2_surfacearea*`): the "Brodmann data"
+- **Part 2 — surface areas** (`Smaers_etal_2017_TableS1part2*`): the "Brodmann data"
   block, 4 region surface areas (mm²), 10 species. `Measure = surface area`.
 
 See each part's `*.README.md` for details.

@@ -112,15 +112,24 @@ within ±25 % (only Homo and Crocidura deviate). They resolve as:
 
 ## Current state
 
-**23 tables merged → ~152 species × ~89 volume variables** (re-run to refresh exact counts; Bauernfeind's
-5 insula variables are renamed `…_left`, Barger maps to the existing `Amygdala_Vol.mm3`, so counts are
-~unchanged). Tier 1 (16): Stephan 1981/1982/1984/1987, Frahm 1982/1984/1994/1997/1998,
-Baron 1983/1987/1988/1990, Matano 1985a/1985b, Zilles 1988. Tier 2 (7): de Sousa 2010, de Sousa 2013,
-MacLeod 2003, Bauernfeind 2013 (insula = **left**, `_left`), Bush & Allman 2003,
-**Smaers 2011** (combined L+R frontal grey/white), **Barger 2007** (amygdala, team `Zilles`).
+**37 tables merged → 282 species × 118 volume variables** (validated 2026-06-24; see
+`_EXPANSION_FINDINGS.md` and `../DeCasien_Higham_2019/DeCasien_reference_audit.md`). The four
+DeCasien sources are now real primaries (Sherwood 2004 `_TABLEI`, Barks 2014 `_TABLE1`, Rilling &
+Insel 1998 `_Table1`, Stimpson 2015 `_TableS1`) with DeCasien-extracted `*_viaDeCasien` tables
+filling only the structures the primaries lack. The 62-63 neocortex is attributed to Rilling &
+Insel **1999** (`Rilling_Insel_1999_viaDeCasien`). Tier 1 (17, Stephan_collection): Stephan 1970/1981/1982/1984/1987,
+Frahm 1982/1984/1994/1997/1998, Baron 1983/1987/1988/1990, Matano 1985a/1985b, Zilles 1988.
+Tier 2 (independent series): de Sousa 2010, de Sousa 2013, MacLeod 2003, Bauernfeind 2013
+(insula = **left**, `_left`), Bush & Allman 2003, Bush & Allman 2004b, Smaers 2011 (combined
+L+R frontal grey/white), Barger 2007 (amygdala, team `Zilles`), Ashwell 2020, Semendeferi
+1998/2001, Sherwood 2005. **Added 2026-06-24:** Sherwood 2004 (`Sherwood_etal_2004_TABLEI`,
+DOI 10.1002/ajp.20048, real primary, team `Sherwood`); Rilling & Insel 1998, Barks 2014,
+Stimpson 2015 (extracted from DeCasien MOESM3, `*_viaDeCasien`, each its own team).
+Pre-expansion baseline was 30 tables / 281 species.
 
-**Not yet included:** Sherwood 2005 brainstem motor nuclei; Bush & Allman 2004a/b. Baron 1987
-olfactory and Baron 1988 vestibular abbreviations are mapped (BOL→Bulbus_olfactorius,
+**Note:** `Sherwood_etal_2004_I/` is a *different* paper (M1 GLI cytoarchitecture, not volumes)
+— not the ref-64 source. The ref-64 great-ape volumes are `Sherwood_etal_2004_TABLEI`. Baron
+1987 olfactory and Baron 1988 vestibular abbreviations are mapped (BOL→Bulbus_olfactorius,
 VC→Complexus_vestibularis, VI→…descendens, etc.) — sanity-check those against the papers.
 
 ## Cross-publication comparisons (`crosspub_*`)

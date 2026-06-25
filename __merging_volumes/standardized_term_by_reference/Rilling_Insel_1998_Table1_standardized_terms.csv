@@ -1,0 +1,5 @@
+Original_Term,Reference,Standardized_Term
+species,Rilling_Insel_1998_Table1,Species
+brain_volume_cc,Rilling_Insel_1998_Table1,Total_brain_net_volume_Vol.mm3
+cerebellum_volume_cc,Rilling_Insel_1998_Table1,Cerebellum_Vol.mm3
+body_weight_kg,Rilling_Insel_1998_Table1,Body_Mass.g

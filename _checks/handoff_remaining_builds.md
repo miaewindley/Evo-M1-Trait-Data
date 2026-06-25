@@ -117,8 +117,8 @@ shouldn't share one sheet. Rebuild as **two parts**, same 4 cortical regions thr
   `cortical surfaces Brodmann 1909 in Smears et al 2017.xlsx` (cols: Primary visual, Prefrontal,
   Other cortical association areas, Frontal motor).
 
-Produce `Smaers_etal_2017_TableS1_part1_volumes_snapshot.xlsx` +
-`Smaers_etal_2017_TableS1_part2_surfacearea_snapshot.xlsx`, each with its own reformat R →
+Produce `Smaers_etal_2017_TableS1part1_snapshot.xlsx` +
+`Smaers_etal_2017_TableS1part2_snapshot.xlsx`, each with its own reformat R →
 its own csv/tsv, its own definitions block (Measure = `Volume` for part 1, `surface area` for
 part 2), and its own comparison. Add **two rows to `__ReadMe.xlsx`** (Part 1 and Part 2), each
 with the correct `Item number`, `Measure type`, and `Main Trait(s)`; keep the existing Smaers

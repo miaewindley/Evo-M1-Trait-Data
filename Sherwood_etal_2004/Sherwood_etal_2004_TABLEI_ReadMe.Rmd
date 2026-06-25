@@ -1,0 +1,4 @@
+Table was copied from the pdf and pasted in Excel
+Minor manual edits were made in Excel
+Saved as snapshot
+Further edits made in R script
