@@ -23,7 +23,11 @@ suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(stringr)
 })
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano_etal_1985_b")
+}
+}
 
 snapshot_file  <- "Matano_etal_1985_b_Table1_snapshot.xlsx"
 snapshot_sheet <- "Table1"

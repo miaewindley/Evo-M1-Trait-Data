@@ -6,9 +6,9 @@ MOB, 'Striatum (incl. NAcc)' and 'Agranular Insula' are intentionally outside it
 
 ## II.A value comparison
 - match (same species + same structure, value within tol): **1153**
-- match_taxonomy_variant (same structure + value, species NAME differs): **126** -> see II.B
-- value_match_other_structure (value matched a different structure/label): **329**
-- decasien_only (no value match in the merge for that genus): **544**
+- match_taxonomy_variant (same structure + value, species NAME differs): **133** -> see II.B
+- value_match_other_structure (value matched a different structure/label): **339**
+- decasien_only (no value match in the merge for that genus): **527**
 - median |pct diff| on value matches: **0%** (most are 0% -> identical underlying Stephan data)
 - merge-only: ~637 Stephan-sourced (species x crosswalked structure) cells not present in DeCasien's sheet.
 

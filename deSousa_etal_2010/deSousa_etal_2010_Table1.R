@@ -4,7 +4,11 @@
 # the curated comparison CSV deSousa_2010.csv; volumes in mm3). Output from the snapshot only.
 suppressPackageStartupMessages({ library(readxl); library(readr); library(dplyr); library(stringr) })
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa_etal_2010")
+}
+}
 snapshot_file <- "deSousa_etal_2010_Table1_snapshot.xlsx"; snapshot_sheet <- "Table1"; output_file <- "deSousa_etal_2010_Table1.csv"
 header_rows <- 2L   # row1 caption + row2 header
 pos <- c("species_disp", "Neocortex_mm3", "Area_striata_grey_matter_mm3", "Corpus_geniculatum_laterale_mm3", "Total_brain_net_volume_mm3")

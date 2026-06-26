@@ -4,7 +4,11 @@
 # the curated comparison CSV Frahm_1997.csv; volumes in mm3). Output from the snapshot only.
 suppressPackageStartupMessages({ library(readxl); library(readr); library(dplyr); library(stringr) })
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_etal_1997")
+}
+}
 snapshot_file <- "Frahm_etal_1997_Table1_snapshot.xlsx"; snapshot_sheet <- "Table1"; output_file <- "Frahm_etal_1997_Table1.csv"
 header_rows <- 2L   # row1 caption + row2 header
 pos <- c("species_disp", "Cerebellum_mm3", "Diencephalon_mm3", "Telencephalon_mm3", "Bulbus_olfactorius_mm3", "Septum_mm3", "Striatum_mm3", "Schizo_cortex_mm3", "Hippocampus_mm3", "Neocortex_mm3", "Palaeocortex_mm3", "Amygdala_mm3")

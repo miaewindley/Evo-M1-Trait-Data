@@ -1,30 +1,23 @@
 ## 0. PATHS (NO setwd) -------------------------------------------------------
-library(rstudioapi)
-
-script_path   <- rstudioapi::getActiveDocumentContext()$path
-paper_dir     <- dirname(script_path)
+paper_dir <- here::here("Eagleman_Vaughn_2021")
 dataset_root  <- dirname(paper_dir)
-table_name    <- tools::file_path_sans_ext(basename(script_path))
-
+table_name    <- "Eagleman_Vaughn_2021_TABLE1"
 # outputs
 snapshot_csv  <- file.path(paper_dir, paste0(table_name, "_snapshot.csv"))
 final_csv     <- file.path(paper_dir, paste0(table_name, ".csv"))
 readme_xlsx   <- file.path(dataset_root, "__ReadMe.xlsx")
 public_tsv_dir<- file.path(dataset_root, "__Public", "comparative-data")
-
 ## --- YOU SET THIS MANUALLY ---
 pdf_file <- file.path(
   paper_dir,
   "Eagleman-2021-The Defensive Activation Theory_.pdf"
 )
-
 ## 1. PACKAGES ---------------------------------------------------------------
 library(rJava)
 library(tabulapdf)
 library(tidyverse)
 library(stringr)
 library(readxl)
-
 ## 2. EXTRACT TABLE 1 + SAVE SNAPSHOT ----------------------------------------
 # Table 1 is on page 3. The previous version extracted the whole page with
 # guess = FALSE and then took a hard-coded row range (slice(7:31)); the current
@@ -40,9 +33,7 @@ tables1 <- extract_tables(
   columns = list(c(150, 230, 315, 400, 485)),
   output  = "matrix"
 )
-
 df0 <- as.data.frame(tables1[[1]], stringsAsFactors = FALSE)
-
 # Headers as printed in the table (two-line labels keep their line breaks).
 colnames(df0) <- c(
   "Coloquial name",
@@ -52,16 +43,13 @@ colnames(df0) <- c(
   "Percentage of \nsleep in REM",
   "Phylogenetic\n distance from\n humans (M\n years)"
 )
-
 # Keep only real species rows (drop any footnote / caption line that crept in).
 df_snapshot <- df0 %>%
   filter(
     str_detect(`Coloquial name`, "^[A-Za-z]"),
     !str_detect(`Coloquial name`, "Supplementary|Material|Table|METHODS")
   )
-
 write.csv(df_snapshot, snapshot_csv, row.names = FALSE)
-
 ## 3. MAKE DATA READABLE -----------------------------------------------------
 final.dataframe <- df_snapshot
 colnames(final.dataframe) <- c(
@@ -72,7 +60,6 @@ colnames(final.dataframe) <- c(
   "REM_sleep_percent",
   "Phylogenetic_distance_Mya"
 )
-
 # For every measure column: keep only digits and the decimal point (this turns
 # "–" into "", "6%" into "6", and "1,637" into "1637"), then coerce to numeric.
 final.dataframe <- final.dataframe %>%
@@ -80,16 +67,12 @@ final.dataframe <- final.dataframe %>%
     -Species,
     ~ as.numeric(na_if(str_replace_all(str_trim(.x), "[^0-9.]", ""), ""))
   ))
-
 options(scipen = 999)
-
 ## 4. SAVE (LOCAL CSV + PUBLIC TSV) ------------------------------------------
 filecodes    <- read_excel(readme_xlsx, sheet = "Sheet1")
 item_encoded <- filecodes$`Item encoded`[match(table_name, filecodes$`Item name`)]
 if (is.na(item_encoded)) stop("No 'Item encoded' in __ReadMe.xlsx for: ", table_name)
-
 write.csv(final.dataframe, final_csv, row.names = FALSE)
-
 dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
 write.table(
   final.dataframe,

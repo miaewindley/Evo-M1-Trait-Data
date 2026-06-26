@@ -18,7 +18,11 @@
 
 suppressPackageStartupMessages({ library(readr); library(dplyr); library(stringr); library(purrr) })
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks")
+}
+}
 
 csv_dir      <- "../Stephan_temp_to_organize/csvs"
 source_paper <- "Zilles & Rehkamper (1988), Orang-Utan Biology"

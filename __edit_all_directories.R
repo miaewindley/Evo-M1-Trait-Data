@@ -5,7 +5,7 @@
 
 
 
-# Rename Smaers Table S1 part names in:
+# Rename  in:
 #   1) file names, recursively
 #   2) contents of .R and .md files, recursively
 
@@ -14,8 +14,10 @@ root <- path.expand(
 )
 
 replacements <- c(
-  "Smaers_etal_2017_TableS1part1"       = "Smaers_etal_2017_TableS1part1",
-  "Smaers_etal_2017_TableS1part2s" = "Smaers_etal_2017_TableS1part2"
+# original
+  '' =
+# new
+  ''
 )
 
 # Set to FALSE after checking the printed preview

@@ -17,7 +17,11 @@ suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr)
 })
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_Zilles_1994/comparison")
+}
+}
 
 snapshot_file     <- "../Frahm_Zilles_1994_Table1_snapshot.xlsx"
 comparison_file   <- "Frahm_1994.csv"

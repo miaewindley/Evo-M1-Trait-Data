@@ -4,7 +4,11 @@
 # the curated comparison CSV Stephan_1984.csv; volumes in mm3). Output from the snapshot only.
 suppressPackageStartupMessages({ library(readxl); library(readr); library(dplyr); library(stringr) })
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1984")
+}
+}
 snapshot_file <- "Stephan_etal_1984_Table1_snapshot.xlsx"; snapshot_sheet <- "Table1"; output_file <- "Stephan_etal_1984_Table1.csv"
 header_rows <- 2L   # row1 caption + row2 header
 pos <- c("code", "species_disp", "n_raw", "Corpus_geniculatum_laterale_mm3")

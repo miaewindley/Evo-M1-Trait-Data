@@ -1,21 +1,15 @@
 ## 0. PATHS (NO setwd) -------------------------------------------------------
-library(rstudioapi)
-
-script_path   <- rstudioapi::getActiveDocumentContext()$path
-paper_dir     <- dirname(script_path)
+paper_dir <- here::here("Burish_etal_2010")
 dataset_root  <- dirname(paper_dir)
-table_name    <- tools::file_path_sans_ext(basename(script_path))
-
+table_name    <- "Burish_etal_2010_SupplementaryTable1"
 snapshot_csv  <- file.path(paper_dir, paste0(table_name, "_snapshot.csv"))
 final_csv     <- file.path(paper_dir, paste0(table_name, ".csv"))
 readme_xlsx   <- file.path(dataset_root, "__ReadMe.xlsx")
 public_tsv_dir<- file.path(dataset_root, "__Public", "comparative-data")
-
 # --- YOU SET THIS MANUALLY ---
 # Original source (the old script fetched this URL directly):
 #   https://ndownloader.figstatic.com/files/8705821
 pdf_file <- file.path(paper_dir, "000319019_sm_Table.pdf")
-
 ## 1. PACKAGES ---------------------------------------------------------------
 # Migrated from the retired 'tabulizer' package to 'tabulapdf' (its maintained
 # successor). Both wrap the same tabula-java engine.
@@ -23,14 +17,11 @@ library(rJava)
 library(tabulapdf)
 library(dplyr)
 library(readxl)
-
 ## 2. EXTRACT (4 pages) ------------------------------------------------------
 # The dataset spans pages 1-4 (one auto-detected table per page; the header is
 # only on page 1). Let tabula guess each page's table, then stack them.
 tables1 <- extract_tables(pdf_file, pages = c(1:4), guess = TRUE, output = "matrix")
-
 combined <- as.data.frame(do.call(rbind, tables1), stringsAsFactors = FALSE)
-
 # Drop the two stacked header rows (top of page 1) and assign names directly.
 combined <- combined[-c(1, 2), , drop = FALSE]
 colnames(combined) <- c(
@@ -38,14 +29,12 @@ colnames(combined) <- c(
   "% neurons", "# neurons", "# non-neurons", "length (mm)", "sex", "age (years)"
 )
 row.names(combined) <- NULL
-
 ## 3. FOLD WRAPPED ROWS + SAVE SNAPSHOT --------------------------------------
 # Two kinds of cell wrap onto a separate line and must be folded into the next
 # row (this replaces the old hard-coded, row-number-specific fixes):
 #   (a) a Case prefix "07-" sitting alone above its number  -> "07-" + number
 #   (b) a Species name's first word sitting alone above the rest of its row
 is_blank <- function(x) is.na(x) | trimws(x) == ""
-
 res <- vector("list", 0)
 i <- 1
 n <- nrow(combined)
@@ -53,7 +42,6 @@ while (i <= n) {
   sp   <- trimws(combined$Species[i])
   case <- trimws(combined$Case[i])
   data_empty <- all(is_blank(unlist(combined[i, 3:11], use.names = FALSE)))
-
   if (i < n && case == "07-" && sp == "") {
     nxt <- combined[i + 1, ]
     nxt$Case <- paste0("07-", trimws(nxt$Case))
@@ -71,34 +59,25 @@ while (i <= n) {
 }
 combined_df <- do.call(rbind, res)
 row.names(combined_df) <- NULL
-
 write.csv(combined_df, snapshot_csv, row.names = FALSE)
-
 ## 4. MAKE DATA READABLE -----------------------------------------------------
 cleaned_df <- combined_df
-
 # drop blank separator rows
 all_empty <- apply(cleaned_df, 1, function(r) all(is_blank(r)))
 cleaned_df <- cleaned_df[!all_empty, , drop = FALSE]
 row.names(cleaned_df) <- NULL
-
 # numeric columns (3:9 and 11); "unknown" / "n.a." coerce to NA
 columns_to_convert <- c(3:9, 11)
 for (col in columns_to_convert) {
   cleaned_df[[col]] <- suppressWarnings(as.numeric(gsub(",", "", cleaned_df[[col]])))
 }
-
 options(scipen = 999)
-
 ## 5. SAVE (LOCAL CSV + PUBLIC TSV) ------------------------------------------
 final.dataframe <- cleaned_df
-
 filecodes    <- read_excel(readme_xlsx, sheet = "Sheet1")
 item_encoded <- filecodes$`Item encoded`[match(table_name, filecodes$`Item name`)]
 if (is.na(item_encoded)) stop("No 'Item encoded' in __ReadMe.xlsx for: ", table_name)
-
 write.csv(final.dataframe, final_csv, row.names = FALSE)
-
 dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
 write.table(
   final.dataframe,

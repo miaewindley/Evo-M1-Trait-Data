@@ -4,7 +4,11 @@
 # the curated comparison CSV Frahm_1998.csv; volumes in mm3). Output from the snapshot only.
 suppressPackageStartupMessages({ library(readxl); library(readr); library(dplyr); library(stringr) })
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_etal_1998")
+}
+}
 snapshot_file <- "Frahm_etal_1998_Table1_snapshot.xlsx"; snapshot_sheet <- "Table1"; output_file <- "Frahm_etal_1998_Table1.csv"
 header_rows <- 2L   # row1 caption + row2 header
 pos <- c("species_disp", "n_raw", "Middle_temporal_visual_area_mm3", "Area_striata_grey_matter_mm3", "Corpus_geniculatum_laterale_mm3", "body_weight_g", "brain_weight_mg")

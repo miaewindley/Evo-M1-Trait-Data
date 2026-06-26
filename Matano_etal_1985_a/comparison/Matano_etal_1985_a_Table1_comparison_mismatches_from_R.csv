@@ -1,3 +1,3 @@
-species,status,nmis,TCN_mm3_match,MCN_mm3_match,ICN_mm3_match,LCN_mm3_match
-Rattus norvegicus (csv-only: no paper species name),csv_only_not_in_snapshot,0,,,,
-Spalax ehrenbergi (csv-only: no paper species name),csv_only_not_in_snapshot,0,,,,
+status,species_snapshot,species_csv,n_measure_mismatch,species_key,TCN_snap,MCN_snap,ICN_snap,LCN_snap,body_weight_snap,n_snap,.cid,TCN_csv,MCN_csv,ICN_csv,LCN_csv,body_weight_csv,n_csv,TCN_match,MCN_match,ICN_match,LCN_match,body_weight_match,n_match
+csv_only_not_in_snapshot,NA,Rattus norvegicus,1,NA,NA,NA,NA,NA,NA,NA,45,6.002,NA,NA,NA,NA,NA,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE
+csv_only_not_in_snapshot,NA,Spalax ehrenbergi,1,NA,NA,NA,NA,NA,NA,NA,52,9.360000000000001,NA,NA,NA,NA,NA,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE

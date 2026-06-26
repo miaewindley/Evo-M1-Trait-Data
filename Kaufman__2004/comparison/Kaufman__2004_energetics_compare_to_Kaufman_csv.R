@@ -25,7 +25,11 @@
 
 suppressPackageStartupMessages({ library(readr); library(dplyr); library(tidyr); library(stringr) })
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kaufman__2004/comparison")
+}
+}
 
 added   <- "Kaufman data added to compilation"
 gobf    <- file.path(added, "Kaufman glucose oxygen blood flow")

@@ -25,7 +25,11 @@ suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(stringr)
 })
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1982")
+}
+}
 
 snapshot_file  <- "Stephan_etal_1982_Table1_snapshot.xlsx"
 snapshot_sheet <- "Table1"

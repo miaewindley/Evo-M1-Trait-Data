@@ -1,21 +1,15 @@
 ## 0. PATHS (NO setwd) -------------------------------------------------------
-library(rstudioapi)
-
-script_path   <- rstudioapi::getActiveDocumentContext()$path
-paper_dir     <- dirname(script_path)
+paper_dir <- here::here("Burish_etal_2010")
 dataset_root  <- dirname(paper_dir)
-table_name    <- tools::file_path_sans_ext(basename(script_path))
-
+table_name    <- "Burish_etal_2010_Table1"
 snapshot_csv  <- file.path(paper_dir, paste0(table_name, "_snapshot.csv"))
 final_csv     <- file.path(paper_dir, paste0(table_name, ".csv"))
 readme_xlsx   <- file.path(dataset_root, "__ReadMe.xlsx")
 public_tsv_dir<- file.path(dataset_root, "__Public", "comparative-data")
-
 # --- YOU SET THIS MANUALLY ---
 # Original source (the old script fetched this URL directly):
 #   https://karger.com/bbe/article-pdf/76/1/45/2262181/000319019.pdf
 pdf_file <- file.path(paper_dir, "Burish-2010-Cellular scaling rules for primate.pdf")
-
 ## 1. PACKAGES ---------------------------------------------------------------
 # Migrated from the retired 'tabulizer' package to 'tabulapdf' (its maintained
 # successor). Both wrap the same tabula-java engine.
@@ -24,7 +18,6 @@ library(tabulapdf)
 library(tidyverse)
 library(stringr)
 library(readxl)
-
 ## 2. EXTRACT TABLE 1 + SAVE SNAPSHOT ----------------------------------------
 # Table 1 ("Cellular composition of the spinal cord") is on page 3. Target the
 # data rows (caption + multi-line header excluded) with fixed column separators,
@@ -40,22 +33,18 @@ tables1 <- extract_tables(
   columns = list(c(119, 135, 169, 207, 237, 271, 307, 339, 377, 415, 440, 473, 500, 538)),
   output  = "matrix"
 )
-
 df1 <- as.data.frame(tables1[[1]], stringsAsFactors = FALSE)
-
 # Column names exactly as in the paper's stacked header (two-line headers keep
 # the line break, matching the standardized terms used downstream).
 colnames(df1) <- c(
   "Species", "n", "MSC", "LSC", "%NSC", "NSC", "OSC", "DN", "DO", "MBD",
   "MSC%\nMBD", "MBR", "MSC%\nMCNS", "NBR", "NSC%\nNCNS"
 )
-
 # In this PDF's text layer the "±" glyph extracts as a trailing "8" and the
 # "×" glyph as a trailing "!". For multi-individual species (n > 1) every mean
 # in the 8 measured columns carries a "±", so restore it; restore "×" in the
 # "Variation" (fold-change) row.
 columns_to_check <- c("MSC", "LSC", "%NSC", "NSC", "OSC", "DN", "DO", "MBD")
-
 rows_to_replace <- {
   nnum <- suppressWarnings(as.numeric(df1$n))
   !is.na(nnum) & nnum > 1
@@ -64,25 +53,19 @@ df1[rows_to_replace, columns_to_check] <- lapply(
   df1[rows_to_replace, columns_to_check],
   function(x) str_replace(x, "8$", "±")
 )
-
 variation_rows <- df1$Species == "Variation"
 df1[variation_rows, ] <- apply(df1[variation_rows, ], 2, function(x) {
   ifelse(str_ends(x, "!"), str_replace(x, "!$", "×"), x)
 })
-
 # Save snapshot as a CSV file
 write.csv(df1, snapshot_csv, row.names = FALSE)
-
 ## 3. MAKE DATA READABLE -----------------------------------------------------
 result_df <- df1
-
 # Replace "n.a." with NA in the entire dataframe
 result_df <- as.data.frame(sapply(result_df, function(x) gsub("n\\.a\\.", NA, x)))
-
 # Delete the row where Species = "Variation"
 result_df <- result_df[-which(result_df$Species == "Variation"), , drop = FALSE]
 row.names(result_df) <- NULL
-
 # For every column that carries a "±" (mean ± SD), add an empty "<col>_SD" column
 for (col in colnames(result_df)) {
   if (any(grepl("±$", result_df[[col]]))) {
@@ -90,7 +73,6 @@ for (col in colnames(result_df)) {
     result_df[[new_col_name]] <- NA
   }
 }
-
 # Copy each SD (the row below a mean that ends in "±") into its "_SD" column
 for (i in 1:(nrow(result_df) - 1)) {
   if (any(sapply(result_df[i, ], function(cell) grepl("±$", cell)))) {
@@ -101,32 +83,24 @@ for (i in 1:(nrow(result_df) - 1)) {
     }
   }
 }
-
 # Delete rows where Species is NA, strip the trailing "±", drop blank Species rows
 result_df <- result_df[!is.na(result_df$Species), ]
 result_df[] <- lapply(result_df, function(x) gsub("±$", "", x))
 result_df <- result_df[result_df$Species != "", ]
 row.names(result_df) <- NULL
-
 # Remove commas and convert all non-Species columns to numeric
 columns_to_convert <- names(result_df)[names(result_df) != "Species"]
 result_df[columns_to_convert] <- lapply(result_df[, columns_to_convert], function(x) gsub(",", "", x))
 result_df[columns_to_convert] <- lapply(result_df[columns_to_convert], as.numeric)
-
 ## 4. CORRECT SPECIES NAME ---------------------------------------------------
 result_df$Species[result_df$Species == "Otolemur garnetti"] <- "Otolemur garnettii"
-
 options(scipen = 999)
-
 ## 5. SAVE (LOCAL CSV + PUBLIC TSV) ------------------------------------------
 final.dataframe <- result_df
-
 filecodes    <- read_excel(readme_xlsx, sheet = "Sheet1")
 item_encoded <- filecodes$`Item encoded`[match(table_name, filecodes$`Item name`)]
 if (is.na(item_encoded)) stop("No 'Item encoded' in __ReadMe.xlsx for: ", table_name)
-
 write.csv(final.dataframe, final_csv, row.names = FALSE)
-
 dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
 write.table(
   final.dataframe,

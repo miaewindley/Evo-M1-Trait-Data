@@ -1,2 +1,2 @@
-species,status,nmis,ventral_pons_mm3_match
-Pongo sp. (csv-only: no paper species name),csv_only_not_in_snapshot,0,
+status,species_snapshot,species_csv,n_measure_mismatch,species_key,ventral_pons_snap,body_weight_snap,n_snap,.cid,ventral_pons_csv,body_weight_csv,n_csv,ventral_pons_match,body_weight_match,n_match
+csv_only_not_in_snapshot,NA,Pongo sp.,1,NA,NA,NA,NA,39,4300,NA,NA,FALSE,TRUE,TRUE

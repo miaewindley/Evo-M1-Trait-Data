@@ -25,60 +25,40 @@
 ## bracket/footnote removal, the rewritten snapshot stays faithful (references
 ## and footnote markers intact).
 ## =============================================================================
-
-
 ## 0. PATHS (no setwd) ---------------------------------------------------------
-library(rstudioapi)
-
-script_path   <- rstudioapi::getActiveDocumentContext()$path
-paper_dir     <- dirname(script_path)
+paper_dir <- here::here("HerculanoHouzel__2015")
 dataset_root  <- dirname(paper_dir)
-table_name    <- tools::file_path_sans_ext(basename(script_path))
-
+table_name    <- "Herculano-Houze-2015_Table1"
 snapshot_csv  <- file.path(paper_dir, paste0(table_name, "_snapshot.csv"))
 final_csv     <- file.path(paper_dir, paste0(table_name, ".csv"))
-
-
 ## 1. SOURCE  -->  SNAPSHOT (scraped and saved every run, before any cleaning) --
 library(rvest)
 library(tidyverse)
-
 page <- read_html("https://pmc.ncbi.nlm.nih.gov/articles/PMC4614783/")
 raw  <- (page |> html_elements("table") |> html_table(fill = TRUE))[[1]]
-
 # The scraped header row is split/garbled by html_table(); restore the column
 # labels exactly as printed in the published Table 1 so the snapshot can be
 # eyeballed against the paper.
 colnames(raw) <- c("species", "brain mass (g or cm3)", "daily sleep (h)",
                    "D/A (N mg−1 mm−2)", "NCX", "DNCX (N mg−1)",
                    "ACX (mm2)", "O/N", "T", "MCX (g or cm3)")
-
 write.csv(raw, snapshot_csv, row.names = FALSE)   # <== SNAPSHOT SAVED HERE (before any cleaning)
-
-
 ## 2. DATA READABLE (snapshot --> analysis-ready) ------------------------------
 ## Read the frozen snapshot back; all cleaning happens here, never above.
 df <- read.csv(snapshot_csv, check.names = FALSE,
                stringsAsFactors = FALSE, fileEncoding = "UTF-8")
-
 ## 2.1 Remove reference citations in square brackets, e.g. "15.750 [19]" -------
 df[] <- lapply(df, function(x) gsub("\\[.*?\\]", "", x))
-
 ## 2.2 Convert "n.a." to NA ----------------------------------------------------
 df[] <- lapply(df, function(x) ifelse(trimws(x) == "n.a.", NA, x))
-
 ## 2.3 Remove footnote asterisks, e.g. "59 280*" -------------------------------
 df[] <- lapply(df, function(x) gsub("\\*", "", x))
-
 ## 2.4 Remove trailing footnote letters on numbers, e.g. "218a", "...106b" -----
 df[ , -1] <- lapply(df[ , -1], function(x) gsub("([0-9])([A-Za-z])$", "\\1", x))
-
 ## 2.5 Remove thousands spaces, e.g. "47 960" -> "47960" -----------------------
 df[ , -1] <- lapply(df[ , -1], function(x) gsub(" ", "", x))
-
 ## 2.6 Remove any stray letters left in the numeric columns --------------------
 df[ , -1] <- lapply(df[ , -1], function(x) gsub("[A-Za-z]", "", x))
-
 ## 2.7 Scientific notation in NCX: "X × 10^n" / "X × 10n" -> "Xen" ----
 convert_index_form <- function(x) {
   x <- gsub("×10\\^", "e", x)   # handles the "x 10^" form
@@ -86,25 +66,19 @@ convert_index_form <- function(x) {
   x
 }
 df[["NCX"]] <- convert_index_form(df[["NCX"]])
-
 ## 2.8 Types: species stays character, every other column becomes numeric ------
 df[[1]]   <- as.character(df[[1]])
 df[ , -1] <- lapply(df[ , -1], as.numeric)
-
 ## 2.9 Turn the clade header rows into a "category" column, then drop them ------
 categories <- c("Primates", "Eulipotyphla", "Glires",
                 "Afrotheria", "Artiodactyla", "Scandentia")
-
 df <- df |>
   mutate(category = if_else(species %in% categories, species, NA_character_)) |>
   fill(category, .direction = "down") |>
   filter(!species %in% categories) |>
   relocate(category, .after = species)
-
-
 ## 3. SAVE FINAL ---------------------------------------------------------------
 write.csv(df, final_csv, row.names = FALSE)
-
 ## 4. ONLINE DATABASE (optional, when ready) -----------------------------------
 ## Save a TSV named with the DOI-encoded item name to the public mirror:
 ##   item_encoded <- "10.1098%2Frspb.2015.1853_Table1"

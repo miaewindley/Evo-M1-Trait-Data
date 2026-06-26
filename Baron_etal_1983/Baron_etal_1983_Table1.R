@@ -30,7 +30,11 @@ suppressPackageStartupMessages({
 
 # Run from this script's own folder (RStudio), so the relative paths resolve.
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1983")
+}
+}
 }
 
 snapshot_file  <- "Baron_etal_1983_Table1_snapshot.xlsx"

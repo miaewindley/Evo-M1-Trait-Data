@@ -27,7 +27,11 @@ suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(stringr)
 })
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Zilles__Rehkamper_1988")
+}
+}
 
 snapshot_file  <- "Zilles__Rehkamper_1988_Table12-2_snapshot.xlsx"
 snapshot_sheet <- "Table12-2"

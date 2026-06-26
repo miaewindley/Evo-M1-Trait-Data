@@ -19,7 +19,11 @@
 
 suppressPackageStartupMessages({ library(readr); library(dplyr); library(stringr); library(tidyr) })
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2011/comparison")
+}
+}
 num <- function(x) suppressWarnings(as.numeric(gsub(",", "", as.character(x))))
 
 audit <- function(snapshot, pretsv, nval, outbase) {

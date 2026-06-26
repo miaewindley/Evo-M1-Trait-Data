@@ -4,7 +4,11 @@
 # the curated comparison CSV Baron_1990.csv; volumes in mm3). Output from the snapshot only.
 suppressPackageStartupMessages({ library(readxl); library(readr); library(dplyr); library(stringr) })
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1990")
+}
+}
 snapshot_file <- "Baron_etal_1990_Table1_snapshot.xlsx"; snapshot_sheet <- "Table1"; output_file <- "Baron_etal_1990_Table1.csv"
 header_rows <- 2L   # row1 caption + row2 header
 pos <- c("species_disp", "Complexus_sensorius_trigeminalis_mm3")

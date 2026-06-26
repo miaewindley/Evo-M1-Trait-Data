@@ -4,7 +4,11 @@
 # the curated comparison CSV Stephan1987_AMY_vs_Barger2007_AC.csv; volumes in mm3). Output from the snapshot only.
 suppressPackageStartupMessages({ library(readxl); library(readr); library(dplyr); library(stringr) })
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1987")
+}
+}
 snapshot_file <- "Stephan_etal_1987_Table1_snapshot.xlsx"; snapshot_sheet <- "Table1"; output_file <- "Stephan_etal_1987_Table1.csv"
 header_rows <- 2L   # row1 caption + row2 header
 pos <- c("species_disp", "Amygdala_mm3", "Complexus_centromedialis_mm3", "Complexus_corticobasolateralis_mm3", "Nucleus_amygdalae_basalis_pars_magnocellularis_mm3", "Nucleus_tractus_olfactorius_mm3")

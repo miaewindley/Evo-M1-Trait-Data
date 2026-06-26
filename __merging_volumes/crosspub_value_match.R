@@ -19,7 +19,11 @@
 
 suppressPackageStartupMessages({ library(readr); library(dplyr); library(tidyr); library(stringr); library(purrr) })
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes")
+}
+}
 base <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
 input <- file.path(base, "Smaers_etal_2017/Smaers_etal_2017_TableS1part1.csv")
 out   <- "crosspub_Smaers2017_value_match.csv"

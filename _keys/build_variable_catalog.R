@@ -17,7 +17,11 @@ suppressPackageStartupMessages({
   library(readr); library(dplyr); library(stringr); library(purrr); library(tidyr)
 })
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys")
+}
+}
 root <- ".."   # repo root, relative to _keys/
 
 # admin/metadata columns that are NOT measured traits

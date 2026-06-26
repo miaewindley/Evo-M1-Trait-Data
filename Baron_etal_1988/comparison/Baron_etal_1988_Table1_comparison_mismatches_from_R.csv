@@ -1,0 +1,3 @@
+status,species_key,species_snapshot,species_csv,n_structure_mismatch,VC_snap,VI_snap,VL_snap,VM_snap,VS_snap,VC_csv,VI_csv,VL_csv,VM_csv,VS_csv,VC_match,VI_match,VL_match,VM_match,VS_match
+snapshot_only_not_in_csv,scutisorexêsomereni,ScutisorexÊsomereni,NA,5,3.55,1.07,0.613,1.42,0.448,NA,NA,NA,NA,NA,FALSE,FALSE,FALSE,FALSE,FALSE
+csv_only_not_in_snapshot,scutisorex�somereni,NA,Scutisorex�somereni,5,NA,NA,NA,NA,NA,3.55,1.07,0.613,1.42,0.448,FALSE,FALSE,FALSE,FALSE,FALSE
