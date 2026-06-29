@@ -1,5 +1,5 @@
 ### DeCasien & Higham 2019 -- comparison of their compiled brain-region volumes
-### (Supplementary MOESM3) against THIS repo's merged volume dataset.
+### (Supplementary MOESM3) against THIS repo's merged volume DeCasien dataset.
 ###
 ### Rewrite (Part II): the previous version only built two long frames and never
 ### compared anything, used a hardcoded path, and assumed sheet/column names. This
@@ -18,22 +18,46 @@
 ###   DeCasien_taxonomy_proposed_changes.csv
 ###   DeCasien_Higham_2019_FINDINGS.md
 
+## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path                    # RStudio: Source
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path  # RStudio: Run
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
+})
+folder <- paper_dir <- dirname(.sp)                                   # this paper's folder
+item_name <- table_name <- tools::file_path_sans_ext(basename(.sp))  # = file name (matches __ReadMe.xlsx)
+base <- dataset_root <- local({                                      # repo root; NA if run as a lone folder
+  d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+})
+setwd(folder)
+
 suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr); library(purrr)
 })
 
-base <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
+base <- base
 dec_dir <- file.path(base, "DeCasien_Higham_2019")
 tol <- 0.02
+## Which merge to compare against. Default "" = the canonical core merge (volumes_*.csv).
+## volumes_compiled_DeCasien.R sets merge_suffix <- "_EXPANDED" before source()-ing this
+## script, to compare the DeCasien-inclusive EXPANDED merge instead. Outputs get the same suffix.
+merge_suffix <- if (exists("merge_suffix")) merge_suffix else ""
 norm  <- function(s) str_squish(tolower(gsub("[._]", " ", s)))
 genus <- function(s) word(norm(s), 1)
 numv  <- function(x) suppressWarnings(as.numeric(gsub(",", "", as.character(x))))
 
 ## ---- reference (the merge), per source, mm3 ----
-unf <- read_csv(file.path(base, "__merging_volumes/volumes_unfiltered.csv"), show_col_types = FALSE) %>%
+unf <- read_csv(file.path(base, paste0("__merging_volumes/volumes_unfiltered", merge_suffix, ".csv")), show_col_types = FALSE) %>%
   transmute(sp = norm(Species), genus = genus(Species), Variable,
             Value = numv(Value), Source) %>% filter(!is.na(Value), Value != 0)
-merged <- read_csv(file.path(base, "__merging_volumes/volumes_long.csv"), show_col_types = FALSE) %>%
+merged <- read_csv(file.path(base, paste0("__merging_volumes/volumes_long", merge_suffix, ".csv")), show_col_types = FALSE) %>%
   transmute(sp = norm(Species), Variable, merge_value = numv(Value))
 
 # which merge Sources correspond to DeCasien's Stephan reference ids
@@ -139,7 +163,7 @@ cmp <- bind_cols(dec %>% select(taxon, sp, genus, dec_region, our_term, dec_valu
     ))
 write_csv(cmp %>% select(taxon, sp, dec_region, our_term, dec_value, ref_ids, ref_is_stephan,
                          status, matched_source, matched_variable, matched_sp, matched_value, pct_diff),
-          file.path(dec_dir, "DeCasien_vs_merge_comparison.csv"))
+          file.path(dec_dir, paste0("DeCasien_vs_merge_comparison", merge_suffix, ".csv")))
 
 ## ---- II.B taxonomy proposals: value-matched rows whose species name differs ----
 prop <- cmp %>% filter(status == "match_taxonomy_variant", ref_is_stephan) %>%
@@ -149,7 +173,7 @@ prop <- cmp %>% filter(status == "match_taxonomy_variant", ref_is_stephan) %>%
             proposed = "adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv") %>%
   distinct(decasien_name, merge_accepted_name, .keep_all = TRUE) %>%
   arrange(merge_accepted_name)
-write_csv(prop, file.path(dec_dir, "DeCasien_taxonomy_proposed_changes.csv"))
+write_csv(prop, file.path(dec_dir, paste0("DeCasien_taxonomy_proposed_changes", merge_suffix, ".csv")))
 
 ## ---- merge-only coverage (Stephan-sourced species x term not present in DeCasien) ----
 dec_keys <- cmp %>% filter(!is.na(our_term)) %>% distinct(sp, our_term)
@@ -202,7 +226,7 @@ findings <- c(
   "- a single tidy compiled sheet with one reference column -- useful as an export view alongside",
   "  `volumes_long.csv`."
 )
-writeLines(findings, file.path(dec_dir, "DeCasien_Higham_2019_FINDINGS.md"))
+writeLines(findings, file.path(dec_dir, paste0("DeCasien_Higham_2019_FINDINGS", merge_suffix, ".md")))
 
 message("DeCasien comparison: ", nrow(cmp), " cells | match=", get("match"),
         " taxonomy_variant=", get("match_taxonomy_variant"),

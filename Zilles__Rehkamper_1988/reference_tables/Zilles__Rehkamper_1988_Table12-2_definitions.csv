@@ -1,5 +1,5 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-Species_Zilles1988,species as named in Zilles & Rehkamper 1988 (the orang-utan; the only species in this table),,,info,,,Zilles__Rehkamper_1988_Table12-2,"single-specimen table: brain structures down the rows, Pongo sp. the only species; taxonomy applied later via ../_keys/Stephan/",
+Species,species as named in Zilles & Rehkamper 1988 (the orang-utan; the only species in this table),,,info,,,Zilles__Rehkamper_1988_Table12-2,"single-specimen table: brain structures down the rows, Pongo sp. the only species; taxonomy applied later via ../_keys/Stephan/",
 structure,brain component as printed in Table 12-2 (indentation in the snapshot marks the printed sub-components),,,info,,,Zilles__Rehkamper_1988_Table12-2,squished to a clean label by the R script,
 fresh_volume_cc3,fresh volume of the structure as printed (cc3 = cm3),,,info,,,Zilles__Rehkamper_1988_Table12-2,"original printed unit; converted to mm3 (x1000) in volume_mm3",
 volume_mm3,fresh volume converted to the project unit mm3 (= fresh_volume_cc3 x 1000),,,info,,,Zilles__Rehkamper_1988_Table12-2,one value per structure; the per-structure rows below carry the Measure tag,

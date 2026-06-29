@@ -3,7 +3,7 @@
 # Checking step (self-contained in comparison/). Audit the journal-faithful
 # snapshot of Matano et al. (1985) Part I (VENTRAL PONS) Table I against
 # Matano_1985b.csv, matched by species on EITHER the paper's name
-# (Species_Matano1985b) OR the canonical Species, resolving each CSV row once (no
+# (Species) OR the canonical Species, resolving each CSV row once (no
 # phantom duplicates). Compares the ventral pons volume, body weight, and n.
 # Run from comparison/.
 #
@@ -14,13 +14,8 @@
 suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr)
 })
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano_etal_1985_b/comparison")
-}
-}
-
+## Set working directory to this script folder
+setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano_etal_1985_b/comparison")
 snapshot_file     <- "../Matano_etal_1985_b_Table1_snapshot.xlsx"
 snapshot_sheet    <- "Table1"
 comparison_file   <- "Matano_1985b.csv"
@@ -49,10 +44,10 @@ comp_raw <- read_csv(comparison_file, col_types = cols(.default = col_character(
          !is.na(.data[[csv_col[["ventral_pons"]]]])) %>%
   mutate(.cid = row_number())
 snap <- snap %>% mutate(.cid = dplyr::coalesce(
-  comp_raw$.cid[match(species_key, norm_label(comp_raw$Species_Matano1985b))],
+  comp_raw$.cid[match(species_key, norm_label(comp_raw$Species))],
   comp_raw$.cid[match(species_key, norm_label(comp_raw$Species))]))
 comp <- comp_raw %>% transmute(.cid,
-  species_csv = str_squish(dplyr::coalesce(Species_Matano1985b, Species)),
+  species_csv = str_squish(dplyr::coalesce(Species, Species)),
   ventral_pons_csv = parse_value(.data[[csv_col[["ventral_pons"]]]]),
   body_weight_csv  = parse_value(.data[[csv_col[["body_weight"]]]]),
   n_csv            = parse_value(.data[[csv_col[["n"]]]]))

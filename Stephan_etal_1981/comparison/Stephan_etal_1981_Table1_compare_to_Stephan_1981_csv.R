@@ -12,13 +12,8 @@
 #          Stephan_etal_1981_Table1_comparison_mismatches_from_R.csv
 
 suppressPackageStartupMessages({ library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr) })
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/comparison")
-}
-}
-
+## Set working directory to this script folder
+setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1981/comparison")
 snapshot_file   <- "../Stephan_etal_1981_Table1_snapshot.xlsx"
 snapshot_sheet  <- "Table1"
 comparison_file <- "Stephan_1981.csv"
@@ -35,15 +30,15 @@ clean <- function(h) ifelse(str_detect(h, "^n \\("),
 raw <- read_excel(snapshot_file, sheet = snapshot_sheet, col_names = FALSE, col_types = "text")
 hdr <- clean(as.character(unlist(raw[2, ], use.names = FALSE)))
 snap <- raw[-(1:2), , drop = FALSE]; names(snap) <- hdr
-snap <- snap %>% filter(!is.na(species), str_squish(species) != "") %>% rename(Species_Stephan1981 = species)
+snap <- snap %>% filter(!is.na(species), str_squish(species) != "") %>% rename(Species = species)
 
 # measurement columns = everything except the two identifiers
-meas_cols <- setdiff(names(snap), c("code", "Species_Stephan1981"))
+meas_cols <- setdiff(names(snap), c("code", "Species"))
 
 # --- CSV ---
 csv <- read_csv(comparison_file, col_types = cols(.default = col_character()), na = c("")) %>%
   filter(!str_starts(replace_na(Species, ""), "AAAA_"),
-         !is.na(Species_Stephan1981), Species_Stephan1981 != "")
+         !is.na(Species), Species != "")
 
 # map each snapshot measurement column to a CSV column by normalised name
 csv_lookup <- setNames(names(csv), norm_name(names(csv)))
@@ -53,11 +48,11 @@ csv_lookup <- setNames(names(csv), norm_name(names(csv)))
 pairs <- tibble(col = meas_cols, csv_col = unname(csv_lookup[norm_name(meas_cols)])) %>% filter(!is.na(csv_col))
 
 snap_long <- snap %>%
-  transmute(key = norm_name(Species_Stephan1981), Species_Stephan1981,
+  transmute(key = norm_name(Species), Species,
             across(all_of(pairs$col), parse_value)) %>%
   pivot_longer(all_of(pairs$col), names_to = "col", values_to = "snap")
 csv_long <- csv %>%
-  transmute(key = norm_name(Species_Stephan1981),
+  transmute(key = norm_name(Species),
             across(all_of(pairs$csv_col), parse_value)) %>%
   pivot_longer(all_of(pairs$csv_col), names_to = "csv_col", values_to = "csv") %>%
   left_join(pairs, by = "csv_col")

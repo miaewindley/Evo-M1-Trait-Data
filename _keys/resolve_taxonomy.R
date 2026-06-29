@@ -18,13 +18,8 @@ suppressPackageStartupMessages({
   library(xml2); library(rentrez); library(taxize)
 })
 
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys")
-}
-}
-
+## Set working directory to this script folder
+setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_keys")
 ref <- read_csv("species_reference.csv", show_col_types = FALSE)
 
 # pull a given rank's name out of a (ranks, names) lineage

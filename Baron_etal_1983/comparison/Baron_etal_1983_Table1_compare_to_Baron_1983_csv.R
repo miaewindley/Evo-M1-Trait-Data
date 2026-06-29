@@ -5,7 +5,7 @@
 #   formatted CSV (Baron_1983.csv) against the faithful snapshot of Baron et al.
 #   1983 Table 1. Rows are matched by Baron code, then two things are checked:
 #     1. measured values - n and MOB volume (numeric)
-#     2. faithful name    - snapshot original vs the CSV's Species_Baron1983
+#     2. faithful name    - snapshot original vs the CSV's Species
 #                           (a difference here is a transcription typo)
 #   No taxonomy/crosswalk is involved here.
 #
@@ -30,11 +30,8 @@ suppressPackageStartupMessages({
 
 # Run from this script's own folder (RStudio), so the relative paths resolve.
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1983/comparison")
-}
-}
+## Set working directory to this script folder
+setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1983/comparison")
 }
 
 snapshot_file     <- "../Baron_etal_1983_Table1_snapshot.xlsx"
@@ -86,12 +83,12 @@ comparison <- read_baron_csv(comparison_file) %>%
   transmute(
     code_join             = norm_code(code_Baron1983),
     code_csv              = code_Baron1983,
-    species_csv_baron1983 = Species_Baron1983,
+    species_csv_baron1983 = Species,
     n_csv                 = Number_of_individuals_Bulbus_olfactorius,
     n_csv_num             = as.integer(parse_value(Number_of_individuals_Bulbus_olfactorius)),
     volume_csv            = Bulbus_olfactorius_1983,
     volume_csv_num        = parse_value(Bulbus_olfactorius_1983),
-    sp_csv_baron_norm     = norm_label(Species_Baron1983)
+    sp_csv_baron_norm     = norm_label(Species)
   )
 
 # ---- match by code and run the two checks ----------------------------------

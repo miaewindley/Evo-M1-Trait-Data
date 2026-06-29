@@ -29,13 +29,25 @@
 suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(stringr)
 })
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_Zilles_1994")
-}
-}
-
+## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path                    # RStudio: Source
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path  # RStudio: Run
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
+})
+folder    <- dirname(.sp)                                # this paper's folder
+item_name <- tools::file_path_sans_ext(basename(.sp))    # = file name, matches __ReadMe.xlsx
+base      <- local({                                     # repo root; NA if run as a lone folder
+  d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+})
+setwd(folder)
 snapshot_file <- "Frahm_Zilles_1994_Table1_snapshot.xlsx"
 output_file   <- "Frahm_Zilles_1994_Table1.csv"
 header_rows   <- 2L   # caption + column header on each sheet
@@ -47,7 +59,7 @@ pos1 <- c("species_disp","body_weight_g","hippocampus_total_mm3","HP_HS_fibers_m
 t1 <- read_excel(snapshot_file, sheet = "Table1", col_names = FALSE, col_types = "text") %>%
   slice(-(seq_len(header_rows))) %>% `names<-`(c(pos1, rep(NA, max(0, ncol(.) - length(pos1)))))
 t1 <- t1 %>% filter(!is.na(species_disp), !is.na(num(hippocampus_total_mm3))) %>%
-  transmute(Species_Frahm1994 = str_squish(species_disp),
+  transmute(Species = str_squish(species_disp),
             body_weight_g = num(body_weight_g),
             hippocampus_total_mm3 = num(hippocampus_total_mm3),
             HP_HS_fibers_mm3 = num(HP_HS_fibers_mm3),
@@ -58,30 +70,28 @@ pos2 <- c("species_disp","subiculum_mm3","CA1_mm3","CA2_mm3","CA3_mm3","hilus_mm
 t2 <- read_excel(snapshot_file, sheet = "Table2", col_names = FALSE, col_types = "text") %>%
   slice(-(seq_len(header_rows))) %>% `names<-`(c(pos2, rep(NA, max(0, ncol(.) - length(pos2)))))
 t2 <- t2 %>% filter(!is.na(species_disp), !is.na(num(CA1_mm3))) %>%
-  transmute(Species_Frahm1994 = str_squish(species_disp),
+  transmute(Species = str_squish(species_disp),
             subiculum_mm3 = num(subiculum_mm3), CA1_mm3 = num(CA1_mm3), CA2_mm3 = num(CA2_mm3),
             CA3_mm3 = num(CA3_mm3), hilus_mm3 = num(hilus_mm3), fascia_dentata_mm3 = num(fascia_dentata_mm3))
 
-final.dataframe <- left_join(t1, t2, by = "Species_Frahm1994")
+final.dataframe <- left_join(t1, t2, by = "Species")
 
 options(scipen = 999)
 
 ## ---- SAVE: local CSV + PMID-named TSV ----
-item_name <- tryCatch(gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path)),
-                      error = function(e) tools::file_path_sans_ext(output_file))
-if (is.null(item_name) || !nzchar(item_name)) item_name <- tools::file_path_sans_ext(output_file)
 write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
 message("Wrote ", item_name, ".csv  (", nrow(final.dataframe), " species)")
 
-readme_file <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx"
-tsv_dir     <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/"
-filecodes    <- read_excel(readme_file, sheet = "Sheet1")
-item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+tsv_dir <- file.path(base, "__Public/comparative-data")
+item_encoded <- if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {
+  filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+} else NA_character_
 if (is.na(item_encoded) || !nzchar(item_encoded)) {
   warning("No 'Item encoded' (PMID) for '", item_name, "' in __ReadMe.xlsx; TSV skipped.")
 } else if (!dir.exists(path.expand(tsv_dir))) {
   warning("Shared folder not found: ", tsv_dir, "; TSV skipped.")
 } else {
-  write.table(final.dataframe, file = paste0(tsv_dir, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)
-  message("Wrote ", tsv_dir, item_encoded, ".tsv")
+  write.table(final.dataframe, file = file.path(tsv_dir, paste0(item_encoded, ".tsv")), sep = "\t", row.names = FALSE)
+  message("Wrote ", file.path(tsv_dir, paste0(item_encoded, ".tsv")))
 }

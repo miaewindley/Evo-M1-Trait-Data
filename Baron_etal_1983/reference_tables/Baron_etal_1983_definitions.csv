@@ -1,7 +1,7 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
 MOB,main olfactory bulb; total MOB = layers 1-6 + periventricular zone,OlfactoryBulb,,,primary,"Insectivora, Scandentia & Primates",Baron_etal_1983_Table1,Baron measured the MAIN olfactory bulb (vs accessory OB),
 code_Baron1983,four-digit species code in the Stephan/Frahm/Baron coding system,,,info,,,Baron_etal_1983_Table1,,
-Species_Baron1983,species name as printed in Baron 1983 (classification follows Corbet & Hill 1980); footnote digits removed,,,info,,,Baron_etal_1983_Table1,,
+Species,species name as printed in Baron 1983 (classification follows Corbet & Hill 1980); footnote digits removed,,,info,,,Baron_etal_1983_Table1,,
 Species,current accepted species name,,,info,,,Baron_etal_1983_Table1,from reference_tables/Baron_etal_1983_species_crosswalk.csv (MDD v2.4),
 Species_former_synonym,name used in former papers and in Stephan et al. 1981a (the superscript footnote translated),,,info,,,Baron_etal_1983_Table1,populated for the 12 footnoted species,
 n,number of individuals (sample size),OlfactoryBulb,,n,primary,"Insectivora, Scandentia & Primates",Baron_etal_1983_Table1,snapshot column 'n',

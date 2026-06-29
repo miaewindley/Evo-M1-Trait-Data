@@ -10,8 +10,25 @@
 # nerve motor nuclei do not exhibit morphometric asymmetries").
 
 library(tidyverse)
-base <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
-folder <- file.path(base, "Sherwood_etal_2005")
+## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path                    # RStudio: Source
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path  # RStudio: Run
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
+})
+folder    <- dirname(.sp)                                # this paper's folder
+item_name <- tools::file_path_sans_ext(basename(.sp))    # = file name, matches __ReadMe.xlsx
+base      <- local({                                     # repo root; NA if run as a lone folder
+  d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+})
+setwd(folder)
 
 snap <- read.csv(file.path(folder, "Sherwood_etal_2005_Table1_snapshot.csv"),
                  stringsAsFactors = FALSE, check.names = FALSE)
@@ -37,8 +54,10 @@ message("Sherwood 2005 Table 1: ", nrow(clean), " species written.")
 ## ---- TSV for the merge: look up the DOI/PMID code from __ReadMe.xlsx (don't hardcode) ----
 item_name    <- "Sherwood_etal_2005_Table1"
 tsv_dir      <- file.path(base, "__Public/comparative-data/")
-filecodes    <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+item_encoded <- if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {
+  filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+} else NA_character_
 if (is.na(item_encoded) || !nzchar(item_encoded)) {
   warning("No 'Item encoded' (DOI) for '", item_name, "' in __ReadMe.xlsx; TSV skipped.")
 } else if (!dir.exists(path.expand(tsv_dir))) {

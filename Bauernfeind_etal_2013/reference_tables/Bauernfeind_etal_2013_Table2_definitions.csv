@@ -1,5 +1,5 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-Species_Bauernfeind2013,species as named in Bauernfeind et al. 2013 (full name on the first individual; abbreviated thereafter in the print),,,info,,,Bauernfeind_etal_2013_Table2,abbreviated names are expanded by the R script; taxonomy applied later via ../_keys/Stephan/,
+Species,species as named in Bauernfeind et al. 2013 (full name on the first individual; abbreviated thereafter in the print),,,info,,,Bauernfeind_etal_2013_Table2,abbreviated names are expanded by the R script; taxonomy applied later via ../_keys/Stephan/,
 Individual,specimen identifier as printed,,,info,,,Bauernfeind_etal_2013_Table2,same specimens as Table 1 where both hemispheres were available,
 granular_R_mm3,volume of granular insular cortex (right) in mm3 (printed in cm3; x1000),Granular_insular_cortex,Vol.mm3,,primary,Primates,Bauernfeind_etal_2013_Table2,Table 2 'Granular',
 dysgranular_R_mm3,volume of dysgranular insular cortex (right) in mm3,Dysgranular_insular_cortex,Vol.mm3,,primary,Primates,Bauernfeind_etal_2013_Table2,Table 2 'Dysgranular',

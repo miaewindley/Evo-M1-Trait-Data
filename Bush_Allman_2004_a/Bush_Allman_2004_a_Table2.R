@@ -2,7 +2,27 @@
 ## PNAS 101(11):3962-3966.  Table 2 = "Volumes for cortical regions for 55 species of mammals (cm3)".
 ## Source: HTML download from the PNAS site (05760table2.html). Snapshot -> clean -> harmonize -> compare.
 
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bush_Allman_2004_a")
+## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path                    # RStudio: Source
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path  # RStudio: Run
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
+})
+folder <- paper_dir <- dirname(.sp)                                   # this paper's folder
+item_name <- table_name <- tools::file_path_sans_ext(basename(.sp))  # = file name (matches __ReadMe.xlsx)
+base <- dataset_root <- local({                                      # repo root; NA if run as a lone folder
+  d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+})
+setwd(folder)
+
+setwd(folder)
 options(scipen = 999)
 library(rvest); library(readxl)
 
@@ -33,7 +53,7 @@ write.csv(clean, "Bush_Allman_2004_a_Table2.csv", row.names = FALSE)
 message("Bush & Allman 2004a Table 2: ", nrow(clean), " species written.")
 
 ## ---- public TSV: look up the DOI/PMID code from __ReadMe.xlsx (don't write a local-named TSV) ----
-base_dir     <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
+base_dir     <- base
 item_name    <- "Bush_Allman_2004_a_Table2"
 tsv_dir      <- file.path(base_dir, "__Public/comparative-data/")
 filecodes    <- readxl::read_excel(file.path(base_dir, "__ReadMe.xlsx"), sheet = "Sheet1")

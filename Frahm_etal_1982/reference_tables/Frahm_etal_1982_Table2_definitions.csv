@@ -1,6 +1,6 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
 NV,total neocortex volume,Neocortex,,,primary,"Insectivora, Scandentia & Primates",Frahm_etal_1982_Table2,,
-Species_Frahm1982,species name as printed in Frahm & Stephan 1982,,,info,,,Frahm_etal_1982_Table2,current accepted name + taxonomy applied later via ../_keys/Stephan/,
+Species,species name as printed in Frahm & Stephan 1982,,,info,,,Frahm_etal_1982_Table2,current accepted name + taxonomy applied later via ../_keys/Stephan/,
 n,number of individuals,Neocortex,,n,primary,"Insectivora, Scandentia & Primates",Frahm_etal_1982_Table2,printed in parentheses after the name when > 1; otherwise 1,
 total_neocortex_mm3,total neocortex volume in mm3 (grey + white matter),Neocortex,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Frahm_etal_1982_Table2,Table 2 col 1,
 white_matter_mm3,neocortical white matter volume in mm3,Neocortex_white_matter,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Frahm_etal_1982_Table2,Table 2 col 2,

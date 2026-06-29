@@ -17,13 +17,8 @@
 suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr)
 })
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bauernfeind_etal_2013/comparison")
-}
-}
-
+## Set working directory to this script folder
+setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bauernfeind_etal_2013/comparison")
 snapshot_file     <- "../Bauernfeind_etal_2013_Table1_snapshot.xlsx"
 snapshot_sheet    <- "Table1"
 comparison_file   <- "Bauernfeind_2013.csv"
@@ -74,8 +69,8 @@ lab <- sp_mean %>% group_by(csv_label) %>%
 # --- csv side ---
 comp <- read_csv(comparison_file, col_types = cols(.default = col_character()), na = c("")) %>%
   filter(!str_starts(replace_na(Species, ""), "AAAA_"),
-         !is.na(Species_Bauernfeind2013), Species_Bauernfeind2013 != "")
-csv_vals <- comp %>% transmute(csv_label = str_squish(Species_Bauernfeind2013),
+         !is.na(Species), Species != "")
+csv_vals <- comp %>% transmute(csv_label = str_squish(Species),
   granular_csv = num(.data[[csv_col[["granular"]]]]), dysgranular_csv = num(.data[[csv_col[["dysgranular"]]]]),
   agranular_csv = num(.data[[csv_col[["agranular"]]]]), FI_csv = num(.data[[csv_col[["FI"]]]]),
   total_insula_csv = num(.data[[csv_col[["total_insula"]]]]), brain_volume_csv = num(.data[[csv_col[["brain_volume"]]]]),

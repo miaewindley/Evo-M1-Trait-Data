@@ -24,11 +24,8 @@ suppressPackageStartupMessages({
 
 # Run from this script's own folder (RStudio), so the relative paths resolve.
 if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1987/comparison")
-}
-}
+## Set working directory to this script folder
+setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1987/comparison")
 }
 
 snapshot_file     <- "../Baron_etal_1987_Table1_snapshot.xlsx"
@@ -79,8 +76,8 @@ comp <- read_csv(comparison_file, col_types = cols(.default = col_character()), 
   filter(!str_detect(replace_na(Species, ""), "^AAAA_")) %>%
   rename(any_of(setNames(names(full_to_code), full_to_code))) %>%   # full names -> codes
   filter(!is.na(BOL)) %>%
-  transmute(species_key = norm_label(Species_Baron1987),
-            species_csv = Species_Baron1987,
+  transmute(species_key = norm_label(Species),
+            species_csv = Species,
             species_csv_updated = Species,
             across(all_of(structures), parse_value, .names = "{.col}_csv"))
 

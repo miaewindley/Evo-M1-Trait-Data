@@ -1,5 +1,5 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-Species_Frahm1997,species as printed in Frahm et al. 1997,,,info,,,Frahm_etal_1997_Table1,"Spalax ehrenbergi, Rattus norvegicus + insectivores; taxonomy via ../_keys/Stephan/",
+Species,species as printed in Frahm et al. 1997,,,info,,,Frahm_etal_1997_Table1,"Spalax ehrenbergi, Rattus norvegicus + insectivores; taxonomy via ../_keys/Stephan/",
 body_weight_g,Body weight (Mass.g),Body_weight,Mass.g,,secondary,Rodentia & Insectivora,Frahm_etal_1997_Table1,,
 brain_weight_mg,Brain weight (Mass.mg),Brain_weight,Mass.mg,,secondary,Rodentia & Insectivora,Frahm_etal_1997_Table1,,
 Cerebellum_mm3,Cerebellum (Vol.mm3),Cerebellum,Vol.mm3,,primary,Rodentia & Insectivora,Frahm_etal_1997_Table1,,

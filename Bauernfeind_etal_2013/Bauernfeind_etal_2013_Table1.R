@@ -28,13 +28,25 @@
 suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr)
 })
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bauernfeind_etal_2013")
-}
-}
-
+## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path                    # RStudio: Source
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path  # RStudio: Run
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
+})
+folder    <- dirname(.sp)                                # this paper's folder
+item_name <- tools::file_path_sans_ext(basename(.sp))    # = file name, matches __ReadMe.xlsx
+base      <- local({                                     # repo root; NA if run as a lone folder
+  d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+})
+setwd(folder)
 snapshot_file  <- "Bauernfeind_etal_2013_Table1_snapshot.xlsx"
 snapshot_sheet <- "Table1"
 output_file    <- "Bauernfeind_etal_2013_Table1.csv"
@@ -57,12 +69,12 @@ dat <- dat %>%
   mutate(genus_tok = word(str_squish(species_disp), 1),
          full_genus = ifelse(str_detect(genus_tok, "\\.$"), NA_character_, genus_tok)) %>%
   fill(full_genus, .direction = "down") %>%
-  mutate(Species_Bauernfeind2013 = ifelse(str_detect(genus_tok, "\\.$"),
+  mutate(Species = ifelse(str_detect(genus_tok, "\\.$"),
             str_squish(paste(full_genus, word(str_squish(species_disp), 2, -1))),
             str_squish(species_disp)))
 
 final.dataframe <- dat %>% transmute(
-  Species_Bauernfeind2013,
+  Species,
   Individual           = str_squish(individual),
   Collection           = str_squish(collection),
   section_thickness_mm = num(section_thickness_mm),
@@ -84,30 +96,21 @@ final.dataframe <- dat %>% transmute(
 options(scipen = 999)
 
 ## ---- SAVE: local CSV + DOI-named TSV ----
-item_name <- tryCatch(gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path)),
-                      error = function(e) tools::file_path_sans_ext(output_file))
-if (is.null(item_name) || !nzchar(item_name)) item_name <- tools::file_path_sans_ext(output_file)
 write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
 message("Wrote ", item_name, ".csv  (", nrow(final.dataframe), " individuals, ",
-        dplyr::n_distinct(final.dataframe$Species_Bauernfeind2013), " species)")
+        dplyr::n_distinct(final.dataframe$Species), " species)")
 
-readme_file <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx"
-tsv_dir     <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/"
-item_encoded_fallback <- "10.1016%2Fj.jhevol.2012.12.003_Table1"
-
-if (file.exists(path.expand(readme_file))) {
-  filecodes    <- read_excel(readme_file, sheet = "Sheet1")
-  item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
-} else {
-  item_encoded <- item_encoded_fallback
-  warning("__ReadMe.xlsx not found; using known DOI code for local TSV name: ", item_encoded)
-}
-
+## ---- also write the DOI-coded TSV to __Public/comparative-data/ (skipped if shared repo absent) ----
+tsv_dir <- file.path(base, "__Public/comparative-data")
+item_encoded <- if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {
+  filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+} else NA_character_
 if (is.na(item_encoded) || !nzchar(item_encoded)) {
   warning("No 'Item encoded' (DOI) for '", item_name, "' in __ReadMe.xlsx; TSV skipped.")
 } else if (!dir.exists(path.expand(tsv_dir))) {
-  warning("Shared folder not found: ", tsv_dir, "; TSV skipped (no local copy written).")
+  warning("Shared folder not found: ", tsv_dir, "; TSV skipped.")
 } else {
-  write.table(final.dataframe, file = paste0(tsv_dir, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)
-  message("Wrote ", tsv_dir, item_encoded, ".tsv")
+  write.table(final.dataframe, file = file.path(tsv_dir, paste0(item_encoded, ".tsv")), sep = "\t", row.names = FALSE)
+  message("Wrote ", file.path(tsv_dir, paste0(item_encoded, ".tsv")))
 }

@@ -23,13 +23,8 @@
 #   Karbowski__2007_energetics_long_from_R.csv
 
 suppressPackageStartupMessages({ library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr) })
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Karbowski__2007/comparison")
-}
-}
-
+## Set working directory to this script folder
+setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Karbowski__2007/comparison")
 gobf     <- file.path("Karbowski data added to compilation", "Karbowski glucose oxygen")
 glu_file <- file.path(gobf, "data and metadata brain glucose util.xlsx")
 oxy_file <- file.path(gobf, "data and metadata brain oxygen consumption Karbowski.xlsx")

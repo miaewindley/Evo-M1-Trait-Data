@@ -1,5 +1,5 @@
 Original_Term,Reference,Standardized_Term
-Species_Frahm1994,Frahm_Zilles_1994_Table1,Species
+Species,Frahm_Zilles_1994_Table1,Species
 body_weight_g,Frahm_Zilles_1994_Table1,Body_Mass.g
 hippocampus_total_mm3,Frahm_Zilles_1994_Table1,Hippocampus_Vol.mm3
 HP_HS_fibers_mm3,Frahm_Zilles_1994_Table1,HP_HS_fibers_Vol.mm3

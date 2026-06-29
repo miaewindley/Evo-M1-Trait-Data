@@ -1,5 +1,5 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-Species_Stephan1987,species name as printed in the paper,,,info,,,Stephan_etal_1987_Table1,taxonomy applied later via ../_keys/Stephan/,
+Species,species name as printed in the paper,,,info,,,Stephan_etal_1987_Table1,taxonomy applied later via ../_keys/Stephan/,
 Amygdala_mm3,Amygdala (Vol.mm3),Amygdala,Vol.mm3,,primary,Insectivora & Primates,Stephan_etal_1987_Table1,from comparison CSV column Amygdala_1987,
 Complexus_centromedialis_mm3,Complexus centromedialis (Vol.mm3),Complexus_centromedialis,Vol.mm3,,primary,Insectivora & Primates,Stephan_etal_1987_Table1,from comparison CSV column Complexus_centromedialis_1987,
 Complexus_corticobasolateralis_mm3,Complexus corticobasolateralis (Vol.mm3),Complexus_corticobasolateralis,Vol.mm3,,primary,Insectivora & Primates,Stephan_etal_1987_Table1,from comparison CSV column Complexus_corticobasolateralis_1987,

@@ -3,7 +3,7 @@
 # Checking step (self-contained in comparison/). Audit the journal-faithful
 # snapshot of Matano et al. (1985) Part II (CEREBELLAR NUCLEI) Table I against
 # Matano_1985a.csv, matched by species on EITHER the paper's name
-# (Species_Matano1985a) OR the canonical Species, resolving each CSV row once (no
+# (Species) OR the canonical Species, resolving each CSV row once (no
 # phantom duplicates). Compares the four nuclear volumes (TCN, MCN, ICN, LCN),
 # body weight, and n. Run from comparison/.
 #
@@ -14,13 +14,8 @@
 suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr)
 })
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano_etal_1985_a/comparison")
-}
-}
-
+## Set working directory to this script folder
+setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Matano_etal_1985_a/comparison")
 snapshot_file     <- "../Matano_etal_1985_a_Table1_snapshot.xlsx"
 snapshot_sheet    <- "Table1"
 comparison_file   <- "Matano_1985a.csv"
@@ -50,10 +45,10 @@ comp_raw <- read_csv(comparison_file, col_types = cols(.default = col_character(
          !is.na(.data[[csv_col[["TCN"]]]])) %>%
   mutate(.cid = row_number())
 snap <- snap %>% mutate(.cid = dplyr::coalesce(
-  comp_raw$.cid[match(species_key, norm_label(comp_raw$Species_Matano1985a))],
+  comp_raw$.cid[match(species_key, norm_label(comp_raw$Species))],
   comp_raw$.cid[match(species_key, norm_label(comp_raw$Species))]))
 comp <- comp_raw %>% transmute(.cid,
-  species_csv = str_squish(dplyr::coalesce(Species_Matano1985a, Species)),
+  species_csv = str_squish(dplyr::coalesce(Species, Species)),
   TCN_csv = parse_value(.data[[csv_col[["TCN"]]]]), MCN_csv = parse_value(.data[[csv_col[["MCN"]]]]),
   ICN_csv = parse_value(.data[[csv_col[["ICN"]]]]), LCN_csv = parse_value(.data[[csv_col[["LCN"]]]]),
   body_weight_csv = parse_value(.data[[csv_col[["body_weight"]]]]),

@@ -1,4 +1,4 @@
-"code_Baron1983"	"Anatomy_code"	"Species_Baron1983"	"Species_former_synonym"	"n"	"n_note"	"volume_mm3"	"volume_note"	"SEM_pct"	"size_index"	"permille_net_brain"	"permille_telencephalon"
+"code_Baron1983"	"Anatomy_code"	"Species"	"Species_former_synonym"	"n"	"n_note"	"volume_mm3"	"volume_note"	"SEM_pct"	"size_index"	"permille_net_brain"	"permille_telencephalon"
 "0577"	"MOB"	"Tenrec ecaudatus"	NA	3	NA	314	NA	5.9	120	136	223
 "0579"	"MOB"	"Setifer setosus"	NA	2	NA	209	NA	1.8	160	149	231
 "0581"	"MOB"	"Hemicentetes semispinosus"	NA	1	NA	93.6	NA	NA	114	124	213

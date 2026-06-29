@@ -17,13 +17,8 @@
 # Output: _checks/Zilles_Rehkamper_1988_provenance_report.csv
 
 suppressPackageStartupMessages({ library(readr); library(dplyr); library(stringr); library(purrr) })
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks")
-}
-}
-
+## Set working directory to this script folder
+setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks")
 csv_dir      <- "../Stephan_temp_to_organize/csvs"
 source_paper <- "Zilles & Rehkamper (1988), Orang-Utan Biology"
 source_taxon <- "pongo"

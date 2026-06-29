@@ -1,4 +1,4 @@
-"Species_deSousa2010"	"Neocortex_mm3"	"Area_striata_grey_matter_mm3"	"Corpus_geniculatum_laterale_mm3"	"Total_brain_net_volume_mm3"
+"Species"	"Neocortex_mm3"	"Area_striata_grey_matter_mm3"	"Corpus_geniculatum_laterale_mm3"	"Total_brain_net_volume_mm3"
 "Alouatta seniculus"	31660	1918	87.4	50193.1
 "Aotus trivirgatus"	9950	996	32.9	16505.8
 "Ateles geoffroyi"	70856	3753	151	104247.1
@@ -23,7 +23,6 @@
 "Lepilemur ruficaudatus"	3282	326	15.6	7335.9
 "Lophocebus albigena"	68733	5420	182	100386.1
 "Loris tardigradus"	3524	529	24.6	6370.7
-"Macaca fascicularis"	NA	2713.3	91.9	55598.5
 "Macaca mulatta"	63482	5343	158	89768.3
 "Microcebus murinus"	740	139	7.1	1718.1
 "Miopithecus talapoin"	26427	2339	109	38610

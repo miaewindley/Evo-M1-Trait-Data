@@ -14,13 +14,8 @@
 suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr)
 })
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1982/comparison")
-}
-}
-
+## Set working directory to this script folder
+setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1982/comparison")
 snapshot_file     <- "../Stephan_etal_1982_Table1_snapshot.xlsx"
 snapshot_sheet    <- "Table1"
 comparison_file   <- "Stephan_1982.csv"
@@ -61,10 +56,10 @@ snap <- sdat %>%
 
 comp <- read_csv(comparison_file, col_types = cols(.default = col_character()), na = c("")) %>%
   filter(!str_starts(replace_na(Species, ""), "AAAA_"),
-         !is.na(Species_Stephan1982), Species_Stephan1982 != "",
+         !is.na(Species), Species != "",
          !is.na(.data[[csv_col[["AOB_volume"]]]])) %>%
-  transmute(species_key       = norm_label(Species_Stephan1982),
-            species_csv       = str_squish(Species_Stephan1982),
+  transmute(species_key       = norm_label(Species),
+            species_csv       = str_squish(Species),
             AOB_volume_csv    = parse_value(.data[[csv_col[["AOB_volume"]]]]),
             AOB_layer_1_2_csv = parse_value(.data[[csv_col[["AOB_layer_1_2"]]]]),
             AOB_layer_3_5_csv = parse_value(.data[[csv_col[["AOB_layer_3_5"]]]]),

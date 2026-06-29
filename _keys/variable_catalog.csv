@@ -87,10 +87,10 @@ Frahm_etal_1997,Frahm_etal_1997_Table1,Amygdala_mm3,Amygdala,Amygdala,cell_count
 Frahm_etal_1997,Frahm_etal_1997_Table1,Amygdala_mm3,Amygdala,Amygdala,brain_structure_volume,Vol.mm3,volume,NA,primary,Rodentia & Insectivora,Amygdala (Vol.mm3)
 Stephan_etal_1981,Stephan_etal_1981_Table1,Amygdala,Amygdala,Amygdala,cell_counts,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",amygdala
 Stephan_etal_1981,Stephan_etal_1981_Table1,Amygdala,Amygdala,Amygdala,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",amygdala
-Stephan_etal_1987,Stephan_etal_1987,amygdala_total_mm3,Amygdala,Amygdala,cell_counts,Volume.mm3,volume,mean,primary,Insectivora–Primates (incl. Homo),whole amygdaloid complex volume (AMY); AMY = LAM + MAM
-Stephan_etal_1987,Stephan_etal_1987,amygdala_total_mm3,Amygdala,Amygdala,brain_structure_volume,Volume.mm3,volume,mean,primary,Insectivora–Primates (incl. Homo),whole amygdaloid complex volume (AMY); AMY = LAM + MAM
 Stephan_etal_1987,Stephan_etal_1987_Table1,Amygdala_mm3,Amygdala,Amygdala,cell_counts,Vol.mm3,volume,NA,primary,Insectivora & Primates,Amygdala (Vol.mm3)
 Stephan_etal_1987,Stephan_etal_1987_Table1,Amygdala_mm3,Amygdala,Amygdala,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Amygdala (Vol.mm3)
+Stephan_etal_1987,Stephan_etal_1987,amygdala_total_mm3,Amygdala,Amygdala,cell_counts,Volume.mm3,volume,mean,primary,Insectivora–Primates (incl. Homo),whole amygdaloid complex volume (AMY); AMY = LAM + MAM
+Stephan_etal_1987,Stephan_etal_1987,amygdala_total_mm3,Amygdala,Amygdala,brain_structure_volume,Volume.mm3,volume,mean,primary,Insectivora–Primates (incl. Homo),whole amygdaloid complex volume (AMY); AMY = LAM + MAM
 Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Corpus_amygdaloideum,Amygdala,Amygdala,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),corpus amygdaloideum (amygdala) fresh volume
 Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Corpus_amygdaloideum,Amygdala,Amygdala,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),corpus amygdaloideum (amygdala) fresh volume
 Barger_etal_2007,Barger_etal_2007,AC_L,AmygdaloidComplex,AmygdaloidComplex,NA,Volume.cm3,volume,NA,primary,Apes & humans,amygdaloid complex volume left hemisphere
@@ -245,9 +245,9 @@ deSousa_etal_2013,deSousa_etal_2013,leaflets,LGN,LGN,brain_structure_volume,Lami
 deSousa_etal_2010,deSousa_etal_2010,LGN_N,LGN,LGN,brain_structure_volume,Count,count (number),N,metadata,Primates,number of specimens for LGN volume
 deSousa_etal_2013,deSousa_etal_2013,LGN_residual,LGN,LGN,brain_structure_volume,residual,residual,NA,secondary,NA,LGN residual (from paper)
 Bush_Allman_2004_b,Bush_Allman_2004_b,LGN_cm3,LGN,LGN,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,lateral geniculate nucleus volume
+deSousa_etal_2010,deSousa_etal_2010,LGN_mm3,LGN,LGN,brain_structure_volume,Volume.mm3,volume,NA,primary,Primates,lateral geniculate nucleus volume
 deSousa_etal_2010,deSousa_etal_2010,LGN_volume_cm3,LGN,LGN,brain_structure_volume,Volume.cm3,volume,mean,primary,Primates,lateral geniculate nucleus volume
 deSousa_etal_2010,deSousa_etal_2010,left_LGN_volume_cm3,LGN,LGN,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,LEFT lateral geniculate nucleus volume
-deSousa_etal_2010,deSousa_etal_2010,LGN_mm3,LGN,LGN,brain_structure_volume,Volume.mm3,volume,NA,primary,Primates,lateral geniculate nucleus volume
 deSousa_etal_2013,deSousa_etal_2013,LGN_volume_cm3,LGN,LGN,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,LGN volume
 Barger_etal_2007,Barger_etal_2007,lateral_L,LateralNucleus,LateralNucleus,NA,Volume.cm3,volume,NA,primary,Apes & humans,lateral nucleus volume left
 Barger_etal_2007,Barger_etal_2007,lateral_R,LateralNucleus,LateralNucleus,NA,Volume.cm3,volume,NA,primary,Apes & humans,lateral nucleus volume right
@@ -401,9 +401,9 @@ Bush_Allman_2004_b,Bush_Allman_2004_b,horizontal_meridian_mm,V1,V1,brain_structu
 Bush_Allman_2004_b,Bush_Allman_2004_b,V1_surface_cm2,V1,V1,brain_structure_volume,Area.cm2,surface area,NA,primary,NA,V1 surface area
 Bush_Allman_2004_b,Bush_Allman_2004_b,V1_grey_cm3,V1,V1,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,V1 (primary visual) grey matter volume
 deSousa_etal_2010,deSousa_etal_2010,V1_N,V1_AreaStriata,V1_AreaStriata,NA,Count,count (number),N,metadata,Primates,number of specimens for V1 volume
+deSousa_etal_2010,deSousa_etal_2010,V1_area_striata_grey_mm3,V1_AreaStriata,V1_AreaStriata,NA,Volume.mm3,volume,NA,primary,Primates,primary visual cortex (area striata) grey matter volume
 deSousa_etal_2010,deSousa_etal_2010,V1_area_striata_volume_cm3,V1_AreaStriata,V1_AreaStriata,NA,Volume.cm3,volume,mean,primary,Primates,primary visual cortex (area striata) volume
 deSousa_etal_2010,deSousa_etal_2010,left_V1_volume_cm3,V1_AreaStriata,V1_AreaStriata,NA,Volume.cm3,volume,NA,primary,NA,LEFT V1 (area striata) grey matter volume
-deSousa_etal_2010,deSousa_etal_2010,V1_area_striata_grey_mm3,V1_AreaStriata,V1_AreaStriata,NA,Volume.mm3,volume,NA,primary,Primates,primary visual cortex (area striata) grey matter volume
 Matano_etal_1985_b,Matano_etal_1985_b_Table1,ventral_pons_mm3,Ventral_pons,Ventral_pons,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",volume of the ventral pons in mm3
 Stephan_etal_1981,Stephan_etal_1981_Table1,Ventricles,Ventricles,Ventricles,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",ventricular system
 Baron_etal_1988,Baron_etal_1988_Table1,VC,VestibularComplex,VestibularComplex,NA,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",complexus vestibularis (vestibular nuclear complex; sum of VI+VL+VM+VS)
@@ -426,8 +426,8 @@ MacLeod_etal_2003,MacLeod_etal_2003,brain_volume_cm3,WholeBrain,WholeBrain,cell_
 Semendeferi_etal_1998,Semendeferi_etal_1998,brain_volume_mm3,WholeBrain,WholeBrain,cell_counts,Volume.mm3,volume,NA,primary,Apes & humans,total brain volume
 Semendeferi_etal_2001,Semendeferi_etal_2001,brain_volume_mm3,WholeBrain,WholeBrain,cell_counts,Volume.mm3,volume,NA,primary,Apes & humans,total brain volume
 Smaers_etal_2011,Smaers_etal_2011,total_brain_volume_cm3,WholeBrain,WholeBrain,cell_counts,Volume.cm3,volume,NA,both,Primates,total brain volume (Table 1)
+deSousa_etal_2010,deSousa_etal_2010,brain_volume_mm3,WholeBrain,WholeBrain,cell_counts,Volume.mm3,volume,NA,primary,Primates,brain volume
 deSousa_etal_2010,deSousa_etal_2010,brain_volume_cm3,WholeBrain,WholeBrain,cell_counts,Volume.cm3,volume,mean,primary,Primates,whole brain volume
 deSousa_etal_2010,deSousa_etal_2010,brain_volume_cm3,WholeBrain,WholeBrain,cell_counts,Volume.cm3,volume,NA,primary,NA,whole brain volume (Cavalieri)
-deSousa_etal_2010,deSousa_etal_2010,brain_volume_mm3,WholeBrain,WholeBrain,cell_counts,Volume.mm3,volume,NA,primary,Primates,brain volume
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1,FI_mm3,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,volume of frontoinsular cortex (left) in mm3; present only in great apes and humans (VENs)
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table2,FI_R_mm3,fronto_insular_cortex,fronto_insular_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,volume of frontoinsular cortex (right) in mm3; present only in great apes and humans (VENs)

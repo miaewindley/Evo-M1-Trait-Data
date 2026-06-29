@@ -25,8 +25,28 @@
 #   OUTPUT: DosSantos_etal_2020_comparison_report.csv  (+ printed summaries)
 # =====================================================================================
 
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/")
-folder <- "./DosSantos_etal_2020/"
+## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path                    # RStudio: Source
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path  # RStudio: Run
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
+})
+folder <- paper_dir <- dirname(.sp)                                   # this paper's folder
+item_name <- table_name <- tools::file_path_sans_ext(basename(.sp))  # = file name (matches __ReadMe.xlsx)
+base <- dataset_root <- local({                                      # repo root; NA if run as a lone folder
+  d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+})
+setwd(folder)
+
+setwd(paste0(base, "/"))
+folder <- paste0(folder, "/")
 library(dplyr); library(tidyr); library(readr); library(readxl); library(stringr)
 options(scipen = 999)
 
@@ -121,9 +141,9 @@ if (length(impossible)) print(do.call(rbind, impossible)) else cat("  none\n")
 
 # ---- 5. CROSS-CHECK vs Herculano-Houzel et al. 2015 (older primary source) ----
 cat("\n===== Cross-check whole-brain & cortex NEURONS vs Herculano-Houzel et al. 2015 =====\n")
-hh_wb  <- read_csv("./HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table5.csv", show_col_types = FALSE) %>%
+hh_wb  <- read_csv(file.path(base, "HerculanoHouzel_etal_2015", "HerculanoHouzel_etal_2015_Table5.csv"), show_col_types = FALSE) %>%
   transmute(sp2 = first2(Species), HH2015_WB_neurons = `Whole brain Neurons`)
-hh_ctx <- read_csv("./HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table1.csv", show_col_types = FALSE) %>%
+hh_ctx <- read_csv(file.path(base, "HerculanoHouzel_etal_2015", "HerculanoHouzel_etal_2015_Table1.csv"), show_col_types = FALSE) %>%
   transmute(sp2 = first2(Species), HH2015_Ctx_neurons = `Cerebral cortex N, n`)
 ds_wb  <- pub_long %>% filter(Structure == "Br", Measure == "N") %>% transmute(sp2, DS_pub_WB_N = published)
 ds_wb_u<- unp_long %>% filter(Structure == "Br", Measure == "N") %>% transmute(sp2, DS_unp_WB_N = unpublished)
@@ -151,11 +171,11 @@ NO_long <- function(df, spcol, struct, N, O) tibble(
   external_N = suppressWarnings(as.numeric(df[[N]])),
   external_O = suppressWarnings(as.numeric(df[[O]])))
 
-hh1 <- rd("./HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table1.csv")
-hh2 <- rd("./HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table2.csv")
-hh5 <- rd("./HerculanoHouzel_etal_2015/HerculanoHouzel_etal_2015_Table5.csv")
-ds17 <- rd("./DosSantos_etal_2017/DosSantos_etal_2017_TableS1.csv")
-jm17 <- rd("./JardimMesseder_etal_2017/JardimMesseder_etal_2017_Table1.csv")
+hh1 <- rd(file.path(base, "HerculanoHouzel_etal_2015", "HerculanoHouzel_etal_2015_Table1.csv"))
+hh2 <- rd(file.path(base, "HerculanoHouzel_etal_2015", "HerculanoHouzel_etal_2015_Table2.csv"))
+hh5 <- rd(file.path(base, "HerculanoHouzel_etal_2015", "HerculanoHouzel_etal_2015_Table5.csv"))
+ds17 <- rd(file.path(base, "DosSantos_etal_2017", "DosSantos_etal_2017_TableS1.csv"))
+jm17 <- rd(file.path(base, "JardimMesseder_etal_2017", "JardimMesseder_etal_2017_Table1.csv"))
 
 ext <- bind_rows(
   NO_long(hh5, "Species", "Br",  "Whole brain Neurons",  "Whole brain Other cells") %>% mutate(external_source = "HH2015"),

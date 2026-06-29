@@ -1,25 +1,87 @@
-# Stephan_etal_1984_Table1.R
-# Preparation step. Stephan, H., Baron, G., & Frahm, H. D. (1984). Comparative size of brains and brain components. (J. Hirnforsch.)
-# Turn the journal-faithful snapshot into a lean, analysis-ready CSV (values from
-# the curated comparison CSV Stephan_1984.csv; volumes in mm3). Output from the snapshot only.
-suppressPackageStartupMessages({ library(readxl); library(readr); library(dplyr); library(stringr) })
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1984")
-}
-}
-snapshot_file <- "Stephan_etal_1984_Table1_snapshot.xlsx"; snapshot_sheet <- "Table1"; output_file <- "Stephan_etal_1984_Table1.csv"
-header_rows <- 2L   # row1 caption + row2 header
-pos <- c("code", "species_disp", "n_raw", "Corpus_geniculatum_laterale_mm3")
+## Stephan H, Baron G, Frahm HD (1984). Comparative size of brains and brain
+## components. J Hirnforsch. Table 1.
+##
+## Build step only: frozen snapshot -> clean analysis CSV -> DOI/PMID-coded public TSV.
+## Input : <script stem>_snapshot.xlsx
+## Output: <script stem>.csv
+##         <Item encoded>.tsv in __Public/comparative-data/ (named from __ReadMe.xlsx)
+
+options(scipen = 999)
+suppressPackageStartupMessages({
+  library(readxl)
+  library(readr)
+  library(dplyr)
+  library(stringr)
+})
+
+## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path                    # RStudio: Source
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path  # RStudio: Run
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
+})
+folder        <- dirname(.sp)                              # this paper's folder
+item_name     <- tools::file_path_sans_ext(basename(.sp))  # = file name, matches __ReadMe.xlsx
+source_name   <- sub("_(Table|TABLE).*", "", item_name)   # e.g., Frahm_etal_1998_Table1 -> Frahm_etal_1998
+snapshot_xlsx <- paste0(item_name, "_snapshot.xlsx")
+output_csv    <- paste0(item_name, ".csv")                 # project convention: output derives from script name
+base          <- local({                                   # repo root; NA if run as a lone folder
+  d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+})
+setwd(folder)
+
+## ---- read the frozen snapshot ----
+snapshot_sheet <- "Table1"
+header_rows <- 2L   # row 1 caption + row 2 header
+
+pos <- c(
+  "code",
+  "species_disp",
+  "n_raw",
+  "Corpus_geniculatum_laterale_mm3"
+)
+
 num <- function(x) parse_number(as.character(x), na = c("", "-", "NA", "n.a.", "__"))
-raw <- read_excel(snapshot_file, sheet = snapshot_sheet, col_names = FALSE, col_types = "text")
-dat <- raw %>% slice(-(seq_len(header_rows))); names(dat)[seq_along(pos)] <- pos
-final.dataframe <- dat %>% filter(!is.na(Species_Stephan1984_disp := NULL) | TRUE) %>%   # keep species rows
+
+raw <- read_excel(snapshot_xlsx, sheet = snapshot_sheet, col_names = FALSE, col_types = "text")
+
+dat <- raw %>%
+  slice(-(seq_len(header_rows)))
+
+names(dat)[seq_along(pos)] <- pos
+
+## ---- clean ----
+clean <- dat %>%
   filter(!is.na(num(Corpus_geniculatum_laterale_mm3))) %>%
-  transmute(code = str_squish(code), Species_Stephan1984 = str_squish(species_disp), n = as.integer(num(n_raw)),
-            Corpus_geniculatum_laterale_mm3 = num(Corpus_geniculatum_laterale_mm3))
-write.csv(final.dataframe, output_file, row.names = FALSE)
-filecodes <- read_excel("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx", sheet="Sheet1")
-ie <- filecodes$"Item encoded"[match("Stephan_etal_1984_Table1", filecodes$"Item name")]
-if (!is.na(ie) && nzchar(ie)) write.table(final.dataframe, paste0("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/", ie, ".tsv"), sep="\t", row.names=FALSE)
+  transmute(
+    code = str_squish(code),
+    species = str_squish(species_disp),
+    n = as.integer(num(n_raw)),
+    corpus_geniculatum_laterale_mm3 = num(Corpus_geniculatum_laterale_mm3),
+    source = source_name
+  )
+
+write.csv(clean, output_csv, row.names = FALSE)
+
+## ---- public TSV: look up the DOI/PMID code from __ReadMe.xlsx (don't hardcode) ----
+tsv_dir <- file.path(base, "__Public/comparative-data/")
+item_encoded <- if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {
+  filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+} else NA_character_
+
+if (is.na(item_encoded) || !nzchar(item_encoded)) {
+  warning("No 'Item encoded' for '", item_name, "' in __ReadMe.xlsx; TSV skipped.")
+} else if (!dir.exists(path.expand(tsv_dir))) {
+  warning("Shared folder not found: ", tsv_dir, "; TSV skipped.")
+} else {
+  write.table(clean, file.path(path.expand(tsv_dir), paste0(item_encoded, ".tsv")),
+              sep = "\t", row.names = FALSE)
+}

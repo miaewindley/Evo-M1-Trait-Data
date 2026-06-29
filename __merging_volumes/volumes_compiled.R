@@ -13,74 +13,82 @@
 #        MacLeod, Bush)  4 harmonize species  5 Tier-1 resolve  6 Tier-2 average -> long/wide/flags
 
 library(tidyverse); library(readxl)
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes")
-base <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
 
-## 1 Papers: item_name, team, year, species-key token (NA = use species col as-is) ----
+## ---- paths: self-contained (Rscript or RStudio; needs the full repo) ----
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path                    # RStudio: Source
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path  # RStudio: Run
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
+})
+folder <- dirname(.sp)                                                # __merging_volumes
+base   <- local({                                                     # repo root (marker: __ReadMe.xlsx)
+  d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+})
+if (is.na(base))
+  stop("Repo root (__ReadMe.xlsx) not found above ", folder, " — this merge script needs the full ",
+       "repository (it reads __Public/comparative-data and _keys).", call. = FALSE)
+setwd(folder)
+
+## 1 Papers: item_name, team, year (the canonical 30-table collection) ----
+## No per-paper species token/column anymore: the species COLUMN is found from the term map
+## (the Original_Term whose Standardized_Term == "Species") and species NAMES are resolved in
+## step 4 (NCBI backbone + curated, source-aware overrides). See README__merging.md.
 papers <- tribble(
-  ~item,                               ~team,                ~year, ~token,           ~spcol,
-
-  "Stephan_etal_1970_Tables1-6",       "Stephan_collection", 1970,  "Stephan1970",    "species",
-  "Stephan_etal_1981_Table1",          "Stephan_collection", 1981,  "Stephan1981",    "Species_Stephan1981",
-  "Stephan_etal_1982_Table1",          "Stephan_collection", 1982,  "Stephan1982",    "Species_Stephan1982",
-  "Stephan_etal_1984_Table1",          "Stephan_collection", 1984,  "Stephan1984",    "Species_Stephan1984",
-  "Stephan_etal_1987_Table1",          "Stephan_collection", 1987,  "Stephan1987",    "Species_Stephan1987",
-  "Frahm_etal_1982_Table2",            "Stephan_collection", 1982,  "Frahm1982",      "Species_Frahm1982",
-  "Frahm_etal_1984_Table1",            "Stephan_collection", 1984,  "Frahm_1984",     "Species_Frahm_1984",
-  "Frahm_Zilles_1994_Table1",          "Stephan_collection", 1994,  "Frahm1994",      "Species_Frahm1994",
-  "Frahm_etal_1997_Table1",            "Stephan_collection", 1997,  "Frahm1997",      "Species_Frahm1997",
-  "Frahm_etal_1998_Table1",            "Stephan_collection", 1998,  "Frahm98",        "Species_Frahm98",
-  "Baron_etal_1983_Table1",            "Stephan_collection", 1983,  "Baron1983",      "Species_Baron1983",
-  "Baron_etal_1987_Table1",            "Stephan_collection", 1987,  "Baron1987",      "Species_Baron1987",
-  "Baron_etal_1988_Table1",            "Stephan_collection", 1988,  "Baron1988",      "Species_Baron1988",
-  "Baron_etal_1990_Table1",            "Stephan_collection", 1990,  "Baron1990",      "Species_Baron1990",
-  "Matano_etal_1985_a_Table1",         "Stephan_collection", 1985,  "Matano1985a",    "Species_Matano1985a",
-  "Matano_etal_1985_b_Table1",         "Stephan_collection", 1985,  "Matano1985b",    "Species_Matano1985b",
-  "Zilles_Rehkämper_1988_Table12-2",   "Stephan_collection", 1988,  "Zilles1988",     "Species_Zilles1988",
-  "deSousa_etal_2010_Table1",          "Zilles",            2010,  "deSousa2010",    "Species_deSousa2010",
-  "deSousa_etal_2013_Table1",          "Zilles",            2013,  "deSousa2013",    "Species_deSousa2013",
-  "MacLeod_etal_2003_",                "Zilles",            2003,  NA,               "species",
-  "Bauernfeind_etal_2013_Table1",      "Zilles",        2013,  "Bauernfeind2013","Species_Bauernfeind2013",
-  "Bauernfeind_etal_2013_Table2",      "Zilles",        2013,  "Bauernfeind2013","Species_Bauernfeind2013",
-  "Bush_Allman_2003_Table1",           "Bush",               2003,  NA,               "species",
-  "Bush_Allman_2004_b_TABLE1",         "Bush",               2004,  NA,               "species",
-  "Smaers_etal_2011_SupplementaryTable1","Zilles",            2011,  NA,               "species",
-  "Ashwell__2020_SupplementaryTable",  "Ashwell",            2020,    "Ashwell2020",    "species",
-  "Semendeferi_etal_1998_Table2",      "Semendeferi",        1998,  "Semendeferi",    "species",
-  "Semendeferi_etal_2001_Table2",      "Semendeferi",        2001,  "Semendeferi",    "species",
-  "Sherwood_etal_2005_Table1",         "Sherwood",          2005,  "Sherwood_2005", "species",
-  "Sherwood_etal_2004_TABLEI",         "Sherwood",          2004,  NA,               "Species",
-  "Barger_etal_2007_TABLE1",           "Zilles",             2007,  "Barger2007",     "species",
-
-  # --- DeCasien-referenced sources extracted from DeCasien & Higham 2019 MOESM3
-  #     "Brain Region Data (mm3)" (the *_viaDeCasien.tsv pattern; values already mm3,
-  #     species-mean rows). Each is its own independent Tier-2 team. See
-  #     DeCasien_Higham_2019/ and standardized_term_by_reference/*_viaDeCasien_*.csv.
-  # Real primary tables (species means; units converted in step 3 reshapes):
-  "Barks_etal_2014_TABLE1",            "Barks",              2014,  NA,               "species",
-  "Rilling_Insel_1998_Table1",         "RillingInsel",       1998,  NA,               "species",
-  "Stimpson_etal_2015_TableS1",        "Stimpson",           2015,  NA,               "species",
-  # DeCasien-extracted, restricted to structures the primaries DON'T provide.
-  # NB: the 62-63 NEOCORTEX is Rilling & Insel 1999 (ref 63), NOT the 1998 cerebellum paper.
-  "Barks_etal_2014_viaDeCasien",       "Barks",              2014,  NA,               "species",
-  "Rilling_Insel_1999_viaDeCasien",    "RillingInsel",       1999,  NA,               "species",
-  "Stimpson_etal_2015_viaDeCasien",    "Stimpson",           2015,  NA,               "species"
+  ~item,                                  ~team,                ~year,
+  "Stephan_etal_1970_Tables1-6",          "Stephan_collection", 1970,
+  "Stephan_etal_1981_Table1",             "Stephan_collection", 1981,
+  "Stephan_etal_1982_Table1",             "Stephan_collection", 1982,
+  "Stephan_etal_1984_Table1",             "Stephan_collection", 1984,
+  "Stephan_etal_1987_Table1",             "Stephan_collection", 1987,
+  "Frahm_etal_1982_Table2",               "Stephan_collection", 1982,
+  "Frahm_etal_1984_Table1",               "Stephan_collection", 1984,
+  "Frahm_Zilles_1994_Table1",             "Stephan_collection", 1994,
+  "Frahm_etal_1997_Table1",               "Stephan_collection", 1997,
+  "Frahm_etal_1998_Table1",               "Stephan_collection", 1998,
+  "Baron_etal_1983_Table1",               "Stephan_collection", 1983,
+  "Baron_etal_1987_Table1",               "Stephan_collection", 1987,
+  "Baron_etal_1988_Table1",               "Stephan_collection", 1988,
+  "Baron_etal_1990_Table1",               "Stephan_collection", 1990,
+  "Matano_etal_1985_a_Table1",            "Stephan_collection", 1985,
+  "Matano_etal_1985_b_Table1",            "Stephan_collection", 1985,
+  "Zilles_Rehkämper_1988_Table12-2",      "Stephan_collection", 1988,
+  "deSousa_etal_2010_Table1",             "Zilles",             2010,
+  "deSousa_etal_2013_Table1",             "Zilles",             2013,
+  "MacLeod_etal_2003_Table1",             "Zilles",             2003,
+  "MacLeod_etal_2003_Table2",             "Zilles",             2003,
+  "Bauernfeind_etal_2013_Table1",         "Zilles",             2013,
+  "Bauernfeind_etal_2013_Table2",         "Zilles",             2013,
+  "Bush_Allman_2003_Table1",              "Bush",               2003,
+  "Bush_Allman_2004_b_TABLE1",            "Bush",               2004,
+  "Smaers_etal_2011_SupplementaryTable1", "Zilles",             2011,
+  "Ashwell__2020_SupplementaryTable",     "Ashwell",            2020,
+  "Semendeferi_etal_1998_Table2",         "Zilles",             1998,
+  "Semendeferi_etal_2001_Table2",         "Zilles",             2001,
+  "Sherwood_etal_2005_Table1",            "Zilles",             2005,
+  "Barger_etal_2007_TABLE1",              "Zilles",             2007
+  # NOTE: this script compiles ONLY the canonical 30-table collection. The DeCasien-comparison
+  # sources (Sherwood 2004 _TABLEI, Barks 2014, Rilling & Insel 1998/1999, Stimpson 2015, and the
+  # *_viaDeCasien tables) are deliberately NOT merged in here — folding them in polluted the merge
+  # (cross-team averaging shifted great-ape values away from DeCasien's single-source figures).
+  # The merge-vs-DeCasien comparison lives in its own script:
+  #   DeCasien_Higham_2019/DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R
+  # which value-matches DeCasien's published numbers against volumes_unfiltered.csv / volumes_long.csv
+  # and so needs only THIS core merge, not those papers compiled in.
 )
 filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
 # Fallback encodings for items not yet given a row in __ReadMe.xlsx (the registry sheet is
 # maintained by hand to preserve its formula columns). Remove an entry once its row exists.
-enc_override <- c("Bauernfeind_etal_2013_Table2" = "10.1016%2Fj.jhevol.2012.12.003_Table2",
-                  "Stephan_etal_1970_Tables1-6" = "ISBN%3A0390672505_Tables1-6",
-                  # item names below differ in name/case from their __ReadMe.xlsx rows
+enc_override <- c(# item names below differ in name/case from their __ReadMe.xlsx rows
                   # (registry uses MacLeod_..._Table1 / Semendeferi_..._TABLE2), so the
                   # exact-match lookup returns NA -> resolve them here.
-                  "MacLeod_etal_2003_" = "10.1016%2Fs0047-2484(03)00028-9_Table1",
-                  "Semendeferi_etal_1998_Table2" = "10.1002%2F(SICI)1096-8644(199806)106%3A2%3C129%3A%3AAID-AJPA3%3E3.0.CO;2-L_TABLE2",
-                  "Semendeferi_etal_2001_Table2" = "10.1002%2F1096-8644(200103)114%3A3%3C224%3A%3AAID-AJPA1022%3E3.0.CO;2-I_TABLE2",
-                  # viaDeCasien sources: TSV filename == item name (not in __ReadMe.xlsx registry)
-                  "Rilling_Insel_1999_viaDeCasien" = "Rilling_Insel_1999_viaDeCasien",
-                  "Barks_etal_2014_viaDeCasien"    = "Barks_etal_2014_viaDeCasien",
-                  "Stimpson_etal_2015_viaDeCasien" = "Stimpson_etal_2015_viaDeCasien")
+  )
 read_item <- function(it) {
   # Match item names CASE-INSENSITIVELY (registry drifts e.g. Table2 vs TABLE2) and
   # strip stray spaces from the encoding (cloud-edit typos like "ISBN%3A 0390..."),
@@ -94,8 +102,13 @@ read_item <- function(it) {
   if (!is.na(enc) && nzchar(enc) && it %in% names(enc_override) &&
       !file.exists(file.path(base, "__Public/comparative-data", paste0(enc, ".tsv"))))
     enc <- enc_override[[it]]
-  read.table(file.path(base, "__Public/comparative-data", paste0(enc, ".tsv")),
-             header = TRUE, sep = "\t", stringsAsFactors = FALSE, check.names = FALSE)
+  # fail loudly instead of silently reading "NA.tsv" when nothing resolved
+  if (is.na(enc) || !nzchar(enc))
+    stop("read_item('", it, "'): no encoding (not in __ReadMe.xlsx 'Item name' and no enc_override). ",
+         "Add a registry row or an enc_override fallback.", call. = FALSE)
+  f <- file.path(base, "__Public/comparative-data", paste0(enc, ".tsv"))
+  if (!file.exists(f)) stop("read_item('", it, "'): TSV not found -> ", f, call. = FALSE)
+  read.table(f, header = TRUE, sep = "\t", stringsAsFactors = FALSE, check.names = FALSE)
 }
 
 ## 2 Standardized terms + 3 reshape/convert -> long (Species, Variable, Value) per paper ----
@@ -117,43 +130,49 @@ if (!is.null(lat_known) && nrow(lat_known)) {
                           bad$required_suffix, bad$Standardized_Term), collapse = "; "))
   else message("Laterality guard OK: ", nrow(lat_known), " one-side column(s) correctly suffixed.")
 }
-spkey <- read.csv(file.path(base, "_keys/Stephan/species_key.csv"), stringsAsFactors = FALSE)
+# Species-name normaliser (used by the step-4 curated-override matcher).
 nrm <- function(x) tolower(trimws(gsub("\\s+"," ", gsub("[._]"," ", x))))
-accepted <- function(tok, name) {
-  if (is.na(tok)) return(name)
-  k <- spkey[spkey$source_publication == tok, ]
-  i <- match(nrm(name), nrm(k$variant_name)); ifelse(is.na(i), name, k$accepted_name[i])
-}
 num <- function(x) suppressWarnings(as.numeric(gsub(",","", as.character(x))))
 
 paper_long <- function(row) {
   it <- row$item; df <- read_item(it); tmap <- terms %>% filter(Reference == it)
+
+  # Canonicalize column headers to the term map's Original_Term spelling up front. TSV headers drift
+  # in case/punctuation after re-encoding (e.g. nucleus_tractus_olfactorius_mm3 vs the term map's
+  # Nucleus_..._mm3), which would otherwise break the paper-specific reshapes below (they reference
+  # the term-map spelling) and the generic matcher. Columns absent from the term map are left as-is.
+  # Then fold a bare species / "Species name" header into "Species".
+  .ck <- function(x) tolower(gsub("[ ._]+", "", x))
+  .canon <- tmap$Original_Term[match(.ck(names(df)), .ck(tmap$Original_Term))]
+  names(df) <- ifelse(is.na(.canon), names(df), .canon)
+  .sp0 <- names(df)[tolower(names(df)) %in% c("species", "species name")]
+  if (length(.sp0)) names(df)[names(df) == .sp0[1]] <- "Species"
   # --- paper-specific reshapes (step 3) ---
   if (it == "Zilles_Rehkämper_1988_Table12-2") {                # structure-rows -> one Pongo row
-    z <- df %>% transmute(Species = accepted(row$token, Species_Zilles1988),
+    z <- df %>% transmute(Species = as.character(Species),   # raw; resolved in step 4
                           Variable = tmap$Standardized_Term[match(structure, tmap$Original_Term)],
                           Value = num(volume_mm3)) %>% filter(!is.na(Variable))
     return(z %>% mutate(Source = it, Team = row$team, Year = row$year))
   }
   if (it == "Bauernfeind_etal_2013_Table1") {                   # per-individual -> species means (Pongo merge), mg->g
-    df <- df %>% mutate(lab = ifelse(Species_Bauernfeind2013 %in% c("Pongo abelii","Pongo pygmaeus"),
-                                     "Pongo pygmaeus and Pongo abelii", Species_Bauernfeind2013))
+    df <- df %>% mutate(lab = ifelse(Species %in% c("Pongo abelii","Pongo pygmaeus"),
+                                     "Pongo pygmaeus and Pongo abelii", Species))
     meas <- c("granular_L_mm3","dysgranular_L_mm3","agranular_L_mm3","FI_L_mm3","total_insula_L_mm3","brain_volume_mm3","brain_mass_mg","body_mass_g")
-    spm <- df %>% group_by(Species_Bauernfeind2013, lab) %>% summarise(across(all_of(meas), ~mean(num(.x), na.rm=TRUE)), .groups="drop")
+    spm <- df %>% group_by(Species, lab) %>% summarise(across(all_of(meas), ~mean(num(.x), na.rm=TRUE)), .groups="drop")
     df  <- spm %>% group_by(lab) %>% summarise(across(all_of(meas), ~mean(.x, na.rm=TRUE)), .groups="drop") %>%
-           mutate(brain_mass_mg = brain_mass_mg/1000) %>% rename(Species_Bauernfeind2013 = lab)
+           mutate(brain_mass_mg = brain_mass_mg/1000) %>% rename(Species = lab)
   }
   if (it == "Bauernfeind_etal_2013_Table2") {                   # per-individual RIGHT insula -> species means (Pongo merge), already mm3
-    df <- df %>% mutate(lab = ifelse(Species_Bauernfeind2013 %in% c("Pongo abelii","Pongo pygmaeus"),
-                                     "Pongo pygmaeus and Pongo abelii", Species_Bauernfeind2013))
+    df <- df %>% mutate(lab = ifelse(Species %in% c("Pongo abelii","Pongo pygmaeus"),
+                                     "Pongo pygmaeus and Pongo abelii", Species))
     meas <- c("granular_R_mm3","dysgranular_R_mm3","agranular_R_mm3","FI_R_mm3","total_insula_R_mm3")
-    spm <- df %>% group_by(Species_Bauernfeind2013, lab) %>% summarise(across(all_of(meas), ~mean(num(.x), na.rm=TRUE)), .groups="drop")
+    spm <- df %>% group_by(Species, lab) %>% summarise(across(all_of(meas), ~mean(num(.x), na.rm=TRUE)), .groups="drop")
     df  <- spm %>% group_by(lab) %>% summarise(across(all_of(meas), ~mean(.x, na.rm=TRUE)), .groups="drop") %>%
-           rename(Species_Bauernfeind2013 = lab)
+           rename(Species = lab)
   }
-  if (it == "MacLeod_etal_2003_") {                             # per-individual -> species means, cm3->mm3
+  if (it %in% c("MacLeod_etal_2003_Table1", "MacLeod_etal_2003_Table2")) { # per-individual -> species means, cm3->mm3
     meas <- c("cerebellum_volume_cm3","vermis_volume_cm3","hemisphere_volume_cm3","brain_volume_cm3")
-    df <- df %>% group_by(species) %>% summarise(across(all_of(meas), ~mean(num(.x)*1000, na.rm=TRUE)), .groups="drop")
+    df <- df %>% group_by(Species) %>% summarise(across(all_of(meas), ~mean(num(.x)*1000, na.rm=TRUE)), .groups="drop")
   }
   if (it == "Bush_Allman_2003_Table1")                           # cm3 -> mm3
     df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
@@ -162,8 +181,8 @@ paper_long <- function(row) {
   if (it == "Smaers_etal_2011_SupplementaryTable1") {            # per-individual frontal -> species means of COMBINED L+R (cm3->mm3)
     fix <- c("Cercopithecus ascianus"="Cercopithecus ascanius","Cercocebus albigena"="Lophocebus albigena",
              "Procolobus badius"="Piliocolobus badius","Lagothrix lagotricha"="Lagothrix lagothricha")
-    df <- df %>% mutate(species = ifelse(species %in% names(fix), fix[species], species)) %>%
-      group_by(species) %>%
+    df <- df %>% mutate(Species = ifelse(Species %in% names(fix), fix[Species], Species)) %>%
+      group_by(Species) %>%
       summarise(frontal_white_total_cm3 = mean(num(frontal_white_total_cm3)*1000, na.rm = TRUE),
                 frontal_grey_total_cm3  = mean(num(frontal_grey_total_cm3) *1000, na.rm = TRUE), .groups = "drop")
   }
@@ -172,45 +191,92 @@ paper_long <- function(row) {
             ifelse(num(Nucleus_tractus_olfactorius_mm3) == 0, NA_real_, num(Nucleus_tractus_olfactorius_mm3)))
   if (it == "Barger_etal_2007_TABLE1") {                         # per-specimen amygdala subnuclei (both-hemisphere _total) -> species means; cm3 -> mm3
     meas <- c("hemispheres_cm3","AC_total","BLD_total","lateral_total","basal_total","accessory_basal_total")
-    df <- df %>% group_by(species) %>%
+    df <- df %>% group_by(Species) %>%
       summarise(across(all_of(meas), ~ mean(num(.x) * 1000, na.rm = TRUE)), .groups = "drop")
   }
-  if (it == "Sherwood_etal_2004_TABLEI") {                       # per-specimen great-ape volumes (cm3): fill species (NA = same as above),
-    meas <- c("Whole Brain","Neocortex","Hippocampus","Striatum","Thalamus","Cerebellum")  #  subspecies->binomial, species-mean, cm3->mm3
-    df <- df %>%
-      mutate(Species = na_if(str_squish(as.character(Species)), "NA")) %>%
-      fill(Species, .direction = "down") %>%
-      mutate(Species = word(Species, 1, 2)) %>%
-      group_by(Species) %>%
-      summarise(across(all_of(meas), ~ mean(num(.x) * 1000, na.rm = TRUE)), .groups = "drop")
-  }
-  if (it == "Barks_etal_2014_TABLE1") {                          # per-specimen gorilla brain volume (cm3): subspecies->binomial, species-mean, cm3->mm3
-    df <- df %>% mutate(species = word(str_squish(species), 1, 2)) %>%
-      group_by(species) %>%
-      summarise(`Brain volume (cm3)` = mean(num(`Brain volume (cm3)`) * 1000, na.rm = TRUE), .groups = "drop")
-  }
-  if (it == "Rilling_Insel_1998_Table1") {                       # one row/species; cc->mm3 (vol) and kg->g (body mass); harmonize Cercocebus
-    df <- df %>%
-      mutate(species = ifelse(species == "Cercocebus atys", "Cercocebus torquatus", species),
-             brain_volume_cc      = num(brain_volume_cc)      * 1000,
-             cerebellum_volume_cc = num(cerebellum_volume_cc) * 1000,
-             body_weight_kg       = num(body_weight_kg)       * 1000)
-  }
-  if (it == "Stimpson_etal_2015_TableS1") {                      # per-subject brain MASS (g): species-mean, g->mg
-    df <- df %>% group_by(species) %>%
-      summarise(brain_mass_g = mean(num(brain_mass_g) * 1000, na.rm = TRUE), .groups = "drop")
-  }
+  # (DeCasien-comparison reshapes — Sherwood 2004, Barks 2014, Rilling & Insel 1998, Stimpson 2015 —
+  #  removed with their tribble rows; they belong to the separate DeCasien comparison, not this merge.)
   # --- generic wide -> long via standardized terms ---
-  keep <- intersect(names(df), tmap$Original_Term)
-  df %>% transmute(Species = accepted(row$token, .data[[row$spcol]]),
+  # The species column is found from the term map (the Original_Term whose Standardized_Term ==
+  # "Species") — no hand-coded spcol. Raw species names are kept here and harmonized in step 4
+  # (NCBI + curated overrides). Excluding spcol from `keep` also stops num() from coercing the
+  # species NAMES to NA doubles (the old Sherwood_2004 "Species" -> <double> bind_rows crash).
+  # Species column: the up-front normalizer already renamed it to "Species"; fall back to the term-map
+  # Species row / a case-insensitive "species" column just in case. Error loudly if absent.
+  spcand <- tmap$Original_Term[tmap$Standardized_Term == "Species"]
+  spcol  <- spcand[spcand %in% names(df)][1]
+  if (is.na(spcol)) spcol <- names(df)[match(TRUE, tolower(names(df)) == "species")]
+  if (is.na(spcol)) spcol <- grep("^species", names(df), ignore.case = TRUE, value = TRUE)[1]
+  if (is.na(spcol)) stop("paper_long('", it, "'): no species column found. Columns: ",
+                         paste(names(df), collapse = ", "), call. = FALSE)
+  # Match data columns to term-map Original_Terms CASE/SEPARATOR-INSENSITIVELY: re-encoded TSVs drift
+  # in case/punctuation (e.g. corpus_geniculatum_laterale_mm3 vs Corpus_...). Exclude the species col.
+  ckey <- function(x) tolower(gsub("[ ._]+", "", x))
+  tkey <- ckey(tmap$Original_Term)
+  keep <- names(df)[ckey(names(df)) %in% tkey & names(df) != spcol]
+  if (!length(keep))
+    stop("paper_long('", it, "'): no measured columns matched the term map. df cols: ",
+         paste(names(df), collapse = ", "), call. = FALSE)
+  df %>% transmute(Species = as.character(.data[[spcol]]),
                    across(all_of(keep), num)) %>%
     pivot_longer(-Species, names_to="orig", values_to="Value") %>%
     filter(!is.na(Value)) %>%
-    mutate(Variable = tmap$Standardized_Term[match(orig, tmap$Original_Term)],
+    mutate(Variable = tmap$Standardized_Term[match(ckey(orig), tkey)],
            Source = it, Team = row$team, Year = row$year) %>%
     select(Species, Variable, Value, Source, Team, Year)
 }
 long <- bind_rows(lapply(seq_len(nrow(papers)), function(i) paper_long(papers[i, ])))
+
+## 4 Species resolution: NCBI backbone + curated, source-aware overrides ----
+## Mirrors ../__merging_cellcounts §4 (NCBI preferred names via taxizedb) but ADDS:
+##  (i)   curated project decisions WIN over NCBI (e.g. Gorilla sp., subspecies->binomial, synonyms);
+##  (ii)  resolution is SOURCE-AWARE — curated overrides are keyed by Reference (= item name) AND the
+##        raw variant name, so the same label can resolve differently in different papers;
+##  (iii) a reviewable mapping table is written (raw -> NCBI -> curated -> final, with flags);
+##  (iv)  variants that now collapse to one accepted name are aggregated/averaged in steps 5-6.
+library(taxizedb)
+raw  <- long %>% distinct(Source, Species) %>% rename(Species_raw = Species)
+uniq <- sort(unique(raw$Species_raw))
+
+# (a) NCBI backbone (source-independent): preferred scientific name per raw name (NA if unmatched)
+ncbi_ids <- name2taxid(uniq, out_type = "summary")
+ncbi <- tibble(
+  Species_raw = uniq,
+  NCBI_id = ncbi_ids$id[match(uniq, ncbi_ids$name)]
+)
+ncbi_name_vec <- taxid2name(unique(na.omit(ncbi$NCBI_id)), out_type = "summary")
+names(ncbi_name_vec) <- unique(na.omit(ncbi$NCBI_id))
+ncbi <- ncbi %>%
+  mutate(NCBI_name = unname(ncbi_name_vec[as.character(NCBI_id)]))
+
+# (b) curated overrides (source-aware), keyed by Reference (= item name) + variant name
+ov <- read.csv(file.path(base, "_keys/volumes_species_overrides.csv"), stringsAsFactors = FALSE) %>%
+  transmute(Source = Reference, key = nrm(variant_name), curated = accepted_name) %>%
+  distinct(Source, key, .keep_all = TRUE)
+
+# (c) resolve: curated WINS, else NCBI preferred, else the raw name (flagged)
+resolved <- raw %>%
+  mutate(key = nrm(Species_raw)) %>%
+  left_join(ov,   by = c("Source", "key")) %>%
+  left_join(ncbi, by = "Species_raw") %>%
+  mutate(Species_final = dplyr::coalesce(curated, NCBI_name, Species_raw),
+         name_source   = dplyr::case_when(!is.na(curated)   ~ "curated",
+                                          !is.na(NCBI_name) ~ "NCBI",
+                                          TRUE              ~ "unresolved_raw"),
+         flag_curated_overrides_ncbi = !is.na(curated) & !is.na(NCBI_name) & nrm(curated) != nrm(NCBI_name),
+         flag_unresolved             = is.na(curated) & is.na(NCBI_name)) %>%
+  select(-key)
+write_csv(resolved %>% arrange(Source, Species_raw), "volumes_source_species_ids.csv")
+if (any(resolved$flag_unresolved))
+  warning("Species resolution: ", sum(resolved$flag_unresolved), " (source, name) pair(s) had no ",
+          "curated override and no NCBI match -> kept raw. See volumes_source_species_ids.csv.")
+
+# (d) apply resolved accepted names back to the long table (source-aware)
+long <- long %>%
+  left_join(resolved %>% select(Source, Species_raw, Species_final),
+            by = c("Source", "Species" = "Species_raw")) %>%
+  mutate(Species = Species_final) %>% select(-Species_final)
+
 write_csv(long, "volumes_unfiltered.csv")
 is_mass <- function(v) v %in% c("Body_Mass.g","Brain_Mass.mg")
 
@@ -293,8 +359,9 @@ write_csv(flags, "volumes_flags.csv")
 
 volumes_wide <- volumes_long %>% pivot_wider(id_cols=Species, names_from=Variable, values_from=Value) %>% arrange(Species)
 write_csv(volumes_wide, "volumes_wide.csv")
+# inventory: which sources contributed each (resolved) species
 long %>% group_by(Species_Name = Species) %>% summarise(n_sources=n_distinct(Source), Sources=paste(sort(unique(Source)),collapse="; ")) %>%
-  write_csv("volumes_source_species_ids.csv")
+  write_csv("volumes_species_sources.csv")
 
 message(nrow(volumes_wide), " species x ", ncol(volumes_wide)-1, " variables from ", nrow(papers),
         " tables | flags: ", nrow(flags))

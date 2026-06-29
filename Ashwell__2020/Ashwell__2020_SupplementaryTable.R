@@ -3,7 +3,25 @@
 ## cerebellar (and related) volumes / surface areas per species.
 ## Snapshot -> clean.  Golden rule: the snapshot is frozen/faithful; cleaning happens here.
 
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Ashwell__2020")
+## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path                    # RStudio: Source
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path  # RStudio: Run
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
+})
+folder    <- dirname(.sp)                                # this paper's folder
+item_name <- tools::file_path_sans_ext(basename(.sp))    # = file name, matches __ReadMe.xlsx
+base      <- local({                                     # repo root; NA if run as a lone folder
+  d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+})
+setwd(folder)
 options(scipen = 999)
 
 suppressPackageStartupMessages({ library(readxl); library(dplyr); library(stringr) })
@@ -46,12 +64,12 @@ message("Ashwell: ", n_in, " snapshot rows -> ", nrow(clean), " species (",
         n_summary_dropped, " mean/SD summary rows dropped)")
 write.csv(clean, "Ashwell__2020_SupplementaryTable.csv", row.names = FALSE)
 
-## ---- also write the DOI-coded TSV to __Public/comparative-data/ (consumed by __merging_volumes) ----
-item_name <- "Ashwell__2020_SupplementaryTable"
-base      <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
-tsv_dir   <- file.path(base, "__Public/comparative-data")
-filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-enc <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+## ---- also write the DOI-coded TSV to __Public/comparative-data/ (consumed by __merging_volumes; skipped if shared repo absent) ----
+tsv_dir <- file.path(base, "__Public/comparative-data")
+enc <- if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {
+  filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+} else NA_character_
 if (is.na(enc) || !nzchar(enc)) {
   warning("No 'Item encoded' for '", item_name, "' in __ReadMe.xlsx; TSV skipped.")
 } else if (!dir.exists(path.expand(tsv_dir))) {

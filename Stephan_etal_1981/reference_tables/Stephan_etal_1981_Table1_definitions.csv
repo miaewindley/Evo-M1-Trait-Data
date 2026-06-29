@@ -1,6 +1,6 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
 Code_number_Stephan1981,species code (taxonomic order) in the Stephan/Frahm/Baron system,,,info,,,Stephan_etal_1981_Table1,,
-Species_Stephan1981,"species name as printed in Stephan, Frahm & Baron 1981",,,info,,,Stephan_etal_1981_Table1,,
+Species,"species name as printed in Stephan, Frahm & Baron 1981",,,info,,,Stephan_etal_1981_Table1,,
 Body_weight,body weight,Body_weight,Mass.g,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_Table1,Stephan code 1,
 Brain_weight,fresh brain weight,Brain_weight,Mass.mg,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_Table1,Stephan code 2,
 Ventricles,ventricular system,Ventricles,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Stephan_etal_1981_Table1,Stephan code 3,

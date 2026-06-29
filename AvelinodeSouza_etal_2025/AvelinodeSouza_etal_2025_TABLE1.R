@@ -1,9 +1,31 @@
 ## 0. PATHS ---------------------------------------------------------------
-library(here)
+
+## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path                    # RStudio: Source
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path  # RStudio: Run
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
+})
+folder <- paper_dir <- dirname(.sp)                                   # this paper's folder
+item_name <- table_name <- tools::file_path_sans_ext(basename(.sp))  # = file name (matches __ReadMe.xlsx)
+base <- dataset_root <- local({                                      # repo root; NA if run as a lone folder
+  d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+})
+setwd(folder)
+
 library(readxl)
-paper_dir <- here::here()                 # AvelinodeSouza_etal_2025
-dataset_root <- dirname(paper_dir)                   # Evo-M1-Trait-Data
-table_name   <- tools::file_path_sans_ext(basename(script_path))
+
+paper_dir    <- folder
+dataset_root <- base
+table_name   <- item_name
+
 # --- PDF SOURCE (manual, per your rule) ---
 pdf_file <- file.path(
   paper_dir,
@@ -89,14 +111,17 @@ item_encoded <- filecodes$`Item encoded`[
 ]
 # Local CSV (paper folder)
 write.csv(final.dataframe, final_csv, row.names = FALSE)
-# Public TSV
-dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
-write.table(
-  final.dataframe,
-  file = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
-  sep = "\t",
-  row.names = FALSE
-)
+message("Wrote ", final_csv, "  (", nrow(final.dataframe), " rows)")
+# Public TSV (only if a DOI code was found for this item in __ReadMe.xlsx)
+if (length(item_encoded) != 1L || is.na(item_encoded) || !nzchar(item_encoded)) {
+  warning("No 'Item encoded' (DOI) found for '", table_name,
+          "' in __ReadMe.xlsx; TSV copy skipped.")
+} else {
+  dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
+  tsv_path <- file.path(public_tsv_dir, paste0(item_encoded, ".tsv"))
+  write.table(final.dataframe, file = tsv_path, sep = "\t", row.names = FALSE)
+  message("Wrote ", tsv_path)
+}
 # ------------- EDIT HERE IF YOU WANT DIFFERENT REGION TOKENS -------------
 colnames_vec<-colnames(result_df)
 .region_map <- c(

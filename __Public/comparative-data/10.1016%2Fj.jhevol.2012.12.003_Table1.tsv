@@ -1,4 +1,4 @@
-"Species_Bauernfeind2013"	"Individual"	"Collection"	"section_thickness_mm"	"age"	"sex"	"body_mass_g"	"social_group_size"	"brain_mass_mg"	"brain_volume_mm3"	"granular_L_mm3"	"dysgranular_L_mm3"	"agranular_L_mm3"	"FI_L_mm3"	"total_insula_L_mm3"
+"Species"	"Individual"	"Collection"	"section_thickness_mm"	"age"	"sex"	"body_mass_g"	"social_group_size"	"brain_mass_mg"	"brain_volume_mm3"	"granular_L_mm3"	"dysgranular_L_mm3"	"agranular_L_mm3"	"FI_L_mm3"	"total_insula_L_mm3"
 "Homo sapiens"	"H9-88a"	"UCSD"	35	21	"Male"	72100	148	1639600	1582600	2356	3321	1518	539	7734
 "Homo sapiens"	"MU-88-65a"	"Yakovlev-Haleem"	35	50	"Male"	72100	148	1483000	1431500	1410	2709	1781	562	6463
 "Homo sapiens"	"SN207-84a"	"UCSD"	35	75	"Male"	72100	148	1349000	1302100	2246	2971	1342	349	6908

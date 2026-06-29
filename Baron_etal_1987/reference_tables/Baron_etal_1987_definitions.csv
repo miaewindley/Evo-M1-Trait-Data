@@ -6,5 +6,5 @@ TOL,tuberculum olfactorium (olfactory tubercle),OlfactoryTubercle,Vol.mm3,,prima
 TRL,tractus olfactorius lateralis (lateral olfactory tract),LateralOlfactoryTract,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Baron_etal_1987_Table1,,
 COA,commissura anterior (anterior commissure),AnteriorCommissure,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Baron_etal_1987_Table1,,
 SIN,substantia innominata,SubstantiaInnominata,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Baron_etal_1987_Table1,,
-Species_Baron1987,species name as printed in Baron et al. 1987 (Part VI),,,info,,,Baron_etal_1987_Table1,,
+Species,species name as printed in Baron et al. 1987 (Part VI),,,info,,,Baron_etal_1987_Table1,,
 Species,current accepted species name,,,info,,,Baron_etal_1987_Table1,from reference_tables/Baron_etal_1987_species_crosswalk.csv (MDD v2.4),

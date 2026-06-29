@@ -18,13 +18,8 @@
 suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr)
 })
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_etal_1982/comparison")
-}
-}
-
+## Set working directory to this script folder
+setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_etal_1982/comparison")
 snapshot_file     <- "../Frahm_etal_1982_Table2_snapshot.xlsx"
 snapshot_sheet    <- "Table2"
 comparison_file   <- "Frahm_1982.csv"
@@ -58,7 +53,7 @@ snap <- sdat %>%
                                           parse_value(str_match(species_disp, "\\((\\d+)\\)\\s*$")[, 2]), 1))
 
 # ONE row per physical CSV entry (the file repeats some info). The CSV's
-# Species_Frahm1982 has OCR artifacts, so match each snapshot species to a CSV
+# Species has OCR artifacts, so match each snapshot species to a CSV
 # row by EITHER the 1982 name OR the canonical Species -- but resolve to a single
 # row id so the alternate key never produces a phantom "csv_only" duplicate.
 comp_raw <- read_csv(comparison_file, col_types = cols(.default = col_character()), na = c("")) %>%
@@ -66,10 +61,10 @@ comp_raw <- read_csv(comparison_file, col_types = cols(.default = col_character(
          !is.na(.data[[csv_col[["total_neocortex"]]]]), .data[[csv_col[["total_neocortex"]]]] != "") %>%
   mutate(.cid = row_number())
 snap <- snap %>% mutate(.cid = dplyr::coalesce(
-  comp_raw$.cid[match(species_key, norm_label(comp_raw$Species_Frahm1982))],
+  comp_raw$.cid[match(species_key, norm_label(comp_raw$Species))],
   comp_raw$.cid[match(species_key, norm_label(comp_raw$Species))]))
 comp <- comp_raw %>% transmute(.cid,
-  species_csv = str_squish(dplyr::coalesce(Species_Frahm1982, Species)),
+  species_csv = str_squish(dplyr::coalesce(Species, Species)),
   total_neocortex_csv = parse_value(.data[[csv_col[["total_neocortex"]]]]),
   white_matter_csv    = parse_value(.data[[csv_col[["white_matter"]]]]),
   grey_matter_csv     = parse_value(.data[[csv_col[["grey_matter"]]]]),

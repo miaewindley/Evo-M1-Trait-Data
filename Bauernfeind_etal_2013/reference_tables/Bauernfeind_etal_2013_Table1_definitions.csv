@@ -1,5 +1,5 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
-Species_Bauernfeind2013,species as named in Bauernfeind et al. 2013 (full name on the first individual; abbreviated thereafter in the print),,,info,,,Bauernfeind_etal_2013_Table1,abbreviated names are expanded by the R script; taxonomy applied later via ../_keys/Stephan/,
+Species,species as named in Bauernfeind et al. 2013 (full name on the first individual; abbreviated thereafter in the print),,,info,,,Bauernfeind_etal_2013_Table1,abbreviated names are expanded by the R script; taxonomy applied later via ../_keys/Stephan/,
 Individual,specimen identifier as printed (trailing a/b/c are the table's method/availability markers),,,info,,,Bauernfeind_etal_2013_Table1,a = StereoInvestigator; b = ImageJ; c = left hemisphere unavailable,
 Collection,brain collection of origin,,,info,,,Bauernfeind_etal_2013_Table1,UCSD / Yakovlev-Haleem / GAAP / Stephan,
 section_thickness_mm,histological section sampling interval in mm,,,info,,,Bauernfeind_etal_2013_Table1,Table 1 column,

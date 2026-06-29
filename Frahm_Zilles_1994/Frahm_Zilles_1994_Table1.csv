@@ -1,4 +1,4 @@
-"Species_Frahm1994","body_weight_g","hippocampus_total_mm3","HP_HS_fibers_mm3","hippocampus_retrocommissuralis_mm3","subiculum_mm3","CA1_mm3","CA2_mm3","CA3_mm3","hilus_mm3","fascia_dentata_mm3"
+"Species","body_weight_g","hippocampus_total_mm3","HP_HS_fibers_mm3","hippocampus_retrocommissuralis_mm3","subiculum_mm3","CA1_mm3","CA2_mm3","CA3_mm3","hilus_mm3","fascia_dentata_mm3"
 "Tenrec ecaudatus",852,147.12,22.59,124.53,7.5,32.11,6.49,39.7,8,30.73
 "Setifer setosus",237,96.57,11.54,85.03,5.83,21.24,5.67,25.79,6.63,19.87
 "Hemicentetes semispinosus",116,63.11,10.35,52.76,1.34,12.1,2.81,19.03,3.32,14.16

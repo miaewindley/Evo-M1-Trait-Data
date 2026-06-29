@@ -1,4 +1,4 @@
-key,Species_Stephan1981,col,snap,csv_col,csv,match
+key,Species,col,snap,csv_col,csv,match
 solenodonparadoxus,Solenodon paradoxus,Body_weight,900,Body_weight,900,TRUE
 solenodonparadoxus,Solenodon paradoxus,Brain_weight,4670,Brain_weight,4670,TRUE
 solenodonparadoxus,Solenodon paradoxus,Ventricles,56.4,Ventricles,56.4,TRUE

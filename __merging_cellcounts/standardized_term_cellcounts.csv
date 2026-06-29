@@ -1,5 +1,5 @@
 Original_Term,Reference,Standardized_Term
-Species name,AvelinodeSouza_etal_2025_TABLE1,Species
+Species,AvelinodeSouza_etal_2025_TABLE1,Species
 "Whole brain_Mass, g",AvelinodeSouza_etal_2025_TABLE1,WholeBrain_Mass.g
 "Cerebral cortex (including Hp + amygdala)_Mass, g",AvelinodeSouza_etal_2025_TABLE1,CerebralCortex_Mass.g
 "Cerebral cortical grey matter_Mass, g",AvelinodeSouza_etal_2025_TABLE1,CerebralCortexGrey_Mass.g
@@ -198,7 +198,7 @@ RoB_N,DosSantos_etal_2020_Table1,RoB_N.n
 RoB_N/mg,DosSantos_etal_2020_Table1,RoB_N.p.mg
 RoB_No. of samples,DosSantos_etal_2020_Table1,RoB_S.n
 RoB_Structure mass (g),DosSantos_etal_2020_Table1,RoB_Mass.g
-Species name,DosSantos_etal_2020_Table1,Species
+Species,DosSantos_etal_2020_Table1,Species
 Br_I/C,DosSantos_etal_2020_unpublished,WholeBrain_I.p.C
 Cb_I/C,DosSantos_etal_2020_unpublished,Cerebellum_I.p.C
 Ctx_I/C,DosSantos_etal_2020_unpublished,CerebralCortexNoHippocampus_I.p.C

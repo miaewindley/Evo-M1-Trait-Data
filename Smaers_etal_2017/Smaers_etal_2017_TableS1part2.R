@@ -15,16 +15,31 @@
 # Outputs: Smaers_etal_2017_TableS1part2.csv             one row per species (10)
 #          <DOI>_TableS1_part2_surfacearea.tsv in __Public/comparative-data/
 
+## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path                    # RStudio: Source
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path  # RStudio: Run
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
+})
+folder <- paper_dir <- dirname(.sp)                                   # this paper's folder
+item_name <- table_name <- tools::file_path_sans_ext(basename(.sp))  # = file name (matches __ReadMe.xlsx)
+base <- dataset_root <- local({                                      # repo root; NA if run as a lone folder
+  d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+})
+setwd(folder)
+
 suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(stringr)
 })
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Smaers_etal_2017")
-}
-}
-
+## Set working directory to this script folder
+setwd(folder)
 snapshot_file  <- "Smaers_etal_2017_TableS1part2_snapshot.xlsx"
 snapshot_sheet <- "surface_area"
 output_file    <- "Smaers_etal_2017_TableS1part2.csv"
@@ -52,14 +67,14 @@ final.dataframe <- dat %>%
 options(scipen = 999)
 
 ## ---- SAVE: local CSV + DOI-named TSV (named from __ReadMe.xlsx 'Item encoded') ----
-item_name <- tryCatch(gsub("\\.R$", "", basename(rstudioapi::getActiveDocumentContext()$path)),
+item_name <- tryCatch(gsub("\\.R$", "", basename(.sp)),
                       error = function(e) tools::file_path_sans_ext(output_file))
 if (is.null(item_name) || !nzchar(item_name)) item_name <- tools::file_path_sans_ext(output_file)
 write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
 message("Wrote ", item_name, ".csv  (", nrow(final.dataframe), " rows)")
 
-readme_file <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx"
-tsv_dir     <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/"
+readme_file <- file.path(base, "__ReadMe.xlsx")
+tsv_dir     <- paste0(file.path(base, "__Public", "comparative-data"), "/")
 filecodes    <- read_excel(readme_file, sheet = "Sheet1")
 # __ReadMe 'Item name' is a formula that strips spaces & underscores from the Item
 # number (e.g. "Table S1 part2 surface area" -> "...TableS1part2surfacearea"), so match

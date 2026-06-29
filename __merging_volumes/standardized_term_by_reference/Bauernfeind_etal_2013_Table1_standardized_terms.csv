@@ -1,5 +1,5 @@
 Original_Term,Reference,Standardized_Term
-Species_Bauernfeind2013,Bauernfeind_etal_2013_Table1,Species
+Species,Bauernfeind_etal_2013_Table1,Species
 body_mass_g,Bauernfeind_etal_2013_Table1,Body_Mass.g
 brain_mass_mg,Bauernfeind_etal_2013_Table1,Brain_Mass.mg
 brain_volume_mm3,Bauernfeind_etal_2013_Table1,Total_brain_net_volume_Vol.mm3

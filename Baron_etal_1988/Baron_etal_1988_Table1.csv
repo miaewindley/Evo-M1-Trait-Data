@@ -1,4 +1,4 @@
-"Species_Baron1988","VC","VI","VL","VM","VS"
+"Species","VC","VI","VL","VM","VS"
 "Alouatta seniculus",76.8,18.8,15.6,26.6,15.8
 "Aotus trivirgatus",51.9,11,9.54,20.7,10.7
 "Erinaceus algirus",15.3,4.68,2.35,6.29,1.93
@@ -60,7 +60,7 @@
 "Saguinus midas tamarin",33.1,7.74,6.5,12.3,6.59
 "Saguinus oedipus",35.2,8.8,7.02,14,5.42
 "Saimiri sciureus",57.1,15.3,11.6,20.5,9.74
-"Scutisorex<U+00CA>somereni",3.55,1.07,0.613,1.42,0.448
+"ScutisorexÊsomereni",3.55,1.07,0.613,1.42,0.448
 "Setifer setosus",7.28,2.04,1.1,2.74,1.4
 "Solenodon paradoxus",21.8,7.2,2.9,8.7,3
 "Sorex araneus",1.28,0.265,0.263,0.537,0.218

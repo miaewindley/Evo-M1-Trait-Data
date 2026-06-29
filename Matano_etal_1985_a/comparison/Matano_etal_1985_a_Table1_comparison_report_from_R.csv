@@ -2,34 +2,43 @@ status,species_snapshot,species_csv,n_measure_mismatch,species_key,TCN_snap,MCN_
 matched_by_species,Alouatta seniculus,Alouatta seniculus,0,alouatta seniculus,113.79,27.47,26.57,59.75,6400,2,1,113.79,27.47,26.57,59.75,6400,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Aotus trivirgatus,Aotus trivirgatus,0,aotus trivirgatus,41.449999999999996,13.01,11.42,17.02,830,2,2,41.449999999999996,13.01,11.42,17.02,830,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Ateles geoffroyi,Ateles geoffroyi,0,ateles geoffroyi,209.17,34.63,59.75,114.79,8000,1,3,209.17,34.63,59.75,114.79,8000,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
-matched_by_species,Avahi l. laniger,Avahi l. laniger,0,avahi l laniger,37.89,12.15,11.28,14.46,1285,1,4,37.89,12.15,11.28,14.46,1285,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
-matched_by_species,Avahi l. occidentalis,Avahi l. occidentalis,0,avahi l occidentalis,29.66,8.18,10.18,11.3,860,1,5,29.66,8.18,10.18,11.3,860,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+snapshot_only_not_in_csv,Avahi l. laniger,NA,6,avahi l laniger,37.89,12.15,11.28,14.46,1285,1,NA,NA,NA,NA,NA,NA,NA,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+snapshot_only_not_in_csv,Avahi l. occidentalis,NA,6,avahi l occidentalis,29.66,8.18,10.18,11.3,860,1,NA,NA,NA,NA,NA,NA,NA,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+csv_only_not_in_snapshot,NA,Avahi laniger,6,NA,NA,NA,NA,NA,NA,NA,4,37.89,12.15,11.28,14.46,1285,1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+csv_only_not_in_snapshot,NA,Avahi occidentalis,6,NA,NA,NA,NA,NA,NA,NA,5,29.66,8.18,10.18,11.3,860,1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 matched_by_species,Callicebus moloch,Callicebus moloch,0,callicebus moloch,61.41,20.7,19.47,21.24,900,2,6,61.41,20.7,19.47,21.24,900,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Callithrix jacchus,Callithrix jacchus,0,callithrix jacchus,20.959999999999997,7.59,5.44,7.930000000000001,280,2,7,20.959999999999997,7.59,5.44,7.930000000000001,280,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
-matched_by_species,Cebuella pygmaea,Cebuella pygmaea,0,cebuella pygmaea,11.48,3.9299999999999997,3.2,4.35,120,2,8,11.48,3.9299999999999997,3.2,4.35,120,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+csv_only_not_in_snapshot,NA,Callithrix pygmaea,6,NA,NA,NA,NA,NA,NA,NA,8,11.48,3.9299999999999997,3.2,4.35,120,2,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+snapshot_only_not_in_csv,Cebuella pygmaea,NA,6,cebuella pygmaea,11.48,3.9299999999999997,3.2,4.35,120,2,NA,NA,NA,NA,NA,NA,NA,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 matched_by_species,Cebus albifrons,Cebus albifrons,0,cebus albifrons,173.18,34.68,38.980000000000004,99.52,3100,1,9,173.18,34.68,38.98,99.52,3100,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
-matched_by_species,Cercocebus albigena,Cercocebus albigena,0,cercocebus albigena,232.63,44.7,74.6,113.33,7900,2,30,232.63,44.7,74.6,113.33,7900,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+snapshot_only_not_in_csv,Cercocebus albigena,NA,6,cercocebus albigena,232.63,44.7,74.6,113.33,7900,2,NA,NA,NA,NA,NA,NA,NA,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 matched_by_species,Cercopithecus ascanius,Cercopithecus ascanius,0,cercopithecus ascanius,143.98,34.61,41.7,67.66999999999999,3400,2,10,143.98000000000002,34.61,41.7,67.66999999999999,3400,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Cercopithecus mitis,Cercopithecus mitis,0,cercopithecus mitis,171.16,34.23000000000001,54.55,82.38,6300,1,11,171.16,34.230000000000004,54.55,82.38,6300,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Cheirogaleus major,Cheirogaleus major,0,cheirogaleus major,19.45,5.6499999999999995,3.8499999999999996,9.950000000000001,450,2,12,19.45,5.6499999999999995,3.8499999999999996,9.950000000000001,450,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Cheirogaleus medius,Cheirogaleus medius,0,cheirogaleus medius,9.450000000000001,3.24,1.94,4.27,177,1,13,9.450000000000001,3.24,1.94,4.2700000000000005,177,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
-matched_by_species,Colobus badius,Colobus badius,0,colobus badius,190.92000000000002,34.64,57.760000000000005,98.52,7000,2,41,190.92000000000002,34.64,57.760000000000005,98.52,7000,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+snapshot_only_not_in_csv,Colobus badius,NA,6,colobus badius,190.92000000000002,34.64,57.760000000000005,98.52,7000,2,NA,NA,NA,NA,NA,NA,NA,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 matched_by_species,Crocidura flavescens,Crocidura flavescens,0,crocidura flavescens,1.1700000000000002,0.27,0.42000000000000004,0.47000000000000003,33.1,1,14,1.1700000000000002,0.27,0.42000000000000004,0.47000000000000003,33.1,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
-matched_by_species,Crocidura r. russula,Crocidura r. russula,0,crocidura r russula,0.5800000000000001,0.12000000000000001,0.23,0.23,11.1,1,15,0.58,0.12000000000000001,0.23,0.23,11.1,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
-matched_by_species,Daubentonia madagasc.,Daubentonia madagasc.,0,daubentonia madagasc,126.08,28.939999999999998,36.11,61.03,2800,1,16,126.08,28.939999999999998,36.11,61.03,2800,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+snapshot_only_not_in_csv,Crocidura r. russula,NA,6,crocidura r russula,0.5800000000000001,0.12000000000000001,0.23,0.23,11.1,1,NA,NA,NA,NA,NA,NA,NA,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+csv_only_not_in_snapshot,NA,Crocidura russula,6,NA,NA,NA,NA,NA,NA,NA,15,0.58,0.12000000000000001,0.23,0.23,11.1,1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+snapshot_only_not_in_csv,Daubentonia madagasc.,NA,6,daubentonia madagasc,126.08,28.939999999999998,36.11,61.03,2800,1,NA,NA,NA,NA,NA,NA,NA,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+csv_only_not_in_snapshot,NA,Daubentonia madagascariensis,6,NA,NA,NA,NA,NA,NA,NA,16,126.08,28.939999999999998,36.11,61.03,2800,1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 matched_by_species,Echinops telfairi,Echinops telfairi,0,echinops telfairi,1.71,0.39,0.8700000000000001,0.46,87.5,1,17,1.71,0.39,0.8700000000000001,0.46,87.5,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Erinaceus europaeus,Erinaceus europaeus,0,erinaceus europaeus,12.65,3.3,5.53,3.8299999999999996,860,1,18,12.65,3.3,5.53,3.8299999999999996,860,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Erythrocebus patas,Erythrocebus patas,0,erythrocebus patas,295.0899999999999,73.71,95.07,126.31,7800,2,19,295.09,73.71000000000001,95.07,126.31,7800,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+csv_only_not_in_snapshot,NA,Eulemur fulvus,6,NA,NA,NA,NA,NA,NA,NA,20,86.28,26.650000000000002,27.58,32.05,1400,2,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 matched_by_species,Galago senegalensis,Galago senegalensis,0,galago senegalensis,12.6,4.430000000000001,3.77,4.4,186,2,21,12.6,4.430000000000001,3.77,4.4,186,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Galagoides demidoff,Galagoides demidoff,0,galagoides demidoff,8.219999999999999,3.08,2.08,3.06,81,2,22,8.219999999999999,3.08,2.08,3.06,81,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
-matched_by_species,Gorilla gorilla,Gorilla gorilla,0,gorilla gorilla,740.4,93.44000000000001,112.36,534.6,105000,2,23,740.4,93.44000000000001,112.36,534.6,105000,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
-matched_by_species,Hemicentetes semispin.,Hemicentetes semispin.,0,hemicentetes semispin,3.23,0.55,1.52,1.1599999999999997,110,1,24,3.23,0.55,1.52,1.1600000000000001,110,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+snapshot_only_not_in_csv,Gorilla gorilla,NA,6,gorilla gorilla,740.4,93.44000000000001,112.36,534.6,105000,2,NA,NA,NA,NA,NA,NA,NA,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+csv_only_not_in_snapshot,NA,Gorilla sp.,6,NA,NA,NA,NA,NA,NA,NA,23,740.4,93.44000000000001,112.36,534.6,105000,2,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+snapshot_only_not_in_csv,Hemicentetes semispin.,NA,6,hemicentetes semispin,3.23,0.55,1.52,1.1599999999999997,110,1,NA,NA,NA,NA,NA,NA,NA,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+csv_only_not_in_snapshot,NA,Hemicentetes semispinosus,6,NA,NA,NA,NA,NA,NA,NA,24,3.23,0.55,1.52,1.1600000000000001,110,1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 matched_by_species,Homo sapiens,Homo sapiens,0,homo sapiens,1513.78,156.4,190.48000000000002,1166.9,65000,2,25,1513.78,156.4,190.48000000000002,1166.9,65000,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Hylobates lar,Hylobates lar,0,hylobates lar,242.09,35.410000000000004,65.6,141.08,5700,1,26,242.09,35.41,65.6,141.08,5700,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
-matched_by_species,Indri indri,lndri indri,0,indri indri,141.3,38.03,46.96,56.309999999999995,6250,2,27,141.3,38.03,46.96,56.309999999999995,6250,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+matched_by_species,Indri indri,Indri indri,0,indri indri,141.3,38.03,46.96,56.309999999999995,6250,2,27,141.3,38.03,46.96,56.309999999999995,6250,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Lagothrix lagothricha,Lagothrix lagothricha,0,lagothrix lagothricha,212.95000000000002,44.15,60.230000000000004,108.57,5200,2,28,212.95000000000002,44.15,60.230000000000004,108.57,5200,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
-matched_by_species,Lemur fulvus,Lemur fulvus,0,lemur fulvus,86.28,26.650000000000002,27.58,32.050000000000004,1400,2,20,86.28,26.650000000000002,27.58,32.05,1400,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+snapshot_only_not_in_csv,Lemur fulvus,NA,6,lemur fulvus,86.28,26.650000000000002,27.58,32.050000000000004,1400,2,NA,NA,NA,NA,NA,NA,NA,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 matched_by_species,Lepilemur ruficaudatus,Lepilemur ruficaudatus,0,lepilemur ruficaudatus,23.07,7.31,6.41,9.350000000000001,915,1,29,23.07,7.31,6.41,9.350000000000001,915,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+csv_only_not_in_snapshot,NA,Lophocebus albigena,6,NA,NA,NA,NA,NA,NA,NA,30,232.63,44.7,74.6,113.33,7900,2,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 matched_by_species,Loris tardigradus,Loris tardigradus,0,loris tardigradus,17.98999999999999,6.6499999999999995,5.58,5.76,322,2,31,17.99,6.6499999999999995,5.58,5.76,322,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Macaca mulatta,Macaca mulatta,0,macaca mulatta,235.31,53.24,75.13,106.94000000000001,7800,2,32,235.31,53.24,75.13,106.94000000000001,7800,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Microcebus murinus,Microcebus murinus,0,microcebus murinus,4.74,1.49,1.1399999999999997,2.11,54,2,33,4.74,1.49,1.1400000000000001,2.11,54,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
@@ -40,6 +49,7 @@ matched_by_species,Otolemur crassicaudatus,Otolemur crassicaudatus,0,otolemur cr
 matched_by_species,Pan troglodytes,Pan troglodytes,0,pan troglodytes,601.42,58.32,87.27,455.83,46000,1,38,601.42,58.32,87.27,455.83,46000,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Papio anubis,Papio anubis,0,papio anubis,379.04,58.78,99.91000000000001,220.35000000000002,25000,2,39,379.04,58.78,99.91000000000001,220.35000000000002,25000,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Perodicticus potto,Perodicticus potto,0,perodicticus potto,29.439999999999998,8.76,8.43,12.25,1150,2,40,29.439999999999998,8.76,8.43,12.25,1150,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+csv_only_not_in_snapshot,NA,Piliocolobus badius,6,NA,NA,NA,NA,NA,NA,NA,41,190.92000000000002,34.64,57.760000000000005,98.52,7000,2,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 matched_by_species,Pithecia monachus,Pithecia monachus,0,pithecia monachus,109.36,23.91,31.779999999999998,53.67,1500,2,42,109.36,23.91,31.779999999999998,53.67,1500,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Propithecus verreauxi,Propithecus verreauxi,0,propithecus verreauxi,97.11999999999999,26.72,30.939999999999998,39.46,3480,2,43,97.11999999999999,26.72,30.939999999999998,39.46,3480,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Pygathrix nemaeus,Pygathrix nemaeus,0,pygathrix nemaeus,265.75,47.94,80.76,137.05,7500,1,44,265.75,47.94,80.76,137.05,7500,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
@@ -52,7 +62,8 @@ matched_by_species,Sorex araneus,Sorex araneus,0,sorex araneus,0.580000000000000
 matched_by_species,Sorex minutus,Sorex minutus,0,sorex minutus,0.35,0.09,0.13,0.13,4.42,1,51,0.35,0.09,0.13,0.13,4.42,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 csv_only_not_in_snapshot,NA,Spalax ehrenbergi,1,NA,NA,NA,NA,NA,NA,NA,52,9.360000000000001,NA,NA,NA,NA,NA,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Suncus murinus,Suncus murinus,0,suncus murinus,1.06,0.23,0.38,0.44,33,1,53,1.06,0.23,0.38,0.44,33,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
-matched_by_species,Tarsius spp.,Tarsius spp.,0,tarsius spp,8.06,2.8699999999999997,1.82,3.3699999999999997,125,4,54,8.06,2.8699999999999997,1.82,3.3699999999999997,125,4,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
+csv_only_not_in_snapshot,NA,Tarsius sp.,6,NA,NA,NA,NA,NA,NA,NA,54,8.06,2.8699999999999997,1.82,3.3699999999999997,125,4,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+snapshot_only_not_in_csv,Tarsius spp.,NA,6,tarsius spp,8.06,2.8699999999999997,1.82,3.3699999999999997,125,4,NA,NA,NA,NA,NA,NA,NA,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 matched_by_species,Tenrec ecaudatus,Tenrec ecaudatus,0,tenrec ecaudatus,9.82,2.06,4.430000000000001,3.3299999999999996,832,1,55,9.82,2.06,4.430000000000001,3.3299999999999996,832,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Tupaia glis,Tupaia glis,0,tupaia glis,12.46,3.9299999999999997,3.4,5.13,170,2,56,12.46,3.9299999999999997,3.4,5.13,170,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE
 matched_by_species,Urogale everetti,Urogale everetti,0,urogale everetti,15.07,4.13,3.94,7,275,1,57,15.07,4.13,3.94,7,275,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE

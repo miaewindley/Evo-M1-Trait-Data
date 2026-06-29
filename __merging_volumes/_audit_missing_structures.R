@@ -9,7 +9,26 @@
 
 library(tidyverse)
 
-repo <- "C:/Users/michaelproulx/Desktop/Evo-M1-Trait-Data"
+## ---- paths: self-contained (Rscript or RStudio); discovers the repo root ----
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path                    # RStudio: Source
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path  # RStudio: Run
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
+})
+folder <- dirname(.sp)                                    # this script's folder (__merging_volumes)
+base   <- local({                                         # repo root (anchored on __ReadMe.xlsx)
+  d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+})
+if (is.na(base)) stop("Project root not found (no __ReadMe.xlsx above this script); this whole-repo audit needs the full project.", call. = FALSE)
+setwd(folder)
+repo <- base                                              # project root (discovered, not hardcoded)
 termdir <- file.path(repo, "__merging_volumes", "standardized_term_by_reference")
 
 # All definitions files in the repo (skip the cellcount archive).

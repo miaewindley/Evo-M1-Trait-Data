@@ -3,7 +3,25 @@
 ##  in the human and ape brain."  Table 1 (per-specimen volumes, cm3).
 ## Snapshot -> clean. Golden rule: the snapshot is frozen/faithful; cleaning happens here.
 
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Barger_etal_2007")
+## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path                    # RStudio: Source
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path  # RStudio: Run
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
+})
+folder    <- dirname(.sp)                                # this paper's folder
+item_name <- tools::file_path_sans_ext(basename(.sp))   # = file name, matches __ReadMe.xlsx
+base      <- local({                                     # repo root; NA if run as a lone folder
+  d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+})
+setwd(folder)
 options(scipen = 999)
 
 raw <- read.csv("Barger_etal_2007_Table1_snapshot.csv", check.names = FALSE,
@@ -59,10 +77,11 @@ write.csv(clean, "Barger_etal_2007_Table1.csv", row.names = FALSE)
 ## The volume merge reads per-specimen rows and aggregates to species means (cm3 -> mm3) itself,
 ## using AC_total -> Amygdala_Vol.mm3. Keep item_name == the "Item name" in __ReadMe.xlsx.
 item_name <- "Barger_etal_2007_TABLE1"
-base      <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
 tsv_dir   <- file.path(base, "__Public/comparative-data")
-filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-enc <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+enc <- if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {
+  fc <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  fc$"Item encoded"[match(item_name, fc$"Item name")]
+} else NA_character_
 if (is.na(enc) || !nzchar(enc)) {
   warning("No 'Item encoded' for '", item_name, "' in __ReadMe.xlsx; TSV skipped.")
 } else if (!dir.exists(path.expand(tsv_dir))) {

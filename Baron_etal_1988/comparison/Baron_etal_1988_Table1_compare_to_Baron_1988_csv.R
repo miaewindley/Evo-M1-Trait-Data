@@ -11,13 +11,8 @@
 suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr)
 })
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1988/comparison")
-}
-}
-
+## Set working directory to this script folder
+setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1988/comparison")
 snapshot_file     <- "../Baron_etal_1988_Table1_snapshot.xlsx"
 snapshot_sheet    <- "Table1_snapshot"
 comparison_file   <- "Baron_1988.csv"
@@ -53,7 +48,7 @@ comp <- read_csv(comparison_file, col_types = cols(.default = col_character()), 
   filter(!str_detect(replace_na(Species, ""), "^AAAA_")) %>%
   rename(any_of(setNames(names(full_to_code), full_to_code))) %>%
   filter(!is.na(VC)) %>%
-  transmute(species_key = norm_label(Species_Baron1988), species_csv = Species_Baron1988,
+  transmute(species_key = norm_label(Species), species_csv = Species,
             across(all_of(structures), parse_value, .names = "{.col}_csv"))
 
 report <- full_join(snap, comp, by = "species_key") %>%

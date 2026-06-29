@@ -23,12 +23,36 @@
 suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr)
 })
-setwd("~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Bauernfeind_etal_2013")
+## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path                    # RStudio: Source
+    if (!nzchar(p)) p <- rstudioapi::getActiveDocumentContext()$path  # RStudio: Run
+    if (nzchar(p)) return(normalizePath(p))
+  }
+  stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
+})
+folder    <- dirname(.sp)                                # this paper's folder
+item_name <- tools::file_path_sans_ext(basename(.sp))    # = file name, matches __ReadMe.xlsx
+base      <- local({                                     # repo root; NA if run as a lone folder
+  d <- folder
+  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
+  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
+})
+setwd(folder)
 options(scipen = 999)
 
+paper_dir <- here::here("HerculanoHouzel__2015")
+dataset_root  <- dirname(paper_dir)
+# outputs
+snapshot_csv  <- file.path(paper_dir, paste0(item_name, "_snapshot.csv"))
+final_csv     <- file.path(paper_dir, paste0(item_name, ".csv"))
+readme_xlsx   <- file.path(dataset_root, "__ReadMe.xlsx")
+public_tsv_dir<- file.path(dataset_root, "__Public", "comparative-data")
 snapshot_file  <- "Bauernfeind_etal_2013_Table2_snapshot.xlsx"
 snapshot_sheet <- "Table2"
-output_file    <- "Bauernfeind_etal_2013_Table2.csv"
 
 num <- function(x) parse_number(as.character(x), na = c("", "-", "\u2013", "\u2014", "NA", "n.a."))
 
@@ -42,12 +66,12 @@ dat <- raw %>%
   mutate(genus_tok  = word(str_squish(species_disp), 1),
          full_genus = ifelse(str_detect(genus_tok, "\\.$"), NA_character_, genus_tok)) %>%
   fill(full_genus, .direction = "down") %>%
-  mutate(Species_Bauernfeind2013 = ifelse(str_detect(genus_tok, "\\.$"),
+  mutate(Species = ifelse(str_detect(genus_tok, "\\.$"),
             str_squish(paste(full_genus, word(str_squish(species_disp), 2, -1))),
             str_squish(species_disp)))
 
 final.dataframe <- dat %>% transmute(
-  Species_Bauernfeind2013,
+  Species,
   Individual         = str_squish(individual),
   # Table 2 is the RIGHT insula; tag the five insula measures with _R. cm3 -> mm3.
   granular_R_mm3     = num(granular_cm3)     * 1000,
@@ -56,26 +80,15 @@ final.dataframe <- dat %>% transmute(
   FI_R_mm3           = num(FI_cm3)           * 1000,
   total_insula_R_mm3 = num(total_insula_cm3) * 1000)
 
-write.csv(final.dataframe, output_file, row.names = FALSE)
-message("Wrote ", output_file, "  (", nrow(final.dataframe), " individuals, ",
-        dplyr::n_distinct(final.dataframe$Species_Bauernfeind2013), " species)")
+## 5. SAVE (LOCAL CSV + PUBLIC TSV) ------------------------------------------
 
-## ---- also write the DOI-coded TSV to __Public/comparative-data/ ----
-## Item-name "Bauernfeind_etal_2013_Table2" should be added to __ReadMe.xlsx (manually, to
-## preserve its formula columns); until then fall back to the Table-1 DOI with a _Table2 tag.
-item_name <- "Bauernfeind_etal_2013_Table2"
-base      <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
-tsv_dir   <- file.path(base, "__Public/comparative-data")
-enc_fallback <- "10.1016%2Fj.jhevol.2012.12.003_Table2"
-enc <- tryCatch({
-  fc <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-  e <- fc$"Item encoded"[match(item_name, fc$"Item name")]
-  if (length(e) && !is.na(e) && nzchar(e)) e else enc_fallback
-}, error = function(e) enc_fallback)
-if (dir.exists(path.expand(tsv_dir))) {
-  write.table(final.dataframe, file = file.path(tsv_dir, paste0(enc, ".tsv")),
-              sep = "\t", row.names = FALSE)
-  message("Wrote ", file.path(tsv_dir, paste0(enc, ".tsv")))
-} else {
-  warning("Shared folder not found; TSV skipped (no local copy written): ", paste0(enc, ".tsv"))
-}
+# Item encoded lookup uses item_name (script filename)
+filecodes <- read_excel(file.path(dataset_root, "__ReadMe.xlsx"), sheet = "Sheet1")
+item_encoded <- filecodes$`Item encoded`[match(item_name, filecodes$`Item name`)]
+# Local output next to the paper
+write.csv(final.dataframe, final_csv, row.names = FALSE)
+# Public TSV output
+dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
+write.table(final.dataframe,
+            file = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
+            sep = "\t", row.names = FALSE)

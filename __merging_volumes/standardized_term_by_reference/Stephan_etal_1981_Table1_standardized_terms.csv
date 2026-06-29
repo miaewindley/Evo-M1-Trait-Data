@@ -1,5 +1,5 @@
 Original_Term,Reference,Standardized_Term
-Species_Stephan1981,Stephan_etal_1981_Table1,Species
+Species,Stephan_etal_1981_Table1,Species
 Body_weight,Stephan_etal_1981_Table1,Body_Mass.g
 Brain_weight,Stephan_etal_1981_Table1,Brain_Mass.mg
 Total_brain_net_volume,Stephan_etal_1981_Table1,Total_brain_net_volume_Vol.mm3

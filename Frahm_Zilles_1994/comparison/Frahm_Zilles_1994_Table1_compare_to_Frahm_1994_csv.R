@@ -3,7 +3,7 @@
 # Checking step (self-contained in comparison/). Audit the journal-faithful
 # snapshot of Frahm & Zilles (1994) (sheets Table1 + Table2, merged by species)
 # against Frahm_1994.csv, matched by species on EITHER the paper's name
-# (Species_Frahm1994) OR the canonical Species, resolving each CSV row once (no
+# (Species) OR the canonical Species, resolving each CSV row once (no
 # phantom duplicates). Compares the ten shared measures: body weight, the three
 # main hippocampal volumes (total, HP+HS fibres, retrocommissural) and the six
 # retrohippocampal subfields (subiculum, CA1, CA2, CA3, hilus, fascia dentata).
@@ -16,13 +16,8 @@
 suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr)
 })
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable())
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  if (interactive() && requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
-  setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_Zilles_1994/comparison")
-}
-}
-
+## Set working directory to this script folder
+setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Frahm_Zilles_1994/comparison")
 snapshot_file     <- "../Frahm_Zilles_1994_Table1_snapshot.xlsx"
 comparison_file   <- "Frahm_1994.csv"
 output_detail     <- "Frahm_Zilles_1994_Table1_comparison_report_from_R.csv"
@@ -61,9 +56,9 @@ comp_raw <- read_csv(comparison_file, col_types = cols(.default = col_character(
          !is.na(.data[[csv_col[["hippocampus_total"]]]])) %>%
   mutate(.cid = row_number())
 snap <- snap %>% mutate(.cid = dplyr::coalesce(
-  comp_raw$.cid[match(species_key, norm_label(comp_raw$Species_Frahm1994))],
+  comp_raw$.cid[match(species_key, norm_label(comp_raw$Species))],
   comp_raw$.cid[match(species_key, norm_label(comp_raw$Species))]))
-comp <- comp_raw %>% transmute(.cid, species_csv = str_squish(dplyr::coalesce(Species_Frahm1994, Species)),
+comp <- comp_raw %>% transmute(.cid, species_csv = str_squish(dplyr::coalesce(Species, Species)),
   !!!setNames(lapply(structures, function(s) quote(parse_value(.data[[csv_col[[s]]]]))), paste0(structures, "_csv")))
 
 num_match <- function(a, b, tol = 1e-6) (is.na(a) & is.na(b)) | (!is.na(a) & !is.na(b) & abs(a - b) <= tol)

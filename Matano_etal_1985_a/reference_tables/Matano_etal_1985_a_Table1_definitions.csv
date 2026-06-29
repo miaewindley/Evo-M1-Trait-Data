@@ -1,6 +1,6 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
 code,specimen series code number (Düsseldorf collection) as printed in Table I col 1,,,info,,,Matano_etal_1985_a_Table1,used for the printed row order; taxonomy applied later via ../_keys/Stephan/,
-Species_Matano1985a,species name as printed in Matano et al. 1985 Part II (Cerebellar nuclei),,,info,,,Matano_etal_1985_a_Table1,journal names kept (e.g. Lemur fulvus; Cebuella pygmaea); taxonomy applied later,
+Species,species name as printed in Matano et al. 1985 Part II (Cerebellar nuclei),,,info,,,Matano_etal_1985_a_Table1,journal names kept (e.g. Lemur fulvus; Cebuella pygmaea); taxonomy applied later,
 n,number of specimens (sample size),Cerebellar_nuclei_total,,n,primary,"Insectivora, Scandentia & Primates",Matano_etal_1985_a_Table1,Table I col 3 (Specimens); blank in print means 1,
 body_weight_g,body weight in g (BoW),Body_weight,Mass.g,,secondary,"Insectivora, Scandentia & Primates",Matano_etal_1985_a_Table1,Table I col 4; re-used body weights (largely Stephan et al. 1981),
 TCN_mm3,volume of the total cerebellar nuclei in mm3 (= MCN + ICN + LCN),Cerebellar_nuclei_total,Vol.mm3,,primary,"Insectivora, Scandentia & Primates",Matano_etal_1985_a_Table1,Table I col 5 (TCN),
