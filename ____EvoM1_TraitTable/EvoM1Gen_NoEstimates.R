@@ -24,8 +24,15 @@ tsv_data_list <- list()
 
 # Loop through item names, read tables from TSVs, and store as data frames in the list, row.names = NULL
 for (i in seq_along(item_name)) {
+  if (is.na(item_name[i])) {
+    # This .tsv's encoded filename has no matching 'Item name' in __ReadMe.xlsx (e.g. a
+    # stale/orphaned file left over from an earlier naming convention). Skip it instead of
+    # crashing on a literal "NA.tsv" path.
+    warning("Skipping '", tsv_names[i], "': no matching 'Item name' found in __ReadMe.xlsx for its 'Item encoded'.")
+    next
+  }
   cat("Processing item:", item_name[i], "\n")  # Print item name
-  
+
   item_encoded <- filecodes$"Item encoded"[match(item_name[i], filecodes$"Item name")]
   
   # Construct the file path

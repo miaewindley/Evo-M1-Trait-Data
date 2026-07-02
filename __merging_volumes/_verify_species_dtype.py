@@ -9,7 +9,7 @@ MV=f"{BASE}/__merging_volumes"
 
 papers=[  # item, team, year, token, spcol  (the canonical 30 after the edit)
  ("Stephan_etal_1970_Tables1-6","Stephan_collection",1970,"Stephan1970","species"),
- ("Stephan_etal_1981_Table1","Stephan_collection",1981,"Stephan1981","Species_Stephan1981"),
+ ("Stephan_etal_1981_TablesI-VI","Stephan_collection",1981,"Stephan1981","Species_Stephan1981"),
  ("Stephan_etal_1982_Table1","Stephan_collection",1982,"Stephan1982","Species_Stephan1982"),
  ("Stephan_etal_1984_Table1","Stephan_collection",1984,"Stephan1984","Species_Stephan1984"),
  ("Stephan_etal_1987_Table1","Stephan_collection",1987,"Stephan1987","Species_Stephan1987"),

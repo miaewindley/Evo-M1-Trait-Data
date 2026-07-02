@@ -18,7 +18,7 @@
 #
 # Input  : Bauernfeind_etal_2013_Table2_snapshot.xlsx   sheet: Table2
 # Outputs: Bauernfeind_etal_2013_Table2.csv             one row per individual (15)
-#          <DOI>_Table2.tsv in __Public/comparative-data/
+#          <DOI>.tsv in __Public/comparative-data/        named from __ReadMe.xlsx
 
 suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr)
@@ -44,13 +44,6 @@ base      <- local({                                     # repo root; NA if run 
 setwd(folder)
 options(scipen = 999)
 
-paper_dir <- here::here("HerculanoHouzel__2015")
-dataset_root  <- dirname(paper_dir)
-# outputs
-snapshot_csv  <- file.path(paper_dir, paste0(item_name, "_snapshot.csv"))
-final_csv     <- file.path(paper_dir, paste0(item_name, ".csv"))
-readme_xlsx   <- file.path(dataset_root, "__ReadMe.xlsx")
-public_tsv_dir<- file.path(dataset_root, "__Public", "comparative-data")
 snapshot_file  <- "Bauernfeind_etal_2013_Table2_snapshot.xlsx"
 snapshot_sheet <- "Table2"
 
@@ -80,15 +73,22 @@ final.dataframe <- dat %>% transmute(
   FI_R_mm3           = num(FI_cm3)           * 1000,
   total_insula_R_mm3 = num(total_insula_cm3) * 1000)
 
-## 5. SAVE (LOCAL CSV + PUBLIC TSV) ------------------------------------------
+## ---- SAVE: local CSV + DOI-named TSV ----
+write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
+message("Wrote ", item_name, ".csv  (", nrow(final.dataframe), " individuals, ",
+        dplyr::n_distinct(final.dataframe$Species), " species)")
 
-# Item encoded lookup uses item_name (script filename)
-filecodes <- read_excel(file.path(dataset_root, "__ReadMe.xlsx"), sheet = "Sheet1")
-item_encoded <- filecodes$`Item encoded`[match(item_name, filecodes$`Item name`)]
-# Local output next to the paper
-write.csv(final.dataframe, final_csv, row.names = FALSE)
-# Public TSV output
-dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
-write.table(final.dataframe,
-            file = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
-            sep = "\t", row.names = FALSE)
+## ---- also write the DOI-coded TSV to __Public/comparative-data/ (skipped if shared repo absent) ----
+tsv_dir <- file.path(base, "__Public/comparative-data")
+item_encoded <- if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {
+  filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+} else NA_character_
+if (is.na(item_encoded) || !nzchar(item_encoded)) {
+  warning("No 'Item encoded' (DOI) for '", item_name, "' in __ReadMe.xlsx; TSV skipped.")
+} else if (!dir.exists(path.expand(tsv_dir))) {
+  warning("Shared folder not found: ", tsv_dir, "; TSV skipped.")
+} else {
+  write.table(final.dataframe, file = file.path(tsv_dir, paste0(item_encoded, ".tsv")), sep = "\t", row.names = FALSE)
+  message("Wrote ", file.path(tsv_dir, paste0(item_encoded, ".tsv")))
+}

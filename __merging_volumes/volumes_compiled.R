@@ -36,14 +36,15 @@ if (is.na(base))
        "repository (it reads __Public/comparative-data and _keys).", call. = FALSE)
 setwd(folder)
 
-## 1 Papers: item_name, team, year (the canonical 30-table collection) ----
-## No per-paper species token/column anymore: the species COLUMN is found from the term map
-## (the Original_Term whose Standardized_Term == "Species") and species NAMES are resolved in
-## step 4 (NCBI backbone + curated, source-aware overrides). See README__merging.md.
+## 1 Papers: item_name, team, year — the FULL volume collection ----
+## Includes the DeCasien & Higham 2019 brain-volume sources (added at the end) PLUS the rest of the
+## collection. The DeCasien-only subset and the merge-vs-DeCasien comparison live in
+## volumes_compiled_DeCasien.R. No per-paper species token/column: the species COLUMN is found from
+## the term map and species NAMES are resolved in step 4 (NCBI + curated overrides). See README.
 papers <- tribble(
   ~item,                                  ~team,                ~year,
   "Stephan_etal_1970_Tables1-6",          "Stephan_collection", 1970,
-  "Stephan_etal_1981_Table1",             "Stephan_collection", 1981,
+  "Stephan_etal_1981_TablesI-VI",         "Stephan_collection", 1981,
   "Stephan_etal_1982_Table1",             "Stephan_collection", 1982,
   "Stephan_etal_1984_Table1",             "Stephan_collection", 1984,
   "Stephan_etal_1987_Table1",             "Stephan_collection", 1987,
@@ -72,23 +73,33 @@ papers <- tribble(
   "Semendeferi_etal_1998_Table2",         "Zilles",             1998,
   "Semendeferi_etal_2001_Table2",         "Zilles",             2001,
   "Sherwood_etal_2005_Table1",            "Zilles",             2005,
-  "Barger_etal_2007_TABLE1",              "Zilles",             2007
-  # NOTE: this script compiles ONLY the canonical 30-table collection. The DeCasien-comparison
-  # sources (Sherwood 2004 _TABLEI, Barks 2014, Rilling & Insel 1998/1999, Stimpson 2015, and the
-  # *_viaDeCasien tables) are deliberately NOT merged in here — folding them in polluted the merge
-  # (cross-team averaging shifted great-ape values away from DeCasien's single-source figures).
-  # The merge-vs-DeCasien comparison lives in its own script:
-  #   DeCasien_Higham_2019/DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R
-  # which value-matches DeCasien's published numbers against volumes_unfiltered.csv / volumes_long.csv
-  # and so needs only THIS core merge, not those papers compiled in.
+  "Barger_etal_2007_TABLE1",              "Zilles",             2007,
+
+  # --- DeCasien & Higham 2019 brain-volume sources (so this master includes them too) ---
+  # The DeCasien-only SUBSET + the merge-vs-DeCasien comparison live in volumes_compiled_DeCasien.R.
+  "Sherwood_etal_2004_TABLEI",            "Sherwood",           2004,  # ref 64
+  "Barks_etal_2014_TABLE1",               "Barks",              2014,  # ref 65
+  "Rilling_Insel_1998_Table1",            "RillingInsel",       1998,  # ref 62
+  "Stimpson_etal_2015_TableS1",           "Stimpson",           2015,  # ref 58
+  # DeCasien-extracted (MOESM3); NB 62-63 NEOCORTEX is Rilling & Insel 1999 (ref 63), not 1998.
+  "Barks_etal_2014_Fig4A",                "Barks",              2014,  # ref 65 regional volumes (Barks Fig 4A; replaces viaDeCasien)
+  "Rilling_Insel_1999_Table1",       "RillingInsel",       1999,  # ref 63 (neocortex)
+  "Stimpson_etal_2015_TableS2",       "Stimpson",           2015   # ref 58 (extra structures)
 )
 filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
 # Fallback encodings for items not yet given a row in __ReadMe.xlsx (the registry sheet is
 # maintained by hand to preserve its formula columns). Remove an entry once its row exists.
-enc_override <- c(# item names below differ in name/case from their __ReadMe.xlsx rows
-                  # (registry uses MacLeod_..._Table1 / Semendeferi_..._TABLE2), so the
-                  # exact-match lookup returns NA -> resolve them here.
-  )
+enc_override <- c(# DOI-coded tables: registry resolves them, but keep DOI-encoded fallbacks so a
+                  # registry rename/case-drift can't send them to NA.tsv.
+                  "Rilling_Insel_1999_Table1" = "10.1006%2Fjhev.1999.0313_Table1",
+                  "Barks_etal_2014_Fig4A"          = "10.1002%2Fajpa.22646_Fig4A",
+                  "Stimpson_etal_2015_TableS2" = "10.1093%2Fscan%2Fnsv128_TableS2",
+                  # DeCasien primaries: these DO have __ReadMe.xlsx rows, but keep fallbacks so a
+                  # registry rename/case-drift can't silently send them to NA.tsv.
+                  "Sherwood_etal_2004_TABLEI"   = "10.1002%2Fajp.20048_TABLEI",
+                  "Barks_etal_2014_TABLE1"      = "10.1002%2Fajpa.22646_TABLE1",
+                  "Rilling_Insel_1998_Table1"   = "10.1159%2F000006575_Table1",
+                  "Stimpson_etal_2015_TableS1"  = "10.1093%2Fscan%2Fnsv128_TableS1")
 read_item <- function(it) {
   # Match item names CASE-INSENSITIVELY (registry drifts e.g. Table2 vs TABLE2) and
   # strip stray spaces from the encoding (cloud-edit typos like "ISBN%3A 0390..."),
@@ -194,8 +205,56 @@ paper_long <- function(row) {
     df <- df %>% group_by(Species) %>%
       summarise(across(all_of(meas), ~ mean(num(.x) * 1000, na.rm = TRUE)), .groups = "drop")
   }
-  # (DeCasien-comparison reshapes — Sherwood 2004, Barks 2014, Rilling & Insel 1998, Stimpson 2015 —
-  #  removed with their tribble rows; they belong to the separate DeCasien comparison, not this merge.)
+  if (it == "Sherwood_etal_2004_TABLEI") {                       # per-specimen great-ape volumes (cm3): fill species (NA = same as above),
+    meas <- c("Whole Brain","Neocortex","Hippocampus","Striatum","Thalamus","Cerebellum")  #  species-mean, cm3->mm3
+    df <- df %>%
+      mutate(Species = na_if(str_squish(as.character(Species)), "NA")) %>%
+      fill(Species, .direction = "down") %>%
+      mutate(Species = word(Species, 1, 2)) %>%
+      group_by(Species) %>%
+      summarise(across(all_of(meas), ~ mean(num(.x) * 1000, na.rm = TRUE)), .groups = "drop")
+  }
+  if (it == "Barks_etal_2014_TABLE1") {                          # per-specimen gorilla brain volume (cm3): subspecies->binomial, species-mean, cm3->mm3
+    df <- df %>% mutate(Species = word(str_squish(Species), 1, 2)) %>%
+      group_by(Species) %>%
+      summarise(`Brain volume (cm3)` = mean(num(`Brain volume (cm3)`) * 1000, na.rm = TRUE), .groups = "drop")
+  }
+  if (it == "Rilling_Insel_1998_Table1") {                       # one row/species; cc->mm3 (vol) and kg->g (body mass); harmonize Cercocebus
+    df <- df %>%
+      mutate(Species = ifelse(Species == "Cercocebus atys", "Cercocebus torquatus", Species),
+             brain_volume_cc      = num(brain_volume_cc)      * 1000,
+             cerebellum_volume_cc = num(cerebellum_volume_cc) * 1000,
+             body_weight_kg       = num(body_weight_kg)       * 1000)
+  }
+  if (it == "Rilling_Insel_1999_Table1") {                 # one row/species; derive total neocortex grey+white; convert MEANS and SDs
+    # cc->mm3 and kg->g for both the mean and its SD (SD scales linearly). Spinal-cord area
+    # mean/SD are already mm2 -> left for the generic num() (no conversion). No combined-neocortex
+    # SD is derived (SD of GM+WM needs the covariance, which the table does not report).
+    df <- df %>%
+      mutate(Species = ifelse(Species == "Cercocebus atys", "Cercocebus torquatus", Species),
+             Neocortex_GMWM = (num(neocortical_gray_matter_cc_mean) + num(cerebral_white_matter_cc_mean)) * 1000,
+             across(c(neocortical_gray_matter_cc_mean, cerebral_white_matter_cc_mean,
+                      brain_volume_cc_mean, body_weight_kg_mean,
+                      neocortical_gray_matter_cc_sd, cerebral_white_matter_cc_sd,
+                      brain_volume_cc_sd, body_weight_kg_sd), ~ num(.x) * 1000))
+  }
+  if (it == "Stimpson_etal_2015_TableS2") {                 # per-subject one-side amygdala volumes (whole + 4 subnuclei)
+    # The TSV carries one clean volume_cm3 per (subject, structure); SERT axon density is a
+    # separate column (ignored here) and the control regions (MTG, caudate) have no volume.
+    # Species mean of bilateral volume (one-side x2), cm3->mm3. Rows with no volume (control
+    # regions; subjects missing a volume) drop out via the NA filter. Columns pivot back to the
+    # raw structure names, which the term map maps to Amygdala[_<nucleus>]_Vol.mm3 (Barger naming).
+    df <- df %>%
+      mutate(volume_cm3 = num(volume_cm3)) %>%
+      filter(!is.na(volume_cm3)) %>%
+      group_by(Species, structure) %>%
+      summarise(v = mean(volume_cm3 * 2 * 1000, na.rm = TRUE), .groups = "drop") %>%
+      pivot_wider(names_from = structure, values_from = v)
+  }
+  if (it == "Stimpson_etal_2015_TableS1") {                 # per-subject brain MASS (g): species-mean, g->mg
+    df <- df %>% group_by(Species) %>%
+      summarise(brain_mass_g = mean(num(brain_mass_g) * 1000, na.rm = TRUE), .groups = "drop")
+  }
   # --- generic wide -> long via standardized terms ---
   # The species column is found from the term map (the Original_Term whose Standardized_Term ==
   # "Species") — no hand-coded spcol. Raw species names are kept here and harmonized in step 4
@@ -285,7 +344,7 @@ flags <- tibble(Species=character(), Variable=character(), flag=character(), det
 t1 <- long %>% filter(Team == "Stephan_collection") %>% arrange(Species, Variable, desc(Year))
 t1res <- t1 %>% group_by(Species, Variable) %>% summarise(
   Value = if (is_mass(first(Variable))) {
-            s81 <- Value[Source == "Stephan_etal_1981_Table1"]; if (length(s81)) s81[1] else Value[1]
+            s81 <- Value[Source == "Stephan_etal_1981_TablesI-VI"]; if (length(s81)) s81[1] else Value[1]
           } else Value[1],
   .groups = "drop")
 # flags: newest vs next within Tier-1 (non-mass)

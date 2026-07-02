@@ -1,0 +1,6 @@
+Original_Term,Reference,Standardized_Term
+Species,MacLeod_etal_2003_Table2,Species
+cerebellum_volume_cm3,MacLeod_etal_2003_Table2,Cerebellum_Vol.mm3
+vermis_volume_cm3,MacLeod_etal_2003_Table2,CerebellarVermis_Vol.mm3
+hemisphere_volume_cm3,MacLeod_etal_2003_Table2,CerebellarHemisphere_Vol.mm3
+brain_volume_cm3,MacLeod_etal_2003_Table2,Total_brain_net_volume_Vol.mm3

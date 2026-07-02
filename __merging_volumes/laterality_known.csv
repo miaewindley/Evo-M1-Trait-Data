@@ -1,9 +1,9 @@
 Reference,Original_Term,side,required_suffix,note
-Stephan_etal_1981_Table1,Complexus_vestibularis_unilateral,unilateral,_unilateral,Baron et al. 1988 states the Stephan 1981 vestibular volumes were measured from one side only (the reformat names the data columns with the _unilateral suffix)
-Stephan_etal_1981_Table1,Nucleus_vestibularis_superior_unilateral,unilateral,_unilateral,
-Stephan_etal_1981_Table1,Nucleus_vestibularis_lateralis_unilateral,unilateral,_unilateral,
-Stephan_etal_1981_Table1,Nucleus_vestibularis_medialis_unilateral,unilateral,_unilateral,
-Stephan_etal_1981_Table1,Nucleus_vestibularis_descendens_unilateral,unilateral,_unilateral,
+Stephan_etal_1981_TablesI-VI,Complexus_vestibularis_unilateral,unilateral,_unilateral,Baron et al. 1988 states the Stephan 1981 vestibular volumes were measured from one side only (the reformat names the data columns with the _unilateral suffix)
+Stephan_etal_1981_TablesI-VI,Nucleus_vestibularis_superior_unilateral,unilateral,_unilateral,
+Stephan_etal_1981_TablesI-VI,Nucleus_vestibularis_lateralis_unilateral,unilateral,_unilateral,
+Stephan_etal_1981_TablesI-VI,Nucleus_vestibularis_medialis_unilateral,unilateral,_unilateral,
+Stephan_etal_1981_TablesI-VI,Nucleus_vestibularis_descendens_unilateral,unilateral,_unilateral,
 Bauernfeind_etal_2013_Table1,granular_L_mm3,left,_left,Bauernfeind Table 1 is the LEFT insula; right hemisphere is the paper's Table 2 (now snapshotted as Bauernfeind_etal_2013_Table2)
 Bauernfeind_etal_2013_Table1,dysgranular_L_mm3,left,_left,
 Bauernfeind_etal_2013_Table1,agranular_L_mm3,left,_left,

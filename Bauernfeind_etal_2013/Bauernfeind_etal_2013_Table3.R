@@ -31,9 +31,9 @@
   }
   stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
 })
-folder <- paper_dir <- dirname(.sp)                                   # this paper's folder
-item_name <- table_name <- tools::file_path_sans_ext(basename(.sp))  # = file name (matches __ReadMe.xlsx)
-base <- dataset_root <- local({                                      # repo root; NA if run as a lone folder
+folder    <- dirname(.sp)                                # this paper's folder
+item_name <- tools::file_path_sans_ext(basename(.sp))    # = file name, matches __ReadMe.xlsx
+base      <- local({                                     # repo root; NA if run as a lone folder
   d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
   if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
@@ -43,10 +43,10 @@ setwd(folder)
 suppressPackageStartupMessages({
   library(readxl); library(readr); library(dplyr); library(tidyr); library(stringr)
 })
-setwd(folder)
 options(scipen = 999)
 
-raw <- read_excel("Bauernfeind_etal_2013_Table3_snapshot.xlsx", sheet = "Table3", col_types = "text")
+snapshot_file  <- paste0(item_name, "_snapshot.xlsx")
+raw <- read_excel(snapshot_file, sheet = "Table3", col_types = "text")
 
 split_mean <- function(x) suppressWarnings(as.numeric(str_trim(str_extract(x, "^[^\u00b1]+"))))
 split_sd   <- function(x) suppressWarnings(as.numeric(str_trim(str_extract(x, "(?<=\u00b1).+"))))
@@ -66,6 +66,6 @@ long <- bind_rows(lapply(c("left", "right"), function(side) {
     select(Species, hemisphere, n, subdivision, mean_mm3, sd_mm3)
 }))
 
-write.csv(long, "Bauernfeind_etal_2013_Table3.csv", row.names = FALSE)
-message("Wrote Bauernfeind_etal_2013_Table3.csv  (", nrow(long), " rows = ",
+write.csv(long, paste0(item_name, ".csv"), row.names = FALSE)
+message("Wrote ", item_name, ".csv  (", nrow(long), " rows = ",
         n_distinct(long$Species), " species x 2 hemispheres x ", length(subdiv), " subdivisions)")

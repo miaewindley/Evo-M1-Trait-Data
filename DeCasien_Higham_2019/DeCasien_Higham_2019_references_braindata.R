@@ -5,26 +5,29 @@
 ##
 ## Purpose
 ## -----------------------------------------------------------------------------
-## Build DeCasien_Higham_2019_references_braindata.csv from the reference numbers
-## used in the supplementary spreadsheet. This file is an index of source papers
+## Build DeCasien_Higham_2019_references_braindata.csv from the reference codes
+## used in the supplementary spreadsheet. The output is an index of source papers
 ## for the neuroanatomical measurements in the "Brain Region Data (mm3)" sheet.
 ##
 ## Current scope
 ## -----------------------------------------------------------------------------
-## This script only maps the source reference numbers to the numbered references
-## in DeCasien & Higham (2019). The next provenance step is to add paper-specific
-## table/row details for each source, where applicable.
+## This script maps the source reference codes in the spreadsheet to the numbered
+## references in DeCasien & Higham (2019). The next provenance step is to add
+## paper-specific table/row details for each source, where applicable.
 ##
-## Golden rule
+## Output format
 ## -----------------------------------------------------------------------------
 ## The output keeps the existing two-column format:
 ##   ref_number, citation
 ##
-## The output filename is derived from this script filename.
+## Ranges such as "51-52" are kept as ranges in ref_number because that is how
+## DeCasien & Higham coded some multi-paper sources in the spreadsheet. The
+## citation column concatenates the citations covered by the range with " | ".
 ## =============================================================================
 
 options(stringsAsFactors = FALSE)
 
+## ---- paths ------------------------------------------------------------------
 script_path <- local({
   argv <- commandArgs(FALSE)
   f <- sub("^--file=", "", argv[grep("^--file=", argv)])
@@ -33,8 +36,9 @@ script_path <- local({
   sf <- tryCatch(normalizePath(sys.frames()[[1]]$ofile), error = function(e) NULL)
   if (!is.null(sf) && nzchar(sf)) return(sf)
 
-  if (requireNamespace("rstudioapi", quietly = TRUE)) {
-    p <- tryCatch(rstudioapi::getActiveDocumentContext()$path, error = function(e) "")
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    p <- tryCatch(rstudioapi::getSourceEditorContext()$path, error = function(e) "")
+    if (!nzchar(p)) p <- tryCatch(rstudioapi::getActiveDocumentContext()$path, error = function(e) "")
     if (nzchar(p)) return(normalizePath(p))
   }
 
@@ -48,83 +52,255 @@ output_csv <- file.path(
 )
 
 supp_xlsx <- file.path(paper_dir, "41559_2019_969_MOESM3_ESM.xlsx")
-if (!file.exists(supp_xlsx)) {
-  stop("Cannot find supplementary spreadsheet: ", supp_xlsx, call. = FALSE)
+pdf_file  <- file.path(paper_dir, "DeCasien-2019-Primate mosaic brain evolution r.pdf")
+
+## ---- helpers ----------------------------------------------------------------
+normalize_space <- function(x) gsub("\\s+", " ", trimws(x))
+
+extract_references_from_pdf <- function(pdf_file) {
+  if (!requireNamespace("pdftools", quietly = TRUE)) {
+    stop("Package 'pdftools' is required. Install it with install.packages('pdftools').",
+         call. = FALSE)
+  }
+  if (!file.exists(pdf_file)) {
+    stop("Cannot find PDF: ", pdf_file, call. = FALSE)
+  }
+
+  txt <- pdftools::pdf_text(pdf_file)
+
+  # DeCasien & Higham's reference list is printed in two columns. If a whole
+  # page is parsed as-is, pdftools interleaves the left and right columns and
+  # some references get truncated. Split each reference page into visual columns
+  # first, then concatenate left column followed by right column.
+  page_lines <- function(page_text) strsplit(page_text, "\n", fixed = TRUE)[[1]]
+
+  detect_right_column_start <- function(lines) {
+    # Find true reference starts in the right column. Do not use every
+    # "number + period" on the page, because body-text citations like
+    # "probability26." and values like "1,000." can occur near the
+    # column break and make the split too early. A true reference start
+    # is followed by an author/title capital letter.
+    positions <- unlist(lapply(lines, function(x) {
+      m <- gregexpr("(^|\\s{2,})([0-9]{1,3})\\.\\s+[A-Z]", x, perl = TRUE)[[1]]
+      if (identical(m, -1L)) return(integer(0))
+      
+      starts <- attr(m, "capture.start")[, 2]
+      starts[starts > 75L]
+    }), use.names = FALSE)
+    
+    if (!length(positions)) return(NA_integer_)
+    
+    # Use the most common start position. In this PDF it is about 90/91.
+    tab <- sort(table(positions), decreasing = TRUE)
+    as.integer(names(tab)[1])
+  }
+
+  split_two_columns <- function(page_text) {
+    lines <- page_lines(page_text)
+    right_start <- detect_right_column_start(lines)
+
+    if (is.na(right_start)) {
+      return(list(left = lines, right = character(0)))
+    }
+
+    left <- vapply(
+      lines,
+      function(x) substr(x, 1L, min(nchar(x), right_start - 1L)),
+      character(1)
+    )
+    right <- vapply(
+      lines,
+      function(x) {
+        if (nchar(x) >= right_start) substr(x, right_start, nchar(x)) else ""
+      },
+      character(1)
+    )
+
+    list(left = left, right = right)
+  }
+
+  # Page 9: references 1-7 are in the lower left column after the References
+  # heading; references 8-42 are in the right column. Pages 10-11 continue the
+  # same two-column reference-list layout.
+  p9 <- split_two_columns(txt[9])
+  p9_left <- p9$left
+  ref_heading_line <- grep("^References\\s*$", trimws(p9_left))[1]
+  if (is.na(ref_heading_line)) {
+    stop("Could not find the References heading on PDF page 9.", call. = FALSE)
+  }
+  p9_left_refs <- p9_left[ref_heading_line:length(p9_left)]
+
+  reference_text <- c(
+    p9_left_refs,
+    p9$right,
+    split_two_columns(txt[10])$left,
+    split_two_columns(txt[10])$right,
+    split_two_columns(txt[11])$left,
+    split_two_columns(txt[11])$right
+  )
+
+  section <- paste(reference_text, collapse = "\n")
+
+  # Remove article metadata that follows the references, if it appears in the
+  # extracted text.
+  section <- sub("(?s)Acknowledgements.*$", "", section, perl = TRUE)
+  section <- sub("(?s)Author contributions.*$", "", section, perl = TRUE)
+  section <- sub("(?s)Competing interests.*$", "", section, perl = TRUE)
+  section <- sub("(?s)Additional information.*$", "", section, perl = TRUE)
+
+  # Normalize common PDF extraction artifacts.
+  section <- gsub("\u2010|\u2011|\u2012|\u2013|\u2014", "-", section)
+  section <- gsub("\u2212", "-", section)
+  section <- gsub("\u00a0", " ", section)
+  section <- gsub("\r", "\n", section)
+
+  # Mark reference starts.
+  section <- gsub(
+    "(^|\\n)\\s*([0-9]{1,3})\\.\\s+",
+    "\\1@@REF@@\\2. ",
+    section,
+    perl = TRUE
+  )
+
+  pieces <- strsplit(section, "@@REF@@", fixed = TRUE)[[1]]
+  pieces <- pieces[grepl("^[0-9]{1,3}\\.\\s+", pieces)]
+
+  numbers <- sub("^([0-9]{1,3})\\.\\s+.*$", "\\1", pieces)
+  cites <- sub("^[0-9]{1,3}\\.\\s+", "", pieces)
+  cites <- normalize_space(cites)
+
+  ok <- nzchar(numbers) & nzchar(cites)
+  out <- cites[ok]
+  names(out) <- numbers[ok]
+
+  # If the same number is accidentally captured twice, keep the longest version.
+  out <- tapply(out, names(out), function(x) x[which.max(nchar(x))])
+  out <- unlist(out, use.names = TRUE)
+  out <- out[order(as.integer(names(out)))]
+
+  out
 }
-
-if (!requireNamespace("readxl", quietly = TRUE)) {
-  stop("Package 'readxl' is required. Install it with install.packages('readxl').", call. = FALSE)
-}
-
-brain <- readxl::read_excel(
-  supp_xlsx,
-  sheet = "Brain Region Data (mm3)",
-  col_types = "text"
-)
-
-if (!"References" %in% names(brain)) {
-  stop("The sheet 'Brain Region Data (mm3)' does not contain a 'References' column.", call. = FALSE)
-}
-
-## The References column can contain comma-separated reference groups such as
-## "24,51-52". Keep ranges as ranges because that is how DeCasien & Higham coded
-## some multi-paper sources in the spreadsheet.
-refs <- unique(unlist(strsplit(na.omit(brain$References), ",", fixed = TRUE)))
-refs <- trimws(refs)
-refs <- refs[nzchar(refs)]
-refs <- unique(refs)
 
 first_number <- function(x) as.integer(sub("^([0-9]+).*", "\\1", x))
-refs <- refs[order(first_number(refs), grepl("-", refs), refs)]
 
-## Numbered references from DeCasien & Higham (2019), References section.
-## For ranged source codes (for example, 54-55), this two-column index keeps the
-## same convention as the existing CSV: the displayed citation is the first paper
-## in the range. The detailed table-level provenance can be added in a later file.
-citation_lookup <- c(
-  "24" = "Stephan, H., Frahm, H. & Baron, G. New and revised data on volumes of brain structures in insectivores and primates. Folia Primatol. 35, 1–29 (1981).",
-  "34" = "Frahm, H. D., Stephan, H. & Baron, G. Comparison of brain structure volumes in insectivora and primates. V. Area striata (AS). J. Hirnforsch. 25, 537–557 (1984).",
-  "43" = "Bauernfeind, A. L. et al. A volumetric comparison of the insular cortex and its subregions in primates. J. Hum. Evol. 64, 263–279 (2013).",
-  "51" = "Stephan, H., Bauchot, R., & Andy, O. J. in The Primate Brain (eds Noback, C. R. & Montagna, W.) 289–297 (Appleton-Century-Crofts, 1970).",
-  "51-52" = "Stephan, H., Bauchot, R., & Andy, O. J. in The Primate Brain (eds Noback, C. R. & Montagna, W.) 289–297 (Appleton-Century-Crofts, 1970).",
-  "53" = "Sherwood, C. C. et al. Evolution of the brainstem orofacial motor system in primates: a comparative study of trigeminal, facial, and hypoglossal nuclei. J. Hum. Evol. 48, 45–84 (2005).",
-  "54" = "Bush, E. C. & Allman, J. M. Three-dimensional structure and evolution of primate primary visual cortex. Anat. Rec. A 281, 1088–1094 (2004).",
-  "54-55" = "Bush, E. C. & Allman, J. M. Three-dimensional structure and evolution of primate primary visual cortex. Anat. Rec. A 281, 1088–1094 (2004).",
-  "56" = "Barger, N., Stefanacci, L. & Semendeferi, K. A comparative volumetric analysis of the amygdaloid complex and basolateral division in the human and ape brain. Am. J. Phys. Anthropol. 134, 392–403 (2007",
-  "56-57" = "Barger, N., Stefanacci, L. & Semendeferi, K. A comparative volumetric analysis of the amygdaloid complex and basolateral division in the human and ape brain. Am. J. Phys. Anthropol. 134, 392–403 (2007",
-  "58" = "Stimpson, C. D. et al. Differential serotonergic innervation of the amygdala in bonobos and chimpanzees. Soc. Cogn. Affect. Neurosci. 11, 413–422 (2015).",
-  "59" = "Zilles, K. & Rehkämper, G. in Orang-utan Biology (ed. Schwartz, J. H.) 157–176 (Oxford Univ. Press, 1988).",
-  "60" = "De Sousa, A. A. et al. Hominoid visual brain structure volumes and the position of the lunate sulcus. J. Hum. Evol. 58, 281–292 (2010).",
-  "61" = "MacLeod, C. E., Zilles, K., Schleicher, A., Rilling, J. K. & Gibson, K. R. Expansion of the neocerebellum in Hominoidea. J. Hum. Evol. 44, 401–429 (2003).",
-  "62" = "Rilling, J. K. & Insel, T. R. Evolution of the cerebellum in primates: differences in relative volume among monkeys, apes and humans. Brain Behav. Evol. 52, 308–314 (1998).",
-  "62-63" = "Rilling, J. K. & Insel, T. R. Evolution of the cerebellum in primates: differences in relative volume among monkeys, apes and humans. Brain Behav. Evol. 52, 308–314 (1998).",
-  "64" = "Sherwood, C. C. et al. Brain structure variation in great apes, with attention to the mountain gorilla (Gorilla beringei beringei). Am. J. Primatol. 63, 149–164 (2004).",
-  "65" = "Barks, S. K. et al. Brain organization of gorillas reflects species differences in ecology. Am. J. Phys. Anthropol. 156, 252–262 (2015)."
-)
+expand_ref_code <- function(code) {
+  code <- trimws(as.character(code))
+  if (grepl("^[0-9]+-[0-9]+$", code)) {
+    bounds <- as.integer(strsplit(code, "-", fixed = TRUE)[[1]])
+    return(seq.int(bounds[1], bounds[2]))
+  }
+  as.integer(code)
+}
 
-missing <- setdiff(refs, names(citation_lookup))
+get_reference_codes_from_sheet <- function(path) {
+  brain <- readxl::read_excel(
+    path,
+    sheet = "Brain Region Data (mm3)",
+    col_types = "text"
+  )
+
+  if (!"References" %in% names(brain)) {
+    stop("The sheet 'Brain Region Data (mm3)' does not contain a 'References' column.",
+         call. = FALSE)
+  }
+
+  refs <- unique(unlist(strsplit(na.omit(brain$References), ",", fixed = TRUE)))
+  refs <- trimws(refs)
+  refs <- refs[nzchar(refs)]
+  refs <- unique(refs)
+  refs[order(first_number(refs), grepl("-", refs), refs)]
+}
+
+citation_lookup <- extract_references_from_pdf(pdf_file)
+
+## ---- optional PDF check ------------------------------------------------------
+## This block is deliberately non-essential. PDF reference text extraction varies
+## across systems, so the curated lookup above is the source used for the CSV. The
+## check helps catch accidental drift if the PDF changes.
+check_pdf_for_required_refs <- function(pdf_file, required_numbers) {
+  if (!file.exists(pdf_file) || !requireNamespace("pdftools", quietly = TRUE)) return(invisible(FALSE))
+
+  txt <- pdftools::pdf_text(pdf_file)
+  start_page <- grep("\\bReferences\\b", txt)[1]
+  if (is.na(start_page)) return(invisible(FALSE))
+
+  section <- paste(txt[start_page:length(txt)], collapse = "\n")
+  section <- sub("(?s)Acknowledgements.*$", "", section, perl = TRUE)
+  section <- normalize_space(section)
+
+  missing_markers <- required_numbers[!grepl(
+    paste0("(^|[^0-9])", required_numbers, "\\."),
+    section,
+    perl = TRUE
+  )]
+
+  if (length(missing_markers)) {
+    warning(
+      "PDF text check did not find these reference markers; CSV still uses curated lookup: ",
+      paste(missing_markers, collapse = ", "),
+      call. = FALSE
+    )
+    return(invisible(FALSE))
+  }
+
+  invisible(TRUE)
+}
+
+## ---- build and write ---------------------------------------------------------
+refs <- get_reference_codes_from_sheet(supp_xlsx)
+needed_numbers <- sort(unique(unlist(lapply(refs, expand_ref_code))))
+
+missing <- setdiff(as.character(needed_numbers), names(citation_lookup))
 if (length(missing) > 0L) {
   stop(
-    "These reference codes are used in the spreadsheet but are not in citation_lookup: ",
+    "These reference numbers are used in the spreadsheet but are not in citation_lookup: ",
     paste(missing, collapse = ", "),
     call. = FALSE
   )
 }
 
+check_pdf_for_required_refs <- function(pdf_file, required_numbers) {
+  if (!requireNamespace("pdftools", quietly = TRUE)) {
+    warning("Package 'pdftools' is not installed; skipping PDF reference check.")
+    return(invisible(FALSE))
+  }
+  if (!file.exists(pdf_file)) {
+    warning("PDF not found; skipping PDF reference check: ", pdf_file)
+    return(invisible(FALSE))
+  }
+  
+  txt <- pdftools::pdf_text(pdf_file)
+  section <- paste(txt, collapse = "\n")
+  
+  found <- vapply(
+    required_numbers,
+    function(x) {
+      grepl(
+        paste0("(^|[^0-9])", x, "\\.\\s+"),
+        section,
+        perl = TRUE
+      )
+    },
+    logical(1)
+  )
+  
+  missing <- required_numbers[!found]
+  
+  if (length(missing) > 0L) {
+    warning(
+      "These required reference numbers were not detected in the PDF text: ",
+      paste(missing, collapse = ", ")
+    )
+    return(invisible(FALSE))
+  }
+  
+  invisible(TRUE)
+}
 out <- data.frame(
-  ref_number = refs,
-  citation   = unname(citation_lookup[refs]),
+  ref_number = needed_numbers,
+  citation   = unname(citation_lookup[as.character(needed_numbers)]),
   check.names = FALSE
 )
 
-if (file.exists(output_csv)) {
-  old <- tryCatch(read.csv(output_csv, check.names = FALSE), error = function(e) NULL)
-  if (!is.null(old) && !identical(old, out)) {
-    warning(
-      "Existing CSV differs from regenerated output. Overwriting: ", output_csv,
-      call. = FALSE
-    )
-  }
-}
-
 write.csv(out, output_csv, row.names = FALSE, fileEncoding = "UTF-8")
+message("Wrote ", nrow(out), " reference rows to: ", output_csv)

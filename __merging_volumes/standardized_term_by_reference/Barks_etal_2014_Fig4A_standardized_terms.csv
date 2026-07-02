@@ -1,0 +1,10 @@
+Original_Term,Reference,Standardized_Term
+Species,Barks_etal_2014_Fig4A,Species
+Cerebellum_mm3,Barks_etal_2014_Fig4A,Cerebellum_Vol.mm3
+Neocortex_GMWM_mm3,Barks_etal_2014_Fig4A,Neocortex_Vol.mm3
+Neocortex_GM_mm3,Barks_etal_2014_Fig4A,Neocortex_grey_matter_Vol.mm3
+Striatum_mm3,Barks_etal_2014_Fig4A,Striatum_Vol.mm3
+Hippocampus_mm3,Barks_etal_2014_Fig4A,Hippocampus_Vol.mm3
+Amygdala_mm3,Barks_etal_2014_Fig4A,Amygdala_Vol.mm3
+Insula_mm3,Barks_etal_2014_Fig4A,Insula_Vol.mm3
+Thalamus_mm3,Barks_etal_2014_Fig4A,Thalamus_Vol.mm3

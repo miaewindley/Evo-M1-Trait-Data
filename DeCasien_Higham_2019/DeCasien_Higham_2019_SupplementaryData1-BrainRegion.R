@@ -92,12 +92,18 @@ xwalk <- c(
   "LGN"                   = "Corpus_geniculatum_laterale_Vol.mm3",
   "Paleocortex"           = "Palaeocortex_Vol.mm3",
   "Amygdala"              = "Amygdala_Vol.mm3",
-  "Vmo"                   = "Trigeminal_motor_nucleus_left_Vol.mm3",
-  "VII"                   = "Facial_motor_nucleus_left_Vol.mm3",
-  "XII"                   = "Hypoglossal_nucleus_left_Vol.mm3",
-  "Granular Insula"       = "Granular_insular_cortex_left_Vol.mm3",
-  "Dysgranular Insula"    = "Dysgranular_insular_cortex_left_Vol.mm3",
-  "Insula (GM)"           = "Insula_left_Vol.mm3"
+  # DeCasien reports these six regions as BILATERAL (both-hemisphere) volumes, so they are
+  # crosswalked to our both-sides "_Vol.mm3" terms, not the raw one-side "_left_Vol.mm3"
+  # columns. (Confirmed empirically: DeCasien's values were exactly 2x our old _left figures.)
+  # volumes_compiled_DeCasien.R step 7 builds these both-sides terms already -- summed from
+  # left+right where both were measured (Bauernfeind insula), or doubled-and-flagged where
+  # only one side was ever measured (Sherwood 2005 cranial motor nuclei).
+  "Vmo"                   = "Trigeminal_motor_nucleus_Vol.mm3",
+  "VII"                   = "Facial_motor_nucleus_Vol.mm3",
+  "XII"                   = "Hypoglossal_nucleus_Vol.mm3",
+  "Granular Insula"       = "Granular_insular_cortex_Vol.mm3",
+  "Dysgranular Insula"    = "Dysgranular_insular_cortex_Vol.mm3",
+  "Insula (GM)"           = "Insula_Vol.mm3"
 )
 # regions with no clean single counterpart in our merge -> left out of the crosswalk:
 #   Striatum (incl. NAcc), Agranular Insula (we carry _left/_right separately)
@@ -142,15 +148,23 @@ dec <- moesm3 %>%
          ref_ids = map_chr(refs, ~ paste(.x, collapse = ";")))
 
 ## ---- II.A value match (same genus, within tol; record species agreement) ----
-match_row <- function(g, val) {
+## Prefer a same-STRUCTURE candidate (Variable == our_term) over the globally-nearest value on
+## ANY variable for that genus. Without this, a numerically-coincidental match on an unrelated
+## variable (e.g. BV landing within tol of that genus's Brain_Mass.mg, or its Telencephalon
+## volume) can beat out a true same-structure match that simply isn't the single closest value --
+## silently downgrading a real "match"/"match_taxonomy_variant" to "value_match_other_structure".
+match_row <- function(g, val, term) {
   cand <- unf %>% filter(genus == g) %>% mutate(d = abs(Value - val) / abs(Value)) %>%
-    filter(d <= tol) %>% arrange(d)
+    filter(d <= tol)
   if (!nrow(cand)) return(tibble(matched_source = NA_character_, matched_variable = NA_character_,
                                  matched_sp = NA_character_, matched_value = NA_real_, pct_diff = NA_real_))
-  cand %>% slice(1) %>% transmute(matched_source = Source, matched_variable = Variable,
-                                  matched_sp = sp, matched_value = Value, pct_diff = round(d * 100, 3))
+  same_term <- cand %>% filter(!is.na(term), Variable == term)
+  pick <- if (nrow(same_term)) same_term else cand
+  pick %>% arrange(d) %>% slice(1) %>%
+    transmute(matched_source = Source, matched_variable = Variable,
+              matched_sp = sp, matched_value = Value, pct_diff = round(d * 100, 3))
 }
-mm <- pmap_dfr(list(dec$genus, dec$dec_value), match_row)
+mm <- pmap_dfr(list(g = dec$genus, val = dec$dec_value, term = dec$our_term), match_row)
 cmp <- bind_cols(dec %>% select(taxon, sp, genus, dec_region, our_term, dec_value, ref_ids, ref_is_stephan), mm) %>%
   mutate(
     anatomy_agree = !is.na(matched_variable) & !is.na(our_term) & matched_variable == our_term,

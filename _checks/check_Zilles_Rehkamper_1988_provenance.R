@@ -19,14 +19,19 @@
 suppressPackageStartupMessages({ library(readr); library(dplyr); library(stringr); library(purrr) })
 ## Set working directory to this script folder
 setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks")
-csv_dir      <- "../Stephan_temp_to_organize/csvs"
+repo_root    <- "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data"
 source_paper <- "Zilles & Rehkamper (1988), Orang-Utan Biology"
 source_taxon <- "pongo"
 source_year  <- 1988L
 out_file     <- "Zilles_Rehkamper_1988_provenance_report.csv"
 
-files <- list.files(csv_dir, pattern = "\\.csv$", full.names = TRUE)
-files <- files[basename(files) != "Stephan_sort.csv"]   # the master merge, not a single-paper dataset
+# NOTE: this check was originally written against a consolidated staging folder
+# ("Stephan_temp_to_organize/csvs") that has since been retired -- those single-paper CSVs
+# now live one per paper, in <Paper>/comparison/<Paper_year>.csv. Scan those instead.
+files <- list.files(repo_root, pattern = "\\.csv$", recursive = TRUE, full.names = TRUE)
+files <- files[grepl("/comparison/[^/]+\\.csv$", files)]  # directly under comparison/, skip nested subfolders (e.g. Kaufman__2004's extra subfolder)
+files <- files[!grepl("_comparison_(report|mismatches)(_from_R)?\\.csv$", basename(files))]  # drop this pipeline's own generated audit outputs
+files <- files[basename(files) != "Stephan_sort.csv"]   # the old master merge, not a single-paper dataset (kept for safety)
 
 scan_one <- function(path) {
   fn <- basename(path)

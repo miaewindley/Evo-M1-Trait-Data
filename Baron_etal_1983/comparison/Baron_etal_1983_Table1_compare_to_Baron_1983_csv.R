@@ -28,11 +28,12 @@ suppressPackageStartupMessages({
   library(stringr)
 })
 
-# Run from this script's own folder (RStudio), so the relative paths resolve.
-if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+# Run from this script's own folder, so the relative paths resolve.
+# NOTE: this used to be gated behind `if (rstudioapi::isAvailable())`, which meant the setwd
+# never ran under Rscript (non-interactive) execution -- the path is a hardcoded absolute
+# path either way, so just set it unconditionally.
 ## Set working directory to this script folder
 setwd("/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Baron_etal_1983/comparison")
-}
 
 snapshot_file     <- "../Baron_etal_1983_Table1_snapshot.xlsx"
 snapshot_sheet    <- "Table1_snapshot"

@@ -23,9 +23,36 @@ setwd(folder)
 setwd(paste0(base, "/"))
 folder_path <- paste0(folder, "/")
 
-#Load readr
-library(readr)
-# Read the text version 
-sheetfromtxt <- read_delim("Iwaniuk_etal_1999_References.txt", 
-                           delim = "\t", escape_double = FALSE, 
-                           trim_ws = TRUE, skip = 1)
+## 2. PARSE
+## The .txt (see Iwaniuk_etal_1999_References.md: copied from the PDF into TextEdit and
+## saved as Plain Text) is not tab-delimited data -- it is the References section as one
+## run of prose, with each entry marked "[N] ...", and classic Mac (CR-only) line breaks.
+## read_delim() with delim = "\t" never matched that layout (and the bare filename above
+## also was not resolved against folder_path, so the file could not be found either way).
+## Parse it directly: split on the "[N]" markers into ref_number/citation pairs.
+references_file <- paste0(folder_path, "Iwaniuk_etal_1999_References.txt")
+output_file     <- paste0(folder_path, "Iwaniuk_etal_1999_References.csv")
+
+raw <- readChar(references_file, file.info(references_file)$size, useBytes = TRUE)
+raw <- gsub("\r\n|\r", "\n", raw)                    # normalise CR-only / CRLF to LF
+raw <- sub("^\\s*References\\s*", "", raw)           # drop the leading "References" heading
+
+# A running page header/footer ("A.N. Iwaniuk et al. : ...") got embedded mid-text at a
+# page break, right before reference [44]; strip it so it doesn't get glued onto [43]'s citation.
+raw <- gsub("A\\.N\\. Iwaniuk et al\\.[^\\[]*(?=\\[44\\])", "", raw, perl = TRUE)
+
+# Mark each "[N]" reference start with control characters, then split on them.
+marked <- gsub("\\[(\\d{1,3})\\]\\s*", "\x01\\1\x02", raw)
+pieces <- strsplit(marked, "\x01", fixed = TRUE)[[1]]
+pieces <- pieces[nzchar(trimws(pieces))]
+
+ref_number <- as.integer(sub("^(\\d+)\x02.*$", "\\1", pieces))
+citation   <- sub("^\\d+\x02", "", pieces)
+citation   <- trimws(gsub("\\s+", " ", citation))
+
+references <- data.frame(ref_number = ref_number, citation = citation, stringsAsFactors = FALSE)
+references <- references[order(references$ref_number), ]
+
+## 3. SAVE
+write.csv(references, output_file, row.names = FALSE)
+message("Wrote ", nrow(references), " reference rows to: ", output_file)

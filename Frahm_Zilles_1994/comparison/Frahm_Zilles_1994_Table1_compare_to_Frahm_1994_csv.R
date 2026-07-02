@@ -58,8 +58,14 @@ comp_raw <- read_csv(comparison_file, col_types = cols(.default = col_character(
 snap <- snap %>% mutate(.cid = dplyr::coalesce(
   comp_raw$.cid[match(species_key, norm_label(comp_raw$Species))],
   comp_raw$.cid[match(species_key, norm_label(comp_raw$Species))]))
-comp <- comp_raw %>% transmute(.cid, species_csv = str_squish(dplyr::coalesce(Species, Species)),
-  !!!setNames(lapply(structures, function(s) quote(parse_value(.data[[csv_col[[s]]]]))), paste0(structures, "_csv")))
+# NOTE: building these columns via quote(...) inside lapply() previously failed with
+# "object 's' not found" -- quote() captures the expression unevaluated, so the loop
+# variable `s` was never substituted in and was looked up (and not found) later inside
+# transmute()'s data mask. A plain loop avoids the metaprogramming pitfall entirely.
+comp <- comp_raw %>% transmute(.cid, species_csv = str_squish(Species))
+for (s in structures) {
+  comp[[paste0(s, "_csv")]] <- parse_value(comp_raw[[csv_col[[s]]]])
+}
 
 num_match <- function(a, b, tol = 1e-6) (is.na(a) & is.na(b)) | (!is.na(a) & !is.na(b) & abs(a - b) <= tol)
 report <- full_join(snap, comp, by = ".cid") %>%

@@ -34,7 +34,20 @@ data_trimmed %>%
 s <- as.data.frame(scale(log(data_trimmed[,-1] )))
 
 # mcar test (missing completely at random test)
-na.test(s)
+# NOTE: Little's MCAR test (misty::na.test -> .LittleMCAR) fits a saturated covariance
+# model per missingness pattern via stats::nlm(); with this many sparsely-populated
+# columns some pattern's covariance is degenerate (a zero-variance/collinear column within
+# that pattern), so nlm's likelihood surface is non-finite and it aborts. That's a property
+# of the current column selection, not something a code fix alone can resolve -- flagging it
+# instead of halting the whole diagnostic script so the rest (histograms, imputation) still runs.
+mcar_result <- tryCatch(
+  na.test(s),
+  error = function(e) {
+    warning("na.test(s) failed (likely a degenerate/zero-variance covariance pattern in `s`): ",
+            conditionMessage(e), call. = FALSE)
+    NULL
+  }
+)
 
 #histograms
 multi.hist(s[,sapply(s, is.numeric)], global = F)
@@ -44,13 +57,18 @@ multi.hist(s[,sapply(s, is.numeric)], global = F)
 #Tried: pmm, midas.touch, cart, rf, norm, norm.predict, lasso.norm,lasso.select.norm
 #cart and rf were OK
 
-#impute 30 datasets with maximal iterations = 10 
+#impute 30 datasets with maximal iterations = 10
 pred = quickpred(s, minpuc = 0.3) #only use predictors with over 30% data
 imp <- mice(s, 30, maxit = 10, setseed = 777, method = "rf")
 
 #30 imputed datasets, after 10 iterations
-save(imp, file = "imp30x10.RData")
-load("./__imputing_cellcounts/imp30x10.Rdata")
+# NOTE: previously saved to the cwd ("imp30x10.RData", repo root, since this script setwd()s
+# there at the top) but loaded back from "./__imputing_cellcounts/imp30x10.Rdata" -- a
+# different directory *and* a different case ("RData" vs "Rdata"), so the load always failed.
+# Save and load the same path.
+imp_file <- "./__imputing_cellcounts/imp30x10.RData"
+save(imp, file = imp_file)
+load(imp_file)
 
 #get the 1st dataset
 set_1 = complete(imp, 1)
@@ -66,12 +84,16 @@ for(imputedsets in 1: length(imp$imp[[1]])) {
   assign(paste0("dataX",imputedsets), complete(imp, imputedsets))
 }
 
-# in mice you can work on all 30 at once
-do.call(regression, imp)
-
-
-# Perform regression on each imputed dataset
-models <- with(imp, lm(y ~ x1 + x2))
-
-# Pool the results
-pooled_model <- pool(models)
+# TODO (unfinished -- needs a real model spec from whoever is doing this analysis):
+# the two blocks below are placeholder boilerplate, not a model fit for this dataset.
+# `regression` is not a function in base R/mice (mice's helper is `with.mids`, used below),
+# and `y`, `x1`, `x2` are generic tutorial names -- no such columns exist in `s`/`imp`. Both
+# lines error as written, so they're commented out rather than run as automated pipeline
+# code. Replace `y ~ x1 + x2` with the actual outcome/predictor columns once decided.
+# do.call(regression, imp)
+#
+# # Perform regression on each imputed dataset
+# models <- with(imp, lm(y ~ x1 + x2))
+#
+# # Pool the results
+# pooled_model <- pool(models)
