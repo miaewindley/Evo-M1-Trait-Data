@@ -337,11 +337,11 @@ na.test(s) failed (likely a degenerate/zero-variance covariance pattern in `s`):
   10   29  Body_Mass.g  Cerebellum_Mass.g  Cerebellum_N.n  Cerebellum_O.n  CerebralCortex_Mass.g  CerebralCortex_N.n  CerebralCortex_O.n  RoB_Mass.g  RoB_N.n  RoB_O.n  WholeBrain_C.n  WholeBrain_N.n  WholeBrain_O.n  CerebralCortex_I.p.C  OlfactoryBulb_Mass.g  OlfactoryBulb_N.n  OlfactoryBulb_O.n
   10   30  Body_Mass.g  Cerebellum_Mass.g  Cerebellum_N.n  Cerebellum_O.n  CerebralCortex_Mass.g  CerebralCortex_N.n  CerebralCortex_O.n  RoB_Mass.g  RoB_N.n  RoB_O.n  WholeBrain_C.n  WholeBrain_N.n  WholeBrain_O.n  CerebralCortex_I.p.C  OlfactoryBulb_Mass.g  OlfactoryBulb_N.n  OlfactoryBulb_O.n
 Warning message:
-Number of logged events: 4208 
+Number of logged events: 4228 
 Error in density.default(x = c(NA_real_, NA_real_, NA_real_, NA_real_,  : 
   need at least 2 points to select a bandwidth automatically
 Calls: densityplot ... <Anonymous> -> do.call -> <Anonymous> -> density.default
-Execution halted","2026-07-02 00:48:19.85033","2026-07-02 00:48:42.796876",22.9465458393097
+Execution halted","2026-07-02 00:55:36.077595","2026-07-02 00:55:58.103113",22.0255179405212
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts/cellcounts_compiled.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
@@ -355,7 +355,7 @@ Execution halted","2026-07-02 00:48:19.85033","2026-07-02 00:48:42.796876",22.94
 Error in `$<-.data.frame`(`*tmp*`, ""Species"", value = character(0)) : 
   replacement has 0 rows, data has 1
 Calls: $<- -> $<-.data.frame
-Execution halted","2026-07-02 00:48:42.828388","2026-07-02 00:48:44.5966",1.76821208000183
+Execution halted","2026-07-02 00:55:58.113549","2026-07-02 00:55:59.882999",1.76944994926453
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_Zilles_Rehkamper_1988_provenance.R","FAILED","Error in `map()`:
 ℹ In index: 1.
 Caused by error in `filter()`:
@@ -389,7 +389,7 @@ Backtrace:
  23. └─base::.handleSimpleError(...)
  24.   └─dplyr (local) h(simpleError(msg, call))
  25.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
-Execution halted","2026-07-02 00:49:03.097388","2026-07-02 00:49:04.395933",1.29854488372803
+Execution halted","2026-07-02 00:56:15.494676","2026-07-02 00:56:16.541536",1.04685997962952
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1988/Stephan_etal_1988_Table1.R","FAILED","New names:
 • `` -> `...1`
 • `` -> `...2`
@@ -421,4 +421,4 @@ Backtrace:
  13. └─base::.handleSimpleError(...)
  14.   └─dplyr (local) h(simpleError(msg, call))
  15.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
-Execution halted","2026-07-02 00:55:20.172423","2026-07-02 00:55:21.216052",1.04362916946411
+Execution halted","2026-07-02 01:02:52.539372","2026-07-02 01:02:53.436234",0.896862030029297
