@@ -1,11 +1,2 @@
 decasien_taxon,decasien_name,merge_accepted_name,structure,dec_value,matched_value,matched_source,proposed
-Alouatta_seniculus,Alouatta seniculus,Alouatta sp,Total_brain_net_volume_Vol.mm3,49009,49009,Stephan_etal_1981_TablesI-VI,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv
-Avahi_laniger,Avahi laniger,Avahi l laniger,Total_brain_net_volume_Vol.mm3,9798,9798,Stephan_etal_1981_TablesI-VI,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv
 Avahi_occidentalis,Avahi occidentalis,Avahi laniger,Mesencephalon_Vol.mm3,345,345,Stephan_etal_1970_Tables1-6,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv
-Avahi_occidentalis,Avahi occidentalis,Avahi laniger occidentalis,Total_brain_net_volume_Vol.mm3,9124,9124,Stephan_etal_1981_TablesI-VI,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv
-Cebus_albifrons,Cebus albifrons,Cebus sp,Total_brain_net_volume_Vol.mm3,66939,66939,Stephan_etal_1981_TablesI-VI,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv
-Daubentonia_madagascariensis,Daubentonia madagascariensis,Daubentonia madagascar,Bulbus_olfactorius_Vol.mm3,685,685,Stephan_etal_1981_TablesI-VI,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv
-Gorilla_gorilla_gorilla,Gorilla sp,Gorilla gorilla,Total_brain_net_volume_Vol.mm3,470359,470359,Stephan_etal_1981_TablesI-VI,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv
-Lagothrix_lagotricha,Lagothrix lagothricha,Lagothrix lagotricha,Total_brain_net_volume_Vol.mm3,95503,95503,Stephan_etal_1981_TablesI-VI,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv
-Pithecia_monachus,Pithecia monachus,Pithecia monacha,Total_brain_net_volume_Vol.mm3,32867,32867,Stephan_etal_1981_TablesI-VI,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv
-Saguinus_midas,Saguinus midas,Saguinus tamarin,Total_brain_net_volume_Vol.mm3,9569,9569,Stephan_etal_1981_TablesI-VI,adopt DeCasien binomial (variant -> accepted) in _keys/Stephan/species_key.csv

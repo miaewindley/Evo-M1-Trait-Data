@@ -46,7 +46,7 @@ suppressPackageStartupMessages({
 options(scipen = 999)
 
 snapshot_file  <- paste0(item_name, "_snapshot.xlsx")
-raw <- read_excel(snapshot_file, sheet = "Table3", col_types = "text")
+raw <- read_excel(snapshot_file)
 
 split_mean <- function(x) suppressWarnings(as.numeric(str_trim(str_extract(x, "^[^\u00b1]+"))))
 split_sd   <- function(x) suppressWarnings(as.numeric(str_trim(str_extract(x, "(?<=\u00b1).+"))))

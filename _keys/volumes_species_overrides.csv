@@ -15,12 +15,10 @@ Ashwell__2020_SupplementaryTable,Pecaru tacaju,Tayassu tajacu,from token Ashwell
 Ashwell__2020_SupplementaryTable,Sarcophilus harissii,Sarcophilus harrisii,from token Ashwell2020
 Barger_etal_2007_TABLE1,Gorilla gorilla,Gorilla sp.,from token Barger2007
 Barger_etal_2007_TABLE1,Pongo pygmaeus,Pongo sp.,from token Barger2007
-Barks_etal_2014_viaDeCasien,Eulemur fulvus fulvus,Eulemur fulvus,from token DeCasien
-Barks_etal_2014_viaDeCasien,Gorilla gorilla gorilla,Gorilla sp.,from token DeCasien
-Barks_etal_2014_viaDeCasien,Lagothrix lagotricha,Lagothrix lagothricha,from token DeCasien
-Barks_etal_2014_viaDeCasien,Pan troglodytes troglodytes,Pan troglodytes,from token DeCasien
-Barks_etal_2014_viaDeCasien,Tarsius syrichta,Tarsius sp.,from token DeCasien
-Barks_etal_2014_viaDeCasien,Varecia variegata variegata,Varecia variegata,from token DeCasien
+Barks_etal_2014_TABLE1,Gorilla beringei,Gorilla sp.,DeCasien source; post-reshape word(1,2) binomial
+Barks_etal_2014_TABLE1,Gorilla gorilla,Gorilla sp.,DeCasien source; post-reshape word(1,2) binomial
+Barks_etal_2014_Fig4A,Gorilla beringei,Gorilla sp.,DeCasien source; raw binomial
+Barks_etal_2014_Fig4A,Gorilla gorilla,Gorilla sp.,DeCasien source; raw binomial
 Baron_etal_1983_Table1,Alouatta spp.,Alouatta seniculus,from token Baron1983
 Baron_etal_1983_Table1,Avahi I. occidentalis,Avahi occidentalis,from token Baron1983
 Baron_etal_1983_Table1,Avahi laniger laniger,Avahi laniger,from token Baron1983
@@ -55,7 +53,7 @@ Baron_etal_1987_Table1,Microsoex hoyi,Microsorex hoyi,from token Baron1987
 Baron_etal_1987_Table1,Oryzorictes talpoides,Oryzorictes hova,from token Baron1987
 Baron_etal_1987_Table1,Ruwensorisorex suncoides,Ruwenzorisorex suncoides,from token Baron1987
 Baron_etal_1987_Table1,Saguinus midas tamarin,Saguinus midas,from token Baron1987
-Baron_etal_1987_Table1,Scuisorex somereni,ScutisorexÃsomereni,from token Baron1987
+Baron_etal_1987_Table1,Scuisorex somereni,Scutisorex somereni,from token Baron1987
 Baron_etal_1987_Table1,Tarsius spp.,Tarsius sp.,from token Baron1987
 Baron_etal_1988_Table1,Avahi laniger laniger,Avahi laniger,from token Baron1988
 Baron_etal_1988_Table1,Avahi laniger occidentalis,Avahi occidentalis,from token Baron1988
@@ -129,9 +127,6 @@ Frahm_etal_1998_Table1,Cebuella pygmaea,Callithrix pygmaea,from token Frahm98
 Frahm_etal_1998_Table1,Cebus spec.,Cebus albifrons,from token Frahm98
 Frahm_etal_1998_Table1,Cercocebus albigena,Lophocebus albigena,from token Frahm98
 Frahm_etal_1998_Table1,Tarsius spec.,Tarsius sp.,from token Frahm98
-MacLeod_etal_2003_,Cercocebus torquatus atys,Cercocebus torquatus,from token MacLeod2003
-MacLeod_etal_2003_,Gorilla gorilla,Gorilla sp.,from token MacLeod2003
-MacLeod_etal_2003_,Pongo pygmaeus,Pongo sp.,from token MacLeod2003
 MacLeod_etal_2003_Table1,Cercocebus torquatus atys,Cercocebus torquatus,from token MacLeod2003
 MacLeod_etal_2003_Table1,Gorilla gorilla,Gorilla sp.,from token MacLeod2003
 MacLeod_etal_2003_Table1,Pongo pygmaeus,Pongo sp.,from token MacLeod2003
@@ -158,16 +153,17 @@ Matano_etal_1985_b_Table1,Daubentonia madagasc.,Daubentonia madagascariensis,fro
 Matano_etal_1985_b_Table1,Gorilla gorilla,Gorilla sp.,from token Matano1985b
 Matano_etal_1985_b_Table1,Lemur fulvus,Eulemur fulvus,from token Matano1985b
 Matano_etal_1985_b_Table1,Tarsius spp.,Tarsius sp.,from token Matano1985b
-Rilling_Insel_1999_viaDeCasien,Eulemur fulvus fulvus,Eulemur fulvus,from token DeCasien
-Rilling_Insel_1999_viaDeCasien,Gorilla gorilla gorilla,Gorilla sp.,from token DeCasien
-Rilling_Insel_1999_viaDeCasien,Lagothrix lagotricha,Lagothrix lagothricha,from token DeCasien
-Rilling_Insel_1999_viaDeCasien,Pan troglodytes troglodytes,Pan troglodytes,from token DeCasien
-Rilling_Insel_1999_viaDeCasien,Tarsius syrichta,Tarsius sp.,from token DeCasien
-Rilling_Insel_1999_viaDeCasien,Varecia variegata variegata,Varecia variegata,from token DeCasien
+Rilling_Insel_1998_Table1,Gorilla gorilla,Gorilla sp.,DeCasien source; raw binomial
+Rilling_Insel_1998_Table1,Pongo pygmaeus,Pongo sp.,DeCasien source; raw binomial
+Rilling_Insel_1999_Table1,Gorilla gorilla,Gorilla sp.,DeCasien source; raw binomial
+Rilling_Insel_1999_Table1,Pongo pygmaeus,Pongo sp.,DeCasien source; raw binomial
 Semendeferi_etal_1998_Table2,Gorilla gorilla,Gorilla sp.,from token Semendeferi
 Semendeferi_etal_1998_Table2,Pongo pygmaeus,Pongo sp.,from token Semendeferi
 Semendeferi_etal_2001_Table2,Gorilla gorilla,Gorilla sp.,from token Semendeferi
 Semendeferi_etal_2001_Table2,Pongo pygmaeus,Pongo sp.,from token Semendeferi
+Sherwood_etal_2004_TABLEI,Gorilla beringei,Gorilla sp.,DeCasien source; post-reshape word(1,2) binomial
+Sherwood_etal_2004_TABLEI,Gorilla gorilla,Gorilla sp.,DeCasien source; post-reshape word(1,2) binomial
+Sherwood_etal_2004_TABLEI,Pongo pygmaeus,Pongo sp.,DeCasien source; post-reshape word(1,2) binomial
 Sherwood_etal_2005_Table1,Avahi laniger laniger,Avahi laniger,from token Sherwood_2005
 Sherwood_etal_2005_Table1,Avahi laniger occidentalis,Avahi occidentalis,from token Sherwood_2005
 Sherwood_etal_2005_Table1,Cebuella pygmaea,Callithrix pygmaea,from token Sherwood_2005
@@ -196,31 +192,31 @@ Stephan_etal_1970_Tables1-6,Limnogale mergulus,Microgale mergulus,from token Ste
 Stephan_etal_1970_Tables1-6,Loris gracilis,Loris tardigradus,from token Stephan1970
 Stephan_etal_1970_Tables1-6,Pithecia monacha,Pithecia monachus,from token Stephan1970
 Stephan_etal_1970_Tables1-6,Saguinus tamarin,Saguinus midas,from token Stephan1970
-Stephan_etal_1981_Table1,Aethechinus algirus,Atelerix algirus,from token Stephan1981
-Stephan_etal_1981_Table1,Alouatta sp.,Alouatta seniculus,from token Stephan1981
-Stephan_etal_1981_Table1,Avahi l. laniger,Avahi laniger,from token Stephan1981
-Stephan_etal_1981_Table1,Avahi laniger occidentalis,Avahi occidentalis,from token Stephan1981
-Stephan_etal_1981_Table1,Cebuella pygmaea,Callithrix pygmaea,from token Stephan1981
-Stephan_etal_1981_Table1,Cebus sp.,Cebus albifrons,from token Stephan1981
-Stephan_etal_1981_Table1,Cercocebus albigena,Lophocebus albigena,from token Stephan1981
-Stephan_etal_1981_Table1,Cercopithecus talapoin,Miopithecus talapoin,from token Stephan1981
-Stephan_etal_1981_Table1,Chlorotalpa stuhlmanni,Chrysochloris stuhlmanni,from token Stephan1981
-Stephan_etal_1981_Table1,Colobus badius,Piliocolobus badius,from token Stephan1981
-Stephan_etal_1981_Table1,Crocidura occidentalis,Crocidura flavescens,from token Stephan1981
-Stephan_etal_1981_Table1,Daubentonia madagascar.,Daubentonia madagascariensis,from token Stephan1981
-Stephan_etal_1981_Table1,Galago crassicaudatus,Otolemur crassicaudatus,from token Stephan1981
-Stephan_etal_1981_Table1,Galago demidovii,Galagoides demidoff,from token Stephan1981
-Stephan_etal_1981_Table1,Gorilla gorilla,Gorilla sp.,from token Stephan1981
-Stephan_etal_1981_Table1,Homo sapiens sapiens,Homo sapiens,from token Stephan1981
-Stephan_etal_1981_Table1,Lagothrix lagotricha,Lagothrix lagothricha,from token Stephan1981
-Stephan_etal_1981_Table1,Lemur fulvus,Eulemur fulvus,from token Stephan1981
-Stephan_etal_1981_Table1,Lemur variegatus,Varecia variegata,from token Stephan1981
-Stephan_etal_1981_Table1,Limnogale mergulus,Microgale mergulus,from token Stephan1981
-Stephan_etal_1981_Table1,Oryzorictes talpoides,Oryzorictes hova,from token Stephan1981
-Stephan_etal_1981_Table1,Pithecia monacha,Pithecia monachus,from token Stephan1981
-Stephan_etal_1981_Table1,Pongo abelii,Pongo sp.,from token Stephan1981
-Stephan_etal_1981_Table1,Rhynchocyon stuhlmanni,Rhynchocyon cirnei,from token Stephan1981
-Stephan_etal_1981_Table1,Saguinus tamarin,Saguinus midas,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Aethechinus algirus,Atelerix algirus,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Alouatta sp.,Alouatta seniculus,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Avahi l. laniger,Avahi laniger,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Avahi laniger occidentalis,Avahi occidentalis,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Cebuella pygmaea,Callithrix pygmaea,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Cebus sp.,Cebus albifrons,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Cercocebus albigena,Lophocebus albigena,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Cercopithecus talapoin,Miopithecus talapoin,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Chlorotalpa stuhlmanni,Chrysochloris stuhlmanni,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Colobus badius,Piliocolobus badius,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Crocidura occidentalis,Crocidura flavescens,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Daubentonia madagascar.,Daubentonia madagascariensis,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Galago crassicaudatus,Otolemur crassicaudatus,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Galago demidovii,Galagoides demidoff,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Gorilla gorilla,Gorilla sp.,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Homo sapiens sapiens,Homo sapiens,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Lagothrix lagotricha,Lagothrix lagothricha,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Lemur fulvus,Eulemur fulvus,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Lemur variegatus,Varecia variegata,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Limnogale mergulus,Microgale mergulus,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Oryzorictes talpoides,Oryzorictes hova,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Pithecia monacha,Pithecia monachus,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Pongo abelii,Pongo sp.,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Rhynchocyon stuhlmanni,Rhynchocyon cirnei,from token Stephan1981
+Stephan_etal_1981_TablesI-VI,Saguinus tamarin,Saguinus midas,from token Stephan1981
 Stephan_etal_1982_Table1,Alouatta sp.,Alouatta seniculus,from token Stephan1982
 Stephan_etal_1982_Table1,Avahi laniger lan.,Avahi laniger,from token Stephan1982
 Stephan_etal_1982_Table1,Avahi laniger occ.,Avahi occidentalis,from token Stephan1982
@@ -272,15 +268,9 @@ Stephan_etal_1987_Table1,Microgale dobsoni,Nesogale dobsoni,from token Stephan19
 Stephan_etal_1987_Table1,Microgale talazaci,Nesogale talazaci,from token Stephan1987
 Stephan_etal_1987_Table1,Oryzorictes talpoides,Oryzorictes hova,from token Stephan1987
 Stephan_etal_1987_Table1,Saguinus midas tamarin,Saguinus midas,from token Stephan1987
-Stephan_etal_1987_Table1,Scutisorex somereni,ScutisorexÃsomereni,from token Stephan1987
+Stephan_etal_1987_Table1,Scutisorex somereni,Scutisorex somereni,from token Stephan1987
 Stephan_etal_1987_Table1,Sylvisorex megalura,Suncus megalura,from token Stephan1987
 Stephan_etal_1987_Table1,Tarsius spp.,Tarsius sp.,from token Stephan1987
-Stimpson_etal_2015_viaDeCasien,Eulemur fulvus fulvus,Eulemur fulvus,from token DeCasien
-Stimpson_etal_2015_viaDeCasien,Gorilla gorilla gorilla,Gorilla sp.,from token DeCasien
-Stimpson_etal_2015_viaDeCasien,Lagothrix lagotricha,Lagothrix lagothricha,from token DeCasien
-Stimpson_etal_2015_viaDeCasien,Pan troglodytes troglodytes,Pan troglodytes,from token DeCasien
-Stimpson_etal_2015_viaDeCasien,Tarsius syrichta,Tarsius sp.,from token DeCasien
-Stimpson_etal_2015_viaDeCasien,Varecia variegata variegata,Varecia variegata,from token DeCasien
 deSousa_etal_2010_Table1,Cebuella pygmaea,Callithrix pygmaea,from token deSousa2010
 deSousa_etal_2010_Table1,Cercopithecus mitus,Cercopithecus mitis,from token deSousa2010
 deSousa_etal_2010_Table1,Gorilla gorilla,Gorilla sp.,from token deSousa2010
@@ -292,3 +282,8 @@ deSousa_etal_2010_Table1,Sanguinus oedipus,Saguinus oedipus,from token deSousa20
 deSousa_etal_2010_Table1,Tarsius syrichta,Tarsius sp.,from token deSousa2010
 deSousa_etal_2013_Table1,Gorilla gorilla,Gorilla sp.,from token deSousa2013
 deSousa_etal_2013_Table1,Pongo pygmaeus,Pongo sp.,from token deSousa2013
+Stephan_etal_1970_Tables1-6,Callicebus moloch,Callicebus moloch,keep DeCasien-era genus Callicebus (NCBI splits to Plecturocebus moloch); harmonizes with Bush Callicebus sp. and makes DeCasien comparison match
+Stephan_etal_1981_TablesI-VI,Callicebus moloch,Callicebus moloch,keep DeCasien-era genus Callicebus (NCBI splits to Plecturocebus moloch); harmonizes with Bush Callicebus sp. and makes DeCasien comparison match
+Frahm_etal_1984_Table1,Callicebus moloch,Callicebus moloch,keep DeCasien-era genus Callicebus (NCBI splits to Plecturocebus moloch); harmonizes with Bush Callicebus sp. and makes DeCasien comparison match
+Sherwood_etal_2005_Table1,Callicebus moloch,Callicebus moloch,keep DeCasien-era genus Callicebus (NCBI splits to Plecturocebus moloch); harmonizes with Bush Callicebus sp. and makes DeCasien comparison match
+deSousa_etal_2010_Table1,Callicebus moloch,Callicebus moloch,keep DeCasien-era genus Callicebus (NCBI splits to Plecturocebus moloch); harmonizes with Bush Callicebus sp. and makes DeCasien comparison match

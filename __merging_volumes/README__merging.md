@@ -34,7 +34,7 @@ Tier-1 result:
 Brain-structure volumes are merged as **whole-structure, both-hemisphere** values:
 - where a paper measured **one hemisphere and doubled it** (assuming symmetry) or already reports a
   both-sides total (Stephan/Frahm/Baron/Zilles/Matano; MacLeod `hemisphere` = both lateral hemispheres
-  summed; Barger `AC_total` = L + R), the reported both-sides volume is used directly;
+  summed; Barger `amygdaloid_complex_total` = L + R), the reported both-sides volume is used directly;
 - where a paper reports **left and right separately** (Smaers 2011 `frontal_*_total` = left + right),
   the merge uses **left + right added**.
 
@@ -58,7 +58,7 @@ Left (Table 1) and right (Table 2) are combined into whole-insula both-hemispher
 
 Numeric values are **not** doubled; a both-sides estimate, if needed, is derived downstream as `2 ×` and
 flagged (`estimated_bilateral_from_unilateral = TRUE`), never overwriting the original. Individual-hemisphere
-volumes from both-sides papers (e.g. Smaers `frontal_white_left_cm3`/`_right_cm3`, Barger `AC_L`/`AC_R`) are
+volumes from both-sides papers (e.g. Smaers `frontal_white_left_cm3`/`_right_cm3`, Barger `amygdaloid_complex_L`/`amygdaloid_complex_R`) are
 preserved in each paper's source CSV/TSV but not carried into the merged table.
 
 **Adding a one-side column:** register it in `laterality_known.csv` and give its standardized term the

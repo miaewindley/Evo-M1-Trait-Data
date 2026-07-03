@@ -51,10 +51,10 @@ tot <- function(a, b) ifelse(is.na(en(a)) | is.na(en(b)), NA_real_, round(en(a) 
 clean <- data.frame(
   species, specimen, age = d$Age, sex = d$Sex,
   hemispheres_cm3 = en(d[["Hemi cm3"]]),
-  AC_L = en(d[["Amygdaloid complex L"]]), AC_R = en(d[["Amygdaloid complex R"]]),
-  AC_total = tot(d[["Amygdaloid complex L"]], d[["Amygdaloid complex R"]]),
-  BLD_L = en(d[["Basolateral L"]]), BLD_R = en(d[["Basolateral R"]]),
-  BLD_total = tot(d[["Basolateral L"]], d[["Basolateral R"]]),
+  amygdaloid_complex_L = en(d[["Amygdaloid complex L"]]), amygdaloid_complex_R = en(d[["Amygdaloid complex R"]]),
+  amygdaloid_complex_total = tot(d[["Amygdaloid complex L"]], d[["Amygdaloid complex R"]]),
+  basolateral_L = en(d[["Basolateral L"]]), basolateral_R = en(d[["Basolateral R"]]),
+  basolateral_total = tot(d[["Basolateral L"]], d[["Basolateral R"]]),
   lateral_L = en(d[["Lateral L"]]), lateral_R = en(d[["Lateral R"]]),
   lateral_total = tot(d[["Lateral L"]], d[["Lateral R"]]),
   basal_L = en(d[["Basal L"]]), basal_R = en(d[["Basal R"]]),
@@ -69,13 +69,13 @@ clean <- data.frame(
               )[marker]),
   source = "Barger_etal_2007", stringsAsFactors = FALSE
 )
-# AC_total (whole amygdaloid complex, both hemispheres) is the column that maps to the
+# amygdaloid_complex_total (whole amygdaloid complex, both hemispheres) is the column that maps to the
 # Stephan "Amygdala". Species still to reconcile to _keys/Stephan/species_key.csv.
 write.csv(clean, "Barger_etal_2007_Table1.csv", row.names = FALSE)
 
 ## ---- also write the DOI-coded TSV to __Public/comparative-data/ (consumed by __merging_volumes) ----
 ## The volume merge reads per-specimen rows and aggregates to species means (cm3 -> mm3) itself,
-## using AC_total -> Amygdala_Vol.mm3. Keep item_name == the "Item name" in __ReadMe.xlsx.
+## using amygdaloid_complex_total -> Amygdala_Vol.mm3. Keep item_name == the "Item name" in __ReadMe.xlsx.
 item_name <- "Barger_etal_2007_TABLE1"
 tsv_dir   <- file.path(base, "__Public/comparative-data")
 enc <- if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {

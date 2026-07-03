@@ -5,8 +5,8 @@ Cebus_albifrons,frontal_motor_gray,1.977,Sherwood_etal_2005_Table1,Hypoglossal_n
 Cercopithecus_ascanius,frontal_motor_gray,1.351,(no match),,NA,NA
 Cercopithecus_mitis,frontal_motor_gray,1.852,(no match),,NA,NA
 Erythrocebus_patas,frontal_motor_gray,2.552,(no match),,NA,NA
-Gorilla_gorilla_gorilla,frontal_motor_gray,14.854,Stephan_etal_1981_TablesI-VI,Striatum_Vol.mm3,14567,1.97
-Homo_sapiens,frontal_motor_gray,29.013,Stephan_etal_1970_Tables1-6,Striatum_Vol.mm3,28559,1.59
+Gorilla_gorilla_gorilla,frontal_motor_gray,14.854,(no match),,NA,NA
+Homo_sapiens,frontal_motor_gray,29.013,Stephan_etal_1981_TablesI-VI,Striatum_Vol.mm3,28689,1.13
 Hylobates_lar,frontal_motor_gray,2.744,(no match),,NA,NA
 Lagothrix_lagotricha,frontal_motor_gray,2.434,(no match),,NA,NA
 Lophocebus_albigena,frontal_motor_gray,3.926,MacLeod_etal_2003_Table2,CerebellarVermis_Vol.mm3,4000,1.85
@@ -16,7 +16,7 @@ Pan_paniscus,frontal_motor_gray,8.356,(no match),,NA,NA
 Pan_troglodytes_troglodytes,frontal_motor_gray,13.407,(no match),,NA,NA
 Papio_anubis,frontal_motor_gray,4.686,Sherwood_etal_2005_Table1,Hypoglossal_nucleus_left_Vol.mm3,4.62,1.43
 Piliocolobus_badius,frontal_motor_gray,2.26,Stephan_etal_1981_TablesI-VI,Nucleus_septalis_triangularis_Vol.mm3,2.26,0
-Pithecia_pithecia,frontal_motor_gray,0.819,Frahm_Zilles_1994_Table1,Hippocampus_Vol.mm3,834.26,1.83
+Pithecia_pithecia,frontal_motor_gray,0.819,Stephan_etal_1981_TablesI-VI,Hippocampus_Vol.mm3,834,1.8
 Pongo_pygmaeus,frontal_motor_gray,6.353,(no match),,NA,NA
 Alouatta_seniculus,frontal_motor_white,0.866,(no match),,NA,NA
 Ateles_geoffroyi,frontal_motor_white,1.586,(no match),,NA,NA
@@ -24,7 +24,7 @@ Cebus_albifrons,frontal_motor_white,1.425,Smaers_etal_2011_SupplementaryTable2,s
 Cercopithecus_ascanius,frontal_motor_white,0.93,Frahm_Zilles_1994_Table1,Hippocampus_retrocommissuralis_Vol.mm3,939.4,1
 Cercopithecus_mitis,frontal_motor_white,0.946,(no match),,NA,NA
 Erythrocebus_patas,frontal_motor_white,1.848,(no match),,NA,NA
-Gorilla_gorilla_gorilla,frontal_motor_white,10.295,Sherwood_etal_2004_TABLEI,Thalamus_Vol.mm3,10450,1.48
+Gorilla_gorilla_gorilla,frontal_motor_white,10.295,(no match),,NA,NA
 Homo_sapiens,frontal_motor_white,29.755,(no match),,NA,NA
 Hylobates_lar,frontal_motor_white,1.743,(no match),,NA,NA
 Lagothrix_lagotricha,frontal_motor_white,1.625,(no match),,NA,NA

@@ -98,8 +98,8 @@ result_df <- clean_df %>%
     names_glue = "{Structure}_{.value}",
     values_fill = NA
   ) %>%
-  mutate(`Species name` = "Balaenoptera acutorostrata") %>%
-  select(`Species name`, everything())
+  mutate(`Species` = "Balaenoptera acutorostrata") %>%
+  select(`Species`, everything())
 # Set the scipen option to a high value to turn off scientific notation
 options(scipen = 999)
 ## 5. EQULIVALENCIES TABLE

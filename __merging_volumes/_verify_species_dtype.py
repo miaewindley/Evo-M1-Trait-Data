@@ -83,7 +83,7 @@ for it,team,year,tok,spcol in papers:
     if it in ("Bush_Allman_2003_Table1","Bush_Allman_2004_b_TABLE1"):
         for c in [c for c in df if c.endswith("_cm3")]: df[c]=num(df[c])*1000
     if it=="Barger_etal_2007_TABLE1":
-        meas=["hemispheres_cm3","AC_total","BLD_total","lateral_total","basal_total","accessory_basal_total"]
+        meas=["hemispheres_cm3","amygdaloid_complex_total","basolateral_total","lateral_total","basal_total","accessory_basal_total"]
         meas=[m for m in meas if m in df]
         df=df.groupby("species",as_index=False)[meas].agg(lambda c:(num(c)*1000).mean())
     # (Zilles/Bauernfeind/Smaers have bespoke long builders; for the dtype check we still

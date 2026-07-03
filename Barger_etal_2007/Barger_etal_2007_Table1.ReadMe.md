@@ -22,7 +22,7 @@ damage (left subnuclei not collected; right hemisphere doubled in Barger's analy
 ## Data readable
 `Barger_etal_2007_Table1.R` → `Barger_etal_2007_Table1.csv` (**use this**). One row per specimen,
 species forward-filled to binomial, `–` → NA, and an `_total` (= L + R) added for each ROI.
-**`AC_total`** (whole amygdaloid complex, both hemispheres) is the column that maps to the Stephan
+**`amygdaloid_complex_total`** (whole amygdaloid complex, both hemispheres) is the column that maps to the Stephan
 **Amygdala**. Verified against the paper's prose (human AC 3.805, BLD 2.424, lateral 1.146 cm³).
 
 ## Provenance — important

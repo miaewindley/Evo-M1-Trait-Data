@@ -48,7 +48,7 @@ Barger datasets**:
 | Stephan et al. 1987 (this) | AMY | amygdaloid complex, mm³ |
 | Stephan et al. 1981 | "Amygdala" | same collection/definition (part of the same series) |
 | Zilles & Rehkämper 1988 | "amygdala" | hominoid chapter; same structure definition |
-| Barger et al. 2007 | `AC_total` | amygdaloid complex, both hemispheres (cm³ → ×1000 = mm³) |
+| Barger et al. 2007 | `amygdaloid_complex_total` | amygdaloid complex, both hemispheres (cm³ → ×1000 = mm³) |
 
 See `comparison/Stephan1987_AMY_vs_Barger2007_AC.csv` for the head-to-head test on the shared
 hominoids. **Agreed merge rule for the future Study-3 amygdala variable: average Stephan 1987 and

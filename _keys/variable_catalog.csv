@@ -94,9 +94,9 @@ Stephan_etal_1987,Stephan_etal_1987,amygdala_total_mm3,Amygdala,Amygdala,cell_co
 Stephan_etal_1987,Stephan_etal_1987,amygdala_total_mm3,Amygdala,Amygdala,brain_structure_volume,Volume.mm3,volume,mean,primary,Insectivora–Primates (incl. Homo),whole amygdaloid complex volume (AMY); AMY = LAM + MAM
 Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Corpus_amygdaloideum,Amygdala,Amygdala,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),corpus amygdaloideum (amygdala) fresh volume
 Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Corpus_amygdaloideum,Amygdala,Amygdala,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),corpus amygdaloideum (amygdala) fresh volume
-Barger_etal_2007,Barger_etal_2007,AC_L,AmygdaloidComplex,AmygdaloidComplex,NA,Volume.cm3,volume,NA,primary,Apes & humans,amygdaloid complex volume left hemisphere
-Barger_etal_2007,Barger_etal_2007,AC_R,AmygdaloidComplex,AmygdaloidComplex,NA,Volume.cm3,volume,NA,primary,Apes & humans,amygdaloid complex volume right hemisphere
-Barger_etal_2007,Barger_etal_2007,AC_total,AmygdaloidComplex,AmygdaloidComplex,NA,Volume.cm3,volume,NA,primary,Apes & humans,amygdaloid complex volume both hemispheres (L+R)
+Barger_etal_2007,Barger_etal_2007,amygdaloid_complex_L,AmygdaloidComplex,AmygdaloidComplex,NA,Volume.cm3,volume,NA,primary,Apes & humans,amygdaloid complex volume left hemisphere
+Barger_etal_2007,Barger_etal_2007,amygdaloid_complex_R,AmygdaloidComplex,AmygdaloidComplex,NA,Volume.cm3,volume,NA,primary,Apes & humans,amygdaloid complex volume right hemisphere
+Barger_etal_2007,Barger_etal_2007,amygdaloid_complex_total,AmygdaloidComplex,AmygdaloidComplex,NA,Volume.cm3,volume,NA,primary,Apes & humans,amygdaloid complex volume both hemispheres (L+R)
 Barger_etal_2014,Barger_etal_2014_Table1,amygdala_total_cc,AmygdaloidComplex,AmygdaloidComplex,NA,Volume.cm3,volume,NA,primary,Apes & humans,whole amygdala (amygdaloid complex) volume (one hemisphere)
 Baron_etal_1987,Baron_etal_1987_Table1,COA,AnteriorCommissure,AnteriorCommissure,NA,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",commissura anterior (anterior commissure)
 Semendeferi_etal_2001,Semendeferi_etal_2001,area10_volume_mm3,Area10,Area10,NA,Volume.mm3,volume,NA,primary,Apes & humans,cytoarchitectonic area 10 (frontal pole) volume
@@ -118,9 +118,9 @@ Barger_etal_2007,Barger_etal_2007,basal_R,BasalNucleus,BasalNucleus,NA,Volume.cm
 Barger_etal_2007,Barger_etal_2007,basal_total,BasalNucleus,BasalNucleus,NA,Volume.cm3,volume,NA,primary,Apes & humans,basal nucleus volume both hemispheres
 Barger_etal_2014,Barger_etal_2014_Table1,amygdala_basal_cc,BasalNucleus,BasalNucleus,NA,Volume.cm3,volume,NA,primary,Apes & humans,basal amygdaloid nucleus volume (one hemisphere)
 Stephan_etal_1987,Stephan_etal_1987,magnocellular_basal_MCB_mm3,BasalNucleusMagnocellular,BasalNucleusMagnocellular,NA,Volume.mm3,volume,mean,primary,Insectivora–Primates (incl. Homo),magnocellular part of the basal nucleus (MCB)
-Barger_etal_2007,Barger_etal_2007,BLD_L,BasolateralDivision,BasolateralDivision,NA,Volume.cm3,volume,NA,primary,Apes & humans,basolateral division volume left
-Barger_etal_2007,Barger_etal_2007,BLD_R,BasolateralDivision,BasolateralDivision,NA,Volume.cm3,volume,NA,primary,Apes & humans,basolateral division volume right
-Barger_etal_2007,Barger_etal_2007,BLD_total,BasolateralDivision,BasolateralDivision,NA,Volume.cm3,volume,NA,primary,Apes & humans,basolateral division volume both hemispheres
+Barger_etal_2007,Barger_etal_2007,basolateral_L,BasolateralDivision,BasolateralDivision,NA,Volume.cm3,volume,NA,primary,Apes & humans,basolateral division volume left
+Barger_etal_2007,Barger_etal_2007,basolateral_R,BasolateralDivision,BasolateralDivision,NA,Volume.cm3,volume,NA,primary,Apes & humans,basolateral division volume right
+Barger_etal_2007,Barger_etal_2007,basolateral_total,BasolateralDivision,BasolateralDivision,NA,Volume.cm3,volume,NA,primary,Apes & humans,basolateral division volume both hemispheres
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1,body_mass_g,Body_weight,Body_weight,brain_structure_volume,Mass.g,mass,NA,secondary,Primates,body mass in g (printed in kg; x1000)
 Frahm_Zilles_1994,Frahm_Zilles_1994_Table1,body_weight_g,Body_weight,Body_weight,brain_structure_volume,Mass.g,mass,NA,secondary,Insectivora & Primates,body weight in g
 Frahm_etal_1997,Frahm_etal_1997_Table1,body_weight_g,Body_weight,Body_weight,brain_structure_volume,Mass.g,mass,NA,secondary,Rodentia & Insectivora,Body weight (Mass.g)

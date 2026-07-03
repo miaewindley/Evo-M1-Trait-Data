@@ -159,6 +159,29 @@ result_df <- joined$data
 split_subspecies_log <- joined$log
 
 
+## 2B. FILL SPECIES SUBHEADERS DOWN ---------------------------------------
+
+# In the snapshot, Species is used like a subheader: the first row in a
+# block contains the species name, and following rows in that same block
+# have blank Species cells. Fill those blanks from the most recent Species
+# value above so every observation has an explicit Species value.
+if (!"Species" %in% names(result_df)) {
+  stop("Column 'Species' was not found in result_df. Check the header spelling.")
+}
+
+species_before_fill <- result_df$Species
+
+result_df <- result_df %>%
+  fill(Species, .direction = "down")
+
+species_fill_log <- tibble(
+  row_after_subspecies_join = seq_along(species_before_fill),
+  before = species_before_fill,
+  after = result_df$Species
+) %>%
+  filter(is.na(before) & !is.na(after))
+
+
 ## 3. CLEAN NUMERIC VALUES IN AGE COLUMN ----------------------------------
 
 # In the Age column:

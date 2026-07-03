@@ -1,4 +1,4 @@
-"species","specimen","age","sex","hemispheres_cm3","AC_L","AC_R","AC_total","BLD_L","BLD_R","BLD_total","lateral_L","lateral_R","lateral_total","basal_L","basal_R","basal_total","accessory_basal_L","accessory_basal_R","accessory_basal_total","section_plane","note","source"
+"species","specimen","age","sex","hemispheres_cm3","amygdaloid_complex_L","amygdaloid_complex_R","amygdaloid_complex_total","basolateral_L","basolateral_R","basolateral_total","lateral_L","lateral_R","lateral_total","basal_L","basal_R","basal_total","accessory_basal_L","accessory_basal_R","accessory_basal_total","section_plane","note","source"
 "Homo sapiens","SN207/84","75","M",1151,2.032,1.773,3.805,1.191,1.233,2.424,0.551,0.595,1.146,0.452,0.429,0.881,0.1879,0.2085,0.3964,"coronal","","Barger_etal_2007"
 "Pan troglodytes","Bathsheba","24","F",286,0.584,0.561,1.145,0.379,0.353,0.732,0.126,0.105,0.231,0.183,0.187,0.37,0.0701,0.0615,0.1316,"coronal","","Barger_etal_2007"
 "Pan troglodytes","Schimp","22","F",318,0.685,0.733,1.418,0.432,0.477,0.909,0.138,0.136,0.274,0.224,0.255,0.479,0.0701,0.087,0.1571,"coronal","","Barger_etal_2007"

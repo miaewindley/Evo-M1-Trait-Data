@@ -189,6 +189,8 @@ paper_long <- function(row) {
     df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
   if (it == "Bush_Allman_2004_b_TABLE1")                         # cm3 -> mm3 (V1 grey, LGN, whole brain, neocortex grey/white)
     df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
+  if (it == "deSousa_etal_2010_Table1")                          # per-specimen hominoid volumes: cm3 -> mm3 (per-specimen rows collapse to species mean in step 6). V1/LGN are LEFT-only (see laterality_known.csv); neocortex + whole-brain are both-hemisphere.
+    df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
   if (it == "Smaers_etal_2011_SupplementaryTable1") {            # per-individual frontal -> species means of COMBINED L+R (cm3->mm3)
     fix <- c("Cercopithecus ascianus"="Cercopithecus ascanius","Cercocebus albigena"="Lophocebus albigena",
              "Procolobus badius"="Piliocolobus badius","Lagothrix lagotricha"="Lagothrix lagothricha")
@@ -201,7 +203,7 @@ paper_long <- function(row) {
     df <- df %>% mutate(Nucleus_tractus_olfactorius_mm3 =
             ifelse(num(Nucleus_tractus_olfactorius_mm3) == 0, NA_real_, num(Nucleus_tractus_olfactorius_mm3)))
   if (it == "Barger_etal_2007_TABLE1") {                         # per-specimen amygdala subnuclei (both-hemisphere _total) -> species means; cm3 -> mm3
-    meas <- c("hemispheres_cm3","AC_total","BLD_total","lateral_total","basal_total","accessory_basal_total")
+    meas <- c("hemispheres_cm3","amygdaloid_complex_total","basolateral_total","lateral_total","basal_total","accessory_basal_total")
     df <- df %>% group_by(Species) %>%
       summarise(across(all_of(meas), ~ mean(num(.x) * 1000, na.rm = TRUE)), .groups = "drop")
   }

@@ -20,7 +20,7 @@ Output: `_audit_missing_structures.csv` — one row per defined volume column wi
 
 | Reference | candidate_missing columns | Assessment |
 |---|---|---|
-| **Barger_etal_2007** | BLD_total, lateral_total, basal_total, accessory_basal_total, hemispheres_cm3 (+ the matching `_L`/`_R`) | **REAL — action item.** Only `AC_total → Amygdala_Vol.mm3` is mapped. The 4 amygdala subnuclei (basolateral division, lateral / basal / accessory-basal nuclei) and the `Hemispheres` size covariate are defined but dropped. Mapped in Part I.B as new both-hemisphere `*_Vol.mm3` terms. |
+| **Barger_etal_2007** | basolateral_total, lateral_total, basal_total, accessory_basal_total, hemispheres_cm3 (+ the matching `_L`/`_R`) | **REAL — action item.** Only `amygdaloid_complex_total → Amygdala_Vol.mm3` is mapped. The 4 amygdala subnuclei (basolateral division, lateral / basal / accessory-basal nuclei) and the `Hemispheres` size covariate are defined but dropped. Mapped in Part I.B as new both-hemisphere `*_Vol.mm3` terms. |
 | **Stephan_etal_1981** | Complexus_vestibularis, Nucleus_vestibularis_{descendens,lateralis,medialis,superior} | Finer split of the vestibular complex that the merge currently carries as one `..._unilateral` term. Optional expansion; left as-is (the aggregate is what cross-references use). |
 | **deSousa_etal_2010** | brain_volume_cm3, left_LGN_volume_cm3, left_V1_volume_cm3 | LGN/V1 left columns + brain size. The right-side LGN/V1 are mapped; left counterparts and overall brain volume are optional refinements, not in this round. |
 | **deSousa_etal_2013** | LGN_volume_cm3 | Single LGN volume; brain-size-type covariate, optional. |

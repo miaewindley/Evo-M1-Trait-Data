@@ -49,8 +49,9 @@ DeCasien_csv  <- function(stem) paste0(stem, output_suffix, ".csv")
 ## 1 Papers: ONLY the volume-source papers DeCasien & Higham 2019 used ----
 ## = the refs in DeCasien_Higham_2019/DeCasien_Higham_2019_references_braindata.csv that we hold a
 ## table for. Omitted: ref 52 (Stephan 1988 = the Stephan collection, no separate table), ref 55
-## (Bush & Allman 2004 PNAS frontal — not carried as a volume table), ref 57 (Barger 2014 — we carry
-## Barger 2007 only). See DeCasien_reference_audit.csv. The FULL collection is volumes_compiled.R.
+## (Bush & Allman 2004 PNAS frontal — not carried as a volume table). ref 57 (Barger 2014) IS now
+## included (Table 1: ape hippocampus/amygdala/striatum, one-hemisphere cc -> x2 -> mm3, species
+## mean). See DeCasien_reference_audit.csv. The FULL collection is volumes_compiled.R.
 papers <- tribble(
   ~item,                                  ~team,                ~year,
   "Stephan_etal_1970_Tables1-6",          "Stephan_collection", 1970,  # ref 51
@@ -63,6 +64,7 @@ papers <- tribble(
   "Bauernfeind_etal_2013_Table1",         "Zilles",             2013,  # ref 43
   "Bauernfeind_etal_2013_Table2",         "Zilles",             2013,  # ref 43
   "Barger_etal_2007_TABLE1",              "Zilles",             2007,  # ref 56
+  "Barger_etal_2014_Table1",              "Zilles",             2014,  # ref 57 (ape hippocampus/amygdala/striatum; specimens overlap Barger 2007 -> same "Zilles" team so amygdala averages rather than double-counts)
   "Bush_Allman_2004_b_TABLE1",            "Bush",               2004,  # ref 54 (V1)
   "Sherwood_etal_2005_Table1",            "Sherwood",           2005,  # ref 53 (brainstem motor)
   "Sherwood_etal_2004_TABLEI",            "Sherwood",           2004,  # ref 64 (great apes)
@@ -88,6 +90,7 @@ enc_override <- c("Bauernfeind_etal_2013_Table2" = "10.1016%2Fj.jhevol.2012.12.0
                   # DeCasien primaries: have __ReadMe.xlsx rows, but keep fallbacks against registry drift.
                   "Sherwood_etal_2004_TABLEI"   = "10.1002%2Fajp.20048_TABLEI",
                   "Barks_etal_2014_TABLE1"      = "10.1002%2Fajpa.22646_TABLE1",
+                  "Barger_etal_2014_Table1"     = "10.3389%2Ffnhum.2014.00277_Table1",
                   "Rilling_Insel_1998_Table1"   = "10.1159%2F000006575_Table1",
                   "Stimpson_etal_2015_TableS1" = "10.1093%2Fscan%2Fnsv128_TableS1",
                   # DOI-coded/derived sources and non-registry extras resolved here.
@@ -183,6 +186,8 @@ paper_long <- function(row) {
     df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
   if (it == "Bush_Allman_2004_b_TABLE1")                         # cm3 -> mm3 (V1 grey, LGN, whole brain, neocortex grey/white)
     df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
+  if (it == "deSousa_etal_2010_Table1")                          # per-specimen hominoid volumes: cm3 -> mm3 (per-specimen rows collapse to species mean in step 6). V1/LGN are LEFT-only (see laterality_known.csv); neocortex + whole-brain are both-hemisphere.
+    df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
   if (it == "Smaers_etal_2011_SupplementaryTable1") {            # per-individual frontal -> species means of COMBINED L+R (cm3->mm3)
     fix <- c("Cercopithecus ascianus"="Cercopithecus ascanius","Cercocebus albigena"="Lophocebus albigena",
              "Procolobus badius"="Piliocolobus badius","Lagothrix lagotricha"="Lagothrix lagothricha")
@@ -195,9 +200,22 @@ paper_long <- function(row) {
     df <- df %>% mutate(Nucleus_tractus_olfactorius_mm3 =
             ifelse(num(Nucleus_tractus_olfactorius_mm3) == 0, NA_real_, num(Nucleus_tractus_olfactorius_mm3)))
   if (it == "Barger_etal_2007_TABLE1") {                         # per-specimen amygdala subnuclei (both-hemisphere _total) -> species means; cm3 -> mm3
-    meas <- c("hemispheres_cm3","AC_total","BLD_total","lateral_total","basal_total","accessory_basal_total")
+    meas <- c("hemispheres_cm3","amygdaloid_complex_total","basolateral_total","lateral_total","basal_total","accessory_basal_total")
     df <- df %>% group_by(Species) %>%
       summarise(across(all_of(meas), ~ mean(num(.x) * 1000, na.rm = TRUE)), .groups = "drop")
+  }
+  if (it == "Barger_etal_2014_Table1") {                         # per-specimen ONE-HEMISPHERE volumes (cc): x2 -> both sides, cc->mm3, species-mean
+    # Table 1 footnote: every printed volume is a SINGLE hemisphere. DeCasien reports these regions
+    # bilaterally (their ape hippocampus/amygdala/striatum == 2x Barger's one-side value, confirmed
+    # e.g. Hylobates lar hippocampus 0.805 cc -> 2*0.805*1000 = 1610 mm3). So double to both-sides
+    # (matches our both-sides "_Vol.mm3" terms and Barger 2007's both-hemisphere totals) and convert
+    # cc->mm3. NOTE: like MacLeod/Bauernfeind, multi-specimen species are averaged to a species mean,
+    # so DeCasien's PER-SPECIMEN ape values (e.g. Pan hippocampus 3544 & 3040) match only where a
+    # species has a single specimen (e.g. Hylobates lar, Nomascus concolor).
+    meas <- c("amygdala_total_cc","hippocampus_cc","striatum_cc",
+              "amygdala_lateral_cc","amygdala_basal_cc","amygdala_accessory_basal_cc")
+    df <- df %>% group_by(Species) %>%
+      summarise(across(all_of(meas), ~ mean(num(.x) * 2 * 1000, na.rm = TRUE)), .groups = "drop")
   }
   if (it == "Sherwood_etal_2004_TABLEI") {                       # per-specimen great-ape volumes (cm3): fill species (NA = same as above),
     meas <- c("Whole Brain","Neocortex","Hippocampus","Striatum","Thalamus","Cerebellum")  #  species-mean, cm3->mm3

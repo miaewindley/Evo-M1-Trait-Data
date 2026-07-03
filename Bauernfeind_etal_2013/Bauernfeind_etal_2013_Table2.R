@@ -44,7 +44,7 @@ base      <- local({                                     # repo root; NA if run 
 setwd(folder)
 options(scipen = 999)
 
-snapshot_file  <- "Bauernfeind_etal_2013_Table2_snapshot.xlsx"
+snapshot_file  <- paste0(item_name, "_snapshot.xlsx")
 snapshot_sheet <- "Table2"
 
 num <- function(x) parse_number(as.character(x), na = c("", "-", "\u2013", "\u2014", "NA", "n.a."))

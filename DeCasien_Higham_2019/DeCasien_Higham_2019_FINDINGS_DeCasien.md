@@ -1,14 +1,15 @@
 # DeCasien & Higham 2019 vs the merged volume dataset -- FINDINGS (Part II)
 
-Compared 2152 DeCasien (species x region) volume cells against the merge by VALUE (same genus, tol = 2%).
+Compared 2190 DeCasien (species x region) volume cells against the merge by VALUE (same genus, tol = 2%).
 Crosswalk covers the DeCasien regions that have a single clean counterpart in our merge;
 MOB, 'Striatum (incl. NAcc)' and 'Agranular Insula' are intentionally outside it.
 
 ## II.A value comparison
-- match (same species + same structure, value within tol): **1014**
-- match_taxonomy_variant (same structure + value, species NAME differs): **313** -> see II.B
-- value_match_other_structure (value matched a different structure/label): **238**
-- decasien_only (no value match in the merge for that genus): **587**
+- match (same species + same structure, value within tol): **1721**
+- match_taxonomy_variant (same structure + value, species NAME differs): **204** -> see II.B
+- species_mean_match (individuals unpublished, e.g. Barks; DeCasien's group mean == our species mean within tol): **45**
+- value_match_other_structure (value matched a different structure/label): **115**
+- decasien_only (no value match in the merge for that genus): **105**
 - median |pct diff| on value matches: **0%** (most are 0% -> identical underlying Stephan data)
 - merge-only: ~0 Stephan-sourced (species x crosswalked structure) cells not present in DeCasien's sheet.
 
@@ -17,7 +18,7 @@ flags rows DeCasien attributes to a Stephan source. High value-match rates on th
 the merge reproduces the Stephan primaries DeCasien compiled.
 
 ## II.B taxonomy
-10 species appear under a DeCasien binomial that value-matches a DIFFERENT name in the merge
+1 species appear under a DeCasien binomial that value-matches a DIFFERENT name in the merge
 (typically our genus-level 'sp.' vs DeCasien's full binomial). Proposed variant->accepted additions
 to `_keys/Stephan/species_key.csv` are in `DeCasien_taxonomy_proposed_changes.csv` for HUMAN REVIEW;
 they are NOT applied automatically (taxonomy lumping needs a human check).

@@ -155,10 +155,10 @@ Barger_etal_2007_TABLE1,Hylobates lar,NA,9580,Hylobates lar,Hylobates lar,NCBI,F
 Barger_etal_2007_TABLE1,Pan paniscus,NA,9597,Pan paniscus,Pan paniscus,NCBI,FALSE,FALSE
 Barger_etal_2007_TABLE1,Pan troglodytes,NA,9598,Pan troglodytes,Pan troglodytes,NCBI,FALSE,FALSE
 Barger_etal_2007_TABLE1,Pongo pygmaeus,Pongo sp.,9600,Pongo pygmaeus,Pongo sp.,curated,TRUE,FALSE
-Barks_etal_2014_Fig4A,Gorilla beringei,NA,499232,Gorilla beringei,Gorilla beringei,NCBI,FALSE,FALSE
-Barks_etal_2014_Fig4A,Gorilla gorilla,NA,9593,Gorilla gorilla,Gorilla gorilla,NCBI,FALSE,FALSE
-Barks_etal_2014_TABLE1,Gorilla beringei,NA,499232,Gorilla beringei,Gorilla beringei,NCBI,FALSE,FALSE
-Barks_etal_2014_TABLE1,Gorilla gorilla,NA,9593,Gorilla gorilla,Gorilla gorilla,NCBI,FALSE,FALSE
+Barks_etal_2014_Fig4A,Gorilla beringei,Gorilla sp.,499232,Gorilla beringei,Gorilla sp.,curated,TRUE,FALSE
+Barks_etal_2014_Fig4A,Gorilla gorilla,Gorilla sp.,9593,Gorilla gorilla,Gorilla sp.,curated,TRUE,FALSE
+Barks_etal_2014_TABLE1,Gorilla beringei,Gorilla sp.,499232,Gorilla beringei,Gorilla sp.,curated,TRUE,FALSE
+Barks_etal_2014_TABLE1,Gorilla gorilla,Gorilla sp.,9593,Gorilla gorilla,Gorilla sp.,curated,TRUE,FALSE
 Baron_etal_1983_Table1,Alouatta spp.,Alouatta seniculus,NA,NA,Alouatta seniculus,curated,FALSE,FALSE
 Baron_etal_1983_Table1,Aotus trivirgatus,NA,9505,Aotus trivirgatus,Aotus trivirgatus,NCBI,FALSE,FALSE
 Baron_etal_1983_Table1,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffroyi,NCBI,FALSE,FALSE
@@ -306,7 +306,7 @@ Baron_etal_1987_Table1,Ruwensorisorex suncoides,Ruwenzorisorex suncoides,NA,NA,R
 Baron_etal_1987_Table1,Saguinus midas,NA,30586,Saguinus midas,Saguinus midas,NCBI,FALSE,FALSE
 Baron_etal_1987_Table1,Saguinus oedipus,NA,9490,Saguinus oedipus,Saguinus oedipus,NCBI,FALSE,FALSE
 Baron_etal_1987_Table1,Saimiri sciureus,NA,9521,Saimiri sciureus,Saimiri sciureus,NCBI,FALSE,FALSE
-Baron_etal_1987_Table1,Scuisorex somereni,ScutisorexÃsomereni,NA,NA,ScutisorexÃsomereni,curated,FALSE,FALSE
+Baron_etal_1987_Table1,Scuisorex somereni,Scutisorex somereni,NA,NA,Scutisorex somereni,curated,FALSE,FALSE
 Baron_etal_1987_Table1,Setifer setosus,NA,319819,Setifer setosus,Setifer setosus,NCBI,FALSE,FALSE
 Baron_etal_1987_Table1,Solenodon paradoxus,NA,79805,Solenodon paradoxus,Solenodon paradoxus,NCBI,FALSE,FALSE
 Baron_etal_1987_Table1,Sorex araneus,NA,42254,Sorex araneus,Sorex araneus,NCBI,FALSE,FALSE
@@ -669,7 +669,7 @@ Frahm_etal_1984_Table1,Aotus trivirgatus,NA,9505,Aotus trivirgatus,Aotus trivirg
 Frahm_etal_1984_Table1,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffroyi,NCBI,FALSE,FALSE
 Frahm_etal_1984_Table1,Avahi l. laniger,Avahi laniger,NA,NA,Avahi laniger,curated,FALSE,FALSE
 Frahm_etal_1984_Table1,Avahi laniger occidentalis,Avahi occidentalis,NA,NA,Avahi occidentalis,curated,FALSE,FALSE
-Frahm_etal_1984_Table1,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI,FALSE,FALSE
+Frahm_etal_1984_Table1,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated,TRUE,FALSE
 Frahm_etal_1984_Table1,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI,FALSE,FALSE
 Frahm_etal_1984_Table1,Cebuella pygmaea,Callithrix pygmaea,9493,Cebuella pygmaea,Callithrix pygmaea,curated,TRUE,FALSE
 Frahm_etal_1984_Table1,Cebus sp.,Cebus albifrons,9517,Cebus sp.,Cebus albifrons,curated,TRUE,FALSE
@@ -870,25 +870,25 @@ Matano_etal_1985_b_Table1,Urogale everetti,NA,192726,Urogale everetti,Urogale ev
 Matano_etal_1985_b_Table1,Varecia variegata,NA,9455,Varecia variegata,Varecia variegata,NCBI,FALSE,FALSE
 Rilling_Insel_1998_Table1,Cebus apella,NA,9515,Sapajus apella,Sapajus apella,NCBI,FALSE,FALSE
 Rilling_Insel_1998_Table1,Cercocebus torquatus,NA,9530,Cercocebus torquatus,Cercocebus torquatus,NCBI,FALSE,FALSE
-Rilling_Insel_1998_Table1,Gorilla gorilla,NA,9593,Gorilla gorilla,Gorilla gorilla,NCBI,FALSE,FALSE
+Rilling_Insel_1998_Table1,Gorilla gorilla,Gorilla sp.,9593,Gorilla gorilla,Gorilla sp.,curated,TRUE,FALSE
 Rilling_Insel_1998_Table1,Homo sapiens,NA,9606,Homo sapiens,Homo sapiens,NCBI,FALSE,FALSE
 Rilling_Insel_1998_Table1,Hylobates lar,NA,9580,Hylobates lar,Hylobates lar,NCBI,FALSE,FALSE
 Rilling_Insel_1998_Table1,Macaca mulatta,NA,9544,Macaca mulatta,Macaca mulatta,NCBI,FALSE,FALSE
 Rilling_Insel_1998_Table1,Pan paniscus,NA,9597,Pan paniscus,Pan paniscus,NCBI,FALSE,FALSE
 Rilling_Insel_1998_Table1,Pan troglodytes,NA,9598,Pan troglodytes,Pan troglodytes,NCBI,FALSE,FALSE
 Rilling_Insel_1998_Table1,Papio cynocephalus,NA,9556,Papio cynocephalus,Papio cynocephalus,NCBI,FALSE,FALSE
-Rilling_Insel_1998_Table1,Pongo pygmaeus,NA,9600,Pongo pygmaeus,Pongo pygmaeus,NCBI,FALSE,FALSE
+Rilling_Insel_1998_Table1,Pongo pygmaeus,Pongo sp.,9600,Pongo pygmaeus,Pongo sp.,curated,TRUE,FALSE
 Rilling_Insel_1998_Table1,Saimiri sciureus,NA,9521,Saimiri sciureus,Saimiri sciureus,NCBI,FALSE,FALSE
 Rilling_Insel_1999_Table1,Cebus apella,NA,9515,Sapajus apella,Sapajus apella,NCBI,FALSE,FALSE
 Rilling_Insel_1999_Table1,Cercocebus torquatus,NA,9530,Cercocebus torquatus,Cercocebus torquatus,NCBI,FALSE,FALSE
-Rilling_Insel_1999_Table1,Gorilla gorilla,NA,9593,Gorilla gorilla,Gorilla gorilla,NCBI,FALSE,FALSE
+Rilling_Insel_1999_Table1,Gorilla gorilla,Gorilla sp.,9593,Gorilla gorilla,Gorilla sp.,curated,TRUE,FALSE
 Rilling_Insel_1999_Table1,Homo sapiens,NA,9606,Homo sapiens,Homo sapiens,NCBI,FALSE,FALSE
 Rilling_Insel_1999_Table1,Hylobates lar,NA,9580,Hylobates lar,Hylobates lar,NCBI,FALSE,FALSE
 Rilling_Insel_1999_Table1,Macaca mulatta,NA,9544,Macaca mulatta,Macaca mulatta,NCBI,FALSE,FALSE
 Rilling_Insel_1999_Table1,Pan paniscus,NA,9597,Pan paniscus,Pan paniscus,NCBI,FALSE,FALSE
 Rilling_Insel_1999_Table1,Pan troglodytes,NA,9598,Pan troglodytes,Pan troglodytes,NCBI,FALSE,FALSE
 Rilling_Insel_1999_Table1,Papio cynocephalus,NA,9556,Papio cynocephalus,Papio cynocephalus,NCBI,FALSE,FALSE
-Rilling_Insel_1999_Table1,Pongo pygmaeus,NA,9600,Pongo pygmaeus,Pongo pygmaeus,NCBI,FALSE,FALSE
+Rilling_Insel_1999_Table1,Pongo pygmaeus,Pongo sp.,9600,Pongo pygmaeus,Pongo sp.,curated,TRUE,FALSE
 Rilling_Insel_1999_Table1,Saimiri sciureus,NA,9521,Saimiri sciureus,Saimiri sciureus,NCBI,FALSE,FALSE
 Semendeferi_etal_1998_Table2,Gorilla gorilla,Gorilla sp.,9593,Gorilla gorilla,Gorilla sp.,curated,TRUE,FALSE
 Semendeferi_etal_1998_Table2,Homo sapiens,NA,9606,Homo sapiens,Homo sapiens,NCBI,FALSE,FALSE
@@ -902,16 +902,16 @@ Semendeferi_etal_2001_Table2,Hylobates lar,NA,9580,Hylobates lar,Hylobates lar,N
 Semendeferi_etal_2001_Table2,Pan paniscus,NA,9597,Pan paniscus,Pan paniscus,NCBI,FALSE,FALSE
 Semendeferi_etal_2001_Table2,Pan troglodytes,NA,9598,Pan troglodytes,Pan troglodytes,NCBI,FALSE,FALSE
 Semendeferi_etal_2001_Table2,Pongo pygmaeus,Pongo sp.,9600,Pongo pygmaeus,Pongo sp.,curated,TRUE,FALSE
-Sherwood_etal_2004_TABLEI,Gorilla beringei,NA,499232,Gorilla beringei,Gorilla beringei,NCBI,FALSE,FALSE
-Sherwood_etal_2004_TABLEI,Gorilla gorilla,NA,9593,Gorilla gorilla,Gorilla gorilla,NCBI,FALSE,FALSE
+Sherwood_etal_2004_TABLEI,Gorilla beringei,Gorilla sp.,499232,Gorilla beringei,Gorilla sp.,curated,TRUE,FALSE
+Sherwood_etal_2004_TABLEI,Gorilla gorilla,Gorilla sp.,9593,Gorilla gorilla,Gorilla sp.,curated,TRUE,FALSE
 Sherwood_etal_2004_TABLEI,Pan troglodytes,NA,9598,Pan troglodytes,Pan troglodytes,NCBI,FALSE,FALSE
-Sherwood_etal_2004_TABLEI,Pongo pygmaeus,NA,9600,Pongo pygmaeus,Pongo pygmaeus,NCBI,FALSE,FALSE
+Sherwood_etal_2004_TABLEI,Pongo pygmaeus,Pongo sp.,9600,Pongo pygmaeus,Pongo sp.,curated,TRUE,FALSE
 Sherwood_etal_2005_Table1,Alouatta seniculus,NA,9503,Alouatta seniculus,Alouatta seniculus,NCBI,FALSE,FALSE
 Sherwood_etal_2005_Table1,Aotus trivirgatus,NA,9505,Aotus trivirgatus,Aotus trivirgatus,NCBI,FALSE,FALSE
 Sherwood_etal_2005_Table1,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffroyi,NCBI,FALSE,FALSE
 Sherwood_etal_2005_Table1,Avahi laniger laniger,Avahi laniger,NA,NA,Avahi laniger,curated,FALSE,FALSE
 Sherwood_etal_2005_Table1,Avahi laniger occidentalis,Avahi occidentalis,NA,NA,Avahi occidentalis,curated,FALSE,FALSE
-Sherwood_etal_2005_Table1,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI,FALSE,FALSE
+Sherwood_etal_2005_Table1,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated,TRUE,FALSE
 Sherwood_etal_2005_Table1,Callimico goeldii,NA,9495,Callimico goeldii,Callimico goeldii,NCBI,FALSE,FALSE
 Sherwood_etal_2005_Table1,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI,FALSE,FALSE
 Sherwood_etal_2005_Table1,Cebuella pygmaea,Callithrix pygmaea,9493,Cebuella pygmaea,Callithrix pygmaea,curated,TRUE,FALSE
@@ -977,7 +977,7 @@ Stephan_etal_1970_Tables1-6,Alouatta seniculus,NA,9503,Alouatta seniculus,Alouat
 Stephan_etal_1970_Tables1-6,Aotes trivirgatus,Aotus trivirgatus,NA,NA,Aotus trivirgatus,curated,FALSE,FALSE
 Stephan_etal_1970_Tables1-6,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffroyi,NCBI,FALSE,FALSE
 Stephan_etal_1970_Tables1-6,Avahi laniger,NA,122246,Avahi laniger,Avahi laniger,NCBI,FALSE,FALSE
-Stephan_etal_1970_Tables1-6,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI,FALSE,FALSE
+Stephan_etal_1970_Tables1-6,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated,TRUE,FALSE
 Stephan_etal_1970_Tables1-6,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI,FALSE,FALSE
 Stephan_etal_1970_Tables1-6,Cebus albifrons,NA,9514,Cebus albifrons,Cebus albifrons,NCBI,FALSE,FALSE
 Stephan_etal_1970_Tables1-6,Cebus sp.,NA,9517,Cebus sp.,Cebus sp.,NCBI,FALSE,FALSE
@@ -1035,49 +1035,49 @@ Stephan_etal_1970_Tables1-6,Tarsius syrichta,NA,1868482,Carlito syrichta,Carlito
 Stephan_etal_1970_Tables1-6,Tenrec ecaudatus,NA,94439,Tenrec ecaudatus,Tenrec ecaudatus,NCBI,FALSE,FALSE
 Stephan_etal_1970_Tables1-6,Tupaia glis,NA,9395,Tupaia glis,Tupaia glis,NCBI,FALSE,FALSE
 Stephan_etal_1970_Tables1-6,Urogale everetti,NA,192726,Urogale everetti,Urogale everetti,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Aethechinus algirus,NA,30576,Atelerix algirus,Atelerix algirus,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Alouatta sp.,NA,NA,NA,Alouatta sp.,unresolved_raw,FALSE,TRUE
+Stephan_etal_1981_TablesI-VI,Aethechinus algirus,Atelerix algirus,30576,Atelerix algirus,Atelerix algirus,curated,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Alouatta sp.,Alouatta seniculus,NA,NA,Alouatta seniculus,curated,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Aotus trivirgatus,NA,9505,Aotus trivirgatus,Aotus trivirgatus,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffroyi,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Avahi l. laniger,NA,NA,NA,Avahi l. laniger,unresolved_raw,FALSE,TRUE
-Stephan_etal_1981_TablesI-VI,Avahi laniger occidentalis,NA,NA,NA,Avahi laniger occidentalis,unresolved_raw,FALSE,TRUE
-Stephan_etal_1981_TablesI-VI,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Avahi l. laniger,Avahi laniger,NA,NA,Avahi laniger,curated,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Avahi laniger occidentalis,Avahi occidentalis,NA,NA,Avahi occidentalis,curated,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Callicebus moloch,Callicebus moloch,9523,Plecturocebus moloch,Callicebus moloch,curated,TRUE,FALSE
 Stephan_etal_1981_TablesI-VI,Callimico goeldii,NA,9495,Callimico goeldii,Callimico goeldii,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Cebuella pygmaea,NA,9493,Cebuella pygmaea,Cebuella pygmaea,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Cebus sp.,NA,9517,Cebus sp.,Cebus sp.,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Cercocebus albigena,NA,75567,Lophocebus albigena,Lophocebus albigena,NCBI,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Cebuella pygmaea,Callithrix pygmaea,9493,Cebuella pygmaea,Callithrix pygmaea,curated,TRUE,FALSE
+Stephan_etal_1981_TablesI-VI,Cebus sp.,Cebus albifrons,9517,Cebus sp.,Cebus albifrons,curated,TRUE,FALSE
+Stephan_etal_1981_TablesI-VI,Cercocebus albigena,Lophocebus albigena,75567,Lophocebus albigena,Lophocebus albigena,curated,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Cercopithecus ascanius,NA,36223,Cercopithecus ascanius,Cercopithecus ascanius,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Cercopithecus mitis,NA,36225,Cercopithecus mitis,Cercopithecus mitis,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Cercopithecus talapoin,NA,36231,Miopithecus talapoin,Miopithecus talapoin,NCBI,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Cercopithecus talapoin,Miopithecus talapoin,36231,Miopithecus talapoin,Miopithecus talapoin,curated,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Cheirogaleus major,NA,47177,Cheirogaleus major,Cheirogaleus major,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Cheirogaleus medius,NA,9460,Cheirogaleus medius,Cheirogaleus medius,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Chlorotalpa stuhlmanni,NA,NA,NA,Chlorotalpa stuhlmanni,unresolved_raw,FALSE,TRUE
+Stephan_etal_1981_TablesI-VI,Chlorotalpa stuhlmanni,Chrysochloris stuhlmanni,NA,NA,Chrysochloris stuhlmanni,curated,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Chrysochloris asiatica,NA,185453,Chrysochloris asiatica,Chrysochloris asiatica,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Colobus badius,NA,164648,Piliocolobus badius,Piliocolobus badius,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Crocidura occidentalis,NA,214449,Crocidura olivieri,Crocidura olivieri,NCBI,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Colobus badius,Piliocolobus badius,164648,Piliocolobus badius,Piliocolobus badius,curated,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Crocidura occidentalis,Crocidura flavescens,214449,Crocidura olivieri,Crocidura flavescens,curated,TRUE,FALSE
 Stephan_etal_1981_TablesI-VI,Crocidura russula,NA,36802,Crocidura russula,Crocidura russula,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Daubentonia madagascar.,NA,NA,NA,Daubentonia madagascar.,unresolved_raw,FALSE,TRUE
+Stephan_etal_1981_TablesI-VI,Daubentonia madagascar.,Daubentonia madagascariensis,NA,NA,Daubentonia madagascariensis,curated,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Desmana moschata,NA,182682,Desmana moschata,Desmana moschata,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Echinops telfairi,NA,9371,Echinops telfairi,Echinops telfairi,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Elephantulus fuscipes,NA,483426,Elephantulus fuscipes,Elephantulus fuscipes,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Erinaceus europaeus,NA,9365,Erinaceus europaeus,Erinaceus europaeus,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Erythrocebus patas,NA,9538,Erythrocebus patas,Erythrocebus patas,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Galago crassicaudatus,NA,9463,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Galago demidovii,NA,89672,Galagoides demidoff,Galagoides demidoff,NCBI,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Galago crassicaudatus,Otolemur crassicaudatus,9463,Otolemur crassicaudatus,Otolemur crassicaudatus,curated,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Galago demidovii,Galagoides demidoff,89672,Galagoides demidoff,Galagoides demidoff,curated,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Galago senegalensis,NA,9465,Galago senegalensis,Galago senegalensis,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Galemys pyrenaicus,NA,202257,Galemys pyrenaicus,Galemys pyrenaicus,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Gorilla gorilla,NA,9593,Gorilla gorilla,Gorilla gorilla,NCBI,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Gorilla gorilla,Gorilla sp.,9593,Gorilla gorilla,Gorilla sp.,curated,TRUE,FALSE
 Stephan_etal_1981_TablesI-VI,Hemicentetes semispinosus,NA,319813,Hemicentetes semispinosus,Hemicentetes semispinosus,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Hemiechinus auritus,NA,217708,Hemiechinus auritus,Hemiechinus auritus,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Homo sapiens sapiens,NA,NA,NA,Homo sapiens sapiens,unresolved_raw,FALSE,TRUE
+Stephan_etal_1981_TablesI-VI,Homo sapiens sapiens,Homo sapiens,NA,NA,Homo sapiens,curated,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Hylobates lar,NA,9580,Hylobates lar,Hylobates lar,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Indri indri,NA,34827,Indri indri,Indri indri,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Lagothrix lagotricha,NA,9519,Lagothrix lagotricha,Lagothrix lagotricha,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Lemur fulvus,NA,13515,Eulemur fulvus,Eulemur fulvus,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Lemur variegatus,NA,9455,Varecia variegata,Varecia variegata,NCBI,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Lagothrix lagotricha,Lagothrix lagothricha,9519,Lagothrix lagotricha,Lagothrix lagothricha,curated,TRUE,FALSE
+Stephan_etal_1981_TablesI-VI,Lemur fulvus,Eulemur fulvus,13515,Eulemur fulvus,Eulemur fulvus,curated,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Lemur variegatus,Varecia variegata,9455,Varecia variegata,Varecia variegata,curated,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Lepilemur ruficaudatus,NA,78866,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Limnogale mergulus,NA,319815,Limnogale mergulus,Limnogale mergulus,NCBI,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Limnogale mergulus,Microgale mergulus,319815,Limnogale mergulus,Microgale mergulus,curated,TRUE,FALSE
 Stephan_etal_1981_TablesI-VI,Loris tardigradus,NA,9468,Loris tardigradus,Loris tardigradus,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Macaca mulatta,NA,9544,Macaca mulatta,Macaca mulatta,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Microcebus murinus,NA,30608,Microcebus murinus,Microcebus murinus,NCBI,FALSE,FALSE
@@ -1088,17 +1088,17 @@ Stephan_etal_1981_TablesI-VI,Neomys fodiens,NA,62282,Neomys fodiens,Neomys fodie
 Stephan_etal_1981_TablesI-VI,Nesogale dobsoni,NA,2583311,Nesogale dobsoni,Nesogale dobsoni,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Nesogale talazaci,NA,2583312,Nesogale talazaci,Nesogale talazaci,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Nycticebus coucang,NA,9470,Nycticebus coucang,Nycticebus coucang,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Oryzorictes talpoides,NA,319817,Oryzorictes hova,Oryzorictes hova,NCBI,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Oryzorictes talpoides,Oryzorictes hova,319817,Oryzorictes hova,Oryzorictes hova,curated,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Pan troglodytes,NA,9598,Pan troglodytes,Pan troglodytes,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Papio anubis,NA,9555,Papio anubis,Papio anubis,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Perodicticus potto,NA,9472,Perodicticus potto,Perodicticus potto,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Pithecia monacha,NA,NA,NA,Pithecia monacha,unresolved_raw,FALSE,TRUE
+Stephan_etal_1981_TablesI-VI,Pithecia monacha,Pithecia monachus,NA,NA,Pithecia monachus,curated,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Potamogale velox,NA,176119,Potamogale velox,Potamogale velox,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Propithecus verreauxi,NA,34825,Propithecus verreauxi,Propithecus verreauxi,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Pygathrix nemaeus,NA,54133,Pygathrix nemaeus,Pygathrix nemaeus,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Rhynchocyon stuhlmanni,NA,3036954,Rhynchocyon stuhlmanni,Rhynchocyon stuhlmanni,NCBI,FALSE,FALSE
+Stephan_etal_1981_TablesI-VI,Rhynchocyon stuhlmanni,Rhynchocyon cirnei,3036954,Rhynchocyon stuhlmanni,Rhynchocyon cirnei,curated,TRUE,FALSE
 Stephan_etal_1981_TablesI-VI,Saguinus oedipus,NA,9490,Saguinus oedipus,Saguinus oedipus,NCBI,FALSE,FALSE
-Stephan_etal_1981_TablesI-VI,Saguinus tamarin,NA,NA,NA,Saguinus tamarin,unresolved_raw,FALSE,TRUE
+Stephan_etal_1981_TablesI-VI,Saguinus tamarin,Saguinus midas,NA,NA,Saguinus midas,curated,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Saimiri sciureus,NA,9521,Saimiri sciureus,Saimiri sciureus,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Setifer setosus,NA,319819,Setifer setosus,Setifer setosus,NCBI,FALSE,FALSE
 Stephan_etal_1981_TablesI-VI,Solenodon paradoxus,NA,79805,Solenodon paradoxus,Solenodon paradoxus,NCBI,FALSE,FALSE
@@ -1296,7 +1296,7 @@ Stephan_etal_1987_Table1,Ruwenzorisorex suncoides,NA,150086,Ruwenzorisorex sunco
 Stephan_etal_1987_Table1,Saguinus midas tamarin,Saguinus midas,NA,NA,Saguinus midas,curated,FALSE,FALSE
 Stephan_etal_1987_Table1,Saguinus oedipus,NA,9490,Saguinus oedipus,Saguinus oedipus,NCBI,FALSE,FALSE
 Stephan_etal_1987_Table1,Saimiri sciureus,NA,9521,Saimiri sciureus,Saimiri sciureus,NCBI,FALSE,FALSE
-Stephan_etal_1987_Table1,Scutisorex somereni,ScutisorexÃsomereni,150088,Scutisorex somereni,ScutisorexÃsomereni,curated,TRUE,FALSE
+Stephan_etal_1987_Table1,Scutisorex somereni,Scutisorex somereni,150088,Scutisorex somereni,Scutisorex somereni,curated,FALSE,FALSE
 Stephan_etal_1987_Table1,Setifer setosus,NA,319819,Setifer setosus,Setifer setosus,NCBI,FALSE,FALSE
 Stephan_etal_1987_Table1,Solenodon paradoxus,NA,79805,Solenodon paradoxus,Solenodon paradoxus,NCBI,FALSE,FALSE
 Stephan_etal_1987_Table1,Sorex araneus,NA,42254,Sorex araneus,Sorex araneus,NCBI,FALSE,FALSE
@@ -1319,48 +1319,14 @@ Stimpson_etal_2015_TableS1,Pan troglodytes,NA,9598,Pan troglodytes,Pan troglodyt
 Stimpson_etal_2015_TableS2,Pan paniscus,NA,9597,Pan paniscus,Pan paniscus,NCBI,FALSE,FALSE
 Stimpson_etal_2015_TableS2,Pan troglodytes,NA,9598,Pan troglodytes,Pan troglodytes,NCBI,FALSE,FALSE
 Zilles_Rehkämper_1988_Table12-2,Pongo sp.,NA,9603,Pongo sp.,Pongo sp.,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Alouatta seniculus,NA,9503,Alouatta seniculus,Alouatta seniculus,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Aotus trivirgatus,NA,9505,Aotus trivirgatus,Aotus trivirgatus,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Ateles geoffroyi,NA,9509,Ateles geoffroyi,Ateles geoffroyi,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Avahi laniger,NA,122246,Avahi laniger,Avahi laniger,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Callicebus moloch,NA,9523,Plecturocebus moloch,Plecturocebus moloch,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Callithrix jacchus,NA,9483,Callithrix jacchus,Callithrix jacchus,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Cebuella pygmaea,Callithrix pygmaea,9493,Cebuella pygmaea,Callithrix pygmaea,curated,TRUE,FALSE
-deSousa_etal_2010_Table1,Cebus albifrons,NA,9514,Cebus albifrons,Cebus albifrons,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Cercopithecus ascanius,NA,36223,Cercopithecus ascanius,Cercopithecus ascanius,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Cercopithecus mitus,Cercopithecus mitis,NA,NA,Cercopithecus mitis,curated,FALSE,FALSE
-deSousa_etal_2010_Table1,Cheirogaleus major,NA,47177,Cheirogaleus major,Cheirogaleus major,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Cheirogaleus medius,NA,9460,Cheirogaleus medius,Cheirogaleus medius,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Daubentonia madagascariensis,NA,31869,Daubentonia madagascariensis,Daubentonia madagascariensis,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Eulemur fulvus,NA,13515,Eulemur fulvus,Eulemur fulvus,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Galago senegalensis,NA,9465,Galago senegalensis,Galago senegalensis,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Galagoides demidoff,NA,89672,Galagoides demidoff,Galagoides demidoff,NCBI,FALSE,FALSE
 deSousa_etal_2010_Table1,Gorilla gorilla,Gorilla sp.,9593,Gorilla gorilla,Gorilla sp.,curated,TRUE,FALSE
 deSousa_etal_2010_Table1,Homo sapiens,NA,9606,Homo sapiens,Homo sapiens,NCBI,FALSE,FALSE
 deSousa_etal_2010_Table1,Hylobates lar,NA,9580,Hylobates lar,Hylobates lar,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Indri indri,NA,34827,Indri indri,Indri indri,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Lagothix lagathricha,Lagothrix lagothricha,NA,NA,Lagothrix lagothricha,curated,FALSE,FALSE
-deSousa_etal_2010_Table1,Lepilemur ruficaudatus,NA,78866,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Lophocebus albigena,NA,75567,Lophocebus albigena,Lophocebus albigena,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Loris tardigradus,NA,9468,Loris tardigradus,Loris tardigradus,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Macaca mulatta,NA,9544,Macaca mulatta,Macaca mulatta,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Microcebus murinus,NA,30608,Microcebus murinus,Microcebus murinus,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Miopithecus talapoin,NA,36231,Miopithecus talapoin,Miopithecus talapoin,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Nycticebus coucang,NA,9470,Nycticebus coucang,Nycticebus coucang,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Otolemur crassicaudatus,NA,9463,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI,FALSE,FALSE
+deSousa_etal_2010_Table1,Macaca fascicularis,NA,9541,Macaca fascicularis,Macaca fascicularis,NCBI,FALSE,FALSE
 deSousa_etal_2010_Table1,Pan paniscus,NA,9597,Pan paniscus,Pan paniscus,NCBI,FALSE,FALSE
 deSousa_etal_2010_Table1,Pan troglodytes,NA,9598,Pan troglodytes,Pan troglodytes,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Papio anubis,NA,9555,Papio anubis,Papio anubis,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Perodicticus potto,NA,9472,Perodicticus potto,Perodicticus potto,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Pithecia monachus,NA,595220,Pithecia monachus,Pithecia monachus,NCBI,FALSE,FALSE
 deSousa_etal_2010_Table1,Pongo pygmaeus,Pongo sp.,9600,Pongo pygmaeus,Pongo sp.,curated,TRUE,FALSE
-deSousa_etal_2010_Table1,Procolobus badius,Piliocolobus badius,164648,Piliocolobus badius,Piliocolobus badius,curated,FALSE,FALSE
-deSousa_etal_2010_Table1,Propithecus verreauxi,NA,34825,Propithecus verreauxi,Propithecus verreauxi,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Saimiri sciureus,NA,9521,Saimiri sciureus,Saimiri sciureus,NCBI,FALSE,FALSE
-deSousa_etal_2010_Table1,Sanguinus midas,Saguinus midas,NA,NA,Saguinus midas,curated,FALSE,FALSE
-deSousa_etal_2010_Table1,Sanguinus oedipus,Saguinus oedipus,NA,NA,Saguinus oedipus,curated,FALSE,FALSE
-deSousa_etal_2010_Table1,Tarsius syrichta,Tarsius sp.,1868482,Carlito syrichta,Tarsius sp.,curated,TRUE,FALSE
-deSousa_etal_2010_Table1,Varecia variegata,NA,9455,Varecia variegata,Varecia variegata,NCBI,FALSE,FALSE
+deSousa_etal_2010_Table1,Symphalangus syndactylus,NA,9590,Symphalangus syndactylus,Symphalangus syndactylus,NCBI,FALSE,FALSE
 deSousa_etal_2013_Table1,Cercopithecus ascanius,NA,36223,Cercopithecus ascanius,Cercopithecus ascanius,NCBI,FALSE,FALSE
 deSousa_etal_2013_Table1,Cercopithecus mitis,NA,36225,Cercopithecus mitis,Cercopithecus mitis,NCBI,FALSE,FALSE
 deSousa_etal_2013_Table1,Colobus angolensis,NA,54131,Colobus angolensis,Colobus angolensis,NCBI,FALSE,FALSE

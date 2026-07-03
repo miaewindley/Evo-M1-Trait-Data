@@ -22,7 +22,7 @@
 #          <ISBN>_TABLE1.tsv in __Public/comparative-data/  (named from __ReadMe.xlsx)
 
 suppressPackageStartupMessages({
-  library(readxl); library(readr); library(dplyr); library(stringr)
+  library(readxl); library(tidyverse); library(stringr)
 })
 ## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
 ## NOTE: the previous `if (rstudioapi::isAvailable()) setwd(...)` guard silently did nothing
@@ -63,7 +63,7 @@ final.dataframe <- dat %>%
   filter(!is.na(species_disp), !is.na(num(BoW))) %>%   # species rows = numeric BoW (drops grade-header & footnote rows)
   transmute(
     Stephan_code        = str_extract(species_disp, "^\\d{4}"),
-    Species_Stephan1988 = str_squish(str_remove(species_disp, "^\\d{4}\\s*")),
+    Species             = str_squish(str_remove(species_disp, "^\\d{4}\\s*")),
     BoW_g               = num(BoW),
     BrW_mg              = num(BrW),
     EI                  = num(EI),
@@ -76,23 +76,30 @@ final.dataframe <- dat %>%
 
 options(scipen = 999)
 
-## ---- SAVE: local CSV + identifier-named TSV (named from __ReadMe.xlsx 'Item encoded') ----
-## item_name already resolved above (self-contained path block) -- matches this file's name.
+## ---- SAVE: local CSV + identifier-named TSV in the shared database folder ----
+## Local CSV is NEVER gated on `base` (a lone copied folder still gets output);
+## the shared TSV write is guarded on `base` (repo root, resolved in the path block).
 write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
 message("Wrote ", item_name, ".csv  (", nrow(final.dataframe), " rows)")
 
-readme_file <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ReadMe.xlsx"
-tsv_dir     <- "~/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__Public/comparative-data/"
-filecodes    <- read_excel(readme_file, sheet = "Sheet1")
+tsv_dir <- file.path(base, "__Public/comparative-data")
 # __ReadMe 'Item name' is a formula (strips spaces/underscores from the Item number, e.g.
 # "TABLE 1" -> "Stephan_etal_1988_TABLE1"); match on a case/separator-insensitive key.
 norm_key     <- function(x) tolower(gsub("[ _]", "", as.character(x)))
-item_encoded <- filecodes$"Item encoded"[match(norm_key(item_name), norm_key(filecodes$"Item name"))]
+item_encoded <- if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {
+  filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  filecodes$"Item encoded"[match(norm_key(item_name), norm_key(filecodes$"Item name"))]
+} else NA_character_
+
 if (is.na(item_encoded) || !nzchar(item_encoded)) {
-  warning("No 'Item encoded' for '", item_name, "' in __ReadMe.xlsx; TSV skipped.")
+  warning("No 'Item encoded' (identifier) found for '", item_name, "' in __ReadMe.xlsx; TSV copy skipped.")
 } else if (!dir.exists(path.expand(tsv_dir))) {
-  warning("Shared folder not found: ", tsv_dir, "; TSV skipped.")
+  warning("Shared folder not found: ", tsv_dir, "; TSV copy skipped.")
 } else {
-  write.table(final.dataframe, file = paste0(tsv_dir, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)
-  message("Wrote ", tsv_dir, item_encoded, ".tsv")
+  write.table(final.dataframe, file = file.path(tsv_dir, paste0(item_encoded, ".tsv")),
+              sep = "\t", row.names = FALSE)
+  message("Wrote ", file.path(tsv_dir, paste0(item_encoded, ".tsv")))
 }
+
+message("Rows: ", nrow(final.dataframe),
+        " | primates with ecoethological codes: ", sum(!is.na(final.dataframe$activity)))

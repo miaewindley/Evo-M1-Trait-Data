@@ -38,13 +38,13 @@ printed decimals (e.g. `0.90`).
 
 Reads past the 3 header rows, names the 8 columns by position, keeps the **52 species rows**
 (the only rows with a numeric BoW — grade-header and footnote rows are dropped automatically),
-splits the leading 4-digit `Stephan_code` from `Species_Stephan1988`, types BoW/BrW/EI, and
+splits the leading 4-digit `Stephan_code` from `Species`, types BoW/BrW/EI, and
 keeps the four ecoethological codes as character (blank for Tenrecinae/Scandentia, and for
 Homo's diet/refs, as printed). Adds `source = "Stephan_etal_1988"`. Current accepted names are
 applied later via `../_keys/Stephan/`. (R is not in the build sandbox; the committed CSV/TSV
 were produced by a Python mirror of this logic and will be regenerated when you run the R.)
 
-Output columns: `Stephan_code, Species_Stephan1988, BoW_g, BrW_mg, EI, activity, diet_category,
+Output columns: `Stephan_code, Species, BoW_g, BrW_mg, EI, activity, diet_category,
 locomotion, ecoethology_refs, source`.
 
 **EI method (footnote a):** EI = observed BrW / expected BrW from the Tenrecinae reference line

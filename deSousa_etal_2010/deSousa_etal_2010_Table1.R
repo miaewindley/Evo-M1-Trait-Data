@@ -1,8 +1,33 @@
-# deSousa_etal_2010_Table1.R
-# Preparation step. de Sousa, A. A., et al. (2010). Hominoid visual brain structure volumes... J Hum Evol 58(4),281-292.
-# Turn the journal-faithful snapshot into a lean, analysis-ready CSV (values from
-# the curated comparison CSV deSousa_2010.csv; volumes in mm3). Output from the snapshot only.
-suppressPackageStartupMessages({ library(readxl); library(readr); library(dplyr); library(stringr) })
+## =============================================================================
+## de Sousa et al. (2010) Table 1 manual Excel snapshot --> usable CSV/TSV data
+## Hominoid visual brain structure volumes and the position of the lunate sulcus
+## DOI: 10.1016/j.jhevol.2009.11.011
+## =============================================================================
+##
+## Input
+##   deSousa_etal_2010_Table1_snapshot.xlsx
+##
+## Output
+##   deSousa_etal_2010_Table1.csv
+##   plus DOI/PMID-coded TSV in __Public/comparative-data/ if this script is run
+##   inside the full Evo-M1-Trait-Data repository.
+##
+## Notes
+##   - This version starts from the manually checked snapshot Excel file.
+##   - It removes printed footnote markers from data cells and records their
+##     information in analysis-friendly columns.
+##   - Numeric measurement columns are converted to numeric values.
+## =============================================================================
+
+## ---- setup -------------------------------------------------------------------
+suppressPackageStartupMessages({
+  library(readxl)
+  library(readr)
+  library(dplyr)
+  library(stringr)
+  library(tibble)
+})
+
 ## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
 .sp <- local({
   a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
@@ -15,35 +40,214 @@ suppressPackageStartupMessages({ library(readxl); library(readr); library(dplyr)
   stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
 })
 folder    <- dirname(.sp)                                # this paper's folder
-item_name <- tools::file_path_sans_ext(basename(.sp))    # = file name, matches __ReadMe.xlsx
+item_name <- tools::file_path_sans_ext(basename(.sp))    # e.g. deSousa_etal_2010_Table1
 base      <- local({                                     # repo root; NA if run as a lone folder
   d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
   if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
 })
+study <- basename(folder)                                # e.g. deSousa_etal_2010
+
 setwd(folder)
-snapshot_file <- "deSousa_etal_2010_Table1_snapshot.xlsx"; snapshot_sheet <- "Table1"; output_file <- "deSousa_etal_2010_Table1.csv"
-header_rows <- 2L   # row1 caption + row2 header
-pos <- c("species_disp", "Neocortex_mm3", "Area_striata_grey_matter_mm3", "Corpus_geniculatum_laterale_mm3", "Total_brain_net_volume_mm3")
-num <- function(x) parse_number(as.character(x), na = c("", "-", "NA", "n.a.", "__"))
-raw <- read_excel(snapshot_file, sheet = snapshot_sheet, col_names = FALSE, col_types = "text")
-dat <- raw %>% slice(-(seq_len(header_rows))); names(dat)[seq_along(pos)] <- pos
-final.dataframe <- dat %>%
-  filter(!is.na(num(Neocortex_mm3))) %>%
-  transmute(Species = str_squish(species_disp),
-            Neocortex_mm3 = num(Neocortex_mm3), Area_striata_grey_matter_mm3 = num(Area_striata_grey_matter_mm3), Corpus_geniculatum_laterale_mm3 = num(Corpus_geniculatum_laterale_mm3), Total_brain_net_volume_mm3 = num(Total_brain_net_volume_mm3))
-write.csv(final.dataframe, output_file, row.names = FALSE)
-## ---- also write the DOI/PMID-coded TSV to __Public/comparative-data/ (skipped if shared repo absent) ----
-tsv_dir <- file.path(base, "__Public/comparative-data")
-enc <- if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {
-  filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-  filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
-} else NA_character_
-if (is.na(enc) || !nzchar(enc)) {
-  warning("No 'Item encoded' for '", item_name, "' in __ReadMe.xlsx; TSV skipped.")
-} else if (!dir.exists(path.expand(tsv_dir))) {
-  warning("Shared folder not found: ", tsv_dir, "; TSV skipped.")
+snapshot_file    <- paste0(item_name, "_snapshot.xlsx")
+definitions_file <- paste0(item_name, "_definitions.csv")
+output_file      <- paste0(item_name, ".csv")
+
+if (!file.exists(snapshot_file)) {
+  stop("Snapshot file not found: ", snapshot_file, call. = FALSE)
+}
+if (!file.exists(definitions_file)) {
+  warning("Definitions file not found: ", definitions_file, "; using built-in output column order.")
+}
+
+## ---- helpers -----------------------------------------------------------------
+# Lowercase footnote letters at the very end of a cell, e.g. "Homo sapiensb" or
+# "2.05c". This intentionally does not touch normal species names such as
+# "Macaca fascicularis".
+extract_trailing_note <- function(x) {
+  x <- as.character(x)
+  note <- str_match(x, "([a-z])\\s*$")[, 2]
+  note[is.na(x) | x %in% c("", "NA")] <- NA_character_
+  note
+}
+
+remove_trailing_note <- function(x) {
+  x <- as.character(x)
+  x <- str_replace(x, "([0-9.])([a-z])\\s*$", "\\1")
+  x <- str_replace(x, "(sapiens)b\\s*$", "\\1")
+  str_squish(x)
+}
+
+num_from_cell <- function(x) {
+  x <- as.character(x)
+  x <- str_replace_all(x, "\\u00A0", " ")
+  x <- str_replace_all(x, "(?i)^\\s*NA\\s*$", NA_character_)
+  x <- remove_trailing_note(x)
+  readr::parse_number(x, na = c("", "NA", "NaN"))
+}
+
+collapse_notes <- function(...) {
+  pieces <- c(...)
+  pieces <- pieces[!is.na(pieces) & nzchar(pieces)]
+  if (length(pieces) == 0L) NA_character_ else paste(unique(pieces), collapse = "; ")
+}
+
+## ---- read manual snapshot ----------------------------------------------------
+raw <- readxl::read_excel(
+  snapshot_file,
+  sheet = 1,
+  col_names = FALSE,
+  na = c("", "NA"),
+  .name_repair = "minimal"
+)
+
+# Keep only the first 9 table columns; title, caption, blank rows, and footnotes
+# are ignored below after the header/data block is detected.
+if (ncol(raw) < 9L) {
+  stop("The snapshot has fewer than 9 columns; cannot parse Table 1.", call. = FALSE)
+}
+raw <- raw[, 1:9]
+names(raw) <- paste0("X", seq_len(ncol(raw)))
+raw <- raw %>% mutate(across(everything(), ~ str_squish(as.character(.x))))
+raw[raw == "NA"] <- NA_character_
+
+header_row <- which(
+  str_to_lower(raw$X1) == "species" &
+    str_to_lower(raw$X2) == "code" &
+    str_to_lower(raw$X3) == "collection"
+)[1]
+if (is.na(header_row)) {
+  stop("Could not find the Table 1 header row in ", snapshot_file, call. = FALSE)
+}
+
+data_start <- header_row + 1L
+# Data rows start after the header and end before the first blank/footnote row.
+# A data row must have species, code, and collection.
+data_rows <- seq(data_start, nrow(raw))
+keep_data <- !is.na(raw$X1[data_rows]) & !is.na(raw$X2[data_rows]) & !is.na(raw$X3[data_rows])
+if (!any(keep_data)) {
+  stop("No data rows found after the Table 1 header row.", call. = FALSE)
+}
+last_data_row <- data_rows[max(which(keep_data))]
+
+dat0 <- raw[data_start:last_data_row, ] %>%
+  filter(!if_all(everything(), is.na)) %>%
+  transmute(
+    species_as_published        = X1,
+    code                        = X2,
+    collection                  = X3,
+    brain_mass_g_raw            = X4,
+    correction_factor_raw       = X5,
+    brain_volume_cm3_raw        = X6,
+    left_V1_volume_cm3_raw      = X7,
+    left_LGN_volume_cm3_raw     = X8,
+    neocortex_volume_cm3_raw    = X9
+  )
+
+## ---- clean and standardize ---------------------------------------------------
+final.dataframe <- dat0 %>%
+  mutate(
+    species_note = extract_trailing_note(species_as_published),
+    cf_note      = extract_trailing_note(correction_factor_raw),
+
+    species = remove_trailing_note(species_as_published),
+    species = recode(species, "Symphalagus syndactylus" = "Symphalangus syndactylus"),
+
+    brain_mass_g         = num_from_cell(brain_mass_g_raw),
+    correction_factor    = num_from_cell(correction_factor_raw),
+    brain_volume_cm3     = num_from_cell(brain_volume_cm3_raw),
+    left_V1_volume_cm3   = num_from_cell(left_V1_volume_cm3_raw),
+    left_LGN_volume_cm3  = num_from_cell(left_LGN_volume_cm3_raw),
+    neocortex_volume_cm3 = num_from_cell(neocortex_volume_cm3_raw),
+
+    cf_assumed = !is.na(cf_note) & cf_note == "c",
+    source = study,
+
+    correction = mapply(
+      collapse_notes,
+      if_else(species_note == "b", "removed footnote b from species; Homo sapiens values differ slightly from Amunts et al. 2007a because of shrinkage-correction convention", NA_character_),
+      if_else(cf_assumed, "removed footnote c from correction_factor; Pan troglodytes mean correction factor used because brain weight unknown", NA_character_),
+      if_else(species_as_published == "Symphalagus syndactylus", "corrected published spelling Symphalagus to Symphalangus", NA_character_),
+      SIMPLIFY = TRUE,
+      USE.NAMES = FALSE
+    )
+  ) %>%
+  select(
+    species,
+    species_as_published,
+    code,
+    collection,
+    brain_mass_g,
+    correction_factor,
+    brain_volume_cm3,
+    left_V1_volume_cm3,
+    left_LGN_volume_cm3,
+    neocortex_volume_cm3,
+    cf_assumed,
+    source,
+    correction
+  )
+
+## ---- validation --------------------------------------------------------------
+expected_cols <- c(
+  "species", "species_as_published", "code", "collection",
+  "brain_mass_g", "correction_factor", "brain_volume_cm3",
+  "left_V1_volume_cm3", "left_LGN_volume_cm3", "neocortex_volume_cm3",
+  "cf_assumed", "source", "correction"
+)
+if (!identical(names(final.dataframe), expected_cols)) {
+  stop("Output columns are not in the expected order.", call. = FALSE)
+}
+
+expected_n <- 29L
+if (nrow(final.dataframe) != expected_n) {
+  stop("Expected ", expected_n, " data rows, but parsed ", nrow(final.dataframe), ".", call. = FALSE)
+}
+
+if (!identical(final.dataframe$species[1], "Homo sapiens") ||
+    !identical(final.dataframe$code[1], "14686") ||
+    !identical(final.dataframe$collection[1], "Zilles") ||
+    !isTRUE(all.equal(final.dataframe$brain_volume_cm3[1], 1387.1))) {
+  stop("First parsed row does not match the expected first Table 1 row.", call. = FALSE)
+}
+
+if (!identical(final.dataframe$species[nrow(final.dataframe)], "Macaca fascicularis") ||
+    !identical(final.dataframe$code[nrow(final.dataframe)], "ma22") ||
+    !isTRUE(all.equal(final.dataframe$left_V1_volume_cm3[nrow(final.dataframe)], 1.4))) {
+  stop("Last parsed row does not match the expected last Table 1 row.", call. = FALSE)
+}
+
+if (sum(final.dataframe$cf_assumed, na.rm = TRUE) != 4L) {
+  stop("Expected 4 rows with correction factor footnote c / cf_assumed == TRUE.", call. = FALSE)
+}
+
+numeric_cols <- c(
+  "brain_mass_g", "correction_factor", "brain_volume_cm3",
+  "left_V1_volume_cm3", "left_LGN_volume_cm3", "neocortex_volume_cm3"
+)
+non_numeric <- numeric_cols[!vapply(final.dataframe[numeric_cols], is.numeric, logical(1))]
+if (length(non_numeric) > 0L) {
+  stop("These columns are not numeric: ", paste(non_numeric, collapse = ", "), call. = FALSE)
+}
+
+## ---- write csv ---------------------------------------------------------------
+readr::write_csv(final.dataframe, output_file, na = "")
+message("Wrote ", file.path(folder, output_file))
+
+## ---- also write the DOI/PMID-coded TSV to __Public/comparative-data/ ---------
+if (is.na(base) || !file.exists(file.path(base, "__ReadMe.xlsx"))) {
+  warning("No repository root with __ReadMe.xlsx found; TSV skipped.")
 } else {
-  write.table(final.dataframe, file = file.path(tsv_dir, paste0(enc, ".tsv")), sep = "\t", row.names = FALSE)
-  message("Wrote ", file.path(tsv_dir, paste0(enc, ".tsv")))
+  tsv_dir <- file.path(base, "__Public/comparative-data")
+  filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  enc <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+
+  if (is.na(enc) || !nzchar(enc)) {
+    warning("No 'Item encoded' for '", item_name, "' in __ReadMe.xlsx; TSV skipped.")
+  } else if (!dir.exists(path.expand(tsv_dir))) {
+    warning("Shared folder not found: ", tsv_dir, "; TSV skipped.")
+  } else {
+    readr::write_tsv(final.dataframe, file.path(tsv_dir, paste0(enc, ".tsv")), na = "")
+    message("Wrote ", file.path(tsv_dir, paste0(enc, ".tsv")))
+  }
 }

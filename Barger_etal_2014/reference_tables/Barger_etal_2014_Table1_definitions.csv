@@ -7,7 +7,7 @@ amygdala_lateral_cc,lateral amygdaloid nucleus volume (one hemisphere),LateralNu
 amygdala_basal_cc,basal amygdaloid nucleus volume (one hemisphere),BasalNucleus,Volume.cm3,,primary,Apes & humans,Barger_etal_2014_Table1,one hemisphere (cc),
 amygdala_accessory_basal_cc,accessory basal amygdaloid nucleus volume (one hemisphere),AccessoryBasalNucleus,Volume.cm3,,primary,Apes & humans,Barger_etal_2014_Table1,one hemisphere (cc),
 amygdala_central_cc,central amygdaloid nucleus volume (one hemisphere),CentralNucleus,Volume.cm3,,primary,Apes & humans,Barger_etal_2014_Table1,one hemisphere (cc); not measured in Barger 2007,
-amygdala_total_cc,whole amygdala (amygdaloid complex) volume (one hemisphere),AmygdaloidComplex,Volume.cm3,,primary,Apes & humans,Barger_etal_2014_Table1,one hemisphere (cc); maps to Stephan 'Amygdala' / Barger 2007 AC_total (but those are both-hemisphere),
+amygdala_total_cc,whole amygdala (amygdaloid complex) volume (one hemisphere),AmygdaloidComplex,Volume.cm3,,primary,Apes & humans,Barger_etal_2014_Table1,one hemisphere (cc); maps to Stephan 'Amygdala' / Barger 2007 amygdaloid_complex_total (but those are both-hemisphere),
 hippocampus_cc,hippocampus volume (one hemisphere),Hippocampus,Volume.cm3,,primary,Apes & humans,Barger_etal_2014_Table1,"one hemisphere (cc); cornu ammonis, dentate gyrus, prosubiculum, subiculum, presubiculum",
 striatum_cc,striatum volume (one hemisphere),Striatum,Volume.cm3,,primary,Apes & humans,Barger_etal_2014_Table1,one hemisphere (cc); caudate + putamen (excl. internal capsule and ventral striatum),
 source,source identifier,,Source,,primary,Apes & humans,Barger_etal_2014_Table1,,

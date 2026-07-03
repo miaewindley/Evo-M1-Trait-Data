@@ -3,7 +3,6 @@
 | misty 0.8.2 (2026-05-16)            |
 | Miscellaneous Functions T. Yanagida |
 |-------------------------------------|
-Loading required package: mice
 
 Attaching package: ‘mice’
 
@@ -15,8 +14,6 @@ The following objects are masked from ‘package:base’:
 
     cbind, rbind
 
-Loading required package: psych
-Loading required package: tidyverse
 ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
@@ -33,7 +30,7 @@ Warning message:
 In cor(x = list(Body_Mass.g = c(79, 25000, 925, NA, 907.82, 16.2,  :
   the standard deviation is zero
 Warning message:
-na.test(s) failed (likely a degenerate/zero-variance covariance pattern in `s`): non-finite value supplied by 'nlm' 
+na.test(s) failed, likely because of degenerate/zero-variance covariance patterns: non-finite value supplied by 'nlm' 
 
  iter imp variable
   1   1  Body_Mass.g  Cerebellum_Mass.g  Cerebellum_N.n  Cerebellum_O.n  CerebralCortex_Mass.g  CerebralCortex_N.n  CerebralCortex_O.n  RoB_Mass.g  RoB_N.n  RoB_O.n  WholeBrain_C.n  WholeBrain_N.n  WholeBrain_O.n  CerebralCortex_I.p.C  OlfactoryBulb_Mass.g  OlfactoryBulb_N.n  OlfactoryBulb_O.n
@@ -337,12 +334,12 @@ na.test(s) failed (likely a degenerate/zero-variance covariance pattern in `s`):
   10   29  Body_Mass.g  Cerebellum_Mass.g  Cerebellum_N.n  Cerebellum_O.n  CerebralCortex_Mass.g  CerebralCortex_N.n  CerebralCortex_O.n  RoB_Mass.g  RoB_N.n  RoB_O.n  WholeBrain_C.n  WholeBrain_N.n  WholeBrain_O.n  CerebralCortex_I.p.C  OlfactoryBulb_Mass.g  OlfactoryBulb_N.n  OlfactoryBulb_O.n
   10   30  Body_Mass.g  Cerebellum_Mass.g  Cerebellum_N.n  Cerebellum_O.n  CerebralCortex_Mass.g  CerebralCortex_N.n  CerebralCortex_O.n  RoB_Mass.g  RoB_N.n  RoB_O.n  WholeBrain_C.n  WholeBrain_N.n  WholeBrain_O.n  CerebralCortex_I.p.C  OlfactoryBulb_Mass.g  OlfactoryBulb_N.n  OlfactoryBulb_O.n
 Warning message:
-Number of logged events: 4228 
+Number of logged events: 2379 
 Error in density.default(x = c(NA_real_, NA_real_, NA_real_, NA_real_,  : 
   need at least 2 points to select a bandwidth automatically
 Calls: densityplot ... <Anonymous> -> do.call -> <Anonymous> -> density.default
-Execution halted","2026-07-02 00:55:36.077595","2026-07-02 00:55:58.103113",22.0255179405212
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_cellcounts/cellcounts_compiled.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+Execution halted","2026-07-03 12:52:29.765317","2026-07-03 12:52:48.084102",18.3187849521637
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_DeCasien.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
 ✔ ggplot2   4.0.3     ✔ tibble    3.3.1
@@ -352,10 +349,9 @@ Execution halted","2026-07-02 00:55:36.077595","2026-07-02 00:55:58.103113",22.0
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in `$<-.data.frame`(`*tmp*`, ""Species"", value = character(0)) : 
-  replacement has 0 rows, data has 1
-Calls: $<- -> $<-.data.frame
-Execution halted","2026-07-02 00:55:58.113549","2026-07-02 00:55:59.882999",1.76944994926453
+Laterality guard OK: 22 one-side column(s) correctly suffixed.
+Error: paper_long('Barger_etal_2014_Table1'): no measured columns matched the term map. df cols: Species, amygdala_total_cc, hippocampus_cc, striatum_cc, amygdala_lateral_cc, amygdala_basal_cc, amygdala_accessory_basal_cc
+Execution halted","2026-07-03 12:52:56.06331","2026-07-03 12:52:57.474252",1.41094207763672
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_Zilles_Rehkamper_1988_provenance.R","FAILED","Error in `map()`:
 ℹ In index: 1.
 Caused by error in `filter()`:
@@ -389,36 +385,10 @@ Backtrace:
  23. └─base::.handleSimpleError(...)
  24.   └─dplyr (local) h(simpleError(msg, call))
  25.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
-Execution halted","2026-07-02 00:56:15.494676","2026-07-02 00:56:16.541536",1.04685997962952
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Stephan_etal_1988/Stephan_etal_1988_Table1.R","FAILED","New names:
-• `` -> `...1`
-• `` -> `...2`
-• `` -> `...3`
-• `` -> `...4`
-• `` -> `...5`
-• `` -> `...6`
-• `` -> `...7`
-• `` -> `...8`
-Error in `transmute()`:
-ℹ In argument: `activity = na_if(str_squish(replace_na(activity, """")),
-  """")`.
-Caused by error in `replace_na()`:
-! could not find function ""replace_na""
-Backtrace:
-     ▆
-  1. ├─... %>% ...
-  2. ├─dplyr::transmute(...)
-  3. ├─dplyr:::transmute.data.frame(...)
-  4. │ └─dplyr:::mutate_cols(.data, dots, by)
-  5. │   ├─base::withCallingHandlers(...)
-  6. │   └─dplyr:::mutate_col(dots[[i]], data, mask, new_columns)
-  7. │     └─mask$eval_all_mutate(quo)
-  8. │       └─dplyr (local) eval()
-  9. ├─dplyr::na_if(str_squish(replace_na(activity, """")), """")
- 10. │ └─vctrs::vec_cast(x = y, to = x, x_arg = ""y"", to_arg = ""x"")
- 11. ├─stringr::str_squish(replace_na(activity, """"))
- 12. │ └─stringr:::copy_names(...)
- 13. └─base::.handleSimpleError(...)
- 14.   └─dplyr (local) h(simpleError(msg, call))
- 15.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
-Execution halted","2026-07-02 01:02:52.539372","2026-07-02 01:02:53.436234",0.896862030029297
+Execution halted","2026-07-03 12:53:00.378763","2026-07-03 12:53:01.317686",0.938923120498657
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa_etal_2010/old/deSousa_etal_2010_Table1 copy.R","FAILED","Warning message:
+In normalizePath(sub(""^--file="", """", a[1])) :
+  path[1]=""/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/deSousa_etal_2010/old/deSousa_etal_2010_Table1~+~copy.R"": No such file or directory
+Error in eval(expr, p) : object 'final.dataframe' not found
+Calls: write.csv ... eval.parent -> eval -> eval -> <Anonymous> -> is.data.frame
+Execution halted","2026-07-03 12:58:14.1805","2026-07-03 12:58:15.24671",1.0662100315094

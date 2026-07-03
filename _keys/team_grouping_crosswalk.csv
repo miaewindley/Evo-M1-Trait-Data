@@ -1,0 +1,39 @@
+item (papers tribble),script_team (volumes_compiled.R),keys_folder (_keys/),registry_Team (__ReadMe.xlsx),registry_Collection (__ReadMe.xlsx),flags / mismatches
+Stephan_etal_1970_Tables1-6,Stephan_collection,Stephan,,Stephan,registry Team blank
+Stephan_etal_1981_TablesI-VI,Stephan_collection,Stephan,Stephan,Stephan,
+Stephan_etal_1982_Table1,Stephan_collection,Stephan,Stephan,Stephan,
+Stephan_etal_1984_Table1,Stephan_collection,Stephan,Stephan,Stephan,
+Stephan_etal_1987_Table1,Stephan_collection,Stephan,Stephan,Stephan,
+Frahm_etal_1982_Table2,Stephan_collection,Stephan,Stephan,,registry Collection blank
+Frahm_etal_1984_Table1,Stephan_collection,Stephan,Stephan,,registry Collection blank
+Frahm_Zilles_1994_Table1,Stephan_collection,Stephan,Stephan,,registry Collection blank
+Frahm_etal_1997_Table1,Stephan_collection,Stephan,Stephan,,registry Collection blank
+Frahm_etal_1998_Table1,Stephan_collection,Stephan,Stephan,,registry Collection blank
+Baron_etal_1983_Table1,Stephan_collection,Stephan,Stephan,Stephan,
+Baron_etal_1987_Table1,Stephan_collection,Stephan,Stephan,Stephan,
+Baron_etal_1988_Table1,Stephan_collection,Stephan,Stephan,Stephan,
+Baron_etal_1990_Table1,Stephan_collection,Stephan,Stephan,Stephan,
+Matano_etal_1985_a_Table1,Stephan_collection,Stephan,Stephan,Stephan,
+Matano_etal_1985_b_Table1,Stephan_collection,Stephan,Stephan,Stephan,
+Zilles_Rehkämper_1988_Table12-2,Stephan_collection,Stephan,,"Stephan, Zilles",registry Team blank
+deSousa_etal_2010_Table1,Zilles,Stephan,"Stephan,Zilles","Stephan, Zilles, AFIP, Sherwood, Hof",script=Zilles(Tier-2) but filed in Stephan/ key folder
+deSousa_etal_2013_Table1,Zilles,Stephan,"Stephan,Zilles","Stephan, Zilles, AFIP, Sherwood, Hof",script=Zilles(Tier-2) but filed in Stephan/ key folder
+MacLeod_etal_2003_Table1,Zilles,Stephan,Rilling,Rilling,"script=Zilles(Tier-2) but filed in Stephan/ key folder; MacLeod Table1(Rilling) vs Table2(Stephan,Zilles) registry disagree"
+MacLeod_etal_2003_Table2,Zilles,Stephan,"Stephan, Zilles","Stephan, Zilles",script=Zilles(Tier-2) but filed in Stephan/ key folder
+Bauernfeind_etal_2013_Table1,Zilles,Stephan,"Stephan, Sherwood",,registry Collection blank; script=Zilles(Tier-2) but filed in Stephan/ key folder
+Bauernfeind_etal_2013_Table2,Zilles,Stephan,"Stephan, Sherwood",,registry Collection blank; script=Zilles(Tier-2) but filed in Stephan/ key folder
+Smaers_etal_2011_SupplementaryTable1,Zilles,Stephan,,"Stephan, Zilles",registry Team blank; script=Zilles(Tier-2) but filed in Stephan/ key folder
+Semendeferi_etal_1998_Table2,Zilles,Stephan,Zilles,,registry Collection blank; script=Zilles(Tier-2) but filed in Stephan/ key folder
+Semendeferi_etal_2001_Table2,Zilles,Stephan,Zilles,,registry Collection blank; script=Zilles(Tier-2) but filed in Stephan/ key folder
+Sherwood_etal_2005_Table1,Zilles,Stephan,Stephan,"Stephan, Zilles",script=Zilles(Tier-2) but filed in Stephan/ key folder
+Barger_etal_2007_TABLE1,Zilles,Stephan,,Zilles,registry Team blank; script=Zilles(Tier-2) but filed in Stephan/ key folder
+Bush_Allman_2003_Table1,Bush,Allman,,,registry Team+Collection BLANK
+Bush_Allman_2004_b_TABLE1,Bush,Allman,Allman,AFIP,
+Ashwell__2020_SupplementaryTable,Ashwell,Ashwell,,,registry Team+Collection BLANK
+Sherwood_etal_2004_TABLEI,Sherwood,— (none; DeCasien bucket in Stephan/ only),,Hof,no per-team key (relies on volumes_species_overrides.csv); registry Team blank
+Barks_etal_2014_TABLE1,Barks,— (none; DeCasien bucket in Stephan/ only),,,no per-team key (relies on volumes_species_overrides.csv); registry Team+Collection BLANK
+Barks_etal_2014_Fig4A,Barks,— (none; DeCasien bucket in Stephan/ only),,,no per-team key (relies on volumes_species_overrides.csv); registry Team+Collection BLANK
+Rilling_Insel_1998_Table1,RillingInsel,— (none; DeCasien bucket in Stephan/ only),,Rilling,no per-team key (relies on volumes_species_overrides.csv); registry Team blank
+Rilling_Insel_1999_Table1,RillingInsel,— (none; DeCasien bucket in Stephan/ only),,,no per-team key (relies on volumes_species_overrides.csv); registry Team+Collection BLANK
+Stimpson_etal_2015_TableS1,Stimpson,— (none; DeCasien bucket in Stephan/ only),Sherwood,Sherwood,no per-team key (relies on volumes_species_overrides.csv)
+Stimpson_etal_2015_TableS2,Stimpson,— (none; DeCasien bucket in Stephan/ only),Sherwood,Sherwood,no per-team key (relies on volumes_species_overrides.csv)
