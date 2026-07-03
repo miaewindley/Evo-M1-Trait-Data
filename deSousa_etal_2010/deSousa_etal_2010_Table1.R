@@ -188,6 +188,23 @@ final.dataframe <- dat0 %>%
     correction
   )
 
+## ---- targeted data correction: Macaca fascicularis (ma22) left LGN -----------
+## Table 1 printed the LEFT LGN as 0. That is a rounding-to-zero artifact: the true
+## left value is <0.05 cm3, so at Table 1's one-decimal precision it reads as 0 (and
+## looks like a missing/true zero). The paper's Supplementary Table 2 reports the
+## BILATERAL LGN (0.092 cm3); left = bilateral / 2 (the same L*2 convention seen for
+## V1: left 1.4 = bilateral 2.7 / 2). So left LGN = 0.092 / 2 = 0.046 cm3.
+.mac <- with(final.dataframe,
+             species == "Macaca fascicularis" & code == "ma22" &
+               (is.na(left_LGN_volume_cm3) | left_LGN_volume_cm3 == 0))
+if (any(.mac)) {
+  final.dataframe$left_LGN_volume_cm3[.mac] <- 0.046
+  final.dataframe$correction[.mac] <- vapply(which(.mac), function(i)
+    collapse_notes(final.dataframe$correction[i],
+      "left LGN printed as 0 (rounds to zero at 1 dp); set to 0.046 cm3 = Supp. Table 2 bilateral LGN 0.092 / 2 (left = bilateral/2)"),
+    character(1))
+}
+
 ## ---- validation --------------------------------------------------------------
 expected_cols <- c(
   "species", "species_as_published", "code", "collection",

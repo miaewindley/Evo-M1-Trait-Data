@@ -27,4 +27,4 @@ Pongo pygmaeus,Pongo pygmaeus,Briggs 5/97,Zilles,345,2.15,333,4.7,0.2,240.3,FALS
 Hylobates lar,Hylobates lar,YN81–146,Zilles,92,2.09,88.8,1.8,0.1,59.6,FALSE,deSousa_etal_2010,
 Hylobates lar,Hylobates lar,Disco 3/97,Zilles,120,2.16,115.8,2.3,0.1,77,FALSE,deSousa_etal_2010,
 Symphalangus syndactylus,Symphalagus syndactylus,880804,GWU,138.7,2.9099999999999997,133.9,2.7,,,FALSE,deSousa_etal_2010,corrected published spelling Symphalagus to Symphalangus
-Macaca fascicularis,Macaca fascicularis,ma22,Zilles,57.6,1.9,55.6,1.4,0,,FALSE,deSousa_etal_2010,
+Macaca fascicularis,Macaca fascicularis,ma22,Zilles,57.6,1.9,55.6,1.4,0.046,,FALSE,deSousa_etal_2010,left LGN printed as 0 (rounds to zero at 1 dp); set to 0.046 cm3 = Supp. Table 2 bilateral LGN 0.092 / 2 (left = bilateral/2)
