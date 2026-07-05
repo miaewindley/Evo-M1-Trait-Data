@@ -25,11 +25,10 @@ Ailurus fulgens,Cerebellum_Vol.mm3,1649,Ashwell,1
 Ailurus fulgens,Cerebellum_grey_matter_Vol.mm3,3970,Bush,1
 Ailurus fulgens,Cerebellum_white_matter_Vol.mm3,712,Ashwell; Bush,2
 Ailurus fulgens,FlocculonodularLobe_Vol.mm3,70.8,Ashwell,1
-Ailurus fulgens,Neocortex_Vol.mm3,20070,Bush,1
-Ailurus fulgens,Neocortex_grey_matter_Vol.mm3,13810,Bush,1
+Ailurus fulgens,Neocortex_grey_matter_Vol.mm3,13800,Bush,1
 Ailurus fulgens,Neocortex_white_matter_Vol.mm3,6250,Bush,1
 Ailurus fulgens,Pontine_and_reticulotegmental_nuclei_Vol.mm3,48.7,Ashwell,1
-Ailurus fulgens,Total_brain_net_volume_Vol.mm3,24352.5,Ashwell; Bush,2
+Ailurus fulgens,Total_brain_net_volume_Vol.mm3,12085,Ashwell,1
 Alouatta caraya,Agranular_insular_cortex_Vol.mm3,84,Zilles,1
 Alouatta caraya,Agranular_insular_cortex_left_Vol.mm3,42,Zilles,1
 Alouatta caraya,Body_Mass.g,6420,Zilles,1
@@ -51,9 +50,8 @@ Alouatta palliata,Cerebellum_grey_matter_Vol.mm3,3320,Bush,1
 Alouatta palliata,Cerebellum_white_matter_Vol.mm3,880,Ashwell; Bush,2
 Alouatta palliata,Corpus_geniculatum_laterale_Vol.mm3,90,Bush,1
 Alouatta palliata,FlocculonodularLobe_Vol.mm3,53.5,Ashwell,1
-Alouatta palliata,Neocortex_Vol.mm3,28560,Bush,1
-Alouatta palliata,Neocortex_grey_matter_Vol.mm3,17233.333333333332,Bush,1
-Alouatta palliata,Neocortex_white_matter_Vol.mm3,11473.333333333334,Bush,1
+Alouatta palliata,Neocortex_grey_matter_Vol.mm3,17275,Bush,1
+Alouatta palliata,Neocortex_white_matter_Vol.mm3,11505,Bush,1
 Alouatta palliata,Pontine_and_reticulotegmental_nuclei_Vol.mm3,157,Ashwell,1
 Alouatta palliata,Total_brain_net_volume_Vol.mm3,38888.5,Ashwell; Bush,2
 Alouatta seniculus,AccessoryOlfactoryBulb_Vol.mm3,0.595,Stephan_collection,1
@@ -217,11 +215,11 @@ Aotus trivirgatus,Medial_cerebellar_nuclei_Vol.mm3,13.01,Stephan_collection,1
 Aotus trivirgatus,Medulla_oblongata_Vol.mm3,680.65,Stephan_collection; Zilles,2
 Aotus trivirgatus,Mesencephalon_Vol.mm3,409,Stephan_collection,1
 Aotus trivirgatus,Middle_temporal_visual_area_Vol.mm3,99.5,Stephan_collection,1
-Aotus trivirgatus,Neocortex_Vol.mm3,8460,Bush; Stephan_collection,2
-Aotus trivirgatus,Neocortex_grey_matter_Vol.mm3,6351.333333333334,Bush; Stephan_collection,2
+Aotus trivirgatus,Neocortex_Vol.mm3,9950,Stephan_collection,1
+Aotus trivirgatus,Neocortex_grey_matter_Vol.mm3,6275.5,Bush; Stephan_collection,2
 Aotus trivirgatus,Neocortex_lamina_1_Vol.mm3,1039,Stephan_collection,1
 Aotus trivirgatus,Neocortex_laminae_2_6_Vol.mm3,6737,Stephan_collection,1
-Aotus trivirgatus,Neocortex_white_matter_Vol.mm3,1915.3333333333335,Bush; Stephan_collection,2
+Aotus trivirgatus,Neocortex_white_matter_Vol.mm3,1894.5,Bush; Stephan_collection,2
 Aotus trivirgatus,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,14.6,Stephan_collection,1
 Aotus trivirgatus,Nucleus_habenularis_medialis_Vol.mm3,3.21,Stephan_collection,1
 Aotus trivirgatus,Nucleus_septalis_triangularis_Vol.mm3,0.964,Stephan_collection,1
@@ -259,10 +257,6 @@ Aplodontia rufa,Neocortex_grey_matter_Vol.mm3,1480,Bush,1
 Aplodontia rufa,Neocortex_white_matter_Vol.mm3,376,Bush,1
 Aplodontia rufa,Pontine_and_reticulotegmental_nuclei_Vol.mm3,20.8,Ashwell,1
 Aplodontia rufa,Total_brain_net_volume_Vol.mm3,4373,Ashwell,1
-Applodontia rufa,Neocortex_Vol.mm3,1860,Bush,1
-Applodontia rufa,Neocortex_grey_matter_Vol.mm3,1480,Bush,1
-Applodontia rufa,Neocortex_white_matter_Vol.mm3,380,Bush,1
-Applodontia rufa,Total_brain_net_volume_Vol.mm3,5600,Bush,1
 Atelerix algirus,AccessoryOlfactoryBulb_Vol.mm3,1.934,Stephan_collection,1
 Atelerix algirus,AccessoryOlfactoryBulb_layer_6_Vol.mm3,0.508,Stephan_collection,1
 Atelerix algirus,AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,0.676,Stephan_collection,1
@@ -406,9 +400,8 @@ Ateles sp.,Area_striata_grey_matter_Vol.mm3,3130,Bush,1
 Ateles sp.,Cerebellum_grey_matter_Vol.mm3,5970,Bush,1
 Ateles sp.,Cerebellum_white_matter_Vol.mm3,1680,Bush,1
 Ateles sp.,Corpus_geniculatum_laterale_Vol.mm3,120,Bush,1
-Ateles sp.,Neocortex_Vol.mm3,48880,Bush,1
-Ateles sp.,Neocortex_grey_matter_Vol.mm3,30253.333333333332,Bush,1
-Ateles sp.,Neocortex_white_matter_Vol.mm3,17866.666666666668,Bush,1
+Ateles sp.,Neocortex_grey_matter_Vol.mm3,29915,Bush,1
+Ateles sp.,Neocortex_white_matter_Vol.mm3,17825,Bush,1
 Ateles sp.,Total_brain_net_volume_Vol.mm3,72410,Bush,1
 Avahi laniger,AccessoryOlfactoryBulb_Vol.mm3,3.013,Stephan_collection,1
 Avahi laniger,AccessoryOlfactoryBulb_layer_6_Vol.mm3,0.708,Stephan_collection,1
@@ -654,7 +647,6 @@ Callicebus sp.,Area_striata_grey_matter_Vol.mm3,840,Bush,1
 Callicebus sp.,Cerebellum_grey_matter_Vol.mm3,833,Bush,1
 Callicebus sp.,Cerebellum_white_matter_Vol.mm3,249,Bush,1
 Callicebus sp.,Corpus_geniculatum_laterale_Vol.mm3,30,Bush,1
-Callicebus sp.,Neocortex_Vol.mm3,7060,Bush,1
 Callicebus sp.,Neocortex_grey_matter_Vol.mm3,5120,Bush,1
 Callicebus sp.,Neocortex_white_matter_Vol.mm3,1940,Bush,1
 Callicebus sp.,Total_brain_net_volume_Vol.mm3,11900,Bush,1
@@ -876,10 +868,8 @@ Caluromys derbianus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,22.7,Ashwell,1
 Caluromys derbianus,Total_brain_net_volume_Vol.mm3,6725,Ashwell,1
 Canis latrans,Cerebellum_grey_matter_Vol.mm3,4170,Bush,1
 Canis latrans,Cerebellum_white_matter_Vol.mm3,1340,Bush,1
-Canis latrans,Neocortex_Vol.mm3,45970,Bush,1
-Canis latrans,Neocortex_grey_matter_Vol.mm3,30410,Bush,1
-Canis latrans,Neocortex_white_matter_Vol.mm3,15525,Bush,1
-Canis latrans,Total_brain_net_volume_Vol.mm3,73160,Bush,1
+Canis latrans,Neocortex_grey_matter_Vol.mm3,30400,Bush,1
+Canis latrans,Neocortex_white_matter_Vol.mm3,15500,Bush,1
 Canis lupus familiaris,CerebellarCortex_Vol.mm3,2793,Ashwell,1
 Canis lupus familiaris,CerebellarHemisphere_Vol.mm3,1442,Ashwell,1
 Canis lupus familiaris,CerebellarVermis_Vol.mm3,1186,Ashwell,1
@@ -1114,10 +1104,10 @@ Cercocebus torquatus,Cerebellum_Vol.mm3,8925,RillingInsel; Zilles,2
 Cercocebus torquatus,Cerebellum_grey_matter_Vol.mm3,4470,Bush,1
 Cercocebus torquatus,Cerebellum_white_matter_Vol.mm3,1960,Bush,1
 Cercocebus torquatus,Corpus_geniculatum_laterale_Vol.mm3,200,Bush,1
-Cercocebus torquatus,Neocortex_Vol.mm3,76090,Bush; RillingInsel,2
-Cercocebus torquatus,Neocortex_grey_matter_Vol.mm3,45306.66666666667,Bush; RillingInsel,2
+Cercocebus torquatus,Neocortex_Vol.mm3,63900,RillingInsel,1
+Cercocebus torquatus,Neocortex_grey_matter_Vol.mm3,45305,Bush; RillingInsel,2
 Cercocebus torquatus,Neocortex_grey_matter_Vol.mm3_SD,2700,RillingInsel,1
-Cercocebus torquatus,Neocortex_white_matter_Vol.mm3,30786.666666666668,Bush; RillingInsel,2
+Cercocebus torquatus,Neocortex_white_matter_Vol.mm3,30790,Bush; RillingInsel,2
 Cercocebus torquatus,Neocortex_white_matter_Vol.mm3_SD,1500,RillingInsel,1
 Cercocebus torquatus,Total_brain_net_volume_Vol.mm3,105076.66666666667,Bush; RillingInsel; Zilles,3
 Cercocebus torquatus,Total_brain_net_volume_Vol.mm3_SD,1600,RillingInsel,1
@@ -1278,9 +1268,8 @@ Cercopithecus nictitans,Area_striata_grey_matter_Vol.mm3,4140,Bush,1
 Cercopithecus nictitans,Cerebellum_grey_matter_Vol.mm3,3840,Bush,1
 Cercopithecus nictitans,Cerebellum_white_matter_Vol.mm3,965,Bush,1
 Cercopithecus nictitans,Corpus_geniculatum_laterale_Vol.mm3,120,Bush,1
-Cercopithecus nictitans,Neocortex_Vol.mm3,47800,Bush,1
-Cercopithecus nictitans,Neocortex_grey_matter_Vol.mm3,35993.333333333336,Bush,1
-Cercopithecus nictitans,Neocortex_white_matter_Vol.mm3,11806.666666666666,Bush,1
+Cercopithecus nictitans,Neocortex_grey_matter_Vol.mm3,35995,Bush,1
+Cercopithecus nictitans,Neocortex_white_matter_Vol.mm3,11805,Bush,1
 Cercopithecus nictitans,Total_brain_net_volume_Vol.mm3,64740,Bush,1
 Cercopithecus sp.,CerebellarHemisphere_Vol.mm3,3450,Zilles,1
 Cercopithecus sp.,CerebellarVermis_Vol.mm3,2650,Zilles,1
@@ -1405,9 +1394,7 @@ Cheirogaleus medius,Lobus_piriformis_Vol.mm3,198,Stephan_collection,1
 Cheirogaleus medius,Medial_cerebellar_nuclei_Vol.mm3,3.24,Stephan_collection,1
 Cheirogaleus medius,Medulla_oblongata_Vol.mm3,202.19,Stephan_collection; Zilles,2
 Cheirogaleus medius,Mesencephalon_Vol.mm3,145,Stephan_collection,1
-Cheirogaleus medius,Neocortex_Vol.mm3,1120.5,Bush; Stephan_collection,2
-Cheirogaleus medius,Neocortex_grey_matter_Vol.mm3,890,Bush,1
-Cheirogaleus medius,Neocortex_white_matter_Vol.mm3,130,Bush,1
+Cheirogaleus medius,Neocortex_Vol.mm3,1221,Stephan_collection,1
 Cheirogaleus medius,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,3.9,Stephan_collection,1
 Cheirogaleus medius,Nucleus_habenularis_medialis_Vol.mm3,1.06,Stephan_collection,1
 Cheirogaleus medius,Nucleus_septalis_triangularis_Vol.mm3,0.385,Stephan_collection,1
@@ -1426,7 +1413,7 @@ Cheirogaleus medius,Striatum_Vol.mm3,145,Stephan_collection,1
 Cheirogaleus medius,Subiculum_Vol.mm3,9.97,Stephan_collection,1
 Cheirogaleus medius,Substantia_innominata_Vol.mm3,6.9,Stephan_collection,1
 Cheirogaleus medius,Telencephalon_Vol.mm3,1941,Stephan_collection,1
-Cheirogaleus medius,Total_brain_net_volume_Vol.mm3,2795.5,Bush; Stephan_collection,2
+Cheirogaleus medius,Total_brain_net_volume_Vol.mm3,2961,Stephan_collection,1
 Cheirogaleus medius,Tractus_olfactorius_lateralis_Vol.mm3,3.2,Stephan_collection,1
 Cheirogaleus medius,Trigeminal_motor_nucleus_left_Vol.mm3,0.3,Zilles,1
 Cheirogaleus medius,Tuberculum_olfactorium_Vol.mm3,27.5,Stephan_collection,1
@@ -1440,15 +1427,10 @@ Chinchilla laniger,Cerebellum_Vol.mm3,1039,Ashwell,1
 Chinchilla laniger,Cerebellum_grey_matter_Vol.mm3,792,Bush,1
 Chinchilla laniger,Cerebellum_white_matter_Vol.mm3,162,Ashwell; Bush,2
 Chinchilla laniger,FlocculonodularLobe_Vol.mm3,39.6,Ashwell,1
-Chinchilla laniger,Neocortex_Vol.mm3,1430,Bush,1
 Chinchilla laniger,Neocortex_grey_matter_Vol.mm3,1160,Bush,1
-Chinchilla laniger,Neocortex_white_matter_Vol.mm3,269.5,Bush,1
+Chinchilla laniger,Neocortex_white_matter_Vol.mm3,269,Bush,1
 Chinchilla laniger,Pontine_and_reticulotegmental_nuclei_Vol.mm3,19.4,Ashwell,1
-Chinchilla laniger,Total_brain_net_volume_Vol.mm3,5515.5,Ashwell; Bush,2
-Choloepus didactylis,Neocortex_Vol.mm3,10540,Bush,1
-Choloepus didactylis,Neocortex_grey_matter_Vol.mm3,7910,Bush,1
-Choloepus didactylis,Neocortex_white_matter_Vol.mm3,2630,Bush,1
-Choloepus didactylis,Total_brain_net_volume_Vol.mm3,25560,Bush,1
+Chinchilla laniger,Total_brain_net_volume_Vol.mm3,5881,Ashwell,1
 Choloepus didactylus,CerebellarCortex_Vol.mm3,1841,Ashwell,1
 Choloepus didactylus,CerebellarHemisphere_Vol.mm3,1029,Ashwell,1
 Choloepus didactylus,CerebellarVermis_Vol.mm3,760,Ashwell,1
@@ -1740,11 +1722,10 @@ Crocuta crocuta,Cerebellum_Vol.mm3,8649,Ashwell,1
 Crocuta crocuta,Cerebellum_grey_matter_Vol.mm3,8340,Bush,1
 Crocuta crocuta,Cerebellum_white_matter_Vol.mm3,2373,Ashwell; Bush,2
 Crocuta crocuta,FlocculonodularLobe_Vol.mm3,317,Ashwell,1
-Crocuta crocuta,Neocortex_Vol.mm3,85200,Bush,1
-Crocuta crocuta,Neocortex_grey_matter_Vol.mm3,56185,Bush,1
-Crocuta crocuta,Neocortex_white_matter_Vol.mm3,28915,Bush,1
+Crocuta crocuta,Neocortex_grey_matter_Vol.mm3,56100,Bush,1
+Crocuta crocuta,Neocortex_white_matter_Vol.mm3,28900,Bush,1
 Crocuta crocuta,Pontine_and_reticulotegmental_nuclei_Vol.mm3,298,Ashwell,1
-Crocuta crocuta,Total_brain_net_volume_Vol.mm3,112675.5,Ashwell; Bush,2
+Crocuta crocuta,Total_brain_net_volume_Vol.mm3,91041,Ashwell,1
 Cynictis penicillata,CerebellarCortex_Vol.mm3,1154,Ashwell,1
 Cynictis penicillata,CerebellarHemisphere_Vol.mm3,476,Ashwell,1
 Cynictis penicillata,CerebellarVermis_Vol.mm3,634,Ashwell,1
@@ -1752,11 +1733,8 @@ Cynictis penicillata,Cerebellar_nuclei_total_Vol.mm3,121,Ashwell,1
 Cynictis penicillata,Cerebellum_Vol.mm3,1523,Ashwell,1
 Cynictis penicillata,Cerebellum_white_matter_Vol.mm3,248,Ashwell,1
 Cynictis penicillata,FlocculonodularLobe_Vol.mm3,44.8,Ashwell,1
-Cynictis penicillata,Neocortex_Vol.mm3,6920,Bush,1
-Cynictis penicillata,Neocortex_grey_matter_Vol.mm3,4900,Bush,1
-Cynictis penicillata,Neocortex_white_matter_Vol.mm3,2020,Bush,1
 Cynictis penicillata,Pontine_and_reticulotegmental_nuclei_Vol.mm3,61.8,Ashwell,1
-Cynictis penicillata,Total_brain_net_volume_Vol.mm3,12449.5,Ashwell; Bush,2
+Cynictis penicillata,Total_brain_net_volume_Vol.mm3,10669,Ashwell,1
 Cynocephalus volans,CerebellarCortex_Vol.mm3,557,Ashwell,1
 Cynocephalus volans,CerebellarHemisphere_Vol.mm3,224,Ashwell,1
 Cynocephalus volans,CerebellarVermis_Vol.mm3,305,Ashwell,1
@@ -1880,11 +1858,11 @@ Daubentonia madagascariensis,Lobus_piriformis_Vol.mm3,1538,Stephan_collection,1
 Daubentonia madagascariensis,Medial_cerebellar_nuclei_Vol.mm3,28.94,Stephan_collection,1
 Daubentonia madagascariensis,Medulla_oblongata_Vol.mm3,1517.05,Stephan_collection; Zilles,2
 Daubentonia madagascariensis,Mesencephalon_Vol.mm3,897,Stephan_collection,1
-Daubentonia madagascariensis,Neocortex_Vol.mm3,23098.5,Bush; Stephan_collection,2
-Daubentonia madagascariensis,Neocortex_grey_matter_Vol.mm3,18432,Bush; Stephan_collection,2
+Daubentonia madagascariensis,Neocortex_Vol.mm3,22127,Stephan_collection,1
+Daubentonia madagascariensis,Neocortex_grey_matter_Vol.mm3,17074,Stephan_collection,1
 Daubentonia madagascariensis,Neocortex_lamina_1_Vol.mm3,2738,Stephan_collection,1
 Daubentonia madagascariensis,Neocortex_laminae_2_6_Vol.mm3,14336,Stephan_collection,1
-Daubentonia madagascariensis,Neocortex_white_matter_Vol.mm3,4666.5,Bush; Stephan_collection,2
+Daubentonia madagascariensis,Neocortex_white_matter_Vol.mm3,5053,Stephan_collection,1
 Daubentonia madagascariensis,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,25.3,Stephan_collection,1
 Daubentonia madagascariensis,Nucleus_habenularis_medialis_Vol.mm3,7.75,Stephan_collection,1
 Daubentonia madagascariensis,Nucleus_septalis_triangularis_Vol.mm3,2.65,Stephan_collection,1
@@ -1903,7 +1881,7 @@ Daubentonia madagascariensis,Striatum_Vol.mm3,2765,Stephan_collection,1
 Daubentonia madagascariensis,Subiculum_Vol.mm3,100.01,Stephan_collection,1
 Daubentonia madagascariensis,Substantia_innominata_Vol.mm3,92.3,Stephan_collection,1
 Daubentonia madagascariensis,Telencephalon_Vol.mm3,30196,Stephan_collection,1
-Daubentonia madagascariensis,Total_brain_net_volume_Vol.mm3,41840.5,Bush; Stephan_collection,2
+Daubentonia madagascariensis,Total_brain_net_volume_Vol.mm3,42611,Stephan_collection,1
 Daubentonia madagascariensis,Tractus_olfactorius_lateralis_Vol.mm3,26.4,Stephan_collection,1
 Daubentonia madagascariensis,Trigeminal_motor_nucleus_left_Vol.mm3,1.91,Zilles,1
 Daubentonia madagascariensis,Tuberculum_olfactorium_Vol.mm3,240,Stephan_collection,1
@@ -1987,11 +1965,10 @@ Didelphis marsupialis,Cerebellum_Vol.mm3,979,Ashwell,1
 Didelphis marsupialis,Cerebellum_grey_matter_Vol.mm3,670,Bush,1
 Didelphis marsupialis,Cerebellum_white_matter_Vol.mm3,160,Ashwell; Bush,2
 Didelphis marsupialis,FlocculonodularLobe_Vol.mm3,18.2,Ashwell,1
-Didelphis marsupialis,Neocortex_Vol.mm3,1090,Bush,1
-Didelphis marsupialis,Neocortex_grey_matter_Vol.mm3,939.5,Bush,1
-Didelphis marsupialis,Neocortex_white_matter_Vol.mm3,150.5,Bush,1
+Didelphis marsupialis,Neocortex_grey_matter_Vol.mm3,939,Bush,1
+Didelphis marsupialis,Neocortex_white_matter_Vol.mm3,151,Bush,1
 Didelphis marsupialis,Pontine_and_reticulotegmental_nuclei_Vol.mm3,22.2,Ashwell,1
-Didelphis marsupialis,Total_brain_net_volume_Vol.mm3,6962,Ashwell; Bush,2
+Didelphis marsupialis,Total_brain_net_volume_Vol.mm3,8034,Ashwell,1
 Didelphis virginiana,CerebellarCortex_Vol.mm3,487,Ashwell,1
 Didelphis virginiana,CerebellarHemisphere_Vol.mm3,182,Ashwell,1
 Didelphis virginiana,CerebellarVermis_Vol.mm3,283,Ashwell,1
@@ -2169,11 +2146,10 @@ Equus burchelli,Cerebellum_Vol.mm3,41084,Ashwell,1
 Equus burchelli,Cerebellum_grey_matter_Vol.mm3,27400,Bush,1
 Equus burchelli,Cerebellum_white_matter_Vol.mm3,8998.5,Ashwell; Bush,2
 Equus burchelli,FlocculonodularLobe_Vol.mm3,1296,Ashwell,1
-Equus burchelli,Neocortex_Vol.mm3,237240,Bush,1
-Equus burchelli,Neocortex_grey_matter_Vol.mm3,148940,Bush,1
-Equus burchelli,Neocortex_white_matter_Vol.mm3,88380,Bush,1
+Equus burchelli,Neocortex_grey_matter_Vol.mm3,149000,Bush,1
+Equus burchelli,Neocortex_white_matter_Vol.mm3,88400,Bush,1
 Equus burchelli,Pontine_and_reticulotegmental_nuclei_Vol.mm3,1120,Ashwell,1
-Equus burchelli,Total_brain_net_volume_Vol.mm3,466400,Ashwell; Bush,2
+Equus burchelli,Total_brain_net_volume_Vol.mm3,561050,Ashwell,1
 Erethizon dorsatum,CerebellarCortex_Vol.mm3,1800,Ashwell,1
 Erethizon dorsatum,CerebellarHemisphere_Vol.mm3,1044,Ashwell,1
 Erethizon dorsatum,CerebellarVermis_Vol.mm3,699,Ashwell,1
@@ -2407,8 +2383,7 @@ Eulemur mongoz,Cerebellum_grey_matter_Vol.mm3,1880,Bush,1
 Eulemur mongoz,Cerebellum_white_matter_Vol.mm3,423,Ashwell; Bush,2
 Eulemur mongoz,Corpus_geniculatum_laterale_Vol.mm3,50,Bush,1
 Eulemur mongoz,FlocculonodularLobe_Vol.mm3,43.2,Ashwell,1
-Eulemur mongoz,Neocortex_Vol.mm3,12030,Bush,1
-Eulemur mongoz,Neocortex_grey_matter_Vol.mm3,8210,Bush,1
+Eulemur mongoz,Neocortex_grey_matter_Vol.mm3,8215,Bush,1
 Eulemur mongoz,Neocortex_white_matter_Vol.mm3,3830,Bush,1
 Eulemur mongoz,Pontine_and_reticulotegmental_nuclei_Vol.mm3,74,Ashwell,1
 Eulemur mongoz,Total_brain_net_volume_Vol.mm3,20801,Ashwell; Bush,2
@@ -2464,9 +2439,9 @@ Galago senegalensis,Medial_cerebellar_nuclei_Vol.mm3,4.43,Stephan_collection,1
 Galago senegalensis,Medulla_oblongata_Vol.mm3,254.15,Stephan_collection; Zilles,2
 Galago senegalensis,Mesencephalon_Vol.mm3,205,Stephan_collection,1
 Galago senegalensis,Middle_temporal_visual_area_Vol.mm3,39.8,Stephan_collection,1
-Galago senegalensis,Neocortex_Vol.mm3,1854.5,Bush; Stephan_collection,2
-Galago senegalensis,Neocortex_grey_matter_Vol.mm3,1293.3333333333333,Bush,1
-Galago senegalensis,Neocortex_white_matter_Vol.mm3,218.33333333333334,Bush,1
+Galago senegalensis,Neocortex_Vol.mm3,2139,Stephan_collection,1
+Galago senegalensis,Neocortex_grey_matter_Vol.mm3,1270,Bush,1
+Galago senegalensis,Neocortex_white_matter_Vol.mm3,212.5,Bush,1
 Galago senegalensis,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,4.2,Stephan_collection,1
 Galago senegalensis,Nucleus_habenularis_medialis_Vol.mm3,0.998,Stephan_collection,1
 Galago senegalensis,Nucleus_septalis_triangularis_Vol.mm3,0.588,Stephan_collection,1
@@ -2627,10 +2602,6 @@ Galemys pyrenaicus,Total_brain_net_volume_Vol.mm3,1230,Stephan_collection,1
 Galemys pyrenaicus,Tractus_olfactorius_lateralis_Vol.mm3,1.8,Stephan_collection,1
 Galemys pyrenaicus,Tuberculum_olfactorium_Vol.mm3,18.8,Stephan_collection,1
 Galemys pyrenaicus,Ventricles_Vol.mm3,27.5,Stephan_collection,1
-Galictis vitatus,Neocortex_Vol.mm3,11810,Bush,1
-Galictis vitatus,Neocortex_grey_matter_Vol.mm3,9090,Bush,1
-Galictis vitatus,Neocortex_white_matter_Vol.mm3,2720,Bush,1
-Galictis vitatus,Total_brain_net_volume_Vol.mm3,19360,Bush,1
 Galictis vittatus,CerebellarCortex_Vol.mm3,1007,Ashwell,1
 Galictis vittatus,CerebellarHemisphere_Vol.mm3,404,Ashwell,1
 Galictis vittatus,CerebellarVermis_Vol.mm3,470,Ashwell,1
@@ -2645,10 +2616,8 @@ Galictis vittatus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,41.8,Ashwell,1
 Galictis vittatus,Total_brain_net_volume_Vol.mm3,19132,Ashwell,1
 Glis glis,Cerebellum_grey_matter_Vol.mm3,245,Bush,1
 Glis glis,Cerebellum_white_matter_Vol.mm3,48.1,Bush,1
-Glis glis,Neocortex_Vol.mm3,560,Bush,1
 Glis glis,Neocortex_grey_matter_Vol.mm3,490,Bush,1
-Glis glis,Neocortex_white_matter_Vol.mm3,68.9,Bush,1
-Glis glis,Total_brain_net_volume_Vol.mm3,2000,Bush,1
+Glis glis,Neocortex_white_matter_Vol.mm3,67.8,Bush,1
 Gorilla gorilla,Body_Mass.g,125000,Stephan_collection,1
 Gorilla gorilla,Brain_Mass.mg,465000,Stephan_collection,1
 Gorilla gorilla,Bulbus_olfactorius_Vol.mm3,294,Stephan_collection,1
@@ -2974,7 +2943,7 @@ Homo sapiens,Lobus_piriformis_Vol.mm3,9032,Stephan_collection,1
 Homo sapiens,Medial_cerebellar_nuclei_Vol.mm3,156.4,Stephan_collection,1
 Homo sapiens,Medulla_oblongata_Vol.mm3,9660.895,Stephan_collection; Zilles,2
 Homo sapiens,Mesencephalon_Vol.mm3,8087,Stephan_collection,1
-Homo sapiens,Neocortex_Vol.mm3,988941.25,Bush; RillingInsel; Stephan_collection; Zilles,4
+Homo sapiens,Neocortex_Vol.mm3,992641.6666666666,RillingInsel; Stephan_collection; Zilles,3
 Homo sapiens,Neocortex_grey_matter_Vol.mm3,574355.3333333334,Bush; RillingInsel; Stephan_collection,3
 Homo sapiens,Neocortex_grey_matter_Vol.mm3_SD,15200,RillingInsel,1
 Homo sapiens,Neocortex_lamina_1_Vol.mm3,75316,Stephan_collection,1
@@ -3083,12 +3052,12 @@ Hylobates lar,Lobus_piriformis_Vol.mm3,1264,Stephan_collection,1
 Hylobates lar,Medial_cerebellar_nuclei_Vol.mm3,35.41,Stephan_collection,1
 Hylobates lar,Medulla_oblongata_Vol.mm3,2250.08,Stephan_collection; Zilles,2
 Hylobates lar,Mesencephalon_Vol.mm3,1459,Stephan_collection,1
-Hylobates lar,Neocortex_Vol.mm3,64080,Bush; RillingInsel; Stephan_collection; Zilles,4
-Hylobates lar,Neocortex_grey_matter_Vol.mm3,43886.444444444445,Bush; RillingInsel; Stephan_collection,3
+Hylobates lar,Neocortex_Vol.mm3,63566.666666666664,RillingInsel; Stephan_collection; Zilles,3
+Hylobates lar,Neocortex_grey_matter_Vol.mm3,43885.333333333336,Bush; RillingInsel; Stephan_collection,3
 Hylobates lar,Neocortex_grey_matter_Vol.mm3_SD,3200,RillingInsel,1
 Hylobates lar,Neocortex_lamina_1_Vol.mm3,6279,Stephan_collection,1
 Hylobates lar,Neocortex_laminae_2_6_Vol.mm3,40367,Stephan_collection,1
-Hylobates lar,Neocortex_white_matter_Vol.mm3,18940.222222222223,Bush; RillingInsel; Stephan_collection,3
+Hylobates lar,Neocortex_white_matter_Vol.mm3,19018,Bush; RillingInsel; Stephan_collection,3
 Hylobates lar,Neocortex_white_matter_Vol.mm3_SD,1400,RillingInsel,1
 Hylobates lar,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,84.6,Stephan_collection,1
 Hylobates lar,Nucleus_subthalamicus_Vol.mm3,61.6,Stephan_collection,1
@@ -3354,7 +3323,6 @@ Lemur catta,Area_striata_grey_matter_Vol.mm3,1310,Bush,1
 Lemur catta,Cerebellum_grey_matter_Vol.mm3,2270,Bush,1
 Lemur catta,Cerebellum_white_matter_Vol.mm3,409,Bush,1
 Lemur catta,Corpus_geniculatum_laterale_Vol.mm3,60,Bush,1
-Lemur catta,Neocortex_Vol.mm3,11080,Bush,1
 Lemur catta,Neocortex_grey_matter_Vol.mm3,8960,Bush,1
 Lemur catta,Neocortex_white_matter_Vol.mm3,2120,Bush,1
 Lemur catta,Total_brain_net_volume_Vol.mm3,21000,Bush,1
@@ -3453,10 +3421,6 @@ Lepilemur ruficaudatus,Trigeminal_motor_nucleus_left_Vol.mm3,0.69,Zilles,1
 Lepilemur ruficaudatus,Tuberculum_olfactorium_Vol.mm3,27.1,Stephan_collection,1
 Lepilemur ruficaudatus,Ventral_pons_Vol.mm3,26.2,Stephan_collection,1
 Lepilemur ruficaudatus,Ventricles_Vol.mm3,76.5,Stephan_collection,1
-Llama glama,Neocortex_Vol.mm3,163620,Bush,1
-Llama glama,Neocortex_grey_matter_Vol.mm3,104950,Bush,1
-Llama glama,Neocortex_white_matter_Vol.mm3,58670,Bush,1
-Llama glama,Total_brain_net_volume_Vol.mm3,281270,Bush,1
 Lophocebus albigena,Agranular_insular_cortex_Vol.mm3,190,Zilles,1
 Lophocebus albigena,Agranular_insular_cortex_left_Vol.mm3,95,Zilles,1
 Lophocebus albigena,Amygdala_Vol.mm3,781.3,Stephan_collection,1
@@ -3679,10 +3643,10 @@ Macaca mulatta,Medial_cerebellar_nuclei_Vol.mm3,53.24,Stephan_collection,1
 Macaca mulatta,Medulla_oblongata_Vol.mm3,2160.5699999999997,Stephan_collection; Zilles,2
 Macaca mulatta,Mesencephalon_Vol.mm3,1380,Stephan_collection,1
 Macaca mulatta,Middle_temporal_visual_area_Vol.mm3,332,Stephan_collection,1
-Macaca mulatta,Neocortex_Vol.mm3,55357.333333333336,Bush; RillingInsel; Stephan_collection,3
-Macaca mulatta,Neocortex_grey_matter_Vol.mm3,33513.333333333336,Bush; RillingInsel,2
+Macaca mulatta,Neocortex_Vol.mm3,59591,RillingInsel; Stephan_collection,2
+Macaca mulatta,Neocortex_grey_matter_Vol.mm3,33510,Bush; RillingInsel,2
 Macaca mulatta,Neocortex_grey_matter_Vol.mm3_SD,2800,RillingInsel,1
-Macaca mulatta,Neocortex_white_matter_Vol.mm3,17783.333333333332,Bush; RillingInsel,2
+Macaca mulatta,Neocortex_white_matter_Vol.mm3,17787.5,Bush; RillingInsel,2
 Macaca mulatta,Neocortex_white_matter_Vol.mm3_SD,1400,RillingInsel,1
 Macaca mulatta,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,69.7,Stephan_collection,1
 Macaca mulatta,Nucleus_habenularis_medialis_Vol.mm3,7.66,Stephan_collection,1
@@ -3726,11 +3690,10 @@ Mandrillus sphinx,Cerebellum_Vol.mm3,10359,Ashwell,1
 Mandrillus sphinx,Cerebellum_grey_matter_Vol.mm3,7160,Bush,1
 Mandrillus sphinx,Cerebellum_white_matter_Vol.mm3,1441,Ashwell; Bush,2
 Mandrillus sphinx,FlocculonodularLobe_Vol.mm3,310,Ashwell,1
-Mandrillus sphinx,Neocortex_Vol.mm3,99260,Bush,1
-Mandrillus sphinx,Neocortex_grey_matter_Vol.mm3,71315,Bush,1
-Mandrillus sphinx,Neocortex_white_matter_Vol.mm3,27915,Bush,1
+Mandrillus sphinx,Neocortex_grey_matter_Vol.mm3,71300,Bush,1
+Mandrillus sphinx,Neocortex_white_matter_Vol.mm3,27900,Bush,1
 Mandrillus sphinx,Pontine_and_reticulotegmental_nuclei_Vol.mm3,366,Ashwell,1
-Mandrillus sphinx,Total_brain_net_volume_Vol.mm3,134683,Ashwell; Bush,2
+Mandrillus sphinx,Total_brain_net_volume_Vol.mm3,141756,Ashwell,1
 Marmosa impavida,CerebellarCortex_Vol.mm3,158,Ashwell,1
 Marmosa impavida,CerebellarHemisphere_Vol.mm3,55.6,Ashwell,1
 Marmosa impavida,CerebellarVermis_Vol.mm3,98.1,Ashwell,1
@@ -3742,10 +3705,8 @@ Marmosa impavida,Pontine_and_reticulotegmental_nuclei_Vol.mm3,5.85,Ashwell,1
 Marmosa impavida,Total_brain_net_volume_Vol.mm3,1449,Ashwell,1
 Marmosa mitis,Cerebellum_grey_matter_Vol.mm3,87.1,Bush,1
 Marmosa mitis,Cerebellum_white_matter_Vol.mm3,10.2,Bush,1
-Marmosa mitis,Neocortex_Vol.mm3,130,Bush,1
-Marmosa mitis,Neocortex_grey_matter_Vol.mm3,119.5,Bush,1
-Marmosa mitis,Neocortex_white_matter_Vol.mm3,10.65,Bush,1
-Marmosa mitis,Total_brain_net_volume_Vol.mm3,770,Bush,1
+Marmosa mitis,Neocortex_grey_matter_Vol.mm3,119,Bush,1
+Marmosa mitis,Neocortex_white_matter_Vol.mm3,11.3,Bush,1
 Microcebus murinus,AccessoryOlfactoryBulb_Vol.mm3,1.623,Stephan_collection,1
 Microcebus murinus,AccessoryOlfactoryBulb_layer_6_Vol.mm3,0.47,Stephan_collection,1
 Microcebus murinus,AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,0.498,Stephan_collection,1
@@ -3795,11 +3756,11 @@ Microcebus murinus,Medial_cerebellar_nuclei_Vol.mm3,1.49,Stephan_collection,1
 Microcebus murinus,Medulla_oblongata_Vol.mm3,99.065,Stephan_collection; Zilles,2
 Microcebus murinus,Mesencephalon_Vol.mm3,85.2,Stephan_collection,1
 Microcebus murinus,Middle_temporal_visual_area_Vol.mm3,13.2,Stephan_collection,1
-Microcebus murinus,Neocortex_Vol.mm3,714.75,Bush; Stephan_collection,2
-Microcebus murinus,Neocortex_grey_matter_Vol.mm3,632.2666666666667,Bush; Stephan_collection,2
+Microcebus murinus,Neocortex_Vol.mm3,739.5,Stephan_collection,1
+Microcebus murinus,Neocortex_grey_matter_Vol.mm3,632.35,Bush; Stephan_collection,2
 Microcebus murinus,Neocortex_lamina_1_Vol.mm3,94.97,Stephan_collection,1
 Microcebus murinus,Neocortex_laminae_2_6_Vol.mm3,579.3,Stephan_collection,1
-Microcebus murinus,Neocortex_white_matter_Vol.mm3,82.255,Bush; Stephan_collection,2
+Microcebus murinus,Neocortex_white_matter_Vol.mm3,82.055,Bush; Stephan_collection,2
 Microcebus murinus,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,2.1,Stephan_collection,1
 Microcebus murinus,Nucleus_habenularis_medialis_Vol.mm3,0.461,Stephan_collection,1
 Microcebus murinus,Nucleus_septalis_triangularis_Vol.mm3,0.274,Stephan_collection,1
@@ -4054,11 +4015,8 @@ Mustela erminea,Cerebellar_nuclei_total_Vol.mm3,29.7,Ashwell,1
 Mustela erminea,Cerebellum_Vol.mm3,486,Ashwell,1
 Mustela erminea,Cerebellum_white_matter_Vol.mm3,57.9,Ashwell,1
 Mustela erminea,FlocculonodularLobe_Vol.mm3,27.8,Ashwell,1
-Mustela erminea,Neocortex_Vol.mm3,1580,Bush,1
-Mustela erminea,Neocortex_grey_matter_Vol.mm3,1350,Bush,1
-Mustela erminea,Neocortex_white_matter_Vol.mm3,230,Bush,1
 Mustela erminea,Pontine_and_reticulotegmental_nuclei_Vol.mm3,11.8,Ashwell,1
-Mustela erminea,Total_brain_net_volume_Vol.mm3,3521.5,Ashwell; Bush,2
+Mustela erminea,Total_brain_net_volume_Vol.mm3,3153,Ashwell,1
 Mustela putorius,CerebellarCortex_Vol.mm3,628,Ashwell,1
 Mustela putorius,CerebellarHemisphere_Vol.mm3,318,Ashwell,1
 Mustela putorius,CerebellarVermis_Vol.mm3,290,Ashwell,1
@@ -4067,11 +4025,10 @@ Mustela putorius,Cerebellum_Vol.mm3,742,Ashwell,1
 Mustela putorius,Cerebellum_grey_matter_Vol.mm3,626,Bush,1
 Mustela putorius,Cerebellum_white_matter_Vol.mm3,101,Ashwell; Bush,2
 Mustela putorius,FlocculonodularLobe_Vol.mm3,20.2,Ashwell,1
-Mustela putorius,Neocortex_Vol.mm3,2710,Bush,1
 Mustela putorius,Neocortex_grey_matter_Vol.mm3,2140,Bush,1
-Mustela putorius,Neocortex_white_matter_Vol.mm3,569.5,Bush,1
+Mustela putorius,Neocortex_white_matter_Vol.mm3,569,Bush,1
 Mustela putorius,Pontine_and_reticulotegmental_nuclei_Vol.mm3,16.4,Ashwell,1
-Mustela putorius,Total_brain_net_volume_Vol.mm3,5433.5,Ashwell; Bush,2
+Mustela putorius,Total_brain_net_volume_Vol.mm3,4987,Ashwell,1
 Mustela vison,CerebellarCortex_Vol.mm3,836,Ashwell,1
 Mustela vison,CerebellarHemisphere_Vol.mm3,391,Ashwell,1
 Mustela vison,CerebellarVermis_Vol.mm3,392,Ashwell,1
@@ -4101,11 +4058,10 @@ Myrmecophaga tridactyla,Cerebellum_Vol.mm3,8736,Ashwell,1
 Myrmecophaga tridactyla,Cerebellum_grey_matter_Vol.mm3,9020,Bush,1
 Myrmecophaga tridactyla,Cerebellum_white_matter_Vol.mm3,2440.5,Ashwell; Bush,2
 Myrmecophaga tridactyla,FlocculonodularLobe_Vol.mm3,144,Ashwell,1
-Myrmecophaga tridactyla,Neocortex_Vol.mm3,28440,Bush,1
-Myrmecophaga tridactyla,Neocortex_grey_matter_Vol.mm3,19880,Bush,1
+Myrmecophaga tridactyla,Neocortex_grey_matter_Vol.mm3,19900,Bush,1
 Myrmecophaga tridactyla,Neocortex_white_matter_Vol.mm3,8580,Bush,1
 Myrmecophaga tridactyla,Pontine_and_reticulotegmental_nuclei_Vol.mm3,275,Ashwell,1
-Myrmecophaga tridactyla,Total_brain_net_volume_Vol.mm3,68991.5,Ashwell; Bush,2
+Myrmecophaga tridactyla,Total_brain_net_volume_Vol.mm3,59943,Ashwell,1
 Nannospalax ehrenbergi,Amygdala_Vol.mm3,550.67,Stephan_collection,1
 Nannospalax ehrenbergi,Bulbus_olfactorius_Vol.mm3,176.91,Stephan_collection,1
 Nannospalax ehrenbergi,Cerebellum_Vol.mm3,112.9,Stephan_collection,1
@@ -4191,17 +4147,14 @@ Nasua narica,Cerebellum_Vol.mm3,3498,Ashwell,1
 Nasua narica,Cerebellum_grey_matter_Vol.mm3,2940,Bush,1
 Nasua narica,Cerebellum_white_matter_Vol.mm3,684,Ashwell; Bush,2
 Nasua narica,FlocculonodularLobe_Vol.mm3,121,Ashwell,1
-Nasua narica,Neocortex_Vol.mm3,16930,Bush,1
-Nasua narica,Neocortex_grey_matter_Vol.mm3,12115,Bush,1
+Nasua narica,Neocortex_grey_matter_Vol.mm3,12100,Bush,1
 Nasua narica,Neocortex_white_matter_Vol.mm3,4800,Bush,1
 Nasua narica,Pontine_and_reticulotegmental_nuclei_Vol.mm3,74.2,Ashwell,1
-Nasua narica,Total_brain_net_volume_Vol.mm3,30838,Ashwell; Bush,2
+Nasua narica,Total_brain_net_volume_Vol.mm3,31486,Ashwell,1
 Neogale vison,Cerebellum_grey_matter_Vol.mm3,859,Bush,1
 Neogale vison,Cerebellum_white_matter_Vol.mm3,217,Bush,1
-Neogale vison,Neocortex_Vol.mm3,5960,Bush,1
 Neogale vison,Neocortex_grey_matter_Vol.mm3,4750,Bush,1
 Neogale vison,Neocortex_white_matter_Vol.mm3,1210,Bush,1
-Neogale vison,Total_brain_net_volume_Vol.mm3,11000,Bush,1
 Neomys fodiens,AccessoryOlfactoryBulb_Vol.mm3,0.101,Stephan_collection,1
 Neomys fodiens,AccessoryOlfactoryBulb_layer_6_Vol.mm3,0.018,Stephan_collection,1
 Neomys fodiens,AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,0.034,Stephan_collection,1
@@ -4421,7 +4374,7 @@ Nycticebus coucang,Lobus_piriformis_Vol.mm3,510,Stephan_collection,1
 Nycticebus coucang,Medial_cerebellar_nuclei_Vol.mm3,10.96,Stephan_collection,1
 Nycticebus coucang,Medulla_oblongata_Vol.mm3,528.0699999999999,Stephan_collection; Zilles,2
 Nycticebus coucang,Mesencephalon_Vol.mm3,345,Stephan_collection,1
-Nycticebus coucang,Neocortex_Vol.mm3,5831,Bush; Stephan_collection,2
+Nycticebus coucang,Neocortex_Vol.mm3,6192,Stephan_collection,1
 Nycticebus coucang,Neocortex_grey_matter_Vol.mm3,4676,Bush; Stephan_collection,2
 Nycticebus coucang,Neocortex_lamina_1_Vol.mm3,712.7,Stephan_collection,1
 Nycticebus coucang,Neocortex_laminae_2_6_Vol.mm3,4240,Stephan_collection,1
@@ -4457,11 +4410,10 @@ Odocoileus virginianus,Cerebellum_Vol.mm3,8456,Ashwell,1
 Odocoileus virginianus,Cerebellum_grey_matter_Vol.mm3,11100,Bush,1
 Odocoileus virginianus,Cerebellum_white_matter_Vol.mm3,2994.5,Ashwell; Bush,2
 Odocoileus virginianus,FlocculonodularLobe_Vol.mm3,714,Ashwell,1
-Odocoileus virginianus,Neocortex_Vol.mm3,76340,Bush,1
-Odocoileus virginianus,Neocortex_grey_matter_Vol.mm3,51980,Bush,1
-Odocoileus virginianus,Neocortex_white_matter_Vol.mm3,24390,Bush,1
+Odocoileus virginianus,Neocortex_grey_matter_Vol.mm3,52000,Bush,1
+Odocoileus virginianus,Neocortex_white_matter_Vol.mm3,24400,Bush,1
 Odocoileus virginianus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,201,Ashwell,1
-Odocoileus virginianus,Total_brain_net_volume_Vol.mm3,136302.5,Ashwell; Bush,2
+Odocoileus virginianus,Total_brain_net_volume_Vol.mm3,131865,Ashwell,1
 Onychogalea fraenata,CerebellarCortex_Vol.mm3,952,Ashwell,1
 Onychogalea fraenata,CerebellarHemisphere_Vol.mm3,401,Ashwell,1
 Onychogalea fraenata,CerebellarVermis_Vol.mm3,434,Ashwell,1
@@ -4609,9 +4561,9 @@ Otolemur crassicaudatus,Medial_cerebellar_nuclei_Vol.mm3,9.63,Stephan_collection
 Otolemur crassicaudatus,Medulla_oblongata_Vol.mm3,539.935,Stephan_collection; Zilles,2
 Otolemur crassicaudatus,Mesencephalon_Vol.mm3,384,Stephan_collection,1
 Otolemur crassicaudatus,Middle_temporal_visual_area_Vol.mm3,47.5,Stephan_collection,1
-Otolemur crassicaudatus,Neocortex_Vol.mm3,4196.5,Bush; Stephan_collection,2
+Otolemur crassicaudatus,Neocortex_Vol.mm3,4723,Stephan_collection,1
 Otolemur crassicaudatus,Neocortex_grey_matter_Vol.mm3,3100,Bush,1
-Otolemur crassicaudatus,Neocortex_white_matter_Vol.mm3,570.6666666666666,Bush,1
+Otolemur crassicaudatus,Neocortex_white_matter_Vol.mm3,571,Bush,1
 Otolemur crassicaudatus,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,8.5,Stephan_collection,1
 Otolemur crassicaudatus,Nucleus_habenularis_medialis_Vol.mm3,1.64,Stephan_collection,1
 Otolemur crassicaudatus,Nucleus_septalis_triangularis_Vol.mm3,0.695,Stephan_collection,1
@@ -4766,12 +4718,12 @@ Pan troglodytes,Medial_cerebellar_nuclei_Vol.mm3,58.32,Stephan_collection,1
 Pan troglodytes,Medulla_oblongata_Vol.mm3,5922.195,Stephan_collection; Zilles,2
 Pan troglodytes,Mesencephalon_Vol.mm3,3739,Stephan_collection,1
 Pan troglodytes,Middle_temporal_visual_area_Vol.mm3,1567.1,Stephan_collection,1
-Pan troglodytes,Neocortex_Vol.mm3,244128.4,Bush; RillingInsel; Sherwood; Stephan_collection; Zilles,5
-Pan troglodytes,Neocortex_grey_matter_Vol.mm3,160939,Bush; RillingInsel; Stephan_collection,3
+Pan troglodytes,Neocortex_Vol.mm3,238423,RillingInsel; Sherwood; Stephan_collection; Zilles,4
+Pan troglodytes,Neocortex_grey_matter_Vol.mm3,160929,Bush; RillingInsel; Stephan_collection,3
 Pan troglodytes,Neocortex_grey_matter_Vol.mm3_SD,7000,RillingInsel,1
 Pan troglodytes,Neocortex_lamina_1_Vol.mm3,21960,Stephan_collection,1
 Pan troglodytes,Neocortex_laminae_2_6_Vol.mm3,150637,Stephan_collection,1
-Pan troglodytes,Neocortex_white_matter_Vol.mm3,104580.88888888889,Bush; RillingInsel; Stephan_collection,3
+Pan troglodytes,Neocortex_white_matter_Vol.mm3,104593.66666666667,Bush; RillingInsel; Stephan_collection,3
 Pan troglodytes,Neocortex_white_matter_Vol.mm3_SD,5600,RillingInsel,1
 Pan troglodytes,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,136,Stephan_collection,1
 Pan troglodytes,Nucleus_habenularis_medialis_Vol.mm3,9.4,Stephan_collection,1
@@ -4818,11 +4770,8 @@ Panthera leo,Cerebellar_nuclei_total_Vol.mm3,912,Ashwell,1
 Panthera leo,Cerebellum_Vol.mm3,26077,Ashwell,1
 Panthera leo,Cerebellum_white_matter_Vol.mm3,6296,Ashwell,1
 Panthera leo,FlocculonodularLobe_Vol.mm3,1199,Ashwell,1
-Panthera leo,Neocortex_Vol.mm3,121090,Bush,1
-Panthera leo,Neocortex_grey_matter_Vol.mm3,75300,Bush,1
-Panthera leo,Neocortex_white_matter_Vol.mm3,45790,Bush,1
 Panthera leo,Pontine_and_reticulotegmental_nuclei_Vol.mm3,700,Ashwell,1
-Panthera leo,Total_brain_net_volume_Vol.mm3,222973,Ashwell; Bush,2
+Panthera leo,Total_brain_net_volume_Vol.mm3,253306,Ashwell,1
 Papio anubis,Amygdala_Vol.mm3,953.5,Stephan_collection,1
 Papio anubis,Area_striata_Vol.mm3,13741,Stephan_collection,1
 Papio anubis,Area_striata_grey_matter_Vol.mm3,10001,Stephan_collection,1
@@ -4920,16 +4869,13 @@ Papio hamadryas,Area_striata_grey_matter_Vol.mm3,7700,Bush,1
 Papio hamadryas,Cerebellum_grey_matter_Vol.mm3,9140,Bush,1
 Papio hamadryas,Cerebellum_white_matter_Vol.mm3,2980,Bush,1
 Papio hamadryas,Corpus_geniculatum_laterale_Vol.mm3,220,Bush,1
-Papio hamadryas,Neocortex_Vol.mm3,118780,Bush,1
-Papio hamadryas,Neocortex_grey_matter_Vol.mm3,76533.33333333333,Bush,1
-Papio hamadryas,Neocortex_white_matter_Vol.mm3,38820,Bush,1
+Papio hamadryas,Neocortex_grey_matter_Vol.mm3,75250,Bush,1
+Papio hamadryas,Neocortex_white_matter_Vol.mm3,38390,Bush,1
 Papio hamadryas,Total_brain_net_volume_Vol.mm3,159110,Bush,1
 Pecari tajacu,Cerebellum_grey_matter_Vol.mm3,4170,Bush,1
 Pecari tajacu,Cerebellum_white_matter_Vol.mm3,1250,Bush,1
-Pecari tajacu,Neocortex_Vol.mm3,25320,Bush,1
-Pecari tajacu,Neocortex_grey_matter_Vol.mm3,18380,Bush,1
+Pecari tajacu,Neocortex_grey_matter_Vol.mm3,18400,Bush,1
 Pecari tajacu,Neocortex_white_matter_Vol.mm3,6960,Bush,1
-Pecari tajacu,Total_brain_net_volume_Vol.mm3,48280,Bush,1
 Perameles gunnii,CerebellarCortex_Vol.mm3,284,Ashwell,1
 Perameles gunnii,CerebellarHemisphere_Vol.mm3,122,Ashwell,1
 Perameles gunnii,CerebellarVermis_Vol.mm3,131,Ashwell,1
@@ -5006,9 +4952,9 @@ Perodicticus potto,Lobus_piriformis_Vol.mm3,661,Stephan_collection,1
 Perodicticus potto,Medial_cerebellar_nuclei_Vol.mm3,8.76,Stephan_collection,1
 Perodicticus potto,Medulla_oblongata_Vol.mm3,679.87,Stephan_collection; Zilles,2
 Perodicticus potto,Mesencephalon_Vol.mm3,391,Stephan_collection,1
-Perodicticus potto,Neocortex_Vol.mm3,5616.5,Bush; Stephan_collection,2
+Perodicticus potto,Neocortex_Vol.mm3,6683,Stephan_collection,1
 Perodicticus potto,Neocortex_grey_matter_Vol.mm3,3910,Bush,1
-Perodicticus potto,Neocortex_white_matter_Vol.mm3,639.3333333333334,Bush,1
+Perodicticus potto,Neocortex_white_matter_Vol.mm3,639,Bush,1
 Perodicticus potto,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,14.1,Stephan_collection,1
 Perodicticus potto,Nucleus_habenularis_medialis_Vol.mm3,3.77,Stephan_collection,1
 Perodicticus potto,Nucleus_septalis_triangularis_Vol.mm3,2.27,Stephan_collection,1
@@ -5543,10 +5489,8 @@ Potorous tridactylus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,29.1,Ashwell,1
 Potorous tridactylus,Total_brain_net_volume_Vol.mm3,8333,Ashwell,1
 Potos flavus,Cerebellum_grey_matter_Vol.mm3,4320,Bush,1
 Potos flavus,Cerebellum_white_matter_Vol.mm3,1070,Bush,1
-Potos flavus,Neocortex_Vol.mm3,19330,Bush,1
-Potos flavus,Neocortex_grey_matter_Vol.mm3,13185,Bush,1
+Potos flavus,Neocortex_grey_matter_Vol.mm3,13200,Bush,1
 Potos flavus,Neocortex_white_matter_Vol.mm3,6160,Bush,1
-Potos flavus,Total_brain_net_volume_Vol.mm3,38240,Bush,1
 Procavia capensis,CerebellarCortex_Vol.mm3,1695,Ashwell,1
 Procavia capensis,CerebellarHemisphere_Vol.mm3,361,Ashwell,1
 Procavia capensis,CerebellarVermis_Vol.mm3,1281,Ashwell,1
@@ -5555,15 +5499,10 @@ Procavia capensis,Cerebellum_Vol.mm3,2199,Ashwell,1
 Procavia capensis,Cerebellum_grey_matter_Vol.mm3,1120,Bush,1
 Procavia capensis,Cerebellum_white_matter_Vol.mm3,349.5,Ashwell; Bush,2
 Procavia capensis,FlocculonodularLobe_Vol.mm3,53,Ashwell,1
-Procavia capensis,Neocortex_Vol.mm3,5500,Bush,1
-Procavia capensis,Neocortex_grey_matter_Vol.mm3,4190,Bush,1
+Procavia capensis,Neocortex_grey_matter_Vol.mm3,4210,Bush,1
 Procavia capensis,Neocortex_white_matter_Vol.mm3,1330,Bush,1
 Procavia capensis,Pontine_and_reticulotegmental_nuclei_Vol.mm3,44.7,Ashwell,1
-Procavia capensis,Total_brain_net_volume_Vol.mm3,14850.5,Ashwell; Bush,2
-Procyon lotor,Neocortex_Vol.mm3,18690,Bush,1
-Procyon lotor,Neocortex_grey_matter_Vol.mm3,13180,Bush,1
-Procyon lotor,Neocortex_white_matter_Vol.mm3,5510,Bush,1
-Procyon lotor,Total_brain_net_volume_Vol.mm3,34100,Bush,1
+Procavia capensis,Total_brain_net_volume_Vol.mm3,17021,Ashwell,1
 Prolemur simus,Body_Mass.g,1300,Stephan_collection,1
 Prolemur simus,Brain_Mass.mg,9530,Stephan_collection,1
 Prolemur simus,Bulbus_olfactorius_Vol.mm3,79.4,Stephan_collection,1
@@ -5625,11 +5564,11 @@ Propithecus verreauxi,Lobus_piriformis_Vol.mm3,664,Stephan_collection,1
 Propithecus verreauxi,Medial_cerebellar_nuclei_Vol.mm3,26.72,Stephan_collection,1
 Propithecus verreauxi,Medulla_oblongata_Vol.mm3,1222.815,Stephan_collection; Zilles,2
 Propithecus verreauxi,Mesencephalon_Vol.mm3,780,Stephan_collection,1
-Propithecus verreauxi,Neocortex_Vol.mm3,12680,Bush; Stephan_collection,2
-Propithecus verreauxi,Neocortex_grey_matter_Vol.mm3,9837.5,Bush; Stephan_collection,2
+Propithecus verreauxi,Neocortex_Vol.mm3,13170,Stephan_collection,1
+Propithecus verreauxi,Neocortex_grey_matter_Vol.mm3,9835,Stephan_collection,1
 Propithecus verreauxi,Neocortex_lamina_1_Vol.mm3,1428,Stephan_collection,1
 Propithecus verreauxi,Neocortex_laminae_2_6_Vol.mm3,8407,Stephan_collection,1
-Propithecus verreauxi,Neocortex_white_matter_Vol.mm3,2842.5,Bush; Stephan_collection,2
+Propithecus verreauxi,Neocortex_white_matter_Vol.mm3,3335,Stephan_collection,1
 Propithecus verreauxi,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,22.5,Stephan_collection,1
 Propithecus verreauxi,Nucleus_habenularis_medialis_Vol.mm3,3.65,Stephan_collection,1
 Propithecus verreauxi,Nucleus_septalis_triangularis_Vol.mm3,1.6,Stephan_collection,1
@@ -5656,7 +5595,7 @@ Propithecus verreauxi,Substantia_innominata_Vol.mm3,33.7,Stephan_collection,1
 Propithecus verreauxi,Subthalamus_Vol.mm3,283,Stephan_collection,1
 Propithecus verreauxi,Telencephalon_Vol.mm3,17040,Stephan_collection,1
 Propithecus verreauxi,Thalamus_Vol.mm3,1341,Stephan_collection,1
-Propithecus verreauxi,Total_brain_net_volume_Vol.mm3,25192,Bush; Stephan_collection,2
+Propithecus verreauxi,Total_brain_net_volume_Vol.mm3,25194,Stephan_collection,1
 Propithecus verreauxi,Tractus_olfactorius_lateralis_Vol.mm3,10.1,Stephan_collection,1
 Propithecus verreauxi,Tractus_opticus_Vol.mm3,125,Stephan_collection,1
 Propithecus verreauxi,Trigeminal_motor_nucleus_left_Vol.mm3,1.68,Zilles,1
@@ -5801,15 +5740,14 @@ Rattus norvegicus,Cerebellum_grey_matter_Vol.mm3,183,Bush,1
 Rattus norvegicus,Cerebellum_white_matter_Vol.mm3,28.7,Bush,1
 Rattus norvegicus,Diencephalon_Vol.mm3,1770,Stephan_collection,1
 Rattus norvegicus,Hippocampus_Vol.mm3,90.48,Stephan_collection,1
-Rattus norvegicus,Neocortex_Vol.mm3,321.59000000000003,Bush; Stephan_collection,2
-Rattus norvegicus,Neocortex_grey_matter_Vol.mm3,529.5,Bush,1
-Rattus norvegicus,Neocortex_white_matter_Vol.mm3,51.7,Bush,1
+Rattus norvegicus,Neocortex_Vol.mm3,63.18,Stephan_collection,1
+Rattus norvegicus,Neocortex_grey_matter_Vol.mm3,529,Bush,1
+Rattus norvegicus,Neocortex_white_matter_Vol.mm3,53.4,Bush,1
 Rattus norvegicus,Palaeocortex_Vol.mm3,97.46,Stephan_collection,1
 Rattus norvegicus,Schizo_cortex_Vol.mm3,18.82,Stephan_collection,1
 Rattus norvegicus,Septum_Vol.mm3,943.52,Stephan_collection,1
 Rattus norvegicus,Striatum_Vol.mm3,62.23,Stephan_collection,1
 Rattus norvegicus,Telencephalon_Vol.mm3,232.33,Stephan_collection,1
-Rattus norvegicus,Total_brain_net_volume_Vol.mm3,1690,Bush,1
 Rhynchocyon cirnei,AccessoryOlfactoryBulb_Vol.mm3,0.666,Stephan_collection,1
 Rhynchocyon cirnei,AccessoryOlfactoryBulb_layer_6_Vol.mm3,0.09,Stephan_collection,1
 Rhynchocyon cirnei,AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,0.222,Stephan_collection,1
@@ -6103,8 +6041,8 @@ Saimiri sciureus,Lobus_piriformis_Vol.mm3,413,Stephan_collection,1
 Saimiri sciureus,Medial_cerebellar_nuclei_Vol.mm3,24.09,Stephan_collection,1
 Saimiri sciureus,Medulla_oblongata_Vol.mm3,721.765,Stephan_collection; Zilles,2
 Saimiri sciureus,Mesencephalon_Vol.mm3,526,Stephan_collection,1
-Saimiri sciureus,Neocortex_Vol.mm3,15393.666666666666,Bush; RillingInsel; Stephan_collection,3
-Saimiri sciureus,Neocortex_grey_matter_Vol.mm3,11319.555555555555,Bush; RillingInsel; Stephan_collection,3
+Saimiri sciureus,Neocortex_Vol.mm3,16020.5,RillingInsel; Stephan_collection,2
+Saimiri sciureus,Neocortex_grey_matter_Vol.mm3,11317.333333333334,Bush; RillingInsel; Stephan_collection,3
 Saimiri sciureus,Neocortex_grey_matter_Vol.mm3_SD,800,RillingInsel,1
 Saimiri sciureus,Neocortex_lamina_1_Vol.mm3,1275,Stephan_collection,1
 Saimiri sciureus,Neocortex_laminae_2_6_Vol.mm3,10557,Stephan_collection,1
@@ -6186,10 +6124,9 @@ Sciurus carolinensis,Cerebellum_Vol.mm3,2543,Ashwell,1
 Sciurus carolinensis,Cerebellum_grey_matter_Vol.mm3,904,Bush,1
 Sciurus carolinensis,Cerebellum_white_matter_Vol.mm3,279.5,Ashwell; Bush,2
 Sciurus carolinensis,FlocculonodularLobe_Vol.mm3,88.4,Ashwell,1
-Sciurus carolinensis,Neocortex_Vol.mm3,2920,Bush,1
 Sciurus carolinensis,Neocortex_grey_matter_Vol.mm3,2480,Bush,1
 Sciurus carolinensis,Neocortex_white_matter_Vol.mm3,440,Bush,1
-Sciurus carolinensis,Total_brain_net_volume_Vol.mm3,11364.5,Ashwell; Bush,2
+Sciurus carolinensis,Total_brain_net_volume_Vol.mm3,15029,Ashwell,1
 Scutisorex somereni,Amygdala_Vol.mm3,17.8,Stephan_collection,1
 Scutisorex somereni,Bulbus_olfactorius_Vol.mm3,58.3,Stephan_collection,1
 Scutisorex somereni,Commissura_anterior_Vol.mm3,2.2,Stephan_collection,1
@@ -6218,9 +6155,8 @@ Semnopithecus entellus,Cerebellum_grey_matter_Vol.mm3,9150,Bush,1
 Semnopithecus entellus,Cerebellum_white_matter_Vol.mm3,1818,Ashwell; Bush,2
 Semnopithecus entellus,Corpus_geniculatum_laterale_Vol.mm3,140,Bush,1
 Semnopithecus entellus,FlocculonodularLobe_Vol.mm3,158,Ashwell,1
-Semnopithecus entellus,Neocortex_Vol.mm3,76110,Bush,1
-Semnopithecus entellus,Neocortex_grey_matter_Vol.mm3,51833.333333333336,Bush,1
-Semnopithecus entellus,Neocortex_white_matter_Vol.mm3,24273.333333333332,Bush,1
+Semnopithecus entellus,Neocortex_grey_matter_Vol.mm3,51825,Bush,1
+Semnopithecus entellus,Neocortex_white_matter_Vol.mm3,24280,Bush,1
 Semnopithecus entellus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,271,Ashwell,1
 Semnopithecus entellus,Total_brain_net_volume_Vol.mm3,100332.5,Ashwell; Bush,2
 Setifer setosus,AccessoryOlfactoryBulb_Vol.mm3,0.534,Stephan_collection,1
@@ -6734,11 +6670,10 @@ Tamandua tetradactyla,Cerebellum_Vol.mm3,3834,Ashwell,1
 Tamandua tetradactyla,Cerebellum_grey_matter_Vol.mm3,2980,Bush,1
 Tamandua tetradactyla,Cerebellum_white_matter_Vol.mm3,595.5,Ashwell; Bush,2
 Tamandua tetradactyla,FlocculonodularLobe_Vol.mm3,84.6,Ashwell,1
-Tamandua tetradactyla,Neocortex_Vol.mm3,9410,Bush,1
 Tamandua tetradactyla,Neocortex_grey_matter_Vol.mm3,7250,Bush,1
 Tamandua tetradactyla,Neocortex_white_matter_Vol.mm3,2160,Bush,1
 Tamandua tetradactyla,Pontine_and_reticulotegmental_nuclei_Vol.mm3,100,Ashwell,1
-Tamandua tetradactyla,Total_brain_net_volume_Vol.mm3,22226,Ashwell; Bush,2
+Tamandua tetradactyla,Total_brain_net_volume_Vol.mm3,19812,Ashwell,1
 Tarsipes rostratus,CerebellarCortex_Vol.mm3,45.7,Ashwell,1
 Tarsipes rostratus,CerebellarHemisphere_Vol.mm3,22.8,Ashwell,1
 Tarsipes rostratus,CerebellarVermis_Vol.mm3,20.7,Ashwell,1
@@ -6795,11 +6730,11 @@ Tarsius sp.,Medial_cerebellar_nuclei_Vol.mm3,2.87,Stephan_collection,1
 Tarsius sp.,Medulla_oblongata_Vol.mm3,206.925,Stephan_collection; Zilles,2
 Tarsius sp.,Mesencephalon_Vol.mm3,197,Stephan_collection,1
 Tarsius sp.,Middle_temporal_visual_area_Vol.mm3,49.7,Stephan_collection,1
-Tarsius sp.,Neocortex_Vol.mm3,1694,Bush; Stephan_collection,2
-Tarsius sp.,Neocortex_grey_matter_Vol.mm3,1550.5,Bush; Stephan_collection,2
+Tarsius sp.,Neocortex_Vol.mm3,1768,Stephan_collection,1
+Tarsius sp.,Neocortex_grey_matter_Vol.mm3,1631,Stephan_collection,1
 Tarsius sp.,Neocortex_lamina_1_Vol.mm3,236.3,Stephan_collection,1
 Tarsius sp.,Neocortex_laminae_2_6_Vol.mm3,1395,Stephan_collection,1
-Tarsius sp.,Neocortex_white_matter_Vol.mm3,143.5,Bush; Stephan_collection,2
+Tarsius sp.,Neocortex_white_matter_Vol.mm3,137,Stephan_collection,1
 Tarsius sp.,Nucleus_amygdalae_basalis_pars_magnocellularis_Vol.mm3,3.3,Stephan_collection,1
 Tarsius sp.,Nucleus_habenularis_medialis_Vol.mm3,1.13,Stephan_collection,1
 Tarsius sp.,Nucleus_septalis_triangularis_Vol.mm3,0.405,Stephan_collection,1
@@ -6825,7 +6760,7 @@ Tarsius sp.,Substantia_innominata_Vol.mm3,5.2,Stephan_collection,1
 Tarsius sp.,Subthalamus_Vol.mm3,17.1,Stephan_collection,1
 Tarsius sp.,Telencephalon_Vol.mm3,2258,Stephan_collection,1
 Tarsius sp.,Thalamus_Vol.mm3,175,Stephan_collection,1
-Tarsius sp.,Total_brain_net_volume_Vol.mm3,3226.5,Bush; Stephan_collection,2
+Tarsius sp.,Total_brain_net_volume_Vol.mm3,3393,Stephan_collection,1
 Tarsius sp.,Tractus_olfactorius_lateralis_Vol.mm3,0.99,Stephan_collection,1
 Tarsius sp.,Tractus_opticus_Vol.mm3,15.5,Stephan_collection,1
 Tarsius sp.,Trigeminal_motor_nucleus_left_Vol.mm3,0.36,Zilles,1
@@ -7202,11 +7137,8 @@ Ursus maritimus,Cerebellar_nuclei_total_Vol.mm3,3265,Ashwell,1
 Ursus maritimus,Cerebellum_Vol.mm3,96472,Ashwell,1
 Ursus maritimus,Cerebellum_white_matter_Vol.mm3,16833,Ashwell,1
 Ursus maritimus,FlocculonodularLobe_Vol.mm3,2376,Ashwell,1
-Ursus maritimus,Neocortex_Vol.mm3,172080,Bush,1
-Ursus maritimus,Neocortex_grey_matter_Vol.mm3,99070,Bush,1
-Ursus maritimus,Neocortex_white_matter_Vol.mm3,73010,Bush,1
 Ursus maritimus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,2909,Ashwell,1
-Ursus maritimus,Total_brain_net_volume_Vol.mm3,379923,Ashwell; Bush,2
+Ursus maritimus,Total_brain_net_volume_Vol.mm3,478846,Ashwell,1
 Varecia variegata,AccessoryOlfactoryBulb_Vol.mm3,5.267,Stephan_collection,1
 Varecia variegata,AccessoryOlfactoryBulb_layer_6_Vol.mm3,1.604,Stephan_collection,1
 Varecia variegata,AccessoryOlfactoryBulb_layers_1_2_Vol.mm3,1.468,Stephan_collection,1
@@ -7290,10 +7222,8 @@ Vombatus ursinus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,98.1,Ashwell,1
 Vombatus ursinus,Total_brain_net_volume_Vol.mm3,38696,Ashwell,1
 Vulpes zerda,Cerebellum_grey_matter_Vol.mm3,1210,Bush,1
 Vulpes zerda,Cerebellum_white_matter_Vol.mm3,271,Bush,1
-Vulpes zerda,Neocortex_Vol.mm3,7260,Bush,1
 Vulpes zerda,Neocortex_grey_matter_Vol.mm3,5730,Bush,1
 Vulpes zerda,Neocortex_white_matter_Vol.mm3,1530,Bush,1
-Vulpes zerda,Total_brain_net_volume_Vol.mm3,13320,Bush,1
 Wallabia bicolor,CerebellarCortex_Vol.mm3,4044,Ashwell,1
 Wallabia bicolor,CerebellarHemisphere_Vol.mm3,1744,Ashwell,1
 Wallabia bicolor,CerebellarVermis_Vol.mm3,1995,Ashwell,1
@@ -7320,8 +7250,7 @@ Zalophus californianus,Cerebellum_Vol.mm3,72986,Ashwell,1
 Zalophus californianus,Cerebellum_grey_matter_Vol.mm3,67100,Bush,1
 Zalophus californianus,Cerebellum_white_matter_Vol.mm3,10948.5,Ashwell; Bush,2
 Zalophus californianus,FlocculonodularLobe_Vol.mm3,1567,Ashwell,1
-Zalophus californianus,Neocortex_Vol.mm3,302380,Bush,1
-Zalophus californianus,Neocortex_grey_matter_Vol.mm3,213330,Bush,1
-Zalophus californianus,Neocortex_white_matter_Vol.mm3,88710,Bush,1
+Zalophus californianus,Neocortex_grey_matter_Vol.mm3,213000,Bush,1
+Zalophus californianus,Neocortex_white_matter_Vol.mm3,88700,Bush,1
 Zalophus californianus,Pontine_and_reticulotegmental_nuclei_Vol.mm3,2263,Ashwell,1
-Zalophus californianus,Total_brain_net_volume_Vol.mm3,402369,Ashwell; Bush,2
+Zalophus californianus,Total_brain_net_volume_Vol.mm3,349038,Ashwell,1

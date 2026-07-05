@@ -5,7 +5,7 @@ Alouatta_caraya,alouatta caraya,Dysgranular Insula,Dysgranular_insular_cortex_Vo
 Alouatta_caraya,alouatta caraya,Agranular Insula,Agranular_insular_cortex_Vol.mm3,84,43,FALSE,match,match,Bauernfeind_etal_2013_Table1_bilateral_est,Agranular_insular_cortex_Vol.mm3,alouatta caraya,84,0,NA,NA,NA
 Alouatta_caraya,alouatta caraya,Insula (GM),Insula_Vol.mm3,544,43,FALSE,match,match,Bauernfeind_etal_2013_Table1_bilateral_est,Insula_Vol.mm3,alouatta caraya,544,0,NA,NA,NA
 Alouatta_palliata,alouatta palliata,BV,Total_brain_net_volume_Vol.mm3,43520,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,alouatta palliata,43520,0,NA,NA,NA
-Alouatta_palliata,alouatta palliata,Neocortex (GM+WM),Neocortex_Vol.mm3,28560,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,alouatta palliata,28560,0,NA,NA,NA
+Alouatta_palliata,alouatta palliata,Neocortex (GM+WM),Neocortex_Vol.mm3,28560,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,alouatta palliata,28560,0,NA,NA,NA
 Alouatta_palliata,alouatta palliata,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,17150,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,alouatta palliata,17150,0,NA,NA,NA
 Alouatta_palliata,alouatta palliata,V1 (GM),Area_striata_grey_matter_Vol.mm3,1860,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,alouatta palliata,1860,0,NA,NA,NA
 Alouatta_palliata,alouatta palliata,LGN,Corpus_geniculatum_laterale_Vol.mm3,90,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,alouatta palliata,90,0,NA,NA,NA
@@ -68,7 +68,7 @@ Aotus_trivirgatus,aotus trivirgatus,LGN,Corpus_geniculatum_laterale_Vol.mm3,36,2
 Aotus_trivirgatus,aotus trivirgatus,Paleocortex,Palaeocortex_Vol.mm3,203,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Palaeocortex_Vol.mm3,aotus trivirgatus,203,0,NA,NA,NA
 Aotus_trivirgatus,aotus trivirgatus,Amygdala,Amygdala_Vol.mm3,201,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Amygdala_Vol.mm3,aotus trivirgatus,201,0,NA,NA,NA
 Aotus_trivirgatus,aotus trivirgatus,BV,Total_brain_net_volume_Vol.mm3,11420,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,aotus trivirgatus,11420,0,NA,NA,NA
-Aotus_trivirgatus,aotus trivirgatus,Neocortex (GM+WM),Neocortex_Vol.mm3,6970,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,aotus trivirgatus,6970,0,NA,NA,NA
+Aotus_trivirgatus,aotus trivirgatus,Neocortex (GM+WM),Neocortex_Vol.mm3,6970,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,aotus trivirgatus,6970.000000000001,0,NA,NA,NA
 Aotus_trivirgatus,aotus trivirgatus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,5230,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,aotus trivirgatus,5230,0,NA,NA,NA
 Aotus_trivirgatus,aotus trivirgatus,V1 (GM),Area_striata_grey_matter_Vol.mm3,630,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,aotus trivirgatus,630,0,NA,NA,NA
 Ateles_geoffroyi,ateles geoffroyi,BV,Total_brain_net_volume_Vol.mm3,103939.978939979,34,FALSE,match,match,deSousa2010_SupTable2_speciesmean,Total_brain_net_volume_Vol.mm3,ateles geoffroyi,104200,0.25,NA,NA,NA
@@ -105,7 +105,7 @@ Ateles_geoffroyi,ateles geoffroyi,Subthalamic Nucleus,Nucleus_subthalamicus_Vol.
 Ateles_geoffroyi,ateles geoffroyi,Optic Tract,Tractus_opticus_Vol.mm3,204,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Tractus_opticus_Vol.mm3,ateles geoffroyi,204,0,NA,NA,NA
 Ateles_geoffroyi,ateles geoffroyi,LGN,Corpus_geniculatum_laterale_Vol.mm3,151,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Corpus_geniculatum_laterale_Vol.mm3,ateles geoffroyi,151,0,NA,NA,NA
 Ateles_geoffroyi,ateles geoffroyi,BV,Total_brain_net_volume_Vol.mm3,72410,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,ateles sp,72410,0,NA,NA,NA
-Ateles_geoffroyi,ateles geoffroyi,Neocortex (GM+WM),Neocortex_Vol.mm3,48880,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,ateles sp,48880,0,NA,NA,NA
+Ateles_geoffroyi,ateles geoffroyi,Neocortex (GM+WM),Neocortex_Vol.mm3,48880,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,ateles sp,48879.99999999999,0,NA,NA,NA
 Ateles_geoffroyi,ateles geoffroyi,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,30930,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,ateles sp,30930,0,NA,NA,NA
 Ateles_geoffroyi,ateles geoffroyi,V1 (GM),Area_striata_grey_matter_Vol.mm3,3130,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,ateles sp,3130,0,NA,NA,NA
 Ateles_geoffroyi,ateles geoffroyi,LGN,Corpus_geniculatum_laterale_Vol.mm3,120,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,ateles sp,120,0,NA,NA,NA
@@ -182,7 +182,7 @@ Callicebus_moloch,callicebus moloch,Vmo,Trigeminal_motor_nucleus_Vol.mm3,2,53,FA
 Callicebus_moloch,callicebus moloch,VII,Facial_motor_nucleus_Vol.mm3,2.36,53,FALSE,match,match,Sherwood_etal_2005_Table1_bilateral_est,Facial_motor_nucleus_Vol.mm3,callicebus moloch,2.36,0,NA,NA,NA
 Callicebus_moloch,callicebus moloch,XII,Hypoglossal_nucleus_Vol.mm3,1.96,53,FALSE,match,match,Sherwood_etal_2005_Table1_bilateral_est,Hypoglossal_nucleus_Vol.mm3,callicebus moloch,1.96,0,NA,NA,NA
 Callicebus_moloch,callicebus moloch,BV,Total_brain_net_volume_Vol.mm3,11900,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,callicebus sp,11900,0,NA,NA,NA
-Callicebus_moloch,callicebus moloch,Neocortex (GM+WM),Neocortex_Vol.mm3,7060,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,callicebus sp,7060,0,NA,NA,NA
+Callicebus_moloch,callicebus moloch,Neocortex (GM+WM),Neocortex_Vol.mm3,7060,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,callicebus sp,7060.000000000001,0,NA,NA,NA
 Callicebus_moloch,callicebus moloch,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,5120,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2003_Table1,Neocortex_grey_matter_Vol.mm3,callicebus sp,5120,0,NA,NA,NA
 Callicebus_moloch,callicebus moloch,V1 (GM),Area_striata_grey_matter_Vol.mm3,840,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,callicebus sp,840,0,NA,NA,NA
 Callicebus_moloch,callicebus moloch,LGN,Corpus_geniculatum_laterale_Vol.mm3,30,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,callicebus sp,30,0,NA,NA,NA
@@ -320,7 +320,7 @@ Cercocebus_torquatus_atys,cercocebus torquatus atys,Cerebellum,Cerebellum_Vol.mm
 Cercocebus_torquatus_atys,cercocebus torquatus atys,BV,Total_brain_net_volume_Vol.mm3,103500,61,FALSE,match,match,MacLeod_specimen,Total_brain_net_volume_Vol.mm3,cercocebus torquatus atys,103500,0,NA,NA,NA
 Cercocebus_torquatus_atys,cercocebus torquatus atys,Cerebellum,Cerebellum_Vol.mm3,8500,61,FALSE,match,match,MacLeod_specimen,Cerebellum_Vol.mm3,cercocebus torquatus atys,8500,0,NA,NA,NA
 Cercocebus_torquatus_atys,cercocebus torquatus atys,BV,Total_brain_net_volume_Vol.mm3,117080,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,cercocebus torquatus,117080,0,NA,NA,NA
-Cercocebus_torquatus_atys,cercocebus torquatus atys,Neocortex (GM+WM),Neocortex_Vol.mm3,88280,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,cercocebus torquatus,88280,0,NA,NA,NA
+Cercocebus_torquatus_atys,cercocebus torquatus atys,Neocortex (GM+WM),Neocortex_Vol.mm3,88280,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,cercocebus torquatus,88280,0,NA,NA,NA
 Cercocebus_torquatus_atys,cercocebus torquatus atys,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,47920,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,cercocebus torquatus,47920,0,NA,NA,NA
 Cercocebus_torquatus_atys,cercocebus torquatus atys,V1 (GM),Area_striata_grey_matter_Vol.mm3,5120,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,cercocebus torquatus,5120,0,NA,NA,NA
 Cercocebus_torquatus_atys,cercocebus torquatus atys,LGN,Corpus_geniculatum_laterale_Vol.mm3,200,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,cercocebus torquatus,200,0,NA,NA,NA
@@ -383,7 +383,7 @@ Cercopithecus_mitis,cercopithecus mitis,Hippocampus,Hippocampus_Vol.mm3,1366,24;
 Cercopithecus_mitis,cercopithecus mitis,Neocortex (GM+WM),Neocortex_Vol.mm3,49933,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Neocortex_Vol.mm3,cercopithecus mitis,49933,0,NA,NA,NA
 Cercopithecus_mitis,cercopithecus mitis,LGN,Corpus_geniculatum_laterale_Vol.mm3,150,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Corpus_geniculatum_laterale_Vol.mm3,cercopithecus mitis,150,0,NA,NA,NA
 Cercopithecus_nictitans,cercopithecus nictitans,BV,Total_brain_net_volume_Vol.mm3,64740,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,cercopithecus nictitans,64740,0,NA,NA,NA
-Cercopithecus_nictitans,cercopithecus nictitans,Neocortex (GM+WM),Neocortex_Vol.mm3,47800,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,cercopithecus nictitans,47800,0,NA,NA,NA
+Cercopithecus_nictitans,cercopithecus nictitans,Neocortex (GM+WM),Neocortex_Vol.mm3,47800,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,cercopithecus nictitans,47800.00000000001,0,NA,NA,NA
 Cercopithecus_nictitans,cercopithecus nictitans,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,35990,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,cercopithecus nictitans,35990,0,NA,NA,NA
 Cercopithecus_nictitans,cercopithecus nictitans,V1 (GM),Area_striata_grey_matter_Vol.mm3,4140,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,cercopithecus nictitans,4140,0,NA,NA,NA
 Cercopithecus_nictitans,cercopithecus nictitans,LGN,Corpus_geniculatum_laterale_Vol.mm3,120,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,cercopithecus nictitans,120,0,NA,NA,NA
@@ -440,9 +440,9 @@ Cheirogaleus_medius,cheirogaleus medius,Neocortex (GM+WM),Neocortex_Vol.mm3,1221
 Cheirogaleus_medius,cheirogaleus medius,LGN,Corpus_geniculatum_laterale_Vol.mm3,10.8,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Corpus_geniculatum_laterale_Vol.mm3,cheirogaleus medius,10.8,0,NA,NA,NA
 Cheirogaleus_medius,cheirogaleus medius,Paleocortex,Palaeocortex_Vol.mm3,135,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Palaeocortex_Vol.mm3,cheirogaleus medius,135,0,NA,NA,NA
 Cheirogaleus_medius,cheirogaleus medius,Amygdala,Amygdala_Vol.mm3,63.2,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Amygdala_Vol.mm3,cheirogaleus medius,63.2,0,NA,NA,NA
-Cheirogaleus_medius,cheirogaleus medius,BV,Total_brain_net_volume_Vol.mm3,2630,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Total_brain_net_volume_Vol.mm3,cheirogaleus medius,2630,0,NA,NA,NA
-Cheirogaleus_medius,cheirogaleus medius,Neocortex (GM+WM),Neocortex_Vol.mm3,1020,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,cheirogaleus medius,1020,0,NA,NA,NA
-Cheirogaleus_medius,cheirogaleus medius,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,890,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_grey_matter_Vol.mm3,cheirogaleus medius,890,0,NA,NA,NA
+Cheirogaleus_medius,cheirogaleus medius,BV,Total_brain_net_volume_Vol.mm3,2630,54;55,FALSE,description_match_value_mismatch,description_match_value_differs,NA,NA,NA,NA,NA,Stephan_etal_1970_Tables1-6,2941,10.575
+Cheirogaleus_medius,cheirogaleus medius,Neocortex (GM+WM),Neocortex_Vol.mm3,1020,54;55,FALSE,description_match_value_mismatch,description_match_value_differs,NA,NA,NA,NA,NA,Stephan_etal_1981_TablesI-VI,1221,16.462
+Cheirogaleus_medius,cheirogaleus medius,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,890,54;55,FALSE,decasien_only,decasien_only_no_comparable_source,NA,NA,NA,NA,NA,NA,NA,NA
 Colobus_angolensis,colobus angolensis,BV,Total_brain_net_volume_Vol.mm3,71815,43,FALSE,match,match,Bauernfeind_etal_2013_Table1,Total_brain_net_volume_Vol.mm3,colobus angolensis,71815,0,NA,NA,NA
 Colobus_angolensis,colobus angolensis,Granular Insula,Granular_insular_cortex_Vol.mm3,76,43,FALSE,match,match,Bauernfeind_etal_2013_Table1_bilateral_est,Granular_insular_cortex_Vol.mm3,colobus angolensis,76,0,NA,NA,NA
 Colobus_angolensis,colobus angolensis,Dysgranular Insula,Dysgranular_insular_cortex_Vol.mm3,304,43,FALSE,match,match,Bauernfeind_etal_2013_Table1_bilateral_est,Dysgranular_insular_cortex_Vol.mm3,colobus angolensis,304,0,NA,NA,NA
@@ -471,9 +471,9 @@ Daubentonia_madagascariensis,daubentonia madagascariensis,Neocortex (GM+WM),Neoc
 Daubentonia_madagascariensis,daubentonia madagascariensis,LGN,Corpus_geniculatum_laterale_Vol.mm3,58.5,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Corpus_geniculatum_laterale_Vol.mm3,daubentonia madagascariensis,58.5,0,NA,NA,NA
 Daubentonia_madagascariensis,daubentonia madagascariensis,Paleocortex,Palaeocortex_Vol.mm3,1065,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Palaeocortex_Vol.mm3,daubentonia madagascariensis,1065,0,NA,NA,NA
 Daubentonia_madagascariensis,daubentonia madagascariensis,Amygdala,Amygdala_Vol.mm3,473,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Amygdala_Vol.mm3,daubentonia madagascariensis,473,0,NA,NA,NA
-Daubentonia_madagascariensis,daubentonia madagascariensis,BV,Total_brain_net_volume_Vol.mm3,41070,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Total_brain_net_volume_Vol.mm3,daubentonia madagascariensis,41070,0,NA,NA,NA
-Daubentonia_madagascariensis,daubentonia madagascariensis,Neocortex (GM+WM),Neocortex_Vol.mm3,24070,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,daubentonia madagascariensis,24070,0,NA,NA,NA
-Daubentonia_madagascariensis,daubentonia madagascariensis,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,19790,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_grey_matter_Vol.mm3,daubentonia madagascariensis,19790,0,NA,NA,NA
+Daubentonia_madagascariensis,daubentonia madagascariensis,BV,Total_brain_net_volume_Vol.mm3,41070,54;55,FALSE,description_match_value_mismatch,description_match_value_differs,NA,NA,NA,NA,NA,Stephan_etal_1970_Tables1-6,42611,3.616
+Daubentonia_madagascariensis,daubentonia madagascariensis,Neocortex (GM+WM),Neocortex_Vol.mm3,24070,54;55,FALSE,description_match_value_mismatch,description_match_value_differs,NA,NA,NA,NA,NA,Stephan_etal_1970_Tables1-6,22127,8.781
+Daubentonia_madagascariensis,daubentonia madagascariensis,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,19790,54;55,FALSE,description_match_value_mismatch,description_match_value_differs,NA,NA,NA,NA,NA,Frahm_etal_1982_Table2,17074,15.907
 Erythrocebus_patas,erythrocebus patas,BV,Total_brain_net_volume_Vol.mm3,103167.3685,53,FALSE,match,match,Stephan_etal_1981_TablesI-VI,Total_brain_net_volume_Vol.mm3,erythrocebus patas,103167,0,NA,NA,NA
 Erythrocebus_patas,erythrocebus patas,Medulla,Medulla_oblongata_Vol.mm3,2615.67,53,FALSE,match,match,Sherwood_etal_2005_Table1,Medulla_oblongata_Vol.mm3,erythrocebus patas,2615.67,0,NA,NA,NA
 Erythrocebus_patas,erythrocebus patas,Vmo,Trigeminal_motor_nucleus_Vol.mm3,4.66,53,FALSE,match,match,Sherwood_etal_2005_Table1_bilateral_est,Trigeminal_motor_nucleus_Vol.mm3,erythrocebus patas,4.66,0,NA,NA,NA
@@ -524,7 +524,7 @@ Eulemur_fulvus_fulvus,eulemur fulvus,LGN,Corpus_geniculatum_laterale_Vol.mm3,51.
 Eulemur_fulvus_fulvus,eulemur fulvus,Paleocortex,Palaeocortex_Vol.mm3,389,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Palaeocortex_Vol.mm3,eulemur fulvus,389,0,NA,NA,NA
 Eulemur_fulvus_fulvus,eulemur fulvus,Amygdala,Amygdala_Vol.mm3,251,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Amygdala_Vol.mm3,eulemur fulvus,251,0,NA,NA,NA
 Eulemur_mongoz,eulemur mongoz,BV,Total_brain_net_volume_Vol.mm3,22240,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,eulemur mongoz,22240,0,NA,NA,NA
-Eulemur_mongoz,eulemur mongoz,Neocortex (GM+WM),Neocortex_Vol.mm3,12030,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,eulemur mongoz,12030,0,NA,NA,NA
+Eulemur_mongoz,eulemur mongoz,Neocortex (GM+WM),Neocortex_Vol.mm3,12030,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,eulemur mongoz,12030,0,NA,NA,NA
 Eulemur_mongoz,eulemur mongoz,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,8200,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,eulemur mongoz,8200,0,NA,NA,NA
 Eulemur_mongoz,eulemur mongoz,V1 (GM),Area_striata_grey_matter_Vol.mm3,1060,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,eulemur mongoz,1060,0,NA,NA,NA
 Eulemur_mongoz,eulemur mongoz,LGN,Corpus_geniculatum_laterale_Vol.mm3,50,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,eulemur mongoz,50,0,NA,NA,NA
@@ -548,7 +548,7 @@ Galago_senegalensis,galago senegalensis,Hippocampus,Hippocampus_Vol.mm3,261,24;5
 Galago_senegalensis,galago senegalensis,Neocortex (GM+WM),Neocortex_Vol.mm3,2139,24;51;52,TRUE,match,match,Stephan_etal_1970_Tables1-6,Neocortex_Vol.mm3,galago senegalensis,2139,0,NA,NA,NA
 Galago_senegalensis,galago senegalensis,LGN,Corpus_geniculatum_laterale_Vol.mm3,16,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Corpus_geniculatum_laterale_Vol.mm3,galago senegalensis,16,0,NA,NA,NA
 Galago_senegalensis,galago senegalensis,BV,Total_brain_net_volume_Vol.mm3,3580,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,galago senegalensis,3580,0,NA,NA,NA
-Galago_senegalensis,galago senegalensis,Neocortex (GM+WM),Neocortex_Vol.mm3,1570,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,galago senegalensis,1570,0,NA,NA,NA
+Galago_senegalensis,galago senegalensis,Neocortex (GM+WM),Neocortex_Vol.mm3,1570,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,galago senegalensis,1570,0,NA,NA,NA
 Galago_senegalensis,galago senegalensis,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,1340,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,galago senegalensis,1340,0,NA,NA,NA
 Galago_senegalensis,galago senegalensis,V1 (GM),Area_striata_grey_matter_Vol.mm3,220,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,galago senegalensis,220,0,NA,NA,NA
 Galago_senegalensis,galago senegalensis,LGN,Corpus_geniculatum_laterale_Vol.mm3,10,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,galago senegalensis,10,0,NA,NA,NA
@@ -987,7 +987,7 @@ Hylobates_lar,hylobates lar,Pallidum,Pallidum_Vol.mm3,715,24;51;52,TRUE,match,ma
 Hylobates_lar,hylobates lar,Subthalamic Nucleus,Nucleus_subthalamicus_Vol.mm3,61.6,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Nucleus_subthalamicus_Vol.mm3,hylobates lar,61.6,0,NA,NA,NA
 Hylobates_lar,hylobates lar,Optic Tract,Tractus_opticus_Vol.mm3,302,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Tractus_opticus_Vol.mm3,hylobates lar,302,0,NA,NA,NA
 Hylobates_lar,hylobates lar,BV,Total_brain_net_volume_Vol.mm3,101280,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,hylobates lar,101280,0,NA,NA,NA
-Hylobates_lar,hylobates lar,Neocortex (GM+WM),Neocortex_Vol.mm3,65620,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,hylobates lar,65620,0,NA,NA,NA
+Hylobates_lar,hylobates lar,Neocortex (GM+WM),Neocortex_Vol.mm3,65620,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,hylobates lar,65620,0,NA,NA,NA
 Hylobates_lar,hylobates lar,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,45120,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,hylobates lar,45120,0,NA,NA,NA
 Hylobates_lar,hylobates lar,V1 (GM),Area_striata_grey_matter_Vol.mm3,4400,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,hylobates lar,4400,0,NA,NA,NA
 Hylobates_lar,hylobates lar,LGN,Corpus_geniculatum_laterale_Vol.mm3,150,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,hylobates lar,150,0,NA,NA,NA
@@ -1061,7 +1061,7 @@ Lagothrix_lagotricha,lagothrix lagothricha,Subthalamic Nucleus,Nucleus_subthalam
 Lagothrix_lagotricha,lagothrix lagothricha,Optic Tract,Tractus_opticus_Vol.mm3,203,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Tractus_opticus_Vol.mm3,lagothrix lagothricha,203,0,NA,NA,NA
 Lagothrix_lagotricha,lagothrix lagothricha,LGN,Corpus_geniculatum_laterale_Vol.mm3,149,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Corpus_geniculatum_laterale_Vol.mm3,lagothrix lagothricha,149,0,NA,NA,NA
 Lemur_catta,lemur catta,BV,Total_brain_net_volume_Vol.mm3,21000,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,lemur catta,21000,0,NA,NA,NA
-Lemur_catta,lemur catta,Neocortex (GM+WM),Neocortex_Vol.mm3,11080,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,lemur catta,11080,0,NA,NA,NA
+Lemur_catta,lemur catta,Neocortex (GM+WM),Neocortex_Vol.mm3,11080,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,lemur catta,11080.000000000002,0,NA,NA,NA
 Lemur_catta,lemur catta,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,8960,54;55,FALSE,match,match,Bush_Allman_2003_Table1,Neocortex_grey_matter_Vol.mm3,lemur catta,8960,0,NA,NA,NA
 Lemur_catta,lemur catta,V1 (GM),Area_striata_grey_matter_Vol.mm3,1310,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,lemur catta,1310,0,NA,NA,NA
 Lemur_catta,lemur catta,LGN,Corpus_geniculatum_laterale_Vol.mm3,60,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,lemur catta,60,0,NA,NA,NA
@@ -1210,16 +1210,16 @@ Macaca_mulatta,macaca mulatta,Hippocampus,Hippocampus_Vol.mm3,1353,24;51;52,TRUE
 Macaca_mulatta,macaca mulatta,Neocortex (GM+WM),Neocortex_Vol.mm3,63482,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Neocortex_Vol.mm3,macaca mulatta,63482,0,NA,NA,NA
 Macaca_mulatta,macaca mulatta,LGN,Corpus_geniculatum_laterale_Vol.mm3,158,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Corpus_geniculatum_laterale_Vol.mm3,macaca mulatta,158,0,NA,NA,NA
 Macaca_mulatta,macaca mulatta,BV,Total_brain_net_volume_Vol.mm3,65760,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,macaca mulatta,65760,0,NA,NA,NA
-Macaca_mulatta,macaca mulatta,Neocortex (GM+WM),Neocortex_Vol.mm3,46890,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,macaca mulatta,46890,0,NA,NA,NA
+Macaca_mulatta,macaca mulatta,Neocortex (GM+WM),Neocortex_Vol.mm3,46890,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,macaca mulatta,46890,0,NA,NA,NA
 Macaca_mulatta,macaca mulatta,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,30540,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,macaca mulatta,30540,0,NA,NA,NA
 Macaca_mulatta,macaca mulatta,V1 (GM),Area_striata_grey_matter_Vol.mm3,3260,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,macaca mulatta,3260,0,NA,NA,NA
 Macaca_mulatta,macaca mulatta,BV,Total_brain_net_volume_Vol.mm3,79100,62;63,FALSE,match,match,Rilling_Insel_1998_Table1,Total_brain_net_volume_Vol.mm3,macaca mulatta,79100,0,NA,NA,NA
 Macaca_mulatta,macaca mulatta,Cerebellum,Cerebellum_Vol.mm3,7100,62;63,FALSE,match,match,Rilling_Insel_1998_Table1,Cerebellum_Vol.mm3,macaca mulatta,7100,0,NA,NA,NA
 Macaca_mulatta,macaca mulatta,Neocortex (GM+WM),Neocortex_Vol.mm3,55700,62;63,FALSE,match,match,Rilling_Insel_1999_Table1,Neocortex_Vol.mm3,macaca mulatta,55700,0,NA,NA,NA
 Macaca_mulatta,macaca mulatta,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,36500,62;63,FALSE,match,match,Rilling_Insel_1999_Table1,Neocortex_grey_matter_Vol.mm3,macaca mulatta,36500,0,NA,NA,NA
-Mandrillus_sphinx,mandrillus sphinx,BV,Total_brain_net_volume_Vol.mm3,127610,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Total_brain_net_volume_Vol.mm3,mandrillus sphinx,127610,0,NA,NA,NA
-Mandrillus_sphinx,mandrillus sphinx,Neocortex (GM+WM),Neocortex_Vol.mm3,99260,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,mandrillus sphinx,99260,0,NA,NA,NA
-Mandrillus_sphinx,mandrillus sphinx,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,71330,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_grey_matter_Vol.mm3,mandrillus sphinx,71330,0,NA,NA,NA
+Mandrillus_sphinx,mandrillus sphinx,BV,Total_brain_net_volume_Vol.mm3,127610,54;55,FALSE,description_match_value_mismatch,description_match_value_differs,NA,NA,NA,NA,NA,Ashwell__2020_SupplementaryTable,141756,9.979
+Mandrillus_sphinx,mandrillus sphinx,Neocortex (GM+WM),Neocortex_Vol.mm3,99260,54;55,FALSE,decasien_only,decasien_only_no_comparable_source,NA,NA,NA,NA,NA,NA,NA,NA
+Mandrillus_sphinx,mandrillus sphinx,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,71330,54;55,FALSE,match,match,Bush_Allman_2003_Table1,Neocortex_grey_matter_Vol.mm3,mandrillus sphinx,71300,0.042,NA,NA,NA
 Microcebus_murinus,microcebus murinus,BV,Total_brain_net_volume_Vol.mm3,1716.00171600172,34,FALSE,match,match,deSousa2010_SupTable2_speciesmean,Total_brain_net_volume_Vol.mm3,microcebus murinus,1700,0.941,NA,NA,NA
 Microcebus_murinus,microcebus murinus,V1 (GM),Area_striata_grey_matter_Vol.mm3,136,34,FALSE,match,match,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,microcebus murinus,136,0,NA,NA,NA
 Microcebus_murinus,microcebus murinus,BV,Total_brain_net_volume_Vol.mm3,1680,53,FALSE,match,match,Stephan_etal_1981_TablesI-VI,Total_brain_net_volume_Vol.mm3,microcebus murinus,1680,0,NA,NA,NA
@@ -1251,7 +1251,7 @@ Microcebus_murinus,microcebus murinus,LGN,Corpus_geniculatum_laterale_Vol.mm3,7.
 Microcebus_murinus,microcebus murinus,Paleocortex,Palaeocortex_Vol.mm3,66.8,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Palaeocortex_Vol.mm3,microcebus murinus,66.8,0,NA,NA,NA
 Microcebus_murinus,microcebus murinus,Amygdala,Amygdala_Vol.mm3,36.4,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Amygdala_Vol.mm3,microcebus murinus,36.4,0,NA,NA,NA
 Microcebus_murinus,microcebus murinus,BV,Total_brain_net_volume_Vol.mm3,1650,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,microcebus murinus,1650,0,NA,NA,NA
-Microcebus_murinus,microcebus murinus,Neocortex (GM+WM),Neocortex_Vol.mm3,690,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,microcebus murinus,690,0,NA,NA,NA
+Microcebus_murinus,microcebus murinus,Neocortex (GM+WM),Neocortex_Vol.mm3,690,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,microcebus murinus,690,0,NA,NA,NA
 Microcebus_murinus,microcebus murinus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,590,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,microcebus murinus,590,0,NA,NA,NA
 Microcebus_murinus,microcebus murinus,V1 (GM),Area_striata_grey_matter_Vol.mm3,110,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,microcebus murinus,110,0,NA,NA,NA
 Microcebus_murinus,microcebus murinus,LGN,Corpus_geniculatum_laterale_Vol.mm3,10,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,microcebus murinus,10,0,NA,NA,NA
@@ -1299,10 +1299,10 @@ Nasalis_larvatus,nasalis larvatus,Subthalamus,Subthalamus_Vol.mm3,587,24;51;52,T
 Nasalis_larvatus,nasalis larvatus,Pallidum,Pallidum_Vol.mm3,550,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Pallidum_Vol.mm3,nasalis larvatus,550,0,NA,NA,NA
 Nasalis_larvatus,nasalis larvatus,Subthalamic Nucleus,Nucleus_subthalamicus_Vol.mm3,37.2,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Nucleus_subthalamicus_Vol.mm3,nasalis larvatus,37.2,0,NA,NA,NA
 Nasalis_larvatus,nasalis larvatus,Optic Tract,Tractus_opticus_Vol.mm3,304,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Tractus_opticus_Vol.mm3,nasalis larvatus,304,0,NA,NA,NA
-Nomascus_concolor,nomascus concolor,BV,Total_brain_net_volume_Vol.mm3,115800,56;57,FALSE,decasien_duplicate_of_Hylobates_lar_Disco,decasien_duplicate_specimen_cross_genus,deSousa_etal_2010_Table1,Total_brain_net_volume_Vol.mm3,hylobates lar (Disco),115800,0,Barger2014_specimen,540,17.963
+Nomascus_concolor,nomascus concolor,BV,Total_brain_net_volume_Vol.mm3,115800,56;57,FALSE,decasien_only,decasien_only_no_comparable_source,NA,NA,NA,NA,NA,NA,NA,NA
 Nomascus_concolor,nomascus concolor,Striatum,Striatum_Vol.mm3,3988,56;57,FALSE,match,match,Barger2014_specimen,Striatum_Vol.mm3,nomascus concolor,3988,0,NA,NA,NA
 Nomascus_concolor,nomascus concolor,Hippocampus,Hippocampus_Vol.mm3,1900,56;57,FALSE,match,match,Barger2014_specimen,Hippocampus_Vol.mm3,nomascus concolor,1900,0,NA,NA,NA
-Nomascus_concolor,nomascus concolor,Amygdala,Amygdala_Vol.mm3,637,56;57,FALSE,decasien_duplicate_of_Hylobates_lar_Disco,decasien_duplicate_specimen_cross_genus,Barger2007_specimen,Amygdala_Vol.mm3,hylobates lar (Disco),637,0,Barger2014_specimen,540,17.963
+Nomascus_concolor,nomascus concolor,Amygdala,Amygdala_Vol.mm3,637,56;57,FALSE,description_match_value_mismatch,description_match_value_differs,NA,NA,NA,NA,NA,Barger2014_specimen,540,17.963
 Nycticebus_coucang,nycticebus coucang,BV,Total_brain_net_volume_Vol.mm3,12109.5121095121,34,FALSE,match,match,deSousa2010_SupTable2_speciesmean,Total_brain_net_volume_Vol.mm3,nycticebus coucang,12100,0.079,NA,NA,NA
 Nycticebus_coucang,nycticebus coucang,V1 (GM),Area_striata_grey_matter_Vol.mm3,696,34,FALSE,match,match,Frahm_etal_1984_Table1,Area_striata_grey_matter_Vol.mm3,nycticebus coucang,696,0,NA,NA,NA
 Nycticebus_coucang,nycticebus coucang,BV,Total_brain_net_volume_Vol.mm3,11755,53,FALSE,match,match,Stephan_etal_1970_Tables1-6,Total_brain_net_volume_Vol.mm3,nycticebus coucang,11755,0,NA,NA,NA
@@ -1325,7 +1325,7 @@ Nycticebus_coucang,nycticebus coucang,Hippocampus,Hippocampus_Vol.mm3,566,24;51;
 Nycticebus_coucang,nycticebus coucang,Neocortex (GM+WM),Neocortex_Vol.mm3,6192,24;51;52,TRUE,match,match,Stephan_etal_1970_Tables1-6,Neocortex_Vol.mm3,nycticebus coucang,6192,0,NA,NA,NA
 Nycticebus_coucang,nycticebus coucang,LGN,Corpus_geniculatum_laterale_Vol.mm3,37.3,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Corpus_geniculatum_laterale_Vol.mm3,nycticebus coucang,37.3,0,NA,NA,NA
 Nycticebus_coucang,nycticebus coucang,BV,Total_brain_net_volume_Vol.mm3,11270,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,nycticebus coucang,11270,0,NA,NA,NA
-Nycticebus_coucang,nycticebus coucang,Neocortex (GM+WM),Neocortex_Vol.mm3,5470,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,nycticebus coucang,5470,0,NA,NA,NA
+Nycticebus_coucang,nycticebus coucang,Neocortex (GM+WM),Neocortex_Vol.mm3,5470,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,nycticebus coucang,5470.000000000001,0,NA,NA,NA
 Nycticebus_coucang,nycticebus coucang,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,4400,54;55,FALSE,match,match,Bush_Allman_2003_Table1,Neocortex_grey_matter_Vol.mm3,nycticebus coucang,4400,0,NA,NA,NA
 Nycticebus_coucang,nycticebus coucang,V1 (GM),Area_striata_grey_matter_Vol.mm3,580,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,nycticebus coucang,580,0,NA,NA,NA
 Nycticebus_coucang,nycticebus coucang,LGN,Corpus_geniculatum_laterale_Vol.mm3,30,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,nycticebus coucang,30,0,NA,NA,NA
@@ -1358,7 +1358,7 @@ Otolemur_crassicaudatus,otolemur crassicaudatus,Subthalamic Nucleus,Nucleus_subt
 Otolemur_crassicaudatus,otolemur crassicaudatus,Optic Tract,Tractus_opticus_Vol.mm3,33.9,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Tractus_opticus_Vol.mm3,otolemur crassicaudatus,33.9,0,NA,NA,NA
 Otolemur_crassicaudatus,otolemur crassicaudatus,LGN,Corpus_geniculatum_laterale_Vol.mm3,22.1,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Corpus_geniculatum_laterale_Vol.mm3,otolemur crassicaudatus,22.1,0,NA,NA,NA
 Otolemur_crassicaudatus,otolemur crassicaudatus,BV,Total_brain_net_volume_Vol.mm3,7110,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,otolemur crassicaudatus,7110,0,NA,NA,NA
-Otolemur_crassicaudatus,otolemur crassicaudatus,Neocortex (GM+WM),Neocortex_Vol.mm3,3670,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,otolemur crassicaudatus,3670,0,NA,NA,NA
+Otolemur_crassicaudatus,otolemur crassicaudatus,Neocortex (GM+WM),Neocortex_Vol.mm3,3670,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,otolemur crassicaudatus,3670,0,NA,NA,NA
 Otolemur_crassicaudatus,otolemur crassicaudatus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,3100,54;55,FALSE,match,match,Bush_Allman_2003_Table1,Neocortex_grey_matter_Vol.mm3,otolemur crassicaudatus,3100,0,NA,NA,NA
 Otolemur_crassicaudatus,otolemur crassicaudatus,V1 (GM),Area_striata_grey_matter_Vol.mm3,450,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,otolemur crassicaudatus,450,0,NA,NA,NA
 Otolemur_crassicaudatus,otolemur crassicaudatus,LGN,Corpus_geniculatum_laterale_Vol.mm3,20,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,otolemur crassicaudatus,20,0,NA,NA,NA
@@ -1676,7 +1676,7 @@ Pan_troglodytes_troglodytes,pan troglodytes,Subthalamic Nucleus,Nucleus_subthala
 Pan_troglodytes_troglodytes,pan troglodytes,Optic Tract,Tractus_opticus_Vol.mm3,630,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Tractus_opticus_Vol.mm3,pan troglodytes,630,0,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,LGN,Corpus_geniculatum_laterale_Vol.mm3,356,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Corpus_geniculatum_laterale_Vol.mm3,pan troglodytes,356,0,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,BV,Total_brain_net_volume_Vol.mm3,364140,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,pan troglodytes,364140,0,NA,NA,NA
-Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM+WM),Neocortex_Vol.mm3,266950,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,pan troglodytes,266950,0,NA,NA,NA
+Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM+WM),Neocortex_Vol.mm3,266950,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,pan troglodytes,266950,0,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,163180,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,pan troglodytes,163180,0,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,V1 (GM),Area_striata_grey_matter_Vol.mm3,11030,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,pan troglodytes,11030,0,NA,NA,NA
 Pan_troglodytes_troglodytes,pan troglodytes,LGN,Corpus_geniculatum_laterale_Vol.mm3,290,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,pan troglodytes,290,0,NA,NA,NA
@@ -1733,7 +1733,7 @@ Papio_cynocephalus,papio cynocephalus,Cerebellum,Cerebellum_Vol.mm3,13700,62;63,
 Papio_cynocephalus,papio cynocephalus,Neocortex (GM+WM),Neocortex_Vol.mm3,100100,62;63,FALSE,match,match,Rilling_Insel_1999_Table1,Neocortex_Vol.mm3,papio cynocephalus,100100,0,NA,NA,NA
 Papio_cynocephalus,papio cynocephalus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,65000,62;63,FALSE,match,match,Rilling_Insel_1999_Table1,Neocortex_grey_matter_Vol.mm3,papio cynocephalus,65000,0,NA,NA,NA
 Papio_hamadryas,papio hamadryas,BV,Total_brain_net_volume_Vol.mm3,159110,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,papio hamadryas,159110,0,NA,NA,NA
-Papio_hamadryas,papio hamadryas,Neocortex (GM+WM),Neocortex_Vol.mm3,118780,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,papio hamadryas,118780,0,NA,NA,NA
+Papio_hamadryas,papio hamadryas,Neocortex (GM+WM),Neocortex_Vol.mm3,118780,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,papio hamadryas,118780,0,NA,NA,NA
 Papio_hamadryas,papio hamadryas,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,79100,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,papio hamadryas,79100,0,NA,NA,NA
 Papio_hamadryas,papio hamadryas,V1 (GM),Area_striata_grey_matter_Vol.mm3,7700,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,papio hamadryas,7700,0,NA,NA,NA
 Papio_hamadryas,papio hamadryas,LGN,Corpus_geniculatum_laterale_Vol.mm3,220,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,papio hamadryas,220,0,NA,NA,NA
@@ -1771,7 +1771,7 @@ Perodicticus_potto,perodicticus potto,Subthalamic Nucleus,Nucleus_subthalamicus_
 Perodicticus_potto,perodicticus potto,Optic Tract,Tractus_opticus_Vol.mm3,19.5,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Tractus_opticus_Vol.mm3,perodicticus potto,19.5,0,NA,NA,NA
 Perodicticus_potto,perodicticus potto,LGN,Corpus_geniculatum_laterale_Vol.mm3,24.3,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Corpus_geniculatum_laterale_Vol.mm3,perodicticus potto,24.3,0,NA,NA,NA
 Perodicticus_potto,perodicticus potto,BV,Total_brain_net_volume_Vol.mm3,10160,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,perodicticus potto,10160,0,NA,NA,NA
-Perodicticus_potto,perodicticus potto,Neocortex (GM+WM),Neocortex_Vol.mm3,4550,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,perodicticus potto,4550,0,NA,NA,NA
+Perodicticus_potto,perodicticus potto,Neocortex (GM+WM),Neocortex_Vol.mm3,4550,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,perodicticus potto,4550,0,NA,NA,NA
 Perodicticus_potto,perodicticus potto,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,3910,54;55,FALSE,match,match,Bush_Allman_2003_Table1,Neocortex_grey_matter_Vol.mm3,perodicticus potto,3910,0,NA,NA,NA
 Perodicticus_potto,perodicticus potto,V1 (GM),Area_striata_grey_matter_Vol.mm3,330,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,perodicticus potto,330,0,NA,NA,NA
 Perodicticus_potto,perodicticus potto,LGN,Corpus_geniculatum_laterale_Vol.mm3,20,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,perodicticus potto,20,0,NA,NA,NA
@@ -1980,9 +1980,9 @@ Propithecus_verreauxi,propithecus verreauxi,Optic Tract,Tractus_opticus_Vol.mm3,
 Propithecus_verreauxi,propithecus verreauxi,LGN,Corpus_geniculatum_laterale_Vol.mm3,68.6,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Corpus_geniculatum_laterale_Vol.mm3,propithecus verreauxi,68.6,0,NA,NA,NA
 Propithecus_verreauxi,propithecus verreauxi,Paleocortex,Palaeocortex_Vol.mm3,292,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Palaeocortex_Vol.mm3,propithecus verreauxi,292,0,NA,NA,NA
 Propithecus_verreauxi,propithecus verreauxi,Amygdala,Amygdala_Vol.mm3,251,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Amygdala_Vol.mm3,propithecus verreauxi,251,0,NA,NA,NA
-Propithecus_verreauxi,propithecus verreauxi,BV,Total_brain_net_volume_Vol.mm3,25190,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Total_brain_net_volume_Vol.mm3,propithecus verreauxi,25190,0,NA,NA,NA
-Propithecus_verreauxi,propithecus verreauxi,Neocortex (GM+WM),Neocortex_Vol.mm3,12190,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,propithecus verreauxi,12190,0,NA,NA,NA
-Propithecus_verreauxi,propithecus verreauxi,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,9840,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_grey_matter_Vol.mm3,propithecus verreauxi,9840,0,NA,NA,NA
+Propithecus_verreauxi,propithecus verreauxi,BV,Total_brain_net_volume_Vol.mm3,25190,54;55,FALSE,match,match,Stephan_etal_1981_TablesI-VI,Total_brain_net_volume_Vol.mm3,propithecus verreauxi,25194,0.016,NA,NA,NA
+Propithecus_verreauxi,propithecus verreauxi,Neocortex (GM+WM),Neocortex_Vol.mm3,12190,54;55,FALSE,description_match_value_mismatch,description_match_value_differs,NA,NA,NA,NA,NA,Stephan_etal_1981_TablesI-VI,13170,7.441
+Propithecus_verreauxi,propithecus verreauxi,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,9840,54;55,FALSE,match,match,Frahm_etal_1982_Table2,Neocortex_grey_matter_Vol.mm3,propithecus verreauxi,9835,0.051,NA,NA,NA
 Propithecus_verreauxi,propithecus verreauxi,V1 (GM),Area_striata_grey_matter_Vol.mm3,1570,54;55,FALSE,value_match_other_structure,value_match_other_structure,Stephan_etal_1981_TablesI-VI,Area_striata_Vol.mm3,propithecus verreauxi,1559,0.706,NA,NA,NA
 Propithecus_verreauxi,propithecus verreauxi,LGN,Corpus_geniculatum_laterale_Vol.mm3,70,54;55,FALSE,value_match_other_structure,value_match_other_structure,Frahm_Zilles_1994_Table1,Hilus_Vol.mm3,propithecus verreauxi,70.93,1.311,NA,NA,NA
 Pygathrix_nemaeus,pygathrix nemaeus,BV,Total_brain_net_volume_Vol.mm3,72530.44,53,FALSE,match,match,Stephan_etal_1981_TablesI-VI,Total_brain_net_volume_Vol.mm3,pygathrix nemaeus,72530,0.001,NA,NA,NA
@@ -2104,7 +2104,7 @@ Saimiri_sciureus,saimiri sciureus,LGN,Corpus_geniculatum_laterale_Vol.mm3,62.9,2
 Saimiri_sciureus,saimiri sciureus,Paleocortex,Palaeocortex_Vol.mm3,186,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Palaeocortex_Vol.mm3,saimiri sciureus,186,0,NA,NA,NA
 Saimiri_sciureus,saimiri sciureus,Amygdala,Amygdala_Vol.mm3,277,24;51;52,TRUE,description_match_value_mismatch,description_match_value_differs,NA,NA,NA,NA,NA,Stephan_etal_1987_Table1,242.4,14.274
 Saimiri_sciureus,saimiri sciureus,BV,Total_brain_net_volume_Vol.mm3,21220,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,saimiri sciureus,21220,0,NA,NA,NA
-Saimiri_sciureus,saimiri sciureus,Neocortex (GM+WM),Neocortex_Vol.mm3,14140,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,saimiri sciureus,14140,0,NA,NA,NA
+Saimiri_sciureus,saimiri sciureus,Neocortex (GM+WM),Neocortex_Vol.mm3,14140,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,saimiri sciureus,14140,0,NA,NA,NA
 Saimiri_sciureus,saimiri sciureus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,10440,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,saimiri sciureus,10440,0,NA,NA,NA
 Saimiri_sciureus,saimiri sciureus,V1 (GM),Area_striata_grey_matter_Vol.mm3,1430,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,saimiri sciureus,1430,0,NA,NA,NA
 Saimiri_sciureus,saimiri sciureus,BV,Total_brain_net_volume_Vol.mm3,23100,62;63,FALSE,match,match,MacLeod_etal_2003_Table1,Total_brain_net_volume_Vol.mm3,saimiri sciureus,23100,0,NA,NA,NA
@@ -2112,7 +2112,7 @@ Saimiri_sciureus,saimiri sciureus,Cerebellum,Cerebellum_Vol.mm3,2000,62;63,FALSE
 Saimiri_sciureus,saimiri sciureus,Neocortex (GM+WM),Neocortex_Vol.mm3,16500,62;63,FALSE,match,match,Rilling_Insel_1999_Table1,Neocortex_Vol.mm3,saimiri sciureus,16500,0,NA,NA,NA
 Saimiri_sciureus,saimiri sciureus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,11700,62;63,FALSE,match,match,Rilling_Insel_1999_Table1,Neocortex_grey_matter_Vol.mm3,saimiri sciureus,11700,0,NA,NA,NA
 Semnopithecus_entellus,semnopithecus entellus,BV,Total_brain_net_volume_Vol.mm3,107540,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Total_brain_net_volume_Vol.mm3,semnopithecus entellus,107540,0,NA,NA,NA
-Semnopithecus_entellus,semnopithecus entellus,Neocortex (GM+WM),Neocortex_Vol.mm3,76110,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,semnopithecus entellus,76110,0,NA,NA,NA
+Semnopithecus_entellus,semnopithecus entellus,Neocortex (GM+WM),Neocortex_Vol.mm3,76110,54;55,FALSE,match,match,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,semnopithecus entellus,76110,0,NA,NA,NA
 Semnopithecus_entellus,semnopithecus entellus,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,51850,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Neocortex_grey_matter_Vol.mm3,semnopithecus entellus,51850,0,NA,NA,NA
 Semnopithecus_entellus,semnopithecus entellus,V1 (GM),Area_striata_grey_matter_Vol.mm3,4320,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Area_striata_grey_matter_Vol.mm3,semnopithecus entellus,4320,0,NA,NA,NA
 Semnopithecus_entellus,semnopithecus entellus,LGN,Corpus_geniculatum_laterale_Vol.mm3,140,54;55,FALSE,match,match,Bush_Allman_2004_b_TABLE1,Corpus_geniculatum_laterale_Vol.mm3,semnopithecus entellus,140,0,NA,NA,NA
@@ -2153,8 +2153,8 @@ Tarsius_syrichta,tarsius sp,Optic Tract,Tractus_opticus_Vol.mm3,15.5,24;51;52,TR
 Tarsius_syrichta,tarsius sp,LGN,Corpus_geniculatum_laterale_Vol.mm3,20.8,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Corpus_geniculatum_laterale_Vol.mm3,tarsius sp,20.8,0,NA,NA,NA
 Tarsius_syrichta,tarsius sp,Paleocortex,Palaeocortex_Vol.mm3,39.1,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Palaeocortex_Vol.mm3,tarsius sp,39.1,0,NA,NA,NA
 Tarsius_syrichta,tarsius sp,Amygdala,Amygdala_Vol.mm3,49.8,24;51;52,TRUE,match,match,Stephan_etal_1981_TablesI-VI,Amygdala_Vol.mm3,tarsius sp,49.8,0,NA,NA,NA
-Tarsius_syrichta,tarsius sp,BV,Total_brain_net_volume_Vol.mm3,3060,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Total_brain_net_volume_Vol.mm3,tarsius sp,3060,0,NA,NA,NA
-Tarsius_syrichta,tarsius sp,Neocortex (GM+WM),Neocortex_Vol.mm3,1620,54;55,FALSE,match,match,Bush_Allman_2004_a_Table2,Neocortex_Vol.mm3,tarsius sp,1620,0,NA,NA,NA
+Tarsius_syrichta,tarsius sp,BV,Total_brain_net_volume_Vol.mm3,3060,54;55,FALSE,description_match_value_mismatch,description_match_value_differs,NA,NA,NA,NA,NA,Stephan_etal_1981_TablesI-VI,3393,9.814
+Tarsius_syrichta,tarsius sp,Neocortex (GM+WM),Neocortex_Vol.mm3,1620,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_neocortex_GMWM,Neocortex_Vol.mm3,tarsius syrichta,1619.9999999999998,0,NA,NA,NA
 Tarsius_syrichta,tarsius sp,Neocortex (GM),Neocortex_grey_matter_Vol.mm3,1470,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2003_Table1,Neocortex_grey_matter_Vol.mm3,tarsius syrichta,1470,0,NA,NA,NA
 Tarsius_syrichta,tarsius sp,V1 (GM),Area_striata_grey_matter_Vol.mm3,280,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_V1_grey,Area_striata_grey_matter_Vol.mm3,tarsius syrichta,280,0,NA,NA,NA
 Tarsius_syrichta,tarsius sp,LGN,Corpus_geniculatum_laterale_Vol.mm3,20,54;55,FALSE,match_taxonomy_variant,match_taxonomy_variant,Bush_Allman_2004_LGN,Corpus_geniculatum_laterale_Vol.mm3,tarsius syrichta,20,0,NA,NA,NA

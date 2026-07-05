@@ -323,8 +323,12 @@ if (is.null(ncbi_live)) {
   if (!file.exists(cache_file))
     stop("Offline species resolution needs ", cache_file, " (taxizedb unavailable and no cache). ",
          "Run once with taxizedb installed to build it.", call. = FALSE)
-  cache <- read.csv(cache_file, stringsAsFactors = FALSE)
-  ncbi  <- cache %>% distinct(Species_raw, NCBI_id, NCBI_name)
+  cache <- read.csv(cache_file, stringsAsFactors = FALSE, na.strings = c("NA", ""))
+  # read.csv turns blank NCBI_name into "" unless na.strings catches it; force real NA so the
+  # coalesce(curated, NCBI_name, Species_raw) below cannot be shadowed by an empty string
+  # (that bug silently dropped every unresolved_raw name to Species_final = "").
+  ncbi  <- cache %>% mutate(NCBI_name = ifelse(is.na(NCBI_name) | !nzchar(NCBI_name), NA_character_, NCBI_name)) %>%
+    distinct(Species_raw, NCBI_id, NCBI_name)
   miss  <- setdiff(uniq, ncbi$Species_raw)
   if (length(miss))
     stop("NCBI backbone cache ", cache_file, " is missing ", length(miss), " raw name(s): ",
@@ -368,6 +372,32 @@ long <- long %>%
   left_join(resolved %>% select(Source, Species_raw, Species_final),
             by = c("Source", "Species" = "Species_raw")) %>%
   mutate(Species = Species_final) %>% select(-Species_final)
+
+## 4b DeCasien Tier-2 gap-fill ----
+## DeCasien & Higham 2019 is a COMPILATION of primaries, not an independent measurement, so it is
+## ingested only where it fills a GENUINE coverage gap (a species x structure no primary in this
+## corpus measures). The comparison script (DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R,
+## run separately) writes DeCasien_gapfill_candidates.csv listing exactly those cells (DeCasien mean
+## value, already on our canonical terms). We append them here as team "DeCasien" so they flow
+## through the SAME Tier-2 cross-team average as every other independent series. Because the emitter
+## tests coverage against non-DeCasien sources only, this loop is idempotent: re-running never
+## double-counts, and as new primaries are wired in the corresponding gap-fills drop out on the next
+## comparison run (primaries win). See DeCasien_ingestion_README.md. Missing file = no gap-fill
+## (e.g. first-ever run before the comparison has been executed) -> skipped with a note.
+gapfill_file <- file.path(base, "DeCasien_Higham_2019", "DeCasien_gapfill_candidates.csv")
+if (file.exists(gapfill_file)) {
+  gf <- read_csv(gapfill_file, show_col_types = FALSE)
+  if (nrow(gf)) {
+    gf_long <- gf %>% transmute(Species, Variable, Value,
+                                Source = "DeCasien2019_MOESM3_meanvalue", Team = "DeCasien",
+                                Year = 2019L)
+    # never overwrite a species x variable a primary already provides (belt-and-braces vs the
+    # emitter's own guard): drop any gap-fill row whose Species x Variable already exists in long
+    gf_long <- gf_long %>% anti_join(long %>% distinct(Species, Variable), by = c("Species","Variable"))
+    long <- bind_rows(long, gf_long)
+    message("DeCasien gap-fill: ingested ", nrow(gf_long), " species x structure cell(s) as team 'DeCasien'.")
+  } else message("DeCasien gap-fill: candidate file present but empty -> nothing to ingest.")
+} else message("DeCasien gap-fill: no candidate file yet (run the comparison script) -> skipped.")
 
 write_csv(long, "volumes_unfiltered.csv")
 is_mass <- function(v) v %in% c("Body_Mass.g","Brain_Mass.mg")

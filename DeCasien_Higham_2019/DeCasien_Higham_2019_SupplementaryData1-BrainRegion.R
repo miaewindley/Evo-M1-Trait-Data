@@ -440,12 +440,48 @@ if (any(still)) {
   cmp$mismatch_source <- NA_character_; cmp$mismatch_value <- NA_real_; cmp$mismatch_pct <- NA_real_
 }
 
+## ---- Disco gibbon cross-genus duplicate override (specimen-level, survives regeneration) --------
+## DeCasien 2019 carries the single Zilles/INM-1 gibbon "Disco" (GPZ-5542, 3/97) under TWO genus
+## labels: its BV (115800) and amygdala (637) are filed as Nomascus_concolor (Barger 2014 label,
+## refs 56;57) while the SAME specimen's values sit in the merge under Hylobates lar (de Sousa 2010
+## for BV; Barger 2007 for the bilateral amygdala 0.270+0.367 cc = 637 mm3). The genus-restricted
+## matcher cannot bridge Nomascus->Hylobates, so these land as decasien_only / value_mismatch. This
+## is a DeCasien-side duplication, NOT a missing merge source -- see
+## ____Collections and Specimen notes/Disco_gibbon_specimen_note.md. We reclassify them here (keyed
+## on taxon+region+value so a DeCasien data refresh that keeps the same specimen re-applies cleanly;
+## a changed value would fall through and re-surface for review). The Barger2014 one-hemisphere
+## amygdala (0.27x2000=540) that produced the spurious 17.963% "mismatch" is retained as the
+## mismatch_* audit trail.
+disco_fix <- tibble::tribble(
+  ~taxon,              ~dec_region, ~dec_value, ~new_source,                   ~new_value,
+  "Nomascus_concolor", "BV",         115800,    "deSousa_etal_2010_Table1",     115800,
+  "Nomascus_concolor", "Amygdala",   637,       "Barger2007_specimen",             637)
+di <- match(paste(cmp$taxon, cmp$dec_region, cmp$dec_value),
+            paste(disco_fix$taxon, disco_fix$dec_region, disco_fix$dec_value))
+hit <- which(!is.na(di))
+if (length(hit)) {
+  j <- di[hit]
+  # preserve any prior nearest-same-structure hit as the audit trail before overwriting status
+  cmp$mismatch_source[hit] <- ifelse(is.na(cmp$mismatch_source[hit]), "Barger2014_specimen", cmp$mismatch_source[hit])
+  cmp$mismatch_value[hit]  <- ifelse(is.na(cmp$mismatch_value[hit]),  540,                   cmp$mismatch_value[hit])
+  cmp$mismatch_pct[hit]    <- ifelse(is.na(cmp$mismatch_pct[hit]),    17.963,                cmp$mismatch_pct[hit])
+  cmp$status[hit]         <- "decasien_duplicate_of_Hylobates_lar_Disco"
+  cmp$matched_source[hit] <- disco_fix$new_source[j]
+  cmp$matched_value[hit]  <- disco_fix$new_value[j]
+  cmp$matched_sp[hit]     <- "hylobates lar (Disco)"
+  cmp$matched_variable[hit] <- cmp$our_term[hit]
+  cmp$pct_diff[hit]       <- 0
+  message("Disco override: reclassified ", length(hit), " Nomascus_concolor cell(s) as ",
+          "cross-genus duplicate of Hylobates lar (Disco/GPZ-5542).")
+}
+
 ## ---- provenance / flag column ------------------------------------------------------------------
 ## One human-readable flag per row summarising HOW the cell resolved, so the CSV self-documents the
 ## unpublished-via-DeCasien recoveries and the new mismatch tier without needing to cross-read source.
 cmp <- cmp %>% mutate(
   flag = case_when(
     grepl("unpublishedviaDeCasien|_via_DeCasien", matched_source) ~ "matched_unpublished_via_DeCasien",
+    status == "decasien_duplicate_of_Hylobates_lar_Disco"         ~ "decasien_duplicate_specimen_cross_genus",
     status == "description_match_value_mismatch"                  ~ "description_match_value_differs",
     status == "match"                                             ~ "match",
     status == "match_taxonomy_variant"                            ~ "match_taxonomy_variant",
@@ -459,6 +495,46 @@ write_csv(cmp %>% select(taxon, sp, dec_region, our_term, dec_value, ref_ids, re
                          status, flag, matched_source, matched_variable, matched_sp, matched_value, pct_diff,
                          mismatch_source, mismatch_value, mismatch_pct),
           file.path(dec_dir, paste0("DeCasien_vs_merge_comparison", merge_suffix, ".csv")))
+
+## ---- DeCasien gap-fill emitter (feeds volumes_compiled.R Tier-2 'DeCasien' team) ----
+## The status ladder (see DeCasien_ingestion_README.md): a DeCasien cell is ingested into the
+## canonical merge as team "DeCasien" ONLY when it is a GENUINE new coverage gap -- it maps to a
+## canonical term, has a value, and NO non-DeCasien merge source measures that species x structure
+## at all. Cells already covered by a primary (match / taxonomy_variant / species_mean), cells whose
+## primary disagrees in value (description_match_value_mismatch -> flag, don't auto-ingest), cells
+## with no canonical term, and the Disco cross-genus duplicate are all excluded.
+##
+## Coverage is tested against non-DeCasien sources ONLY (Source not starting "DeCasien"), so the gap
+## set is INVARIANT to whether a prior run already injected the DeCasien-team value -- the emitter is
+## idempotent and the merge<->comparison loop cannot oscillate. As new primaries are wired into
+## volumes_compiled.R, cells they now cover drop out of this file automatically (primaries win).
+unf_primary <- unf %>% filter(!grepl("^DeCasien", Source))
+covered_structure <- function(g, term, epi) {
+  if (is.na(term)) return(TRUE)                               # no canonical term -> cannot ingest
+  if (nrow(unf_primary %>% filter(genus == g, Variable == term))) return(TRUE)
+  if (!is.na(epi) && !epi %in% c("", "sp", "sp.") &&
+      nrow(unf_primary %>% filter(word(sp, 2) == epi, Variable == term))) return(TRUE)
+  FALSE
+}
+gap <- cmp %>%
+  filter(!is.na(our_term),
+         status != "decasien_duplicate_of_Hylobates_lar_Disco",
+         status != "description_match_value_mismatch") %>%
+  mutate(epi = word(sp, 2),
+         is_gap = !pmap_lgl(list(g = genus, term = our_term, epi = epi), covered_structure)) %>%
+  filter(is_gap)
+gapfill <- gap %>%
+  group_by(Species = str_to_sentence(sp), Variable = our_term) %>%
+  summarise(Value = mean(dec_value), n_dec_cells = n(),
+            ref_ids = paste(sort(unique(unlist(str_split(ref_ids, ";")))), collapse = ";"),
+            dec_taxa = paste(sort(unique(taxon)), collapse = "; "), .groups = "drop") %>%
+  transmute(Species, Variable, Value,
+            Source = "DeCasien2019_MOESM3_meanvalue", Team = "DeCasien",
+            n_dec_cells, ref_ids, dec_taxa)
+write_csv(gapfill, file.path(dec_dir, paste0("DeCasien_gapfill_candidates", merge_suffix, ".csv")))
+message("DeCasien gap-fill: ", nrow(gapfill), " species x structure cell(s) with no non-DeCasien ",
+        "merge source -> ", file.path("DeCasien_Higham_2019",
+        paste0("DeCasien_gapfill_candidates", merge_suffix, ".csv")))
 
 ## ---- II.B taxonomy proposals: value-matched rows whose species name differs ----
 prop <- cmp %>% filter(status == "match_taxonomy_variant", ref_is_stephan) %>%

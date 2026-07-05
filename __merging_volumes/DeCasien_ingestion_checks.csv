@@ -1,0 +1,9 @@
+check,pass,detail
+volumes_long: species x variable unique,True,0 duplicated keys
+no DeCasien-team overlaps a primary (species x var),True,0 overlaps; DeCasien-team rows=0
+Bush2004a spot values = TSV x1000,True,0 mismatches; e.g. []
+no rows lost vs pre-run backup,True,0 lost
+all changed values are neocortex/brain-volume vars,True,"100 changed, 0 outside neocortex/BV"
+comparison decasien_only == 0,True,0 remain
+Disco cells scripted-reclassified,True,BV+Amygdala both decasien_duplicate_of_Hylobates_lar_Disco
+no match->non-match regressions,True,0 former-match rows no longer match
