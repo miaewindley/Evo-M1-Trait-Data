@@ -1,0 +1,1403 @@
+Source,Species_raw,curated,NCBI_id,NCBI_name,Species_final,name_source
+Ashwell__2020_SupplementaryTable,Acrobates pygmaeus,,190720.0,Acrobates pygmaeus,Acrobates pygmaeus,NCBI
+Ashwell__2020_SupplementaryTable,Aepyprymnus rufescens,,38598.0,Aepyprymnus rufescens,Aepyprymnus rufescens,NCBI
+Ashwell__2020_SupplementaryTable,Ailurus fulgens,,9649.0,Ailurus fulgens,Ailurus fulgens,NCBI
+Ashwell__2020_SupplementaryTable,Alouatta palliata,,30589.0,Alouatta palliata,Alouatta palliata,NCBI
+Ashwell__2020_SupplementaryTable,Antechinomys laniger,,60701.0,Antechinomys laniger,Antechinomys laniger,NCBI
+Ashwell__2020_SupplementaryTable,Antechinus flavipes,,38775.0,Antechinus flavipes,Antechinus flavipes,NCBI
+Ashwell__2020_SupplementaryTable,Antechinus minimus,,71386.0,Antechinus minimus,Antechinus minimus,NCBI
+Ashwell__2020_SupplementaryTable,Antechinus swainsonii,,9284.0,Antechinus swainsonii,Antechinus swainsonii,NCBI
+Ashwell__2020_SupplementaryTable,Aotus trivirgata,Aotus trivirgatus,,,Aotus trivirgatus,curated
+Ashwell__2020_SupplementaryTable,Aplodontia rufa,,51342.0,Aplodontia rufa,Aplodontia rufa,NCBI
+Ashwell__2020_SupplementaryTable,Bassariscus astutus,,55047.0,Bassariscus astutus,Bassariscus astutus,NCBI
+Ashwell__2020_SupplementaryTable,Bettongia gaimardi,,223568.0,Bettongia gaimardi,Bettongia gaimardi,NCBI
+Ashwell__2020_SupplementaryTable,Bos taurus indicus,,9915.0,Bos indicus,Bos indicus,NCBI
+Ashwell__2020_SupplementaryTable,Burramys parvus,,38600.0,Burramys parvus,Burramys parvus,NCBI
+Ashwell__2020_SupplementaryTable,Callicebus moloch,,9523.0,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Ashwell__2020_SupplementaryTable,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Ashwell__2020_SupplementaryTable,Caluromys derbianus,,992409.0,Caluromys derbianus,Caluromys derbianus,NCBI
+Ashwell__2020_SupplementaryTable,Canis familiaris,Canis lupus familiaris,9615.0,Canis lupus familiaris,Canis lupus familiaris,curated
+Ashwell__2020_SupplementaryTable,Capra hircus domestica,,,,Capra hircus domestica,unresolved_raw
+Ashwell__2020_SupplementaryTable,Castor canadensis,,51338.0,Castor canadensis,Castor canadensis,NCBI
+Ashwell__2020_SupplementaryTable,Cavia porcellus,,10141.0,Cavia porcellus,Cavia porcellus,NCBI
+Ashwell__2020_SupplementaryTable,Cebus capucinus,,9516.0,Cebus capucinus,Cebus capucinus,NCBI
+Ashwell__2020_SupplementaryTable,Cercartetus lepidus,,190652.0,Cercartetus lepidus,Cercartetus lepidus,NCBI
+Ashwell__2020_SupplementaryTable,Cercartetus nanus,,190653.0,Cercartetus nanus,Cercartetus nanus,NCBI
+Ashwell__2020_SupplementaryTable,Cercarteus concinnus,Cercartetus concinnus,,,Cercartetus concinnus,curated
+Ashwell__2020_SupplementaryTable,Chincella lanigera,Chinchilla laniger,,,Chinchilla laniger,curated
+Ashwell__2020_SupplementaryTable,Choloepus didactylus,,27675.0,Choloepus didactylus,Choloepus didactylus,NCBI
+Ashwell__2020_SupplementaryTable,Crocuta crocuta,,9678.0,Crocuta crocuta,Crocuta crocuta,NCBI
+Ashwell__2020_SupplementaryTable,Cynictis penicillata,,41010.0,Cynictis penicillata,Cynictis penicillata,NCBI
+Ashwell__2020_SupplementaryTable,Cynocephalus volans,,110931.0,Cynocephalus volans,Cynocephalus volans,NCBI
+Ashwell__2020_SupplementaryTable,Dasycercus blythi,,1981332.0,Dasycercus blythi,Dasycercus blythi,NCBI
+Ashwell__2020_SupplementaryTable,Dasykaluta rosamundae,,,,Dasykaluta rosamundae,unresolved_raw
+Ashwell__2020_SupplementaryTable,Dasypus novemcinctus,,9361.0,Dasypus novemcinctus,Dasypus novemcinctus,NCBI
+Ashwell__2020_SupplementaryTable,Dasyuroides byrnei,,32544.0,Dasyuroides byrnei,Dasyuroides byrnei,NCBI
+Ashwell__2020_SupplementaryTable,Dasyurus geoffroyi,,,,Dasyurus geoffroyi,unresolved_raw
+Ashwell__2020_SupplementaryTable,Dasyurus hallucatus,,9280.0,Dasyurus hallucatus,Dasyurus hallucatus,NCBI
+Ashwell__2020_SupplementaryTable,Dasyurus maculatus,,9281.0,Dasyurus maculatus,Dasyurus maculatus,NCBI
+Ashwell__2020_SupplementaryTable,Dasyurus viverrinus,,9279.0,Dasyurus viverrinus,Dasyurus viverrinus,NCBI
+Ashwell__2020_SupplementaryTable,Dendrolagus goodfellowi,,69260.0,Dendrolagus goodfellowi,Dendrolagus goodfellowi,NCBI
+Ashwell__2020_SupplementaryTable,Dendrolagus lumholtzi,,168240.0,Dendrolagus lumholtzi,Dendrolagus lumholtzi,NCBI
+Ashwell__2020_SupplementaryTable,Didelphis albiventris,,42716.0,Didelphis albiventris,Didelphis albiventris,NCBI
+Ashwell__2020_SupplementaryTable,Didelphis marsupialis,,9268.0,Didelphis marsupialis,Didelphis marsupialis,NCBI
+Ashwell__2020_SupplementaryTable,Didelphis virginiana,,9267.0,Didelphis virginiana,Didelphis virginiana,NCBI
+Ashwell__2020_SupplementaryTable,Distoechurus pennatus,,38614.0,Distoechurus pennatus,Distoechurus pennatus,NCBI
+Ashwell__2020_SupplementaryTable,Dorcopsis luctuosa,,,,Dorcopsis luctuosa,unresolved_raw
+Ashwell__2020_SupplementaryTable,Dromiciops gliroides,,33562.0,Dromiciops gliroides,Dromiciops gliroides,NCBI
+Ashwell__2020_SupplementaryTable,Echymipera kalubu,,42733.0,Echymipera kalubu,Echymipera kalubu,NCBI
+Ashwell__2020_SupplementaryTable,Elephantulus myurus,,113277.0,Elephantulus myurus,Elephantulus myurus,NCBI
+Ashwell__2020_SupplementaryTable,Equus quagga burchellii,Equus burchelli,89252.0,Equus quagga burchellii,Equus burchelli,curated
+Ashwell__2020_SupplementaryTable,Erinaceus europaeus,,9365.0,Erinaceus europaeus,Erinaceus europaeus,NCBI
+Ashwell__2020_SupplementaryTable,Erithizon dorsatum,Erethizon dorsatum,,,Erethizon dorsatum,curated
+Ashwell__2020_SupplementaryTable,Eulemur mongoz,,34828.0,Eulemur mongoz,Eulemur mongoz,NCBI
+Ashwell__2020_SupplementaryTable,Felis cattus,Felis catus,,,Felis catus,curated
+Ashwell__2020_SupplementaryTable,Galictis vittata,Galictis vittatus,204265.0,Galictis vittata,Galictis vittatus,curated
+Ashwell__2020_SupplementaryTable,Gymnobelideus leadbeateri,,38618.0,Gymnobelideus leadbeateri,Gymnobelideus leadbeateri,NCBI
+Ashwell__2020_SupplementaryTable,Hemibelideus lemuroides,,596256.0,Hemibelideus lemuroides,Hemibelideus lemuroides,NCBI
+Ashwell__2020_SupplementaryTable,Hypsiprymnodon moschatus,,65631.0,Hypsiprymnodon moschatus,Hypsiprymnodon moschatus,NCBI
+Ashwell__2020_SupplementaryTable,Isoodon macrourus,,37698.0,Isoodon macrourus,Isoodon macrourus,NCBI
+Ashwell__2020_SupplementaryTable,Isoodon obesulus,,65612.0,Isoodon obesulus,Isoodon obesulus,NCBI
+Ashwell__2020_SupplementaryTable,Lagorchestes conspicillatus,,65624.0,Lagorchestes conspicillatus,Lagorchestes conspicillatus,NCBI
+Ashwell__2020_SupplementaryTable,Lama glama,,9844.0,Lama glama,Lama glama,NCBI
+Ashwell__2020_SupplementaryTable,Lasiorhinus latifrons,,30668.0,Lasiorhinus latifrons,Lasiorhinus latifrons,NCBI
+Ashwell__2020_SupplementaryTable,Macropus agilis,,9313.0,Notamacropus agilis,Notamacropus agilis,NCBI
+Ashwell__2020_SupplementaryTable,Macropus antilopinus,,9314.0,Osphranter antilopinus,Osphranter antilopinus,NCBI
+Ashwell__2020_SupplementaryTable,Macropus bernardus,,9323.0,Osphranter bernardus,Osphranter bernardus,NCBI
+Ashwell__2020_SupplementaryTable,Macropus dorsalis,,651581.0,Notamacropus dorsalis,Notamacropus dorsalis,NCBI
+Ashwell__2020_SupplementaryTable,Macropus eugenii,,9315.0,Notamacropus eugenii,Notamacropus eugenii,NCBI
+Ashwell__2020_SupplementaryTable,Macropus irma,,196387.0,Notamacropus irma,Notamacropus irma,NCBI
+Ashwell__2020_SupplementaryTable,Macropus parma,Notamacropus parma,413582.0,Notamacropus parma,Notamacropus parma,curated
+Ashwell__2020_SupplementaryTable,Macropus parryi,,,,Macropus parryi,unresolved_raw
+Ashwell__2020_SupplementaryTable,Macropus rufus,Osphranter rufus,9321.0,Osphranter rufus,Osphranter rufus,curated
+Ashwell__2020_SupplementaryTable,Mandrillus sphinx,,9561.0,Mandrillus sphinx,Mandrillus sphinx,NCBI
+Ashwell__2020_SupplementaryTable,Marmosa impavida,,,,Marmosa impavida,unresolved_raw
+Ashwell__2020_SupplementaryTable,Monodelphis brevicaudata,,203680.0,Monodelphis brevicaudata,Monodelphis brevicaudata,NCBI
+Ashwell__2020_SupplementaryTable,Mustela erminea,,36723.0,Mustela erminea,Mustela erminea,NCBI
+Ashwell__2020_SupplementaryTable,Mustela putorius,,9668.0,Mustela putorius,Mustela putorius,NCBI
+Ashwell__2020_SupplementaryTable,Myrmecophagia tridactyla,Myrmecophaga tridactyla,,,Myrmecophaga tridactyla,curated
+Ashwell__2020_SupplementaryTable,Nasua narica,,352831.0,Nasua narica,Nasua narica,NCBI
+Ashwell__2020_SupplementaryTable,Neovison vison,Mustela vison,452646.0,Neogale vison,Mustela vison,curated
+Ashwell__2020_SupplementaryTable,Odocoileus virginianus,,9874.0,Odocoileus virginianus,Odocoileus virginianus,NCBI
+Ashwell__2020_SupplementaryTable,Onychogalea fraenata,,114227.0,Onychogalea fraenata,Onychogalea fraenata,NCBI
+Ashwell__2020_SupplementaryTable,Onychogalea unguifera,,65626.0,Onychogalea unguifera,Onychogalea unguifera,NCBI
+Ashwell__2020_SupplementaryTable,Ornithorhynchus anatinus,,9258.0,Ornithorhynchus anatinus,Ornithorhynchus anatinus,NCBI
+Ashwell__2020_SupplementaryTable,Oryctolagus cuniculus,,9986.0,Oryctolagus cuniculus,Oryctolagus cuniculus,NCBI
+Ashwell__2020_SupplementaryTable,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Ashwell__2020_SupplementaryTable,Panthera leo,,9689.0,Panthera leo,Panthera leo,NCBI
+Ashwell__2020_SupplementaryTable,Pecaru tacaju,Tayassu tajacu,,,Tayassu tajacu,curated
+Ashwell__2020_SupplementaryTable,Perameles gunnii,,37737.0,Perameles gunnii,Perameles gunnii,NCBI
+Ashwell__2020_SupplementaryTable,Perameles nasuta,,9344.0,Perameles nasuta,Perameles nasuta,NCBI
+Ashwell__2020_SupplementaryTable,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Ashwell__2020_SupplementaryTable,Petaurus australis,,282342.0,Petaurus australis,Petaurus australis,NCBI
+Ashwell__2020_SupplementaryTable,Petaurus norfolcensis,,122272.0,Petaurus norfolcensis,Petaurus norfolcensis,NCBI
+Ashwell__2020_SupplementaryTable,Petrogale brachyotis,,54079.0,Petrogale brachyotis,Petrogale brachyotis,NCBI
+Ashwell__2020_SupplementaryTable,Petrogale concinna,,859894.0,Petrogale concinna,Petrogale concinna,NCBI
+Ashwell__2020_SupplementaryTable,Petrogale godmani,,54082.0,Petrogale godmani,Petrogale godmani,NCBI
+Ashwell__2020_SupplementaryTable,Petrogale herberti,,54083.0,Petrogale herberti,Petrogale herberti,NCBI
+Ashwell__2020_SupplementaryTable,Petrogale inornata,,54084.0,Petrogale inornata,Petrogale inornata,NCBI
+Ashwell__2020_SupplementaryTable,Petrogale lateralis,,54085.0,Petrogale lateralis,Petrogale lateralis,NCBI
+Ashwell__2020_SupplementaryTable,Petrogale penicillata,,54088.0,Petrogale penicillata,Petrogale penicillata,NCBI
+Ashwell__2020_SupplementaryTable,Petrogale puella (assimilis),,,,Petrogale puella (assimilis),unresolved_raw
+Ashwell__2020_SupplementaryTable,Petrogale purpureicollis,,175627.0,Petrogale purpureicollis,Petrogale purpureicollis,NCBI
+Ashwell__2020_SupplementaryTable,Petropseudes dahli,,596258.0,Petropseudes dahli,Petropseudes dahli,NCBI
+Ashwell__2020_SupplementaryTable,Phalanger gymnotis,,65615.0,Phalanger gymnotis,Phalanger gymnotis,NCBI
+Ashwell__2020_SupplementaryTable,Phalanger maculatus,,88213.0,Phalanger maculatus,Phalanger maculatus,NCBI
+Ashwell__2020_SupplementaryTable,Phalanger vestitus,,175809.0,Phalanger vestitus,Phalanger vestitus,NCBI
+Ashwell__2020_SupplementaryTable,Phascogale tapoatafa,,9293.0,Phascogale tapoatafa,Phascogale tapoatafa,NCBI
+Ashwell__2020_SupplementaryTable,Phascolarctos cinereus,,38626.0,Phascolarctos cinereus,Phascolarctos cinereus,NCBI
+Ashwell__2020_SupplementaryTable,Phoca vitulina,,9720.0,Phoca vitulina,Phoca vitulina,NCBI
+Ashwell__2020_SupplementaryTable,Planigale maculata,,9297.0,Planigale maculata,Planigale maculata,NCBI
+Ashwell__2020_SupplementaryTable,Potorous tridactylus,,9310.0,Potorous tridactylus,Potorous tridactylus,NCBI
+Ashwell__2020_SupplementaryTable,Procavia capensis,,9813.0,Procavia capensis,Procavia capensis,NCBI
+Ashwell__2020_SupplementaryTable,Pseudantechinus bilarni,,479705.0,Pseudantechinus bilarni,Pseudantechinus bilarni,NCBI
+Ashwell__2020_SupplementaryTable,Pseudocheirus canescens,,,,Pseudocheirus canescens,unresolved_raw
+Ashwell__2020_SupplementaryTable,Pseudocheirus cinereus,,,,Pseudocheirus cinereus,unresolved_raw
+Ashwell__2020_SupplementaryTable,Pseudocheirus forbesi,,65616.0,Pseudochirulus forbesi,Pseudochirulus forbesi,NCBI
+Ashwell__2020_SupplementaryTable,Pseudocheirus peregrinus,,9333.0,Pseudocheirus peregrinus,Pseudocheirus peregrinus,NCBI
+Ashwell__2020_SupplementaryTable,Pseudochirops archeri,,38621.0,Pseudochirops archeri,Pseudochirops archeri,NCBI
+Ashwell__2020_SupplementaryTable,Pseudochirops cupreus,,37702.0,Pseudochirops cupreus,Pseudochirops cupreus,NCBI
+Ashwell__2020_SupplementaryTable,Pseudochirulus herbertensis,,596260.0,Pseudochirulus herbertensis,Pseudochirulus herbertensis,NCBI
+Ashwell__2020_SupplementaryTable,Pteropus giganteus,,143291.0,Pteropus giganteus,Pteropus giganteus,NCBI
+Ashwell__2020_SupplementaryTable,Rhyncholestes raphanurus,,33559.0,Rhyncholestes raphanurus,Rhyncholestes raphanurus,NCBI
+Ashwell__2020_SupplementaryTable,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Ashwell__2020_SupplementaryTable,Sarcophilus harissii,Sarcophilus harrisii,,,Sarcophilus harrisii,curated
+Ashwell__2020_SupplementaryTable,Scalopus aquaticus,,71119.0,Scalopus aquaticus,Scalopus aquaticus,NCBI
+Ashwell__2020_SupplementaryTable,Sciurus carolinensis,,30640.0,Sciurus carolinensis,Sciurus carolinensis,NCBI
+Ashwell__2020_SupplementaryTable,Semnopithecus entellus,,88029.0,Semnopithecus entellus,Semnopithecus entellus,NCBI
+Ashwell__2020_SupplementaryTable,Sminthopsis crassicaudata,,9301.0,Sminthopsis crassicaudata,Sminthopsis crassicaudata,NCBI
+Ashwell__2020_SupplementaryTable,Sminthopsis leucopus,,90761.0,Sminthopsis leucopus,Sminthopsis leucopus,NCBI
+Ashwell__2020_SupplementaryTable,Sminthopsis murina,,32560.0,Sminthopsis murina,Sminthopsis murina,NCBI
+Ashwell__2020_SupplementaryTable,Sorex araneus,,42254.0,Sorex araneus,Sorex araneus,NCBI
+Ashwell__2020_SupplementaryTable,Sus scrofa domesticus,,9825.0,Sus scrofa domesticus,Sus scrofa domesticus,NCBI
+Ashwell__2020_SupplementaryTable,Tachyglossus aculeatus,,9261.0,Tachyglossus aculeatus,Tachyglossus aculeatus,NCBI
+Ashwell__2020_SupplementaryTable,Tamandua tetradactyla,,48850.0,Tamandua tetradactyla,Tamandua tetradactyla,NCBI
+Ashwell__2020_SupplementaryTable,Tarsipes rostratus,,38632.0,Tarsipes rostratus,Tarsipes rostratus,NCBI
+Ashwell__2020_SupplementaryTable,Taxidea taxus,,30554.0,Taxidea taxus,Taxidea taxus,NCBI
+Ashwell__2020_SupplementaryTable,Tenrec ecaudatus,,94439.0,Tenrec ecaudatus,Tenrec ecaudatus,NCBI
+Ashwell__2020_SupplementaryTable,Thomomys talpoides,,35660.0,Thomomys talpoides,Thomomys talpoides,NCBI
+Ashwell__2020_SupplementaryTable,Thylamys elegans,,191871.0,Thylamys elegans,Thylamys elegans,NCBI
+Ashwell__2020_SupplementaryTable,Thylogale stigmatica,,9328.0,Thylogale stigmatica,Thylogale stigmatica,NCBI
+Ashwell__2020_SupplementaryTable,Thylogale thetis,,442964.0,Thylogale thetis,Thylogale thetis,NCBI
+Ashwell__2020_SupplementaryTable,Trichechus manatus latirostris,,127582.0,Trichechus manatus latirostris,Trichechus manatus latirostris,NCBI
+Ashwell__2020_SupplementaryTable,Trichosurus arnhemensis,,175811.0,Trichosurus arnhemensis,Trichosurus arnhemensis,NCBI
+Ashwell__2020_SupplementaryTable,Trichosurus caninus,,128432.0,Trichosurus caninus,Trichosurus caninus,NCBI
+Ashwell__2020_SupplementaryTable,Tupaia glis,,9395.0,Tupaia glis,Tupaia glis,NCBI
+Ashwell__2020_SupplementaryTable,Tursiops truncatus,,9739.0,Tursiops truncatus,Tursiops truncatus,NCBI
+Ashwell__2020_SupplementaryTable,Ursus maritimus,,29073.0,Ursus maritimus,Ursus maritimus,NCBI
+Ashwell__2020_SupplementaryTable,Vombatus ursinus,,29139.0,Vombatus ursinus,Vombatus ursinus,NCBI
+Ashwell__2020_SupplementaryTable,Wallabia bicolor,,9330.0,Wallabia bicolor,Wallabia bicolor,NCBI
+Ashwell__2020_SupplementaryTable,Zaglossus bruijnii,,,,Zaglossus bruijnii,unresolved_raw
+Ashwell__2020_SupplementaryTable,Zalophus californianus,,9704.0,Zalophus californianus,Zalophus californianus,NCBI
+Barger_etal_2007_TABLE1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Barger_etal_2007_TABLE1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Barger_etal_2007_TABLE1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Barger_etal_2007_TABLE1,Pan paniscus,,9597.0,Pan paniscus,Pan paniscus,NCBI
+Barger_etal_2007_TABLE1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Barger_etal_2007_TABLE1,Pongo pygmaeus,Pongo sp.,9600.0,Pongo pygmaeus,Pongo sp.,curated
+Barks_etal_2014_Fig4A,Gorilla beringei,Gorilla sp.,499232.0,Gorilla beringei,Gorilla sp.,curated
+Barks_etal_2014_Fig4A,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Barks_etal_2014_TABLE1,Gorilla beringei,Gorilla sp.,499232.0,Gorilla beringei,Gorilla sp.,curated
+Barks_etal_2014_TABLE1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Baron_etal_1983_Table1,Alouatta spp.,Alouatta seniculus,,,Alouatta seniculus,curated
+Baron_etal_1983_Table1,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Baron_etal_1983_Table1,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Baron_etal_1983_Table1,Avahi laniger laniger,Avahi laniger,,,Avahi laniger,curated
+Baron_etal_1983_Table1,Avahi laniger occidentalis,,,,Avahi laniger occidentalis,unresolved_raw
+Baron_etal_1983_Table1,Callicebus moloch,,9523.0,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Baron_etal_1983_Table1,Callimico goeldii,,9495.0,Callimico goeldii,Callimico goeldii,NCBI
+Baron_etal_1983_Table1,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Baron_etal_1983_Table1,Cebuella pygmaea,Callithrix pygmaea,9493.0,Cebuella pygmaea,Callithrix pygmaea,curated
+Baron_etal_1983_Table1,Cebus spp.,Cebus albifrons,,,Cebus albifrons,curated
+Baron_etal_1983_Table1,Cercocebus albigena,Lophocebus albigena,75567.0,Lophocebus albigena,Lophocebus albigena,curated
+Baron_etal_1983_Table1,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Baron_etal_1983_Table1,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+Baron_etal_1983_Table1,Cheirogaleus major,,47177.0,Cheirogaleus major,Cheirogaleus major,NCBI
+Baron_etal_1983_Table1,Cheirogaleus medius,,9460.0,Cheirogaleus medius,Cheirogaleus medius,NCBI
+Baron_etal_1983_Table1,Chrysochloris asiatica,,185453.0,Chrysochloris asiatica,Chrysochloris asiatica,NCBI
+Baron_etal_1983_Table1,Chrysochloris stuhlmanni,,185454.0,Chrysochloris stuhlmanni,Chrysochloris stuhlmanni,NCBI
+Baron_etal_1983_Table1,Colobus badius,Piliocolobus badius,164648.0,Piliocolobus badius,Piliocolobus badius,curated
+Baron_etal_1983_Table1,Crocidura flavescens,,214442.0,Crocidura flavescens,Crocidura flavescens,NCBI
+Baron_etal_1983_Table1,Crocidura russula,,36802.0,Crocidura russula,Crocidura russula,NCBI
+Baron_etal_1983_Table1,Daubentonia madagascariensis,,31869.0,Daubentonia madagascariensis,Daubentonia madagascariensis,NCBI
+Baron_etal_1983_Table1,Desmana moschata,,182682.0,Desmana moschata,Desmana moschata,NCBI
+Baron_etal_1983_Table1,Echinops telfairi,,9371.0,Echinops telfairi,Echinops telfairi,NCBI
+Baron_etal_1983_Table1,Elephantulus fuscipes,,483426.0,Elephantulus fuscipes,Elephantulus fuscipes,NCBI
+Baron_etal_1983_Table1,Erinaceus algirus,Atelerix algirus,30576.0,Atelerix algirus,Atelerix algirus,curated
+Baron_etal_1983_Table1,Erinaceus europaeus,,9365.0,Erinaceus europaeus,Erinaceus europaeus,NCBI
+Baron_etal_1983_Table1,Erythrocebus patas,,9538.0,Erythrocebus patas,Erythrocebus patas,NCBI
+Baron_etal_1983_Table1,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Baron_etal_1983_Table1,Galagoides demidoff,,89672.0,Galagoides demidoff,Galagoides demidoff,NCBI
+Baron_etal_1983_Table1,Galemys pyrenaicus,,202257.0,Galemys pyrenaicus,Galemys pyrenaicus,NCBI
+Baron_etal_1983_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Baron_etal_1983_Table1,Hemicentetes semispinosus,,319813.0,Hemicentetes semispinosus,Hemicentetes semispinosus,NCBI
+Baron_etal_1983_Table1,Hemiechinus auritus,,217708.0,Hemiechinus auritus,Hemiechinus auritus,NCBI
+Baron_etal_1983_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Baron_etal_1983_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Baron_etal_1983_Table1,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Baron_etal_1983_Table1,Lagothrix lagothricha,,,,Lagothrix lagothricha,unresolved_raw
+Baron_etal_1983_Table1,Lemur albifrons,Eulemur fulvus,1215604.0,Eulemur albifrons,Eulemur fulvus,curated
+Baron_etal_1983_Table1,Lepilemur ruficaudatus,,78866.0,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI
+Baron_etal_1983_Table1,Limnogale mergulus,Microgale mergulus,319815.0,Limnogale mergulus,Microgale mergulus,curated
+Baron_etal_1983_Table1,Loris tardigradus,,9468.0,Loris tardigradus,Loris tardigradus,NCBI
+Baron_etal_1983_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Baron_etal_1983_Table1,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Baron_etal_1983_Table1,Microgale cowani,,329863.0,Microgale cowani,Microgale cowani,NCBI
+Baron_etal_1983_Table1,Microgale dobsoni,Nesogale dobsoni,2583311.0,Nesogale dobsoni,Nesogale dobsoni,curated
+Baron_etal_1983_Table1,Microgale talazaci,Nesogale talazaci,2583312.0,Nesogale talazaci,Nesogale talazaci,curated
+Baron_etal_1983_Table1,Micropotamogale lamottei,,105689.0,Micropotamogale lamottei,Micropotamogale lamottei,NCBI
+Baron_etal_1983_Table1,Miopithecus talapoin,,36231.0,Miopithecus talapoin,Miopithecus talapoin,NCBI
+Baron_etal_1983_Table1,Nasalis larvatus,,43780.0,Nasalis larvatus,Nasalis larvatus,NCBI
+Baron_etal_1983_Table1,Neomys fodiens,,62282.0,Neomys fodiens,Neomys fodiens,NCBI
+Baron_etal_1983_Table1,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Baron_etal_1983_Table1,Oryzorictes talpoides,,319817.0,Oryzorictes hova,Oryzorictes hova,NCBI
+Baron_etal_1983_Table1,Otolemur crassicaudatus,,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI
+Baron_etal_1983_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Baron_etal_1983_Table1,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+Baron_etal_1983_Table1,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Baron_etal_1983_Table1,Pithecia monachus,,595220.0,Pithecia monachus,Pithecia monachus,NCBI
+Baron_etal_1983_Table1,Potamogale velox,,176119.0,Potamogale velox,Potamogale velox,NCBI
+Baron_etal_1983_Table1,Propithecus verreauxi,,34825.0,Propithecus verreauxi,Propithecus verreauxi,NCBI
+Baron_etal_1983_Table1,Pygathrix nemaeus,,54133.0,Pygathrix nemaeus,Pygathrix nemaeus,NCBI
+Baron_etal_1983_Table1,Rhynchocyon cirnei,,473867.0,Rhynchocyon cirnei,Rhynchocyon cirnei,NCBI
+Baron_etal_1983_Table1,Saguinus midas,,30586.0,Saguinus midas,Saguinus midas,NCBI
+Baron_etal_1983_Table1,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Baron_etal_1983_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Baron_etal_1983_Table1,Setifer setosus,,319819.0,Setifer setosus,Setifer setosus,NCBI
+Baron_etal_1983_Table1,Solenodon paradoxus,,79805.0,Solenodon paradoxus,Solenodon paradoxus,NCBI
+Baron_etal_1983_Table1,Sorex araneus,,42254.0,Sorex araneus,Sorex araneus,NCBI
+Baron_etal_1983_Table1,Sorex minutus,,62280.0,Sorex minutus,Sorex minutus,NCBI
+Baron_etal_1983_Table1,Suncus murinus,,9378.0,Suncus murinus,Suncus murinus,NCBI
+Baron_etal_1983_Table1,Talpa europaea,,9375.0,Talpa europaea,Talpa europaea,NCBI
+Baron_etal_1983_Table1,Tarsius spp.,Tarsius sp.,,,Tarsius sp.,curated
+Baron_etal_1983_Table1,Tenrec ecaudatus,,94439.0,Tenrec ecaudatus,Tenrec ecaudatus,NCBI
+Baron_etal_1983_Table1,Tupaia glis,,9395.0,Tupaia glis,Tupaia glis,NCBI
+Baron_etal_1983_Table1,Tupaia minor,,143289.0,Tupaia minor,Tupaia minor,NCBI
+Baron_etal_1983_Table1,Urogale everetti,,192726.0,Urogale everetti,Urogale everetti,NCBI
+Baron_etal_1983_Table1,Varecia variegata,,9455.0,Varecia variegata,Varecia variegata,NCBI
+Baron_etal_1987_Table1,Alouatta seniculus,,9503.0,Alouatta seniculus,Alouatta seniculus,NCBI
+Baron_etal_1987_Table1,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Baron_etal_1987_Table1,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Baron_etal_1987_Table1,Avahi laniger laniger,,,,Avahi laniger laniger,unresolved_raw
+Baron_etal_1987_Table1,Avahi laniger occidentalis,,,,Avahi laniger occidentalis,unresolved_raw
+Baron_etal_1987_Table1,Blarina brevicauda,,9387.0,Blarina brevicauda,Blarina brevicauda,NCBI
+Baron_etal_1987_Table1,Callicebus moloch,,9523.0,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Baron_etal_1987_Table1,Callimico goeldii,,9495.0,Callimico goeldii,Callimico goeldii,NCBI
+Baron_etal_1987_Table1,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Baron_etal_1987_Table1,Cebuella pygmaea,Callithrix pygmaea,9493.0,Cebuella pygmaea,Callithrix pygmaea,curated
+Baron_etal_1987_Table1,Cebus albifrons,,9514.0,Cebus albifrons,Cebus albifrons,NCBI
+Baron_etal_1987_Table1,Cercocebus albigena,Lophocebus albigena,75567.0,Lophocebus albigena,Lophocebus albigena,curated
+Baron_etal_1987_Table1,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Baron_etal_1987_Table1,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+Baron_etal_1987_Table1,Cheirogaleus major,,47177.0,Cheirogaleus major,Cheirogaleus major,NCBI
+Baron_etal_1987_Table1,Cheirogaleus medius,,9460.0,Cheirogaleus medius,Cheirogaleus medius,NCBI
+Baron_etal_1987_Table1,Chrysochloris asiatica,,185453.0,Chrysochloris asiatica,Chrysochloris asiatica,NCBI
+Baron_etal_1987_Table1,Chrysochloris stuhlmanni,,185454.0,Chrysochloris stuhlmanni,Chrysochloris stuhlmanni,NCBI
+Baron_etal_1987_Table1,Crocidura flavescens,,214442.0,Crocidura flavescens,Crocidura flavescens,NCBI
+Baron_etal_1987_Table1,Crocidura hildegardea,Crocidura hildegardeae,,,Crocidura hildegardeae,curated
+Baron_etal_1987_Table1,Crocidura jacksoni,,,,Crocidura jacksoni,unresolved_raw
+Baron_etal_1987_Table1,Crocidura russula,,36802.0,Crocidura russula,Crocidura russula,NCBI
+Baron_etal_1987_Table1,Daubentonia madagascariensis,,31869.0,Daubentonia madagascariensis,Daubentonia madagascariensis,NCBI
+Baron_etal_1987_Table1,Desmana moschata,,182682.0,Desmana moschata,Desmana moschata,NCBI
+Baron_etal_1987_Table1,Echinops telfairi,,9371.0,Echinops telfairi,Echinops telfairi,NCBI
+Baron_etal_1987_Table1,Elephantulus fuscipes,,483426.0,Elephantulus fuscipes,Elephantulus fuscipes,NCBI
+Baron_etal_1987_Table1,Erinaceus algirus,Atelerix algirus,30576.0,Atelerix algirus,Atelerix algirus,curated
+Baron_etal_1987_Table1,Erinaceus europaeus,,9365.0,Erinaceus europaeus,Erinaceus europaeus,NCBI
+Baron_etal_1987_Table1,Erythrocebus patas,,9538.0,Erythrocebus patas,Erythrocebus patas,NCBI
+Baron_etal_1987_Table1,Eulemur albifrons,,1215604.0,Eulemur albifrons,Eulemur albifrons,NCBI
+Baron_etal_1987_Table1,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Baron_etal_1987_Table1,Galagoides demidoff,,89672.0,Galagoides demidoff,Galagoides demidoff,NCBI
+Baron_etal_1987_Table1,Galemys pyrenaicus,,202257.0,Galemys pyrenaicus,Galemys pyrenaicus,NCBI
+Baron_etal_1987_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Baron_etal_1987_Table1,Hemicentetes semispinosus,,319813.0,Hemicentetes semispinosus,Hemicentetes semispinosus,NCBI
+Baron_etal_1987_Table1,Hemiechinus auritus,,217708.0,Hemiechinus auritus,Hemiechinus auritus,NCBI
+Baron_etal_1987_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Baron_etal_1987_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Baron_etal_1987_Table1,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Baron_etal_1987_Table1,Lagothrix lagothricha,,,,Lagothrix lagothricha,unresolved_raw
+Baron_etal_1987_Table1,Lepilemur ruficaudatus,,78866.0,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI
+Baron_etal_1987_Table1,Limnogale mergulus,Microgale mergulus,319815.0,Limnogale mergulus,Microgale mergulus,curated
+Baron_etal_1987_Table1,Loris tardigradus,,9468.0,Loris tardigradus,Loris tardigradus,NCBI
+Baron_etal_1987_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Baron_etal_1987_Table1,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Baron_etal_1987_Table1,Microgale cowani,,329863.0,Microgale cowani,Microgale cowani,NCBI
+Baron_etal_1987_Table1,Microgale dobsoni,Nesogale dobsoni,2583311.0,Nesogale dobsoni,Nesogale dobsoni,curated
+Baron_etal_1987_Table1,Microgale talazaci,Nesogale talazaci,2583312.0,Nesogale talazaci,Nesogale talazaci,curated
+Baron_etal_1987_Table1,Micropotamogale lamottei,,105689.0,Micropotamogale lamottei,Micropotamogale lamottei,NCBI
+Baron_etal_1987_Table1,Micropotamogale ruwenzorii,,1833875.0,Micropotamogale ruwenzorii,Micropotamogale ruwenzorii,NCBI
+Baron_etal_1987_Table1,Microsoex hoyi,Microsorex hoyi,,,Microsorex hoyi,curated
+Baron_etal_1987_Table1,Miopithecus talapoin,,36231.0,Miopithecus talapoin,Miopithecus talapoin,NCBI
+Baron_etal_1987_Table1,Myosorex babaulti,,1378275.0,Myosorex babaulti,Myosorex babaulti,NCBI
+Baron_etal_1987_Table1,Nasalis larvatus,,43780.0,Nasalis larvatus,Nasalis larvatus,NCBI
+Baron_etal_1987_Table1,Neomys fodiens,,62282.0,Neomys fodiens,Neomys fodiens,NCBI
+Baron_etal_1987_Table1,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Baron_etal_1987_Table1,Oryzorictes talpoides,Oryzorictes hova,319817.0,Oryzorictes hova,Oryzorictes hova,curated
+Baron_etal_1987_Table1,Otolemur crassicaudatus,,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI
+Baron_etal_1987_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Baron_etal_1987_Table1,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+Baron_etal_1987_Table1,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Baron_etal_1987_Table1,Pithecia monachus,,595220.0,Pithecia monachus,Pithecia monachus,NCBI
+Baron_etal_1987_Table1,Potamogale velox,,176119.0,Potamogale velox,Potamogale velox,NCBI
+Baron_etal_1987_Table1,Procolobus badius,,164648.0,Piliocolobus badius,Piliocolobus badius,NCBI
+Baron_etal_1987_Table1,Propithecus verreauxi,,34825.0,Propithecus verreauxi,Propithecus verreauxi,NCBI
+Baron_etal_1987_Table1,Pygathrix nemaeus,,54133.0,Pygathrix nemaeus,Pygathrix nemaeus,NCBI
+Baron_etal_1987_Table1,Rhynchocyon cirnei,,473867.0,Rhynchocyon cirnei,Rhynchocyon cirnei,NCBI
+Baron_etal_1987_Table1,Ruwensorisorex suncoides,Ruwenzorisorex suncoides,,,Ruwenzorisorex suncoides,curated
+Baron_etal_1987_Table1,Saguinus midas,,30586.0,Saguinus midas,Saguinus midas,NCBI
+Baron_etal_1987_Table1,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Baron_etal_1987_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Baron_etal_1987_Table1,Scuisorex somereni,Scutisorex somereni,,,Scutisorex somereni,curated
+Baron_etal_1987_Table1,Setifer setosus,,319819.0,Setifer setosus,Setifer setosus,NCBI
+Baron_etal_1987_Table1,Solenodon paradoxus,,79805.0,Solenodon paradoxus,Solenodon paradoxus,NCBI
+Baron_etal_1987_Table1,Sorex araneus,,42254.0,Sorex araneus,Sorex araneus,NCBI
+Baron_etal_1987_Table1,Sorex cinereus,,36803.0,Sorex cinereus,Sorex cinereus,NCBI
+Baron_etal_1987_Table1,Sorex fumeus,,62283.0,Sorex fumeus,Sorex fumeus,NCBI
+Baron_etal_1987_Table1,Sorex minutus,,62280.0,Sorex minutus,Sorex minutus,NCBI
+Baron_etal_1987_Table1,Suncus etruscus,,109475.0,Suncus etruscus,Suncus etruscus,NCBI
+Baron_etal_1987_Table1,Suncus murinus,,9378.0,Suncus murinus,Suncus murinus,NCBI
+Baron_etal_1987_Table1,Sylvisorex granti,,307107.0,Sylvisorex granti,Sylvisorex granti,NCBI
+Baron_etal_1987_Table1,Sylvisorex negalura,,,,Sylvisorex negalura,unresolved_raw
+Baron_etal_1987_Table1,Talpa europaea,,9375.0,Talpa europaea,Talpa europaea,NCBI
+Baron_etal_1987_Table1,Tarsius sp.,,30612.0,Tarsius sp.,Tarsius sp.,NCBI
+Baron_etal_1987_Table1,Tenrec ecaudatus,,94439.0,Tenrec ecaudatus,Tenrec ecaudatus,NCBI
+Baron_etal_1987_Table1,Tupaia glis,,9395.0,Tupaia glis,Tupaia glis,NCBI
+Baron_etal_1987_Table1,Tupaia minor,,143289.0,Tupaia minor,Tupaia minor,NCBI
+Baron_etal_1987_Table1,Urogale everetti,,192726.0,Urogale everetti,Urogale everetti,NCBI
+Baron_etal_1987_Table1,Varecia variegata,,9455.0,Varecia variegata,Varecia variegata,NCBI
+Baron_etal_1988_Table1,Alouatta seniculus,,9503.0,Alouatta seniculus,Alouatta seniculus,NCBI
+Baron_etal_1988_Table1,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Baron_etal_1988_Table1,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Baron_etal_1988_Table1,Avahi laniger laniger,Avahi laniger,,,Avahi laniger,curated
+Baron_etal_1988_Table1,Avahi laniger occidentalis,Avahi occidentalis,,,Avahi occidentalis,curated
+Baron_etal_1988_Table1,Blarina brevicauda,,9387.0,Blarina brevicauda,Blarina brevicauda,NCBI
+Baron_etal_1988_Table1,Callicebus moloch,,9523.0,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Baron_etal_1988_Table1,Callimico goeldii,,9495.0,Callimico goeldii,Callimico goeldii,NCBI
+Baron_etal_1988_Table1,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Baron_etal_1988_Table1,Cebuella pygmaea,Callithrix pygmaea,9493.0,Cebuella pygmaea,Callithrix pygmaea,curated
+Baron_etal_1988_Table1,Cebus albifrons,,9514.0,Cebus albifrons,Cebus albifrons,NCBI
+Baron_etal_1988_Table1,Cercocebus albigena,Lophocebus albigena,75567.0,Lophocebus albigena,Lophocebus albigena,curated
+Baron_etal_1988_Table1,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Baron_etal_1988_Table1,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+Baron_etal_1988_Table1,Cheirogaleus major,,47177.0,Cheirogaleus major,Cheirogaleus major,NCBI
+Baron_etal_1988_Table1,Cheirogaleus medius,,9460.0,Cheirogaleus medius,Cheirogaleus medius,NCBI
+Baron_etal_1988_Table1,Chrysochloris stuhlmanni,,185454.0,Chrysochloris stuhlmanni,Chrysochloris stuhlmanni,NCBI
+Baron_etal_1988_Table1,Colobus badius,Piliocolobus badius,164648.0,Piliocolobus badius,Piliocolobus badius,curated
+Baron_etal_1988_Table1,Crocidura flavescens,,214442.0,Crocidura flavescens,Crocidura flavescens,NCBI
+Baron_etal_1988_Table1,Crocidura hildegardeae,,148965.0,Crocidura hildegardeae,Crocidura hildegardeae,NCBI
+Baron_etal_1988_Table1,Crocidura russula,,36802.0,Crocidura russula,Crocidura russula,NCBI
+Baron_etal_1988_Table1,Daubentoni madagascar.,Daubentonia madagascariensis,,,Daubentonia madagascariensis,curated
+Baron_etal_1988_Table1,Desmana moschata,,182682.0,Desmana moschata,Desmana moschata,NCBI
+Baron_etal_1988_Table1,Echinops telfairi,,9371.0,Echinops telfairi,Echinops telfairi,NCBI
+Baron_etal_1988_Table1,Erinaceus algirus,Atelerix algirus,30576.0,Atelerix algirus,Atelerix algirus,curated
+Baron_etal_1988_Table1,Erinaceus europaeus,,9365.0,Erinaceus europaeus,Erinaceus europaeus,NCBI
+Baron_etal_1988_Table1,Erythrocebus patas,,9538.0,Erythrocebus patas,Erythrocebus patas,NCBI
+Baron_etal_1988_Table1,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Baron_etal_1988_Table1,Galagoides demidoff,,89672.0,Galagoides demidoff,Galagoides demidoff,NCBI
+Baron_etal_1988_Table1,Galemys pyrenaicus,,202257.0,Galemys pyrenaicus,Galemys pyrenaicus,NCBI
+Baron_etal_1988_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Baron_etal_1988_Table1,Hemicentetes semispinosus,,319813.0,Hemicentetes semispinosus,Hemicentetes semispinosus,NCBI
+Baron_etal_1988_Table1,Hemiechinus auritus,,217708.0,Hemiechinus auritus,Hemiechinus auritus,NCBI
+Baron_etal_1988_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Baron_etal_1988_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Baron_etal_1988_Table1,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Baron_etal_1988_Table1,Lagothrix lagothricha,,,,Lagothrix lagothricha,unresolved_raw
+Baron_etal_1988_Table1,Lemur albifrons,Eulemur fulvus,1215604.0,Eulemur albifrons,Eulemur fulvus,curated
+Baron_etal_1988_Table1,Lepilemur ruficaudatus,,78866.0,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI
+Baron_etal_1988_Table1,Loris tardigradus,,9468.0,Loris tardigradus,Loris tardigradus,NCBI
+Baron_etal_1988_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Baron_etal_1988_Table1,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Baron_etal_1988_Table1,Microgale talazaci,Nesogale talazaci,2583312.0,Nesogale talazaci,Nesogale talazaci,curated
+Baron_etal_1988_Table1,Micropotamogale ruwenzorii,,1833875.0,Micropotamogale ruwenzorii,Micropotamogale ruwenzorii,NCBI
+Baron_etal_1988_Table1,Microsorex hoyi,,,,Microsorex hoyi,unresolved_raw
+Baron_etal_1988_Table1,Miopithecus talapoin,,36231.0,Miopithecus talapoin,Miopithecus talapoin,NCBI
+Baron_etal_1988_Table1,Nasalis larvatus,,43780.0,Nasalis larvatus,Nasalis larvatus,NCBI
+Baron_etal_1988_Table1,Neomys fodiens,,62282.0,Neomys fodiens,Neomys fodiens,NCBI
+Baron_etal_1988_Table1,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Baron_etal_1988_Table1,Otolemur crassicaudatus,,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI
+Baron_etal_1988_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Baron_etal_1988_Table1,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+Baron_etal_1988_Table1,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Baron_etal_1988_Table1,Pithecia monachus,,595220.0,Pithecia monachus,Pithecia monachus,NCBI
+Baron_etal_1988_Table1,Potamogale velox,,176119.0,Potamogale velox,Potamogale velox,NCBI
+Baron_etal_1988_Table1,Propithecus verreauxi,,34825.0,Propithecus verreauxi,Propithecus verreauxi,NCBI
+Baron_etal_1988_Table1,Pygathrix nemaeus,,54133.0,Pygathrix nemaeus,Pygathrix nemaeus,NCBI
+Baron_etal_1988_Table1,Ruwenzorisorex suncoides,,150086.0,Ruwenzorisorex suncoides,Ruwenzorisorex suncoides,NCBI
+Baron_etal_1988_Table1,Saguinus midas tamarin,Saguinus midas,,,Saguinus midas,curated
+Baron_etal_1988_Table1,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Baron_etal_1988_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Baron_etal_1988_Table1,ScutisorexÊsomereni,,,,ScutisorexÊsomereni,unresolved_raw
+Baron_etal_1988_Table1,Setifer setosus,,319819.0,Setifer setosus,Setifer setosus,NCBI
+Baron_etal_1988_Table1,Solenodon paradoxus,,79805.0,Solenodon paradoxus,Solenodon paradoxus,NCBI
+Baron_etal_1988_Table1,Sorex araneus,,42254.0,Sorex araneus,Sorex araneus,NCBI
+Baron_etal_1988_Table1,Sorex cinereus,,36803.0,Sorex cinereus,Sorex cinereus,NCBI
+Baron_etal_1988_Table1,Suncus etruscus,,109475.0,Suncus etruscus,Suncus etruscus,NCBI
+Baron_etal_1988_Table1,Suncus murinus,,9378.0,Suncus murinus,Suncus murinus,NCBI
+Baron_etal_1988_Table1,Sylvisorex megalura,Suncus megalura,458326.0,Suncus megalura,Suncus megalura,curated
+Baron_etal_1988_Table1,Talpa europaea,,9375.0,Talpa europaea,Talpa europaea,NCBI
+Baron_etal_1988_Table1,Tarsius spp.,Tarsius sp.,,,Tarsius sp.,curated
+Baron_etal_1988_Table1,Tenrec ecaudatus,,94439.0,Tenrec ecaudatus,Tenrec ecaudatus,NCBI
+Baron_etal_1988_Table1,Tupaia glis,,9395.0,Tupaia glis,Tupaia glis,NCBI
+Baron_etal_1988_Table1,Tupaia minor,,143289.0,Tupaia minor,Tupaia minor,NCBI
+Baron_etal_1988_Table1,Urogale everetti,,192726.0,Urogale everetti,Urogale everetti,NCBI
+Baron_etal_1988_Table1,Varecia variegata,,9455.0,Varecia variegata,Varecia variegata,NCBI
+Baron_etal_1990_Table1,Alouatta seniculus,,9503.0,Alouatta seniculus,Alouatta seniculus,NCBI
+Baron_etal_1990_Table1,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Baron_etal_1990_Table1,Atelerix algirus,,30576.0,Atelerix algirus,Atelerix algirus,NCBI
+Baron_etal_1990_Table1,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Baron_etal_1990_Table1,Avahi laniger laniger,Avahi laniger,,,Avahi laniger,curated
+Baron_etal_1990_Table1,Avahi laniger occidentalis,Avahi occidentalis,,,Avahi occidentalis,curated
+Baron_etal_1990_Table1,Blarina brevicauda,,9387.0,Blarina brevicauda,Blarina brevicauda,NCBI
+Baron_etal_1990_Table1,Callicebus moloch,,9523.0,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Baron_etal_1990_Table1,Callimico goeldii,,9495.0,Callimico goeldii,Callimico goeldii,NCBI
+Baron_etal_1990_Table1,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Baron_etal_1990_Table1,Cebuella pygmaea,Callithrix pygmaea,9493.0,Cebuella pygmaea,Callithrix pygmaea,curated
+Baron_etal_1990_Table1,Cebus albifrons,,9514.0,Cebus albifrons,Cebus albifrons,NCBI
+Baron_etal_1990_Table1,Cercocebus albigena,Lophocebus albigena,75567.0,Lophocebus albigena,Lophocebus albigena,curated
+Baron_etal_1990_Table1,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Baron_etal_1990_Table1,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+Baron_etal_1990_Table1,Cheirogaleus major,,47177.0,Cheirogaleus major,Cheirogaleus major,NCBI
+Baron_etal_1990_Table1,Cheirogaleus medius,,9460.0,Cheirogaleus medius,Cheirogaleus medius,NCBI
+Baron_etal_1990_Table1,Chrysochloris stuhlmanni,,185454.0,Chrysochloris stuhlmanni,Chrysochloris stuhlmanni,NCBI
+Baron_etal_1990_Table1,Colobus badius,Piliocolobus badius,164648.0,Piliocolobus badius,Piliocolobus badius,curated
+Baron_etal_1990_Table1,Crocidura flavescens,,214442.0,Crocidura flavescens,Crocidura flavescens,NCBI
+Baron_etal_1990_Table1,Crocidura hildegardeae,,148965.0,Crocidura hildegardeae,Crocidura hildegardeae,NCBI
+Baron_etal_1990_Table1,Crocidura russula,,36802.0,Crocidura russula,Crocidura russula,NCBI
+Baron_etal_1990_Table1,Daubentoni madagascar.,Daubentonia madagascariensis,,,Daubentonia madagascariensis,curated
+Baron_etal_1990_Table1,Desmana moschata,,182682.0,Desmana moschata,Desmana moschata,NCBI
+Baron_etal_1990_Table1,Echinops telfairi,,9371.0,Echinops telfairi,Echinops telfairi,NCBI
+Baron_etal_1990_Table1,Echinosorex gymnura,,162630.0,Echinosorex gymnura,Echinosorex gymnura,NCBI
+Baron_etal_1990_Table1,Erinaceus europaeus,,9365.0,Erinaceus europaeus,Erinaceus europaeus,NCBI
+Baron_etal_1990_Table1,Erythrocebus patas,,9538.0,Erythrocebus patas,Erythrocebus patas,NCBI
+Baron_etal_1990_Table1,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Baron_etal_1990_Table1,Galagoides demidoff,,89672.0,Galagoides demidoff,Galagoides demidoff,NCBI
+Baron_etal_1990_Table1,Galemys pyrenaicus,,202257.0,Galemys pyrenaicus,Galemys pyrenaicus,NCBI
+Baron_etal_1990_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Baron_etal_1990_Table1,Hemicentetes semispinosus,,319813.0,Hemicentetes semispinosus,Hemicentetes semispinosus,NCBI
+Baron_etal_1990_Table1,Hemiechinus auritus,,217708.0,Hemiechinus auritus,Hemiechinus auritus,NCBI
+Baron_etal_1990_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Baron_etal_1990_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Baron_etal_1990_Table1,Hylomys suillus,,48897.0,Hylomys suillus,Hylomys suillus,NCBI
+Baron_etal_1990_Table1,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Baron_etal_1990_Table1,Lagothrix lagothricha,,,,Lagothrix lagothricha,unresolved_raw
+Baron_etal_1990_Table1,Lemur albifrons,Eulemur fulvus,1215604.0,Eulemur albifrons,Eulemur fulvus,curated
+Baron_etal_1990_Table1,Lepilemur ruficaudatus,,78866.0,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI
+Baron_etal_1990_Table1,Loris tardigradus,,9468.0,Loris tardigradus,Loris tardigradus,NCBI
+Baron_etal_1990_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Baron_etal_1990_Table1,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Baron_etal_1990_Table1,Microgale talazaci,Nesogale talazaci,2583312.0,Nesogale talazaci,Nesogale talazaci,curated
+Baron_etal_1990_Table1,Micropotamogale ruwenzorii,,1833875.0,Micropotamogale ruwenzorii,Micropotamogale ruwenzorii,NCBI
+Baron_etal_1990_Table1,Microsorex hoyi,,,,Microsorex hoyi,unresolved_raw
+Baron_etal_1990_Table1,Miopithecus talapoin,,36231.0,Miopithecus talapoin,Miopithecus talapoin,NCBI
+Baron_etal_1990_Table1,Nasalis larvatus,,43780.0,Nasalis larvatus,Nasalis larvatus,NCBI
+Baron_etal_1990_Table1,Neomys fodiens,,62282.0,Neomys fodiens,Neomys fodiens,NCBI
+Baron_etal_1990_Table1,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Baron_etal_1990_Table1,Otolemur crassicaudatus,,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI
+Baron_etal_1990_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Baron_etal_1990_Table1,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+Baron_etal_1990_Table1,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Baron_etal_1990_Table1,Pithecia monachus,,595220.0,Pithecia monachus,Pithecia monachus,NCBI
+Baron_etal_1990_Table1,Potamogale velox,,176119.0,Potamogale velox,Potamogale velox,NCBI
+Baron_etal_1990_Table1,Propithecus verreauxi,,34825.0,Propithecus verreauxi,Propithecus verreauxi,NCBI
+Baron_etal_1990_Table1,Pygathrix nemaeus,,54133.0,Pygathrix nemaeus,Pygathrix nemaeus,NCBI
+Baron_etal_1990_Table1,Ruwenzorisorex suncoides,,150086.0,Ruwenzorisorex suncoides,Ruwenzorisorex suncoides,NCBI
+Baron_etal_1990_Table1,Saguinus midas,,30586.0,Saguinus midas,Saguinus midas,NCBI
+Baron_etal_1990_Table1,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Baron_etal_1990_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Baron_etal_1990_Table1,ScutisorexÊsomereni,,,,ScutisorexÊsomereni,unresolved_raw
+Baron_etal_1990_Table1,Setifer setosus,,319819.0,Setifer setosus,Setifer setosus,NCBI
+Baron_etal_1990_Table1,Solenodon paradoxus,,79805.0,Solenodon paradoxus,Solenodon paradoxus,NCBI
+Baron_etal_1990_Table1,Sorex araneus,,42254.0,Sorex araneus,Sorex araneus,NCBI
+Baron_etal_1990_Table1,Sorex cinereus,,36803.0,Sorex cinereus,Sorex cinereus,NCBI
+Baron_etal_1990_Table1,Suncus etruscus,,109475.0,Suncus etruscus,Suncus etruscus,NCBI
+Baron_etal_1990_Table1,Suncus murinus,,9378.0,Suncus murinus,Suncus murinus,NCBI
+Baron_etal_1990_Table1,Sylvisorex megalura,Suncus megalura,458326.0,Suncus megalura,Suncus megalura,curated
+Baron_etal_1990_Table1,Talpa europea,Talpa europaea,,,Talpa europaea,curated
+Baron_etal_1990_Table1,Tarsius spp.,Tarsius sp.,,,Tarsius sp.,curated
+Baron_etal_1990_Table1,Tenrec ecaudatus,,94439.0,Tenrec ecaudatus,Tenrec ecaudatus,NCBI
+Baron_etal_1990_Table1,Tupaia glis,,9395.0,Tupaia glis,Tupaia glis,NCBI
+Baron_etal_1990_Table1,Tupaia minor,,143289.0,Tupaia minor,Tupaia minor,NCBI
+Baron_etal_1990_Table1,Urogale everetti,,192726.0,Urogale everetti,Urogale everetti,NCBI
+Baron_etal_1990_Table1,Varecia variegata,,9455.0,Varecia variegata,Varecia variegata,NCBI
+Bauernfeind_etal_2013_Table1,Alouatta caraya,,9502.0,Alouatta caraya,Alouatta caraya,NCBI
+Bauernfeind_etal_2013_Table1,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Bauernfeind_etal_2013_Table1,Avahi laniger,Avahi occidentalis,122246.0,Avahi laniger,Avahi occidentalis,curated
+Bauernfeind_etal_2013_Table1,Callithrix pygmaea,,9493.0,Cebuella pygmaea,Cebuella pygmaea,NCBI
+Bauernfeind_etal_2013_Table1,Cebus albifrons,,9514.0,Cebus albifrons,Cebus albifrons,NCBI
+Bauernfeind_etal_2013_Table1,Cercocebus agilis,,255237.0,Cercocebus agilis,Cercocebus agilis,NCBI
+Bauernfeind_etal_2013_Table1,Cercopithecus kandti,Cercopithecus mitis,1137481.0,Cercopithecus kandti,Cercopithecus mitis,curated
+Bauernfeind_etal_2013_Table1,Colobus angolensis,,54131.0,Colobus angolensis,Colobus angolensis,NCBI
+Bauernfeind_etal_2013_Table1,Galagoides demidoff,,89672.0,Galagoides demidoff,Galagoides demidoff,NCBI
+Bauernfeind_etal_2013_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Bauernfeind_etal_2013_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Bauernfeind_etal_2013_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Bauernfeind_etal_2013_Table1,Hylobates muelleri,,9588.0,Hylobates muelleri,Hylobates muelleri,NCBI
+Bauernfeind_etal_2013_Table1,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Bauernfeind_etal_2013_Table1,Leontopithecus rosalia,,30588.0,Leontopithecus rosalia,Leontopithecus rosalia,NCBI
+Bauernfeind_etal_2013_Table1,Lophocebus albigena,,75567.0,Lophocebus albigena,Lophocebus albigena,NCBI
+Bauernfeind_etal_2013_Table1,Loris tardigradus,,9468.0,Loris tardigradus,Loris tardigradus,NCBI
+Bauernfeind_etal_2013_Table1,Macaca maura,,90383.0,Macaca maura,Macaca maura,NCBI
+Bauernfeind_etal_2013_Table1,Pan paniscus,,9597.0,Pan paniscus,Pan paniscus,NCBI
+Bauernfeind_etal_2013_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Bauernfeind_etal_2013_Table1,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Bauernfeind_etal_2013_Table1,Piliocolobus badius,,164648.0,Piliocolobus badius,Piliocolobus badius,NCBI
+Bauernfeind_etal_2013_Table1,Pithecia pithecia,,43777.0,Pithecia pithecia,Pithecia pithecia,NCBI
+Bauernfeind_etal_2013_Table1,Pongo pygmaeus and Pongo abelii,Pongo sp.,,,Pongo sp.,curated
+Bauernfeind_etal_2013_Table1,Saguinus geoffroyi,,43778.0,Saguinus geoffroyi,Saguinus geoffroyi,NCBI
+Bauernfeind_etal_2013_Table1,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Bauernfeind_etal_2013_Table1,Symphalangus syndactylus,,9590.0,Symphalangus syndactylus,Symphalangus syndactylus,NCBI
+Bauernfeind_etal_2013_Table1,Trachypithecus francoisi,,54180.0,Trachypithecus francoisi,Trachypithecus francoisi,NCBI
+Bauernfeind_etal_2013_Table1,Varecia variegata,,9455.0,Varecia variegata,Varecia variegata,NCBI
+Bauernfeind_etal_2013_Table2,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Bauernfeind_etal_2013_Table2,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Bauernfeind_etal_2013_Table2,Pan paniscus,,9597.0,Pan paniscus,Pan paniscus,NCBI
+Bauernfeind_etal_2013_Table2,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Bauernfeind_etal_2013_Table2,Pongo pygmaeus and Pongo abelii,Pongo sp.,,,Pongo sp.,curated
+Bush_Allman_2003_Table1,Ailurus fulgens,,9649.0,Ailurus fulgens,Ailurus fulgens,NCBI
+Bush_Allman_2003_Table1,Alouatta palliata,,30589.0,Alouatta palliata,Alouatta palliata,NCBI
+Bush_Allman_2003_Table1,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Bush_Allman_2003_Table1,Applodontia rufa,Aplodontia rufa,,,Aplodontia rufa,curated
+Bush_Allman_2003_Table1,Ateles sp.,,9511.0,Ateles sp.,Ateles sp.,NCBI
+Bush_Allman_2003_Table1,Callicebus sp.,,116962.0,Callicebus sp.,Callicebus sp.,NCBI
+Bush_Allman_2003_Table1,Canis latrans,,9614.0,Canis latrans,Canis latrans,NCBI
+Bush_Allman_2003_Table1,Cercocebus torquatus,,9530.0,Cercocebus torquatus,Cercocebus torquatus,NCBI
+Bush_Allman_2003_Table1,Cercopithecus nictitans,,36228.0,Cercopithecus nictitans,Cercopithecus nictitans,NCBI
+Bush_Allman_2003_Table1,Chinchilla laniger,,,,Chinchilla laniger,unresolved_raw
+Bush_Allman_2003_Table1,Choloepus didactylis,Choloepus didactylus,,,Choloepus didactylus,curated
+Bush_Allman_2003_Table1,Crocuta crocuta,,9678.0,Crocuta crocuta,Crocuta crocuta,NCBI
+Bush_Allman_2003_Table1,Didelphis marsupialis,,9268.0,Didelphis marsupialis,Didelphis marsupialis,NCBI
+Bush_Allman_2003_Table1,Equus burchelli,,,,Equus burchelli,unresolved_raw
+Bush_Allman_2003_Table1,Eulemur mongoz,,34828.0,Eulemur mongoz,Eulemur mongoz,NCBI
+Bush_Allman_2003_Table1,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Bush_Allman_2003_Table1,Galictis vitatus,Galictis vittatus,,,Galictis vittatus,curated
+Bush_Allman_2003_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Bush_Allman_2003_Table1,Lemur catta,,9447.0,Lemur catta,Lemur catta,NCBI
+Bush_Allman_2003_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Bush_Allman_2003_Table1,Mandrillus sphinx,,9561.0,Mandrillus sphinx,Mandrillus sphinx,NCBI
+Bush_Allman_2003_Table1,Marmosa mitis,,,,Marmosa mitis,unresolved_raw
+Bush_Allman_2003_Table1,Microcebus urinus,Microcebus murinus,,,Microcebus murinus,curated
+Bush_Allman_2003_Table1,Mustela putorius,,9668.0,Mustela putorius,Mustela putorius,NCBI
+Bush_Allman_2003_Table1,Mustela vison,,452646.0,Neogale vison,Neogale vison,NCBI
+Bush_Allman_2003_Table1,Myoxus glis,,41261.0,Glis glis,Glis glis,NCBI
+Bush_Allman_2003_Table1,Myrmecophaga tridactyla,,71006.0,Myrmecophaga tridactyla,Myrmecophaga tridactyla,NCBI
+Bush_Allman_2003_Table1,Nasua narica,,352831.0,Nasua narica,Nasua narica,NCBI
+Bush_Allman_2003_Table1,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Bush_Allman_2003_Table1,Odocoileus virginianus,,9874.0,Odocoileus virginianus,Odocoileus virginianus,NCBI
+Bush_Allman_2003_Table1,Otolemur crassicaudatus,,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI
+Bush_Allman_2003_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Bush_Allman_2003_Table1,Papio hamadryas,,9557.0,Papio hamadryas,Papio hamadryas,NCBI
+Bush_Allman_2003_Table1,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Bush_Allman_2003_Table1,Potos flavus,,29067.0,Potos flavus,Potos flavus,NCBI
+Bush_Allman_2003_Table1,Procavia capensis,,9813.0,Procavia capensis,Procavia capensis,NCBI
+Bush_Allman_2003_Table1,Rattus norvegicus,,10116.0,Rattus norvegicus,Rattus norvegicus,NCBI
+Bush_Allman_2003_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Bush_Allman_2003_Table1,Sciurus carolinensis,,30640.0,Sciurus carolinensis,Sciurus carolinensis,NCBI
+Bush_Allman_2003_Table1,Semnopithecus entellus,,88029.0,Semnopithecus entellus,Semnopithecus entellus,NCBI
+Bush_Allman_2003_Table1,Tamandua tatradactyla,Tamandua tetradactyla,,,Tamandua tetradactyla,curated
+Bush_Allman_2003_Table1,Tarsius syricta,Tarsius syrichta,,,Tarsius syrichta,curated
+Bush_Allman_2003_Table1,Tayassu tajacu,,9829.0,Pecari tajacu,Pecari tajacu,NCBI
+Bush_Allman_2003_Table1,Vulpes zerda,,68732.0,Vulpes zerda,Vulpes zerda,NCBI
+Bush_Allman_2003_Table1,Zalophus californianus,,9704.0,Zalophus californianus,Zalophus californianus,NCBI
+Bush_Allman_2004_b_TABLE1,Alouatta palliata,,30589.0,Alouatta palliata,Alouatta palliata,NCBI
+Bush_Allman_2004_b_TABLE1,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Bush_Allman_2004_b_TABLE1,Ateles sp.,,9511.0,Ateles sp.,Ateles sp.,NCBI
+Bush_Allman_2004_b_TABLE1,Callicebus sp.,,116962.0,Callicebus sp.,Callicebus sp.,NCBI
+Bush_Allman_2004_b_TABLE1,Cercocebus torquatus,,9530.0,Cercocebus torquatus,Cercocebus torquatus,NCBI
+Bush_Allman_2004_b_TABLE1,Cercopithecus nictitans,,36228.0,Cercopithecus nictitans,Cercopithecus nictitans,NCBI
+Bush_Allman_2004_b_TABLE1,Eulemur mongoz,,34828.0,Eulemur mongoz,Eulemur mongoz,NCBI
+Bush_Allman_2004_b_TABLE1,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Bush_Allman_2004_b_TABLE1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Bush_Allman_2004_b_TABLE1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Bush_Allman_2004_b_TABLE1,Lemur catta,,9447.0,Lemur catta,Lemur catta,NCBI
+Bush_Allman_2004_b_TABLE1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Bush_Allman_2004_b_TABLE1,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Bush_Allman_2004_b_TABLE1,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Bush_Allman_2004_b_TABLE1,Otolemur crassicaudatus,,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI
+Bush_Allman_2004_b_TABLE1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Bush_Allman_2004_b_TABLE1,Papio hamadryas,,9557.0,Papio hamadryas,Papio hamadryas,NCBI
+Bush_Allman_2004_b_TABLE1,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Bush_Allman_2004_b_TABLE1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Bush_Allman_2004_b_TABLE1,Semnopithecus entellus,,88029.0,Semnopithecus entellus,Semnopithecus entellus,NCBI
+Bush_Allman_2004_b_TABLE1,Tarsius syrichta,,1868482.0,Carlito syrichta,Carlito syrichta,NCBI
+Frahm_Zilles_1994_Table1,Alouatta seniculus,,9503.0,Alouatta seniculus,Alouatta seniculus,NCBI
+Frahm_Zilles_1994_Table1,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Frahm_Zilles_1994_Table1,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Frahm_Zilles_1994_Table1,Avahi l. occidentalis,Avahi occidentalis,,,Avahi occidentalis,curated
+Frahm_Zilles_1994_Table1,Avahi laniger laniger,Avahi laniger,,,Avahi laniger,curated
+Frahm_Zilles_1994_Table1,Callicebus moloch,,9523.0,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Frahm_Zilles_1994_Table1,Callimico goeldi,Callimico goeldii,,,Callimico goeldii,curated
+Frahm_Zilles_1994_Table1,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Frahm_Zilles_1994_Table1,Cebuella pygmaea,Callithrix pygmaea,9493.0,Cebuella pygmaea,Callithrix pygmaea,curated
+Frahm_Zilles_1994_Table1,Cebus albifrons,,9514.0,Cebus albifrons,Cebus albifrons,NCBI
+Frahm_Zilles_1994_Table1,Cercocebus albigena,Lophocebus albigena,75567.0,Lophocebus albigena,Lophocebus albigena,curated
+Frahm_Zilles_1994_Table1,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Frahm_Zilles_1994_Table1,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+Frahm_Zilles_1994_Table1,Cheirogaleus major,,47177.0,Cheirogaleus major,Cheirogaleus major,NCBI
+Frahm_Zilles_1994_Table1,Cheirogaleus medius,,9460.0,Cheirogaleus medius,Cheirogaleus medius,NCBI
+Frahm_Zilles_1994_Table1,Colobus badius,Piliocolobus badius,164648.0,Piliocolobus badius,Piliocolobus badius,curated
+Frahm_Zilles_1994_Table1,Daubentonia madagascariensis,,31869.0,Daubentonia madagascariensis,Daubentonia madagascariensis,NCBI
+Frahm_Zilles_1994_Table1,Echinops telfairi,,9371.0,Echinops telfairi,Echinops telfairi,NCBI
+Frahm_Zilles_1994_Table1,Erythrocebus patas,,9538.0,Erythrocebus patas,Erythrocebus patas,NCBI
+Frahm_Zilles_1994_Table1,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Frahm_Zilles_1994_Table1,Galagoides demidoff,,89672.0,Galagoides demidoff,Galagoides demidoff,NCBI
+Frahm_Zilles_1994_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Frahm_Zilles_1994_Table1,Hemicentetes semispinosus,,319813.0,Hemicentetes semispinosus,Hemicentetes semispinosus,NCBI
+Frahm_Zilles_1994_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Frahm_Zilles_1994_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Frahm_Zilles_1994_Table1,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Frahm_Zilles_1994_Table1,Lagothrix lagothricha,,,,Lagothrix lagothricha,unresolved_raw
+Frahm_Zilles_1994_Table1,Lemur albifrons,Eulemur fulvus,1215604.0,Eulemur albifrons,Eulemur fulvus,curated
+Frahm_Zilles_1994_Table1,Lepilemur ruficaudatus,,78866.0,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI
+Frahm_Zilles_1994_Table1,Loris tardigradus,,9468.0,Loris tardigradus,Loris tardigradus,NCBI
+Frahm_Zilles_1994_Table1,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Frahm_Zilles_1994_Table1,Miopithecus talapoin,,36231.0,Miopithecus talapoin,Miopithecus talapoin,NCBI
+Frahm_Zilles_1994_Table1,Nasalis larvatus,,43780.0,Nasalis larvatus,Nasalis larvatus,NCBI
+Frahm_Zilles_1994_Table1,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Frahm_Zilles_1994_Table1,Otolemur crassicaudatus,,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI
+Frahm_Zilles_1994_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Frahm_Zilles_1994_Table1,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+Frahm_Zilles_1994_Table1,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Frahm_Zilles_1994_Table1,Pithecia monachus,,595220.0,Pithecia monachus,Pithecia monachus,NCBI
+Frahm_Zilles_1994_Table1,Propithecus verreauxi,,34825.0,Propithecus verreauxi,Propithecus verreauxi,NCBI
+Frahm_Zilles_1994_Table1,Pygathrix nemaeus,,54133.0,Pygathrix nemaeus,Pygathrix nemaeus,NCBI
+Frahm_Zilles_1994_Table1,Saguinus midas tamarin,Saguinus midas,,,Saguinus midas,curated
+Frahm_Zilles_1994_Table1,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Frahm_Zilles_1994_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Frahm_Zilles_1994_Table1,Setifer setosus,,319819.0,Setifer setosus,Setifer setosus,NCBI
+Frahm_Zilles_1994_Table1,Tarsius spec.,Tarsius sp.,,,Tarsius sp.,curated
+Frahm_Zilles_1994_Table1,Tenrec ecaudatus,,94439.0,Tenrec ecaudatus,Tenrec ecaudatus,NCBI
+Frahm_Zilles_1994_Table1,Varecia variegata,,9455.0,Varecia variegata,Varecia variegata,NCBI
+Frahm_etal_1982_Table2,Alouatta sp.,Alouatta seniculus,,,Alouatta seniculus,curated
+Frahm_etal_1982_Table2,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Frahm_etal_1982_Table2,Avahi laniger occidentalis,Avahi occidentalis,,,Avahi occidentalis,curated
+Frahm_etal_1982_Table2,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Frahm_etal_1982_Table2,Cebuella pygmaea,Callithrix pygmaea,9493.0,Cebuella pygmaea,Callithrix pygmaea,curated
+Frahm_etal_1982_Table2,Cebus sp.,Cebus albifrons,9517.0,Cebus sp.,Cebus albifrons,curated
+Frahm_etal_1982_Table2,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Frahm_etal_1982_Table2,Colobus badius,Piliocolobus badius,164648.0,Piliocolobus badius,Piliocolobus badius,curated
+Frahm_etal_1982_Table2,Crocidura flavescens,,214442.0,Crocidura flavescens,Crocidura flavescens,NCBI
+Frahm_etal_1982_Table2,Crocidura russula,,36802.0,Crocidura russula,Crocidura russula,NCBI
+Frahm_etal_1982_Table2,Daubentonia madagascar.,Daubentonia madagascariensis,,,Daubentonia madagascariensis,curated
+Frahm_etal_1982_Table2,Echinops telfairi,,9371.0,Echinops telfairi,Echinops telfairi,NCBI
+Frahm_etal_1982_Table2,Erinaceus algirus,Atelerix algirus,30576.0,Atelerix algirus,Atelerix algirus,curated
+Frahm_etal_1982_Table2,Erinaceus europaeus,,9365.0,Erinaceus europaeus,Erinaceus europaeus,NCBI
+Frahm_etal_1982_Table2,Galagoides demidoff,,89672.0,Galagoides demidoff,Galagoides demidoff,NCBI
+Frahm_etal_1982_Table2,Hemicentetes semispinosus,,319813.0,Hemicentetes semispinosus,Hemicentetes semispinosus,NCBI
+Frahm_etal_1982_Table2,Hemiechinus auritus,,217708.0,Hemiechinus auritus,Hemiechinus auritus,NCBI
+Frahm_etal_1982_Table2,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Frahm_etal_1982_Table2,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Frahm_etal_1982_Table2,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Frahm_etal_1982_Table2,Lagothrix lagothricha,,,,Lagothrix lagothricha,unresolved_raw
+Frahm_etal_1982_Table2,Lemur albifrons,Eulemur fulvus,1215604.0,Eulemur albifrons,Eulemur fulvus,curated
+Frahm_etal_1982_Table2,Lepilemur ruficaudatus,,78866.0,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI
+Frahm_etal_1982_Table2,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Frahm_etal_1982_Table2,Neomys fodiens,,62282.0,Neomys fodiens,Neomys fodiens,NCBI
+Frahm_etal_1982_Table2,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Frahm_etal_1982_Table2,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Frahm_etal_1982_Table2,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+Frahm_etal_1982_Table2,Propithecus verreauxi,,34825.0,Propithecus verreauxi,Propithecus verreauxi,NCBI
+Frahm_etal_1982_Table2,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Frahm_etal_1982_Table2,Setifer setosus,,319819.0,Setifer setosus,Setifer setosus,NCBI
+Frahm_etal_1982_Table2,Sorex araneus,,42254.0,Sorex araneus,Sorex araneus,NCBI
+Frahm_etal_1982_Table2,Sorex minutus,,62280.0,Sorex minutus,Sorex minutus,NCBI
+Frahm_etal_1982_Table2,Suncus murinus,,9378.0,Suncus murinus,Suncus murinus,NCBI
+Frahm_etal_1982_Table2,Tarsius sp.,,30612.0,Tarsius sp.,Tarsius sp.,NCBI
+Frahm_etal_1982_Table2,Tenrec ecaudatus,,94439.0,Tenrec ecaudatus,Tenrec ecaudatus,NCBI
+Frahm_etal_1982_Table2,Tupaia glis,,9395.0,Tupaia glis,Tupaia glis,NCBI
+Frahm_etal_1982_Table2,Urogale everetti,,192726.0,Urogale everetti,Urogale everetti,NCBI
+Frahm_etal_1984_Table1,Alouatta sp.,Alouatta seniculus,,,Alouatta seniculus,curated
+Frahm_etal_1984_Table1,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Frahm_etal_1984_Table1,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Frahm_etal_1984_Table1,Avahi l. laniger,Avahi laniger,,,Avahi laniger,curated
+Frahm_etal_1984_Table1,Avahi laniger occidentalis,Avahi occidentalis,,,Avahi occidentalis,curated
+Frahm_etal_1984_Table1,Callicebus moloch,Callicebus moloch,9523.0,Plecturocebus moloch,Callicebus moloch,curated
+Frahm_etal_1984_Table1,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Frahm_etal_1984_Table1,Cebuella pygmaea,Callithrix pygmaea,9493.0,Cebuella pygmaea,Callithrix pygmaea,curated
+Frahm_etal_1984_Table1,Cebus sp.,Cebus albifrons,9517.0,Cebus sp.,Cebus albifrons,curated
+Frahm_etal_1984_Table1,Cercocebus albigena,Lophocebus albigena,75567.0,Lophocebus albigena,Lophocebus albigena,curated
+Frahm_etal_1984_Table1,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Frahm_etal_1984_Table1,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+Frahm_etal_1984_Table1,Cheirogaleus major,,47177.0,Cheirogaleus major,Cheirogaleus major,NCBI
+Frahm_etal_1984_Table1,Cheirogaleus medius,,9460.0,Cheirogaleus medius,Cheirogaleus medius,NCBI
+Frahm_etal_1984_Table1,Colobus badius,Piliocolobus badius,164648.0,Piliocolobus badius,Piliocolobus badius,curated
+Frahm_etal_1984_Table1,Daubentonia madagascar.,Daubentonia madagascariensis,,,Daubentonia madagascariensis,curated
+Frahm_etal_1984_Table1,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Frahm_etal_1984_Table1,Galagoides demidoff,,89672.0,Galagoides demidoff,Galagoides demidoff,NCBI
+Frahm_etal_1984_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Frahm_etal_1984_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Frahm_etal_1984_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Frahm_etal_1984_Table1,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Frahm_etal_1984_Table1,Lagothrix lagothricha,,,,Lagothrix lagothricha,unresolved_raw
+Frahm_etal_1984_Table1,Lemur albifrons,Eulemur fulvus,1215604.0,Eulemur albifrons,Eulemur fulvus,curated
+Frahm_etal_1984_Table1,Lepilemur ruficaudatus,,78866.0,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI
+Frahm_etal_1984_Table1,Loris tardigradus,,9468.0,Loris tardigradus,Loris tardigradus,NCBI
+Frahm_etal_1984_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Frahm_etal_1984_Table1,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Frahm_etal_1984_Table1,Miopithecus talapoin,,36231.0,Miopithecus talapoin,Miopithecus talapoin,NCBI
+Frahm_etal_1984_Table1,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Frahm_etal_1984_Table1,Otolemur crassicaudatus,,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI
+Frahm_etal_1984_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Frahm_etal_1984_Table1,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+Frahm_etal_1984_Table1,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Frahm_etal_1984_Table1,Pithecia monachus,,595220.0,Pithecia monachus,Pithecia monachus,NCBI
+Frahm_etal_1984_Table1,Propithecus verreauxi,,34825.0,Propithecus verreauxi,Propithecus verreauxi,NCBI
+Frahm_etal_1984_Table1,Saguinus midas,,30586.0,Saguinus midas,Saguinus midas,NCBI
+Frahm_etal_1984_Table1,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Frahm_etal_1984_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Frahm_etal_1984_Table1,Tarsius sp.,,30612.0,Tarsius sp.,Tarsius sp.,NCBI
+Frahm_etal_1984_Table1,Tupaia glis,,9395.0,Tupaia glis,Tupaia glis,NCBI
+Frahm_etal_1984_Table1,Tupaia minor,,143289.0,Tupaia minor,Tupaia minor,NCBI
+Frahm_etal_1984_Table1,Urogale everetti,,192726.0,Urogale everetti,Urogale everetti,NCBI
+Frahm_etal_1984_Table1,Varecia variegata,,9455.0,Varecia variegata,Varecia variegata,NCBI
+Frahm_etal_1997_Table1,Rattus norvegicus,,10116.0,Rattus norvegicus,Rattus norvegicus,NCBI
+Frahm_etal_1997_Table1,Spalax ehrenbergi,,30637.0,Nannospalax ehrenbergi,Nannospalax ehrenbergi,NCBI
+Frahm_etal_1998_Table1,Alouatta seniculus,,9503.0,Alouatta seniculus,Alouatta seniculus,NCBI
+Frahm_etal_1998_Table1,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Frahm_etal_1998_Table1,Callicebus moloch,,9523.0,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Frahm_etal_1998_Table1,Callimico goeldii,,9495.0,Callimico goeldii,Callimico goeldii,NCBI
+Frahm_etal_1998_Table1,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Frahm_etal_1998_Table1,Cebuella pygmaea,Callithrix pygmaea,9493.0,Cebuella pygmaea,Callithrix pygmaea,curated
+Frahm_etal_1998_Table1,Cebus spec.,Cebus albifrons,,,Cebus albifrons,curated
+Frahm_etal_1998_Table1,Cercocebus albigena,Lophocebus albigena,75567.0,Lophocebus albigena,Lophocebus albigena,curated
+Frahm_etal_1998_Table1,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Frahm_etal_1998_Table1,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+Frahm_etal_1998_Table1,Cheirogaleus major,,47177.0,Cheirogaleus major,Cheirogaleus major,NCBI
+Frahm_etal_1998_Table1,Erythrocebus patas,,9538.0,Erythrocebus patas,Erythrocebus patas,NCBI
+Frahm_etal_1998_Table1,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Frahm_etal_1998_Table1,Galagoides demidoff,,89672.0,Galagoides demidoff,Galagoides demidoff,NCBI
+Frahm_etal_1998_Table1,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Frahm_etal_1998_Table1,Loris tardigradus,,9468.0,Loris tardigradus,Loris tardigradus,NCBI
+Frahm_etal_1998_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Frahm_etal_1998_Table1,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Frahm_etal_1998_Table1,Miopithecus talapoin,,36231.0,Miopithecus talapoin,Miopithecus talapoin,NCBI
+Frahm_etal_1998_Table1,Nasalis larvatus,,43780.0,Nasalis larvatus,Nasalis larvatus,NCBI
+Frahm_etal_1998_Table1,Otolemur crassicaudatus,,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI
+Frahm_etal_1998_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Frahm_etal_1998_Table1,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+Frahm_etal_1998_Table1,Pithecia monachus,,595220.0,Pithecia monachus,Pithecia monachus,NCBI
+Frahm_etal_1998_Table1,Saguinus midas,,30586.0,Saguinus midas,Saguinus midas,NCBI
+Frahm_etal_1998_Table1,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Frahm_etal_1998_Table1,Tarsius spec.,Tarsius sp.,,,Tarsius sp.,curated
+MacLeod_etal_2003_Table1,Cebus apella,,9515.0,Sapajus apella,Sapajus apella,NCBI
+MacLeod_etal_2003_Table1,Cercocebus torquatus atys,Cercocebus torquatus,9531.0,Cercocebus atys,Cercocebus torquatus,curated
+MacLeod_etal_2003_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+MacLeod_etal_2003_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+MacLeod_etal_2003_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+MacLeod_etal_2003_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+MacLeod_etal_2003_Table1,Pan paniscus,,9597.0,Pan paniscus,Pan paniscus,NCBI
+MacLeod_etal_2003_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+MacLeod_etal_2003_Table1,Papio cynocephalus,,9556.0,Papio cynocephalus,Papio cynocephalus,NCBI
+MacLeod_etal_2003_Table1,Pongo pygmaeus,Pongo sp.,9600.0,Pongo pygmaeus,Pongo sp.,curated
+MacLeod_etal_2003_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+MacLeod_etal_2003_Table2,Alouatta seniculus,,9503.0,Alouatta seniculus,Alouatta seniculus,NCBI
+MacLeod_etal_2003_Table2,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+MacLeod_etal_2003_Table2,Ateles paniscus,,9510.0,Ateles paniscus,Ateles paniscus,NCBI
+MacLeod_etal_2003_Table2,Cebus sp.,,9517.0,Cebus sp.,Cebus sp.,NCBI
+MacLeod_etal_2003_Table2,Cercocebus albigena,,75567.0,Lophocebus albigena,Lophocebus albigena,NCBI
+MacLeod_etal_2003_Table2,Cercopithecus sp.,,,,Cercopithecus sp.,unresolved_raw
+MacLeod_etal_2003_Table2,Erythrocebus patas,,9538.0,Erythrocebus patas,Erythrocebus patas,NCBI
+MacLeod_etal_2003_Table2,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+MacLeod_etal_2003_Table2,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+MacLeod_etal_2003_Table2,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+MacLeod_etal_2003_Table2,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+MacLeod_etal_2003_Table2,Pan paniscus,,9597.0,Pan paniscus,Pan paniscus,NCBI
+MacLeod_etal_2003_Table2,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+MacLeod_etal_2003_Table2,Papio cynocephalus,,9556.0,Papio cynocephalus,Papio cynocephalus,NCBI
+MacLeod_etal_2003_Table2,Pongo pygmaeus,Pongo sp.,9600.0,Pongo pygmaeus,Pongo sp.,curated
+MacLeod_etal_2003_Table2,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Matano_etal_1985_a_Table1,Alouatta seniculus,,9503.0,Alouatta seniculus,Alouatta seniculus,NCBI
+Matano_etal_1985_a_Table1,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Matano_etal_1985_a_Table1,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Matano_etal_1985_a_Table1,Avahi l. laniger,Avahi laniger,,,Avahi laniger,curated
+Matano_etal_1985_a_Table1,Avahi l. occidentalis,Avahi occidentalis,,,Avahi occidentalis,curated
+Matano_etal_1985_a_Table1,Callicebus moloch,,9523.0,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Matano_etal_1985_a_Table1,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Matano_etal_1985_a_Table1,Cebuella pygmaea,Callithrix pygmaea,9493.0,Cebuella pygmaea,Callithrix pygmaea,curated
+Matano_etal_1985_a_Table1,Cebus albifrons,,9514.0,Cebus albifrons,Cebus albifrons,NCBI
+Matano_etal_1985_a_Table1,Cercocebus albigena,Lophocebus albigena,75567.0,Lophocebus albigena,Lophocebus albigena,curated
+Matano_etal_1985_a_Table1,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Matano_etal_1985_a_Table1,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+Matano_etal_1985_a_Table1,Cheirogaleus major,,47177.0,Cheirogaleus major,Cheirogaleus major,NCBI
+Matano_etal_1985_a_Table1,Cheirogaleus medius,,9460.0,Cheirogaleus medius,Cheirogaleus medius,NCBI
+Matano_etal_1985_a_Table1,Colobus badius,Piliocolobus badius,164648.0,Piliocolobus badius,Piliocolobus badius,curated
+Matano_etal_1985_a_Table1,Crocidura flavescens,,214442.0,Crocidura flavescens,Crocidura flavescens,NCBI
+Matano_etal_1985_a_Table1,Crocidura r. russula,Crocidura russula,,,Crocidura russula,curated
+Matano_etal_1985_a_Table1,Daubentonia madagasc.,Daubentonia madagascariensis,,,Daubentonia madagascariensis,curated
+Matano_etal_1985_a_Table1,Echinops telfairi,,9371.0,Echinops telfairi,Echinops telfairi,NCBI
+Matano_etal_1985_a_Table1,Erinaceus europaeus,,9365.0,Erinaceus europaeus,Erinaceus europaeus,NCBI
+Matano_etal_1985_a_Table1,Erythrocebus patas,,9538.0,Erythrocebus patas,Erythrocebus patas,NCBI
+Matano_etal_1985_a_Table1,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Matano_etal_1985_a_Table1,Galagoides demidoff,,89672.0,Galagoides demidoff,Galagoides demidoff,NCBI
+Matano_etal_1985_a_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Matano_etal_1985_a_Table1,Hemicentetes semispin.,Hemicentetes semispinosus,,,Hemicentetes semispinosus,curated
+Matano_etal_1985_a_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Matano_etal_1985_a_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Matano_etal_1985_a_Table1,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Matano_etal_1985_a_Table1,Lagothrix lagothricha,,,,Lagothrix lagothricha,unresolved_raw
+Matano_etal_1985_a_Table1,Lemur fulvus,Eulemur fulvus,13515.0,Eulemur fulvus,Eulemur fulvus,curated
+Matano_etal_1985_a_Table1,Lepilemur ruficaudatus,,78866.0,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI
+Matano_etal_1985_a_Table1,Loris tardigradus,,9468.0,Loris tardigradus,Loris tardigradus,NCBI
+Matano_etal_1985_a_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Matano_etal_1985_a_Table1,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Matano_etal_1985_a_Table1,Miopithecus talapoin,,36231.0,Miopithecus talapoin,Miopithecus talapoin,NCBI
+Matano_etal_1985_a_Table1,Nasalis larvatus,,43780.0,Nasalis larvatus,Nasalis larvatus,NCBI
+Matano_etal_1985_a_Table1,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Matano_etal_1985_a_Table1,Otolemur crassicaudatus,,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI
+Matano_etal_1985_a_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Matano_etal_1985_a_Table1,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+Matano_etal_1985_a_Table1,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Matano_etal_1985_a_Table1,Pithecia monachus,,595220.0,Pithecia monachus,Pithecia monachus,NCBI
+Matano_etal_1985_a_Table1,Propithecus verreauxi,,34825.0,Propithecus verreauxi,Propithecus verreauxi,NCBI
+Matano_etal_1985_a_Table1,Pygathrix nemaeus,,54133.0,Pygathrix nemaeus,Pygathrix nemaeus,NCBI
+Matano_etal_1985_a_Table1,Saguinus midas,,30586.0,Saguinus midas,Saguinus midas,NCBI
+Matano_etal_1985_a_Table1,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Matano_etal_1985_a_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Matano_etal_1985_a_Table1,Setifer setosus,,319819.0,Setifer setosus,Setifer setosus,NCBI
+Matano_etal_1985_a_Table1,Sorex araneus,,42254.0,Sorex araneus,Sorex araneus,NCBI
+Matano_etal_1985_a_Table1,Sorex minutus,,62280.0,Sorex minutus,Sorex minutus,NCBI
+Matano_etal_1985_a_Table1,Suncus murinus,,9378.0,Suncus murinus,Suncus murinus,NCBI
+Matano_etal_1985_a_Table1,Tarsius spp.,Tarsius sp.,,,Tarsius sp.,curated
+Matano_etal_1985_a_Table1,Tenrec ecaudatus,,94439.0,Tenrec ecaudatus,Tenrec ecaudatus,NCBI
+Matano_etal_1985_a_Table1,Tupaia glis,,9395.0,Tupaia glis,Tupaia glis,NCBI
+Matano_etal_1985_a_Table1,Urogale everetti,,192726.0,Urogale everetti,Urogale everetti,NCBI
+Matano_etal_1985_a_Table1,Varecia variegata,,9455.0,Varecia variegata,Varecia variegata,NCBI
+Matano_etal_1985_b_Table1,Alouatta seniculus,,9503.0,Alouatta seniculus,Alouatta seniculus,NCBI
+Matano_etal_1985_b_Table1,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Matano_etal_1985_b_Table1,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Matano_etal_1985_b_Table1,Avahi l. occidentalis,Avahi occidentalis,,,Avahi occidentalis,curated
+Matano_etal_1985_b_Table1,Avahi laniger laniger,Avahi laniger,,,Avahi laniger,curated
+Matano_etal_1985_b_Table1,Callicebus moloch,,9523.0,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Matano_etal_1985_b_Table1,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Matano_etal_1985_b_Table1,Cebuella pygmaea,Callithrix pygmaea,9493.0,Cebuella pygmaea,Callithrix pygmaea,curated
+Matano_etal_1985_b_Table1,Cebus albifrons,,9514.0,Cebus albifrons,Cebus albifrons,NCBI
+Matano_etal_1985_b_Table1,Cercocebus albigena,Lophocebus albigena,75567.0,Lophocebus albigena,Lophocebus albigena,curated
+Matano_etal_1985_b_Table1,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Matano_etal_1985_b_Table1,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+Matano_etal_1985_b_Table1,Cheirogaleus major,,47177.0,Cheirogaleus major,Cheirogaleus major,NCBI
+Matano_etal_1985_b_Table1,Cheirogaleus medius,,9460.0,Cheirogaleus medius,Cheirogaleus medius,NCBI
+Matano_etal_1985_b_Table1,Colobus badius,Piliocolobus badius,164648.0,Piliocolobus badius,Piliocolobus badius,curated
+Matano_etal_1985_b_Table1,Daubentonia madagasc.,Daubentonia madagascariensis,,,Daubentonia madagascariensis,curated
+Matano_etal_1985_b_Table1,Echinops telfairi,,9371.0,Echinops telfairi,Echinops telfairi,NCBI
+Matano_etal_1985_b_Table1,Erythrocebus patas,,9538.0,Erythrocebus patas,Erythrocebus patas,NCBI
+Matano_etal_1985_b_Table1,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Matano_etal_1985_b_Table1,Galagoides demidoff,,89672.0,Galagoides demidoff,Galagoides demidoff,NCBI
+Matano_etal_1985_b_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Matano_etal_1985_b_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Matano_etal_1985_b_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Matano_etal_1985_b_Table1,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Matano_etal_1985_b_Table1,Lagothrix lagothricha,,,,Lagothrix lagothricha,unresolved_raw
+Matano_etal_1985_b_Table1,Lemur fulvus,Eulemur fulvus,13515.0,Eulemur fulvus,Eulemur fulvus,curated
+Matano_etal_1985_b_Table1,Lepilemur ruficaudatus,,78866.0,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI
+Matano_etal_1985_b_Table1,Loris tardigradus,,9468.0,Loris tardigradus,Loris tardigradus,NCBI
+Matano_etal_1985_b_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Matano_etal_1985_b_Table1,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Matano_etal_1985_b_Table1,Miopithecus talapoin,,36231.0,Miopithecus talapoin,Miopithecus talapoin,NCBI
+Matano_etal_1985_b_Table1,Nasalis larvatus,,43780.0,Nasalis larvatus,Nasalis larvatus,NCBI
+Matano_etal_1985_b_Table1,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Matano_etal_1985_b_Table1,Otolemur crassicaudatus,,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI
+Matano_etal_1985_b_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Matano_etal_1985_b_Table1,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+Matano_etal_1985_b_Table1,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Matano_etal_1985_b_Table1,Pithecia monachus,,595220.0,Pithecia monachus,Pithecia monachus,NCBI
+Matano_etal_1985_b_Table1,Propithecus verreauxi,,34825.0,Propithecus verreauxi,Propithecus verreauxi,NCBI
+Matano_etal_1985_b_Table1,Pygathrix nemaeus,,54133.0,Pygathrix nemaeus,Pygathrix nemaeus,NCBI
+Matano_etal_1985_b_Table1,Saguinus midas,,30586.0,Saguinus midas,Saguinus midas,NCBI
+Matano_etal_1985_b_Table1,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Matano_etal_1985_b_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Matano_etal_1985_b_Table1,Tarsius spp.,Tarsius sp.,,,Tarsius sp.,curated
+Matano_etal_1985_b_Table1,Tenrec ecaudatus,,94439.0,Tenrec ecaudatus,Tenrec ecaudatus,NCBI
+Matano_etal_1985_b_Table1,Tupaia glis,,9395.0,Tupaia glis,Tupaia glis,NCBI
+Matano_etal_1985_b_Table1,Urogale everetti,,192726.0,Urogale everetti,Urogale everetti,NCBI
+Matano_etal_1985_b_Table1,Varecia variegata,,9455.0,Varecia variegata,Varecia variegata,NCBI
+Rilling_Insel_1998_Table1,Cebus apella,,9515.0,Sapajus apella,Sapajus apella,NCBI
+Rilling_Insel_1998_Table1,Cercocebus torquatus,,9530.0,Cercocebus torquatus,Cercocebus torquatus,NCBI
+Rilling_Insel_1998_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Rilling_Insel_1998_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Rilling_Insel_1998_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Rilling_Insel_1998_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Rilling_Insel_1998_Table1,Pan paniscus,,9597.0,Pan paniscus,Pan paniscus,NCBI
+Rilling_Insel_1998_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Rilling_Insel_1998_Table1,Papio cynocephalus,,9556.0,Papio cynocephalus,Papio cynocephalus,NCBI
+Rilling_Insel_1998_Table1,Pongo pygmaeus,Pongo sp.,9600.0,Pongo pygmaeus,Pongo sp.,curated
+Rilling_Insel_1998_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Rilling_Insel_1999_Table1,Cebus apella,,9515.0,Sapajus apella,Sapajus apella,NCBI
+Rilling_Insel_1999_Table1,Cercocebus torquatus,,9530.0,Cercocebus torquatus,Cercocebus torquatus,NCBI
+Rilling_Insel_1999_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Rilling_Insel_1999_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Rilling_Insel_1999_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Rilling_Insel_1999_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Rilling_Insel_1999_Table1,Pan paniscus,,9597.0,Pan paniscus,Pan paniscus,NCBI
+Rilling_Insel_1999_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Rilling_Insel_1999_Table1,Papio cynocephalus,,9556.0,Papio cynocephalus,Papio cynocephalus,NCBI
+Rilling_Insel_1999_Table1,Pongo pygmaeus,Pongo sp.,9600.0,Pongo pygmaeus,Pongo sp.,curated
+Rilling_Insel_1999_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Semendeferi_etal_1998_Table2,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Semendeferi_etal_1998_Table2,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Semendeferi_etal_1998_Table2,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Semendeferi_etal_1998_Table2,Pan paniscus,,9597.0,Pan paniscus,Pan paniscus,NCBI
+Semendeferi_etal_1998_Table2,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Semendeferi_etal_1998_Table2,Pongo pygmaeus,Pongo sp.,9600.0,Pongo pygmaeus,Pongo sp.,curated
+Semendeferi_etal_2001_Table2,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Semendeferi_etal_2001_Table2,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Semendeferi_etal_2001_Table2,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Semendeferi_etal_2001_Table2,Pan paniscus,,9597.0,Pan paniscus,Pan paniscus,NCBI
+Semendeferi_etal_2001_Table2,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Semendeferi_etal_2001_Table2,Pongo pygmaeus,Pongo sp.,9600.0,Pongo pygmaeus,Pongo sp.,curated
+Sherwood_etal_2004_TABLEI,Gorilla beringei,Gorilla sp.,499232.0,Gorilla beringei,Gorilla sp.,curated
+Sherwood_etal_2004_TABLEI,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Sherwood_etal_2004_TABLEI,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Sherwood_etal_2004_TABLEI,Pongo pygmaeus,Pongo sp.,9600.0,Pongo pygmaeus,Pongo sp.,curated
+Sherwood_etal_2005_Table1,Alouatta seniculus,,9503.0,Alouatta seniculus,Alouatta seniculus,NCBI
+Sherwood_etal_2005_Table1,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Sherwood_etal_2005_Table1,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Sherwood_etal_2005_Table1,Avahi laniger laniger,Avahi laniger,,,Avahi laniger,curated
+Sherwood_etal_2005_Table1,Avahi laniger occidentalis,Avahi occidentalis,,,Avahi occidentalis,curated
+Sherwood_etal_2005_Table1,Callicebus moloch,Callicebus moloch,9523.0,Plecturocebus moloch,Callicebus moloch,curated
+Sherwood_etal_2005_Table1,Callimico goeldii,,9495.0,Callimico goeldii,Callimico goeldii,NCBI
+Sherwood_etal_2005_Table1,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Sherwood_etal_2005_Table1,Cebuella pygmaea,Callithrix pygmaea,9493.0,Cebuella pygmaea,Callithrix pygmaea,curated
+Sherwood_etal_2005_Table1,Cebus albifrons,,9514.0,Cebus albifrons,Cebus albifrons,NCBI
+Sherwood_etal_2005_Table1,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Sherwood_etal_2005_Table1,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+Sherwood_etal_2005_Table1,Cheirogaleus major,,47177.0,Cheirogaleus major,Cheirogaleus major,NCBI
+Sherwood_etal_2005_Table1,Cheirogaleus medius,,9460.0,Cheirogaleus medius,Cheirogaleus medius,NCBI
+Sherwood_etal_2005_Table1,Daubentonia madagascariensis,,31869.0,Daubentonia madagascariensis,Daubentonia madagascariensis,NCBI
+Sherwood_etal_2005_Table1,Erythrocebus patas,,9538.0,Erythrocebus patas,Erythrocebus patas,NCBI
+Sherwood_etal_2005_Table1,Eulemur fulvus,,13515.0,Eulemur fulvus,Eulemur fulvus,NCBI
+Sherwood_etal_2005_Table1,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Sherwood_etal_2005_Table1,Galagoides demidoff,,89672.0,Galagoides demidoff,Galagoides demidoff,NCBI
+Sherwood_etal_2005_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Sherwood_etal_2005_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Sherwood_etal_2005_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Sherwood_etal_2005_Table1,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Sherwood_etal_2005_Table1,Lagothrix lagothricha,,,,Lagothrix lagothricha,unresolved_raw
+Sherwood_etal_2005_Table1,Lepilemur ruficaudatus,,78866.0,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI
+Sherwood_etal_2005_Table1,Lophocebus albigena,,75567.0,Lophocebus albigena,Lophocebus albigena,NCBI
+Sherwood_etal_2005_Table1,Loris tardigradus,,9468.0,Loris tardigradus,Loris tardigradus,NCBI
+Sherwood_etal_2005_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Sherwood_etal_2005_Table1,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Sherwood_etal_2005_Table1,Miopithecus talapoin,,36231.0,Miopithecus talapoin,Miopithecus talapoin,NCBI
+Sherwood_etal_2005_Table1,Nasalis larvatus,,43780.0,Nasalis larvatus,Nasalis larvatus,NCBI
+Sherwood_etal_2005_Table1,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Sherwood_etal_2005_Table1,Otolemur crassicaudatus,,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI
+Sherwood_etal_2005_Table1,Pan paniscus,,9597.0,Pan paniscus,Pan paniscus,NCBI
+Sherwood_etal_2005_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Sherwood_etal_2005_Table1,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+Sherwood_etal_2005_Table1,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Sherwood_etal_2005_Table1,Pithecia monachus,,595220.0,Pithecia monachus,Pithecia monachus,NCBI
+Sherwood_etal_2005_Table1,Pongo pygmaeus,Pongo sp.,9600.0,Pongo pygmaeus,Pongo sp.,curated
+Sherwood_etal_2005_Table1,Procolobus badius,Piliocolobus badius,164648.0,Piliocolobus badius,Piliocolobus badius,curated
+Sherwood_etal_2005_Table1,Propithecus verreauxi,,34825.0,Propithecus verreauxi,Propithecus verreauxi,NCBI
+Sherwood_etal_2005_Table1,Pygathrix nemaeus,,54133.0,Pygathrix nemaeus,Pygathrix nemaeus,NCBI
+Sherwood_etal_2005_Table1,Saguinus midas,,30586.0,Saguinus midas,Saguinus midas,NCBI
+Sherwood_etal_2005_Table1,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Sherwood_etal_2005_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Sherwood_etal_2005_Table1,Tarsius syrichta,Tarsius sp.,1868482.0,Carlito syrichta,Tarsius sp.,curated
+Sherwood_etal_2005_Table1,Varecia variegata,,9455.0,Varecia variegata,Varecia variegata,NCBI
+Smaers_etal_2011_SupplementaryTable1,Alouatta seniculus,,9503.0,Alouatta seniculus,Alouatta seniculus,NCBI
+Smaers_etal_2011_SupplementaryTable1,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Smaers_etal_2011_SupplementaryTable1,Cebus albifrons,,9514.0,Cebus albifrons,Cebus albifrons,NCBI
+Smaers_etal_2011_SupplementaryTable1,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Smaers_etal_2011_SupplementaryTable1,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+Smaers_etal_2011_SupplementaryTable1,Erythrocebus patas,,9538.0,Erythrocebus patas,Erythrocebus patas,NCBI
+Smaers_etal_2011_SupplementaryTable1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Smaers_etal_2011_SupplementaryTable1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Smaers_etal_2011_SupplementaryTable1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Smaers_etal_2011_SupplementaryTable1,Lagothrix lagothricha,,,,Lagothrix lagothricha,unresolved_raw
+Smaers_etal_2011_SupplementaryTable1,Lophocebus albigena,,75567.0,Lophocebus albigena,Lophocebus albigena,NCBI
+Smaers_etal_2011_SupplementaryTable1,Miopithecus talapoin,,36231.0,Miopithecus talapoin,Miopithecus talapoin,NCBI
+Smaers_etal_2011_SupplementaryTable1,Nasalis larvatus,,43780.0,Nasalis larvatus,Nasalis larvatus,NCBI
+Smaers_etal_2011_SupplementaryTable1,Pan paniscus,,9597.0,Pan paniscus,Pan paniscus,NCBI
+Smaers_etal_2011_SupplementaryTable1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Smaers_etal_2011_SupplementaryTable1,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+Smaers_etal_2011_SupplementaryTable1,Piliocolobus badius,,164648.0,Piliocolobus badius,Piliocolobus badius,NCBI
+Smaers_etal_2011_SupplementaryTable1,Pithecia monachus,,595220.0,Pithecia monachus,Pithecia monachus,NCBI
+Smaers_etal_2011_SupplementaryTable1,Pongo pygmaeus,Pongo sp.,9600.0,Pongo pygmaeus,Pongo sp.,curated
+Stephan_etal_1970_Tables1-6,Aethechinus algirus,Atelerix algirus,30576.0,Atelerix algirus,Atelerix algirus,curated
+Stephan_etal_1970_Tables1-6,Alouatta seniculus,,9503.0,Alouatta seniculus,Alouatta seniculus,NCBI
+Stephan_etal_1970_Tables1-6,Aotes trivirgatus,Aotus trivirgatus,,,Aotus trivirgatus,curated
+Stephan_etal_1970_Tables1-6,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Stephan_etal_1970_Tables1-6,Avahi laniger,,122246.0,Avahi laniger,Avahi laniger,NCBI
+Stephan_etal_1970_Tables1-6,Callicebus moloch,Callicebus moloch,9523.0,Plecturocebus moloch,Callicebus moloch,curated
+Stephan_etal_1970_Tables1-6,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Stephan_etal_1970_Tables1-6,Cebus albifrons,,9514.0,Cebus albifrons,Cebus albifrons,NCBI
+Stephan_etal_1970_Tables1-6,Cebus sp.,,9517.0,Cebus sp.,Cebus sp.,NCBI
+Stephan_etal_1970_Tables1-6,Cercocebus albigena,Lophocebus albigena,75567.0,Lophocebus albigena,Lophocebus albigena,curated
+Stephan_etal_1970_Tables1-6,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Stephan_etal_1970_Tables1-6,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+Stephan_etal_1970_Tables1-6,Cercopithecus talapoin,Miopithecus talapoin,36231.0,Miopithecus talapoin,Miopithecus talapoin,curated
+Stephan_etal_1970_Tables1-6,Cheirogaleus major,,47177.0,Cheirogaleus major,Cheirogaleus major,NCBI
+Stephan_etal_1970_Tables1-6,Cheirogaleus medius,,9460.0,Cheirogaleus medius,Cheirogaleus medius,NCBI
+Stephan_etal_1970_Tables1-6,Chlorotalpa stuhlmanni,Chrysochloris stuhlmanni,,,Chrysochloris stuhlmanni,curated
+Stephan_etal_1970_Tables1-6,Colobus badius,Piliocolobus badius,164648.0,Piliocolobus badius,Piliocolobus badius,curated
+Stephan_etal_1970_Tables1-6,Crocidura occidentalis,,214449.0,Crocidura olivieri,Crocidura olivieri,NCBI
+Stephan_etal_1970_Tables1-6,Crocidura russula,,36802.0,Crocidura russula,Crocidura russula,NCBI
+Stephan_etal_1970_Tables1-6,Daubentonia madagascariensis,,31869.0,Daubentonia madagascariensis,Daubentonia madagascariensis,NCBI
+Stephan_etal_1970_Tables1-6,Desmana moschata,,182682.0,Desmana moschata,Desmana moschata,NCBI
+Stephan_etal_1970_Tables1-6,Echinops telfairi,,9371.0,Echinops telfairi,Echinops telfairi,NCBI
+Stephan_etal_1970_Tables1-6,Elephantulus fuscipes,,483426.0,Elephantulus fuscipes,Elephantulus fuscipes,NCBI
+Stephan_etal_1970_Tables1-6,Erinaceus europaeus,,9365.0,Erinaceus europaeus,Erinaceus europaeus,NCBI
+Stephan_etal_1970_Tables1-6,Galago crassicaudatus,Otolemur crassicaudatus,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,curated
+Stephan_etal_1970_Tables1-6,Galago demidovii,Galagoides demidoff,89672.0,Galagoides demidoff,Galagoides demidoff,curated
+Stephan_etal_1970_Tables1-6,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Stephan_etal_1970_Tables1-6,Galemys pyrenaicus,,202257.0,Galemys pyrenaicus,Galemys pyrenaicus,NCBI
+Stephan_etal_1970_Tables1-6,Gorilla gorilla,,9593.0,Gorilla gorilla,Gorilla gorilla,NCBI
+Stephan_etal_1970_Tables1-6,Hapalemur simus,,1328070.0,Prolemur simus,Prolemur simus,NCBI
+Stephan_etal_1970_Tables1-6,Hemicentetes semispinosus,,319813.0,Hemicentetes semispinosus,Hemicentetes semispinosus,NCBI
+Stephan_etal_1970_Tables1-6,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Stephan_etal_1970_Tables1-6,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Stephan_etal_1970_Tables1-6,Lagothrix logotricha,Lagothrix lagothricha,,,Lagothrix lagothricha,curated
+Stephan_etal_1970_Tables1-6,Lemur fulvus,Eulemur fulvus,13515.0,Eulemur fulvus,Eulemur fulvus,curated
+Stephan_etal_1970_Tables1-6,Lemur variegatus,Varecia variegata,9455.0,Varecia variegata,Varecia variegata,curated
+Stephan_etal_1970_Tables1-6,Lepilemur ruficaudatus,,78866.0,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI
+Stephan_etal_1970_Tables1-6,Limnogale mergulus,Microgale mergulus,319815.0,Limnogale mergulus,Microgale mergulus,curated
+Stephan_etal_1970_Tables1-6,Loris gracilis,Loris tardigradus,,,Loris tardigradus,curated
+Stephan_etal_1970_Tables1-6,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Stephan_etal_1970_Tables1-6,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Stephan_etal_1970_Tables1-6,Neomys fodiens,,62282.0,Neomys fodiens,Neomys fodiens,NCBI
+Stephan_etal_1970_Tables1-6,Nesogale talazaci,,2583312.0,Nesogale talazaci,Nesogale talazaci,NCBI
+Stephan_etal_1970_Tables1-6,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Stephan_etal_1970_Tables1-6,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Stephan_etal_1970_Tables1-6,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Stephan_etal_1970_Tables1-6,Pithecia monacha,Pithecia monachus,,,Pithecia monachus,curated
+Stephan_etal_1970_Tables1-6,Potamogale velox,,176119.0,Potamogale velox,Potamogale velox,NCBI
+Stephan_etal_1970_Tables1-6,Propithecus verreauxi,,34825.0,Propithecus verreauxi,Propithecus verreauxi,NCBI
+Stephan_etal_1970_Tables1-6,Rhynchocyon stuhlmanni,,3036954.0,Rhynchocyon stuhlmanni,Rhynchocyon stuhlmanni,NCBI
+Stephan_etal_1970_Tables1-6,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Stephan_etal_1970_Tables1-6,Saguinus tamarin,Saguinus midas,,,Saguinus midas,curated
+Stephan_etal_1970_Tables1-6,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Stephan_etal_1970_Tables1-6,Setifer setosus,,319819.0,Setifer setosus,Setifer setosus,NCBI
+Stephan_etal_1970_Tables1-6,Solenodon paradoxus,,79805.0,Solenodon paradoxus,Solenodon paradoxus,NCBI
+Stephan_etal_1970_Tables1-6,Sorex araneus,,42254.0,Sorex araneus,Sorex araneus,NCBI
+Stephan_etal_1970_Tables1-6,Sorex minutus,,62280.0,Sorex minutus,Sorex minutus,NCBI
+Stephan_etal_1970_Tables1-6,Suncus murinus,,9378.0,Suncus murinus,Suncus murinus,NCBI
+Stephan_etal_1970_Tables1-6,Talpa europaea,,9375.0,Talpa europaea,Talpa europaea,NCBI
+Stephan_etal_1970_Tables1-6,Tarsius syrichta,,1868482.0,Carlito syrichta,Carlito syrichta,NCBI
+Stephan_etal_1970_Tables1-6,Tenrec ecaudatus,,94439.0,Tenrec ecaudatus,Tenrec ecaudatus,NCBI
+Stephan_etal_1970_Tables1-6,Tupaia glis,,9395.0,Tupaia glis,Tupaia glis,NCBI
+Stephan_etal_1970_Tables1-6,Urogale everetti,,192726.0,Urogale everetti,Urogale everetti,NCBI
+Stephan_etal_1981_TablesI-VI,Aethechinus algirus,Atelerix algirus,30576.0,Atelerix algirus,Atelerix algirus,curated
+Stephan_etal_1981_TablesI-VI,Alouatta sp.,Alouatta seniculus,,,Alouatta seniculus,curated
+Stephan_etal_1981_TablesI-VI,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Stephan_etal_1981_TablesI-VI,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Stephan_etal_1981_TablesI-VI,Avahi l. laniger,Avahi laniger,,,Avahi laniger,curated
+Stephan_etal_1981_TablesI-VI,Avahi laniger occidentalis,Avahi occidentalis,,,Avahi occidentalis,curated
+Stephan_etal_1981_TablesI-VI,Callicebus moloch,Callicebus moloch,9523.0,Plecturocebus moloch,Callicebus moloch,curated
+Stephan_etal_1981_TablesI-VI,Callimico goeldii,,9495.0,Callimico goeldii,Callimico goeldii,NCBI
+Stephan_etal_1981_TablesI-VI,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Stephan_etal_1981_TablesI-VI,Cebuella pygmaea,Callithrix pygmaea,9493.0,Cebuella pygmaea,Callithrix pygmaea,curated
+Stephan_etal_1981_TablesI-VI,Cebus sp.,Cebus albifrons,9517.0,Cebus sp.,Cebus albifrons,curated
+Stephan_etal_1981_TablesI-VI,Cercocebus albigena,Lophocebus albigena,75567.0,Lophocebus albigena,Lophocebus albigena,curated
+Stephan_etal_1981_TablesI-VI,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Stephan_etal_1981_TablesI-VI,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+Stephan_etal_1981_TablesI-VI,Cercopithecus talapoin,Miopithecus talapoin,36231.0,Miopithecus talapoin,Miopithecus talapoin,curated
+Stephan_etal_1981_TablesI-VI,Cheirogaleus major,,47177.0,Cheirogaleus major,Cheirogaleus major,NCBI
+Stephan_etal_1981_TablesI-VI,Cheirogaleus medius,,9460.0,Cheirogaleus medius,Cheirogaleus medius,NCBI
+Stephan_etal_1981_TablesI-VI,Chlorotalpa stuhlmanni,Chrysochloris stuhlmanni,,,Chrysochloris stuhlmanni,curated
+Stephan_etal_1981_TablesI-VI,Chrysochloris asiatica,,185453.0,Chrysochloris asiatica,Chrysochloris asiatica,NCBI
+Stephan_etal_1981_TablesI-VI,Colobus badius,Piliocolobus badius,164648.0,Piliocolobus badius,Piliocolobus badius,curated
+Stephan_etal_1981_TablesI-VI,Crocidura occidentalis,Crocidura flavescens,214449.0,Crocidura olivieri,Crocidura flavescens,curated
+Stephan_etal_1981_TablesI-VI,Crocidura russula,,36802.0,Crocidura russula,Crocidura russula,NCBI
+Stephan_etal_1981_TablesI-VI,Daubentonia madagascar.,Daubentonia madagascariensis,,,Daubentonia madagascariensis,curated
+Stephan_etal_1981_TablesI-VI,Desmana moschata,,182682.0,Desmana moschata,Desmana moschata,NCBI
+Stephan_etal_1981_TablesI-VI,Echinops telfairi,,9371.0,Echinops telfairi,Echinops telfairi,NCBI
+Stephan_etal_1981_TablesI-VI,Elephantulus fuscipes,,483426.0,Elephantulus fuscipes,Elephantulus fuscipes,NCBI
+Stephan_etal_1981_TablesI-VI,Erinaceus europaeus,,9365.0,Erinaceus europaeus,Erinaceus europaeus,NCBI
+Stephan_etal_1981_TablesI-VI,Erythrocebus patas,,9538.0,Erythrocebus patas,Erythrocebus patas,NCBI
+Stephan_etal_1981_TablesI-VI,Galago crassicaudatus,Otolemur crassicaudatus,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,curated
+Stephan_etal_1981_TablesI-VI,Galago demidovii,Galagoides demidoff,89672.0,Galagoides demidoff,Galagoides demidoff,curated
+Stephan_etal_1981_TablesI-VI,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Stephan_etal_1981_TablesI-VI,Galemys pyrenaicus,,202257.0,Galemys pyrenaicus,Galemys pyrenaicus,NCBI
+Stephan_etal_1981_TablesI-VI,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Stephan_etal_1981_TablesI-VI,Hemicentetes semispinosus,,319813.0,Hemicentetes semispinosus,Hemicentetes semispinosus,NCBI
+Stephan_etal_1981_TablesI-VI,Hemiechinus auritus,,217708.0,Hemiechinus auritus,Hemiechinus auritus,NCBI
+Stephan_etal_1981_TablesI-VI,Homo sapiens sapiens,Homo sapiens,,,Homo sapiens,curated
+Stephan_etal_1981_TablesI-VI,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Stephan_etal_1981_TablesI-VI,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Stephan_etal_1981_TablesI-VI,Lagothrix lagotricha,Lagothrix lagothricha,9519.0,Lagothrix lagotricha,Lagothrix lagothricha,curated
+Stephan_etal_1981_TablesI-VI,Lemur fulvus,Eulemur fulvus,13515.0,Eulemur fulvus,Eulemur fulvus,curated
+Stephan_etal_1981_TablesI-VI,Lemur variegatus,Varecia variegata,9455.0,Varecia variegata,Varecia variegata,curated
+Stephan_etal_1981_TablesI-VI,Lepilemur ruficaudatus,,78866.0,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI
+Stephan_etal_1981_TablesI-VI,Limnogale mergulus,Microgale mergulus,319815.0,Limnogale mergulus,Microgale mergulus,curated
+Stephan_etal_1981_TablesI-VI,Loris tardigradus,,9468.0,Loris tardigradus,Loris tardigradus,NCBI
+Stephan_etal_1981_TablesI-VI,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Stephan_etal_1981_TablesI-VI,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Stephan_etal_1981_TablesI-VI,Microgale cowani,,329863.0,Microgale cowani,Microgale cowani,NCBI
+Stephan_etal_1981_TablesI-VI,Micropotamogale lamottei,,105689.0,Micropotamogale lamottei,Micropotamogale lamottei,NCBI
+Stephan_etal_1981_TablesI-VI,Nasalis larvatus,,43780.0,Nasalis larvatus,Nasalis larvatus,NCBI
+Stephan_etal_1981_TablesI-VI,Neomys fodiens,,62282.0,Neomys fodiens,Neomys fodiens,NCBI
+Stephan_etal_1981_TablesI-VI,Nesogale dobsoni,,2583311.0,Nesogale dobsoni,Nesogale dobsoni,NCBI
+Stephan_etal_1981_TablesI-VI,Nesogale talazaci,,2583312.0,Nesogale talazaci,Nesogale talazaci,NCBI
+Stephan_etal_1981_TablesI-VI,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Stephan_etal_1981_TablesI-VI,Oryzorictes talpoides,Oryzorictes hova,319817.0,Oryzorictes hova,Oryzorictes hova,curated
+Stephan_etal_1981_TablesI-VI,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Stephan_etal_1981_TablesI-VI,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+Stephan_etal_1981_TablesI-VI,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Stephan_etal_1981_TablesI-VI,Pithecia monacha,Pithecia monachus,,,Pithecia monachus,curated
+Stephan_etal_1981_TablesI-VI,Potamogale velox,,176119.0,Potamogale velox,Potamogale velox,NCBI
+Stephan_etal_1981_TablesI-VI,Propithecus verreauxi,,34825.0,Propithecus verreauxi,Propithecus verreauxi,NCBI
+Stephan_etal_1981_TablesI-VI,Pygathrix nemaeus,,54133.0,Pygathrix nemaeus,Pygathrix nemaeus,NCBI
+Stephan_etal_1981_TablesI-VI,Rhynchocyon stuhlmanni,Rhynchocyon cirnei,3036954.0,Rhynchocyon stuhlmanni,Rhynchocyon cirnei,curated
+Stephan_etal_1981_TablesI-VI,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Stephan_etal_1981_TablesI-VI,Saguinus tamarin,Saguinus midas,,,Saguinus midas,curated
+Stephan_etal_1981_TablesI-VI,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Stephan_etal_1981_TablesI-VI,Setifer setosus,,319819.0,Setifer setosus,Setifer setosus,NCBI
+Stephan_etal_1981_TablesI-VI,Solenodon paradoxus,,79805.0,Solenodon paradoxus,Solenodon paradoxus,NCBI
+Stephan_etal_1981_TablesI-VI,Sorex araneus,,42254.0,Sorex araneus,Sorex araneus,NCBI
+Stephan_etal_1981_TablesI-VI,Sorex minutus,,62280.0,Sorex minutus,Sorex minutus,NCBI
+Stephan_etal_1981_TablesI-VI,Suncus murinus,,9378.0,Suncus murinus,Suncus murinus,NCBI
+Stephan_etal_1981_TablesI-VI,Talpa europaea,,9375.0,Talpa europaea,Talpa europaea,NCBI
+Stephan_etal_1981_TablesI-VI,Tarsius sp.,,30612.0,Tarsius sp.,Tarsius sp.,NCBI
+Stephan_etal_1981_TablesI-VI,Tenrec ecaudatus,,94439.0,Tenrec ecaudatus,Tenrec ecaudatus,NCBI
+Stephan_etal_1981_TablesI-VI,Tupaia glis,,9395.0,Tupaia glis,Tupaia glis,NCBI
+Stephan_etal_1981_TablesI-VI,Tupaia minor,,143289.0,Tupaia minor,Tupaia minor,NCBI
+Stephan_etal_1981_TablesI-VI,Urogale everetti,,192726.0,Urogale everetti,Urogale everetti,NCBI
+Stephan_etal_1982_Table1,Alouatta sp.,Alouatta seniculus,,,Alouatta seniculus,curated
+Stephan_etal_1982_Table1,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Stephan_etal_1982_Table1,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Stephan_etal_1982_Table1,Avahi laniger lan.,Avahi laniger,,,Avahi laniger,curated
+Stephan_etal_1982_Table1,Avahi laniger occ.,Avahi occidentalis,,,Avahi occidentalis,curated
+Stephan_etal_1982_Table1,Callicebus moloch,,9523.0,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Stephan_etal_1982_Table1,Callimico goeldii,,9495.0,Callimico goeldii,Callimico goeldii,NCBI
+Stephan_etal_1982_Table1,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Stephan_etal_1982_Table1,Cebuella pygmaea,Callithrix pygmaea,9493.0,Cebuella pygmaea,Callithrix pygmaea,curated
+Stephan_etal_1982_Table1,Cebus sp.,Cebus albifrons,9517.0,Cebus sp.,Cebus albifrons,curated
+Stephan_etal_1982_Table1,Cheirogaleus major,,47177.0,Cheirogaleus major,Cheirogaleus major,NCBI
+Stephan_etal_1982_Table1,Cheirogaleus medius,,9460.0,Cheirogaleus medius,Cheirogaleus medius,NCBI
+Stephan_etal_1982_Table1,Chrysochl. stuhlm.,Chrysochloris stuhlmanni,,,Chrysochloris stuhlmanni,curated
+Stephan_etal_1982_Table1,Chrysochloris asiat.,Chrysochloris asiatica,,,Chrysochloris asiatica,curated
+Stephan_etal_1982_Table1,Crocidura flavesc.,Crocidura flavescens,,,Crocidura flavescens,curated
+Stephan_etal_1982_Table1,Crocidura russula,,36802.0,Crocidura russula,Crocidura russula,NCBI
+Stephan_etal_1982_Table1,Daubentonia madagas.,Daubentonia madagascariensis,,,Daubentonia madagascariensis,curated
+Stephan_etal_1982_Table1,Desmana moschata,,182682.0,Desmana moschata,Desmana moschata,NCBI
+Stephan_etal_1982_Table1,Echinops telfairi,,9371.0,Echinops telfairi,Echinops telfairi,NCBI
+Stephan_etal_1982_Table1,Elephantulus fuscip.,Elephantulus fuscipes,,,Elephantulus fuscipes,curated
+Stephan_etal_1982_Table1,Erinaceus algirus,Atelerix algirus,30576.0,Atelerix algirus,Atelerix algirus,curated
+Stephan_etal_1982_Table1,Erinaceus europaeus,,9365.0,Erinaceus europaeus,Erinaceus europaeus,NCBI
+Stephan_etal_1982_Table1,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Stephan_etal_1982_Table1,Galagoides demid.,Galagoides demidoff,,,Galagoides demidoff,curated
+Stephan_etal_1982_Table1,Galemys pyrenaicus,,202257.0,Galemys pyrenaicus,Galemys pyrenaicus,NCBI
+Stephan_etal_1982_Table1,Hemicentetes semisp.,Hemicentetes semispinosus,,,Hemicentetes semispinosus,curated
+Stephan_etal_1982_Table1,Hemiechinus auritus,,217708.0,Hemiechinus auritus,Hemiechinus auritus,NCBI
+Stephan_etal_1982_Table1,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Stephan_etal_1982_Table1,Lagothrix lagothr.,Lagothrix lagothricha,,,Lagothrix lagothricha,curated
+Stephan_etal_1982_Table1,Lemur albifrons,Eulemur fulvus,1215604.0,Eulemur albifrons,Eulemur fulvus,curated
+Stephan_etal_1982_Table1,Lepilemur ruficaud.,Lepilemur ruficaudatus,,,Lepilemur ruficaudatus,curated
+Stephan_etal_1982_Table1,Limnogale mergulus,Microgale mergulus,319815.0,Limnogale mergulus,Microgale mergulus,curated
+Stephan_etal_1982_Table1,Loris tardigradus,,9468.0,Loris tardigradus,Loris tardigradus,NCBI
+Stephan_etal_1982_Table1,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Stephan_etal_1982_Table1,Microgale cowani,,329863.0,Microgale cowani,Microgale cowani,NCBI
+Stephan_etal_1982_Table1,Microgale dobsoni,Nesogale dobsoni,2583311.0,Nesogale dobsoni,Nesogale dobsoni,curated
+Stephan_etal_1982_Table1,Microgale talazaci,Nesogale talazaci,2583312.0,Nesogale talazaci,Nesogale talazaci,curated
+Stephan_etal_1982_Table1,Micropotamogale lam.,Micropotamogale lamottei,,,Micropotamogale lamottei,curated
+Stephan_etal_1982_Table1,Neomys fodiens,,62282.0,Neomys fodiens,Neomys fodiens,NCBI
+Stephan_etal_1982_Table1,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Stephan_etal_1982_Table1,Oryzorictes talpoid.,Oryzorictes hova,,,Oryzorictes hova,curated
+Stephan_etal_1982_Table1,Otolemur crassic.,Otolemur crassicaudatus,,,Otolemur crassicaudatus,curated
+Stephan_etal_1982_Table1,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Stephan_etal_1982_Table1,Pithecia monachus,,595220.0,Pithecia monachus,Pithecia monachus,NCBI
+Stephan_etal_1982_Table1,Potamogale velox,,176119.0,Potamogale velox,Potamogale velox,NCBI
+Stephan_etal_1982_Table1,Propithecus verreau.,Propithecus verreauxi,,,Propithecus verreauxi,curated
+Stephan_etal_1982_Table1,Rhynchocyon cirnei,,473867.0,Rhynchocyon cirnei,Rhynchocyon cirnei,NCBI
+Stephan_etal_1982_Table1,Saguinus midas,,30586.0,Saguinus midas,Saguinus midas,NCBI
+Stephan_etal_1982_Table1,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Stephan_etal_1982_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Stephan_etal_1982_Table1,Setifer setosus,,319819.0,Setifer setosus,Setifer setosus,NCBI
+Stephan_etal_1982_Table1,Solenodon paradoxus,,79805.0,Solenodon paradoxus,Solenodon paradoxus,NCBI
+Stephan_etal_1982_Table1,Sorex araneus,,42254.0,Sorex araneus,Sorex araneus,NCBI
+Stephan_etal_1982_Table1,Sorex minutus,,62280.0,Sorex minutus,Sorex minutus,NCBI
+Stephan_etal_1982_Table1,Suncus murinus,,9378.0,Suncus murinus,Suncus murinus,NCBI
+Stephan_etal_1982_Table1,Talpa europaea,,9375.0,Talpa europaea,Talpa europaea,NCBI
+Stephan_etal_1982_Table1,Tarsius sp.,,30612.0,Tarsius sp.,Tarsius sp.,NCBI
+Stephan_etal_1982_Table1,Tenrec ecaudatus,,94439.0,Tenrec ecaudatus,Tenrec ecaudatus,NCBI
+Stephan_etal_1982_Table1,Tupaia glis,,9395.0,Tupaia glis,Tupaia glis,NCBI
+Stephan_etal_1982_Table1,Urogale everetti,,192726.0,Urogale everetti,Urogale everetti,NCBI
+Stephan_etal_1982_Table1,Varecia variegata,,9455.0,Varecia variegata,Varecia variegata,NCBI
+Stephan_etal_1984_Table1,Aethechinus algirus,Atelerix algirus,30576.0,Atelerix algirus,Atelerix algirus,curated
+Stephan_etal_1984_Table1,Alouatta spp.,Alouatta seniculus,,,Alouatta seniculus,curated
+Stephan_etal_1984_Table1,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Stephan_etal_1984_Table1,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Stephan_etal_1984_Table1,Avahi l. laniger,Avahi laniger,,,Avahi laniger,curated
+Stephan_etal_1984_Table1,Avahi l. occidentalis,Avahi occidentalis,,,Avahi occidentalis,curated
+Stephan_etal_1984_Table1,Callicebus moloch,,9523.0,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Stephan_etal_1984_Table1,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Stephan_etal_1984_Table1,Cebus spp.,Cebus albifrons,,,Cebus albifrons,curated
+Stephan_etal_1984_Table1,Cercocebus albigena,Lophocebus albigena,75567.0,Lophocebus albigena,Lophocebus albigena,curated
+Stephan_etal_1984_Table1,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Stephan_etal_1984_Table1,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+Stephan_etal_1984_Table1,Cheirogaleus major,,47177.0,Cheirogaleus major,Cheirogaleus major,NCBI
+Stephan_etal_1984_Table1,Cheirogaleus medius,,9460.0,Cheirogaleus medius,Cheirogaleus medius,NCBI
+Stephan_etal_1984_Table1,Colobus badius,Piliocolobus badius,164648.0,Piliocolobus badius,Piliocolobus badius,curated
+Stephan_etal_1984_Table1,Crocidura occidentalis,Crocidura flavescens,214449.0,Crocidura olivieri,Crocidura flavescens,curated
+Stephan_etal_1984_Table1,Crocidura russula,,36802.0,Crocidura russula,Crocidura russula,NCBI
+Stephan_etal_1984_Table1,Daubentonia madagascar.,Daubentonia madagascariensis,,,Daubentonia madagascariensis,curated
+Stephan_etal_1984_Table1,Echinops telfairi,,9371.0,Echinops telfairi,Echinops telfairi,NCBI
+Stephan_etal_1984_Table1,Erinaceus europaeus,,9365.0,Erinaceus europaeus,Erinaceus europaeus,NCBI
+Stephan_etal_1984_Table1,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Stephan_etal_1984_Table1,Galagoides demidoff,,89672.0,Galagoides demidoff,Galagoides demidoff,NCBI
+Stephan_etal_1984_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Stephan_etal_1984_Table1,Hemicentetes semispin.,Hemicentetes semispinosus,,,Hemicentetes semispinosus,curated
+Stephan_etal_1984_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Stephan_etal_1984_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Stephan_etal_1984_Table1,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Stephan_etal_1984_Table1,Lagothrix lagothricha,,,,Lagothrix lagothricha,unresolved_raw
+Stephan_etal_1984_Table1,Lemur albifrons,Eulemur fulvus,1215604.0,Eulemur albifrons,Eulemur fulvus,curated
+Stephan_etal_1984_Table1,Lepilemur ruficaudatus,,78866.0,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI
+Stephan_etal_1984_Table1,Loris tardigradus,,9468.0,Loris tardigradus,Loris tardigradus,NCBI
+Stephan_etal_1984_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Stephan_etal_1984_Table1,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Stephan_etal_1984_Table1,Miopithecus talapoin,,36231.0,Miopithecus talapoin,Miopithecus talapoin,NCBI
+Stephan_etal_1984_Table1,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Stephan_etal_1984_Table1,Otolemur crassicaudatus,,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI
+Stephan_etal_1984_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Stephan_etal_1984_Table1,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+Stephan_etal_1984_Table1,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Stephan_etal_1984_Table1,Pithecia monachus,,595220.0,Pithecia monachus,Pithecia monachus,NCBI
+Stephan_etal_1984_Table1,Propithecus verreauxi,,34825.0,Propithecus verreauxi,Propithecus verreauxi,NCBI
+Stephan_etal_1984_Table1,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Stephan_etal_1984_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Stephan_etal_1984_Table1,Setifer setosus,,319819.0,Setifer setosus,Setifer setosus,NCBI
+Stephan_etal_1984_Table1,Sorex araneus,,42254.0,Sorex araneus,Sorex araneus,NCBI
+Stephan_etal_1984_Table1,Sorex minutus,,62280.0,Sorex minutus,Sorex minutus,NCBI
+Stephan_etal_1984_Table1,Suncus murinus,,9378.0,Suncus murinus,Suncus murinus,NCBI
+Stephan_etal_1984_Table1,Tarsius spp.,Tarsius sp.,,,Tarsius sp.,curated
+Stephan_etal_1984_Table1,Tenrec ecaudatus,,94439.0,Tenrec ecaudatus,Tenrec ecaudatus,NCBI
+Stephan_etal_1984_Table1,Tupaia glis,,9395.0,Tupaia glis,Tupaia glis,NCBI
+Stephan_etal_1984_Table1,Tupaia minor,,143289.0,Tupaia minor,Tupaia minor,NCBI
+Stephan_etal_1984_Table1,Urogale everetti,,192726.0,Urogale everetti,Urogale everetti,NCBI
+Stephan_etal_1984_Table1,Varecia variegata,,9455.0,Varecia variegata,Varecia variegata,NCBI
+Stephan_etal_1987_Table1,Alouatta seniculus,,9503.0,Alouatta seniculus,Alouatta seniculus,NCBI
+Stephan_etal_1987_Table1,Aotus trivirgatua,Aotus trivirgatus,,,Aotus trivirgatus,curated
+Stephan_etal_1987_Table1,Ateles geoffroyi,,9509.0,Ateles geoffroyi,Ateles geoffroyi,NCBI
+Stephan_etal_1987_Table1,Avahi l. laniger,Avahi laniger,,,Avahi laniger,curated
+Stephan_etal_1987_Table1,Avahi l. occidentalis,Avahi occidentalis,,,Avahi occidentalis,curated
+Stephan_etal_1987_Table1,Blarina brevicauda,,9387.0,Blarina brevicauda,Blarina brevicauda,NCBI
+Stephan_etal_1987_Table1,Callicebus moloch,,9523.0,Plecturocebus moloch,Plecturocebus moloch,NCBI
+Stephan_etal_1987_Table1,Callimico goeldii,,9495.0,Callimico goeldii,Callimico goeldii,NCBI
+Stephan_etal_1987_Table1,Callithrix jacchus,,9483.0,Callithrix jacchus,Callithrix jacchus,NCBI
+Stephan_etal_1987_Table1,Cebuella pygmaea,Callithrix pygmaea,9493.0,Cebuella pygmaea,Callithrix pygmaea,curated
+Stephan_etal_1987_Table1,Cebus albifrons,,9514.0,Cebus albifrons,Cebus albifrons,NCBI
+Stephan_etal_1987_Table1,Cercocebus albigena,Lophocebus albigena,75567.0,Lophocebus albigena,Lophocebus albigena,curated
+Stephan_etal_1987_Table1,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+Stephan_etal_1987_Table1,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+Stephan_etal_1987_Table1,Cheirogaleus major,,47177.0,Cheirogaleus major,Cheirogaleus major,NCBI
+Stephan_etal_1987_Table1,Cheirogaleus medius,,9460.0,Cheirogaleus medius,Cheirogaleus medius,NCBI
+Stephan_etal_1987_Table1,Chrysochloris asiatica,,185453.0,Chrysochloris asiatica,Chrysochloris asiatica,NCBI
+Stephan_etal_1987_Table1,Chrysochloris stuhlmanni,,185454.0,Chrysochloris stuhlmanni,Chrysochloris stuhlmanni,NCBI
+Stephan_etal_1987_Table1,Colobus badius,Piliocolobus badius,164648.0,Piliocolobus badius,Piliocolobus badius,curated
+Stephan_etal_1987_Table1,Crocidura flavescens,,214442.0,Crocidura flavescens,Crocidura flavescens,NCBI
+Stephan_etal_1987_Table1,Crocidura hildegardeae,,148965.0,Crocidura hildegardeae,Crocidura hildegardeae,NCBI
+Stephan_etal_1987_Table1,Crocidura jacksoni,,,,Crocidura jacksoni,unresolved_raw
+Stephan_etal_1987_Table1,Crocidura russula,,36802.0,Crocidura russula,Crocidura russula,NCBI
+Stephan_etal_1987_Table1,Daubentonia madagasc.,Daubentonia madagascariensis,,,Daubentonia madagascariensis,curated
+Stephan_etal_1987_Table1,Desmana moschata,,182682.0,Desmana moschata,Desmana moschata,NCBI
+Stephan_etal_1987_Table1,Echinops telfairi,,9371.0,Echinops telfairi,Echinops telfairi,NCBI
+Stephan_etal_1987_Table1,Elephantulus fuscipes,,483426.0,Elephantulus fuscipes,Elephantulus fuscipes,NCBI
+Stephan_etal_1987_Table1,Erinaceus algirus,Atelerix algirus,30576.0,Atelerix algirus,Atelerix algirus,curated
+Stephan_etal_1987_Table1,Erinaceus europaeus,,9365.0,Erinaceus europaeus,Erinaceus europaeus,NCBI
+Stephan_etal_1987_Table1,Erythrocebus patas,,9538.0,Erythrocebus patas,Erythrocebus patas,NCBI
+Stephan_etal_1987_Table1,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Stephan_etal_1987_Table1,Galagoides demidoff,,89672.0,Galagoides demidoff,Galagoides demidoff,NCBI
+Stephan_etal_1987_Table1,Galemys pyrenaicus,,202257.0,Galemys pyrenaicus,Galemys pyrenaicus,NCBI
+Stephan_etal_1987_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+Stephan_etal_1987_Table1,Hemicentetes semispinosus,,319813.0,Hemicentetes semispinosus,Hemicentetes semispinosus,NCBI
+Stephan_etal_1987_Table1,Hemiechinus auritus,,217708.0,Hemiechinus auritus,Hemiechinus auritus,NCBI
+Stephan_etal_1987_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Stephan_etal_1987_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Stephan_etal_1987_Table1,Indri indri,,34827.0,Indri indri,Indri indri,NCBI
+Stephan_etal_1987_Table1,Lagothrix lagothricha,,,,Lagothrix lagothricha,unresolved_raw
+Stephan_etal_1987_Table1,Lemur albifrons,Eulemur fulvus,1215604.0,Eulemur albifrons,Eulemur fulvus,curated
+Stephan_etal_1987_Table1,Lepilemur ruficaudatus,,78866.0,Lepilemur ruficaudatus,Lepilemur ruficaudatus,NCBI
+Stephan_etal_1987_Table1,Limnogale mergulus,Microgale mergulus,319815.0,Limnogale mergulus,Microgale mergulus,curated
+Stephan_etal_1987_Table1,Loris tardigradus,,9468.0,Loris tardigradus,Loris tardigradus,NCBI
+Stephan_etal_1987_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Stephan_etal_1987_Table1,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Stephan_etal_1987_Table1,Microgale cowani,,329863.0,Microgale cowani,Microgale cowani,NCBI
+Stephan_etal_1987_Table1,Microgale dobsoni,Nesogale dobsoni,2583311.0,Nesogale dobsoni,Nesogale dobsoni,curated
+Stephan_etal_1987_Table1,Microgale talazaci,Nesogale talazaci,2583312.0,Nesogale talazaci,Nesogale talazaci,curated
+Stephan_etal_1987_Table1,Micropotamogale lamottei,,105689.0,Micropotamogale lamottei,Micropotamogale lamottei,NCBI
+Stephan_etal_1987_Table1,Micropotamogale ruwenzorii,,1833875.0,Micropotamogale ruwenzorii,Micropotamogale ruwenzorii,NCBI
+Stephan_etal_1987_Table1,Microsorex hoyi,,,,Microsorex hoyi,unresolved_raw
+Stephan_etal_1987_Table1,Miopithecus talapoin,,36231.0,Miopithecus talapoin,Miopithecus talapoin,NCBI
+Stephan_etal_1987_Table1,Myosorex babaulti,,1378275.0,Myosorex babaulti,Myosorex babaulti,NCBI
+Stephan_etal_1987_Table1,Nasalis larvatus,,43780.0,Nasalis larvatus,Nasalis larvatus,NCBI
+Stephan_etal_1987_Table1,Neomys fodiens,,62282.0,Neomys fodiens,Neomys fodiens,NCBI
+Stephan_etal_1987_Table1,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Stephan_etal_1987_Table1,Oryzorictes talpoides,Oryzorictes hova,319817.0,Oryzorictes hova,Oryzorictes hova,curated
+Stephan_etal_1987_Table1,Otolemur crassicaudatus,,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI
+Stephan_etal_1987_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Stephan_etal_1987_Table1,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+Stephan_etal_1987_Table1,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Stephan_etal_1987_Table1,Pithecia monachus,,595220.0,Pithecia monachus,Pithecia monachus,NCBI
+Stephan_etal_1987_Table1,Potamogale velox,,176119.0,Potamogale velox,Potamogale velox,NCBI
+Stephan_etal_1987_Table1,Propithecus verreauxi,,34825.0,Propithecus verreauxi,Propithecus verreauxi,NCBI
+Stephan_etal_1987_Table1,Pygathrix nemaeus,,54133.0,Pygathrix nemaeus,Pygathrix nemaeus,NCBI
+Stephan_etal_1987_Table1,Rhynchocyon cirnei,,473867.0,Rhynchocyon cirnei,Rhynchocyon cirnei,NCBI
+Stephan_etal_1987_Table1,Ruwenzorisorex suncoides,,150086.0,Ruwenzorisorex suncoides,Ruwenzorisorex suncoides,NCBI
+Stephan_etal_1987_Table1,Saguinus midas tamarin,Saguinus midas,,,Saguinus midas,curated
+Stephan_etal_1987_Table1,Saguinus oedipus,,9490.0,Saguinus oedipus,Saguinus oedipus,NCBI
+Stephan_etal_1987_Table1,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Stephan_etal_1987_Table1,Scutisorex somereni,Scutisorex somereni,150088.0,Scutisorex somereni,Scutisorex somereni,curated
+Stephan_etal_1987_Table1,Setifer setosus,,319819.0,Setifer setosus,Setifer setosus,NCBI
+Stephan_etal_1987_Table1,Solenodon paradoxus,,79805.0,Solenodon paradoxus,Solenodon paradoxus,NCBI
+Stephan_etal_1987_Table1,Sorex araneus,,42254.0,Sorex araneus,Sorex araneus,NCBI
+Stephan_etal_1987_Table1,Sorex cinereus,,36803.0,Sorex cinereus,Sorex cinereus,NCBI
+Stephan_etal_1987_Table1,Sorex fumeus,,62283.0,Sorex fumeus,Sorex fumeus,NCBI
+Stephan_etal_1987_Table1,Sorex minutus,,62280.0,Sorex minutus,Sorex minutus,NCBI
+Stephan_etal_1987_Table1,Suncus etruscus,,109475.0,Suncus etruscus,Suncus etruscus,NCBI
+Stephan_etal_1987_Table1,Suncus murinus,,9378.0,Suncus murinus,Suncus murinus,NCBI
+Stephan_etal_1987_Table1,Sylvisorex granti,,307107.0,Sylvisorex granti,Sylvisorex granti,NCBI
+Stephan_etal_1987_Table1,Sylvisorex megalura,Suncus megalura,458326.0,Suncus megalura,Suncus megalura,curated
+Stephan_etal_1987_Table1,Talpa europaea,,9375.0,Talpa europaea,Talpa europaea,NCBI
+Stephan_etal_1987_Table1,Tarsius spp.,Tarsius sp.,,,Tarsius sp.,curated
+Stephan_etal_1987_Table1,Tenrec ecaudatus,,94439.0,Tenrec ecaudatus,Tenrec ecaudatus,NCBI
+Stephan_etal_1987_Table1,Tupaia glis,,9395.0,Tupaia glis,Tupaia glis,NCBI
+Stephan_etal_1987_Table1,Tupaia minor,,143289.0,Tupaia minor,Tupaia minor,NCBI
+Stephan_etal_1987_Table1,Urogale everetti,,192726.0,Urogale everetti,Urogale everetti,NCBI
+Stephan_etal_1987_Table1,Varecia variegata,,9455.0,Varecia variegata,Varecia variegata,NCBI
+Stimpson_etal_2015_TableS1,Pan paniscus,,9597.0,Pan paniscus,Pan paniscus,NCBI
+Stimpson_etal_2015_TableS1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Stimpson_etal_2015_TableS2,Pan paniscus,,9597.0,Pan paniscus,Pan paniscus,NCBI
+Stimpson_etal_2015_TableS2,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Zilles_Rehkämper_1988_Table12-2,Pongo sp.,,9603.0,Pongo sp.,Pongo sp.,NCBI
+deSousa_etal_2010_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+deSousa_etal_2010_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+deSousa_etal_2010_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+deSousa_etal_2010_Table1,Macaca fascicularis,,9541.0,Macaca fascicularis,Macaca fascicularis,NCBI
+deSousa_etal_2010_Table1,Pan paniscus,,9597.0,Pan paniscus,Pan paniscus,NCBI
+deSousa_etal_2010_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+deSousa_etal_2010_Table1,Pongo pygmaeus,Pongo sp.,9600.0,Pongo pygmaeus,Pongo sp.,curated
+deSousa_etal_2010_Table1,Symphalangus syndactylus,,9590.0,Symphalangus syndactylus,Symphalangus syndactylus,NCBI
+deSousa_etal_2013_Table1,Cercopithecus ascanius,,36223.0,Cercopithecus ascanius,Cercopithecus ascanius,NCBI
+deSousa_etal_2013_Table1,Cercopithecus mitis,,36225.0,Cercopithecus mitis,Cercopithecus mitis,NCBI
+deSousa_etal_2013_Table1,Colobus angolensis,,54131.0,Colobus angolensis,Colobus angolensis,NCBI
+deSousa_etal_2013_Table1,Erythrocebus patas,,9538.0,Erythrocebus patas,Erythrocebus patas,NCBI
+deSousa_etal_2013_Table1,Gorilla gorilla,Gorilla sp.,9593.0,Gorilla gorilla,Gorilla sp.,curated
+deSousa_etal_2013_Table1,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+deSousa_etal_2013_Table1,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+deSousa_etal_2013_Table1,Hylobates muelleri,,9588.0,Hylobates muelleri,Hylobates muelleri,NCBI
+deSousa_etal_2013_Table1,Lophocebus albigena,,75567.0,Lophocebus albigena,Lophocebus albigena,NCBI
+deSousa_etal_2013_Table1,Macaca fascicularis,,9541.0,Macaca fascicularis,Macaca fascicularis,NCBI
+deSousa_etal_2013_Table1,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+deSousa_etal_2013_Table1,Miopithecus talapoin,,36231.0,Miopithecus talapoin,Miopithecus talapoin,NCBI
+deSousa_etal_2013_Table1,Nasalis larvatus,,43780.0,Nasalis larvatus,Nasalis larvatus,NCBI
+deSousa_etal_2013_Table1,Pan paniscus,,9597.0,Pan paniscus,Pan paniscus,NCBI
+deSousa_etal_2013_Table1,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+deSousa_etal_2013_Table1,Papio anubis,,9555.0,Papio anubis,Papio anubis,NCBI
+deSousa_etal_2013_Table1,Piliocolobus badius,,164648.0,Piliocolobus badius,Piliocolobus badius,NCBI
+deSousa_etal_2013_Table1,Pongo pygmaeus,Pongo sp.,9600.0,Pongo pygmaeus,Pongo sp.,curated
+deSousa_etal_2013_Table1,Pygathrix nemaeus,,54133.0,Pygathrix nemaeus,Pygathrix nemaeus,NCBI
+Bush_Allman_2004_a_Table2,Ailurus fulgens,,9649.0,Ailurus fulgens,Ailurus fulgens,NCBI
+Bush_Allman_2004_a_Table2,Alouatta palliata,,30589.0,Alouatta palliata,Alouatta palliata,NCBI
+Bush_Allman_2004_a_Table2,Aotus trivirgatus,,9505.0,Aotus trivirgatus,Aotus trivirgatus,NCBI
+Bush_Allman_2004_a_Table2,Applodontia rufa,,,,Applodontia rufa,unresolved_raw
+Bush_Allman_2004_a_Table2,Ateles sp.,,9511.0,Ateles sp.,Ateles sp.,NCBI
+Bush_Allman_2004_a_Table2,Callicebus sp.,,116962.0,Callicebus sp.,Callicebus sp.,NCBI
+Bush_Allman_2004_a_Table2,Canis latrans,,9614.0,Canis latrans,Canis latrans,NCBI
+Bush_Allman_2004_a_Table2,Cercocebus torquatus,,9530.0,Cercocebus torquatus,Cercocebus torquatus,NCBI
+Bush_Allman_2004_a_Table2,Cercopithecus nictitans,,36228.0,Cercopithecus nictitans,Cercopithecus nictitans,NCBI
+Bush_Allman_2004_a_Table2,Cheirogaleus medius,,9460.0,Cheirogaleus medius,Cheirogaleus medius,NCBI
+Bush_Allman_2004_a_Table2,Chinchilla laniger,,,,Chinchilla laniger,unresolved_raw
+Bush_Allman_2004_a_Table2,Choloepus didactylis,,,,Choloepus didactylis,unresolved_raw
+Bush_Allman_2004_a_Table2,Crocuta crocuta,,9678.0,Crocuta crocuta,Crocuta crocuta,NCBI
+Bush_Allman_2004_a_Table2,Cynictis penicillata,,41010.0,Cynictis penicillata,Cynictis penicillata,NCBI
+Bush_Allman_2004_a_Table2,Daubentonia madagascariensis,,31869.0,Daubentonia madagascariensis,Daubentonia madagascariensis,NCBI
+Bush_Allman_2004_a_Table2,Didelphis marsupialis,,9268.0,Didelphis marsupialis,Didelphis marsupialis,NCBI
+Bush_Allman_2004_a_Table2,Equus burchelli,,,,Equus burchelli,unresolved_raw
+Bush_Allman_2004_a_Table2,Eulemur mongoz,,34828.0,Eulemur mongoz,Eulemur mongoz,NCBI
+Bush_Allman_2004_a_Table2,Galago senegalensis,,9465.0,Galago senegalensis,Galago senegalensis,NCBI
+Bush_Allman_2004_a_Table2,Galictis vitatus,,,,Galictis vitatus,unresolved_raw
+Bush_Allman_2004_a_Table2,Homo sapiens,,9606.0,Homo sapiens,Homo sapiens,NCBI
+Bush_Allman_2004_a_Table2,Hylobates lar,,9580.0,Hylobates lar,Hylobates lar,NCBI
+Bush_Allman_2004_a_Table2,Lemur catta,,9447.0,Lemur catta,Lemur catta,NCBI
+Bush_Allman_2004_a_Table2,Llama glama,,,,Llama glama,unresolved_raw
+Bush_Allman_2004_a_Table2,Macaca mulatta,,9544.0,Macaca mulatta,Macaca mulatta,NCBI
+Bush_Allman_2004_a_Table2,Mandrillus sphinx,,9561.0,Mandrillus sphinx,Mandrillus sphinx,NCBI
+Bush_Allman_2004_a_Table2,Marmosa mitis,,,,Marmosa mitis,unresolved_raw
+Bush_Allman_2004_a_Table2,Microcebus murinus,,30608.0,Microcebus murinus,Microcebus murinus,NCBI
+Bush_Allman_2004_a_Table2,Mustela erminea,,36723.0,Mustela erminea,Mustela erminea,NCBI
+Bush_Allman_2004_a_Table2,Mustela putorius,,9668.0,Mustela putorius,Mustela putorius,NCBI
+Bush_Allman_2004_a_Table2,Mustela vison,,452646.0,Neogale vison,Neogale vison,NCBI
+Bush_Allman_2004_a_Table2,Myoxus glis,,41261.0,Glis glis,Glis glis,NCBI
+Bush_Allman_2004_a_Table2,Myrmecophaga tridactyla,,71006.0,Myrmecophaga tridactyla,Myrmecophaga tridactyla,NCBI
+Bush_Allman_2004_a_Table2,Nasua narica,,352831.0,Nasua narica,Nasua narica,NCBI
+Bush_Allman_2004_a_Table2,Nycticebus coucang,,9470.0,Nycticebus coucang,Nycticebus coucang,NCBI
+Bush_Allman_2004_a_Table2,Odocoileus virginianus,,9874.0,Odocoileus virginianus,Odocoileus virginianus,NCBI
+Bush_Allman_2004_a_Table2,Otolemur crassicaudatus,,9463.0,Otolemur crassicaudatus,Otolemur crassicaudatus,NCBI
+Bush_Allman_2004_a_Table2,Pan troglodytes,,9598.0,Pan troglodytes,Pan troglodytes,NCBI
+Bush_Allman_2004_a_Table2,Panthera leo,,9689.0,Panthera leo,Panthera leo,NCBI
+Bush_Allman_2004_a_Table2,Papio hamadryas,,9557.0,Papio hamadryas,Papio hamadryas,NCBI
+Bush_Allman_2004_a_Table2,Perodicticus potto,,9472.0,Perodicticus potto,Perodicticus potto,NCBI
+Bush_Allman_2004_a_Table2,Potos flavus,,29067.0,Potos flavus,Potos flavus,NCBI
+Bush_Allman_2004_a_Table2,Procavia capensis,,9813.0,Procavia capensis,Procavia capensis,NCBI
+Bush_Allman_2004_a_Table2,Procyon lotor,,9654.0,Procyon lotor,Procyon lotor,NCBI
+Bush_Allman_2004_a_Table2,Propithecus verreauxi,,34825.0,Propithecus verreauxi,Propithecus verreauxi,NCBI
+Bush_Allman_2004_a_Table2,Rattus norvegicus,,10116.0,Rattus norvegicus,Rattus norvegicus,NCBI
+Bush_Allman_2004_a_Table2,Saimiri sciureus,,9521.0,Saimiri sciureus,Saimiri sciureus,NCBI
+Bush_Allman_2004_a_Table2,Sciurus carolinensis,,30640.0,Sciurus carolinensis,Sciurus carolinensis,NCBI
+Bush_Allman_2004_a_Table2,Semnopithecus entellus,,88029.0,Semnopithecus entellus,Semnopithecus entellus,NCBI
+Bush_Allman_2004_a_Table2,Tamandua tetradactyla,,48850.0,Tamandua tetradactyla,Tamandua tetradactyla,NCBI
+Bush_Allman_2004_a_Table2,Tarsius sp.,,30612.0,Tarsius sp.,Tarsius sp.,NCBI
+Bush_Allman_2004_a_Table2,Tayassu tajacu,,9829.0,Pecari tajacu,Pecari tajacu,NCBI
+Bush_Allman_2004_a_Table2,Ursus maritimus,,29073.0,Ursus maritimus,Ursus maritimus,NCBI
+Bush_Allman_2004_a_Table2,Vulpes zerda,,68732.0,Vulpes zerda,Vulpes zerda,NCBI
+Bush_Allman_2004_a_Table2,Zalophus californianus,,9704.0,Zalophus californianus,Zalophus californianus,NCBI

@@ -12,9 +12,23 @@ flagged during review (Propithecus, Loris). The **A** recoveries are delivered a
 conversions are wired into `DeCasien_Higham_2019_SupplementaryData1-BrainRegion.R`. Both are
 described in `CHANGES.md`.
 
-All 65 of the 66 annotated rows now resolve off `decasien_only` in the regenerated comparison; the
-single remaining `decasien_only` is Nomascus concolor BV (a class-D misattribution, see below), and
-it is nonetheless explained here.
+All 65 of the 66 annotated rows now resolve off `decasien_only` in the regenerated comparison. The
+Nomascus concolor BV cell (a class-D misattribution, see below) is now also resolved: it and its
+companion Nomascus concolor Amygdala cell were reclassified as
+`decasien_duplicate_of_Hylobates_lar_Disco` (the Disco / GPZ-5542 specimen; see
+`Disco_gibbon_specimen_note.md` and `Disco_gibbon_DeCasien_resolution.md`).
+
+Two `decasien_only` cells remain, both **unrelated to the annotated set and unrelated to Disco**, and
+both are **merge-side ingestion gaps rather than DeCasien errors** (all values reproduce Bush & Allman
+exactly):
+
+- *Cheirogaleus medius* Neocortex (GM) = 890 = Bush & Allman 2004a Table 2 `neo_grey` 0.89 cm3.
+  The merge ingested Bush & Allman 2003 (no *Cheirogaleus*) and 2004b (V1/LGN) but **not** 2004a
+  Table 2, so there is no Bush neocortex cell for *Cheirogaleus* to match. Fix: ingest 2004a Table 2.
+- *Mandrillus sphinx* Neocortex (GM+WM) = 99260 = Bush & Allman 2004a `neo_grey`+`neo_white`
+  (71.33+27.93) cm3. The merge holds the grey (71300) and white (27900) as separate rows but never
+  summed them into a `Neocortex_Vol.mm3` total, so the GM+WM crosswalk has no target. Fix: add a
+  summed GM+WM neocortex for Bush sources (99260 vs 2004a exact; 99200 / 0.06% vs the 2003 components).
 
 ---
 

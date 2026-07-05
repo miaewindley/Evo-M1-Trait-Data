@@ -68,6 +68,7 @@ papers <- tribble(
   "Bauernfeind_etal_2013_Table2",         "Zilles",             2013,
   "Bush_Allman_2003_Table1",              "Bush",               2003,
   "Bush_Allman_2004_b_TABLE1",            "Bush",               2004,
+  "Bush_Allman_2004_a_Table2",            "Bush",               2004,  # ref 55 (frontal/neocortex GM+WM; 55 spp incl. Cheirogaleus/Mandrillus). Derives Neocortex_Vol.mm3 (GM+WM) in the reshape below. Same team 'Bush' as 2003/2004b (Tier-2, averaged).
   "Smaers_etal_2011_SupplementaryTable1", "Zilles",             2011,
   "Ashwell__2020_SupplementaryTable",     "Ashwell",            2020,
   "Semendeferi_etal_1998_Table2",         "Zilles",             1998,
@@ -98,6 +99,7 @@ enc_override <- c(# DOI-coded tables: registry resolves them, but keep DOI-encod
                   # registry rename/case-drift can't silently send them to NA.tsv.
                   "Sherwood_etal_2004_TABLEI"   = "10.1002%2Fajp.20048_TABLEI",
                   "Barks_etal_2014_TABLE1"      = "10.1002%2Fajpa.22646_TABLE1",
+                  "Bush_Allman_2004_a_Table2"   = "10.1073%2Fpnas.0305760101_Table2",
                   "Rilling_Insel_1998_Table1"   = "10.1159%2F000006575_Table1",
                   "Stimpson_etal_2015_TableS1"  = "10.1093%2Fscan%2Fnsv128_TableS1")
 read_item <- function(it) {
@@ -189,6 +191,9 @@ paper_long <- function(row) {
     df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
   if (it == "Bush_Allman_2004_b_TABLE1")                         # cm3 -> mm3 (V1 grey, LGN, whole brain, neocortex grey/white)
     df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
+  if (it == "Bush_Allman_2004_a_Table2")                         # derive combined Neocortex (GM+WM) before the generic cm3->mm3 pass picks it up (term map: neocortex_GMWM_cm3 -> Neocortex_Vol.mm3)
+    df <- df %>% mutate(neocortex_GMWM_cm3 = num(neocortex_grey_cm3) + num(neocortex_white_cm3),
+                        across(ends_with("_cm3"), ~num(.x)*1000))  # whole brain, neocortex grey/white/combined
   if (it == "deSousa_etal_2010_Table1")                          # per-specimen hominoid volumes: cm3 -> mm3 (per-specimen rows collapse to species mean in step 6). V1/LGN are LEFT-only (see laterality_known.csv); neocortex + whole-brain are both-hemisphere.
     df <- df %>% mutate(across(ends_with("_cm3"), ~num(.x)*1000))
   if (it == "Smaers_etal_2011_SupplementaryTable1") {            # per-individual frontal -> species means of COMBINED L+R (cm3->mm3)
@@ -295,20 +300,40 @@ long <- bind_rows(lapply(seq_len(nrow(papers)), function(i) paper_long(papers[i,
 ##        raw variant name, so the same label can resolve differently in different papers;
 ##  (iii) a reviewable mapping table is written (raw -> NCBI -> curated -> final, with flags);
 ##  (iv)  variants that now collapse to one accepted name are aggregated/averaged in steps 5-6.
-library(taxizedb)
 raw  <- long %>% distinct(Source, Species) %>% rename(Species_raw = Species)
 uniq <- sort(unique(raw$Species_raw))
 
-# (a) NCBI backbone (source-independent): preferred scientific name per raw name (NA if unmatched)
-ncbi_ids <- name2taxid(uniq, out_type = "summary")
-ncbi <- tibble(
-  Species_raw = uniq,
-  NCBI_id = ncbi_ids$id[match(uniq, ncbi_ids$name)]
-)
-ncbi_name_vec <- taxid2name(unique(na.omit(ncbi$NCBI_id)), out_type = "summary")
-names(ncbi_name_vec) <- unique(na.omit(ncbi$NCBI_id))
-ncbi <- ncbi %>%
-  mutate(NCBI_name = unname(ncbi_name_vec[as.character(NCBI_id)]))
+# (a) NCBI backbone (source-independent): preferred scientific name per raw name (NA if unmatched).
+# OFFLINE FALLBACK: taxizedb needs a live NCBI taxdump. When it (or the network) is unavailable, read
+# the committed backbone cache volumes_species_ids_cache.csv (raw -> NCBI_id/NCBI_name), so the merge
+# regenerates without network. The cache is refreshed automatically on any successful live run (below).
+cache_file <- "volumes_species_ids_cache.csv"
+have_taxizedb <- suppressWarnings(requireNamespace("taxizedb", quietly = TRUE))
+ncbi_live <- if (have_taxizedb) tryCatch({
+  library(taxizedb)
+  ids <- name2taxid(uniq, out_type = "summary")
+  nm  <- tibble(Species_raw = uniq, NCBI_id = ids$id[match(uniq, ids$name)])
+  nv  <- taxid2name(unique(na.omit(nm$NCBI_id)), out_type = "summary")
+  names(nv) <- unique(na.omit(nm$NCBI_id))
+  nm %>% mutate(NCBI_name = unname(nv[as.character(NCBI_id)]))
+}, error = function(e) { message("taxizedb live resolution failed (", conditionMessage(e),
+                                 ") -> using cache ", cache_file); NULL }) else {
+  message("taxizedb not installed -> using NCBI backbone cache ", cache_file); NULL }
+if (is.null(ncbi_live)) {
+  if (!file.exists(cache_file))
+    stop("Offline species resolution needs ", cache_file, " (taxizedb unavailable and no cache). ",
+         "Run once with taxizedb installed to build it.", call. = FALSE)
+  cache <- read.csv(cache_file, stringsAsFactors = FALSE)
+  ncbi  <- cache %>% distinct(Species_raw, NCBI_id, NCBI_name)
+  miss  <- setdiff(uniq, ncbi$Species_raw)
+  if (length(miss))
+    stop("NCBI backbone cache ", cache_file, " is missing ", length(miss), " raw name(s): ",
+         paste(head(miss, 8), collapse = "; "), ". Refresh the cache with a live taxizedb run.",
+         call. = FALSE)
+  ncbi <- tibble(Species_raw = uniq) %>% left_join(ncbi, by = "Species_raw")
+} else {
+  ncbi <- ncbi_live
+}
 
 # (b) curated overrides (source-aware), keyed by Reference (= item name) + variant name
 ov <- read.csv(file.path(base, "_keys/volumes_species_overrides.csv"), stringsAsFactors = FALSE) %>%
@@ -328,6 +353,12 @@ resolved <- raw %>%
          flag_unresolved             = is.na(curated) & is.na(NCBI_name)) %>%
   select(-key)
 write_csv(resolved %>% arrange(Source, Species_raw), "volumes_source_species_ids.csv")
+# Refresh the offline backbone cache ONLY on a successful live taxizedb run (never overwrite the
+# committed cache from a cache-driven run, which would be circular).
+if (!is.null(ncbi_live))
+  write_csv(resolved %>% transmute(Source, Species_raw, curated, NCBI_id, NCBI_name,
+                                   Species_final, name_source) %>% arrange(Source, Species_raw),
+            cache_file)
 if (any(resolved$flag_unresolved))
   warning("Species resolution: ", sum(resolved$flag_unresolved), " (source, name) pair(s) had no ",
           "curated override and no NCBI match -> kept raw. See volumes_source_species_ids.csv.")
