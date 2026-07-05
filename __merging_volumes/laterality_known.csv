@@ -19,5 +19,3 @@ Semendeferi_etal_2001_Table2,area10_volume_mm3,right,_right,Semendeferi 2001 are
 Sherwood_etal_2005_Table1,facial_VII_mm3,left,_left,Sherwood 2005 cranial motor nuclei measured on the left side only
 Sherwood_etal_2005_Table1,trigeminal_motor_Vmo_mm3,left,_left,
 Sherwood_etal_2005_Table1,hypoglossal_XII_mm3,left,_left,
-deSousa_etal_2010_Table1,left_V1_volume_cm3,left,_left,de Sousa et al. 2010 measured V1 (area striata) grey matter from the LEFT hemisphere only; kept left-only (no right counterpart in the table) so it is never merged/averaged with both-hemisphere V1 from other sources
-deSousa_etal_2010_Table1,left_LGN_volume_cm3,left,_left,de Sousa et al. 2010 measured the lateral geniculate nucleus from the LEFT hemisphere only

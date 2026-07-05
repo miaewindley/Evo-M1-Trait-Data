@@ -14,7 +14,8 @@
 # This is a SEPARATE comparison set (single species, experimental groups); it is
 # NOT part of the phylogenetic volume merge.
 #
-# Output: 3 faithful snapshots + one tidy long table aligned to a generic schema
+# Output: 3 faithful snapshots plus split analysis-ready tables, all as CSV+TSV.
+# Also keeps one combined tidy long table aligned to a generic schema
 #   (species, reference, group, specimen, region, cell_type, measure, value, units).
 
 ## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
@@ -44,6 +45,18 @@ xls <- file.path(folder, "data_figshare.xlsx")
 numv <- function(x) suppressWarnings(as.numeric(gsub(",", "", as.character(x))))
 raw <- read_excel(xls, sheet = "Hoja1", col_names = FALSE)
 
+## ---- output helper: TSVs replicate CSVs ----
+write_csv_tsv <- function(x, stem, dir = folder) {
+  csv_file <- file.path(dir, paste0(stem, ".csv"))
+  tsv_file <- file.path(dir, paste0(stem, ".tsv"))
+
+  readr::write_csv(x, csv_file, na = "")
+  readr::write_tsv(x, tsv_file, na = "")
+
+  message("Wrote ", csv_file)
+  message("Wrote ", tsv_file)
+}
+
 ## ---- Block 1: absolute volumes (mm3) ----
 vol_regions <- c("Olfactory_bulbs","Cerebellum","Corpus_callosum","Midbrain","Lateral_ventricle",
                  "Striatum","Cortex","Hypothalamus","Third_ventricle","Hippocampus","Thalamus",
@@ -52,7 +65,7 @@ b1 <- raw[5:30, ]
 names(b1)[1:15] <- c("specimen","group", vol_regions)
 b1 <- b1 %>% filter(!is.na(group)) %>%
   mutate(specimen = as.character(specimen), group = as.character(group))
-write_csv(b1, file.path(folder, "BarbeitoAndres_etal_2019_volumes_snapshot.csv"))
+write_csv_tsv(b1, "BarbeitoAndres_etal_2019_volumes_snapshot")
 vol_long <- b1 %>%
   pivot_longer(all_of(vol_regions), names_to = "region", values_to = "value") %>%
   transmute(species = "Mus musculus", reference = "BarbeitoAndres_etal_2019",
@@ -79,12 +92,24 @@ parse_cell <- function(rows, measure, units) {
 }
 n2 <- parse_cell(34:48, "cell_number",  "cells")
 n3 <- parse_cell(55:69, "cell_density", "cells_per_mg (as published; verify against paper)")
-write_csv(n2$snapshot, file.path(folder, "BarbeitoAndres_etal_2019_cellnumber_snapshot.csv"))
-write_csv(n3$snapshot, file.path(folder, "BarbeitoAndres_etal_2019_celldensity_snapshot.csv"))
+write_csv_tsv(n2$snapshot, "BarbeitoAndres_etal_2019_cellnumber_snapshot")
+write_csv_tsv(n3$snapshot, "BarbeitoAndres_etal_2019_celldensity_snapshot")
 
-## ---- combined tidy long ----
-tidy <- bind_rows(vol_long, n2$long, n3$long)
-write_csv(tidy, file.path(folder, "BarbeitoAndres_etal_2019_tidy.csv"))
+## ---- data-readable outputs: split tables + combined tidy; TSVs replicate CSVs ----
+## Split outputs are the analysis-ready counterparts to the faithful snapshots above.
+## Keep the combined tidy table too for backward compatibility.
+barbeito_volumes <- vol_long
+barbeito_cellnumber <- n2$long
+barbeito_celldensity <- n3$long
 
-message("Barbeito 2019: volumes ", nrow(vol_long), " | cell_number ", nrow(n2$long),
-        " | cell_density ", nrow(n3$long), " -> tidy ", nrow(tidy), " rows.")
+tidy <- bind_rows(barbeito_volumes, barbeito_cellnumber, barbeito_celldensity)
+
+write_csv_tsv(barbeito_volumes,     "BarbeitoAndres_etal_2019_volumes")
+write_csv_tsv(barbeito_cellnumber,  "BarbeitoAndres_etal_2019_cellnumber")
+write_csv_tsv(barbeito_celldensity, "BarbeitoAndres_etal_2019_celldensity")
+write_csv_tsv(tidy,                 "BarbeitoAndres_etal_2019_tidy")
+
+message("Barbeito 2019: volumes ", nrow(barbeito_volumes),
+        " | cell_number ", nrow(barbeito_cellnumber),
+        " | cell_density ", nrow(barbeito_celldensity),
+        " -> tidy ", nrow(tidy), " rows.")

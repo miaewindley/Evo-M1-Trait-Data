@@ -71,7 +71,7 @@ merged <- read_csv(file.path(base, paste0("__merging_volumes/volumes_long", merg
 ## paper's own number (Bauernfeind insula: Table 1 left + Table 2 right, different Sources, joined
 ## by species; Sherwood 2005 cranial nuclei: left-only -> doubled). volumes_unfiltered*.csv on
 ## disk is untouched -- this exists only in this script's in-memory `unf`.
-bilateral_terms <- c("Granular_insular_cortex", "Dysgranular_insular_cortex", "Insula",
+bilateral_terms <- c("Granular_insular_cortex", "Dysgranular_insular_cortex", "Agranular_insular_cortex", "Insula",
                      "Trigeminal_motor_nucleus", "Facial_motor_nucleus", "Hypoglossal_nucleus")
 lr <- unf %>%
   filter(Variable %in% paste0(rep(bilateral_terms, each = 2), c("_left_Vol.mm3", "_right_Vol.mm3"))) %>%
@@ -93,8 +93,10 @@ unf <- bind_rows(unf, unf_bilat)
 ## aggregation), applying the SAME unit / bilateral conversions used in volumes_compiled_DeCasien.R,
 ## so every DeCasien brain can match its own source row. Added to `unf` as extra candidates; the
 ## species-mean rows stay, and match_row() still prefers the closest same-structure value.
-## NOT reconstructable (repo holds only a species mean, not per-brain data): Barks 2014 (Gorilla
-## beringei, ref 65) -- only its Fig-4A mean is on disk.
+## PARTIALLY reconstructable: Barks 2014's regional volumes (Gorilla beringei, ref 65) are only on
+## disk as the Fig-4A species mean (no per-brain regional data) -- those stay decasien_only. But
+## Barks_etal_2014_TABLE1 (whole-brain volume only) IS per-specimen (confirmed: specimen 1108 =
+## 540.4 cm3, an exact match to DeCasien's Gorilla_gorilla_gorilla BV=540440); reconstructed below.
 rd_cd <- function(enc) tryCatch(
   read.table(file.path(base, "__Public/comparative-data", paste0(enc, ".tsv")),
              header = TRUE, sep = "\t", stringsAsFactors = FALSE, check.names = FALSE),
@@ -102,24 +104,56 @@ rd_cd <- function(enc) tryCatch(
 spec <- list()
 addspec <- function(sp, Variable, Value, Source) {
   ok <- !is.na(Value) & !is.na(sp)
-  if (any(ok)) spec[[length(spec) + 1L]] <<-
-      tibble(sp = norm(sp[ok]), genus = genus(sp[ok]), Variable = Variable,
+  if (any(ok)) {
+    # NB: compute the filtered species vector into a LOCAL before building the tibble. If instead
+    # we wrote tibble(sp = norm(sp[ok]), genus = genus(sp[ok]), ...), tibble's data-masking makes the
+    # `sp` inside genus(sp[ok]) resolve to the just-created `sp` COLUMN (already length sum(ok)),
+    # which then gets re-indexed by the full-length `ok` -> silent misalignment + phantom NA rows.
+    # That bug is invisible when Value has no NAs (ok all TRUE) but corrupts any source with NA values.
+    sp_ok <- sp[ok]
+    spec[[length(spec) + 1L]] <<-
+      tibble(sp = norm(sp_ok), genus = genus(sp_ok), Variable = Variable,
              Value = as.numeric(Value[ok]), Source = Source)
+  }
 }
-# Bauernfeind Table1(left)+Table2(right): per-specimen bilateral insula (L+R, or 2L if no right side);
-# join Table2 by specimen id with the trailing a/b hemisphere-set letter stripped. Already mm3.
+# Bauernfeind Table1(left)+Table2(right): per-specimen bilateral insula (L+R, or 2x whichever single
+# side exists if the other is NA -- confirmed against DeCasien's own Pongo_pygmaeus "Sabtu" specimen,
+# which has NO left-side data at all); join Table2 by specimen id with the trailing a/b hemisphere-set
+# letter stripped. Already mm3.
 b1 <- rd_cd("10.1016%2Fj.jhevol.2012.12.003_Table1")
 b2 <- rd_cd("10.1016%2Fj.jhevol.2012.12.003_Table2")
 if (!is.null(b1) && !is.null(b2)) {
-  bid  <- function(x) sub("[ab]$", "", trimws(as.character(x)))
+  # Strip trailing hemisphere-set letter, incl. the one multi-letter/comma form "Sabtub,c" -> "Sabtu"
+  # (that individual's Table1 row has NA insula measures -- only Table2/right-side data was ever
+  # recorded for it -- so without the extra ",<letter>" strip below, the id join silently drops it
+  # instead of pairing it with Table2's "Sabtu" row). Do the ",<letter>" strip FIRST and only when a
+  # comma is actually present, then fall back to the original bare-trailing-a/b strip -- a naive
+  # single-regex "strip any trailing [a-z]" would also eat the last letter of ids that are already
+  # bare (e.g. Table2's own "Sabtu" -> "Sabt", "Briggs" -> "Brigg"), breaking the join.
+  bid  <- function(x) {
+    x <- trimws(as.character(x))
+    x <- sub(",[a-z]$", "", x)
+    sub("[ab]$", "", x)
+  }
   b2i  <- b2[match(bid(b1$Individual), bid(b2$Individual)), , drop = FALSE]
   for (sc in list(c("granular", "Granular_insular_cortex_Vol.mm3"),
                   c("dysgranular", "Dysgranular_insular_cortex_Vol.mm3"),
                   c("agranular", "Agranular_insular_cortex_Vol.mm3"),
                   c("total_insula", "Insula_Vol.mm3"))) {
     L <- numv(b1[[paste0(sc[1], "_L_mm3")]]); R <- numv(b2i[[paste0(sc[1], "_R_mm3")]])
-    val <- ifelse(!is.na(L) & !is.na(R), L + R, ifelse(!is.na(L), 2 * L, NA_real_))
+    # L+R when both sides were measured; else double whichever single side exists (previously only
+    # handled "left present" -- "right present, left NA" fell through to NA_real_ and was dropped).
+    val <- ifelse(!is.na(L) & !is.na(R), L + R,
+            ifelse(!is.na(L), 2 * L, ifelse(!is.na(R), 2 * R, NA_real_)))
     addspec(b1$Species, sc[2], val, "Bauernfeind_T1T2_specimen")
+    # DeCasien did NOT sum L+R for these insula subregions; it DOUBLED a single hemisphere
+    # (confirmed on Pongo pygmaeus "Briggs": DeCasien granular 398 / dysgranular 2114 / agranular
+    # 376 / insula-GM 3010 all == left * 2, NOT L+R = 1694 for dysgranular). Add a parallel
+    # "double whichever single side exists" candidate so DeCasien's own per-specimen insula cells
+    # match their source; the L+R candidate above is retained (it is the more complete estimate and
+    # still matches specimens where DeCasien happened to have only one side).
+    val_1side <- ifelse(!is.na(L), 2 * L, ifelse(!is.na(R), 2 * R, NA_real_))
+    addspec(b1$Species, sc[2], val_1side, "Bauernfeind_1side_x2_est")
   }
   addspec(b1$Species, "Total_brain_net_volume_Vol.mm3", numv(b1$brain_volume_mm3), "Bauernfeind_specimen")
 }
@@ -140,6 +174,12 @@ if (!is.null(bg14)) {
 bg07 <- rd_cd("10.1002%2Fajpa.20684_TABLE1")
 if (!is.null(bg07) && "amygdaloid_complex_total" %in% names(bg07))
   addspec(bg07$species, "Amygdala_Vol.mm3", numv(bg07$amygdaloid_complex_total) * 1000, "Barger2007_specimen")
+# Barks 2014 TABLE1: per-specimen whole-brain volume (cc), species kept at whatever rank is printed
+# (trinomial for gorillas) -- DeCasien's own Gorilla taxa are trinomial too, so no binomial
+# truncation here (unlike volumes_compiled_DeCasien.R's own species-mean reshape of this table).
+bk1 <- rd_cd("10.1002%2Fajpa.22646_TABLE1")
+if (!is.null(bk1) && "Brain volume (cm3)" %in% names(bk1))
+  addspec(bk1$species, "Total_brain_net_volume_Vol.mm3", numv(bk1[["Brain volume (cm3)"]]) * 1000, "Barks2014_TABLE1_specimen")
 # Sherwood 2004: per-specimen great-ape volumes, cm3 -> mm3 (species forward-filled, subspecies -> binomial)
 s4 <- rd_cd("10.1002%2Fajp.20048_TABLEI")
 if (!is.null(s4)) {
@@ -151,11 +191,54 @@ if (!is.null(s4)) {
                   c("Thalamus", "Thalamus_Vol.mm3"), c("Cerebellum", "Cerebellum_Vol.mm3")))
     if (cw[1] %in% names(s4)) addspec(sp4, cw[2], numv(s4[[cw[1]]]) * 1000, "Sherwood2004_specimen")
 }
+# deSousa 2010: read straight from the two DOI-coded Public TSVs -- NO hardcoded numbers.
+# DeCasien's reference 60 is deSousa 2010, and it draws on BOTH of the paper's published items,
+# each snapshotted as a Public TSV by its own converter (deSousa_etal_2010_Table1.R and
+# deSousa_etal_2010_SupTable2.R):
+#   * Table 1  (10.1016%2Fj.jhevol.2009.11.011_Table1.tsv) -- PER-SPECIMEN. Carries brain,
+#     neocortex, and LEFT-hemisphere V1/LGN volumes (cm3). The paper's methods double the left
+#     V1/LGN to a bilateral estimate ("left V1 and left LGN volumes were doubled to estimate the
+#     total volumes"), so V1/LGN here are (left * 2). This reproduces DeCasien's per-brain
+#     BV / Neocortex(GM+WM) / V1(GM) cells (e.g. Hylobates lar left V1 1.8 -> x2 = 3600 mm3).
+#   * Supp. Table 2 (10.1016%2Fj.jhevol.2009.11.011_SupTable2.tsv) -- SPECIES MEANS, already
+#     BILATERAL. This is the source of DeCasien's LGN cells: those are species-mean bilateral
+#     LGN (Gorilla 309, Pongo 259, Pan paniscus 275, Pan troglodytes 251, Hylobates 166,
+#     Macaca 92 mm3), NOT the per-specimen left-LGN*2 from Table 1 (which gives e.g. Gorilla 400,
+#     not 309). Supplying the SupTable 2 means is what lets those LGN cells attribute to
+#     deSousa 2010 rather than being mis-matched to another paper. (Macaca fascicularis LGN is
+#     recoverable either way: Table 1's printed left "0.0" is corrected to 0.046 in its converter,
+#     -> x2 = 92; SupTable 2 carries the bilateral 0.092 -> 92 directly.)
+# Both files pass through the SAME unit / hemisphere conversions used in the merge
+# (cm3 -> mm3; left -> bilateral by doubling), applied here per specimen / per species mean rather
+# than team-merged, so every DeCasien deSousa-2010 cell can match its own source row.
+desousa_t1 <- rd_cd("10.1016%2Fj.jhevol.2009.11.011_Table1")       # per-specimen (left-side V1/LGN)
+if (!is.null(desousa_t1)) {
+  addspec(desousa_t1$species, "Total_brain_net_volume_Vol.mm3",   numv(desousa_t1$brain_volume_cm3)     * 1000, "deSousa2010_Table1_specimen")
+  addspec(desousa_t1$species, "Neocortex_Vol.mm3",                numv(desousa_t1$neocortex_volume_cm3) * 1000, "deSousa2010_Table1_specimen")
+  addspec(desousa_t1$species, "Area_striata_grey_matter_Vol.mm3", numv(desousa_t1$left_V1_volume_cm3)  * 2 * 1000, "deSousa2010_Table1_specimen_bilateral_est")
+  addspec(desousa_t1$species, "Corpus_geniculatum_laterale_Vol.mm3", numv(desousa_t1$left_LGN_volume_cm3) * 2 * 1000, "deSousa2010_Table1_specimen_bilateral_est")
+}
+desousa_s2 <- rd_cd("10.1016%2Fj.jhevol.2009.11.011_SupTable2")    # species means (bilateral V1/LGN)
+if (!is.null(desousa_s2)) {
+  addspec(desousa_s2$species, "Total_brain_net_volume_Vol.mm3",   numv(desousa_s2$brain_volume_cm3)           * 1000, "deSousa2010_SupTable2_speciesmean")
+  addspec(desousa_s2$species, "Neocortex_Vol.mm3",                numv(desousa_s2$neocortex_volume_cm3)       * 1000, "deSousa2010_SupTable2_speciesmean")
+  addspec(desousa_s2$species, "Area_striata_grey_matter_Vol.mm3", numv(desousa_s2$V1_area_striata_volume_cm3) * 1000, "deSousa2010_SupTable2_speciesmean")
+  addspec(desousa_s2$species, "Corpus_geniculatum_laterale_Vol.mm3", numv(desousa_s2$LGN_volume_cm3)          * 1000, "deSousa2010_SupTable2_speciesmean")
+}
 # Bush & Allman 2004 (V1 table): composite Neocortex (GM+WM) = grey + white, cm3 -> mm3 (species-level)
 bu <- rd_cd("10.1002%2Far.a.20114_TABLE1")
 if (!is.null(bu) && all(c("neocortex_grey_cm3", "neocortex_white_cm3") %in% names(bu)))
   addspec(bu$species, "Neocortex_Vol.mm3",
           (numv(bu$neocortex_grey_cm3) + numv(bu$neocortex_white_cm3)) * 1000, "Bush_Allman_2004_neocortex_GMWM")
+# Bush & Allman 2004b also carries V1 grey matter and LGN (cm3 -> mm3, species-level). DeCasien draws
+# its Tarsius syrichta V1(GM)=280 and LGN=20 from THIS table (not the Stephan "Tarsius sp." rows, which
+# give 349 / 20.8), so add these two columns as candidates. Confirmed exact: V1_grey 0.28 -> 280,
+# LGN 0.02 -> 20. (These are single-figure values already representing the measured structure; no
+# hemisphere doubling -- Bush & Allman report whole-structure volumes here.)
+if (!is.null(bu) && "V1_grey_cm3" %in% names(bu))
+  addspec(bu$species, "Area_striata_grey_matter_Vol.mm3", numv(bu$V1_grey_cm3) * 1000, "Bush_Allman_2004_V1_grey")
+if (!is.null(bu) && "LGN_cm3" %in% names(bu))
+  addspec(bu$species, "Corpus_geniculatum_laterale_Vol.mm3", numv(bu$LGN_cm3) * 1000, "Bush_Allman_2004_LGN")
 unf_spec <- bind_rows(spec)
 unf <- bind_rows(unf, unf_spec)
 message("Per-specimen supplement: +", nrow(unf_spec), " candidate rows from ",
@@ -259,9 +342,23 @@ dec <- moesm3 %>%
 ## variable (e.g. BV landing within tol of that genus's Brain_Mass.mg, or its Telencephalon
 ## volume) can beat out a true same-structure match that simply isn't the single closest value --
 ## silently downgrading a real "match"/"match_taxonomy_variant" to "value_match_other_structure".
-match_row <- function(g, val, term) {
+##
+## FALLBACK for genus reclassification: our merge's own species resolution (step 4 of
+## volumes_compiled_DeCasien.R, NCBI-preferred names) sometimes moves a species to a NEW genus that
+## DeCasien's original taxon doesn't reflect (e.g. DeCasien's "Cebus apella" -> our "Sapajus apella";
+## "Tarsius syrichta" -> "Carlito syrichta"). A strict genus==g filter then finds candidates for
+## every OTHER structure of that species but never these -- confirmed empirically: Sapajus apella
+## Rilling & Insel Cerebellum/Neocortex values are EXACT matches to DeCasien's Cebus_apella cells,
+## just invisible to genus-only search. If the primary genus search comes up empty, retry using the
+## same specific epithet (2nd word) under ANY genus -- catches a reclassification without needing a
+## hardcoded synonym table. Guarded against generic "sp."/"" epithets to avoid cross-genus noise.
+match_row <- function(g, val, term, epi = NA_character_) {
   cand <- unf %>% filter(genus == g) %>% mutate(d = abs(Value - val) / abs(Value)) %>%
     filter(d <= tol)
+  if (!nrow(cand) && !is.na(epi) && !epi %in% c("", "sp", "sp.")) {
+    cand <- unf %>% filter(genus != g, word(sp, 2) == epi) %>%
+      mutate(d = abs(Value - val) / abs(Value)) %>% filter(d <= tol)
+  }
   if (!nrow(cand)) return(tibble(matched_source = NA_character_, matched_variable = NA_character_,
                                  matched_sp = NA_character_, matched_value = NA_real_, pct_diff = NA_real_))
   same_term <- cand %>% filter(!is.na(term), Variable == term)
@@ -270,7 +367,8 @@ match_row <- function(g, val, term) {
     transmute(matched_source = Source, matched_variable = Variable,
               matched_sp = sp, matched_value = Value, pct_diff = round(d * 100, 3))
 }
-mm <- pmap_dfr(list(g = dec$genus, val = dec$dec_value, term = dec$our_term), match_row)
+mm <- pmap_dfr(list(g = dec$genus, val = dec$dec_value, term = dec$our_term,
+                    epi = word(dec$sp, 2)), match_row)
 cmp <- bind_cols(dec %>% select(taxon, sp, genus, dec_region, our_term, dec_value, ref_ids, ref_is_stephan), mm) %>%
   mutate(
     anatomy_agree = !is.na(matched_variable) & !is.na(our_term) & matched_variable == our_term,
@@ -310,8 +408,56 @@ if (nrow(gm)) {
            status           = ifelse(is_mean, "species_mean_match", status)) %>%
     select(-m_src, -m_var, -m_sp, -m_val, -dec_group_mean, -is_mean)
 }
+
+## ---- Tier 4: description matched, VALUE differs (comparison made, disagreement recorded) --------
+## For rows still decasien_only where the SAME structure DOES exist for the SAME genus in the merge
+## but no candidate fell within tol, we record that a comparison WAS possible and what the nearest
+## same-structure merge value is, rather than leaving the cell as a blank "decasien_only". This is
+## the "matching description existed, but the value is different" case (e.g. DeCasien Loris
+## tardigradus BV 6771 vs Stephan 6269 (7.4%); Saimiri sciureus Amygdala 277 vs Stephan 227;
+## Tarsius MOB 79.2 vs Stephan 18.8; Propithecus verreauxi LGN 70 vs Stephan 68.6, just over tol).
+## These get status "description_match_value_mismatch": the value is NOT asserted as a match, only
+## flagged for human review as a possible DeCasien transcription/sourcing discrepancy.
+nearest_same_structure <- function(g, val, term) {
+  if (is.na(term)) return(tibble(nn_source = NA_character_, nn_value = NA_real_, nn_pct = NA_real_))
+  cand <- unf %>% filter(genus == g, Variable == term)
+  if (!nrow(cand)) return(tibble(nn_source = NA_character_, nn_value = NA_real_, nn_pct = NA_real_))
+  cand %>% mutate(d = abs(Value - val) / abs(Value)) %>% arrange(d) %>% slice(1) %>%
+    transmute(nn_source = Source, nn_value = Value, nn_pct = round(d * 100, 3))
+}
+still <- cmp$status == "decasien_only" & !is.na(cmp$our_term)
+if (any(still)) {
+  nn <- pmap_dfr(list(g = dec$genus[still], val = cmp$dec_value[still], term = cmp$our_term[still]),
+                 nearest_same_structure)
+  idx <- which(still)
+  cmp$mismatch_source <- NA_character_; cmp$mismatch_value <- NA_real_; cmp$mismatch_pct <- NA_real_
+  cmp$mismatch_source[idx] <- nn$nn_source
+  cmp$mismatch_value[idx]  <- nn$nn_value
+  cmp$mismatch_pct[idx]    <- nn$nn_pct
+  hit <- idx[!is.na(nn$nn_source)]
+  cmp$status[hit] <- "description_match_value_mismatch"
+} else {
+  cmp$mismatch_source <- NA_character_; cmp$mismatch_value <- NA_real_; cmp$mismatch_pct <- NA_real_
+}
+
+## ---- provenance / flag column ------------------------------------------------------------------
+## One human-readable flag per row summarising HOW the cell resolved, so the CSV self-documents the
+## unpublished-via-DeCasien recoveries and the new mismatch tier without needing to cross-read source.
+cmp <- cmp %>% mutate(
+  flag = case_when(
+    grepl("unpublishedviaDeCasien|_via_DeCasien", matched_source) ~ "matched_unpublished_via_DeCasien",
+    status == "description_match_value_mismatch"                  ~ "description_match_value_differs",
+    status == "match"                                             ~ "match",
+    status == "match_taxonomy_variant"                            ~ "match_taxonomy_variant",
+    status == "species_mean_match"                                ~ "species_mean_match",
+    status == "value_match_other_structure"                       ~ "value_match_other_structure",
+    status == "decasien_only"                                     ~ "decasien_only_no_comparable_source",
+    TRUE                                                          ~ status
+  ))
+
 write_csv(cmp %>% select(taxon, sp, dec_region, our_term, dec_value, ref_ids, ref_is_stephan,
-                         status, matched_source, matched_variable, matched_sp, matched_value, pct_diff),
+                         status, flag, matched_source, matched_variable, matched_sp, matched_value, pct_diff,
+                         mismatch_source, mismatch_value, mismatch_pct),
           file.path(dec_dir, paste0("DeCasien_vs_merge_comparison", merge_suffix, ".csv")))
 
 ## ---- II.B taxonomy proposals: value-matched rows whose species name differs ----

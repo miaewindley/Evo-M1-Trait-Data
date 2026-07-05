@@ -40,8 +40,7 @@ public_tsv_dir <- file.path(dataset_root, "__Public", "comparative-data")
 ## 1. LOAD SNAPSHOT AND SET HEADERS ---------------------------------------
 
 
-raw <- read_csv(snapshot_csv, skip = 1, col_names = TRUE) %>%
-  select(where(~ !all(is.na(.x))))
+raw <- read_csv(snapshot_csv)
 
 ## 2. SAVE ---------------------------------------------------------------
 

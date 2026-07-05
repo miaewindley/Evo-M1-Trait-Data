@@ -117,3 +117,29 @@ df <- df[, c("species","species_as_published","brain_volume_cm3","brain_N","neoc
              "neocortex_N","V1_area_striata_volume_cm3","V1_N","LGN_volume_cm3","LGN_N",
              "source","correction")]
 write.csv(df, "deSousa_etal_2010_SupTable2.csv", row.names = FALSE)
+
+## 6. Also write the DOI/PMID-coded TSV to __Public/comparative-data/ -----------
+## Mirrors the tail of deSousa_etal_2010_Table1.R: the encoded filename is looked up
+## from __ReadMe.xlsx ("Item name" -> "Item encoded"), so the shared snapshot of this
+## table lives under __Public/comparative-data/<encoded>.tsv and downstream scripts
+## (e.g. the DeCasien BrainRegion comparison) read it via that stable coded name
+## instead of re-transcribing the species-mean values. These SupTable 2 means are the
+## species-level, already-BILATERAL V1/LGN volumes DeCasien draws on for its LGN cells
+## (Table 1 carries only per-specimen LEFT V1/LGN); keeping both items as Public TSVs
+## lets the comparison attribute every deSousa-2010 cell to its correct source item.
+if (is.na(base) || !file.exists(file.path(base, "__ReadMe.xlsx"))) {
+  warning("No repository root with __ReadMe.xlsx found; TSV skipped.")
+} else {
+  tsv_dir   <- file.path(base, "__Public/comparative-data")
+  filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  enc <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
+
+  if (is.na(enc) || !nzchar(enc)) {
+    warning("No 'Item encoded' for '", item_name, "' in __ReadMe.xlsx; TSV skipped.")
+  } else if (!dir.exists(path.expand(tsv_dir))) {
+    warning("Shared folder not found: ", tsv_dir, "; TSV skipped.")
+  } else {
+    readr::write_tsv(df, file.path(tsv_dir, paste0(enc, ".tsv")), na = "")
+    message("Wrote ", file.path(tsv_dir, paste0(enc, ".tsv")))
+  }
+}
