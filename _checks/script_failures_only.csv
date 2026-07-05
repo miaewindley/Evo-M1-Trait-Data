@@ -338,7 +338,7 @@ Number of logged events: 2379
 Error in density.default(x = c(NA_real_, NA_real_, NA_real_, NA_real_,  : 
   need at least 2 points to select a bandwidth automatically
 Calls: densityplot ... <Anonymous> -> do.call -> <Anonymous> -> density.default
-Execution halted","2026-07-05 08:31:12.403687","2026-07-05 08:31:29.997587",17.5938999652863
+Execution halted","2026-07-05 11:25:22.83856","2026-07-05 11:25:40.592546",17.7539858818054
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_Zilles_Rehkamper_1988_provenance.R","FAILED","Error in `map()`:
 ℹ In index: 1.
 Caused by error in `filter()`:
@@ -372,4 +372,4 @@ Backtrace:
  23. └─base::.handleSimpleError(...)
  24.   └─dplyr (local) h(simpleError(msg, call))
  25.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
-Execution halted","2026-07-05 08:31:52.153747","2026-07-05 08:31:53.156874",1.00312685966492
+Execution halted","2026-07-05 11:26:07.01699","2026-07-05 11:26:08.33212",1.31512999534607
