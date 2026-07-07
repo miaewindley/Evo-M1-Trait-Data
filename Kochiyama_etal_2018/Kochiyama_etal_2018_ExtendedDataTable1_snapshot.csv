@@ -1,0 +1,15 @@
+Extended Data Table 1. Correspondence between the AAL atlas and the parcellated brain regions
+Region,Subregion,AAL_atlas_regions,Abbreviation
+Frontal,Superior / Middle regions,Frontal_Sup; Frontal_Mid; Supp_Motor_Area,Fr SM
+Frontal,Inferior regions,Frontal_Inf_Oper; Frontal_Inf_Tri,Fr I
+Frontal,Orbitofrontal regions,Frontal_Sup_Orb; Frontal_Mid_Orb; Frontal_Inf_Orb; Frontal_Med_Orb; Rectus,Fr O
+Sensory-motor,,Precentral; Postcentral; Paracentral_Lobule,Sm
+Parietal,Superior / Inferior regions,Parietal_Sup; Parietal_Inf; Precuneus,Pa SI
+Parietal,Temporo-parietal junction,SupraMarginal; Angular,Pa TP
+Temporal,Superior / Middle regions,Temporal_Sup; Temporal_Mid,Te SM
+Temporal,Inferior / Medial regions,Temporal_Inf; ParaHippocampal; Temporal_Pole_Sup; Temporal_Pole_Mid,Te I
+Occipital,Superior / Middle regions,Calcarine; Cuneus; Occipital_Sup; Occipital_Mid,Oc SM
+Occipital,Inferior regions,Occipital_Inf; Lingual,Oc I
+Cerebellum,Anterior parts,Cerebelum_3; Cerebelum_4_5,Ce A
+Cerebellum,Posterior parts,Cerebelum_Crus1; Cerebelum_Crus2; Cerebelum_6; Cerebelum_7b; Cerebelum_8; Cerebelum_9; Cerebelum_10,Ce P
+Cerebellum,Vermis,Vermis_1_2; Vermis_3; Vermis_4_5; Vermis_6; Vermis_7; Vermis_8; Vermis_9; Vermis_10,Ce V

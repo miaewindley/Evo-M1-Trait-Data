@@ -1,15 +1,23 @@
-"Figure 3. Comparisons of the relative volumes of the parcellated brain regions among NT (Neanderthal), EH (early Homo sapiens) and MH (modern Homo sapiens). (a) Each parcellated volume was normalized to the mean MH volume to calculate a ratio (relative volume). Differences evaluated by ANOVA across 13 parcellated regions after removing effects of ICV; Bonferroni threshold p < 0.003 (=0.05/13). The mean (+/- s.d.) MH volumes of the parcellated brain regions are transcribed below (cc). Significant relative-volume differences (ANOVA, df = 2,1190) were found in Pa SI, Oc SM, Ce V and Ce P. Abbreviations: Fr, frontal lobe; Pa, parietal lobe; Te, temporal lobe; Oc, occipital lobe; Ce, cerebellum; Sm, sensorimotor cortex; SM, superior and middle region; I, inferior region; O, orbitofrontal region; SI, superior and inferior region; TP, temporo-parietal junction; A, anterior region; P, posterior region; V, vermis.",,,,
-Region,MH_mean_cc,MH_sd_cc,ANOVA_F,ANOVA_p
-Fr SM,161.61,5.22,,
-Fr I,41.57,1.00,,
-Fr O,65.46,3.45,,
-Sm,96.93,2.82,,
-Pa SI,88.30,1.98,9.31,0.0001
-Pa TP,37.38,1.41,,
-Te SM,91.27,3.92,,
-Te I,82.50,2.60,,
-Oc SM,93.70,4.17,8.15,0.0003
-Oc I,39.99,1.32,,
-Ce V,12.38,0.23,7.34,0.0007
-Ce A,13.86,0.21,,
-Ce P,114.41,3.76,6.70,0.0013
+Figure 3(a): relative volumes (region volume / mean MH volume) read from the bar graphs. MH=1.0 by construction. Values are figure-digitized estimates (+/-0.02).
+Region,NT_rel,EH_rel,MH_rel
+Fr SM,0.98,1.01,1.0
+Fr I,1.0,0.995,1.0
+Fr O,0.99,1.01,1.0
+Sm,0.98,0.965,1.0
+Pa SI,0.96,0.965,1.0
+Pa TP,1.015,0.985,1.0
+Te SM,1.05,0.99,1.0
+Te I,1.03,1.0,1.0
+Oc SM,1.065,1.06,1.0
+Oc I,1.03,1.045,1.0
+Ce V,0.965,1.01,1.0
+Ce A,0.99,1.0,1.0
+Ce P,0.94,0.995,1.0
+"Figure 3(b): absolute cerebellar volumes (cc), Left/Right, digitized estimates"
+Region,Group,Left_cc,Right_cc
+Ce A,NT,6.2,5.9
+Ce A,EH,6.4,6.4
+Ce A,MH,6.4,6.4
+Ce P,NT,55.0,52.0
+Ce P,EH,58.5,58.0
+Ce P,MH,58.0,58.0

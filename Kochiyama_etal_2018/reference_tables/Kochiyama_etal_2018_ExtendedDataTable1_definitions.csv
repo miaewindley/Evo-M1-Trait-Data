@@ -1,0 +1,4 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Region_code,parcellated region abbreviation,,,,info,,Kochiyama_etal_2018_ExtendedDataTable1,,Ext Data Table 1
+AAL_atlas_regions,AAL atlas sub-regions composing the parcel,,,,info,,Kochiyama_etal_2018_ExtendedDataTable1,semicolon-separated,Ext Data Table 1
+n_AAL_regions,number of AAL sub-regions in the parcel,,count,,info,,Kochiyama_etal_2018_ExtendedDataTable1,,

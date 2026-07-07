@@ -1,12 +1,8 @@
-## Kochiyama_etal_2018 — Figure 3 (the figure itself)
-## Relative volumes (region volume / mean MH volume; MH = 1.0) of the 13 parcellated
-## regions among NT, EH and MH, read from the Figure 3(a) bar graphs.
-##
-## These are FIGURE-DIGITISED estimates (uncertainty ~ +/-0.02). They are cross-
-## validated against a statistical recovery from Extended Data Table 3 (see
-## Kochiyama_etal_2018_reconcile_relative_volumes.R): the two agree to < 0.01
-## relative-volume units for every ANOVA-significant region. Panel (b) L/R
-## cerebellar volumes are kept in the snapshot but not merged.
+## Kochiyama_etal_2018 — Figure 3 legend
+## Modern-human (MH) mean +/- s.d. volume (cc) of the 13 parcellated brain regions,
+## as printed in the Figure 3 legend. Snapshot -> clean CSV (+ DOI-encoded TSV).
+## MH relative-volume s.d. = CV = sd/mean is the quantity used elsewhere to recover
+## the NT/EH relative volumes (see Kochiyama_etal_2018_reconcile_relative_volumes.R).
 
 options(scipen = 999)
 .sp <- local({
@@ -29,21 +25,19 @@ structure_map <- c("Fr SM"="FrontalLobe","Fr I"="FrontalLobe","Fr O"="FrontalLob
   "Sm"="SensorimotorCortex","Pa SI"="ParietalLobe","Pa TP"="ParietalLobe",
   "Te SM"="TemporalLobe","Te I"="TemporalLobe","Oc SM"="OccipitalLobe",
   "Oc I"="OccipitalLobe","Ce V"="Cerebellum","Ce A"="Cerebellum","Ce P"="Cerebellum")
-subregion_map <- c("Fr SM"="superior and middle","Fr I"="inferior","Fr O"="orbitofrontal",
-  "Sm"="whole (sensorimotor)","Pa SI"="superior and inferior","Pa TP"="temporo-parietal junction",
-  "Te SM"="superior and middle","Te I"="inferior/medial","Oc SM"="superior and middle",
-  "Oc I"="inferior","Ce V"="vermis","Ce A"="anterior","Ce P"="posterior")
 
-raw <- read.csv("Kochiyama_etal_2018_Figure3_snapshot.csv", header = FALSE,
+raw <- read.csv("Kochiyama_etal_2018_Figure3legend_snapshot.csv", header = FALSE,
                 colClasses = "character", check.names = FALSE, na.strings = c("", "NA"))
-raw <- raw[raw[[1]] %in% names(structure_map), , drop = FALSE]   # the 13 panel-(a) rows
+raw <- raw[raw[[1]] %in% names(structure_map), , drop = FALSE]   # keep the 13 region rows
 as_num <- function(x) suppressWarnings(as.numeric(x))
+m <- as_num(raw[[2]]); s <- as_num(raw[[3]])
+
 clean <- data.frame(
   Region_code = raw[[1]], Structure = unname(structure_map[raw[[1]]]),
-  Subregion = unname(subregion_map[raw[[1]]]),
-  NT_rel = as_num(raw[[2]]), EH_rel = as_num(raw[[3]]), MH_rel = as_num(raw[[4]]),
-  source = "Kochiyama_etal_2018", note = "figure-digitized (+/-0.02); ICV-size-adjusted",
-  stringsAsFactors = FALSE)
+  Species = "Homo sapiens", Group = "MH", n_MH = 1185L,
+  MH_mean_Vol.cc = m, MH_sd_Vol.cc = s,
+  MH_mean_Vol.mm3 = round(m * 1000), MH_sd_Vol.mm3 = round(s * 1000),
+  MH_CV = round(s / m, 5), source = "Kochiyama_etal_2018", stringsAsFactors = FALSE)
 stopifnot(nrow(clean) == 13L)
 write.csv(clean, paste0(item_name, ".csv"), row.names = FALSE)
 message(item_name, ": ", nrow(clean), " rows")

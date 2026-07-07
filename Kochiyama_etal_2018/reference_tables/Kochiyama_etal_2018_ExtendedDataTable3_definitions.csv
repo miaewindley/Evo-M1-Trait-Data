@@ -1,0 +1,7 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Region_code,parcellated region abbreviation,,,,info,Homo,Kochiyama_etal_2018_ExtendedDataTable3,,Ext Data Table 3
+F_2_1190,"ANOVA F statistic (df 2,1190) for group difference",,,F,secondary,Homo,Kochiyama_etal_2018_ExtendedDataTable3,,
+p,ANOVA p-value,,,p,secondary,Homo,Kochiyama_etal_2018_ExtendedDataTable3,,
+t_NTvsEH,"post-hoc t (df 1190), NT vs EH",,,t,secondary,Homo,Kochiyama_etal_2018_ExtendedDataTable3,pooled ANOVA error,
+t_NTvsMH,"post-hoc t (df 1190), NT vs MH",,,t,secondary,Homo,Kochiyama_etal_2018_ExtendedDataTable3,,
+t_EHvsMH,"post-hoc t (df 1190), EH vs MH",,,t,secondary,Homo,Kochiyama_etal_2018_ExtendedDataTable3,,

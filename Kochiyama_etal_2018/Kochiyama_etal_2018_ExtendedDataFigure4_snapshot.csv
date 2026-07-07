@@ -1,0 +1,16 @@
+Extended Data Figure 4: relative volumes among NT/EH/MH assuming within-NT/EH variation equals MH's (4x1185 individual-brain reconstruction). MH=1.0. Means close to Figure 3; SDs much larger. Figure-digitized estimates (+/-0.02).
+Region,NT_rel,EH_rel,MH_rel
+Fr SM,1.0,1.03,1.0
+Fr I,1.0,0.99,1.0
+Fr O,1.0,1.03,1.0
+Sm,0.99,0.97,1.0
+Pa SI,0.97,0.97,1.0
+Pa TP,1.02,0.98,1.0
+Te SM,1.05,0.99,1.0
+Te I,1.03,1.0,1.0
+Oc SM,1.06,1.06,1.0
+Oc I,1.02,1.06,1.0
+Ce V,0.95,1.0,1.0
+Ce A,0.97,0.99,1.0
+Ce P,0.93,0.98,1.0
+"Cohen's d (posterior cerebellum, Ce P): NT vs EH = 0.90 (p<0.001); NT vs MH = 1.23 (p<0.001)"

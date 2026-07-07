@@ -1,0 +1,5 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Region_code,parcellated region abbreviation,,,,info,Homo,Kochiyama_etal_2018_ExtendedDataFigure4,,Ext Data Fig 4
+NT_rel,"NT relative volume, individual-brain (4x1185) reconstruction",,relative.volume,Mean,secondary,Homo neanderthalensis,Kochiyama_etal_2018_ExtendedDataFigure4,figure-digitized (+/-0.02); larger s.d. than Fig 3,
+EH_rel,"EH relative volume, individual-brain reconstruction",,relative.volume,Mean,secondary,Homo sapiens (early),Kochiyama_etal_2018_ExtendedDataFigure4,figure-digitized (+/-0.02),
+MH_rel,MH relative volume,,relative.volume,Mean,info,Homo sapiens,Kochiyama_etal_2018_ExtendedDataFigure4,=1.0 by normalization; identical to Fig 3,

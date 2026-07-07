@@ -1,0 +1,16 @@
+region caption / abbreviation key (verbatim)
+"Figure 3. Comparisons of the relative volumes of the parcellated brain regions among NT, EH and MH. The mean (+/- s.d.) MH volumes (cc) are listed per region. Fr frontal; Pa parietal; Te temporal; Oc occipital; Ce cerebellum; Sm sensorimotor; SM superior+middle; I inferior; O orbitofrontal; SI superior+inferior; TP temporo-parietal junction; A anterior; P posterior; V vermis."
+Region,MH_mean_cc,MH_sd_cc
+Fr SM,161.61,5.22
+Fr I,41.57,1.0
+Fr O,65.46,3.45
+Sm,96.93,2.82
+Pa SI,88.3,1.98
+Pa TP,37.38,1.41
+Te SM,91.27,3.92
+Te I,82.5,2.6
+Oc SM,93.7,4.17
+Oc I,39.99,1.32
+Ce V,12.38,0.23
+Ce A,13.86,0.21
+Ce P,114.41,3.76

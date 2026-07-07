@@ -1,0 +1,15 @@
+"Extended Data Table 3. Statistical test results of differences in the relative volumes of the parcellated brain regions among NT, EH and MH. F(2,1190), p, and post-hoc t(1190). Bold in source (p<0.05, Ryan's method) noted in the sig columns."
+Region,Subregion,F_2_1190,p,t_NTvsEH,t_NTvsMH,t_EHvsMH
+Frontal Fr SM,Superior / Middle regions,1.015,0.363,,,
+Frontal Fr I,Inferior regions,0.181,0.834,,,
+Frontal Fr O,Orbitofrontal regions,0.252,0.777,,,
+Sensory-motor Sm,,3.646,0.026,0.64,1.407,2.31
+Parietal Pa SI,Superior / Inferior regions,9.313,0.000,0.902,3.626,2.353
+Parietal Pa TP,Temporo-parietal junction,0.87,0.419,,,
+Temporal Te SM,Superior / Middle regions,2.932,0.054,,,
+Temporal Te I,Inferior / Medial regions,2.437,0.088,,,
+Occipital Oc SM,Superior / Middle regions,8.149,0.000,0.043,2.89,2.829
+Occipital Oc I,Inferior regions,5.639,0.004,0.796,1.749,2.873
+Cerebellum Ce A,Anterior parts,0.689,0.502,,,
+Cerebellum Ce P,Posterior parts,6.699,0.001,2.331,3.644,0.354
+Cerebellum Ce V,Vermis,7.339,0.001,3.413,3.642,1.176

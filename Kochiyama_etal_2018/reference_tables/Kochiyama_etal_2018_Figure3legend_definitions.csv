@@ -1,0 +1,6 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Region_code,parcellated region abbreviation,,,,info,Homo sapiens,Kochiyama_etal_2018_Figure3legend,13 regions,Figure 3 legend
+MH_mean_Vol.cc,mean modern-human region volume (as printed),,Vol.cc,Mean,primary,Homo sapiens,Kochiyama_etal_2018_Figure3legend,reconstructed GM+WM,legend text
+MH_sd_Vol.cc,s.d. of modern-human region volume,,Vol.cc,SD,primary,Homo sapiens,Kochiyama_etal_2018_Figure3legend,,legend text
+MH_mean_Vol.mm3,MH mean volume in project units,,Vol.mm3,Mean,primary,Homo sapiens,Kochiyama_etal_2018_Figure3legend,cc x 1000,
+MH_CV,coefficient of variation of MH volume (= relative-volume s.d.),,ratio,CV,info,Homo sapiens,Kochiyama_etal_2018_Figure3legend,sd/mean; used to recover NT/EH relative volumes,
