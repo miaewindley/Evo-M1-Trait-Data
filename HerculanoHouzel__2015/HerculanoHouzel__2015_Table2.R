@@ -20,7 +20,7 @@ base <- dataset_root <- local({                                      # repo root
 })
 setwd(folder)
 
-paper_dir <- here::here("HerculanoHouzel__2015")
+paper_dir <- dirname(.sp)
 dataset_root  <- dirname(paper_dir)
 # outputs
 snapshot_csv  <- file.path(paper_dir, paste0(item_name, "_snapshot.csv"))

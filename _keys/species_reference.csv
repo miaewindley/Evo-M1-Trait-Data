@@ -109,7 +109,7 @@ Macronycteris commersoni,110941,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiro
 Macropus fuliginosus,9316,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA
 Mandrillus sphinx,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA
 Marmosa mitis,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,GBIF,NA
-Marmosops incanus,225404,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:name,NA
+Marmosops incanus,225404,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA
 Megaloglossus woermanni,58073,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA
 Mesocricetus auratus,10036,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Cricetidae,NCBI:taxid,NA
 Metachirus nudicaudatus,42725,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,NCBI:taxid,NA
@@ -169,7 +169,7 @@ Propithecus verreauxi,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Indriidae,132,Prima
 Pygathrix nemaeus,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,242,Primates,Cercopithecidae,Pygathrix nemaeus,FALSE,Primates,Cercopithecidae,NCBI:name,TRUE
 Rattus norvegicus,10116,TRUE,TRUE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Muridae,NCBI:taxid,NA
 Rhynchocyon cirnei,NA,TRUE,FALSE,FALSE,Macroscelidea,Insectivora,NA,33,Macroscelidea,Macroscelididae,Rhynchocyon cirnei,FALSE,Macroscelidea,Macroscelididae,NCBI:name,TRUE
-Rousettus aegyptiacus,9407,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:name,NA
+Rousettus aegyptiacus,9407,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA
 Ruwenzorisorex suncoides,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,Eulipotyphla,Soricidae,Ruwenzorisorex suncoides,FALSE,Eulipotyphla,Soricidae,NCBI:name,TRUE
 Saguinus geoffroyi,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cebidae,NCBI:name,NA
 Saguinus midas,30586,TRUE,TRUE,FALSE,Primates,Simians,NA,165,Primates,Callitrichidae,Saguinus midas,FALSE,Primates,Cebidae,NCBI:taxid,TRUE
