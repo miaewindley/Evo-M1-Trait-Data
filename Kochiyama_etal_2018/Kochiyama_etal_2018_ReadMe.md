@@ -10,7 +10,8 @@ EH = early *Homo sapiens* (n=4), MH = modern *Homo sapiens* (n=1185).
 | Item | What it is | File(s) |
 |---|---|---|
 | `Figure3legend` | MH mean ± s.d. volume (cc) of the 13 parcels | `..._Figure3legend_snapshot.csv`, `.csv`, `.R` |
-| `Figure3` | NT/EH/MH **relative volumes** from the bar graphs (digitized) + panel (b) L/R cerebellar volumes | `..._Figure3_snapshot.csv`, `.csv`, `.R` |
+| `Figure3A` | Figure 3(a): NT/EH/MH **relative volumes** from the bar graphs for the 13 parcellated regions. MH = 1.0 by construction. | `..._Figure3A_snapshot.csv`, `.csv`, `.R` |
+| `Figure3B` | Figure 3(b): digitized absolute left/right cerebellar volumes, in cc, for Ce A and Ce P by group. | `..._Figure3B_snapshot.csv`, `.csv`, `.R` |
 | `ExtendedDataFigure4` | relative volumes from the individual-brain (4×1185) reconstruction (digitized) + Cohen's d | `..._ExtendedDataFigure4_snapshot.csv`, `.csv` |
 | `ExtendedDataTable1` | AAL-atlas correspondence for the 13 parcels (faithful text) | `..._ExtendedDataTable1_snapshot.csv`, `.csv` |
 | `ExtendedDataTable3` | ANOVA F(2,1190), p, post-hoc t(1190) for all 13 regions (faithful text) | `..._ExtendedDataTable3_snapshot.csv`, `.csv` |
@@ -32,6 +33,35 @@ Each item has a `reference_tables/*_definitions.csv`. Public TSVs are written to
 Three independent derivations of NT/EH relative volume (MH = 1.0 by construction):
 
 1. **Figure 3 bars** — digitized (±0.02).
+## Figure 3A columns
+
+- `Region_code`: Kochiyama parcel label from the figure.
+- `Structure`: broader anatomical grouping.
+- `Subregion`: textual expansion of the parcel.
+- `NT_rel`: Neanderthal relative volume.
+- `EH_rel`: early Homo sapiens relative volume.
+- `MH_rel`: modern Homo sapiens relative volume, fixed to 1.0.
+- `source`: source paper key.
+- `note`: extraction note.
+
+## Figure 3B columns
+
+- `Region_code`: Kochiyama cerebellar parcel label from the figure.
+- `Structure`: broader anatomical grouping.
+- `Subregion`: textual expansion of the parcel.
+- `Group_code`: NT, EH, or MH.
+- `Group`: expanded group label.
+- `Hemisphere`: Left or Right.
+- `Volume_cc`: digitized volume in cubic centimeters.
+- `source`: source paper key.
+- `note`: extraction note.
+
+## Notes
+
+- Figure 3A and Figure 3B are no longer combined in a single snapshot, CSV, TSV, or R script.
+- Values are figure-digitized estimates from the published figure.
+- This shared ReadMe is intentionally the only shared file between the two items.
+
 2. **Statistical recovery from Extended Data Table 3.** The post-hoc t's use the
    pooled ANOVA error (df 1190); MH supplies 1184/1190 of that df, so the pooled
    error variance ≈ MH's relative variance = CV² (CV = s.d./mean from the legend).

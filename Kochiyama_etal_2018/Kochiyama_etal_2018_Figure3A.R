@@ -1,12 +1,8 @@
-## Kochiyama_etal_2018 — Figure 3 (the figure itself)
+## Kochiyama_etal_2018 — Figure 3A
 ## Relative volumes (region volume / mean MH volume; MH = 1.0) of the 13 parcellated
 ## regions among NT, EH and MH, read from the Figure 3(a) bar graphs.
 ##
-## These are FIGURE-DIGITISED estimates (uncertainty ~ +/-0.02). They are cross-
-## validated against a statistical recovery from Extended Data Table 3 (see
-## Kochiyama_etal_2018_reconcile_relative_volumes.R): the two agree to < 0.01
-## relative-volume units for every ANOVA-significant region. Panel (b) L/R
-## cerebellar volumes are kept in the snapshot but not merged.
+## This script intentionally handles Figure 3A only. Figure 3B is a separate item.
 
 options(scipen = 999)
 .sp <- local({
@@ -19,10 +15,8 @@ options(scipen = 999)
   }
   stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
 })
-folder <- dirname(.sp); item_name <- tools::file_path_sans_ext(basename(.sp))
-base <- local({ d <- folder
-  while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
-  if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_ })
+folder <- dirname(.sp)
+item_name <- tools::file_path_sans_ext(basename(.sp))
 setwd(folder)
 
 structure_map <- c("Fr SM"="FrontalLobe","Fr I"="FrontalLobe","Fr O"="FrontalLobe",
@@ -34,22 +28,20 @@ subregion_map <- c("Fr SM"="superior and middle","Fr I"="inferior","Fr O"="orbit
   "Te SM"="superior and middle","Te I"="inferior/medial","Oc SM"="superior and middle",
   "Oc I"="inferior","Ce V"="vermis","Ce A"="anterior","Ce P"="posterior")
 
-raw <- read.csv("Kochiyama_etal_2018_Figure3_snapshot.csv", header = FALSE,
+raw <- read.csv("Kochiyama_etal_2018_Figure3A_snapshot.csv", skip = 1,
                 colClasses = "character", check.names = FALSE, na.strings = c("", "NA"))
-raw <- raw[raw[[1]] %in% names(structure_map), , drop = FALSE]   # the 13 panel-(a) rows
 as_num <- function(x) suppressWarnings(as.numeric(x))
 clean <- data.frame(
-  Region_code = raw[[1]], Structure = unname(structure_map[raw[[1]]]),
-  Subregion = unname(subregion_map[raw[[1]]]),
-  NT_rel = as_num(raw[[2]]), EH_rel = as_num(raw[[3]]), MH_rel = as_num(raw[[4]]),
-  source = "Kochiyama_etal_2018", note = "figure-digitized (+/-0.02); ICV-size-adjusted",
+  Region_code = raw$Region,
+  Structure = unname(structure_map[raw$Region]),
+  Subregion = unname(subregion_map[raw$Region]),
+  NT_rel = as_num(raw$NT_rel),
+  EH_rel = as_num(raw$EH_rel),
+  MH_rel = as_num(raw$MH_rel),
+  source = "Kochiyama_etal_2018",
+  note = "Figure 3A; figure-digitized (+/-0.02); ICV-size-adjusted",
   stringsAsFactors = FALSE)
-stopifnot(nrow(clean) == 13L)
+stopifnot(nrow(clean) == 13L, !anyNA(clean$Structure), !anyNA(clean$Subregion))
 write.csv(clean, paste0(item_name, ".csv"), row.names = FALSE)
+write.table(clean, "10.1038%2Fs41598-018-24331-0_Figure3A.tsv", sep = "\t", row.names = FALSE, quote = FALSE)
 message(item_name, ": ", nrow(clean), " rows")
-
-tsv_dir <- file.path(base, "__Public", "comparative-data")
-enc <- if (!is.na(base)) { fc <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-  fc$`Item encoded`[match(item_name, fc$`Item name`)] } else NA_character_
-if (!is.na(enc) && nzchar(enc) && dir.exists(path.expand(tsv_dir)))
-  write.table(clean, file.path(path.expand(tsv_dir), paste0(enc, ".tsv")), sep = "\t", row.names = FALSE)

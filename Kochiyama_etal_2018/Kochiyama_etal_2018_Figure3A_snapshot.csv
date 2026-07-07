@@ -1,0 +1,15 @@
+Figure 3(a): relative volumes (region volume / mean MH volume) read from the bar graphs. MH=1.0 by construction. Values are figure-digitized estimates (+/-0.02).
+Region,NT_rel,EH_rel,MH_rel
+Fr SM,0.98,1.01,1.0
+Fr I,1.0,0.995,1.0
+Fr O,0.99,1.01,1.0
+Sm,0.98,0.965,1.0
+Pa SI,0.96,0.965,1.0
+Pa TP,1.015,0.985,1.0
+Te SM,1.05,0.99,1.0
+Te I,1.03,1.0,1.0
+Oc SM,1.065,1.06,1.0
+Oc I,1.03,1.045,1.0
+Ce V,0.965,1.01,1.0
+Ce A,0.99,1.0,1.0
+Ce P,0.94,0.995,1.0
