@@ -62,3 +62,26 @@ volume (Weaver × Kochiyama)** — Kochiyama's MH total cerebellum (Ce A+Ce P+Ce
 an independent cross-validation. All three converge qualitatively: occipital
 relatively larger in fossils, parietal larger in modern humans, cerebellum reduced
 in Neanderthals.
+
+## Fossil specimens table (compiled from the main-paper TEXT, not tabulated)
+
+`Kochiyama_etal_2018_FossilSpecimensText.csv` (+ `_snapshot.csv`, `_groupmeans.csv`,
+`_dateReferences.csv`, definitions) tabulates the 8 fossils used in the study:
+
+- **Taxon** (p.5 / p.1): 4 NT (Neanderthal) — Amud 1, La Chapelle-aux-Saints 1,
+  La Ferrassie 1, Forbes' Quarry 1; 4 EH (early *Homo sapiens*) — Qafzeh 9, Skhul 5,
+  Mladeč 1, Cro-Magnon 1. (MH = 1185 *living* humans, no fossils.)
+- **Specimen date range** (p.1, `date_min_yBP`/`date_max_yBP`) and the derived
+  **midpoint** (`date_mean_yBP`); Forbes' Quarry 1 has no dating information.
+- **Species-level date** = NT–*H. sapiens* divergence ~600,000–800,000 yBP (p.1,
+  ref 19 = Meyer et al. 2016) — this is the only species-level date the paper gives;
+  interpret accordingly.
+- **Reconstructed cerebral & cerebellar volumes** (p.2, cc + mm³) per specimen; the
+  per-specimen values reproduce the paper's reported group means exactly (NT 1161/149,
+  EH 1135/153, MH 1097/149 cc) — a transcription check.
+- **Date-citation references** (pp.7–8) resolved in `_dateReferences.csv` (refs 19–29,
+  plus 18 for the Pan divergence).
+
+Nomenclature matches the other Kochiyama files (NT/EH/MH codes; `Cerebrum_Vol.cc/.mm3`,
+`Cerebellum_Vol.cc/.mm3`). Not a registry item; proposed encoded name
+`10.1038%2Fs41598-018-24331-0_FossilSpecimensText`.

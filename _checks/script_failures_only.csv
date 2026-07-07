@@ -338,7 +338,7 @@ Number of logged events: 2379
 Error in density.default(x = c(NA_real_, NA_real_, NA_real_, NA_real_,  : 
   need at least 2 points to select a bandwidth automatically
 Calls: densityplot ... <Anonymous> -> do.call -> <Anonymous> -> density.default
-Execution halted","2026-07-07 15:18:06.16564","2026-07-07 15:18:24.008103",17.8424627780914
+Execution halted","2026-07-07 17:04:29.014202","2026-07-07 17:04:46.828206",17.814003944397
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_Zilles_Rehkamper_1988_provenance.R","FAILED","New names:
 • `` -> `...2`
 • `` -> `...3`
@@ -409,6 +409,6 @@ One or more parsing issues, call `problems()` on your data frame for details,
 e.g.:
   dat <- vroom(...)
   problems(dat) 
-Execution halted","2026-07-07 15:18:47.094768","2026-07-07 15:18:48.254147",1.15937900543213
+Execution halted","2026-07-07 17:05:10.648537","2026-07-07 17:05:11.755782",1.10724496841431
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kochiyama_etal_2018/Kochiyama_etal_2018_Figure3.R","FAILED","Error: nrow(clean) == 13L is not TRUE
-Execution halted","2026-07-07 15:24:44.072335","2026-07-07 15:24:44.366954",0.294619083404541
+Execution halted","2026-07-07 17:11:07.615175","2026-07-07 17:11:07.978182",0.363007068634033

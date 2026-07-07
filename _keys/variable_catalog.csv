@@ -15,6 +15,11 @@ Stephan_etal_1987,Stephan_etal_1987,group,NA,(structure-agnostic; see data colum
 Ashwell__2020,Ashwell_2020,group,NA,(structure-agnostic; see data columns),NA,TaxonGroup,TaxonGroup,NA,primary,Mammalia,higher-level taxonomic/phylogenetic group as printed in the supplementary table
 BarbeitoAndres_etal_2019,BarbeitoAndres_etal_2019,units,NA,(structure-agnostic; see data columns),NA,Units,Units,NA,primary,NA,mm3 (volumes); 10^6 cells (cell number); 10^3 cells/mg (density)
 BarbeitoAndres_etal_2019,BarbeitoAndres_etal_2019,value,NA,(structure-agnostic; see data columns),NA,Value,Value,NA,primary,NA,numeric value for the (group x region x measure[x cell_type]) cell
+Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,date_min_yBP,NA,(structure-agnostic; see data columns),NA,age.yBP,age.yBP,min,primary,Homo,younger bound of specimen date (years before present)
+Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,date_max_yBP,NA,(structure-agnostic; see data columns),NA,age.yBP,age.yBP,max,primary,Homo,older bound of specimen date (yBP)
+Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,date_mean_yBP,NA,(structure-agnostic; see data columns),NA,age.yBP,age.yBP,mean,secondary,Homo,midpoint of the specimen date range (derived)
+Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,species_divergence_min_yBP,NA,(structure-agnostic; see data columns),NA,age.yBP,age.yBP,min,info,Homo,younger bound of NT-H.sapiens lineage divergence
+Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,species_divergence_max_yBP,NA,(structure-agnostic; see data columns),NA,age.yBP,age.yBP,max,info,Homo,older bound of NT-H.sapiens lineage divergence
 AvelinodeSouza_etal_2025,AvelinodeSouza_etal_2025_TABLE1,Neurons,NA,(structure-agnostic; see data columns),NA,N.n,count (number),NA,primary,Cetaceans & other placental mammals,number of neurons
 AvelinodeSouza_etal_2025,AvelinodeSouza_etal_2025_TABLE1,Non-neuronal cells,NA,(structure-agnostic; see data columns),NA,O.n,count (number),NA,primary,Cetaceans & other placental mammals,number of other (non-neuronal) cells
 Burish_etal_2010,Burish_etal_2010,N,NA,(structure-agnostic; see data columns),NA,N.n,count (number),NA,review,Primates (+ other mammals),average number of neurons
@@ -64,6 +69,7 @@ HerculanoHouzel_etal_2015,HerculanoHouzel_2015,% Neurons,NA,(structure-agnostic;
 Kverkova_etal_2018,Kverkova_etal_2018_TableS1,p.C.Brain,NA,(structure-agnostic; see data columns),NA,p.C.Brain,proportion (of CNS/body/brain),NA,primary,Rodents (African mole-rats +),average structure volume fractions (expressed as percentage of the whole brain volume)
 DosSantos_etal_2020,DosSantos_etal_2020_unpublished,I/C,NA,(structure-agnostic; see data columns),NA,I.p.C,ratio,NA,primary,Mammals,Microglia/Cell ratio
 Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3legend,MH_CV,NA,(structure-agnostic; see data columns),NA,ratio,ratio,CV,info,Homo sapiens,coefficient of variation of MH volume (= relative-volume s.d.)
+Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,Cerebellum_Cerebrum_ratio,NA,(structure-agnostic; see data columns),NA,ratio,ratio,NA,secondary,Homo,cerebellum-to-cerebrum volume ratio (derived)
 Weaver_2001,Weaver__2001_TableA-11,CBLM_PCF,NA,(structure-agnostic; see data columns),NA,ratio,ratio,NA,secondary,hominoids,ratio of cerebellum volume to posterior cranial fossa volume
 AvelinodeSouza_etal_2025,AvelinodeSouza_etal_2025_TABLE1,Non-neuronal cells/neuron,NA,(structure-agnostic; see data columns),NA,O.p.N,ratio (per neuron),NA,primary,Cetaceans & other placental mammals,ratio of non-neuronal (other) cells to neurons (O/N)
 DosSantos_etal_2017,DosSantos_etal_2017_TableS1,O/N,NA,(structure-agnostic; see data columns),NA,O.p.N,ratio (per neuron),NA,primary,Marsupials,ratio between numbers of other (non-neuronal) cells and neurons.
@@ -189,6 +195,10 @@ Ashwell__2020,Ashwell_2020,total_cb_volume_mm3,Cerebellum,Cerebellum,cell_counts
 Ashwell__2020,Ashwell_2020,total_cb_volume_mm3,Cerebellum,Cerebellum,brain_structure_volume,Volume.mm3,volume,NA,primary,Mammalia,total volume of the corpus cerebelli in cubic millimetres
 Frahm_etal_1997,Frahm_etal_1997_Table1,Cerebellum_mm3,Cerebellum,Cerebellum,cell_counts,Vol.mm3,volume,NA,primary,Rodentia & Insectivora,Cerebellum (Vol.mm3)
 Frahm_etal_1997,Frahm_etal_1997_Table1,Cerebellum_mm3,Cerebellum,Cerebellum,brain_structure_volume,Vol.mm3,volume,NA,primary,Rodentia & Insectivora,Cerebellum (Vol.mm3)
+Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,Cerebellum_Vol.cc,Cerebellum,Cerebellum,cell_counts,Vol.cc,volume,NA,primary,Homo,reconstructed cerebellar volume (as printed)
+Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,Cerebellum_Vol.cc,Cerebellum,Cerebellum,brain_structure_volume,Vol.cc,volume,NA,primary,Homo,reconstructed cerebellar volume (as printed)
+Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,Cerebellum_Vol.mm3,Cerebellum,Cerebellum,cell_counts,Vol.mm3,volume,NA,primary,Homo,cerebellar volume in project units
+Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,Cerebellum_Vol.mm3,Cerebellum,Cerebellum,brain_structure_volume,Vol.mm3,volume,NA,primary,Homo,cerebellar volume in project units
 MacLeod_etal_2003,MacLeod_etal_2003,cerebellum_volume_cm3,Cerebellum,Cerebellum,cell_counts,Volume.cm3,volume,NA,primary,Apes (Hominoidea),whole cerebellum volume
 MacLeod_etal_2003,MacLeod_etal_2003,cerebellum_volume_cm3,Cerebellum,Cerebellum,brain_structure_volume,Volume.cm3,volume,NA,primary,Apes (Hominoidea),whole cerebellum volume
 Stephan_etal_1970,Stephan_etal_1970,cerebellum_mm3,Cerebellum,Cerebellum,cell_counts,Volume.mm3,volume,NA,primary,NA,cerebellum volume (Brachium and Nuclei pontis included)
@@ -207,6 +217,8 @@ Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Cerebellum_without_pons,
 Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Cerebellum_without_pons,Cerebellum,Cerebellum,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),cerebellum (measured without the pons) fresh volume
 Bush_Allman_2003,Bush_Allman_2003,cer_gray_cm3,CerebellumGrey,CerebellumGrey,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,cerebellar grey matter volume
 Bush_Allman_2003,Bush_Allman_2003,cer_white_cm3,CerebellumWhite,CerebellumWhite,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,cerebellar white matter volume
+Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,Cerebrum_Vol.cc,Cerebrum,Cerebrum,NA,Vol.cc,volume,NA,primary,Homo,reconstructed cerebral volume (as printed)
+Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,Cerebrum_Vol.mm3,Cerebrum,Cerebrum,NA,Vol.mm3,volume,NA,primary,Homo,cerebral volume in project units
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Complexus_centromedialis,Complexus_centromedialis,Complexus_centromedialis,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",centromedial amygdaloid complex
 Stephan_etal_1987,Stephan_etal_1987_Table1,Complexus_centromedialis_mm3,Complexus_centromedialis,Complexus_centromedialis,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Complexus centromedialis (Vol.mm3)
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Complexus_corticobasolateralis,Complexus_corticobasolateralis,Complexus_corticobasolateralis,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",corticobasolateral amygdaloid complex

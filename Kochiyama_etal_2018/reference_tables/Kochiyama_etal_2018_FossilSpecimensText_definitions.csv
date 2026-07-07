@@ -1,0 +1,18 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Specimen,fossil specimen name as printed,,,,info,Homo,Kochiyama_etal_2018_FossilSpecimensText,8 fossils (4 NT + 4 EH),p.1/p.5
+Taxon_code,group code,,,,info,Homo,Kochiyama_etal_2018_FossilSpecimensText,"NT=Neanderthal; EH=early Homo sapiens (MH=living, no fossils)",p.5
+Taxon_group,group label,,,,info,Homo,Kochiyama_etal_2018_FossilSpecimensText,,p.5
+Species,species attribution,,,,info,Homo,Kochiyama_etal_2018_FossilSpecimensText,NT -> Homo neanderthalensis; EH -> Homo sapiens,
+date_min_yBP,younger bound of specimen date (years before present),,age.yBP,min,primary,Homo,Kochiyama_etal_2018_FossilSpecimensText,as printed p.1,p.1
+date_max_yBP,older bound of specimen date (yBP),,age.yBP,max,primary,Homo,Kochiyama_etal_2018_FossilSpecimensText,,p.1
+date_mean_yBP,midpoint of the specimen date range (derived),,age.yBP,mean,secondary,Homo,Kochiyama_etal_2018_FossilSpecimensText,(min+max)/2; = point estimate where no range given,
+date_note,how the date was reported,,,,info,Homo,Kochiyama_etal_2018_FossilSpecimensText,range midpoint / point estimate / no dating information,
+species_divergence_min_yBP,younger bound of NT-H.sapiens lineage divergence,,age.yBP,min,info,Homo,Kochiyama_etal_2018_FossilSpecimensText,"~600,000 yBP; same for all specimens","p.1, ref 19"
+species_divergence_max_yBP,older bound of NT-H.sapiens lineage divergence,,age.yBP,max,info,Homo,Kochiyama_etal_2018_FossilSpecimensText,"~800,000 yBP","p.1, ref 19"
+species_divergence_ref,reference for the divergence date,,,,info,Homo,Kochiyama_etal_2018_FossilSpecimensText,Meyer et al. 2016 (Nature 531:504),"p.1, ref 19"
+Cerebrum_Vol.cc,reconstructed cerebral volume (as printed),Cerebrum,Vol.cc,,primary,Homo,Kochiyama_etal_2018_FossilSpecimensText,computational reconstruction; GM+WM,p.2
+Cerebrum_Vol.mm3,cerebral volume in project units,Cerebrum,Vol.mm3,,primary,Homo,Kochiyama_etal_2018_FossilSpecimensText,cc x 1000,
+Cerebellum_Vol.cc,reconstructed cerebellar volume (as printed),Cerebellum,Vol.cc,,primary,Homo,Kochiyama_etal_2018_FossilSpecimensText,computational reconstruction; GM+WM,p.2
+Cerebellum_Vol.mm3,cerebellar volume in project units,Cerebellum,Vol.mm3,,primary,Homo,Kochiyama_etal_2018_FossilSpecimensText,cc x 1000,
+Cerebellum_Cerebrum_ratio,cerebellum-to-cerebrum volume ratio (derived),,ratio,,secondary,Homo,Kochiyama_etal_2018_FossilSpecimensText,Cerebellum_cc / Cerebrum_cc; group means p.2,
+date_refs_Kochiyama,Kochiyama reference number(s) for the specimen date,,,,note,Homo,Kochiyama_etal_2018_FossilSpecimensText,see FossilSpecimensText_dateReferences.csv,pp.7-8

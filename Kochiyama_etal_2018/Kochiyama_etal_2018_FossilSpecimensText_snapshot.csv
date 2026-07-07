@@ -1,0 +1,10 @@
+"Kochiyama et al. 2018 - fossil specimens (compiled from main-paper text): taxon & specimen list (p.5), specimen dates (p.1), NT-H.sapiens divergence (p.1, ref 19), reconstructed cerebral & cerebellar volumes (p.2), date refs (pp.7-8)."
+Specimen,Taxon_as_used,Date_printed_p1,Cerebral_cc_p2,Cerebellar_cc_p2,Date_refs
+Amud 1,NT (Neanderthal),"~50,000-70,000 years old",1304,182,"20,21"
+La Chapelle-aux-Saints 1,NT (Neanderthal),"~47,000-56,000 years old",1159,140,22
+La Ferrassie 1,NT (Neanderthal),"~43,000-45,000 years old",1268,166,23
+Forbes' Quarry 1,NT (Neanderthal),no dating information,912,106,
+Qafzeh 9,EH / anatomically modern human,"~90,000-120,000 years old",1075,147,"22,24,25"
+Skhul 5,EH / anatomically modern human,"~100,000-135,000 years old",1053,146,"26,27"
+Mladeč 1,EH / anatomically modern human,"~35,000 years old",1205,165,28
+Cro-Magnon 1,EH / anatomically modern human,"about 32,000 years old",1208,156,29
