@@ -28,6 +28,7 @@ HerculanoHouzel_etal_2015,HerculanoHouzel_2015,"N, n",NA,(structure-agnostic; se
 HerculanoHouzel_etal_2015,HerculanoHouzel_2015,"O, n",NA,(structure-agnostic; see data columns),NA,O.n,count (number),NA,both,Mammals,number of other cells
 JardimMesseder_etal_2017,JardimMesseder_etal_2017_Table1,N,NA,(structure-agnostic; see data columns),NA,N.n,count (number),NA,primary,Carnivores & other companion mammals,number of neurons
 JardimMesseder_etal_2017,JardimMesseder_etal_2017_Table1,O,NA,(structure-agnostic; see data columns),NA,O.n,count (number),NA,primary,Carnivores & other companion mammals,number of other (non-neuronal) cells
+Kochiyama_etal_2018,Kochiyama_etal_2018_ExtendedDataTable1,n_AAL_regions,NA,(structure-agnostic; see data columns),NA,count,count (number),NA,info,NA,number of AAL sub-regions in the parcel
 Kverkova_etal_2018,Kverkova_etal_2018,N.n,NA,(structure-agnostic; see data columns),NA,N.n,count (number),NA,primary,Rodents (African mole-rats +),number of neurons
 AvelinodeSouza_etal_2025,AvelinodeSouza_etal_2025_TABLE1,Neurons/mg,NA,(structure-agnostic; see data columns),NA,N.p.mg,density (per mass/volume),NA,primary,Cetaceans & other placental mammals,neuronal density (neurons/mg)
 AvelinodeSouza_etal_2025,AvelinodeSouza_etal_2025_TABLE1,Non-neuronal cells/mg,NA,(structure-agnostic; see data columns),NA,O.p.mg,density (per mass/volume),NA,primary,Cetaceans & other placental mammals,non-neuronal (other) cell density (cells/mg)
@@ -62,6 +63,7 @@ Burish_etal_2010,Burish_etal_2010,%NCNS,NA,(structure-agnostic; see data columns
 HerculanoHouzel_etal_2015,HerculanoHouzel_2015,% Neurons,NA,(structure-agnostic; see data columns),NA,p.C.N,proportion (of CNS/body/brain),NA,both,Mammals,number of neurons / (number of neurons + number of other cells) * 100
 Kverkova_etal_2018,Kverkova_etal_2018_TableS1,p.C.Brain,NA,(structure-agnostic; see data columns),NA,p.C.Brain,proportion (of CNS/body/brain),NA,primary,Rodents (African mole-rats +),average structure volume fractions (expressed as percentage of the whole brain volume)
 DosSantos_etal_2020,DosSantos_etal_2020_unpublished,I/C,NA,(structure-agnostic; see data columns),NA,I.p.C,ratio,NA,primary,Mammals,Microglia/Cell ratio
+Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3legend,MH_CV,NA,(structure-agnostic; see data columns),NA,ratio,ratio,CV,info,Homo sapiens,coefficient of variation of MH volume (= relative-volume s.d.)
 Weaver_2001,Weaver__2001_TableA-11,CBLM_PCF,NA,(structure-agnostic; see data columns),NA,ratio,ratio,NA,secondary,hominoids,ratio of cerebellum volume to posterior cranial fossa volume
 AvelinodeSouza_etal_2025,AvelinodeSouza_etal_2025_TABLE1,Non-neuronal cells/neuron,NA,(structure-agnostic; see data columns),NA,O.p.N,ratio (per neuron),NA,primary,Cetaceans & other placental mammals,ratio of non-neuronal (other) cells to neurons (O/N)
 DosSantos_etal_2017,DosSantos_etal_2017_TableS1,O/N,NA,(structure-agnostic; see data columns),NA,O.p.N,ratio (per neuron),NA,primary,Marsupials,ratio between numbers of other (non-neuronal) cells and neurons.
@@ -73,11 +75,15 @@ Balzeau_etal_2012,Balzeau_etal_2012_Table2,Intercept,NA,(structure-agnostic; see
 Balzeau_etal_2012,Balzeau_etal_2012_Table2,Rsquared,NA,(structure-agnostic; see data columns),NA,regression,regression,R2,secondary,Homo,coefficient of determination (R-squared) of the regression
 Balzeau_etal_2012,Balzeau_etal_2012_Table3,Mean_surface_sizecorrected,NA,(structure-agnostic; see data columns),NA,size.corrected.surface,surface area,Mean,secondary,Homo,mean size-corrected surface dimension of the lobe
 Balzeau_etal_2012,Balzeau_etal_2012_Table3,V_star,NA,(structure-agnostic; see data columns),NA,size.corrected.surface,surface area,V*,secondary,Homo,size-corrected coefficient of variation of the lobe surface
-Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3,MH_mean_Vol.cc,NA,(structure-agnostic; see data columns),NA,Vol.cc,volume,Mean,primary,Homo sapiens,mean modern-human volume of the parcellated region (as printed)
-Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3,MH_sd_Vol.cc,NA,(structure-agnostic; see data columns),NA,Vol.cc,volume,SD,primary,Homo sapiens,standard deviation of the modern-human region volume (as printed)
-Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3,MH_mean_Vol.mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,Mean,primary,Homo sapiens,mean modern-human region volume converted to project units (mm3)
-Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3,MH_sd_Vol.mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,SD,primary,Homo sapiens,standard deviation of region volume in project units (mm3)
-Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3,MH_relative_volume,NA,(structure-agnostic; see data columns),NA,relative.volume,volume,NA,info,Homo sapiens,relative volume of the region (panel a normalization reference)
+Kochiyama_etal_2018,Kochiyama_etal_2018_ExtendedDataFigure4,NT_rel,NA,(structure-agnostic; see data columns),NA,relative.volume,volume,Mean,secondary,Homo neanderthalensis,"NT relative volume, individual-brain (4x1185) reconstruction"
+Kochiyama_etal_2018,Kochiyama_etal_2018_ExtendedDataFigure4,EH_rel,NA,(structure-agnostic; see data columns),NA,relative.volume,volume,Mean,secondary,Homo sapiens (early),"EH relative volume, individual-brain reconstruction"
+Kochiyama_etal_2018,Kochiyama_etal_2018_ExtendedDataFigure4,MH_rel,NA,(structure-agnostic; see data columns),NA,relative.volume,volume,Mean,info,Homo sapiens,MH relative volume
+Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3,NT_rel,NA,(structure-agnostic; see data columns),NA,relative.volume,volume,Mean,secondary,Homo neanderthalensis,Neanderthal relative volume (region vol / mean MH vol)
+Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3,EH_rel,NA,(structure-agnostic; see data columns),NA,relative.volume,volume,Mean,secondary,Homo sapiens (early),early H. sapiens relative volume
+Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3,MH_rel,NA,(structure-agnostic; see data columns),NA,relative.volume,volume,Mean,info,Homo sapiens,modern H. sapiens relative volume
+Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3legend,MH_mean_Vol.cc,NA,(structure-agnostic; see data columns),NA,Vol.cc,volume,Mean,primary,Homo sapiens,mean modern-human region volume (as printed)
+Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3legend,MH_sd_Vol.cc,NA,(structure-agnostic; see data columns),NA,Vol.cc,volume,SD,primary,Homo sapiens,s.d. of modern-human region volume
+Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3legend,MH_mean_Vol.mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,Mean,primary,Homo sapiens,MH mean volume in project units
 Kverkova_etal_2018,Kverkova_etal_2018_TableS1,Vol.mm3,NA,(structure-agnostic; see data columns),NA,Vol.mm3,volume,NA,primary,Rodents (African mole-rats +),absolute structure volumes in mm3
 Barger_etal_2007,Barger_etal_2007,accessory_basal_L,AccessoryBasalNucleus,AccessoryBasalNucleus,NA,Volume.cm3,volume,NA,primary,Apes & humans,accessory basal nucleus volume left
 Barger_etal_2007,Barger_etal_2007,accessory_basal_R,AccessoryBasalNucleus,AccessoryBasalNucleus,NA,Volume.cm3,volume,NA,primary,Apes & humans,accessory basal nucleus volume right

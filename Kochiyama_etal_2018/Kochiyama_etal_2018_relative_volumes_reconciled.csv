@@ -1,14 +1,14 @@
-Region_code,Structure,Subregion,ANOVA_p,significant,NT_fig3,EH_fig3,NT_recovered,EH_recovered,NT_extfig4,EH_extfig4,MH_all,NT_fig3_vs_recovered_diff,EH_fig3_vs_recovered_diff,best_NT,best_EH
-Fr SM,FrontalLobe,superior and middle,0.363,False,0.98,1.01,,,1.0,1.03,1.0,,,0.98,1.01
-Fr I,FrontalLobe,inferior,0.834,False,1.0,0.995,,,1.0,0.99,1.0,,,1.0,0.995
-Fr O,FrontalLobe,orbitofrontal,0.777,False,0.99,1.01,,,1.0,1.03,1.0,,,0.99,1.01
-Sm,SensorimotorCortex,whole (sensorimotor),0.026,True,0.98,0.965,0.9795,0.9663,0.99,0.97,1.0,0.0005,0.0013,0.9795,0.9663
-Pa SI,ParietalLobe,superior and inferior,0.0,True,0.96,0.965,0.9593,0.9736,0.97,0.97,1.0,0.0007,0.0086,0.9593,0.9736
-Pa TP,ParietalLobe,temporo-parietal junction,0.419,False,1.015,0.985,,,1.02,0.98,1.0,,,1.015,0.985
-Te SM,TemporalLobe,superior and middle,0.054,False,1.05,0.99,,,1.05,0.99,1.0,,,1.05,0.99
-Te I,TemporalLobe,inferior/medial,0.088,False,1.03,1.0,,,1.03,1.0,1.0,,,1.03,1.0
-Oc SM,OccipitalLobe,superior and middle,0.0,True,1.065,1.06,1.0644,1.0631,1.06,1.06,1.0,0.0006,0.0031,1.0644,1.0631
-Oc I,OccipitalLobe,inferior,0.004,True,1.03,1.045,1.0289,1.0475,1.02,1.06,1.0,0.0011,0.0025,1.0289,1.0475
-Ce V,Cerebellum,vermis,0.001,True,0.965,1.01,0.9661,1.0109,0.95,1.0,1.0,0.0011,0.0009,0.9661,1.0109
-Ce A,Cerebellum,anterior,0.502,False,0.99,1.0,,,0.97,0.99,1.0,,,0.99,1.0
-Ce P,Cerebellum,posterior,0.001,True,0.94,0.995,0.94,0.9942,0.93,0.98,1.0,0.0,0.0008,0.94,0.9942
+"Region_code","significant","NT_fig3","EH_fig3","NT_recovered","EH_recovered","NT_extfig4","EH_extfig4","consistency_err_t","best_NT","best_EH"
+"Fr SM",FALSE,0.98,1.01,NA,NA,1,1.03,NA,0.98,1.01
+"Fr I",FALSE,1,0.995,NA,NA,1,0.99,NA,1,0.995
+"Fr O",FALSE,0.99,1.01,NA,NA,1,1.03,NA,0.99,1.01
+"Sm",TRUE,0.98,0.965,0.9795,0.9663,0.99,0.97,4e-04,0.9795,0.9663
+"Pa SI",TRUE,0.96,0.965,0.9593,0.9736,0.97,0.97,3e-04,0.9593,0.9736
+"Pa TP",FALSE,1.015,0.985,NA,NA,1.02,0.98,NA,1.015,0.985
+"Te SM",FALSE,1.05,0.99,NA,NA,1.05,0.99,NA,1.05,0.99
+"Te I",FALSE,1.03,1,NA,NA,1.03,1,NA,1.03,1
+"Oc SM",TRUE,1.065,1.06,1.0644,1.0631,1.06,1.06,2e-04,1.0644,1.0631
+"Oc I",TRUE,1.03,1.045,1.0289,1.0475,1.02,1.06,1e-04,1.0289,1.0475
+"Ce V",TRUE,0.965,1.01,0.9661,1.0109,0.95,1,4e-04,0.9661,1.0109
+"Ce A",FALSE,0.99,1,NA,NA,0.97,0.99,NA,0.99,1
+"Ce P",TRUE,0.94,0.995,0.94,0.9942,0.93,0.98,7e-04,0.94,0.9942
