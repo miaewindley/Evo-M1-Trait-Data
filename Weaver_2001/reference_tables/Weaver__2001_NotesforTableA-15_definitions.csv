@@ -1,0 +1,6 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+note_id,sequential index of the provenance note (1-7),,,,info,,Weaver__2001_NotesforTableA-15,,
+variable,variable(s) the note attributes to a source,,,,info,,Weaver__2001_NotesforTableA-15,,
+taxon_group,taxon group the note applies to,,,,info,,Weaver__2001_NotesforTableA-15,,
+data_source,where the data / formula came from,,,,note,,Weaver__2001_NotesforTableA-15,external references cited by Weaver,
+note_text,the provenance note exactly as printed under Table A-15,,,,note,,Weaver__2001_NotesforTableA-15,verbatim from the snapshot,

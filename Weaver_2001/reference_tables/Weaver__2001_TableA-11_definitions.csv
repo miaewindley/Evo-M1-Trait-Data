@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Specimen,MRI specimen identifier as printed,,,,info,"hominoids (Hylobates, Pongo, Gorilla, Pan, bonobo, Homo)",Weaver__2001_TableA-11,"Gi=gibbon, Or=orang, GO=gorilla, Pan=chimp, Bo=bonobo, YH/CS=human specimens",
+Taxon_code,taxon code as printed,,,,info,,Weaver__2001_TableA-11,"Gi, O, Go, C, B, H",
+Taxon,expanded taxon name,,,,info,,Weaver__2001_TableA-11,Gi=Hylobates; O=Pongo; Go=Gorilla; C=Pan; B=Pan paniscus; H=Homo sapiens,
+PCF_cc,posterior cranial fossa volume as printed (cc),PosteriorCranialFossa,Vol.cc,,primary,"hominoids",Weaver__2001_TableA-11,MRI-derived,snapshot 'PCF Volume'
+PCF_Vol.mm3,posterior cranial fossa volume in project units (mm3),PosteriorCranialFossa,Vol.mm3,,primary,"hominoids",Weaver__2001_TableA-11,cc x 1000,
+CBLM_cc,cerebellum volume as printed (cc),Cerebellum,Vol.cc,,primary,"hominoids",Weaver__2001_TableA-11,MRI-derived,snapshot 'CBLM Volume'
+CBLM_Vol.mm3,cerebellum volume in project units (mm3),Cerebellum,Vol.mm3,,primary,"hominoids",Weaver__2001_TableA-11,cc x 1000,
+CBLM_PCF,ratio of cerebellum volume to posterior cranial fossa volume,,ratio,,secondary,"hominoids",Weaver__2001_TableA-11,derived (CBLM/PCF),snapshot 'CBLM/PCF'
+Method:units,structure volume -> mm3 (cc x 1000),,,,method,,Weaver__2001_TableA-11,project-standard unit conversion,

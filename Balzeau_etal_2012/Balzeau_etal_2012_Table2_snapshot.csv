@@ -1,0 +1,12 @@
+Table 2. Regression results for the relationship between endocranial volume and the surface of the frontal, parieto-temporal and occipital lobes.,,,,,,
+Lobe,Sample,n,Slope,Intercept,Rsquared,p
+Frontal lobes,Complete sample,146,1.310,-1.798,0.739,***
+,Fossil hominins,36,1.361,-1.948,0.903,***
+,AMH,110,1.928,-9.009,0.452,***
+Parieto-temporal lobes,Complete sample,142,1.739,-3.930,0.846,***
+,Fossil hominins,33,1.308,0.192,0.910,***
+,AMH,109,1.750,-3.970,0.516,***
+Occipital lobes,Complete sample,145,0.925,-2.430,0.230,***
+,Fossil hominins,36,0.933,-1.754,0.691,***
+,AMH,109,1.744,-12.088,0.109,***
+"*** indicates p value < 0.001 after sequential Bonferroni procedure for correction for multiple tests.",,,,,,

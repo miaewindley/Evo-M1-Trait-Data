@@ -1,0 +1,16 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Region_code,parcellated brain-region abbreviation as printed in the Figure 3 legend,,,,info,Homo sapiens,Kochiyama_etal_2018_Figure3,"13 regions; key: Fr frontal, Pa parietal, Te temporal, Oc occipital, Ce cerebellum, Sm sensorimotor; SM superior+middle, I inferior, O orbitofrontal, SI superior+inferior, TP temporo-parietal junction, A anterior, P posterior, V vermis",
+Structure,canonical lobe / structure the region belongs to,,,,info,Homo sapiens,Kochiyama_etal_2018_Figure3,"FrontalLobe, ParietalLobe, TemporalLobe, OccipitalLobe, Cerebellum, SensorimotorCortex",
+Subregion,sub-region within the structure (from the legend key),,,,info,Homo sapiens,Kochiyama_etal_2018_Figure3,,
+Species,species of the reference group whose mean volumes are reported,,,,info,Homo sapiens,Kochiyama_etal_2018_Figure3,MH = anatomically modern Homo sapiens,
+Group,comparison group for the reported means,,,,info,Homo sapiens,Kochiyama_etal_2018_Figure3,"MH (modern H. sapiens); the study also compares NT (Neanderthal, n=4) and EH (early H. sapiens, n=4) but their values are only shown as bars, not in text",
+n_MH,number of modern-human individuals contributing to the MH means,,,n,info,Homo sapiens,Kochiyama_etal_2018_Figure3,"inferred from ANOVA df (2,1190): MH=1185, NT=4, EH=4",
+MH_mean_Vol.cc,mean modern-human volume of the parcellated region (as printed),,Vol.cc,Mean,primary,Homo sapiens,Kochiyama_etal_2018_Figure3,reconstructed via computational neuroanatomy (GM+WM); printed in cc,Figure 3 legend
+MH_sd_Vol.cc,standard deviation of the modern-human region volume (as printed),,Vol.cc,SD,primary,Homo sapiens,Kochiyama_etal_2018_Figure3,,Figure 3 legend
+MH_mean_Vol.mm3,mean modern-human region volume converted to project units (mm3),,Vol.mm3,Mean,primary,Homo sapiens,Kochiyama_etal_2018_Figure3,cc x 1000,
+MH_sd_Vol.mm3,standard deviation of region volume in project units (mm3),,Vol.mm3,SD,primary,Homo sapiens,Kochiyama_etal_2018_Figure3,cc x 1000,
+MH_relative_volume,relative volume of the region (panel a normalization reference),,relative.volume,,info,Homo sapiens,Kochiyama_etal_2018_Figure3,=1.0 by construction (each region normalized to mean MH volume); NT/EH bars are relative to this but not tabulated,
+ANOVA_F,ANOVA F statistic for the relative-volume difference among NT/EH/MH,,,F,secondary,Homo,Kochiyama_etal_2018_Figure3,"df = 2,1190; reported only for the 4 significant regions (Pa SI, Oc SM, Ce V, Ce P)",Figure 3(a) legend
+ANOVA_p,ANOVA p-value for the relative-volume difference among NT/EH/MH,,,p,secondary,Homo,Kochiyama_etal_2018_Figure3,Bonferroni significance threshold p < 0.003 (=0.05/13),Figure 3(a) legend
+significant,whether the region showed a significant relative-volume difference,,,,info,Homo,Kochiyama_etal_2018_Figure3,TRUE for Pa SI / Oc SM / Ce V / Ce P,
+Method:reconstruction,"fossil and MH brains reconstructed by computational neuroanatomy (DARTEL diffeomorphic deformation of 1,185 living-human MR brains onto endocasts); volumes = GM+WM; size-adjusted by ICV as ANCOVA covariate",,,,method,,Kochiyama_etal_2018_Figure3,see paper Methods,

@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+FrontalLobe,regression of frontal-lobe surface on endocranial volume,FrontalLobe,regression,,secondary,Homo,Balzeau_etal_2012_Table2,scaling relationship (not a per-specimen measure),snapshot rows 'Frontal lobes'
+Parieto-TemporalLobe,regression of parieto-temporal-lobe surface on endocranial volume,Parieto-TemporalLobe,regression,,secondary,Homo,Balzeau_etal_2012_Table2,scaling relationship,snapshot rows 'Parieto-temporal lobes'
+OccipitalLobe,regression of occipital-lobe surface on endocranial volume,OccipitalLobe,regression,,secondary,Homo,Balzeau_etal_2012_Table2,scaling relationship,snapshot rows 'Occipital lobes'
+Lobe_Balzeau2012,lobe name as printed,,,,info,Homo,Balzeau_etal_2012_Table2,forward-filled from the spanned printed label,
+Sample,regression sample,,,,info,Homo,Balzeau_etal_2012_Table2,"Complete sample; Fossil hominins; AMH",
+n,number of specimens in the regression,,,n,info,Homo,Balzeau_etal_2012_Table2,,snapshot 'n'
+Slope,slope of the (log-log) regression of lobe surface on endocranial volume,,regression,slope,secondary,Homo,Balzeau_etal_2012_Table2,allometric scaling exponent,snapshot 'Slope'
+Intercept,intercept of the regression,,regression,intercept,secondary,Homo,Balzeau_etal_2012_Table2,,snapshot 'Intercept'
+Rsquared,coefficient of determination (R-squared) of the regression,,regression,R2,secondary,Homo,Balzeau_etal_2012_Table2,,snapshot 'Rsquared'
+p_code,significance code for the regression p-value,,,p,note,Homo,Balzeau_etal_2012_Table2,*** = p < 0.001 after sequential Bonferroni,snapshot 'p'
