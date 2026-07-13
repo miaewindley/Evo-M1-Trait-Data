@@ -1,9 +1,4 @@
 Reference,Original_Term,side,required_suffix,note
-Stephan_etal_1981_TablesI-VI,Complexus_vestibularis_unilateral,unilateral,_unilateral,Baron et al. 1988 states the Stephan 1981 vestibular volumes were measured from one side only (the reformat names the data columns with the _unilateral suffix)
-Stephan_etal_1981_TablesI-VI,Nucleus_vestibularis_superior_unilateral,unilateral,_unilateral,
-Stephan_etal_1981_TablesI-VI,Nucleus_vestibularis_lateralis_unilateral,unilateral,_unilateral,
-Stephan_etal_1981_TablesI-VI,Nucleus_vestibularis_medialis_unilateral,unilateral,_unilateral,
-Stephan_etal_1981_TablesI-VI,Nucleus_vestibularis_descendens_unilateral,unilateral,_unilateral,
 Bauernfeind_etal_2013_Table1,granular_L_mm3,left,_left,Bauernfeind Table 1 is the LEFT insula; right hemisphere is the paper's Table 2 (now snapshotted as Bauernfeind_etal_2013_Table2)
 Bauernfeind_etal_2013_Table1,dysgranular_L_mm3,left,_left,
 Bauernfeind_etal_2013_Table1,agranular_L_mm3,left,_left,
@@ -19,3 +14,13 @@ Semendeferi_etal_2001_Table2,area10_volume_mm3,right,_right,Semendeferi 2001 are
 Sherwood_etal_2005_Table1,facial_VII_mm3,left,_left,Sherwood 2005 cranial motor nuclei measured on the left side only
 Sherwood_etal_2005_Table1,trigeminal_motor_Vmo_mm3,left,_left,
 Sherwood_etal_2005_Table1,hypoglossal_XII_mm3,left,_left,
+Stephan_etal_1981_TableXII,Complexus_vestibularis_unilateral,unilateral,_unilateral,Baron et al. 1988 states the Stephan 1981 vestibular volumes were measured from one side only (the reformat names the data columns with the _unilateral suffix)
+Stephan_etal_1981_TableXII,Nucleus_vestibularis_superior_unilateral,unilateral,_unilateral,
+Stephan_etal_1981_TableXII,Nucleus_vestibularis_lateralis_unilateral,unilateral,_unilateral,
+Stephan_etal_1981_TableXII,Nucleus_vestibularis_medialis_unilateral,unilateral,_unilateral,
+Stephan_etal_1981_TableXII,Nucleus_vestibularis_descendens_unilateral,unilateral,_unilateral,
+Stephan_etal_1981_TableXIII,Complexus_vestibularis_unilateral,unilateral,_unilateral,Baron et al. 1988 states the Stephan 1981 vestibular volumes were measured from one side only (the reformat names the data columns with the _unilateral suffix)
+Stephan_etal_1981_TableXIII,Nucleus_vestibularis_superior_unilateral,unilateral,_unilateral,
+Stephan_etal_1981_TableXIII,Nucleus_vestibularis_lateralis_unilateral,unilateral,_unilateral,
+Stephan_etal_1981_TableXIII,Nucleus_vestibularis_medialis_unilateral,unilateral,_unilateral,
+Stephan_etal_1981_TableXIII,Nucleus_vestibularis_descendens_unilateral,unilateral,_unilateral,

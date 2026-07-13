@@ -18,10 +18,10 @@ oryzorictestalpoides,Oryzorictes talpoides,Schizo_cortex,23.5,NA,NA,FALSE
 oryzorictestalpoides,Oryzorictes talpoides,Hippocampus,64.3,NA,NA,FALSE
 oryzorictestalpoides,Oryzorictes talpoides,Neocortex,66.5,NA,NA,FALSE
 oryzorictestalpoides,Oryzorictes talpoides,Nucleus_septalis_triangularis,0.33099999999999996,NA,NA,FALSE
-oryzorictestalpoides,Oryzorictes talpoides,Corpus_subfornicale,0.018000000000000002,NA,NA,FALSE
+oryzorictestalpoides,Oryzorictes talpoides,Corpus_subfornicale,0.017999999999999995,NA,NA,FALSE
 oryzorictestalpoides,Oryzorictes talpoides,Nucleus_habenularis_medialis,0.257,NA,NA,FALSE
-oryzorictestalpoides,Oryzorictes talpoides,Corpus_pineal,0.051000000000000004,NA,NA,FALSE
-oryzorictestalpoides,Oryzorictes talpoides,Corpus_subcommissurale,6.94e-4,NA,NA,FALSE
+oryzorictestalpoides,Oryzorictes talpoides,Corpus_pineal,0.051,NA,NA,FALSE
+oryzorictestalpoides,Oryzorictes talpoides,Corpus_subcommissurale,6.940000000000001e-4,NA,NA,FALSE
 limnogalemergulus,Limnogale mergulus,Body_weight,92,NA,NA,FALSE
 limnogalemergulus,Limnogale mergulus,Brain_weight,1150,NA,NA,FALSE
 limnogalemergulus,Limnogale mergulus,Ventricles,12.6,NA,NA,FALSE
@@ -29,12 +29,12 @@ limnogalemergulus,Limnogale mergulus,Meninges_hypophysis_nerves_etc.,51,NA,NA,FA
 limnogalemergulus,Limnogale mergulus,Total_brain_net_volume,1046,NA,NA,FALSE
 limnogalemergulus,Limnogale mergulus,Medulla_oblongata,204,NA,NA,FALSE
 limnogalemergulus,Limnogale mergulus,Cerebellum,176,NA,NA,FALSE
-limnogalemergulus,Limnogale mergulus,Mesencephalon,67.40000000000002,NA,NA,FALSE
+limnogalemergulus,Limnogale mergulus,Mesencephalon,67.4,NA,NA,FALSE
 limnogalemergulus,Limnogale mergulus,Diencephalon,81,NA,NA,FALSE
 limnogalemergulus,Limnogale mergulus,Telencephalon,518,NA,NA,FALSE
 limnogalemergulus,Limnogale mergulus,Bulbus_olfactorius,42.9,NA,NA,FALSE
 limnogalemergulus,Limnogale mergulus,Bulbus_olfactorius_accessorius,0.323,NA,NA,FALSE
-limnogalemergulus,Limnogale mergulus,Lobus_piriformis,87.40000000000002,NA,NA,FALSE
+limnogalemergulus,Limnogale mergulus,Lobus_piriformis,87.4,NA,NA,FALSE
 limnogalemergulus,Limnogale mergulus,Septum,19.5,NA,NA,FALSE
 limnogalemergulus,Limnogale mergulus,Striatum,57.9,NA,NA,FALSE
 limnogalemergulus,Limnogale mergulus,Schizo_cortex,36.4,NA,NA,FALSE
@@ -45,7 +45,7 @@ limnogalemergulus,Limnogale mergulus,Corpus_subfornicale,0.0194,NA,NA,FALSE
 limnogalemergulus,Limnogale mergulus,Nucleus_habenularis_medialis,0.46900000000000003,NA,NA,FALSE
 limnogalemergulus,Limnogale mergulus,Corpus_pineal,0.12200000000000001,NA,NA,FALSE
 limnogalemergulus,Limnogale mergulus,Corpus_subcommissurale,0.00202,NA,NA,FALSE
-chlorotalpastuhlmanni,Chlorotalpa stuhlmanni,Body_weight,39.8,NA,NA,FALSE
+chlorotalpastuhlmanni,Chlorotalpa stuhlmanni,Body_weight,39.80000000000001,NA,NA,FALSE
 chlorotalpastuhlmanni,Chlorotalpa stuhlmanni,Brain_weight,740,NA,NA,FALSE
 chlorotalpastuhlmanni,Chlorotalpa stuhlmanni,Ventricles,7,NA,NA,FALSE
 chlorotalpastuhlmanni,Chlorotalpa stuhlmanni,Meninges_hypophysis_nerves_etc.,13.8,NA,NA,FALSE
@@ -64,7 +64,7 @@ chlorotalpastuhlmanni,Chlorotalpa stuhlmanni,Schizo_cortex,21.4,NA,NA,FALSE
 chlorotalpastuhlmanni,Chlorotalpa stuhlmanni,Hippocampus,59.1,NA,NA,FALSE
 chlorotalpastuhlmanni,Chlorotalpa stuhlmanni,Neocortex,129,NA,NA,FALSE
 chlorotalpastuhlmanni,Chlorotalpa stuhlmanni,Nucleus_septalis_triangularis,0.395,NA,NA,FALSE
-chlorotalpastuhlmanni,Chlorotalpa stuhlmanni,Corpus_subfornicale,0.0191,NA,NA,FALSE
+chlorotalpastuhlmanni,Chlorotalpa stuhlmanni,Corpus_subfornicale,0.019099999999999995,NA,NA,FALSE
 chlorotalpastuhlmanni,Chlorotalpa stuhlmanni,Nucleus_habenularis_medialis,0.38,NA,NA,FALSE
 chlorotalpastuhlmanni,Chlorotalpa stuhlmanni,Corpus_pineal,0.096,NA,NA,FALSE
 chlorotalpastuhlmanni,Chlorotalpa stuhlmanni,Corpus_subcommissurale,0,NA,NA,FALSE
@@ -89,8 +89,8 @@ aethechinusalgirus,Aethechinus algirus,Neocortex,500,NA,NA,FALSE
 aethechinusalgirus,Aethechinus algirus,Nucleus_septalis_triangularis,1.1800000000000002,NA,NA,FALSE
 aethechinusalgirus,Aethechinus algirus,Corpus_subfornicale,0.0621,NA,NA,FALSE
 aethechinusalgirus,Aethechinus algirus,Nucleus_habenularis_medialis,0.93,NA,NA,FALSE
-aethechinusalgirus,Aethechinus algirus,Corpus_pineal,0.29700000000000004,NA,NA,FALSE
-aethechinusalgirus,Aethechinus algirus,Corpus_subcommissurale,0.022199999999999998,NA,NA,FALSE
+aethechinusalgirus,Aethechinus algirus,Corpus_pineal,0.2970000000000001,NA,NA,FALSE
+aethechinusalgirus,Aethechinus algirus,Corpus_subcommissurale,0.0222,NA,NA,FALSE
 rhynchocyonstuhlmanni,Rhynchocyon stuhlmanni,Body_weight,490,NA,NA,FALSE
 rhynchocyonstuhlmanni,Rhynchocyon stuhlmanni,Brain_weight,6100,NA,NA,FALSE
 rhynchocyonstuhlmanni,Rhynchocyon stuhlmanni,Ventricles,97.2,NA,NA,FALSE
@@ -110,7 +110,7 @@ rhynchocyonstuhlmanni,Rhynchocyon stuhlmanni,Schizo_cortex,220,NA,NA,FALSE
 rhynchocyonstuhlmanni,Rhynchocyon stuhlmanni,Hippocampus,582,NA,NA,FALSE
 rhynchocyonstuhlmanni,Rhynchocyon stuhlmanni,Neocortex,1089,NA,NA,FALSE
 rhynchocyonstuhlmanni,Rhynchocyon stuhlmanni,Nucleus_septalis_triangularis,0.9370000000000002,NA,NA,FALSE
-rhynchocyonstuhlmanni,Rhynchocyon stuhlmanni,Corpus_subfornicale,0.057600000000000005,NA,NA,FALSE
+rhynchocyonstuhlmanni,Rhynchocyon stuhlmanni,Corpus_subfornicale,0.0576,NA,NA,FALSE
 rhynchocyonstuhlmanni,Rhynchocyon stuhlmanni,Nucleus_habenularis_medialis,2.09,NA,NA,FALSE
 rhynchocyonstuhlmanni,Rhynchocyon stuhlmanni,Corpus_pineal,1.41,NA,NA,FALSE
 rhynchocyonstuhlmanni,Rhynchocyon stuhlmanni,Corpus_subcommissurale,0.403,NA,NA,FALSE
@@ -126,7 +126,7 @@ crociduraoccidentalis,Crocidura occidentalis,Diencephalon,28.4,NA,NA,FALSE
 crociduraoccidentalis,Crocidura occidentalis,Telencephalon,241,NA,NA,FALSE
 crociduraoccidentalis,Crocidura occidentalis,Bulbus_olfactorius,37.6,NA,NA,FALSE
 crociduraoccidentalis,Crocidura occidentalis,Bulbus_olfactorius_accessorius,0.221,NA,NA,FALSE
-crociduraoccidentalis,Crocidura occidentalis,Lobus_piriformis,68.40000000000002,NA,NA,FALSE
+crociduraoccidentalis,Crocidura occidentalis,Lobus_piriformis,68.4,NA,NA,FALSE
 crociduraoccidentalis,Crocidura occidentalis,Septum,6.94,NA,NA,FALSE
 crociduraoccidentalis,Crocidura occidentalis,Striatum,16.8,NA,NA,FALSE
 crociduraoccidentalis,Crocidura occidentalis,Schizo_cortex,13.3,NA,NA,FALSE
@@ -152,7 +152,7 @@ crociduraoccidentalis,Crocidura occidentalis,Nucleus_vestibularis_lateralis,0.22
 crociduraoccidentalis,Crocidura occidentalis,Nucleus_vestibularis_medialis,0.543,NA,NA,FALSE
 crociduraoccidentalis,Crocidura occidentalis,Nucleus_vestibularis_descendens,0.389,NA,NA,FALSE
 crociduraoccidentalis,Crocidura occidentalis,Nucleus_septalis_triangularis,0.274,NA,NA,FALSE
-crociduraoccidentalis,Crocidura occidentalis,Corpus_subfornicale,0.018600000000000002,NA,NA,FALSE
+crociduraoccidentalis,Crocidura occidentalis,Corpus_subfornicale,0.0186,NA,NA,FALSE
 crociduraoccidentalis,Crocidura occidentalis,Nucleus_habenularis_medialis,0.2,NA,NA,FALSE
 crociduraoccidentalis,Crocidura occidentalis,Corpus_pineal,0.0391,NA,NA,FALSE
 crociduraoccidentalis,Crocidura occidentalis,Corpus_subcommissurale,5.76e-4,NA,NA,FALSE
@@ -219,7 +219,7 @@ lemurvariegatus,Lemur variegatus,Schizo_cortex,608,NA,NA,FALSE
 lemurvariegatus,Lemur variegatus,Hippocampus,1404,NA,NA,FALSE
 lemurvariegatus,Lemur variegatus,Neocortex,15293,NA,NA,FALSE
 lemurvariegatus,Lemur variegatus,Area_striata,2112,NA,NA,FALSE
-lemurvariegatus,Lemur variegatus,Corpus_geniculatum_laterale,68.90000000000002,NA,NA,FALSE
+lemurvariegatus,Lemur variegatus,Corpus_geniculatum_laterale,68.9,NA,NA,FALSE
 lemurvariegatus,Lemur variegatus,Nucleus_septalis_triangularis,3.51,NA,NA,FALSE
 lemurvariegatus,Lemur variegatus,Corpus_subfornicale,0.741,NA,NA,FALSE
 lemurvariegatus,Lemur variegatus,Nucleus_habenularis_medialis,5.35,NA,NA,FALSE
@@ -246,7 +246,7 @@ avahillaniger,Avahi l. laniger,Neocortex,4813,NA,NA,FALSE
 avahillaniger,Avahi l. laniger,Area_striata,537,NA,NA,FALSE
 avahillaniger,Avahi l. laniger,Corpus_geniculatum_laterale,27.4,NA,NA,FALSE
 avahillaniger,Avahi l. laniger,Nucleus_septalis_triangularis,1.29,NA,NA,FALSE
-avahillaniger,Avahi l. laniger,Corpus_subfornicale,0.116,NA,NA,FALSE
+avahillaniger,Avahi l. laniger,Corpus_subfornicale,0.11600000000000002,NA,NA,FALSE
 avahillaniger,Avahi l. laniger,Nucleus_habenularis_medialis,2.21,NA,NA,FALSE
 avahillaniger,Avahi l. laniger,Corpus_pineal,0.7,NA,NA,FALSE
 avahillaniger,Avahi l. laniger,Corpus_subcommissurale,0.14,NA,NA,FALSE
@@ -275,7 +275,7 @@ avahilanigeroccidentalis,Avahi laniger occidentalis,Subthalamus,80.5,NA,NA,FALSE
 avahilanigeroccidentalis,Avahi laniger occidentalis,Pallidum,74.5,NA,NA,FALSE
 avahilanigeroccidentalis,Avahi laniger occidentalis,Nucleus_subthalamicus,5.94,NA,NA,FALSE
 avahilanigeroccidentalis,Avahi laniger occidentalis,Capsula_interna,105,NA,NA,FALSE
-avahilanigeroccidentalis,Avahi laniger occidentalis,Tractus_opticus,38.3,NA,NA,FALSE
+avahilanigeroccidentalis,Avahi laniger occidentalis,Tractus_opticus,38.30000000000001,NA,NA,FALSE
 avahilanigeroccidentalis,Avahi laniger occidentalis,Area_striata,485,NA,NA,FALSE
 avahilanigeroccidentalis,Avahi laniger occidentalis,Corpus_geniculatum_laterale,27.2,NA,NA,FALSE
 avahilanigeroccidentalis,Avahi laniger occidentalis,Complexus_vestibularis,18.1,NA,NA,FALSE
@@ -287,7 +287,7 @@ avahilanigeroccidentalis,Avahi laniger occidentalis,Nucleus_septalis_triangulari
 avahilanigeroccidentalis,Avahi laniger occidentalis,Corpus_subfornicale,0.188,NA,NA,FALSE
 avahilanigeroccidentalis,Avahi laniger occidentalis,Nucleus_habenularis_medialis,2.04,NA,NA,FALSE
 avahilanigeroccidentalis,Avahi laniger occidentalis,Corpus_pineal,0.652,NA,NA,FALSE
-avahilanigeroccidentalis,Avahi laniger occidentalis,Corpus_subcommissurale,0.09420000000000002,NA,NA,FALSE
+avahilanigeroccidentalis,Avahi laniger occidentalis,Corpus_subcommissurale,0.0942,NA,NA,FALSE
 daubentoniamadagascar,Daubentonia madagascar.,Body_weight,2800,NA,NA,FALSE
 daubentoniamadagascar,Daubentonia madagascar.,Brain_weight,45150,NA,NA,FALSE
 daubentoniamadagascar,Daubentonia madagascar.,Ventricles,392,NA,NA,FALSE
@@ -340,7 +340,7 @@ galagocrassicaudatus,Galago crassicaudatus,Neocortex,4723,NA,NA,FALSE
 galagocrassicaudatus,Galago crassicaudatus,Epithalamus,5.71,NA,NA,FALSE
 galagocrassicaudatus,Galago crassicaudatus,Thalamus,437,NA,NA,FALSE
 galagocrassicaudatus,Galago crassicaudatus,Hypothalamus,127,NA,NA,FALSE
-galagocrassicaudatus,Galago crassicaudatus,Subthalamus,67.40000000000002,NA,NA,FALSE
+galagocrassicaudatus,Galago crassicaudatus,Subthalamus,67.4,NA,NA,FALSE
 galagocrassicaudatus,Galago crassicaudatus,Pallidum,63.3,NA,NA,FALSE
 galagocrassicaudatus,Galago crassicaudatus,Nucleus_subthalamicus,4.1,NA,NA,FALSE
 galagocrassicaudatus,Galago crassicaudatus,Capsula_interna,74.6,NA,NA,FALSE
@@ -352,11 +352,11 @@ galagocrassicaudatus,Galago crassicaudatus,Nucleus_vestibularis_superior,2.84999
 galagocrassicaudatus,Galago crassicaudatus,Nucleus_vestibularis_lateralis,2.8699999999999997,NA,NA,FALSE
 galagocrassicaudatus,Galago crassicaudatus,Nucleus_vestibularis_medialis,7.159999999999999,NA,NA,FALSE
 galagocrassicaudatus,Galago crassicaudatus,Nucleus_vestibularis_descendens,7.01,NA,NA,FALSE
-galagocrassicaudatus,Galago crassicaudatus,Nucleus_septalis_triangularis,0.695,NA,NA,FALSE
-galagocrassicaudatus,Galago crassicaudatus,Corpus_subfornicale,0.0948,NA,NA,FALSE
+galagocrassicaudatus,Galago crassicaudatus,Nucleus_septalis_triangularis,0.6949999999999998,NA,NA,FALSE
+galagocrassicaudatus,Galago crassicaudatus,Corpus_subfornicale,0.09480000000000002,NA,NA,FALSE
 galagocrassicaudatus,Galago crassicaudatus,Nucleus_habenularis_medialis,1.6400000000000001,NA,NA,FALSE
 galagocrassicaudatus,Galago crassicaudatus,Corpus_pineal,1.02,NA,NA,FALSE
-galagocrassicaudatus,Galago crassicaudatus,Corpus_subcommissurale,0.10200000000000001,NA,NA,FALSE
+galagocrassicaudatus,Galago crassicaudatus,Corpus_subcommissurale,0.10199999999999998,NA,NA,FALSE
 galagodemidovii,Galago demidovii,Body_weight,81,NA,NA,FALSE
 galagodemidovii,Galago demidovii,Brain_weight,3380,NA,NA,FALSE
 galagodemidovii,Galago demidovii,Ventricles,30.4,NA,NA,FALSE
@@ -389,7 +389,7 @@ galagodemidovii,Galago demidovii,Palaeocortex,122,NA,NA,FALSE
 galagodemidovii,Galago demidovii,Amygdala,50.2,NA,NA,FALSE
 galagodemidovii,Galago demidovii,Complexus_centromedialis,14.9,NA,NA,FALSE
 galagodemidovii,Galago demidovii,Nucleus_tractus_olfactorius,0.62,NA,NA,FALSE
-galagodemidovii,Galago demidovii,Complexus_corticobasolateralis,35.3,NA,NA,FALSE
+galagodemidovii,Galago demidovii,Complexus_corticobasolateralis,35.30000000000001,NA,NA,FALSE
 galagodemidovii,Galago demidovii,Nucleus_amygdalae_basalis_pars_magnocellularis,2.82,NA,NA,FALSE
 galagodemidovii,Galago demidovii,Complexus_vestibularis,6.6499999999999995,NA,NA,FALSE
 galagodemidovii,Galago demidovii,Nucleus_vestibularis_superior,1.02,NA,NA,FALSE
@@ -400,7 +400,7 @@ galagodemidovii,Galago demidovii,Nucleus_septalis_triangularis,0.45,NA,NA,FALSE
 galagodemidovii,Galago demidovii,Corpus_subfornicale,0.024,NA,NA,FALSE
 galagodemidovii,Galago demidovii,Nucleus_habenularis_medialis,0.7799999999999999,NA,NA,FALSE
 galagodemidovii,Galago demidovii,Corpus_pineal,0.375,NA,NA,FALSE
-galagodemidovii,Galago demidovii,Corpus_subcommissurale,0.026600000000000002,NA,NA,FALSE
+galagodemidovii,Galago demidovii,Corpus_subcommissurale,0.0266,NA,NA,FALSE
 cebuellapygmaea,Cebuella pygmaea,Body_weight,140,NA,NA,FALSE
 cebuellapygmaea,Cebuella pygmaea,Brain_weight,4500,NA,NA,FALSE
 cebuellapygmaea,Cebuella pygmaea,Ventricles,24.5,NA,NA,FALSE
@@ -451,12 +451,12 @@ saguinustamarin,Saguinus tamarin,Schizo_cortex,120,NA,NA,FALSE
 saguinustamarin,Saguinus tamarin,Hippocampus,280,NA,NA,FALSE
 saguinustamarin,Saguinus tamarin,Neocortex,5883,NA,NA,FALSE
 saguinustamarin,Saguinus tamarin,Area_striata,1077,NA,NA,FALSE
-saguinustamarin,Saguinus tamarin,Corpus_geniculatum_laterale,36.8,NA,NA,FALSE
-saguinustamarin,Saguinus tamarin,Nucleus_septalis_triangularis,0.5590000000000002,NA,NA,FALSE
+saguinustamarin,Saguinus tamarin,Corpus_geniculatum_laterale,36.80000000000001,NA,NA,FALSE
+saguinustamarin,Saguinus tamarin,Nucleus_septalis_triangularis,0.559,NA,NA,FALSE
 saguinustamarin,Saguinus tamarin,Corpus_subfornicale,0.0795,NA,NA,FALSE
 saguinustamarin,Saguinus tamarin,Nucleus_habenularis_medialis,1.1800000000000002,NA,NA,FALSE
 saguinustamarin,Saguinus tamarin,Corpus_pineal,0.21600000000000003,NA,NA,FALSE
-saguinustamarin,Saguinus tamarin,Corpus_subcommissurale,0.09939999999999999,NA,NA,FALSE
+saguinustamarin,Saguinus tamarin,Corpus_subcommissurale,0.0994,NA,NA,FALSE
 pitheciamonacha,Pithecia monacha,Body_weight,1500,NA,NA,FALSE
 pitheciamonacha,Pithecia monacha,Brain_weight,35000,NA,NA,FALSE
 pitheciamonacha,Pithecia monacha,Ventricles,631,NA,NA,FALSE
@@ -467,7 +467,7 @@ pitheciamonacha,Pithecia monacha,Cerebellum,3908,NA,NA,FALSE
 pitheciamonacha,Pithecia monacha,Mesencephalon,745,NA,NA,FALSE
 pitheciamonacha,Pithecia monacha,Diencephalon,2285,NA,NA,FALSE
 pitheciamonacha,Pithecia monacha,Telencephalon,24920,NA,NA,FALSE
-pitheciamonacha,Pithecia monacha,Bulbus_olfactorius,34.8,NA,NA,FALSE
+pitheciamonacha,Pithecia monacha,Bulbus_olfactorius,34.80000000000001,NA,NA,FALSE
 pitheciamonacha,Pithecia monacha,Bulbus_olfactorius_accessorius,0.8460000000000001,NA,NA,FALSE
 pitheciamonacha,Pithecia monacha,Lobus_piriformis,675,NA,NA,FALSE
 pitheciamonacha,Pithecia monacha,Septum,140,NA,NA,FALSE
@@ -480,7 +480,7 @@ pitheciamonacha,Pithecia monacha,Corpus_geniculatum_laterale,72.3,NA,NA,FALSE
 pitheciamonacha,Pithecia monacha,Nucleus_septalis_triangularis,1.31,NA,NA,FALSE
 pitheciamonacha,Pithecia monacha,Corpus_subfornicale,0.3,NA,NA,FALSE
 pitheciamonacha,Pithecia monacha,Nucleus_habenularis_medialis,2.53,NA,NA,FALSE
-pitheciamonacha,Pithecia monacha,Corpus_pineal,0.0623,NA,NA,FALSE
+pitheciamonacha,Pithecia monacha,Corpus_pineal,0.06230000000000001,NA,NA,FALSE
 pitheciamonacha,Pithecia monacha,Corpus_subcommissurale,0.189,NA,NA,FALSE
 alouattasp,Alouatta sp.,Body_weight,6400,NA,NA,FALSE
 alouattasp,Alouatta sp.,Brain_weight,52000,NA,NA,FALSE
@@ -504,7 +504,7 @@ alouattasp,Alouatta sp.,Area_striata,2374,NA,NA,FALSE
 alouattasp,Alouatta sp.,Corpus_geniculatum_laterale,85.7,NA,NA,FALSE
 alouattasp,Alouatta sp.,Palaeocortex,488,NA,NA,FALSE
 alouattasp,Alouatta sp.,Amygdala,413,NA,NA,FALSE
-alouattasp,Alouatta sp.,Complexus_centromedialis,94.90000000000002,NA,NA,FALSE
+alouattasp,Alouatta sp.,Complexus_centromedialis,94.9,NA,NA,FALSE
 alouattasp,Alouatta sp.,Nucleus_tractus_olfactorius,0,NA,NA,FALSE
 alouattasp,Alouatta sp.,Complexus_corticobasolateralis,318,NA,NA,FALSE
 alouattasp,Alouatta sp.,Nucleus_amygdalae_basalis_pars_magnocellularis,30.7,NA,NA,FALSE
@@ -523,7 +523,7 @@ lagothrixlagotricha,Lagothrix lagotricha,Cerebellum,11268,NA,NA,FALSE
 lagothrixlagotricha,Lagothrix lagotricha,Mesencephalon,1582,NA,NA,FALSE
 lagothrixlagotricha,Lagothrix lagotricha,Diencephalon,5721,NA,NA,FALSE
 lagothrixlagotricha,Lagothrix lagotricha,Telencephalon,74822,NA,NA,FALSE
-lagothrixlagotricha,Lagothrix lagotricha,Bulbus_olfactorius,73.40000000000002,NA,NA,FALSE
+lagothrixlagotricha,Lagothrix lagotricha,Bulbus_olfactorius,73.4,NA,NA,FALSE
 lagothrixlagotricha,Lagothrix lagotricha,Bulbus_olfactorius_accessorius,1.43,NA,NA,FALSE
 lagothrixlagotricha,Lagothrix lagotricha,Lobus_piriformis,1395,NA,NA,FALSE
 lagothrixlagotricha,Lagothrix lagotricha,Septum,266,NA,NA,FALSE
@@ -594,7 +594,7 @@ cebussp,Cebus sp.,Nucleus_septalis_triangularis,1.5,NA,NA,FALSE
 cebussp,Cebus sp.,Corpus_subfornicale,0.41000000000000003,NA,NA,FALSE
 cebussp,Cebus sp.,Nucleus_habenularis_medialis,4.9,NA,NA,FALSE
 cebussp,Cebus sp.,Corpus_pineal,3.8,NA,NA,FALSE
-cebussp,Cebus sp.,Corpus_subcommissurale,0.42500000000000004,NA,NA,FALSE
+cebussp,Cebus sp.,Corpus_subcommissurale,0.4250000000000001,NA,NA,FALSE
 cercocebusalbigena,Cercocebus albigena,Body_weight,7900,NA,NA,FALSE
 cercocebusalbigena,Cercocebus albigena,Brain_weight,104000,NA,NA,FALSE
 cercocebusalbigena,Cercocebus albigena,Ventricles,742,NA,NA,FALSE
@@ -697,7 +697,7 @@ colobusbadius,Colobus badius,Nucleus_vestibularis_superior,8.68,NA,NA,FALSE
 colobusbadius,Colobus badius,Nucleus_vestibularis_lateralis,10,NA,NA,FALSE
 colobusbadius,Colobus badius,Nucleus_vestibularis_medialis,24.1,NA,NA,FALSE
 colobusbadius,Colobus badius,Nucleus_vestibularis_descendens,14.5,NA,NA,FALSE
-colobusbadius,Colobus badius,Nucleus_septalis_triangularis,2.2600000000000002,NA,NA,FALSE
+colobusbadius,Colobus badius,Nucleus_septalis_triangularis,2.26,NA,NA,FALSE
 colobusbadius,Colobus badius,Corpus_subfornicale,0.454,NA,NA,FALSE
 colobusbadius,Colobus badius,Nucleus_habenularis_medialis,4.54,NA,NA,FALSE
 colobusbadius,Colobus badius,Corpus_pineal,7.31,NA,NA,FALSE
@@ -775,7 +775,7 @@ homosapienssapiens,Homo sapiens sapiens,Nucleus_tractus_olfactorius,0,NA,NA,FALS
 homosapienssapiens,Homo sapiens sapiens,Complexus_corticobasolateralis,2424,NA,NA,FALSE
 homosapienssapiens,Homo sapiens sapiens,Nucleus_amygdalae_basalis_pars_magnocellularis,246,NA,NA,FALSE
 homosapienssapiens,Homo sapiens sapiens,Complexus_vestibularis,177,NA,NA,FALSE
-homosapienssapiens,Homo sapiens sapiens,Nucleus_vestibularis_superior,35.8,NA,NA,FALSE
+homosapienssapiens,Homo sapiens sapiens,Nucleus_vestibularis_superior,35.80000000000001,NA,NA,FALSE
 homosapienssapiens,Homo sapiens sapiens,Nucleus_vestibularis_lateralis,22.4,NA,NA,FALSE
 homosapienssapiens,Homo sapiens sapiens,Nucleus_vestibularis_medialis,72.8,NA,NA,FALSE
 homosapienssapiens,Homo sapiens sapiens,Nucleus_vestibularis_descendens,45.9,NA,NA,FALSE
@@ -783,7 +783,7 @@ homosapienssapiens,Homo sapiens sapiens,Nucleus_septalis_triangularis,0.524,NA,N
 homosapienssapiens,Homo sapiens sapiens,Corpus_subfornicale,0.508,NA,NA,FALSE
 homosapienssapiens,Homo sapiens sapiens,Nucleus_habenularis_medialis,17,NA,NA,FALSE
 homosapienssapiens,Homo sapiens sapiens,Corpus_pineal,142,NA,NA,FALSE
-homosapienssapiens,Homo sapiens sapiens,Corpus_subcommissurale,0.020300000000000002,NA,NA,FALSE
+homosapienssapiens,Homo sapiens sapiens,Corpus_subcommissurale,0.0203,NA,NA,FALSE
 alouattaseniculus,NA,Body_weight,NA,Body_weight,6400,FALSE
 alouattaseniculus,NA,Brain_weight,NA,Brain_weight,52000,FALSE
 alouattaseniculus,NA,Ventricles,NA,Ventricles,616,FALSE

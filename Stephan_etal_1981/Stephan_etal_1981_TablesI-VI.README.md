@@ -13,7 +13,7 @@ raw -> snapshot -> R script -> usable csv/tsv.
 | Path | Role |
 |---|---|
 | `Stephan-1981-New and revised data.pdf` | The publication. |
-| `Stephan_etal_1981_TablesI-VI_snapshot.xlsx` | **Snapshot** (sheet `Table1`): 76 species in Stephan code (taxonomic) order x the 44 structures, in the journal's code order, with the 6 per-range `n` columns. Values from the curated `Stephan_1981` dataset. |
+| `Stephan_etal_1981_TablesI-VI_snapshot.xlsx` | **Snapshot** (sheet `Table1`): 76 species in Stephan code (taxonomic) order x the 44 structures, in the journal's code order, with the 6 per-range `n` columns, and a `group` column (taxon each source table was captioned by). Values from the curated `Stephan_1981` dataset. |
 | `Stephan_etal_1981_TablesI-VI.R` | Preparation -> `Stephan_etal_1981_TablesI-VI.csv` (+ DOI/PMID-named TSV). Reads only the snapshot. Adds explicit laterality suffixes to the unilateral vestibular columns. |
 | `reference_tables/Stephan_etal_1981_TablesI-VI_definitions.csv` | Data dictionary: each structure -> code, anatomy, measure, role, taxon. |
 | `comparison/Stephan_1981.csv` | The formatted dataset, audited only. |
@@ -21,9 +21,17 @@ raw -> snapshot -> R script -> usable csv/tsv.
 
 ## Snapshot layout
 
-A wide table: `code`, `species`, then the 44 structure-volume columns interleaved with the 6 sample-size columns `n (1-18)`, `n (19-26)`, `n (27-28)`, `n (29-34)`, `n (35-39)`, `n (40-44)`, exactly the structure-code groups the journal uses. Each structure header carries its Stephan code in parentheses. **Units:** body weight in g, brain weight in mg, all structure volumes in mm3. Species run in Stephan code order (Solenodon = 1 ... Homo sapiens = 280), which is the journal's taxonomic sequence.
+A wide table: `code`, `group`, `species`, then the 44 structure-volume columns interleaved with the 6 sample-size columns `n (1-18)`, `n (19-26)`, `n (27-28)`, `n (29-34)`, `n (35-39)`, `n (40-44)`, exactly the structure-code groups the journal uses. Each structure header carries its Stephan code in parentheses. **Units:** body weight in g, brain weight in mg, all structure volumes in mm3. Species run in Stephan code order (Solenodon = 1 ... Homo sapiens = 280), which is the journal's taxonomic sequence.
 
-Note: in the printed paper this table is paginated across several pages by structure-code group; the snapshot consolidates those into one sheet in the same order so it can be read and compared as a whole. Taxonomic section headers (Basal Insectivora, Progressive Insectivora, ..., Prosimians, Simians) are implicit in the code order and can be added as label rows later if wanted.
+**The `group` column preserves the taxon each source table was captioned by.** In the printed paper the volume data are split across six tables *by taxon*, not by structure alone: Tables I/II/III give body/brain mass and fundamental parts for **insectivores / prosimians / simians** respectively, and Tables IV/V/VI give the telencephalon components for the same three taxa. The consolidated snapshot merges all six into one sheet, so without an explicit column that per-table taxon label would be lost (this parallels the `group` column in `Stephan_etal_1970`). `group` is assigned by Stephan code directly from those table captions:
+
+| `group` | Source tables | Stephan codes | n |
+|---|---|---|---:|
+| `Insectivore` | I, IV | 1-84 (incl. Macroscelidea) | 28 |
+| `Prosimian` | II, V | 102-147 (incl. Scandentia: *Tupaia*, *Urogale*) | 21 |
+| `Simian` | III, VI | 151-280 | 27 |
+
+These are the paper's own coarse taxonomic groupings (the terms are dated — "insectivore" here is polyphyletic and "prosimian"/"simian" are grades, not clades — but they are the labels the source tables carry, so they are retained verbatim). Finer, current taxonomy (Order/Family, accepted names) is applied downstream via `../_keys/Stephan/` and `../_keys/species_reference.csv` (`Order_Stephan1981`, `Suborder_Stephan1981`, `Family_Stephan1981`).
 
 ## Laterality note: Stephan 1981 vestibular structures are unilateral
 
@@ -43,7 +51,7 @@ Use `_unilateral` rather than `_hemisphere`: these are brainstem vestibular nucl
 
 ## Preparation -> `Stephan_etal_1981_TablesI-VI.csv`
 
-One row per species (76); journal headers cleaned to R-friendly names (`Body_weight`, `Total_brain_net_volume`, `Neocortex`, ..., plus `n_1_18` etc.), all measurements typed numeric. Current accepted names + taxonomy are applied downstream via `../_keys/Stephan/`. Also writes a DOI/PMID-named TSV to `../__Public/comparative-data/`.
+One row per species (76 rows x 53 cols); identifier columns `code`, `group`, `Species` are carried through untyped, and journal headers cleaned to R-friendly names (`Body_weight`, `Total_brain_net_volume`, `Neocortex`, ..., plus `n_1_18` etc.), all measurements typed numeric. Current accepted names + finer taxonomy are applied downstream via `../_keys/Stephan/`. Also writes a DOI/PMID-named TSV to `../__Public/comparative-data/`.
 
 Schema note: the five vestibular output columns now carry the `_unilateral` suffix listed above. Other structure-volume columns are not relabeled as unilateral.
 

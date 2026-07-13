@@ -1,51 +1,97 @@
-# Fossil specimen crosswalk (cross-paper)
+# Specimen crosswalk & taxon-concept registry (`_keys/specimen_crosswalk/`)
 
-Cross-links fossil specimens shared between papers in this dataset, so the same
-individual can be matched across independent studies. This lives in `_keys/`
-(not inside any one paper's folder) because it is a cross-paper harmonisation key,
-analogous to `_keys/Stephan/species_key.csv` but at the **specimen** level.
+Cross-paper harmonisation keys at the **specimen** and **taxon-concept** level,
+analogous to `_keys/Stephan/species_key.csv` but finer-grained. This directory
+solves two *different* problems that were being conflated; see `SCHEMA.md` for
+the full column contracts.
+
+## The two layers (why there are two)
+
+| problem | example | file | mechanism |
+|---|---|---|---|
+| **one individual, many labels** | gibbon *Disco* / GPZ-5542 — one animal, published as *H. lar*, *N. concolor*, studbook *N. leucogenys* | `specimen_crosswalk.csv` | one `canonical_specimen`; resolve to one identity via `resolved_taxon` |
+| **one label, many individuals** | pre-2001 *"Pongo pygmaeus"* mean — Bornean + Sumatran (+ hybrid) pooled | `taxon_concept_registry.csv` | pin the value to a `taxon_concept` (`s.l.`); never un-average |
+
+A specimen can be **reassigned** as taxonomy changes; a pooled *sensu lato*
+mean **cannot be split** into modern species without fabricating composition the
+source never resolved. That asymmetry is the whole reason for two files.
 
 ## Files
 
-| File | Contents |
+| file | contents |
 |---|---|
-| `fossil_specimen_crosswalk.csv` | Long form (one row per paper × specimen): `canonical_specimen`, `source_publication`, `printed_name`, `taxon_code`, `taxon`, `item_reference`, `match`, `note`. |
-| `fossil_specimen_cerebellum_comparison.csv` | The one genuinely comparable quantity (cerebellar volume, cc) for the shared specimens, with Kochiyama/Weaver ratio and difference. |
+| `SCHEMA.md` | authoritative column contracts + the join + the merge consumer rule. |
+| `specimen_crosswalk.csv` | living-collection specimens (one row per individual × source label). Extends the fossil pattern below. |
+| `taxon_concept_registry.csv` | taxonomic concepts, esp. old broad (`s.l.`) concepts, with `decomposable` and `believed_composition`. |
+| `collection_specimens_parsed.csv` | the master catalog (`specimens info 151211.xls`, 181 specimens) parsed to identity/provenance columns; `taxon_flag` marks disagreements. |
+| `collection_specimens_parsed.COLUMNMAP.md` | column map for the above. |
+| `pongo_provenance_audit.csv` | every place a Pongo value enters the merge/comparison, classified specimen vs pooled-concept. |
+| `fossil_specimen_crosswalk.csv` | the original fossil crosswalk (Kochiyama/Weaver); the template this generalises. |
+| `fossil_specimen_cerebellum_comparison.csv` | fossil method-offset comparison. |
 
-## How the matching was done
+## The join
 
-1. **Resolve aliases before matching** — the important case is **Gibraltar 1 =
-   Forbes' Quarry 1** (one skull, two names). Weaver prints "Gibraltar/Forbes Quarry";
-   Kochiyama prints "Forbes' Quarry 1". Also format variants: Weaver "La Chapelle I"
-   = Kochiyama "La Chapelle-aux-Saints 1"; Weaver "La Ferrassie I" = "La Ferrassie 1";
-   Weaver "Cro-Magnon" = "Cro-Magnon 1".
-2. **One canonical name per specimen**; each paper's printed name kept as the alias.
-3. **Align only comparable measures.** Both report cerebellar **volume in cc** →
-   compared. Weaver's brain **mass (g)** and Kochiyama's cerebral **volume (cc)** are
-   different physical quantities and are *not* aligned (kept side-by-side for context).
-4. **Taxonomy agrees** across both: Weaver's "12-LAH" (Late Archaic Homo) = Kochiyama
-   NT (Neanderthal); Weaver "13-EMH" (Early Modern Homo, Cro-Magnon) = Kochiyama EH.
+```text
+specimen_crosswalk.taxon_concept  ->  taxon_concept_registry.taxon_concept
+```
 
-## Overlap
+A specimen row's `taxon_concept` says which concept its **printed** label
+belonged to; the specimen's own best identity is `resolved_taxon` and may differ
+(YN85-38 is printed under `Pongo pygmaeus (s.l.)` but resolved to `Pongo abelii`).
 
-- **Shared (4):** La Chapelle-aux-Saints 1, La Ferrassie 1, Gibraltar 1 / Forbes'
-  Quarry 1, Cro-Magnon 1.
-- **Kochiyama-only (4):** Amud 1, Qafzeh 9, Skhul 5, Mladeč 1 (not in Weaver A-15).
-- Weaver A-11 (extant hominoid MRIs) has **no** fossil overlap.
+## The hard rule for the merge (consumer contract)
 
-## Key finding (why this matters for combining the papers)
+The volume merge (`__merging_volumes/volumes_compiled.R`) and the DeCasien
+comparison must honour:
 
-For the 4 shared specimens, Kochiyama's cerebellar volumes are **systematically ~30%
-larger** than Weaver's (ratio mean 1.30, range 1.18–1.40). Yet for **modern humans**
-the two agree almost exactly (Kochiyama MH 140.65 cc vs Weaver recent-human MRI
-140.5 cc). The difference is **method-dependent**: Kochiyama reconstructs the actual
-cerebellum (GM+WM) by deforming MRI brains onto the endocast, whereas Weaver measures
-cerebellar volume from 3D virtual endocast models. So even "cerebellar volume in cc"
-is **not interchangeable across these two papers for fossils** — the crosswalk makes
-that explicit and is the correct place to record such offsets before any merge.
+1. **Specimen measurement** → may be reassigned to a modern species via
+   `resolved_taxon`, always surfacing `taxon_conflict` (never silent).
+2. **Pooled mean under an `s.l.` concept** with `decomposable = FALSE` →
+   **never auto-rewritten** to a modern species. Stays under its concept label;
+   at most annotated with `believed_composition`.
 
-## Provenance
+### How this differs from the DeCasien cross-genus duplicate case
 
-Kochiyama values: `Kochiyama_etal_2018_FossilSpecimensText.csv`. Weaver values:
-`Weaver__2001_TableA-15` (verified extraction). Update the Weaver figures here if the
-Weaver build is committed to the repo.
+The Disco case in the DeCasien ladder is a **duplicate**: *one* specimen
+double-entered under two genera → resolve by dedup (scripted override in the
+comparison). A `sensu lato` pooled mean is the opposite: *many* specimens under
+*one* label → do **not** split. Both are taxon/identity hazards, but the actions
+are opposite. Keep them distinct:
+
+```text
+cross-genus duplicate  (Disco)        -> dedup to one specimen
+sensu lato pooled mean (Pongo s.l.)   -> keep pooled, pin to concept
+```
+
+## Worked reference example: Pongo (orangutan)
+
+Full write-up: `../../____Collections and Specimen notes/Pongo_specimen_note.md`.
+
+*Pongo* was one species (*P. pygmaeus s.l.*) before Groves (2001) and is now two
+(*P. pygmaeus s.s.* Bornean + *P. abelii* Sumatran). In this dataset:
+
+- The **master catalog** lists 9 orangutans all as `Pongo pygmaeus`, but two
+  (CAT-150, CAT-151) carry a `subspecies` value (`abeli`, `sumatra`) showing
+  they are Sumatran — hidden from any species-column-only pipeline.
+- **MacLeod 2000** records specimen **YN85-38** as `PONGO PYGMAEUS / ABELII` —
+  the explicit pygmaeus→abelii reassignment, resolved to *P. abelii*.
+- The orangutans are **Zilles/Yerkes** material housed at the **Düsseldorf**
+  Vogt Institut alongside the Stephan collection; house names tie the systems
+  together (catalog *Harry*=MacLeod OY 1148; catalog *Briggs*=MacLeod OHDZ). This
+  is why a Pongo value can appear in a Stephan-dataset comparison having come
+  from the Zilles/Rehkämper stream.
+- **Zilles/Rehkämper 1988** records Pongo honestly as `Pongo sp.` (genus-level);
+  **DeCasien** promotes that to modern `Pongo pygmaeus` — flagged in the audit
+  as a broad-concept value that should stay pinned to `Pongo pygmaeus (s.l.)`.
+- **DeCasien `Pongo_abelii`** (from Bauernfeind) is correct modern data and must
+  **not** be merged with pre-2001 `Pongo pygmaeus` values as if the same taxon.
+
+## Adding a new specimen / concept case
+
+1. If it is one individual with conflicting labels → add rows to
+   `specimen_crosswalk.csv` (one `canonical_specimen`, one alias row per source);
+   set `resolved_taxon` only with evidence; set `taxon_conflict` when sources
+   disagree. Write a specimen note in `____Collections and Specimen notes/`.
+2. If it is an old broad label over a pooled sample → add/point at a row in
+   `taxon_concept_registry.csv` with `sensu = s.l.` and `decomposable = FALSE`.
+3. Audit where its values enter the merge (mirror `pongo_provenance_audit.csv`).

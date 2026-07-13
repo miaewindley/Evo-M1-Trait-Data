@@ -43,8 +43,31 @@ setwd(folder)
 ## the term map and species NAMES are resolved in step 4 (NCBI + curated overrides). See README.
 papers <- tribble(
   ~item,                                  ~team,                ~year,
-  "Stephan_etal_1970_Tables1-6",          "Stephan_collection", 1970,
-  "Stephan_etal_1981_TablesI-VI",         "Stephan_collection", 1981,
+  # Stephan 1970 split one-item-per-printed-table (was bundled Tables1-6). Tables 1-3 =
+  # fundamental parts in insectivores/prosimians/simians; Tables 4-6 = telencephalon components, same taxa.
+  "Stephan_etal_1970_Table1",             "Stephan_collection", 1970,
+  "Stephan_etal_1970_Table2",             "Stephan_collection", 1970,
+  "Stephan_etal_1970_Table3",             "Stephan_collection", 1970,
+  "Stephan_etal_1970_Table4",             "Stephan_collection", 1970,
+  "Stephan_etal_1970_Table5",             "Stephan_collection", 1970,
+  "Stephan_etal_1970_Table6",             "Stephan_collection", 1970,
+  # Stephan 1981 split one-item-per-printed-table (was bundled TablesI-VI, which actually spanned I-XVI).
+  "Stephan_etal_1981_TableI",             "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableII",            "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableIII",           "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableIV",            "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableV",             "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableVI",            "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableVII",           "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableVIII",          "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableIX",            "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableX",             "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableXI",            "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableXII",           "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableXIII",          "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableXIV",           "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableXV",            "Stephan_collection", 1981,
+  "Stephan_etal_1981_TableXVI",           "Stephan_collection", 1981,
   "Stephan_etal_1982_Table1",             "Stephan_collection", 1982,
   "Stephan_etal_1984_Table1",             "Stephan_collection", 1984,
   "Stephan_etal_1987_Table1",             "Stephan_collection", 1987,
@@ -101,7 +124,33 @@ enc_override <- c(# DOI-coded tables: registry resolves them, but keep DOI-encod
                   "Barks_etal_2014_TABLE1"      = "10.1002%2Fajpa.22646_TABLE1",
                   "Bush_Allman_2004_a_Table2"   = "10.1073%2Fpnas.0305760101_Table2",
                   "Rilling_Insel_1998_Table1"   = "10.1159%2F000006575_Table1",
-                  "Stimpson_etal_2015_TableS1"  = "10.1093%2Fscan%2Fnsv128_TableS1")
+                  "Stimpson_etal_2015_TableS1"  = "10.1093%2Fscan%2Fnsv128_TableS1",
+                  # Stephan 1970 split into 6 per-table items (ISBN-coded; The Primate Brain has no DOI).
+                  "Stephan_etal_1970_Table1" = "ISBN%3A0390672505_TABLE1",
+                  "Stephan_etal_1970_Table2" = "ISBN%3A0390672505_TABLE2",
+                  "Stephan_etal_1970_Table3" = "ISBN%3A0390672505_TABLE3",
+                  "Stephan_etal_1970_Table4" = "ISBN%3A0390672505_TABLE4",
+                  "Stephan_etal_1970_Table5" = "ISBN%3A0390672505_TABLE5",
+                  "Stephan_etal_1970_Table6" = "ISBN%3A0390672505_TABLE6",
+                  # Stephan 1981 split into 16 per-table items. All share the paper's single DOI
+                  # 10.1159/000155963; pin it here so the drifted VIII/IX/X registry encodings
+                  # (000155964/5/6) can't send those tables to a missing TSV.
+                  "Stephan_etal_1981_TableI"     = "10.1159%2F000155963_TableI",
+                  "Stephan_etal_1981_TableII"    = "10.1159%2F000155963_TableII",
+                  "Stephan_etal_1981_TableIII"   = "10.1159%2F000155963_TableIII",
+                  "Stephan_etal_1981_TableIV"    = "10.1159%2F000155963_TableIV",
+                  "Stephan_etal_1981_TableV"     = "10.1159%2F000155963_TableV",
+                  "Stephan_etal_1981_TableVI"    = "10.1159%2F000155963_TableVI",
+                  "Stephan_etal_1981_TableVII"   = "10.1159%2F000155963_TableVII",
+                  "Stephan_etal_1981_TableVIII"  = "10.1159%2F000155963_TableVIII",
+                  "Stephan_etal_1981_TableIX"    = "10.1159%2F000155963_TableIX",
+                  "Stephan_etal_1981_TableX"     = "10.1159%2F000155963_TableX",
+                  "Stephan_etal_1981_TableXI"    = "10.1159%2F000155963_TableXI",
+                  "Stephan_etal_1981_TableXII"   = "10.1159%2F000155963_TableXII",
+                  "Stephan_etal_1981_TableXIII"  = "10.1159%2F000155963_TableXIII",
+                  "Stephan_etal_1981_TableXIV"   = "10.1159%2F000155963_TableXIV",
+                  "Stephan_etal_1981_TableXV"    = "10.1159%2F000155963_TableXV",
+                  "Stephan_etal_1981_TableXVI"   = "10.1159%2F000155963_TableXVI")
 read_item <- function(it) {
   # Match item names CASE-INSENSITIVELY (registry drifts e.g. Table2 vs TABLE2) and
   # strip stray spaces from the encoding (cloud-edit typos like "ISBN%3A 0390..."),
@@ -407,7 +456,9 @@ flags <- tibble(Species=character(), Variable=character(), flag=character(), det
 t1 <- long %>% filter(Team == "Stephan_collection") %>% arrange(Species, Variable, desc(Year))
 t1res <- t1 %>% group_by(Species, Variable) %>% summarise(
   Value = if (is_mass(first(Variable))) {
-            s81 <- Value[Source == "Stephan_etal_1981_TablesI-VI"]; if (length(s81)) s81[1] else Value[1]
+            # Mass -> Stephan 1981 reference. Body/brain mass live in the 1981 fundamental tables,
+            # split from the former bundled "Stephan_etal_1981_TablesI-VI" into per-taxon Tables I/II/III.
+            s81 <- Value[grepl("^Stephan_etal_1981_Table(I{1,3})$", Source)]; if (length(s81)) s81[1] else Value[1]
           } else Value[1],
   .groups = "drop")
 # flags: newest vs next within Tier-1 (non-mass)

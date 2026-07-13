@@ -5,8 +5,10 @@
 # a lean, analysis-ready CSV. Output comes from the snapshot only.
 #
 # Snapshot layout: row 1 caption, row 2 header, rows 3+ the 76 species in Stephan
-# code (taxonomic) order. Columns: code, species, then the 44 structure volumes
-# interleaved with the 6 "n (range)" sample-size columns, in Stephan's code order.
+# code (taxonomic) order. Columns: code, group, species, then the 44 structure
+# volumes interleaved with the 6 "n (range)" sample-size columns, in Stephan's
+# code order. 'group' is the taxon each source table was captioned by
+# (Insectivore = Tables I/IV, Prosimian = II/V, Simian = III/VI).
 # Body weight in g, brain weight in mg, all other structures in mm3.
 #
 # This script cleans the journal-style headers to R-friendly names and types the
@@ -81,8 +83,9 @@ names(dat) <- mark_unilateral_vestibular(header)
 dat <- dat[!is.na(dat$species) & str_squish(dat$species) != "", , drop = FALSE]
 dat <- dplyr::rename(dat, Species = species)
 
-# type every column except the two identifiers
-id <- c("code", "Species")
+# type every column except the identifiers (group is the taxon each source
+# table was captioned by: Insectivore = Tables I/IV, Prosimian = II/V, Simian = III/VI)
+id <- c("code", "group", "Species")
 final.dataframe <- dat %>%
   mutate(across(-all_of(id), num)) %>%
   mutate(code = str_squish(code), Species = str_squish(Species))
