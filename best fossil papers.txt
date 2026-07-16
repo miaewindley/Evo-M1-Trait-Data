@@ -1,9 +1,0 @@
-Weaver, A. G. H. (2001). The cerebellum and cognitive evolution in Pliocene and Pleistocene hominids [PhD, The University of New Mexico]. Albuquerque, NM. 
-Table A-15
-Notes for Table A-15
-
-Kochiyama, T., Tanabe, H. C., & Ogihara, N. (2018). Reconstruction and Statistical Evaluation of Fossil Brains Using Computational Neuroanatomy. In E. Bruner, N. Ogihara, & H. C. Tanabe (Eds.), Digital Endocasts: From Skulls to Brains (pp. 153-171). Springer Japan. https://doi.org/10.1007/978-4-431-56582-6_11 
-Figure 3: data are written in the legend (and shown in barographs as well)
-
-Balzeau, A., Holloway, R. L., & Grimaud-Herve, D. (2012). Variations and asymmetries in regional brain surface in the genus Homo. J Hum Evol, 62(6), 696-706. https://doi.org/10.1016/j.jhevol.2012.03.007 
-Table 3Table 5
