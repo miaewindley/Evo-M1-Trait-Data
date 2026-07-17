@@ -1,0 +1,31 @@
+table,structure,subregion,species_printed,species,is_average,measure,value,sd,units,n_areas,reference
+S15,Hypothalamus,Hypothalamus,mouse,Mus musculus,False,CMRgl,0.59,0.14,umol/g/min,,Bouilleret et al 2000
+S15,Hypothalamus,Hypothalamus,mouse,Mus musculus,False,CMRgl,0.56,0.1,umol/g/min,,"Quelven et al 2004, estim."
+S15,Hypothalamus,Hypothalamus,average mouse,Mus musculus,True,CMRgl,0.58,0.12,umol/g/min,,
+S15,Hypothalamus,Hypothalamus,rat,Rattus norvegicus,False,CMRgl,0.48,0.02,umol/g/min,,Nehling et al 1988
+S15,Hypothalamus,Hypothalamus,rat,Rattus norvegicus,False,CMRgl,0.49,0.09,umol/g/min,,Dube et al 2001
+S15,Hypothalamus,Hypothalamus,rat,Rattus norvegicus,False,CMRgl,0.44,0.03,umol/g/min,,Levant et al 2004
+S15,Hypothalamus,Hypothalamus,rat,Rattus norvegicus,False,CMRgl,0.39,0.05,umol/g/min,,Waschke et al 1993
+S15,Hypothalamus,Hypothalamus,rat,Rattus norvegicus,False,CMRgl,0.54,0.05,umol/g/min,,Nehling et al 2000
+S15,Hypothalamus,Hypothalamus,rat,Rattus norvegicus,False,CMRgl,0.4,0.04,umol/g/min,,Blin et al 1991
+S15,Hypothalamus,Hypothalamus,average rat,Rattus norvegicus,True,CMRgl,0.46,0.05,umol/g/min,,
+S15,Hypothalamus,Hypothalamus,rabbit,Oryctolagus cuniculus,False,CMRgl,0.62,0.03,umol/g/min,,Passero et al 1981
+S15,Hypothalamus,Hypothalamus,cat,Felis catus,False,CMRgl,0.41,0.06,umol/g/min,,Chugani et al 1991
+S15,Hypothalamus,Hypothalamus,cat,Felis catus,False,CMRgl,0.41,0.04,umol/g/min,,Sokoloff 1984
+S15,Hypothalamus,Hypothalamus,average cat,Felis catus,True,CMRgl,0.41,0.05,umol/g/min,,
+S15,Hypothalamus,Hypothalamus,monkey,Macaca mulatta,False,CMRgl,0.3,0.03,umol/g/min,,Porrino et al 2002
+S15,Hypothalamus,Hypothalamus,monkey,Macaca mulatta,False,CMRgl,0.26,0.04,umol/g/min,,Kennedy et al 1978
+S15,Hypothalamus,Hypothalamus,average monkey,Macaca mulatta,True,CMRgl,0.28,0.04,umol/g/min,,
+S15,Hypothalamus,Hypothalamus,human,Homo sapiens,False,CMRgl,0.27,0.02,umol/g/min,,Blin et al 1991
+S15,Hypothalamus,Mammilary body,mouse,Mus musculus,False,CMRgl,1.56,0.13,umol/g/min,,Bouilleret et al 2000
+S15,Hypothalamus,Mammilary body,rat,Rattus norvegicus,False,CMRgl,1.03,0.04,umol/g/min,,Nehling et al 1988
+S15,Hypothalamus,Mammilary body,rat,Rattus norvegicus,False,CMRgl,1.04,0.17,umol/g/min,,Dube et al 2001
+S15,Hypothalamus,Mammilary body,rat,Rattus norvegicus,False,CMRgl,0.76,0.05,umol/g/min,,Waschke et al 1993
+S15,Hypothalamus,Mammilary body,average rat,Rattus norvegicus,True,CMRgl,0.94,0.09,umol/g/min,,
+S15,Hypothalamus,Mammilary body,rabbit,Oryctolagus cuniculus,False,CMRgl,0.68,0.03,umol/g/min,,Passero et al 1981
+S15,Hypothalamus,Mammilary body,cat,Felis catus,False,CMRgl,0.99,0.32,umol/g/min,,Chugani et al 1991
+S15,Hypothalamus,Mammilary body,cat,Felis catus,False,CMRgl,0.85,0.03,umol/g/min,,Sokoloff 1984
+S15,Hypothalamus,Mammilary body,average cat,Felis catus,True,CMRgl,0.92,0.18,umol/g/min,,
+S15,Hypothalamus,Mammilary body,monkey,Macaca mulatta,False,CMRgl,0.57,0.06,umol/g/min,,Palombo et al 1990
+S15,Hypothalamus,Mammilary body,monkey,Macaca mulatta,False,CMRgl,0.57,0.03,umol/g/min,,Kennedy et al 1978
+S15,Hypothalamus,Mammilary body,average monkey,Macaca mulatta,True,CMRgl,0.57,0.05,umol/g/min,,
