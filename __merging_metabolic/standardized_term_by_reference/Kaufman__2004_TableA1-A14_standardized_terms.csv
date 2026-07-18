@@ -1,0 +1,19 @@
+Original_Term,Reference,Standardized_Term
+Species,Kaufman__2004_TableA1-A14,Species
+Auditory Cortex,Kaufman__2004_TableA1-A14,Auditory_cortex
+Basal Ganglia,Kaufman__2004_TableA1-A14,Basal_ganglia
+Cerebellum,Kaufman__2004_TableA1-A14,Cerebellum
+Cingulate Cortex,Kaufman__2004_TableA1-A14,Cingulate_cortex
+Frontal Cortex,Kaufman__2004_TableA1-A14,Frontal_cortex
+Hippocampus,Kaufman__2004_TableA1-A14,Hippocampus
+Neocortex,Kaufman__2004_TableA1-A14,Neocortex
+Occipital Cortex,Kaufman__2004_TableA1-A14,Occipital_cortex
+Parietal Cortex,Kaufman__2004_TableA1-A14,Parietal_cortex
+Sensorimotor Cortex,Kaufman__2004_TableA1-A14,Sensorimotor_cortex
+Temporal Cortex,Kaufman__2004_TableA1-A14,Temporal_cortex
+Thalamus,Kaufman__2004_TableA1-A14,Thalamus
+White Matter,Kaufman__2004_TableA1-A14,White_matter
+Whole Brain (direct measurement),Kaufman__2004_TableA1-A14,Whole_brain
+CMRgl_umol_100g_min,Kaufman__2004_TableA1-A14,CMRgl
+CMRO2_umol_100g_min,Kaufman__2004_TableA1-A14,CMRO2
+CBF_ml_100g_min,Kaufman__2004_TableA1-A14,CBF

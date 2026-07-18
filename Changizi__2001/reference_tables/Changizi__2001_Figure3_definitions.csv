@@ -1,0 +1,8 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species binomial resolved from the printed common name,,Species,,primary,Mammals (monotreme to human),Changizi__2001_Figure3,filled via common_name_to_species.csv; see basis/note there,common names only in Fig. 3 caption
+common_name,common name exactly as printed in the Fig. 3 caption,,,,info,Mammals (monotreme to human),Changizi__2001_Figure3,archival; original label,
+log_brain_volume,log10 neocortical grey-matter volume as printed in Fig. 3,Neocortex,,,primary,Mammals (monotreme to human),Changizi__2001_Figure3,units mm3 (log10); x-axis of Fig. 3,
+log_n_areas,log10 number of cortical areas as printed in Fig. 3,Neocortex,,,primary,Mammals (monotreme to human),Changizi__2001_Figure3,y-axis of Fig. 3,
+brain_volume_mm3,neocortical grey-matter volume (unlogged 10^log),Neocortex,Volume.mm3,,primary,Mammals (monotreme to human),Changizi__2001_Figure3,Method: 10^log_brain_volume then trunc (log-derived digits not significant),
+n_areas,number of cortical areas (unlogged 10^log),Neocortex,count,,primary,Mammals (monotreme to human),Changizi__2001_Figure3,Method: 10^log_n_areas then trunc; human = 50 chosen arbitrarily (caption),
+source,source identifier,,Source,,info,Mammals (monotreme to human),Changizi__2001_Figure3,,

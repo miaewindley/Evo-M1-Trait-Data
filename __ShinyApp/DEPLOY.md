@@ -24,8 +24,7 @@ brain-trait data compiled in this project.
 ```
 __ShinyApp/
   app.R                     the whole app (single file)
-  build_data.py             regenerates the two derived files + fallback copies
-  build_data.R              thin wrapper that runs build_data.py from R
+  build_data.R              regenerates the two derived files + fallback copies
   data/                     <-- fallback cache only (do not hand-edit)
     evom1_traits_long.csv   DERIVED: melted from ____EvoM1_TraitTable/*.xlsx
     source_manifest.csv     DERIVED: source-table catalogue + citations
@@ -57,9 +56,11 @@ the manifest joins filenames to citations in `__ReadMe.xlsx`), so a small build
 step is still needed. Regenerate them whenever the merge or trait tables change,
 then commit and push:
 
+```r
+install.packages("readxl")            # one time
+```
 ```bash
-python3 __ShinyApp/build_data.py      # requires: pip install openpyxl
-# or, from R:  Rscript __ShinyApp/build_data.R
+Rscript __ShinyApp/build_data.R
 git add __ShinyApp/data/evom1_traits_long.csv __ShinyApp/data/source_manifest.csv \
         __ShinyApp/data/volumes_long.csv __ShinyApp/data/cellcounts_long.csv
 git commit -m "Refresh Shiny app data" && git push

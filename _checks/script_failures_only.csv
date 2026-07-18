@@ -1,4 +1,7 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__flow_comparison/Seymour_Boyer_flow_combined.R","FAILED","Error in deframe(.) : could not find function ""deframe""
+Calls: %>%
+Execution halted","2026-07-18 20:25:38.902931","2026-07-18 20:25:39.575572",0.672641038894653
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__imputing_cellcounts/cellcounts_imputations_diagnostic.R","FAILED","|-------------------------------------|
 | misty 0.8.2 (2026-05-16)            |
 | Miscellaneous Functions T. Yanagida |
@@ -338,7 +341,7 @@ Number of logged events: 2379
 Error in density.default(x = c(NA_real_, NA_real_, NA_real_, NA_real_,  : 
   need at least 2 points to select a bandwidth automatically
 Calls: densityplot ... <Anonymous> -> do.call -> <Anonymous> -> density.default
-Execution halted","2026-07-09 18:27:59.292196","2026-07-09 18:28:17.807133",18.5149369239807
+Execution halted","2026-07-18 20:25:39.582054","2026-07-18 20:25:58.428592",18.846538066864
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_DeCasien.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
@@ -351,7 +354,36 @@ Execution halted","2026-07-09 18:27:59.292196","2026-07-09 18:28:17.807133",18.5
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 Laterality guard OK: 25 one-side column(s) correctly suffixed.
 Error: paper_long('Stephan_etal_1970_Tables1-6'): no measured columns matched the term map. df cols: Species, body_weight_g, brain_weight_mg, total_brain_net_mm3, medulla_oblongata_mm3, cerebellum_mm3, mesencephalon_mm3, diencephalon_mm3, telencephalon_mm3, bulbus_olfactorius_mm3, palaeocortex_plus_amygdala_mm3, septum_mm3, striatum_mm3, schizocortex_mm3, hippocampus_mm3, neocortex_mm3, source
-Execution halted","2026-07-09 18:28:26.711717","2026-07-09 18:28:28.113697",1.40198016166687
+Execution halted","2026-07-18 20:26:10.016723","2026-07-18 20:26:11.270318",1.25359511375427
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/app.R","FAILED","
+Attaching package: ‘bslib’
+
+The following object is masked from ‘package:utils’:
+
+    page
+
+
+Attaching package: ‘DT’
+
+The following objects are masked from ‘package:shiny’:
+
+    dataTableOutput, renderDataTable
+
+
+Listening on http://127.0.0.1:6447
+
+
+Execution halted","2026-07-18 20:26:14.311362","2026-07-18 20:31:14.394003",300.082640886307
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/build_data.R","FAILED","repo: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data
+out:  /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/data
+[1] TRUE
+[1] TRUE
+evom1 traits rows: 3850
+source tables indexed (served from GitHub): 181
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  more columns than column names
+Calls: lapply -> FUN -> read.delim -> read.table
+Execution halted","2026-07-18 20:31:14.403707","2026-07-18 20:31:15.979678",1.57597088813782
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_Zilles_Rehkamper_1988_provenance.R","FAILED","New names:
 • `` -> `...2`
 • `` -> `...3`
@@ -422,24 +454,58 @@ One or more parsing issues, call `problems()` on your data frame for details,
 e.g.:
   dat <- vroom(...)
   problems(dat) 
-Execution halted","2026-07-09 18:28:31.272948","2026-07-09 18:28:32.754989",1.4820408821106
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/HerculanoHouzel__2015/HerculanoHouzel__2015_Table1.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ ggplot2   4.0.3     ✔ tibble    3.3.1
-✔ lubridate 1.9.5     ✔ tidyr     1.3.2
-✔ purrr     1.2.2     
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::filter()         masks stats::filter()
-✖ readr::guess_encoding() masks rvest::guess_encoding()
-✖ dplyr::lag()            masks stats::lag()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error in (html_table(html_elements(page, ""table""), fill = TRUE))[[1]] : 
-  subscript out of bounds
-Execution halted","2026-07-09 18:34:22.99704","2026-07-09 18:34:24.630359",1.63331890106201
+Execution halted","2026-07-18 20:31:15.983152","2026-07-18 20:31:17.123351",1.14019918441772
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Masterton_1983/Heffner_Masterton_1983_TableI.R","FAILED","New names:
+• `` -> `...1`
+• `` -> `...2`
+• `` -> `...3`
+• `` -> `...4`
+• `` -> `...5`
+• `` -> `...6`
+• `` -> `...7`
+• `` -> `...8`
+• `` -> `...9`
+• `` -> `...10`
+• `` -> `...11`
+• `` -> `...12`
+Error in `transmute()`:
+ℹ In argument: `phyletic_level = as.integer(as_num(phyletic_level))`.
+Caused by error in `replace_na()`:
+! could not find function ""replace_na""
+Backtrace:
+     ▆
+  1. ├─snap %>% ...
+  2. ├─dplyr::transmute(...)
+  3. ├─dplyr:::transmute.data.frame(...)
+  4. │ └─dplyr:::mutate_cols(.data, dots, by)
+  5. │   ├─base::withCallingHandlers(...)
+  6. │   └─dplyr:::mutate_col(dots[[i]], data, mask, new_columns)
+  7. │     └─mask$eval_all_mutate(quo)
+  8. │       └─dplyr (local) eval()
+  9. ├─global as_num(phyletic_level)
+ 10. │ ├─base::suppressWarnings(...)
+ 11. │ │ └─base::withCallingHandlers(...)
+ 12. │ ├─stringr::str_replace_all(val_of(x), "","", """")
+ 13. │ │ └─stringr:::check_lengths(string, pattern, replacement)
+ 14. │ │   └─vctrs::vec_size_common(...)
+ 15. │ │     └─rlang::list2(...) at vctrs/R/size.R:97:3
+ 16. │ └─global val_of(x)
+ 17. │   ├─stringr::str_trim(str_replace(replace_na(x, """"), ""\\[.*$"", """"))
+ 18. │   │ └─stringi::stri_trim_both(string)
+ 19. │   └─stringr::str_replace(replace_na(x, """"), ""\\[.*$"", """")
+ 20. │     └─stringr:::check_lengths(string, pattern, replacement)
+ 21. │       └─vctrs::vec_size_common(...)
+ 22. │         └─rlang::list2(...) at vctrs/R/size.R:97:3
+ 23. └─base::.handleSimpleError(...)
+ 24.   └─dplyr (local) h(simpleError(msg, call))
+ 25.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
+Execution halted","2026-07-18 20:37:47.974268","2026-07-18 20:37:48.910169",0.935900926589966
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kochiyama_etal_2018/Kochiyama_etal_2018_reconcile_relative_volumes.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.csv -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file 'Kochiyama_etal_2018_Figure3.csv': No such file or directory
-Execution halted","2026-07-09 18:34:50.390925","2026-07-09 18:34:50.867263",0.476338148117065
+Execution halted","2026-07-18 20:38:41.222406","2026-07-18 20:38:41.842089",0.619683027267456
+"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Seymour_etal_2017/Seymour_etal_2017_TableS1_snapshot_extract.R","FAILED","Error in library(officer) : there is no package called ‘officer’
+Calls: suppressPackageStartupMessages -> withCallingHandlers -> library
+Execution halted","2026-07-18 20:39:07.370814","2026-07-18 20:39:07.753038",0.382223844528198

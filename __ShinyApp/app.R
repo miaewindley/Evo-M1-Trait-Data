@@ -40,17 +40,14 @@ pct <- function(s) {
 }
 
 # Read a file, trying GitHub first, then the local fallback copy.
-# `reader` accepts either a connection (GitHub) or a path (local).
+# `reader` is given a URL string (GitHub) or a path (local) and manages its
+# own connection (read.csv/read.delim open and close the URL themselves).
 read_gh <- function(gh_rel, local, reader, required = TRUE) {
-  url <- paste0(GH_BASE, gh_rel)
-  res <- tryCatch({
-    con <- url(url, encoding = "UTF-8"); on.exit(close(con))
-    reader(con)
-  }, error = function(e) NULL)
+  res <- tryCatch(reader(paste0(GH_BASE, gh_rel)), error = function(e) NULL)
   if (!is.null(res)) return(res)
   if (file.exists(local)) {
     message("GitHub fetch failed for ", gh_rel, " — using local fallback.")
-    return(reader(local))
+    return(tryCatch(reader(local), error = function(e) NULL))
   }
   if (required) stop("Could not load ", gh_rel, " from GitHub or local fallback.")
   NULL

@@ -1,0 +1,15 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species binomial,,Species,,primary,Primates,Krubitzer_Kaas_1990_Table1,from Methods p.166; all four in _keys/species_reference.csv,table grouped by common name only
+common_name,common name (as used in the paper),,,,info,Primates,Krubitzer_Kaas_1990_Table1,,
+case_number,case number within species (per-hemisphere measurement),,,,info,Primates,Krubitzer_Kaas_1990_Table1,squirrel 1-6; owl 1-4; marmoset 1-6; galago 1-4,
+pct_17,area 17 (V-I / striate) as percent of total neocortex surface,VisualArea17,pct.neocortex_surface,,primary,Primates,Krubitzer_Kaas_1990_Table1,,relative area; not absolute mm2
+pct_18,area 18 (V-II) as percent of total neocortex surface,VisualArea18,pct.neocortex_surface,,primary,Primates,Krubitzer_Kaas_1990_Table1,,
+pct_DL,dorsolateral visual area (DL) as percent of total neocortex surface,DL,pct.neocortex_surface,,primary,Primates,Krubitzer_Kaas_1990_Table1,,
+pct_DM,dorsomedial visual area (DM) as percent of total neocortex surface,DM,pct.neocortex_surface,,primary,Primates,Krubitzer_Kaas_1990_Table1,,
+pct_DI,dorsointermediate visual area (DI) as percent of total neocortex surface,DI,pct.neocortex_surface,,primary,Primates,Krubitzer_Kaas_1990_Table1,,
+pct_FST,fundal superior temporal area (FST) as percent of total neocortex surface,FST,pct.neocortex_surface,,primary,Primates,Krubitzer_Kaas_1990_Table1,,
+pct_MT,middle temporal area (MT) as percent of total neocortex surface,MT,pct.neocortex_surface,,primary,Primates,Krubitzer_Kaas_1990_Table1,the focal area of the paper,
+pct_MST,medial superior temporal area (MST) as percent of total neocortex surface,MST,pct.neocortex_surface,,primary,Primates,Krubitzer_Kaas_1990_Table1,,
+pct_total_8fields,Total column as printed = sum of the eight visual fields as percent of neocortex,,pct.neocortex_surface,,primary,Primates,Krubitzer_Kaas_1990_Table1,"the remaining ~60-67% of neocortex is non-visual (auditory, somatosensory, motor, etc.)",
+measure,measure class label,,,,info,Primates,Krubitzer_Kaas_1990_Table1,percent_of_total_neocortex_surface (relative; absolute field areas only given as text ranges),
+source,source identifier,,Source,,info,Primates,Krubitzer_Kaas_1990_Table1,,

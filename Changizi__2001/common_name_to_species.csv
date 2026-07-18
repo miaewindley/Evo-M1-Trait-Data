@@ -1,0 +1,13 @@
+Reference,common_name,Species,basis,note
+Changizi__2001_Figure3,star-nosed mole,Condylura cristata,research_model,Only star-nosed mole in the cortical-mapping literature is Condylura cristata (Catania & Kaas 1995). Present in _keys/species_reference.csv.
+Changizi__2001_Figure3,hedgehog,Erinaceus europaeus,collection_match,Matches Finlay et al. 2006 Table 6.1 (same Kaas/Krubitzer mapping source). In _keys/species_reference.csv.
+Changizi__2001_Figure3,tenrec,Echinops telfairi,collection_match,Stated verbatim in Changizi 2001 text ("the tenrec (Echinops telfairi)"); matches Finlay 2006. In _keys/species_reference.csv.
+Changizi__2001_Figure3,echidna,Tachyglossus aculeatus,research_model,Monotreme cortical map is the short-beaked echidna (Krubitzer Manger Pettigrew & Calford 1995). NOT yet in _keys/species_reference.csv (table is not in a merge).
+Changizi__2001_Figure3,opossum,Didelphis marsupialis,collection_match,Matches Finlay 2006 ("North American Opossum"). In _keys/species_reference.csv. NB mapping studies sometimes used Didelphis virginiana; kept marsupialis for repo consistency.
+Changizi__2001_Figure3,quoll,Dasyurus hallucatus,collection_match,Matches Finlay 2006 ("Northern Quoll"). Northern quoll is the mapped species.
+Changizi__2001_Figure3,squirrel,Sciurus carolinensis,research_model,Changizi cites Krubitzer (1995) whose squirrel is Sciurus carolinensis. In _keys/species_reference.csv. Finlay 2006 left this as "Squirrel sp.".
+Changizi__2001_Figure3,marmoset,Callithrix jacchus,collection_match,Matches Finlay 2006. In _keys/species_reference.csv.
+Changizi__2001_Figure3,cat,Felis catus,collection_match,Matches Finlay 2006 (domestic cat). In _keys/species_reference.csv.
+Changizi__2001_Figure3,owl monkey,Aotus trivirgatus,collection_match,Matches Finlay 2006. In _keys/species_reference.csv.
+Changizi__2001_Figure3,macaque,Macaca mulatta,collection_match,Finlay 2006 labels this animal "Rhesus Macaque" (= Macaca mulatta). In _keys/species_reference.csv.
+Changizi__2001_Figure3,human,Homo sapiens,research_model,Only human; area count (50) chosen "somewhat arbitrarily" per Fig. 3 caption. In _keys/species_reference.csv.

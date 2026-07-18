@@ -1,0 +1,25 @@
+Reference,common_name,species_as_published,Species,basis,note
+Finlay_etal_2006_Table6.1,Owl Monkey,Aotus trivirgatus,Aotus trivirgatus,verbatim,
+Finlay_etal_2006_Table6.1,Short-tailed Shrew,Blarina brevicauda,Blarina brevicauda,verbatim,
+Finlay_etal_2006_Table6.1,Marmoset,Callithrix jacchus,Callithrix jacchus,verbatim,
+Finlay_etal_2006_Table6.1,Least Shrew,Cryptotis parva,Cryptotis parva,verbatim,
+Finlay_etal_2006_Table6.1,Striped Possum,Dactylopsila trivirgata,Dactylopsila trivirgata,verbatim,
+Finlay_etal_2006_Table6.1,Norhtern Quoll,Dasyurus hallucatus,Dasyurus hallucatus,verbatim,common name misspelled "Norhtern" in the source; kept verbatim
+Finlay_etal_2006_Table6.1,North American Opossum,Didelphis marsupialis,Didelphis marsupialis,verbatim,mapping studies sometimes used Didelphis virginiana; kept as printed
+Finlay_etal_2006_Table6.1,Tenrec,Echinops telfairi,Echinops telfairi,verbatim,CORRECTION: earlier build renamed this to "Echinops telfari" (a typo); telfairi is correct and matches the whole repo
+Finlay_etal_2006_Table6.1,Hedgehog,Erinaceus europaeus,Erinaceus europaeus,verbatim,
+Finlay_etal_2006_Table6.1,Cat,Felis cattus,Felis catus,spelling,printed "Felis cattus"; accepted spelling is Felis catus
+Finlay_etal_2006_Table6.1,Galago,Galago sp.,Galago sp.,genus_sp,source printed genus only; Finlay refs cite "Galago garnetti" (now Otolemur garnettii) — left at genus pending review
+Finlay_etal_2006_Table6.1,Rhesus Macaque,Macaca sp.,Macaca mulatta,research_model,common name "Rhesus Macaque" = Macaca mulatta; source printed "Macaca sp."
+Finlay_etal_2006_Table6.1,Short-tailed Possum,Monodelphis domestica,Monodelphis domestica,verbatim,
+Finlay_etal_2006_Table6.1,Mouse,Mouse sp.,Mus sp.,genus_sp,"Mouse" maps cleanly to genus Mus; research model most likely Mus musculus
+Finlay_etal_2006_Table6.1,Flying Fox,Pteropus poliocephalus,Pteropus poliocephalus,verbatim,
+Finlay_etal_2006_Table6.1,Rat,Rattus sp.,Rattus sp.,genus_sp,"Rat" maps cleanly to genus Rattus; research model most likely Rattus norvegicus
+Finlay_etal_2006_Table6.1,Squirrel monkey,Saimiri sciureus,Saimiri sciureus,verbatim,
+Finlay_etal_2006_Table6.1,Fat-tailed Dunnart,Sminthopsis crassicaudata,Sminthopsis crassicaudata,verbatim,
+Finlay_etal_2006_Table6.1,Masked Shrew,Sorex cinereus,Sorex cinereus,verbatim,
+Finlay_etal_2006_Table6.1,Southeastern Shrew,Sorex longirostris,Sorex longirostris,verbatim,
+Finlay_etal_2006_Table6.1,Northern Water Shrew,Sorex palustris,Sorex palustris,verbatim,
+Finlay_etal_2006_Table6.1,Squirrel,Squirrel sp.,Sciurus carolinensis,research_model,Krubitzer (1995) squirrel is Sciurus carolinensis; consistent with Changizi 2001; source printed "Squirrel sp."
+Finlay_etal_2006_Table6.1,Brush-tailed Possum,Trichosurus vulpecula,Trichosurus vulpecula,verbatim,
+Finlay_etal_2006_Table6.1,Tree Shrew,Tupia belangeri,Tupaia belangeri,spelling,printed "Tupia belangeri"; accepted spelling is Tupaia belangeri

@@ -1,5 +1,10 @@
-# 1. Data comes from Fig 3 caption and was not tabulated, so a table was created, Changizi__2001_Figure3_snapshot.csv
+## Changizi 2001, Biol Cybern 82:207-215 — Figure 3 (log #cortical areas vs log neocortical grey-matter volume)
+## Data are only given in the Fig. 3 caption (not a printed table), so a snapshot table was made by hand:
+##   Changizi__2001_Figure3_snapshot.csv  (Species = COMMON NAME, log brain volume, log # areas)
+## This script: unlog the two axes, and ADD a binomial `Species` column (common names -> binomials via
+## the reviewable common_name_to_species.csv). Golden rule: the snapshot is frozen; all cleaning is here.
 
+options(scipen = 999)
 ## ---- paths: self-contained (Rscript or RStudio; full repo or lone folder) ----
 .sp <- local({
   a <- grep("^--file=", commandArgs(FALSE), value = TRUE)             # Rscript file.R
@@ -11,59 +16,61 @@
   }
   stop("Run with Rscript file.R, or open in RStudio and click Source (save first).", call. = FALSE)
 })
-folder <- paper_dir <- dirname(.sp)                                   # this paper's folder
-item_name <- table_name <- tools::file_path_sans_ext(basename(.sp))  # = file name (matches __ReadMe.xlsx)
-base <- dataset_root <- local({                                      # repo root; NA if run as a lone folder
+folder    <- dirname(.sp)                                # this paper's folder
+item_name <- tools::file_path_sans_ext(basename(.sp))    # = file name, matches __ReadMe.xlsx
+base      <- local({                                     # repo root; NA if run as a lone folder
   d <- folder
   while (dirname(d) != d && !file.exists(file.path(d, "__ReadMe.xlsx"))) d <- dirname(d)
   if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
 })
 setwd(folder)
 
-setwd(folder)
+## ---- read frozen snapshot (Species column holds COMMON names) ----
+raw <- read.csv("Changizi__2001_Figure3_snapshot.csv", check.names = FALSE, stringsAsFactors = FALSE)
+common_name <- trimws(raw[[1]])                          # first column = common name
 
-# open file and read last two columns as numeric
-figdata <- read.csv("Changizi__2001_Figure3_snapshot.csv", check.names = FALSE)
+## ---- unlog the two log10 axes (as in the caption); truncate to integers (log-derived, not significant) ----
+log_brain <- as.numeric(raw[[2]])                       # col 2 = log10 brain volume
+log_areas <- as.numeric(raw[[3]])                       # col 3 = log10 # areas
+brain_volume_mm3 <- trunc(10^log_brain)
+n_areas          <- trunc(10^log_areas)
 
+## ---- add binomial Species from the reviewable mapping (no inline hardcoding) ----
+map <- read.csv(file.path(folder, "common_name_to_species.csv"), stringsAsFactors = FALSE)
+Species <- map$Species[match(tolower(common_name), tolower(map$common_name))]
+if (any(is.na(Species)))
+  warning("No binomial for: ", paste(common_name[is.na(Species)], collapse = ", "),
+          " — add a row to common_name_to_species.csv")
 
-# 2. Make data readable
-# Add unlogged data
+clean <- data.frame(
+  Species          = Species,                            # canonical binomial (join key)
+  common_name      = common_name,                        # printed common name (archival)
+  log_brain_volume = log_brain,                          # log10 neocortical grey-matter volume (mm3), as printed
+  log_n_areas      = log_areas,                          # log10 number of cortical areas, as printed
+  brain_volume_mm3 = brain_volume_mm3,                   # unlogged neocortical grey-matter volume (mm3)
+  n_areas          = n_areas,                            # unlogged number of cortical areas
+  source           = item_name,
+  stringsAsFactors = FALSE
+)
 
-#make numerical
-figdata[, 2:3] <- lapply(figdata[, 2:3], as.numeric)
+## ---- local CSV ----
+csv_file <- file.path(folder, paste0(item_name, ".csv"))
+write.csv(clean, csv_file, row.names = FALSE)
+message(item_name, ": ", nrow(clean), " rows written to ", basename(csv_file))
 
-# Unlogged values of columns 2 and 3 which are log-transformed
-figdata[, 4] <- 10^figdata[, 2]  # Add a new column with unlogged values of column 2
-figdata[, 5] <- 10^figdata[, 3]  # Add a new column with unlogged values of column 3
+## ---- public TSV: look up the DOI code from __ReadMe.xlsx ----
+tsv_dir <- file.path(base, "__Public", "comparative-data")
+item_encoded <- if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {
+  filecodes <- readxl::read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
+  filecodes$`Item encoded`[match(item_name, filecodes$`Item name`)]
+} else NA_character_
 
-# Rename columns 4 and 5 to match the headings of columns 2 and 3 without "log"
-colnames(figdata)[4:5] <- sub("log ", "", colnames(figdata)[2:3])
-
-# Remove all digits after the decimal point in columns 4 and 5 #these are not maningful since they were produced by logging
-figdata[, 4:5] <- lapply(figdata[, 4:5], function(x) trunc(x))
-
-# Set the scipen option to a high value to turn off scientific notation
-options(scipen = 999)
-
-## 3. Save
-
-# Finalize dataframe (UPDATE!!!)
-final.dataframe <- figdata
-
-# Get Item name: Get Path of the current script, Extract the file name, Remove the ".R" extension
-library(rstudioapi)
-item_name <- gsub("\\.R$", "", basename(.sp))
-
-# Get Item encoded
-library(readxl) 
-filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")
-item_encoded <- filecodes$"Item encoded"[match(item_name, filecodes$"Item name")]
-
-# Save dataframe to a CSV file
-write.csv(final.dataframe, file = paste0(item_name, ".csv"), row.names = FALSE)
-
-# Save dataframe to a TSV file in the online database
-tsv_file_path <- paste0(file.path(base, "__Public", "comparative-data"), "/")
-write.table(final.dataframe, file = paste0(tsv_file_path, item_encoded, ".tsv"), sep = "\t", row.names = FALSE)
-
-
+if (is.na(item_encoded) || !nzchar(item_encoded)) {
+  warning("No 'Item encoded' for '", item_name, "' in __ReadMe.xlsx; TSV skipped.")
+} else if (!dir.exists(path.expand(tsv_dir))) {
+  warning("Shared folder not found: ", tsv_dir, "; TSV skipped.")
+} else {
+  tsv_file <- file.path(path.expand(tsv_dir), paste0(item_encoded, ".tsv"))
+  write.table(clean, tsv_file, sep = "\t", row.names = FALSE)
+  message("Wrote ", tsv_file)
+}

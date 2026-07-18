@@ -1,0 +1,18 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species binomial (galagos = Otolemur garnetti; owl monkey = Aotus nancymae; macaque = Macaca mulatta; baboon = Papio cynocephalus anubis),,Species,,primary,Primates,Collins_etal_2010_DatasetS1,from SI p.1 species list + Fig 1/2/S1/S2,supplement sheets labelled only by common name
+common_name,common name (as used in the paper),,,,info,Primates,Collins_etal_2010_DatasetS1,,
+specimen,case / animal identifier,,,,info,Primates,Collins_etal_2010_DatasetS1,07-104 & 08-07 = two galagos; 07-78 owl monkey; 08-59 macaque; 09-27 baboon,
+hemisphere,cortical hemisphere sampled,,,,info,Primates,Collins_etal_2010_DatasetS1,from figure legends; 09-27 side not stated (NA),
+piece_id,tissue-piece / tube label exactly as in Dataset S1,,,,info,Primates,Collins_etal_2010_DatasetS1,numbers for grid samples; area codes (V1 MT DL ...) for dissected samples; kept verbatim,
+piece_type,grid (numbered sample) vs area (dissected identified area),,,,info,Primates,Collins_etal_2010_DatasetS1,derived from piece_id,
+surface_area_mm2,cortical surface area of the tissue piece,Neocortex,Area.mm2,,primary,Primates,Collins_etal_2010_DatasetS1,NA for macaque 08-59 (hemisphere not flattened; areas not measured),measured in ImageJ (SI)
+tissue_weight_g,wet weight of the tissue piece,,Mass.g,,primary,Primates,Collins_etal_2010_DatasetS1,,
+total_cells,estimated total cells (all nuclei) in the piece,Neocortex,count,,primary,Primates,Collins_etal_2010_DatasetS1,isotropic fractionator,
+neun_percent_printed,percent/fraction NeuN+ (neurons) EXACTLY as printed in Dataset S1,,,,info,Primates,Collins_etal_2010_DatasetS1,UNIT INCONSISTENCY: baboon 09-27 sheet is a percent (e.g. 37.69); all other sheets a fraction (e.g. 0.377) — use neun_ratio instead,preserved verbatim
+neun_ratio,neuron fraction = total_neurons / total_cells (computed; unambiguous),,,,primary,Primates,Collins_etal_2010_DatasetS1,Method: total_neurons/total_cells rounded to 4 dp — sidesteps the neun_percent_printed unit clash,
+total_neurons,estimated total neurons (NeuN+) in the piece,Neocortex,count,,primary,Primates,Collins_etal_2010_DatasetS1,,
+cell_density_per_g,cells per gram of tissue,Neocortex,Density.per_g,,primary,Primates,Collins_etal_2010_DatasetS1,Cell_Dens_Wt,
+cell_density_per_mm2,cells per mm2 of cortical surface,Neocortex,Density.per_mm2,,primary,Primates,Collins_etal_2010_DatasetS1,Cell_Dens_SA; NA where surface area not measured,
+neuron_density_per_g,neurons per gram of tissue,Neocortex,Density.per_g,,primary,Primates,Collins_etal_2010_DatasetS1,Neu_Dens_Wt,
+neuron_density_per_mm2,neurons per mm2 of cortical surface,Neocortex,Density.per_mm2,,primary,Primates,Collins_etal_2010_DatasetS1,Neu_Dens_SA; NA where surface area not measured,
+source,source identifier,,Source,,info,Primates,Collins_etal_2010_DatasetS1,,

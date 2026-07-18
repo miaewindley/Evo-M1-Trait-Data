@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,canonical species binomial (sp.-level labels + typos resolved),,Species,,primary,Mammals (marsupial to primate),Finlay_etal_2006_Table6.1,filled via common_name_to_species.csv; see basis/note there,
+common_name,common name exactly as printed,,,,info,Mammals (marsupial to primate),Finlay_etal_2006_Table6.1,archival,
+species_as_published,species name exactly as printed by the journal,,Species,,info,Mammals (marsupial to primate),Finlay_etal_2006_Table6.1,verbatim; preserved (invariant),includes "Mouse sp." / "Squirrel sp." / typos
+bodyweight_g,body weight,,Mass.g,,primary,Mammals (marsupial to primate),Finlay_etal_2006_Table6.1,,as printed (g)
+brainweight_g,brain weight,WholeBrain,Mass.g,,primary,Mammals (marsupial to primate),Finlay_etal_2006_Table6.1,,as printed (g)
+visual_areas,number of visual cortical areas,Neocortex,count,,primary,Mammals (marsupial to primate),Finlay_etal_2006_Table6.1,,
+somatomotor_areas,number of somatomotor cortical areas,Neocortex,count,,primary,Mammals (marsupial to primate),Finlay_etal_2006_Table6.1,,
+total_areas,total number of cortical areas,Neocortex,count,,primary,Mammals (marsupial to primate),Finlay_etal_2006_Table6.1,some totals are half-integers as printed,
+cortical_area_mm2,total cortical sheet area,Neocortex,Area.mm2,,primary,Mammals (marsupial to primate),Finlay_etal_2006_Table6.1,,
+source,source identifier,,Source,,info,Mammals (marsupial to primate),Finlay_etal_2006_Table6.1,,

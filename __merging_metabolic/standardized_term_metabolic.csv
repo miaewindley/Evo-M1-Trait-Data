@@ -1,0 +1,71 @@
+Original_Term,Reference,Standardized_Term
+Region,Heiss_etal_2004_TABLE1,Species→Region
+Basal forebrain,Heiss_etal_2004_TABLE1,Basal_forebrain
+Capsula interna,Heiss_etal_2004_TABLE1,Capsula_interna
+Caudatum,Heiss_etal_2004_TABLE1,Caudate_nucleus
+Centrum semiovale,Heiss_etal_2004_TABLE1,Centrum_semiovale
+Cerebellar cortex,Heiss_etal_2004_TABLE1,Cerebellar_cortex
+Cerebral cortex (global average),Heiss_etal_2004_TABLE1,Neocortex
+Colliculus inferior,Heiss_etal_2004_TABLE1,Colliculus_inferior
+Colliculus superior,Heiss_etal_2004_TABLE1,Colliculus_superior
+Corpus amygdaloideum,Heiss_etal_2004_TABLE1,Amygdala
+Corpus geniculatum laterale,Heiss_etal_2004_TABLE1,Corpus_geniculatum_laterale
+Corpus geniculatum mediale,Heiss_etal_2004_TABLE1,Corpus_geniculatum_mediale
+Frontal lobe,Heiss_etal_2004_TABLE1,Frontal_cortex
+Hippocampus,Heiss_etal_2004_TABLE1,Hippocampus
+Insular lobe,Heiss_etal_2004_TABLE1,Insula
+Nucleus accumbens,Heiss_etal_2004_TABLE1,Nucleus_accumbens
+Nucleus dentatus cerebelli,Heiss_etal_2004_TABLE1,Nucleus_dentatus_cerebelli
+Nucleus medial thalami,Heiss_etal_2004_TABLE1,Thalamus_medial_nucleus
+Nucleus ruber,Heiss_etal_2004_TABLE1,Nucleus_ruber
+Nucleus subthalamicus,Heiss_etal_2004_TABLE1,Nucleus_subthalamicus
+Occipital lobe,Heiss_etal_2004_TABLE1,Occipital_cortex
+Pallidum,Heiss_etal_2004_TABLE1,Pallidum
+Parietal lobe,Heiss_etal_2004_TABLE1,Parietal_cortex
+Putamen,Heiss_etal_2004_TABLE1,Putamen
+Substantia nigra,Heiss_etal_2004_TABLE1,Substantia_nigra
+Temporal lobe,Heiss_etal_2004_TABLE1,Temporal_cortex
+Vermis,Heiss_etal_2004_TABLE1,Vermis
+Both hemispheres Mean,Heiss_etal_2004_TABLE1,CMRgl
+species,Karbowski__2007_TableS1-S23,Species
+Amygdala,Karbowski__2007_TableS1-S23,Amygdala
+Brain,Karbowski__2007_TableS1-S23,Whole_brain
+Brain stem,Karbowski__2007_TableS1-S23,Brain_stem
+Caudate,Karbowski__2007_TableS1-S23,Caudate_nucleus
+Cerebellum,Karbowski__2007_TableS1-S23,Cerebellum
+Cerebral cortex,Karbowski__2007_TableS1-S23,Neocortex
+Cingulate cortex,Karbowski__2007_TableS1-S23,Cingulate_cortex
+Frontal cortex,Karbowski__2007_TableS1-S23,Frontal_cortex
+Globus pallidus,Karbowski__2007_TableS1-S23,Pallidum
+Hippocampus,Karbowski__2007_TableS1-S23,Hippocampus
+Hypothalamus,Karbowski__2007_TableS1-S23,Hypothalamus
+Occipital cortex,Karbowski__2007_TableS1-S23,Occipital_cortex
+Parietal cortex,Karbowski__2007_TableS1-S23,Parietal_cortex
+Prefrontal cortex,Karbowski__2007_TableS1-S23,Prefrontal_cortex
+Sensorimotor cortex,Karbowski__2007_TableS1-S23,Sensorimotor_cortex
+Septum,Karbowski__2007_TableS1-S23,Septum
+Substantia nigra,Karbowski__2007_TableS1-S23,Substantia_nigra
+Temporal cortex,Karbowski__2007_TableS1-S23,Temporal_cortex
+Thalamus,Karbowski__2007_TableS1-S23,Thalamus
+Visual cortex,Karbowski__2007_TableS1-S23,Visual_cortex
+White matter,Karbowski__2007_TableS1-S23,White_matter
+CMRgl,Karbowski__2007_TableS1-S23,CMRgl
+CMRO2,Karbowski__2007_TableS1-S23,CMRO2
+Species,Kaufman__2004_TableA1-A14,Species
+Auditory Cortex,Kaufman__2004_TableA1-A14,Auditory_cortex
+Basal Ganglia,Kaufman__2004_TableA1-A14,Basal_ganglia
+Cerebellum,Kaufman__2004_TableA1-A14,Cerebellum
+Cingulate Cortex,Kaufman__2004_TableA1-A14,Cingulate_cortex
+Frontal Cortex,Kaufman__2004_TableA1-A14,Frontal_cortex
+Hippocampus,Kaufman__2004_TableA1-A14,Hippocampus
+Neocortex,Kaufman__2004_TableA1-A14,Neocortex
+Occipital Cortex,Kaufman__2004_TableA1-A14,Occipital_cortex
+Parietal Cortex,Kaufman__2004_TableA1-A14,Parietal_cortex
+Sensorimotor Cortex,Kaufman__2004_TableA1-A14,Sensorimotor_cortex
+Temporal Cortex,Kaufman__2004_TableA1-A14,Temporal_cortex
+Thalamus,Kaufman__2004_TableA1-A14,Thalamus
+White Matter,Kaufman__2004_TableA1-A14,White_matter
+Whole Brain (direct measurement),Kaufman__2004_TableA1-A14,Whole_brain
+CMRgl_umol_100g_min,Kaufman__2004_TableA1-A14,CMRgl
+CMRO2_umol_100g_min,Kaufman__2004_TableA1-A14,CMRO2
+CBF_ml_100g_min,Kaufman__2004_TableA1-A14,CBF
