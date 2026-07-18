@@ -15,49 +15,101 @@ library(bslib)
 library(DT)
 library(ggplot2)
 
-# ---- Load & harmonize data (once, at startup) -------------------------------
+# ---- Data source ------------------------------------------------------------
+# Primary source is the public GitHub repo (single source of truth); a small
+# local copy in ./data acts as a fallback if GitHub is briefly unreachable.
+# Override the branch/base with the EVOM1_GH_BASE env var if needed.
 
+GH_BASE <- Sys.getenv(
+  "EVOM1_GH_BASE",
+  "https://raw.githubusercontent.com/AleAliSousa/Evo-M1-Trait-Data/main/"
+)
 data_dir <- "data"
+options(timeout = max(60, getOption("timeout")))  # allow slow raw.github reads
+
+# percent-encode a filename for use in a URL path (handles the %2F, <, >, ;,
+# ( ) etc. that appear literally in the DOI-encoded source-table filenames)
+pct <- function(s) {
+  bytes <- charToRaw(enc2utf8(s))
+  out <- vapply(bytes, function(b) {
+    ch <- rawToChar(b)
+    if (grepl("[A-Za-z0-9._~-]", ch)) ch
+    else sprintf("%%%02X", as.integer(b))
+  }, character(1))
+  paste0(out, collapse = "")
+}
+
+# Read a file, trying GitHub first, then the local fallback copy.
+# `reader` accepts either a connection (GitHub) or a path (local).
+read_gh <- function(gh_rel, local, reader, required = TRUE) {
+  url <- paste0(GH_BASE, gh_rel)
+  res <- tryCatch({
+    con <- url(url, encoding = "UTF-8"); on.exit(close(con))
+    reader(con)
+  }, error = function(e) NULL)
+  if (!is.null(res)) return(res)
+  if (file.exists(local)) {
+    message("GitHub fetch failed for ", gh_rel, " — using local fallback.")
+    return(reader(local))
+  }
+  if (required) stop("Could not load ", gh_rel, " from GitHub or local fallback.")
+  NULL
+}
+
+read_csv_gh   <- function(gh_rel, local) read_gh(gh_rel, local,
+  function(x) read.csv(x, stringsAsFactors = FALSE, check.names = FALSE))
+read_delim_gh <- function(gh_rel, local, required = TRUE) read_gh(gh_rel, local,
+  function(x) read.delim(x, stringsAsFactors = FALSE, check.names = FALSE),
+  required = required)
+
+# GitHub locations: compiled tables from their canonical repo paths; the two
+# derived tables from the committed build output under __ShinyApp/data.
+GH <- list(
+  volumes    = "__merging_volumes/volumes_long.csv",
+  cellcounts = "__merging_cellcounts/cellcounts_long.csv",
+  traits     = "__ShinyApp/data/evom1_traits_long.csv",
+  manifest   = "__ShinyApp/data/source_manifest.csv"
+)
+SRC_DIR <- "__Public/comparative-data/"  # source tables (fetched on demand)
+
+# ---- Load & harmonize compiled data (once, at startup) ----------------------
 
 load_compiled <- function() {
-  vol <- read.csv(file.path(data_dir, "volumes_long.csv"),
-                  stringsAsFactors = FALSE, check.names = FALSE)
-  # columns: Species, Variable, Value, Teams, n_teams
-  vol_std <- data.frame(
-    Species   = vol$Species,
-    Dataset   = "Brain-structure volumes",
-    Variable  = vol$Variable,
-    Value     = suppressWarnings(as.numeric(vol$Value)),
-    Source    = vol$Teams,
-    N_sources = suppressWarnings(as.integer(vol$n_teams)),
-    stringsAsFactors = FALSE
-  )
+  # Value is kept as text (so categorical traits like Diet are shown as-is);
+  # Value_num is the numeric parse used for plotting.
+  std <- function(gh_rel, local, dataset, source_col, n_col = NULL) {
+    d <- read_csv_gh(gh_rel, local)
+    data.frame(
+      Species   = d$Species,
+      Dataset   = dataset,
+      Variable  = d$Variable,
+      Value     = as.character(d$Value),
+      Value_num = suppressWarnings(as.numeric(d$Value)),
+      Source    = d[[source_col]],
+      N_sources = if (!is.null(n_col)) suppressWarnings(as.integer(d[[n_col]]))
+                  else NA_integer_,
+      stringsAsFactors = FALSE
+    )
+  }
 
-  cc <- read.csv(file.path(data_dir, "cellcounts_long.csv"),
-                 stringsAsFactors = FALSE, check.names = FALSE)
-  # columns: Species, Variable, Value, Source
-  cc_std <- data.frame(
-    Species   = cc$Species,
-    Dataset   = "Cell counts",
-    Variable  = cc$Variable,
-    Value     = suppressWarnings(as.numeric(cc$Value)),
-    Source    = cc$Source,
-    N_sources = NA_integer_,
-    stringsAsFactors = FALSE
+  out <- rbind(
+    std(GH$volumes,    file.path(data_dir, "volumes_long.csv"),
+        "Brain-structure volumes", "Teams", "n_teams"),
+    std(GH$cellcounts, file.path(data_dir, "cellcounts_long.csv"),
+        "Cell counts", "Source"),
+    std(GH$traits,     file.path(data_dir, "evom1_traits_long.csv"),
+        "EvoM1 traits", "Source")
   )
-
-  out <- rbind(vol_std, cc_std)
-  out <- out[!is.na(out$Value), ]
+  out <- out[!is.na(out$Value) & nzchar(out$Value), ]
   out[order(out$Species, out$Variable), ]
 }
 
 compiled <- load_compiled()
 
-manifest <- read.csv(file.path(data_dir, "source_manifest.csv"),
-                     stringsAsFactors = FALSE, check.names = FALSE)
+manifest <- read_csv_gh(GH$manifest, file.path(data_dir, "source_manifest.csv"))
 manifest <- manifest[order(manifest$identifier, manifest$table_label), ]
-# Friendly label for the source-table picker
-manifest$picker <- paste0(manifest$identifier,
+# Friendly label for the source-table picker: citation + table label
+manifest$picker <- paste0(manifest$citation_short,
                           ifelse(nzchar(manifest$table_label),
                                  paste0("  —  ", manifest$table_label), ""))
 
@@ -165,15 +217,30 @@ ui <- page_navbar(
       p("Measurements from many primary sources, harmonized to common species ",
         "names and structure terms. ", strong(format(nrow(compiled), big.mark = ",")),
         " values across ", strong(length(sp_choices)), " species and ",
-        strong(length(var_choices)), " measurements, spanning brain-structure ",
-        "volumes and cell counts."),
+        strong(length(var_choices)), " measurements, spanning three datasets: ",
+        strong("brain-structure volumes"), ", ", strong("cell counts"), ", and the ",
+        strong("EvoM1 trait table"), " (dexterity, corticospinal tract, ",
+        "gyrification, interlaminar astrocytes, and life-history / ecology traits)."),
       h5("Source tables"),
-      p(strong(nrow(manifest)), " published tables, each traceable to its ",
-        "original DOI, PubMed ID, ISBN, or dissertation record."),
+      p(strong(nrow(manifest)), " published tables, each shown with its full ",
+        "citation and linked to its original DOI, PubMed ID, ISBN, or ",
+        "dissertation record."),
       hr(),
-      p(class = "text-muted",
-        "Please cite the original sources when using individual values. ",
-        "The compiled tables aggregate work by many authors.")
+      h5("License & attribution"),
+      p("This compilation is released under a ",
+        tags$a(href = "https://creativecommons.org/licenses/by/4.0/",
+               target = "_blank", "Creative Commons Attribution 4.0 (CC BY 4.0)"),
+        " license. You are free to share and adapt the data for any purpose, ",
+        "provided you give appropriate credit."),
+      p(strong("How to cite: "),
+        "de Sousa, A. et al. Evo-M1 Comparative Brain-Trait Data (",
+        format(Sys.Date(), "%Y"), "). Compiled dataset."),
+      p(class = "text-muted small",
+        "Important: the compiled tables aggregate work by many original authors. ",
+        "When using individual values, please also cite the corresponding ",
+        "primary source(s) listed in the Source tables tab and in each value's ",
+        "Source column. Every effort has been made to attribute data correctly; ",
+        "please report any errors so they can be corrected.")
     )
   ),
 
@@ -212,8 +279,14 @@ server <- function(input, output, session) {
                if (n == 1) "" else "s", " selected"))
   })
 
+  # columns shown / downloaded (hide the internal numeric-parse column)
+  c_display <- reactive({
+    d <- c_filtered()
+    d[, c("Species", "Dataset", "Variable", "Value", "Source", "N_sources")]
+  })
+
   output$c_table <- renderDT({
-    datatable(c_filtered(),
+    datatable(c_display(),
               rownames = FALSE, filter = "top",
               options = list(pageLength = 25, scrollX = TRUE,
                              order = list(list(0, "asc"))))
@@ -221,14 +294,17 @@ server <- function(input, output, session) {
 
   output$c_download <- downloadHandler(
     filename = function() paste0("evom1_compiled_", Sys.Date(), ".csv"),
-    content  = function(file) write.csv(c_filtered(), file, row.names = FALSE)
+    content  = function(file) write.csv(c_display(), file, row.names = FALSE)
   )
 
   # ---- Compiled: plot
   p_data <- reactive({
     req(input$p_x, input$p_y)
-    d  <- compiled[compiled$Variable %in% c(input$p_x, input$p_y), ]
-    ag <- aggregate(Value ~ Species + Variable, data = d, FUN = mean)
+    d  <- compiled[compiled$Variable %in% c(input$p_x, input$p_y) &
+                     !is.na(compiled$Value_num), ]
+    if (nrow(d) == 0) return(NULL)
+    ag <- aggregate(Value_num ~ Species + Variable, data = d, FUN = mean)
+    names(ag)[names(ag) == "Value_num"] <- "Value"
     w  <- reshape(ag, idvar = "Species", timevar = "Variable", direction = "wide")
     names(w) <- sub("^Value\\.", "", names(w))
     keep <- c("Species", input$p_x, input$p_y)
@@ -259,14 +335,23 @@ server <- function(input, output, session) {
 
   # ---- Source tables: catalogue
   output$m_table <- renderDT({
-    m <- manifest[, c("identifier", "id_type", "table_label",
-                      "n_rows", "n_cols", "url")]
-    m$url <- ifelse(nzchar(m$url),
-                    paste0("<a href='", m$url, "' target='_blank'>link</a>"),
-                    "")
-    names(m) <- c("Identifier", "Type", "Table", "Rows", "Cols", "Source")
-    datatable(m, rownames = FALSE, filter = "top", escape = FALSE,
-              options = list(pageLength = 25))
+    m <- manifest
+    # Link uses the DOI/PMID/ISBN as its visible text; falls back to identifier.
+    link <- ifelse(nzchar(m$url),
+                   paste0("<a href='", m$url, "' target='_blank'>",
+                          m$identifier, "</a>"),
+                   m$identifier)
+    tab <- data.frame(
+      Citation = m$citation,
+      Table    = m$table_label,
+      Rows     = m$n_rows,
+      Cols     = m$n_cols,
+      Link     = link,
+      stringsAsFactors = FALSE
+    )
+    datatable(tab, rownames = FALSE, filter = "top", escape = FALSE,
+              options = list(pageLength = 25,
+                             columnDefs = list(list(width = "48%", targets = 0))))
   })
 
   # ---- Source tables: picker filtered by type
@@ -288,10 +373,16 @@ server <- function(input, output, session) {
     manifest[manifest$file == input$s_pick, , drop = FALSE][1, ]
   })
 
+  # Source tables are fetched from GitHub on demand (with a local fallback if a
+  # bundled copy happens to exist, e.g. during local development).
   s_data <- reactive({
     req(input$s_pick)
-    read.delim(file.path(data_dir, "source-tables", input$s_pick),
-               stringsAsFactors = FALSE, check.names = FALSE)
+    d <- read_delim_gh(paste0(SRC_DIR, pct(input$s_pick)),
+                       file.path(data_dir, "source-tables", input$s_pick),
+                       required = FALSE)
+    validate(need(!is.null(d),
+                  "Could not load this table from GitHub. Check your connection and try again."))
+    d
   })
 
   output$s_meta <- renderUI({
@@ -299,23 +390,27 @@ server <- function(input, output, session) {
     tagList(
       hr(),
       tags$dl(
-        tags$dt("Identifier"), tags$dd(r$identifier),
-        tags$dt("Type"),       tags$dd(r$id_type),
+        tags$dt("Citation"),   tags$dd(if (nzchar(r$citation)) r$citation else r$identifier),
         if (nzchar(r$table_label)) tagList(tags$dt("Table"), tags$dd(r$table_label)),
         tags$dt("Size"), tags$dd(paste0(r$n_rows, " rows × ", r$n_cols, " cols"))
       ),
       if (nzchar(r$url))
         tags$a(href = r$url, target = "_blank", class = "btn btn-outline-secondary btn-sm",
-               "Open source ↗")
+               paste0("Open ", r$identifier, " ↗"))
     )
   })
 
   output$s_readme <- renderUI({
     r <- s_row()
     if (is.null(r) || !nzchar(r$readme)) return(NULL)
-    p <- file.path(data_dir, "source-tables", r$readme)
-    if (!file.exists(p)) return(NULL)
-    txt <- paste(readLines(p, warn = FALSE), collapse = "\n")
+    txt <- tryCatch(
+      paste(readLines(url(paste0(GH_BASE, SRC_DIR, pct(r$readme))), warn = FALSE),
+            collapse = "\n"),
+      error = function(e) {
+        p <- file.path(data_dir, "source-tables", r$readme)
+        if (file.exists(p)) paste(readLines(p, warn = FALSE), collapse = "\n") else NULL
+      })
+    if (is.null(txt) || !nzchar(txt)) return(NULL)
     div(class = "alert alert-light border small", style = "white-space: pre-wrap;",
         strong("Source note:"), tags$br(), txt)
   })

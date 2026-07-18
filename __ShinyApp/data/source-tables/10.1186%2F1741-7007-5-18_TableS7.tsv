@@ -1,0 +1,26 @@
+table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
+S7	Temporal cortex	Temporal cortex	mouse	Mus musculus	False	CMRgl	0.93	0.1	umol/g/min		Quelven et al 2004, estim
+S7	Temporal cortex	Temporal cortex	rat	Rattus norvegicus	False	CMRgl	1.08	0.12	umol/g/min		Waschke et al 1993, auditory
+S7	Temporal cortex	Temporal cortex	rat	Rattus norvegicus	False	CMRgl	0.94	0.13	umol/g/min		Dube et al 2001
+S7	Temporal cortex	Temporal cortex	rat	Rattus norvegicus	False	CMRgl	1.45	0.04	umol/g/min		Nehling et al 1988, auditory
+S7	Temporal cortex	Temporal cortex	rat	Rattus norvegicus	False	CMRgl	1.34	0.11	umol/g/min		Nehling et al 2000, auditory
+S7	Temporal cortex	Temporal cortex	rat	Rattus norvegicus	False	CMRgl	1.22	0.08	umol/g/min		Levant et al 2004
+S7	Temporal cortex	Temporal cortex	rat	Rattus norvegicus	False	CMRgl	1.34	0.08	umol/g/min		Zocchi et al 2001, auditory
+S7	Temporal cortex	Temporal cortex	average rat	Rattus norvegicus	True	CMRgl	1.23	0.1	umol/g/min		
+S7	Temporal cortex	Temporal cortex	rabbit	Oryctolagus cuniculus	False	CMRgl	1.02	0.1	umol/g/min		Passero et al 1981
+S7	Temporal cortex	Temporal cortex	cat	Felis catus	False	CMRgl	0.97	0.09	umol/g/min		Schwartzman et al 1986, auditory
+S7	Temporal cortex	Temporal cortex	cat	Felis catus	False	CMRgl	1.18	0.04	umol/g/min		Sokoloff 1984, auditory
+S7	Temporal cortex	Temporal cortex	cat	Felis catus	False	CMRgl	1.05	0.08	umol/g/min		Lydic et al 1991
+S7	Temporal cortex	Temporal cortex	average cat	Felis catus	True	CMRgl	1.07	0.08	umol/g/min		
+S7	Temporal cortex	Temporal cortex	monkey	Macaca mulatta	False	CMRgl	0.36	0.07	umol/g/min		Noda et al 2002
+S7	Temporal cortex	Temporal cortex	monkey	Macaca mulatta	False	CMRgl	0.4	0.02	umol/g/min		Porrino et al 2002
+S7	Temporal cortex	Temporal cortex	monkey	Macaca mulatta	False	CMRgl	0.79	0.04	umol/g/min		Kennedy et al 1978, auditory
+S7	Temporal cortex	Temporal cortex	average monkey	Macaca mulatta	True	CMRgl	0.52	0.04	umol/g/min		
+S7	Temporal cortex	Temporal cortex	baboon	Papio anubis	False	CMRgl	0.47	0.14	umol/g/min		Meguro et al 1999
+S7	Temporal cortex	Temporal cortex	human	Homo sapiens	False	CMRgl	0.23	0.02	umol/g/min		Blomqvist et al 1998
+S7	Temporal cortex	Temporal cortex	human	Homo sapiens	False	CMRgl	0.37	0.03	umol/g/min		Heiss et al 1985
+S7	Temporal cortex	Temporal cortex	human	Homo sapiens	False	CMRgl	0.31	0.08	umol/g/min		Haier et al 1992
+S7	Temporal cortex	Temporal cortex	human	Homo sapiens	False	CMRgl	0.36	0.06	umol/g/min		De Volder et al 1997
+S7	Temporal cortex	Temporal cortex	human	Homo sapiens	False	CMRgl	0.32	0.03	umol/g/min		Redies et al 1989
+S7	Temporal cortex	Temporal cortex	human	Homo sapiens	False	CMRgl	0.3	0.06	umol/g/min		Maquet et al 1992
+S7	Temporal cortex	Temporal cortex	average human	Homo sapiens	True	CMRgl	0.32	0.05	umol/g/min		

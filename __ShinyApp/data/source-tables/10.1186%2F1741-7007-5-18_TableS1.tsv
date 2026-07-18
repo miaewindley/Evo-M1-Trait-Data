@@ -1,0 +1,15 @@
+table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
+S1	Brain	Brain	rat	Rattus norvegicus	False	CMRO2	0.084	0.019	ml/g/min		Linde et al 1999
+S1	Brain	Brain	rat	Rattus norvegicus	False	Total_O2_consumption	0.19		ml/min		Linde et al 1999
+S1	Brain	Brain	cat	Felis catus	False	CMRO2	0.058	0.006	ml/g/min		Stingele et al 1996
+S1	Brain	Brain	cat	Felis catus	False	Total_O2_consumption	1.844		ml/min		Stingele et al 1996
+S1	Brain	Brain	dog	Canis lupus familiaris	False	CMRO2	0.061	0.002	ml/g/min		Nakanishi et al 1997
+S1	Brain	Brain	dog	Canis lupus familiaris	False	Total_O2_consumption	4.392		ml/min		Nakanishi et al 1997
+S1	Brain	Brain	monkey	Macaca mulatta	False	CMRO2	0.06	0.005	ml/g/min		Nemoto et al 1994
+S1	Brain	Brain	monkey	Macaca mulatta	False	Total_O2_consumption	6.0		ml/min		Nemoto et al 1994
+S1	Brain	Brain	sheep	Ovis aries	False	CMRO2	0.049	0.007	ml/g/min		Pell et al 1983
+S1	Brain	Brain	sheep	Ovis aries	False	Total_O2_consumption	5.586		ml/min		Pell et al 1983
+S1	Brain	Brain	baboon	Papio anubis	False	CMRO2	0.034	0.006	ml/g/min		Sahlin et al 1987
+S1	Brain	Brain	baboon	Papio anubis	False	Total_O2_consumption	4.658		ml/min		Sahlin et al 1987
+S1	Brain	Brain	human	Homo sapiens	False	CMRO2	0.035	0.005	ml/g/min		Clarke et al 1994; Madsen et al 1991
+S1	Brain	Brain	human	Homo sapiens	False	Total_O2_consumption	48.615		ml/min		Clarke et al 1994; Madsen et al 1991

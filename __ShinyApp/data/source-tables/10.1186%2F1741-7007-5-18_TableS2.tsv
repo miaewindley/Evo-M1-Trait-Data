@@ -1,0 +1,21 @@
+table	structure	subregion	species_printed	species	is_average	measure	value	sd	units	n_areas	reference
+S2	Brain	Brain	mouse	Mus musculus	False	CMRgl	0.89	0.14	umol/g/min		Bouilleret et al 2000
+S2	Brain	Brain	mouse	Mus musculus	False	Total_glucose_utilization	0.32		umol/min		Bouilleret et al 2000
+S2	Brain	Brain	rat	Rattus norvegicus	False	CMRgl	0.68	0.04	umol/g/min		Nehlig et al 1988; Waschke et al 1993; Levant et al 2004
+S2	Brain	Brain	rat	Rattus norvegicus	False	Total_glucose_utilization	1.52		umol/min		Nehlig et al 1988; Waschke et al 1993; Levant et al 2004
+S2	Brain	Brain	squirrel	Spermophilus tridecemlineatus	False	CMRgl	0.6	0.18	umol/g/min		Frerichs et al 1995
+S2	Brain	Brain	squirrel	Spermophilus tridecemlineatus	False	Total_glucose_utilization	3.88		umol/min		Frerichs et al 1995
+S2	Brain	Brain	rabbit	Oryctolagus cuniculus	False	CMRgl	0.69	0.05	umol/g/min		Passero et al 1981
+S2	Brain	Brain	rabbit	Oryctolagus cuniculus	False	Total_glucose_utilization	7.93		umol/min		Passero et al 1981
+S2	Brain	Brain	cat	Felis catus	False	CMRgl	0.69	0.19	umol/g/min		Chugani et al 1991; Sokoloff 1984
+S2	Brain	Brain	cat	Felis catus	False	Total_glucose_utilization	21.78		umol/min		Chugani et al 1991; Sokoloff 1984
+S2	Brain	Brain	monkey	Macaca mulatta	False	CMRgl	0.36	0.03	umol/g/min		Kennedy et al 1978
+S2	Brain	Brain	monkey	Macaca mulatta	False	Total_glucose_utilization	35.98		umol/min		Kennedy et al 1978
+S2	Brain	Brain	sheep	Ovis aries	False	CMRgl	0.35	0.03	umol/g/min		Pell et al 1983
+S2	Brain	Brain	sheep	Ovis aries	False	Total_glucose_utilization	40.18		umol/min		Pell et al 1983
+S2	Brain	Brain	goat	Capra aegagrus hircus	False	CMRgl	0.35	0.04	umol/g/min		Pelligrino et al 1987
+S2	Brain	Brain	goat	Capra aegagrus hircus	False	Total_glucose_utilization	40.09		umol/min		Pelligrino et al 1987
+S2	Brain	Brain	baboon	Papio anubis	False	CMRgl	0.44	0.08	umol/g/min		Meguro et al 1999
+S2	Brain	Brain	baboon	Papio anubis	False	Total_glucose_utilization	60.4		umol/min		Meguro et al 1999
+S2	Brain	Brain	human	Homo sapiens	False	CMRgl	0.31	0.03	umol/g/min		Clarke et al 1994
+S2	Brain	Brain	human	Homo sapiens	False	Total_glucose_utilization	428.55		umol/min		Clarke et al 1994
