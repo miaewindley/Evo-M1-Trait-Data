@@ -1,0 +1,4 @@
+match_on,key,Species,basis,Reference,common_name,note
+species,Erinaceous,Erinaceus,spelling_correction,Heffner_Masterton_1983_TableI,Hedgehog,genus misspelling (Erinaceus); genus-only
+species,Macaca ira,Macaca irus,spelling_correction,Heffner_Masterton_1983_TableI,Monkey (macaque),truncation of 'irus' (= M. fascicularis); not modernised
+species,Didelphis,Didelphis virginiana,Iwaniuk_etal_1999_imputed,Heffner_Masterton_1983_TableI,Opossum,genus-only in Heffner; species assigned by Iwaniuk 1999

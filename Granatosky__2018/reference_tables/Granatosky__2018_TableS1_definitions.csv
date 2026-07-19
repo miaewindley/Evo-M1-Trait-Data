@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_sci,Harmonised accepted binomial (project species key),,,,info,mammals,Granatosky__2018_TableS1,join key,added in build
+Species,Species name as printed in the source table,,,,info,mammals,Granatosky__2018_TableS1,printed name preserved,
+Order,Taxonomic order (as printed),,,,info,mammals,Granatosky__2018_TableS1,,
+Family,Taxonomic family (as printed),,,,info,mammals,Granatosky__2018_TableS1,,
+Captive_or_wild,Whether locomotor data came from captive (C) or wild (W) subjects,,,,info,mammals,Granatosky__2018_TableS1,,
+Arboreal_terrestrial,Primary substrate use category,Locomotion,category,,primary,mammals,Granatosky__2018_TableS1,categorical,
+Body_Mass.g,Body mass,Body,Mass.g,mean,secondary,mammals,Granatosky__2018_TableS1,already compiled elsewhere; kept for reference,g as printed
+Intermembral_index,Intermembral index (100*(humerus+radius)/(femur+tibia)),Limb,index,,primary,mammals,Granatosky__2018_TableS1,locomotor morphology,
+Locomotor_diversity_index,Number/diversity of locomotor modes used (Granatosky locomotor diversity index),Locomotion,index,,primary,mammals,Granatosky__2018_TableS1,focal locomotion trait,
+Citation,Original source of the locomotor observations compiled by Granatosky,,,,info,mammals,Granatosky__2018_TableS1,per-row provenance,
+Method:index,Locomotor diversity index and intermembral index are dimensionless; not unit-converted,,,,method,mammals,Granatosky__2018_TableS1,,

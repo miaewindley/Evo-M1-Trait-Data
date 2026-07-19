@@ -1,0 +1,8 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species scientific binomial (expanded from the source shorthand),,Species,,primary,Rodentia,Iwaniuk_etal_2001_Table2,muroid rodents; reconcile to _keys/Stephan/species_key.csv,
+Play scores_Complexity index,complexity index of play fighting (Pellis & Iwaniuk 1999b),Behaviour,,,primary,Rodentia,Iwaniuk_etal_2001_Table2,NA where not measured,
+Play scores_Wrestling,"wrestling play score (ordinal, 0-2)",Behaviour,,rank,primary,Rodentia,Iwaniuk_etal_2001_Table2,,
+Play scores_Play fighting,"play-fighting score (ordinal, 0-2)",Behaviour,,rank,primary,Rodentia,Iwaniuk_etal_2001_Table2,,
+Play scores_Locomotor play,"locomotor-play score (ordinal, 0-2)",Behaviour,,rank,primary,Rodentia,Iwaniuk_etal_2001_Table2,,
+Play scores_Total play,total play score (sum of the component play scores),Behaviour,,,primary,Rodentia,Iwaniuk_etal_2001_Table2,,
+Brain Size,relative brain size (residual from the brain-body regression),WholeBrain,BrainSize.residual,,primary,Rodentia,Iwaniuk_etal_2001_Table2,small +/- residual values,

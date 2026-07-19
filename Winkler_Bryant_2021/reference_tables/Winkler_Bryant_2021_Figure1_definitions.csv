@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+taxa_group,broad taxonomic group as printed in Table 1,,,info,Mammals & Birds,Winkler_Bryant_2021_Figure1,e.g. Great apes / Old world monkeys / Carnivores (Cats) / Birds (Parrots),
+common_name,common name of the species as printed,,,info,Mammals & Birds,Winkler_Bryant_2021_Figure1,,
+Species,species scientific binomial as printed in Table 1,,Species,,primary,Mammals & Birds,Winkler_Bryant_2021_Figure1,reconcile to _keys/Stephan/species_key.csv; two subspecies trinomials kept as printed,
+play_specific,"whether the vocalisation is specific to play (Yes / No / Unclear)",Behaviour,,,primary,Mammals & Birds,Winkler_Bryant_2021_Figure1,"'Yes [reco]' for the uakari means yes for the reco call; capitalisation normalised",
+vocalisation_name,name(s) of the play vocalisation as given in the source,Behaviour,,,primary,Mammals & Birds,Winkler_Bryant_2021_Figure1,NA where the source gives none,
+acoustic_descriptors,acoustic description of the vocalisation as printed (loudness / tonality / frequency / duration / repetition),Behaviour,,,primary,Mammals & Birds,Winkler_Bryant_2021_Figure1,verbatim from Table 1; NA where not given,
+reference,source reference(s) for the play vocalisation report,,,info,Mammals & Birds,Winkler_Bryant_2021_Figure1,,
+figure1_feature_category,"play-vocalisation feature category coded by colour in Figure 1: panting_heavy_breathing / hissing / high_pitched_tonal / purring_grumbling / ultrasonic / mixed / none / not_in_figure",Behaviour,,,primary,Mammals & Birds,Winkler_Bryant_2021_Figure1,"transcribed from Figure 1 colour key; 'mixed' = hatched (vervet); 'none' = uncoloured tip; 'not_in_figure' = row not depicted (ferret); verify against the figure",
+loud_play_vocalisation,"Y if Figure 1 marks the species with a black diamond (loud play vocalisation), else N (blank if not in Figure 1)",Behaviour,,,primary,Mammals & Birds,Winkler_Bryant_2021_Figure1,7 species marked loud,
+source,source identifier,,Source,,info,Mammals & Birds,Winkler_Bryant_2021_Figure1,,

@@ -20,18 +20,24 @@ one row per animal, and parses numbers. Common name is in `Animal`; the binomial
 Columns defined in `reference_tables/Heffner_Masterton_1975_TableI_definitions.csv`.
 
 ## Species note
-`Species` holds the binomial **as printed**; reconcile to `_keys/Stephan/species_key.csv`
-downstream. Several printed spellings are transcription typos and are flagged here rather than
-altered in the frozen CSV (fix in a later pass if desired): *Ateleus ater* (→ Ateles),
-*Sciurrrus hudsonius* (→ Sciurus/Tamiasciurus), *Elephus maximus* (→ Elephas), *Saquinas oedipus*
-(→ Saguinus oedipus), *Tasarida cynocephala* (→ Tadarida), *Cricetus auratus* (→ Mesocricetus),
-*Phocaena phocoena* (→ Phocoena), *Spermophillus tridecemlineatus* (→ Spermophilus), *Microsorex
-hoyi* (→ Sorex hoyi), *Erinaceous* (→ Erinaceus), *Macaca ira* (→ Macaca irus),
-*Horpyiocepalus leucogostra* (Indian tube-nosed bat, spelling uncertain). Several rows are
-genus-only (*Myotis*, *Rhinolophus*, *Tarsius*, *Tapirus*, *Camelus*, *Equus*, *Didelphis*,
-*Erinaceus*, *Paraechinus*), and a few have **no** species because the paper leaves them
-unspecified (bear, cow, deer, mouse, rat) — `Species` is blank for those. Taxonomy is not
-modernised.
+`Species` now holds the binomial with obvious transcription typos **corrected**; the exact printed
+string is kept in `Species_as_printed`. The 11 corrections are listed with their basis in
+`reference_tables/Heffner_Masterton_1975_TableI_species_crosswalk.csv`: two are taken from Iwaniuk
+et al. 1999's re-analysis of this same dataset (*Ateleus ater* → *Ateles ater*; *Saquinas oedipus*
+→ *Saguinus oedipus*) and nine are obvious spelling fixes (*Elephus* → *Elephas*, *Sciurrrus* →
+*Sciurus*, *Spermophillus* → *Spermophilus*, *Tasarida* → *Tadarida*, *Phocaena* → *Phocoena*,
+*Castor canadiensis* → *canadensis*, *Erinaceous* → *Erinaceus*, *Macaca ira* → *Macaca irus*,
+*Tachyglossus aculeata* → *aculeatus*). Taxonomy is **not** modernised, so valid old names and
+genus reassignments are left alone (e.g. *Cricetus auratus*, *Microsorex hoyi*, *Felis catus*), as
+are the remaining genus-only entries (*Myotis*, *Rhinolophus*, *Tarsius*, *Tapirus*, *Camelus*,
+*Equus*, *Erinaceus*, *Paraechinus*) and the uncertain *Horpyiocepalus leucogostra*.
+
+Two rows are **imputed** from Iwaniuk 1999 (flagged `Iwaniuk_etal_1999_imputed` in `species_basis`
+and in the crosswalk): the genus-only *Didelphis* → *Didelphis virginiana*, and the "Rat
+(unspecified)" row → *Rattus norvegicus*. Four rows the paper leaves genuinely unspecified (bear,
+cow, deer, mouse) keep `Species = NA` (`species_basis = unspecified_in_source`). The new
+`species_basis` column flags the provenance of every `Species` value. Reconcile to
+`_keys/Stephan/species_key.csv` downstream.
 
 ## Provenance
 Secondary compilation: anatomical values are drawn largely from the cited literature (see the

@@ -1,7 +1,8 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
 common_name,common name of the animal as printed,,,info,Mammals,Heffner_Masterton_1983_TableI,,
-Species,species binomial (obvious transcription typos corrected; genus-only entries kept),,Species,,primary,Mammals,Heffner_Masterton_1983_TableI,"reconcile to _keys/Stephan/species_key.csv; taxonomy not modernised",
-Species_as_printed,species name exactly as printed in Table I,,Species,,info,Mammals,Heffner_Masterton_1983_TableI,"differs from Species for 2 rows: Erinaceous->Erinaceus, Macaca ira->Macaca irus",
+Species,resolved species binomial (typos corrected + genus-only Didelphis imputed),,Species,,primary,Mammals,Heffner_Masterton_1983_TableI,"resolved via reference_tables/Heffner_Masterton_1983_TableI_species_crosswalk.csv; see species_basis; taxonomy not modernised; reconcile to _keys/Stephan/species_key.csv",
+Species_as_printed,species name exactly as printed in Table I,,Species,,info,Mammals,Heffner_Masterton_1983_TableI,"differs from Species for 3 rows: Erinaceous->Erinaceus, Macaca ira->Macaca irus, Didelphis->Didelphis virginiana",
+species_basis,"provenance of the Species value: as_printed / spelling_correction / Iwaniuk_etal_1999_imputed",,,info,Mammals,Heffner_Masterton_1983_TableI,"'imputed' = species not stated by Heffner, supplied from Iwaniuk 1999",
 phyletic_level,phyletic level rank (1-8) after Campbell; higher = more recently evolved grade,CorticospinalTract,,rank,primary,Mammals,Heffner_Masterton_1983_TableI,snapshot column 'phyletic_level',
 digital_dexterity,digital dexterity rank (1-7); scale defined in Table II,Behaviour,,rank,primary,Mammals,Heffner_Masterton_1983_TableI,snapshot column 'digital_dexterity',
 body_weight_kg,body weight in kilograms,Body,BodyMass.kg,,primary,Mammals,Heffner_Masterton_1983_TableI,snapshot column 'body_weight_kg',

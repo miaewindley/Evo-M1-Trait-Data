@@ -1,0 +1,14 @@
+match_on,key,Species,basis,Reference,common_name,note
+species,Tasarida cynocephala,Tadarida cynocephala,spelling_correction,Heffner_Masterton_1975_TableI,Bat,genus misspelling (Tadarida)
+species,Castor canadiensis,Castor canadensis,spelling_correction,Heffner_Masterton_1975_TableI,Beaver,epithet misspelling (canadensis)
+species,Elephus maximus,Elephas maximus,spelling_correction,Heffner_Masterton_1975_TableI,Elephant (Indian),genus misspelling (Elephas)
+species,Spermophillus tridecemlineatus,Spermophilus tridecemlineatus,spelling_correction,Heffner_Masterton_1975_TableI,Gopher,genus misspelling (single l)
+species,Erinaceous,Erinaceus,spelling_correction,Heffner_Masterton_1975_TableI,Hedgehog,genus misspelling (Erinaceus); genus-only
+species,Ateleus ater,Ateles ater,Iwaniuk_etal_1999,Heffner_Masterton_1975_TableI,Monkey (spider),genus misspelling; Iwaniuk 1999 uses Ateles ater
+species,Macaca ira,Macaca irus,spelling_correction,Heffner_Masterton_1975_TableI,Monkey (macaque),truncation of 'irus' (= M. fascicularis); not modernised
+species,Saquinas oedipus,Saguinus oedipus,Iwaniuk_etal_1999,Heffner_Masterton_1975_TableI,Monkey (marmoset),genus misspelling; Iwaniuk 1999 uses Saguinus oedipus
+species,Didelphis,Didelphis virginiana,Iwaniuk_etal_1999_imputed,Heffner_Masterton_1975_TableI,Opossum,genus-only in Heffner; species assigned by Iwaniuk 1999
+common_name,Rat (unspecified),Rattus norvegicus,Iwaniuk_etal_1999_imputed,Heffner_Masterton_1975_TableI,Rat (unspecified),unspecified in Heffner; Iwaniuk 1999 assigns Rattus norvegicus
+species,Tachyglossus aculeata,Tachyglossus aculeatus,spelling_correction,Heffner_Masterton_1975_TableI,Spiney anteater,epithet gender ending (aculeatus)
+species,Sciurrrus hudsonius,Sciurus hudsonius,spelling_correction,Heffner_Masterton_1975_TableI,Squirrel,genus misspelling (triple r)
+species,Phocaena phocoena,Phocoena phocoena,spelling_correction,Heffner_Masterton_1975_TableI,Whale (porpoise),genus misspelling (Phocoena)

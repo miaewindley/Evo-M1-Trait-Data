@@ -64,6 +64,7 @@ Burish_etal_2010,Burish_etal_2010,M,NA,(structure-agnostic; see data columns),NA
 Burish_etal_2010,Burish_etal_2010,%MBD,NA,(structure-agnostic; see data columns),NA,p.C.Body.mass,mass,NA,review,Primates (+ other mammals),average structure mass fraction (expressed as percentage of the whole body mass)
 Burish_etal_2010,Burish_etal_2010,%MCNS,NA,(structure-agnostic; see data columns),NA,p.C.CNS.mass,mass,NA,review,Primates (+ other mammals),average structure mass fraction (expressed as percentage of the CNS mass; brain + spinal cord)
 Collins_etal_2010,Collins_etal_2010_DatasetS1,tissue_weight_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Primates,wet weight of the tissue piece
+Collins_etal_2016,Collins_etal_2016_Table1,body_weight_kg,NA,(structure-agnostic; see data columns),NA,Mass.kg,mass,NA,info,Primates,body weight
 DosSantos_etal_2017,DosSantos_etal_2017_TableS1,M,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Marsupials,mass of the structure
 DosSantos_etal_2020,DosSantos_etal_2020_Table1,Structure mass (g),NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Mammals,mass in grams
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,bodyweight_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Mammals (marsupial to primate),body weight
@@ -72,6 +73,9 @@ JardimMesseder_etal_2017,JardimMesseder_etal_2017_Table1,M,NA,(structure-agnosti
 JardimMesseder_etal_2017,JardimMesseder_etal_2017_Table1,M,NA,(structure-agnostic; see data columns),NA,Mass.kg,mass,NA,primary,Carnivores & other companion mammals,mass of the structure
 Kverkova_etal_2018,Kverkova_etal_2018_TableS1,Mass.g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Rodents (African mole-rats +),mass in grams
 Kverkova_etal_2018,Kverkova_etal_2018_FigS1,mass,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Rodents (African mole-rats +),mass (g)
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Body_weight,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,secondary,Mammals,Body weight
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Brain_weight_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,secondary,Mammals,Brain weight g
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Neonate_brain_weight_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,secondary,Mammals,Neonate brain weight g
 Seymour_etal_2015,Seymour_etal_2015_TableS1,Body_mass_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Primates & Diprotodontia,body mass in grams
 Seymour_etal_2017,Seymour_etal_2017_TableS1,Body_mass_kg,NA,(structure-agnostic; see data columns),NA,Mass.kg,mass,NA,info,Fossil Hominins,body mass in kilograms as printed (footnote letter removed)
 Seymour_etal_2017,Seymour_etal_2017_TableS1,Body_mass_g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,Fossil Hominins,body mass in grams (project unit)
@@ -79,12 +83,16 @@ Stephan_etal_1970,Stephan_etal_1970,body_weight_g,NA,(structure-agnostic; see da
 Stephan_etal_1970,Stephan_etal_1970,brain_weight_mg,NA,(structure-agnostic; see data columns),NA,Brain_Mass.mg,mass,NA,primary,NA,brain weight
 Weaver_2001,Weaver__2001_TableA-15,BoMass_kg,NA,(structure-agnostic; see data columns),NA,Mass.kg,mass,NA,primary,"monkeys, apes, fossil hominids, humans",body mass as printed (kg)
 Weaver_2001,Weaver__2001_TableA-15,Body_Mass.g,NA,(structure-agnostic; see data columns),NA,Mass.g,mass,NA,primary,"monkeys, apes, fossil hominids, humans",body mass in project units (g)
+Young_etal_2013_b,Young_etal_2013_b_Table1,body_weight_kg,NA,(structure-agnostic; see data columns),NA,Mass.kg,mass,NA,info,Primates,body weight (Table S1)
 Balzeau_etal_2012,Balzeau_etal_2012_Table5,Mean_pct_of_hemisphere,NA,(structure-agnostic; see data columns),NA,pct.of.hemisphere,percentage (relative),Mean,secondary,Homo,mean percentage contribution of the lobe to the hemisphere (sum of the three lobe surfaces)
 Balzeau_etal_2012,Balzeau_etal_2012_Table5,V_star,NA,(structure-agnostic; see data columns),NA,pct.of.hemisphere,percentage (relative),V*,secondary,Homo,size-corrected coefficient of variation of the percentage
+Collins_etal_2016,Collins_etal_2016_Table1,pct_neocortical_area,NA,(structure-agnostic; see data columns),NA,pct,percentage (relative),NA,secondary,Primates,region as percent of total neocortical area
 Burish_etal_2010,Burish_etal_2010,%N,NA,(structure-agnostic; see data columns),NA,p.C.N,proportion (of CNS/body/brain),NA,review,Primates (+ other mammals),average percent of cells in the structure that are neurons
 Burish_etal_2010,Burish_etal_2010,%NCNS,NA,(structure-agnostic; see data columns),NA,p.C.CNS.neurons,proportion (of CNS/body/brain),NA,review,Primates (+ other mammals),average structure neuron number fraction (expressed as percentage of the CNS neuron number; brain + spinal cord)
 HerculanoHouzel_etal_2015,HerculanoHouzel_2015,% Neurons,NA,(structure-agnostic; see data columns),NA,p.C.N,proportion (of CNS/body/brain),NA,both,Mammals,number of neurons / (number of neurons + number of other cells) * 100
 Kverkova_etal_2018,Kverkova_etal_2018_TableS1,p.C.Brain,NA,(structure-agnostic; see data columns),NA,p.C.Brain,proportion (of CNS/body/brain),NA,primary,Rodents (African mole-rats +),average structure volume fractions (expressed as percentage of the whole brain volume)
+Mota_etal_2015,Mota_Herculano-Houzel_2015_TableS1,Reference,NA,(structure-agnostic; see data columns),NA,provenance,provenance,NA,provenance,Mammals,"Source-reference number(s) for the row's values, as printed (keyed to the reference list in the supplement); e.g. ""15, 1"" = own value from ref 15, other value from ref 1."
+Zilles_etal_2013,Zilles_etal_2013_Table1,Ref,NA,(structure-agnostic; see data columns),NA,provenance,provenance,NA,provenance,Mammals,Source-reference bracket code as printed in Table 1 ([4] [5] [7] [87]); identifies the GI measurement's origin and method.
 DosSantos_etal_2020,DosSantos_etal_2020_unpublished,I/C,NA,(structure-agnostic; see data columns),NA,I.p.C,ratio,NA,primary,Mammals,Microglia/Cell ratio
 Kochiyama_etal_2018,Kochiyama_etal_2018_Figure3legend,MH_CV,NA,(structure-agnostic; see data columns),NA,ratio,ratio,CV,info,Homo sapiens,coefficient of variation of MH volume (= relative-volume s.d.)
 Kochiyama_etal_2018,Kochiyama_etal_2018_FossilSpecimensText,Cerebellum_Cerebrum_ratio,NA,(structure-agnostic; see data columns),NA,ratio,ratio,NA,secondary,Homo,cerebellum-to-cerebrum volume ratio (derived)
@@ -99,6 +107,40 @@ Balzeau_etal_2012,Balzeau_etal_2012_Table2,Intercept,NA,(structure-agnostic; see
 Balzeau_etal_2012,Balzeau_etal_2012_Table2,Rsquared,NA,(structure-agnostic; see data columns),NA,regression,regression,R2,secondary,Homo,coefficient of determination (R-squared) of the regression
 Balzeau_etal_2012,Balzeau_etal_2012_Table3,Mean_surface_sizecorrected,NA,(structure-agnostic; see data columns),NA,size.corrected.surface,surface area,Mean,secondary,Homo,mean size-corrected surface dimension of the lobe
 Balzeau_etal_2012,Balzeau_etal_2012_Table3,V_star,NA,(structure-agnostic; see data columns),NA,size.corrected.surface,surface area,V*,secondary,Homo,size-corrected coefficient of variation of the lobe surface
+Krubitzer_Kaas_1990,Krubitzer_Kaas_1990_Table1,pct_total_8fields,NA,(structure-agnostic; see data columns),NA,pct.neocortex_surface,surface area,NA,primary,Primates,Total column as printed = sum of the eight visual fields as percent of neocortex
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Neocortex_mm^3,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Neocortex volume
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,GI,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Gyrification index
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Ventricle_mm^3,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Ventricle mm^3
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Maximum_lifespan_yrs,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Maximum lifespan yrs
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Age_at_first_breeding_F_mnths,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Age at first breeding F mnths
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Age_at_first_breeding_days,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Age at first breeding days
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Female_sexual_maturity_days,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Female sexual maturity days
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Male_sexual_maturity_days,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Male sexual maturity days
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Gestation_days,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Gestation days
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Litter_size,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Litter size
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Litters_per_year,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Litters per year
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Inter-litter_interval_days,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Inter-litter interval days
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Weaning_period_days,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Weaning period days
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Weight_at_birth_g,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Weight at birth g
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Weight_at_weaning_g,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Weight at weaning g
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Juvenility_primates_years,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Juvenility primates years
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Juvenility_days,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Juvenility days
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Max_home_range_ha,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Max home range ha
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,% Fruit and seeds,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,% Fruit and seeds
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Diet_breadth,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Diet breadth
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Trophic_level,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Trophic level
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Population_group_size,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Population group size
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Social_group_size,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Social group size
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Adult_head_body_length_mm,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Adult head body length mm
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Age_at_eye_opening_days,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Age at eye opening days
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Basal_metabolic_rate,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,"Basal metabolic rate (journal header typo ""Basal_metaboic_rate"" corrected)"
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Dispersal_age_days,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Dispersal age days
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Habitat_breadth,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Habitat breadth
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Glia_neuron_ratio,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Glia:neuron ratio
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Neuronal_density,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,"Neuronal density in neocortex (journal header typo ""Neuronal_denisty"" corrected)"
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Glial_cell_density,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,"Glial cell density (journal header typo ""Glial_cell_denisty"" corrected)"
+Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Neurogenic_period_days,NA,(structure-agnostic; see data columns),NA,value,value,NA,primary,Mammals,Neurogenic period days
+Collins_etal_2016,Collins_etal_2016_Table1,volume_cm3,NA,(structure-agnostic; see data columns),NA,Volume.cm3,volume,NA,secondary,Primates,structure volume
 Kochiyama_etal_2018,Kochiyama_etal_2018_ExtendedDataFigure4,NT_rel,NA,(structure-agnostic; see data columns),NA,relative.volume,volume,Mean,secondary,Homo neanderthalensis,"NT relative volume, individual-brain (4x1185) reconstruction"
 Kochiyama_etal_2018,Kochiyama_etal_2018_ExtendedDataFigure4,EH_rel,NA,(structure-agnostic; see data columns),NA,relative.volume,volume,Mean,secondary,Homo sapiens (early),"EH relative volume, individual-brain reconstruction"
 Kochiyama_etal_2018,Kochiyama_etal_2018_ExtendedDataFigure4,MH_rel,NA,(structure-agnostic; see data columns),NA,relative.volume,volume,Mean,info,Homo sapiens,MH relative volume
@@ -127,6 +169,10 @@ Stephan_etal_1982,Stephan_etal_1982_Table1,AOB_layer_1_2_mm3,AccessoryOlfactoryB
 Stephan_etal_1982,Stephan_etal_1982_Table1,pct_AOB_3_5,AccessoryOlfactoryBulb_layers_3_5,AccessoryOlfactoryBulb_layers_3_5,NA,pct.AOB,percentage (relative),NA,primary,"Insectivora, Scandentia & Primates",AOB layers 3-5 as a percentage of total AOB
 Stephan_etal_1982,Stephan_etal_1982_Table1,size_index_3_5,AccessoryOlfactoryBulb_layers_3_5,AccessoryOlfactoryBulb_layers_3_5,NA,size.index,size index (allometric),NA,primary,"Insectivora, Scandentia & Primates",relative (allometric) size of AOB layers 3-5; 100 = basal-Insectivora reference line
 Stephan_etal_1982,Stephan_etal_1982_Table1,AOB_layer_3_5_mm3,AccessoryOlfactoryBulb_layers_3_5,AccessoryOlfactoryBulb_layers_3_5,NA,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",volume of AOB layers 3-5 (combined) in mm3
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Activity_Nocturnal,Activity,Activity,NA,binary,binary,NA,info,mammals,Active at night (1/0)
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Activity_Crepuscular,Activity,Activity,NA,binary,binary,NA,info,mammals,Active at dawn/dusk (1/0)
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Activity_Diurnal,Activity,Activity,NA,binary,binary,NA,info,mammals,Active during day (1/0)
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Activity_pattern,Activity,Activity,NA,category,category,NA,primary,mammals,Activity pattern (derived): Nocturnal / Diurnal / Crepuscular / Cathemeral (nocturnal+diurnal)
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1,agranular_mm3,Agranular_insular_cortex,Agranular_insular_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,volume of agranular insular cortex (left) in mm3
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table2,agranular_R_mm3,Agranular_insular_cortex,Agranular_insular_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,volume of agranular insular cortex (right) in mm3
 Frahm_etal_1997,Frahm_etal_1997_Table1,Amygdala_mm3,Amygdala,Amygdala,cell_counts,Vol.mm3,volume,NA,primary,Rodentia & Insectivora,Amygdala (Vol.mm3)
@@ -166,8 +212,20 @@ Stephan_etal_1987,Stephan_etal_1987,magnocellular_basal_MCB_mm3,BasalNucleusMagn
 Barger_etal_2007,Barger_etal_2007,basolateral_L,BasolateralDivision,BasolateralDivision,NA,Volume.cm3,volume,NA,primary,Apes & humans,basolateral division volume left
 Barger_etal_2007,Barger_etal_2007,basolateral_R,BasolateralDivision,BasolateralDivision,NA,Volume.cm3,volume,NA,primary,Apes & humans,basolateral division volume right
 Barger_etal_2007,Barger_etal_2007,basolateral_total,BasolateralDivision,BasolateralDivision,NA,Volume.cm3,volume,NA,primary,Apes & humans,basolateral division volume both hemispheres
+Heldstab_etal_2016,Heldstab_etal_2016_TableS1,MC,Behaviour,Behaviour,NA,ManipulationComplexity,ManipulationComplexity,mean,primary,Primates,manipulation complexity (mean score across bouts)
+ManyPrimates__2022,ManyPrimates__2022_speciespredictors,vocal_repertoire_types,Behaviour,Behaviour,NA,count.vocalizations,count (number),NA,primary,Primates,vocal repertoire size = number of vocalization types
+Schniter_Penaherrera-Aguirre_2026,Schniter_Penaherrera-Aguirre_2026_data,vocal_repertoire_size_MS2005,Behaviour,Behaviour,NA,count.vocalizations,count (number),NA,primary,Primates,vocal repertoire size (number of distinct vocalization types) from McComb & Semple 2005
+Schniter_Penaherrera-Aguirre_2026,Schniter_Penaherrera-Aguirre_2026_data,vocal_repertoire_size_updated,Behaviour,Behaviour,NA,count.vocalizations,count (number),NA,primary,Primates,"vocal repertoire size (number of distinct vocalization types), contemporary update"
+Caspar_etal_2022,Caspar_etal_2022_Table1,MeanHI,Behaviour,Behaviour,NA,HandednessIndex,size index (allometric),mean,primary,Primates,"mean handedness index (signed; positive = right-biased, negative = left-biased)"
+Caspar_etal_2022,Caspar_etal_2022_Table1,MeanAbsHI,Behaviour,Behaviour,NA,HandednessIndex,size index (allometric),mean,primary,Primates,"mean absolute handedness index (strength of lateralization, direction ignored)"
+Wimberly_etal_2021,Wimberly_etal_2021_MammalGait,Hindlimb_Length.mm,Body,Body,cell_counts,Length.mm,length,mean,secondary,mammals,Hindlimb length
+Granatosky__2018,Granatosky__2018_TableS1,Body_Mass.g,Body,Body,cell_counts,Mass.g,mass,mean,secondary,mammals,Body mass
 Heffner_Masterton_1975,Heffner_Masterton_1975_TableI,Body weight kg,Body,Body,cell_counts,BodyMass.kg,mass,NA,primary,Mammals,body weight in kilograms
 Heffner_Masterton_1983,Heffner_Masterton_1983_TableI,body_weight_kg,Body,Body,cell_counts,BodyMass.kg,mass,NA,primary,Mammals,body weight in kilograms
+Heldstab_etal_2016,Heldstab_etal_2016_TableS1,body_mass_g,Body,Body,cell_counts,BodyMass.g,mass,NA,primary,Primates,female body mass in grams
+Heldstab_etal_2016,Heldstab_etal_2016_TableS1,brain_assoc_body_mass_g,Body,Body,cell_counts,BodyMass.g,mass,NA,primary,Primates,body mass in grams associated with the neocortex/cerebellum measurements
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,BodyMass.g,Body,Body,cell_counts,Mass.g,mass,mean,secondary,mammals,Body mass
+Wimberly_etal_2021,Wimberly_etal_2021_MammalGait,Body_Mass.g,Body,Body,cell_counts,Mass.g,mass,mean,secondary,mammals,Body mass
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1,body_mass_g,Body_weight,Body_weight,brain_structure_volume,Mass.g,mass,NA,secondary,Primates,body mass in g (printed in kg; x1000)
 Frahm_Zilles_1994,Frahm_Zilles_1994_Table1,body_weight_g,Body_weight,Body_weight,brain_structure_volume,Mass.g,mass,NA,secondary,Insectivora & Primates,body weight in g
 Frahm_etal_1997,Frahm_etal_1997_Table1,body_weight_g,Body_weight,Body_weight,brain_structure_volume,Mass.g,mass,NA,secondary,Rodentia & Insectivora,Body weight (Mass.g)
@@ -176,9 +234,11 @@ Matano_etal_1985_a,Matano_etal_1985_a_Table1,body_weight_g,Body_weight,Body_weig
 Matano_etal_1985_b,Matano_etal_1985_b_Table1,body_weight_g,Body_weight,Body_weight,brain_structure_volume,Mass.g,mass,NA,secondary,"Insectivora, Scandentia & Primates",body weight in g (BoW)
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Body_weight,Body_weight,Body_weight,brain_structure_volume,Mass.g,mass,NA,primary,"Insectivora, Scandentia & Primates",body weight
 Stephan_etal_1988,Stephan_etal_1988_Table1,BoW_g,Body_weight,Body_weight,brain_structure_volume,Mass.g,mass,NA,primary,"Insectivora, Scandentia & Primates",body weight in grams
+Zilles_etal_2013,Zilles_etal_2013_Table1,Brain_size,Brain,Brain,cell_counts,Brain.size.mixed,Brain.size.mixed,NA,secondary,Mammals,"Brain size as printed in Table 1 (column header ""Brain (volume, weight)""); a mixed volume-or-weight figure (cm3 or g depending on source), not standardised. Use for ordering only, not as a harmonised volume."
 Karbowski__2007,Karbowski__2007_TableS1,CMRO2,Brain,Brain,cell_counts,CMR.ml/g/min,CMR.ml/g/min,mean,secondary,Mammals,cerebral metabolic rate of oxygen (whole brain; Table S1)
 Karbowski__2007,Karbowski__2007_TableS1,Total_O2_consumption,Brain,Brain,cell_counts,Rate.ml/min,Rate.ml/min,point,secondary,Mammals,whole-brain total oxygen consumption (Table S1)
 Karbowski__2007,Karbowski__2007_TableS2,Total_glucose_utilization,Brain,Brain,cell_counts,Rate.umol/min,Rate.umol/min,point,secondary,Mammals,whole-brain total glucose utilization (Table S2)
+Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,Brain_weight_g,Brain,Brain,cell_counts,Mass.g,mass,NA,secondary,Mammals,Brain weight
 Weaver_2001,Weaver__2001_TableA-15,BrMass_g,Brain,Brain,cell_counts,Mass.g,mass,NA,primary,"monkeys, apes, fossil hominids, humans",brain mass as printed (g)
 Weaver_2001,Weaver__2001_TableA-15,Brain_Mass.mg,Brain,Brain,cell_counts,Mass.mg,mass,NA,primary,"monkeys, apes, fossil hominids, humans",brain mass in project units (mg)
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1,brain_mass_mg,Brain_weight,Brain_weight,brain_structure_volume,Mass.mg,mass,NA,primary,Primates,brain mass in mg (printed in g; x1000)
@@ -206,6 +266,8 @@ Ashwell__2020,Ashwell_2020,vermis_excl_cb10_mm3,CerebellarVermis,CerebellarVermi
 MacLeod_etal_2003,MacLeod_etal_2003,vermis_volume_cm3,CerebellarVermis,CerebellarVermis,NA,Volume.cm3,volume,NA,primary,Apes (Hominoidea),cerebellar vermis volume
 Ashwell__2020,Ashwell_2020,cb_white_matter_mm3,CerebellarWhiteMatter,CerebellarWhiteMatter,NA,Volume.mm3,volume,NA,primary,Mammalia,"volume of deep cerebellar white matter within the corpus cerebelli, excluding deep cerebellar nuclei, in cubic millimetres"
 Matano_etal_1985_a,Matano_etal_1985_a_Table1,TCN_mm3,Cerebellar_nuclei_total,Cerebellar_nuclei_total,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",volume of the total cerebellar nuclei in mm3 (= MCN + ICN + LCN)
+Heldstab_etal_2016,Heldstab_etal_2016_TableS1,cerebellum_g,Cerebellum,Cerebellum,cell_counts,CerebellumSize.g,CerebellumSize.g,NA,primary,Primates,cerebellum size in grams
+Heldstab_etal_2016,Heldstab_etal_2016_TableS1,cerebellum_g,Cerebellum,Cerebellum,brain_structure_volume,CerebellumSize.g,CerebellumSize.g,NA,primary,Primates,cerebellum size in grams
 Ashwell__2020,Ashwell_2020,foliation_index,Cerebellum,Cerebellum,cell_counts,Index,size index (allometric),NA,derived,Mammalia,foliation index calculated as pial surface area divided by external cerebellar surface area (PSC/ESC)
 Ashwell__2020,Ashwell_2020,foliation_index,Cerebellum,Cerebellum,brain_structure_volume,Index,size index (allometric),NA,derived,Mammalia,foliation index calculated as pial surface area divided by external cerebellar surface area (PSC/ESC)
 Weaver_2001,Weaver__2001_TableA-15,CQ,Cerebellum,Cerebellum,cell_counts,size.index,size index (allometric),NA,secondary,"monkeys, apes, fossil hominids, humans",cerebellar quotient = actual/predicted cerebellum size (relative index)
@@ -256,6 +318,14 @@ deSousa_etal_2013,deSousa_etal_2013_Table1,Corpus_geniculatum_laterale_mm3,Corpu
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Corpus_pineal,Corpus_pineal,Corpus_pineal,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",pineal body
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Corpus_subcommissurale,Corpus_subcommissurale,Corpus_subcommissurale,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",subcommissural organ
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Corpus_subfornicale,Corpus_subfornicale,Corpus_subfornicale,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",subfornical organ
+Zilles_etal_2013,Zilles_etal_2013_Table1,GI,Cortex,Cortex,NA,GI.ratio,GI.ratio,NA,primary,Mammals,"Gyrification index — ratio of the total (inner + buried) cortical contour to the superficially exposed (outer) contour, measured on coronal sections; GI = 1 means no folding, higher = more folded. Whole-cortex value."
+Mota_etal_2015,Mota_Herculano-Houzel_2015_TableS1,T_own_mm,Cortex,Cortex,NA,Thickness.mm,Thickness.mm,NA,primary,Mammals,"Mean cortical thickness of one hemisphere, mm — own dataset."
+Mota_etal_2015,Mota_Herculano-Houzel_2015_TableS1,T_other_mm,Cortex,Cortex,NA,Thickness.mm,Thickness.mm,NA,secondary,Mammals,"Mean cortical thickness, mm — value compiled from other datasets."
+Zilles_etal_2013,Zilles_etal_2013_Table1,GI_method,Cortex,Cortex,NA,provenance,provenance,NA,provenance,Mammals,Human-readable expansion of the Ref code's GI measurement method (footnote a).
+Mota_etal_2015,Mota_Herculano-Houzel_2015_TableS1,FI_own,Cortex,Cortex,NA,FoldingIndex.MHH,size index (allometric),NA,primary,Mammals,Folding index (Mota & Herculano-Houzel definition) of one hemisphere — own dataset. NOTE: this is NOT the Zilles gyrification index (GI); it is a distinct folding measure and is not pooled with GI.
+Mota_etal_2015,Mota_Herculano-Houzel_2015_TableS1,FI_other,Cortex,Cortex,NA,FoldingIndex.MHH,size index (allometric),NA,secondary,Mammals,Folding index (MHH definition) — value compiled from other datasets. Not the Zilles GI; excluded from GI merge.
+Mota_etal_2015,Mota_Herculano-Houzel_2015_TableS1,AG_own_mm2,Cortex,Cortex,NA,ExposedSurface.mm2,surface area,NA,primary,Mammals,"Exposed (pial) cortical surface area of one hemisphere, mm2 — Mota & Herculano-Houzel's own dataset."
+Mota_etal_2015,Mota_Herculano-Houzel_2015_TableS1,AG_other_mm2,Cortex,Cortex,NA,ExposedSurface.mm2,surface area,NA,secondary,Mammals,"Exposed cortical surface area of one hemisphere, mm2 — value compiled from other datasets (see Reference)."
 Bush_Allman_2004_a,Bush_Allman_2004_a,rest_of_cortex_grey_cm3,CortexGreyRest,CortexGreyRest,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,rest-of-cortex grey matter volume
 Stephan_etal_1987,Stephan_etal_1987,corticobasolateral_LAM_mm3,CorticobasolateralAmygdala,CorticobasolateralAmygdala,NA,Volume.mm3,volume,mean,primary,Insectivora–Primates (incl. Homo),cortico-basolateral group / lateral amygdala (LAM) = lateral + basal + cortical nuclei
 Heffner_Masterton_1975,Heffner_Masterton_1975_TableI,Largest fiber diameter µm,CorticospinalTract,CorticospinalTract,NA,FiberDiameter.um,FiberDiameter.um,max,primary,Mammals,largest pyramidal-tract fibre diameter in micrometres
@@ -266,19 +336,38 @@ Heffner_Masterton_1975,Heffner_Masterton_1975_TableI,Number of fibers per tract,
 Heffner_Masterton_1983,Heffner_Masterton_1983_TableI,no_fibers_x10_3,CorticospinalTract,CorticospinalTract,NA,FiberCount,count (number),NA,primary,Mammals,number of fibres in the corticospinal tract in thousands (value x 1000 = fibre count)
 Heffner_Masterton_1975,Heffner_Masterton_1975_TableI,Area of tract mmˆ2,CorticospinalTract,CorticospinalTract,NA,Area.mm2,surface area,NA,primary,Mammals,cross-sectional area of the pyramidal tract in mm2
 Heffner_Masterton_1983,Heffner_Masterton_1983_TableI,area_mm2,CorticospinalTract,CorticospinalTract,NA,Area.mm2,surface area,NA,primary,Mammals,cross-sectional area of the corticospinal (pyramidal) tract in mm2
+Krubitzer_Kaas_1990,Krubitzer_Kaas_1990_Table1,pct_DI,DI,DI,NA,pct.neocortex_surface,surface area,NA,primary,Primates,dorsointermediate visual area (DI) as percent of total neocortex surface
+Krubitzer_Kaas_1990,Krubitzer_Kaas_1990_Table1,pct_DL,DL,DL,NA,pct.neocortex_surface,surface area,NA,primary,Primates,dorsolateral visual area (DL) as percent of total neocortex surface
+Krubitzer_Kaas_1990,Krubitzer_Kaas_1990_Table1,pct_DM,DM,DM,NA,pct.neocortex_surface,surface area,NA,primary,Primates,dorsomedial visual area (DM) as percent of total neocortex surface
 Ashwell__2020,Ashwell_2020,deep_cb_nu_volume_mm3,DeepCerebellarNuclei,DeepCerebellarNuclei,NA,Volume.mm3,volume,NA,primary,Mammalia,"volume of deep cerebellar nuclei, including medial, intermediate and lateral nuclei plus interstitial cell group, in cubic millimetres"
 Frahm_etal_1997,Frahm_etal_1997_Table1,Diencephalon_mm3,Diencephalon,Diencephalon,brain_structure_volume,Vol.mm3,volume,NA,primary,Rodentia & Insectivora,Diencephalon (Vol.mm3)
 Stephan_etal_1970,Stephan_etal_1970,diencephalon_mm3,Diencephalon,Diencephalon,brain_structure_volume,Volume.mm3,volume,NA,primary,NA,diencephalon volume
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Diencephalon,Diencephalon,Diencephalon,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",diencephalon
 Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Diencephalon,Diencephalon,Diencephalon,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),diencephalon fresh volume
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Diet_dominant,Diet,Diet,NA,category,category,NA,primary,mammals,Diet category with the highest percentage (derived)
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Trophic_guild,Diet,Diet,NA,category,category,NA,primary,mammals,Coarse guild from animal vs plant diet share (derived): Faunivore >=70% animal / Herbivore >=70% plant / else Omnivore
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Diet_breadth,Diet,Diet,NA,count,count (number),NA,primary,mammals,Number of diet categories with >0 percent (derived)
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Diet_Inv,Diet,Diet,NA,percent,percentage (relative),NA,primary,mammals,Percent of diet from invertebrates
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Diet_Vend,Diet,Diet,NA,percent,percentage (relative),NA,primary,mammals,Percent of diet from endothermic vertebrates (mammals/birds)
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Diet_Vect,Diet,Diet,NA,percent,percentage (relative),NA,primary,mammals,Percent of diet from ectothermic vertebrates (reptiles/amphibians)
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Diet_Vfish,Diet,Diet,NA,percent,percentage (relative),NA,primary,mammals,Percent of diet from fish
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Diet_Vunk,Diet,Diet,NA,percent,percentage (relative),NA,primary,mammals,Percent of diet from vertebrates of unknown type
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Diet_Scav,Diet,Diet,NA,percent,percentage (relative),NA,primary,mammals,Percent of diet from carrion/scavenging
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Diet_Fruit,Diet,Diet,NA,percent,percentage (relative),NA,primary,mammals,Percent of diet from fruit
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Diet_Nect,Diet,Diet,NA,percent,percentage (relative),NA,primary,mammals,Percent of diet from nectar
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Diet_Seed,Diet,Diet,NA,percent,percentage (relative),NA,primary,mammals,Percent of diet from seeds
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,Diet_PlantO,Diet,Diet,NA,percent,percentage (relative),NA,primary,mammals,Percent of diet from other plant material (roots/leaves/etc.)
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1,dysgranular_mm3,Dysgranular_insular_cortex,Dysgranular_insular_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,volume of dysgranular insular cortex (left) in mm3
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table2,dysgranular_R_mm3,Dysgranular_insular_cortex,Dysgranular_insular_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates,volume of dysgranular insular cortex (right) in mm3
 Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Regio_entorhinalis,EntorhinalCortex,EntorhinalCortex,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),entorhinal region fresh volume
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Epithalamus,Epithalamus,Epithalamus,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",epithalamus
+Krubitzer_Kaas_1990,Krubitzer_Kaas_1990_Table1,pct_FST,FST,FST,NA,pct.neocortex_surface,surface area,NA,primary,Primates,fundal superior temporal area (FST) as percent of total neocortex surface
 Sherwood_etal_2005,Sherwood_etal_2005,facial_VII_mm3,Facial_motor_nucleus,Facial_motor_nucleus,NA,Volume.mm3,volume,mean,primary,NA,facial motor nucleus (VII) volume
 Sherwood_etal_2005,Sherwood_etal_2005,facial_VII_SD,Facial_motor_nucleus,Facial_motor_nucleus,NA,Volume.mm3,volume,SD,secondary,NA,SD of VII volume
 Frahm_Zilles_1994,Frahm_Zilles_1994_Table1,fascia_dentata_mm3,Fascia_dentata,Fascia_dentata,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,volume of the fascia dentata (dentate gyrus) in mm3
 Ashwell__2020,Ashwell_2020,flocculo_nodular_cb_cx_mm3,FlocculonodularLobe,FlocculonodularLobe,NA,Volume.mm3,volume,NA,primary,Mammalia,"volume of flocculonodular lobe cerebellar cortex (flocculus plus nodulus/lobule 10), in cubic millimetres"
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,ForStrat_stratum,Foraging,Foraging,NA,category,category,NA,primary,mammals,Foraging stratum (derived label): Marine/Ground/Arboreal/Scansorial/Aerial
+Wilman_etal_2014,Wilman_etal_2014_MamFuncDat,ForStrat_Value,Foraging,Foraging,NA,code,code,NA,info,mammals,Foraging stratum code (M/G/Ar/S/A)
 Semendeferi_etal_2002,Semendeferi_etal_2002,brodmann1909_surface_pct,FrontalCortex,FrontalCortex,NA,pct.of.cortex.surface,surface area,NA,primary,Apes & humans,frontal cortex as percent of cortical SURFACE (Brodmann 1909)
 Semendeferi_etal_2002,Semendeferi_etal_2002,blinkov_glezer1965_surface_pct,FrontalCortex,FrontalCortex,NA,pct.of.cortex.surface,surface area,NA,primary,Apes & humans,frontal cortex as percent of cortical SURFACE (Blinkov & Glezer 1965)
 Semendeferi_etal_2002,Semendeferi_etal_2002,frontal_cortex_pct_of_cortex_volume,FrontalCortex,FrontalCortex,NA,pct.of.cortex.volume,volume,mean,primary,Apes & humans,frontal cortex as percent of cerebral cortex VOLUME (present study)
@@ -361,7 +450,35 @@ Barger_etal_2007,Barger_etal_2007,lateral_total,LateralNucleus,LateralNucleus,NA
 Barger_etal_2014,Barger_etal_2014_Table1,amygdala_lateral_cc,LateralNucleus,LateralNucleus,NA,Volume.cm3,volume,NA,primary,Apes & humans,lateral amygdaloid nucleus volume (one hemisphere)
 Baron_etal_1987,Baron_etal_1987_Table1,TRL,LateralOlfactoryTract,LateralOlfactoryTract,NA,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",tractus olfactorius lateralis (lateral olfactory tract)
 Matano_etal_1985_a,Matano_etal_1985_a_Table1,LCN_mm3,Lateral_cerebellar_nuclei,Lateral_cerebellar_nuclei,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",volume of the lateral (dentate) cerebellar nucleus in mm3
+Granatosky__2018,Granatosky__2018_TableS1,Intermembral_index,Limb,Limb,NA,index,size index (allometric),NA,primary,mammals,Intermembral index (100*(humerus+radius)/(femur+tibia))
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Lobus_piriformis,Lobus_piriformis,Lobus_piriformis,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",piriform lobe
+Granatosky__2018,Granatosky__2018_TableS1,Arboreal_terrestrial,Locomotion,Locomotion,NA,category,category,NA,primary,mammals,Primary substrate use category
+Wimberly_etal_2021,Wimberly_etal_2021_MammalGait,Habitat,Locomotion,Locomotion,NA,category,category,NA,secondary,mammals,Substrate-use category scored by Wimberly (arboreal / terrestrial)
+Wimberly_etal_2021,Wimberly_etal_2021_MammalGait,Gait,Locomotion,Locomotion,NA,category,category,NA,primary,mammals,Symmetrical walking-gait category: DSDC diagonal-sequence diagonal-couplet / LSDC lateral-sequence diagonal-couplet / LSLC lateral-sequence lateral-couplet
+Wimberly_etal_2021,Wimberly_etal_2021_MammalGait,Foot_Posture,Locomotion,Locomotion,NA,category,category,NA,primary,mammals,Foot posture: plantigrade / digitigrade / unguligrade
+Wimberly_etal_2021,Wimberly_etal_2021_MammalGait,Duty_Factor,Locomotion,Locomotion,NA,percent,percentage (relative),mean,primary,mammals,Mean stance duty factor: percentage of the stride cycle a foot maintains ground contact
+Wimberly_etal_2021,Wimberly_etal_2021_MammalGait,Phase,Locomotion,Locomotion,NA,percent,percentage (relative),mean,primary,mammals,Limb phase (diagonality): timing of forelimb footfall as percent of the stride after the ipsilateral hindlimb (Hildebrand)
+Granatosky__2018,Granatosky__2018_TableS1,Locomotor_diversity_index,Locomotion,Locomotion,NA,index,size index (allometric),NA,primary,mammals,Number/diversity of locomotor modes used (Granatosky locomotor diversity index)
+Young_etal_2013,Young_etal_2013_Table1,M1_cell_density_per_g_M,M1,M1,NA,Density.per_g,Density.per_g,mean,primary,Primates,M1 total-cell density (millions of cells per gram)
+Young_etal_2013,Young_etal_2013_Table1,M1_cell_density_per_g_M_sd,M1,M1,NA,Density.per_g,Density.per_g,sd,info,Primates,SD
+Young_etal_2013,Young_etal_2013_Table1,M1_neuron_density_per_g_M,M1,M1,NA,Density.per_g,Density.per_g,mean,primary,Primates,M1 neuron density (millions of neurons per gram)
+Young_etal_2013,Young_etal_2013_Table1,M1_neuron_density_per_g_M_sd,M1,M1,NA,Density.per_g,Density.per_g,sd,info,Primates,SD
+Young_etal_2013,Young_etal_2013_Table1,M1_cell_density_per_mm2_M,M1,M1,NA,Density.per_mm2,Density.per_mm2,mean,primary,Primates,M1 total-cell density (millions per mm2 surface)
+Young_etal_2013,Young_etal_2013_Table1,M1_cell_density_per_mm2_M_sd,M1,M1,NA,Density.per_mm2,Density.per_mm2,sd,info,Primates,SD
+Young_etal_2013,Young_etal_2013_Table1,M1_neuron_density_per_mm2_M,M1,M1,NA,Density.per_mm2,Density.per_mm2,mean,primary,Primates,M1 neuron density (millions per mm2 surface)
+Young_etal_2013,Young_etal_2013_Table1,M1_neuron_density_per_mm2_M_sd,M1,M1,NA,Density.per_mm2,Density.per_mm2,sd,info,Primates,SD
+Young_etal_2013,Young_etal_2013_Table1,M1_mass_g,M1,M1,NA,Mass.g,mass,mean,primary,Primates,primary motor cortex (M1) tissue mass
+Young_etal_2013,Young_etal_2013_Table1,M1_mass_g_sd,M1,M1,NA,Mass.g,mass,sd,info,Primates,SD of M1 mass
+Young_etal_2013,Young_etal_2013_Table1,M1_pct_total_mass,M1,M1,NA,pct,percentage (relative),mean,primary,Primates,M1 mass as percent of total cortical mass
+Young_etal_2013,Young_etal_2013_Table1,M1_pct_total_mass_sd,M1,M1,NA,pct,percentage (relative),sd,info,Primates,SD
+Young_etal_2013,Young_etal_2013_Table1,M1_pct_total_area,M1,M1,NA,pct,percentage (relative),mean,primary,Primates,M1 area as percent of total cortical surface area
+Young_etal_2013,Young_etal_2013_Table1,M1_pct_total_area_sd,M1,M1,NA,pct,percentage (relative),sd,info,Primates,SD
+Young_etal_2013,Young_etal_2013_Table1,M1_pct_neurons,M1,M1,NA,pct,percentage (relative),mean,primary,Primates,percent of M1 cells that are neurons (NeuN+)
+Young_etal_2013,Young_etal_2013_Table1,M1_pct_neurons_sd,M1,M1,NA,pct,percentage (relative),sd,info,Primates,SD
+Young_etal_2013,Young_etal_2013_Table1,M1_pct_neuron_diff_from_avg,M1,M1,NA,pct,percentage (relative),mean,primary,Primates,percent difference of M1 neuron density from the whole-cortex average
+Young_etal_2013,Young_etal_2013_Table1,M1_pct_neuron_diff_from_avg_sd,M1,M1,NA,pct,percentage (relative),sd,info,Primates,SD
+Young_etal_2013,Young_etal_2013_Table1,M1_area_mm2,M1,M1,NA,Area.mm2,surface area,mean,primary,Primates,M1 cortical surface area (REGIONAL - motor cortex only)
+Young_etal_2013,Young_etal_2013_Table1,M1_area_mm2_sd,M1,M1,NA,Area.mm2,surface area,sd,info,Primates,SD of M1 surface area
 Sherwood_etal_2004_I,Sherwood_etal_2004_I,meany.o,M1_GLIprofile,M1_GLIprofile,NA,GLI.profile.moment,GLI.profile.moment,mean,primary,NA,mean of y (GLI) of the original M1 layer GLI profile
 Sherwood_etal_2004_I,Sherwood_etal_2004_I,meanx.o,M1_GLIprofile,M1_GLIprofile,NA,GLI.profile.moment,GLI.profile.moment,mean,primary,NA,mean of x (cortical depth) of the original profile
 Sherwood_etal_2004_I,Sherwood_etal_2004_I,sd.o,M1_GLIprofile,M1_GLIprofile,NA,GLI.profile.moment,GLI.profile.moment,SD,primary,NA,standard deviation of the original profile
@@ -382,6 +499,8 @@ Sherwood_etal_2004_I,Sherwood_etal_2004_I,Layer V,M1_layerV,M1_layerV,NA,GLI,GLI
 Sherwood_etal_2004_I,Sherwood_etal_2004_I,Layer V SEM,M1_layerV,M1_layerV,NA,GLI,GLI,SEM,secondary,NA,SEM of layer V GLI
 Sherwood_etal_2004_I,Sherwood_etal_2004_I,Layer VI,M1_layerVI,M1_layerVI,NA,GLI,GLI,mean,primary,NA,mean GLI of M1 layer VI
 Sherwood_etal_2004_I,Sherwood_etal_2004_I,Layer VI SEM,M1_layerVI,M1_layerVI,NA,GLI,GLI,SEM,secondary,NA,SEM of layer VI GLI
+Krubitzer_Kaas_1990,Krubitzer_Kaas_1990_Table1,pct_MST,MST,MST,NA,pct.neocortex_surface,surface area,NA,primary,Primates,medial superior temporal area (MST) as percent of total neocortex surface
+Krubitzer_Kaas_1990,Krubitzer_Kaas_1990_Table1,pct_MT,MT,MT,NA,pct.neocortex_surface,surface area,NA,primary,Primates,middle temporal area (MT) as percent of total neocortex surface
 Matano_etal_1985_a,Matano_etal_1985_a_Table1,MCN_mm3,Medial_cerebellar_nuclei,Medial_cerebellar_nuclei,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",volume of the medial cerebellar nucleus in mm3
 Sherwood_etal_2005,Sherwood_etal_2005,medulla_oblongata_mm3,Medulla_oblongata,Medulla_oblongata,brain_structure_volume,Volume.mm3,volume,mean,primary,NA,volume of the medulla oblongata (whole structure)
 Sherwood_etal_2005,Sherwood_etal_2005,medulla_oblongata_SD,Medulla_oblongata,Medulla_oblongata,brain_structure_volume,Volume.mm3,volume,SD,secondary,NA,SD of medulla volume
@@ -396,32 +515,84 @@ Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Mesencephalon,Mesencephalon,Mesen
 Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Mesencephalon,Mesencephalon,Mesencephalon,cell_counts,Vol.mm3,volume,NA,primary,Primates (Pongo),mesencephalon (incl. tectum + ventral tegmentum) fresh volume
 Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Mesencephalon,Mesencephalon,Mesencephalon,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),mesencephalon (incl. tectum + ventral tegmentum) fresh volume
 Frahm_etal_1998,Frahm_etal_1998_Table1,Middle_temporal_visual_area_mm3,Middle_temporal_visual_area,Middle_temporal_visual_area,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Middle temporal visual area (Vol.mm3)
+Collins_etal_2016,Collins_etal_2016_Table1,cells_per_cm2,Neocortex,Neocortex,cell_counts,Density.per_cm2,Density.per_cm2,NA,primary,Primates,cell density per cm2 surface
+Collins_etal_2016,Collins_etal_2016_Table1,cells_per_cm2,Neocortex,Neocortex,brain_structure_volume,Density.per_cm2,Density.per_cm2,NA,primary,Primates,cell density per cm2 surface
+Collins_etal_2016,Collins_etal_2016_Table1,neurons_per_cm2,Neocortex,Neocortex,cell_counts,Density.per_cm2,Density.per_cm2,NA,primary,Primates,neuron density per cm2 surface
+Collins_etal_2016,Collins_etal_2016_Table1,neurons_per_cm2,Neocortex,Neocortex,brain_structure_volume,Density.per_cm2,Density.per_cm2,NA,primary,Primates,neuron density per cm2 surface
+Young_etal_2013_b,Young_etal_2013_b_Table1,cell_density_per_cm2,Neocortex,Neocortex,cell_counts,Density.per_cm2,Density.per_cm2,NA,secondary,Primates,cell density per cm2 of cortical surface
+Young_etal_2013_b,Young_etal_2013_b_Table1,cell_density_per_cm2,Neocortex,Neocortex,brain_structure_volume,Density.per_cm2,Density.per_cm2,NA,secondary,Primates,cell density per cm2 of cortical surface
+Young_etal_2013_b,Young_etal_2013_b_Table1,neuron_density_per_cm2,Neocortex,Neocortex,cell_counts,Density.per_cm2,Density.per_cm2,NA,secondary,Primates,neuron density per cm2 of cortical surface
+Young_etal_2013_b,Young_etal_2013_b_Table1,neuron_density_per_cm2,Neocortex,Neocortex,brain_structure_volume,Density.per_cm2,Density.per_cm2,NA,secondary,Primates,neuron density per cm2 of cortical surface
 Collins_etal_2010,Collins_etal_2010_DatasetS1,cell_density_per_g,Neocortex,Neocortex,cell_counts,Density.per_g,Density.per_g,NA,primary,Primates,cells per gram of tissue
 Collins_etal_2010,Collins_etal_2010_DatasetS1,cell_density_per_g,Neocortex,Neocortex,brain_structure_volume,Density.per_g,Density.per_g,NA,primary,Primates,cells per gram of tissue
 Collins_etal_2010,Collins_etal_2010_DatasetS1,neuron_density_per_g,Neocortex,Neocortex,cell_counts,Density.per_g,Density.per_g,NA,primary,Primates,neurons per gram of tissue
 Collins_etal_2010,Collins_etal_2010_DatasetS1,neuron_density_per_g,Neocortex,Neocortex,brain_structure_volume,Density.per_g,Density.per_g,NA,primary,Primates,neurons per gram of tissue
+Collins_etal_2016,Collins_etal_2016_Table1,cells_per_g,Neocortex,Neocortex,cell_counts,Density.per_g,Density.per_g,NA,primary,Primates,cell density per g tissue
+Collins_etal_2016,Collins_etal_2016_Table1,cells_per_g,Neocortex,Neocortex,brain_structure_volume,Density.per_g,Density.per_g,NA,primary,Primates,cell density per g tissue
+Collins_etal_2016,Collins_etal_2016_Table1,neurons_per_g,Neocortex,Neocortex,cell_counts,Density.per_g,Density.per_g,NA,primary,Primates,neuron density per g tissue
+Collins_etal_2016,Collins_etal_2016_Table1,neurons_per_g,Neocortex,Neocortex,brain_structure_volume,Density.per_g,Density.per_g,NA,primary,Primates,neuron density per g tissue
 Collins_etal_2010,Collins_etal_2010_DatasetS1,cell_density_per_mm2,Neocortex,Neocortex,cell_counts,Density.per_mm2,Density.per_mm2,NA,primary,Primates,cells per mm2 of cortical surface
 Collins_etal_2010,Collins_etal_2010_DatasetS1,cell_density_per_mm2,Neocortex,Neocortex,brain_structure_volume,Density.per_mm2,Density.per_mm2,NA,primary,Primates,cells per mm2 of cortical surface
 Collins_etal_2010,Collins_etal_2010_DatasetS1,neuron_density_per_mm2,Neocortex,Neocortex,cell_counts,Density.per_mm2,Density.per_mm2,NA,primary,Primates,neurons per mm2 of cortical surface
 Collins_etal_2010,Collins_etal_2010_DatasetS1,neuron_density_per_mm2,Neocortex,Neocortex,brain_structure_volume,Density.per_mm2,Density.per_mm2,NA,primary,Primates,neurons per mm2 of cortical surface
+Iwaniuk_etal_2001,Iwaniuk_etal_2001_Table4,Neocortex size,Neocortex,Neocortex,cell_counts,Neocortex.residual,Neocortex.residual,NA,primary,Primates,relative neocortex size (residual from the regression against body size)
+Iwaniuk_etal_2001,Iwaniuk_etal_2001_Table4,Neocortex size,Neocortex,Neocortex,brain_structure_volume,Neocortex.residual,Neocortex.residual,NA,primary,Primates,relative neocortex size (residual from the regression against body size)
+Heldstab_etal_2016,Heldstab_etal_2016_TableS1,neocortex_g,Neocortex,Neocortex,cell_counts,NeocortexSize.g,NeocortexSize.g,NA,primary,Primates,neocortex size in grams
+Heldstab_etal_2016,Heldstab_etal_2016_TableS1,neocortex_g,Neocortex,Neocortex,brain_structure_volume,NeocortexSize.g,NeocortexSize.g,NA,primary,Primates,neocortex size in grams
 Changizi__2001,Changizi__2001_Figure3,n_areas,Neocortex,Neocortex,cell_counts,count,count (number),NA,primary,Mammals (monotreme to human),number of cortical areas (unlogged 10^log)
 Changizi__2001,Changizi__2001_Figure3,n_areas,Neocortex,Neocortex,brain_structure_volume,count,count (number),NA,primary,Mammals (monotreme to human),number of cortical areas (unlogged 10^log)
 Collins_etal_2010,Collins_etal_2010_DatasetS1,total_cells,Neocortex,Neocortex,cell_counts,count,count (number),NA,primary,Primates,estimated total cells (all nuclei) in the piece
 Collins_etal_2010,Collins_etal_2010_DatasetS1,total_cells,Neocortex,Neocortex,brain_structure_volume,count,count (number),NA,primary,Primates,estimated total cells (all nuclei) in the piece
 Collins_etal_2010,Collins_etal_2010_DatasetS1,total_neurons,Neocortex,Neocortex,cell_counts,count,count (number),NA,primary,Primates,estimated total neurons (NeuN+) in the piece
 Collins_etal_2010,Collins_etal_2010_DatasetS1,total_neurons,Neocortex,Neocortex,brain_structure_volume,count,count (number),NA,primary,Primates,estimated total neurons (NeuN+) in the piece
+Collins_etal_2016,Collins_etal_2016_Table1,n_cells,Neocortex,Neocortex,cell_counts,count,count (number),NA,primary,Primates,total number of cells in the region
+Collins_etal_2016,Collins_etal_2016_Table1,n_cells,Neocortex,Neocortex,brain_structure_volume,count,count (number),NA,primary,Primates,total number of cells in the region
+Collins_etal_2016,Collins_etal_2016_Table1,n_neurons,Neocortex,Neocortex,cell_counts,count,count (number),NA,primary,Primates,total number of neurons (NeuN+) in the region
+Collins_etal_2016,Collins_etal_2016_Table1,n_neurons,Neocortex,Neocortex,brain_structure_volume,count,count (number),NA,primary,Primates,total number of neurons (NeuN+) in the region
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,visual_areas,Neocortex,Neocortex,cell_counts,count,count (number),NA,primary,Mammals (marsupial to primate),number of visual cortical areas
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,visual_areas,Neocortex,Neocortex,brain_structure_volume,count,count (number),NA,primary,Mammals (marsupial to primate),number of visual cortical areas
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,somatomotor_areas,Neocortex,Neocortex,cell_counts,count,count (number),NA,primary,Mammals (marsupial to primate),number of somatomotor cortical areas
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,somatomotor_areas,Neocortex,Neocortex,brain_structure_volume,count,count (number),NA,primary,Mammals (marsupial to primate),number of somatomotor cortical areas
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,total_areas,Neocortex,Neocortex,cell_counts,count,count (number),NA,primary,Mammals (marsupial to primate),total number of cortical areas
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,total_areas,Neocortex,Neocortex,brain_structure_volume,count,count (number),NA,primary,Mammals (marsupial to primate),total number of cortical areas
+Lewitus_etal_2014,Lewitus_etal_2014_TableS8,Neuronal_number,Neocortex,Neocortex,cell_counts,N.n,count (number),NA,primary,Mammals,Neocortical neuron number (used for Figure 3d)
+Lewitus_etal_2014,Lewitus_etal_2014_TableS8,Neuronal_number,Neocortex,Neocortex,brain_structure_volume,N.n,count (number),NA,primary,Mammals,Neocortical neuron number (used for Figure 3d)
+Young_etal_2013_b,Young_etal_2013_b_Table1,total_cells,Neocortex,Neocortex,cell_counts,count,count (number),NA,secondary,Primates,total number of cells in the region
+Young_etal_2013_b,Young_etal_2013_b_Table1,total_cells,Neocortex,Neocortex,brain_structure_volume,count,count (number),NA,secondary,Primates,total number of cells in the region
+Young_etal_2013_b,Young_etal_2013_b_Table1,total_neurons,Neocortex,Neocortex,cell_counts,count,count (number),NA,secondary,Primates,total number of neurons (NeuN+) in the region
+Young_etal_2013_b,Young_etal_2013_b_Table1,total_neurons,Neocortex,Neocortex,brain_structure_volume,count,count (number),NA,secondary,Primates,total number of neurons (NeuN+) in the region
+__merging_cortical_areas,Changizi__2001_Figure3; Finlay_etal_2006_Table6.1,n_cortical_areas,Neocortex,Neocortex,cell_counts,Count,count (number),NA,primary,Mammals,Total number of distinct cortical areas/fields identified in the species.
+__merging_cortical_areas,Changizi__2001_Figure3; Finlay_etal_2006_Table6.1,n_cortical_areas,Neocortex,Neocortex,brain_structure_volume,Count,count (number),NA,primary,Mammals,Total number of distinct cortical areas/fields identified in the species.
 deSousa_etal_2010,deSousa_etal_2010,neocortex_N,Neocortex,Neocortex,cell_counts,Count,count (number),N,metadata,Primates,number of specimens for neocortex volume
 deSousa_etal_2010,deSousa_etal_2010,neocortex_N,Neocortex,Neocortex,brain_structure_volume,Count,count (number),N,metadata,Primates,number of specimens for neocortex volume
+Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,Neuron_density_per_mm3,Neocortex,Neocortex,cell_counts,N.p.mm3,density (per mass/volume),NA,secondary,Mammals,Neuronal density in neocortex
+Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,Neuron_density_per_mm3,Neocortex,Neocortex,brain_structure_volume,N.p.mm3,density (per mass/volume),NA,secondary,Mammals,Neuronal density in neocortex
+Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,Astrocyte_density_per_mm3,Neocortex,Neocortex,cell_counts,A.p.mm3,density (per mass/volume),NA,secondary,Mammals,Astrocyte density in neocortex
+Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,Astrocyte_density_per_mm3,Neocortex,Neocortex,brain_structure_volume,A.p.mm3,density (per mass/volume),NA,secondary,Mammals,Astrocyte density in neocortex
+Collins_etal_2016,Collins_etal_2016_Table1,pct_neurons,Neocortex,Neocortex,cell_counts,pct,percentage (relative),NA,primary,Primates,fraction of cells that are neurons
+Collins_etal_2016,Collins_etal_2016_Table1,pct_neurons,Neocortex,Neocortex,brain_structure_volume,pct,percentage (relative),NA,primary,Primates,fraction of cells that are neurons
+Young_etal_2013_b,Young_etal_2013_b_Table1,pct_neurons,Neocortex,Neocortex,cell_counts,pct,percentage (relative),NA,secondary,Primates,average percent of cells that are neurons
+Young_etal_2013_b,Young_etal_2013_b_Table1,pct_neurons,Neocortex,Neocortex,brain_structure_volume,pct,percentage (relative),NA,secondary,Primates,average percent of cells that are neurons
+Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,GI,Neocortex,Neocortex,cell_counts,index,size index (allometric),NA,primary,Mammals,Gyrification index
+Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,GI,Neocortex,Neocortex,brain_structure_volume,index,size index (allometric),NA,primary,Mammals,Gyrification index
+Lewitus_etal_2014,Lewitus_etal_2014_TableS8,GI,Neocortex,Neocortex,cell_counts,index,size index (allometric),NA,secondary,Mammals,Gyrification index
+Lewitus_etal_2014,Lewitus_etal_2014_TableS8,GI,Neocortex,Neocortex,brain_structure_volume,index,size index (allometric),NA,secondary,Mammals,Gyrification index
 Collins_etal_2010,Collins_etal_2010_DatasetS1,surface_area_mm2,Neocortex,Neocortex,cell_counts,Area.mm2,surface area,NA,primary,Primates,cortical surface area of the tissue piece
 Collins_etal_2010,Collins_etal_2010_DatasetS1,surface_area_mm2,Neocortex,Neocortex,brain_structure_volume,Area.mm2,surface area,NA,primary,Primates,cortical surface area of the tissue piece
+Collins_etal_2016,Collins_etal_2016_Table1,area_cm2,Neocortex,Neocortex,cell_counts,Area.cm2,surface area,NA,primary,Primates,cortical surface area of the region
+Collins_etal_2016,Collins_etal_2016_Table1,area_cm2,Neocortex,Neocortex,brain_structure_volume,Area.cm2,surface area,NA,primary,Primates,cortical surface area of the region
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,cortical_area_mm2,Neocortex,Neocortex,cell_counts,Area.mm2,surface area,NA,primary,Mammals (marsupial to primate),total cortical sheet area
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,cortical_area_mm2,Neocortex,Neocortex,brain_structure_volume,Area.mm2,surface area,NA,primary,Mammals (marsupial to primate),total cortical sheet area
+Young_etal_2013_b,Young_etal_2013_b_Table1,cortical_surface_area_cm2,Neocortex,Neocortex,cell_counts,Area.cm2,surface area,NA,secondary,Primates,total cortical surface area of the hemisphere (Table S1)
+Young_etal_2013_b,Young_etal_2013_b_Table1,cortical_surface_area_cm2,Neocortex,Neocortex,brain_structure_volume,Area.cm2,surface area,NA,secondary,Primates,total cortical surface area of the hemisphere (Table S1)
+__merging_cortical_areas,Finlay_etal_2006_Table6.1,CorticalSurface_Area.mm2,Neocortex,Neocortex,cell_counts,Area.mm2,surface area,mean across sources,primary,Mammals,"Total (neo)cortical SHEET surface area — the fully UNFOLDED cortical mantle including buried/sulcal cortex, i.e. NOT the exposed/pial surface only. Whole cortex (not a sub-region)."
+__merging_cortical_areas,Finlay_etal_2006_Table6.1,CorticalSurface_Area.mm2,Neocortex,Neocortex,brain_structure_volume,Area.mm2,surface area,mean across sources,primary,Mammals,"Total (neo)cortical SHEET surface area — the fully UNFOLDED cortical mantle including buried/sulcal cortex, i.e. NOT the exposed/pial surface only. Whole cortex (not a sub-region)."
+__merging_cortical_areas,Collins_etal_2010_DatasetS1,CorticalSurface_Area.mm2,Neocortex,Neocortex,cell_counts,Area.mm2,surface area,NA,primary,Primates,Total cortical sheet surface area (see above).
+__merging_cortical_areas,Collins_etal_2010_DatasetS1,CorticalSurface_Area.mm2,Neocortex,Neocortex,brain_structure_volume,Area.mm2,surface area,NA,primary,Primates,Total cortical sheet surface area (see above).
+__merging_cortical_areas,Turner_etal_2016_Table1,CorticalSurface_Area.mm2,Neocortex,Neocortex,cell_counts,Area.mm2,surface area,NA,primary,Primates,Total cortical sheet surface area (see above).
+__merging_cortical_areas,Turner_etal_2016_Table1,CorticalSurface_Area.mm2,Neocortex,Neocortex,brain_structure_volume,Area.mm2,surface area,NA,primary,Primates,Total cortical sheet surface area (see above).
+Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,Gray_matter_thickness_mm,Neocortex,Neocortex,cell_counts,thickness.mm,thickness.mm,NA,primary,Mammals,Neocortical grey-matter thickness
+Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,Gray_matter_thickness_mm,Neocortex,Neocortex,brain_structure_volume,thickness.mm,thickness.mm,NA,primary,Mammals,Neocortical grey-matter thickness
 Changizi__2001,Changizi__2001_Figure3,brain_volume_mm3,Neocortex,Neocortex,cell_counts,Volume.mm3,volume,NA,primary,Mammals (monotreme to human),neocortical grey-matter volume (unlogged 10^log)
 Changizi__2001,Changizi__2001_Figure3,brain_volume_mm3,Neocortex,Neocortex,brain_structure_volume,Volume.mm3,volume,NA,primary,Mammals (monotreme to human),neocortical grey-matter volume (unlogged 10^log)
 Frahm_etal_1982,Frahm_etal_1982_Table2,total_neocortex_mm3,Neocortex,Neocortex,cell_counts,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",total neocortex volume in mm3 (grey + white matter)
@@ -440,6 +611,8 @@ deSousa_etal_2010,deSousa_etal_2010,neocortex_volume_cm3,Neocortex,Neocortex,cel
 deSousa_etal_2010,deSousa_etal_2010,neocortex_volume_cm3,Neocortex,Neocortex,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,neocortex volume (grey+white; paleocortex removed)
 deSousa_etal_2010,deSousa_etal_2010_Table1,Neocortex_mm3,Neocortex,Neocortex,cell_counts,Vol.mm3,volume,NA,primary,Insectivora & Primates,Neocortex (Vol.mm3)
 deSousa_etal_2010,deSousa_etal_2010_Table1,Neocortex_mm3,Neocortex,Neocortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Insectivora & Primates,Neocortex (Vol.mm3)
+__merging_cortical_areas,Finlay_etal_2006_Table6.1,n_somatomotor_areas,Neocortex (somatomotor),Neocortex (somatomotor),NA,Count,count (number),NA,primary,Mammals,Number of somatomotor cortical areas/fields.
+__merging_cortical_areas,Finlay_etal_2006_Table6.1,n_visual_areas,Neocortex (visual),Neocortex (visual),NA,Count,count (number),NA,primary,Mammals,Number of visual cortical areas/fields.
 Bush_Allman_2003,Bush_Allman_2003,neo_gray_cm3,NeocortexGrey,NeocortexGrey,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,neocortex grey matter volume
 Bush_Allman_2004_a,Bush_Allman_2004_a,neocortex_grey_cm3,NeocortexGrey,NeocortexGrey,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,neocortex grey matter volume
 Bush_Allman_2004_b,Bush_Allman_2004_b,neocortex_grey_cm3,NeocortexGrey,NeocortexGrey,brain_structure_volume,Volume.cm3,volume,NA,primary,NA,neocortex grey matter volume
@@ -497,6 +670,7 @@ Smaers_etal_2017,Smaers_etal_2017_TableS1_part1_volumes,prefrontal_gray,Prefront
 Smaers_etal_2017,Smaers_etal_2017_TableS1_part1_volumes,prefrontal_white,PrefrontalCortex,PrefrontalCortex,NA,Volume,volume,NA,both,Primates,prefrontal cortex white matter volume
 Baron_etal_1987,Baron_etal_1987_Table1,PRPI,PrepiriformCortex,Prepiriform_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",prepiriform cortex
 Zilles__Rehkamper_1988,Zilles__Rehkamper_1988_Table12-2,Regio_praepiriformis,Prepiriform_cortex,Prepiriform_cortex,brain_structure_volume,Vol.mm3,volume,NA,primary,Primates (Pongo),regio praepiriformis (prepiriform cortex) fresh volume
+__merging_cortical_areas,Young_etal_2013_Table1,M1_Surface_Area.mm2,Primary motor cortex (M1),Primary motor cortex (M1),NA,Area.mm2,surface area,NA,primary,Primates,REGIONAL sub-trait — surface area of primary motor cortex (M1) ONLY. Never pooled with whole-cortex CorticalSurface_Area.mm2 (trait_class = regional).
 Smaers_etal_2017,Smaers_etal_2017_TableS1_part2_surfacearea,primary_visual_surface,PrimaryVisualCortex,PrimaryVisualCortex,NA,surface area,surface area,NA,both,Primates,primary visual cortex surface area
 Smaers_etal_2017,Smaers_etal_2017_TableS1_part1_volumes,primary_visual_gray,PrimaryVisualCortex,PrimaryVisualCortex,NA,Volume,volume,NA,both,Primates,primary visual cortex grey matter volume
 Smaers_etal_2017,Smaers_etal_2017_TableS1_part1_volumes,primary_visual_white,PrimaryVisualCortex,PrimaryVisualCortex,NA,Volume,volume,NA,both,Primates,primary visual cortex white matter volume
@@ -551,19 +725,30 @@ deSousa_etal_2010,deSousa_etal_2010,V1_area_striata_grey_mm3,V1_AreaStriata,V1_A
 deSousa_etal_2010,deSousa_etal_2010,V1_area_striata_volume_cm3,V1_AreaStriata,V1_AreaStriata,NA,Volume.cm3,volume,mean,primary,Primates,primary visual cortex (area striata) volume
 deSousa_etal_2010,deSousa_etal_2010,left_V1_volume_cm3,V1_AreaStriata,V1_AreaStriata,NA,Volume.cm3,volume,NA,primary,NA,LEFT V1 (area striata) grey matter volume
 Matano_etal_1985_b,Matano_etal_1985_b_Table1,ventral_pons_mm3,Ventral_pons,Ventral_pons,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",volume of the ventral pons in mm3
+Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,Ventricle_1_2_volume_mm3,Ventricle,Ventricle,NA,Vol.mm3,volume,NA,secondary,Mammals,Volume of lateral ventricles (1 and 2)
 Stephan_etal_1981,Stephan_etal_1981_TablesI-VI,Ventricles,Ventricles,Ventricles,brain_structure_volume,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",ventricular system
 Baron_etal_1988,Baron_etal_1988_Table1,VC,VestibularComplex,VestibularComplex,NA,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",complexus vestibularis (vestibular nuclear complex; sum of VI+VL+VM+VS)
 Baron_etal_1988,Baron_etal_1988_Table1,VI,VestibularNucleusDescending,VestibularNucleusDescending,NA,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",nucleus vestibularis descendens (inferior/descending vestibular nucleus)
 Baron_etal_1988,Baron_etal_1988_Table1,VL,VestibularNucleusLateral,VestibularNucleusLateral,NA,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",nucleus vestibularis lateralis (lateral vestibular nucleus)
 Baron_etal_1988,Baron_etal_1988_Table1,VM,VestibularNucleusMedial,VestibularNucleusMedial,NA,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",nucleus vestibularis medialis (medial vestibular nucleus)
 Baron_etal_1988,Baron_etal_1988_Table1,VS,VestibularNucleusSuperior,VestibularNucleusSuperior,NA,Vol.mm3,volume,NA,primary,"Insectivora, Scandentia & Primates",nucleus vestibularis superior (superior vestibular nucleus)
+Krubitzer_Kaas_1990,Krubitzer_Kaas_1990_Table1,pct_17,VisualArea17,VisualArea17,NA,pct.neocortex_surface,surface area,NA,primary,Primates,area 17 (V-I / striate) as percent of total neocortex surface
+Krubitzer_Kaas_1990,Krubitzer_Kaas_1990_Table1,pct_18,VisualArea18,VisualArea18,NA,pct.neocortex_surface,surface area,NA,primary,Primates,area 18 (V-II) as percent of total neocortex surface
 Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Glia neuron ratio,VisualCortex,VisualCortex,NA,G.p.N.Stereology,G.p.N.Stereology,NA,secondary,Mammals,NA
 Lewitus_etal_2014,Lewitus_etal_2014_TableS2,Glia neuron ratio,VisualCortex,VisualCortex,NA,G.p.N.Stereology,G.p.N.Stereology,NA,secondary,Mammals,_Ð ratio of glia to neuron cells in adult visual cortex
 Lewitus_etal_2013,Lewitus_etal_2013_TableA1,Astrocyte density (per mm3),VisualCortex,VisualCortex,NA,G.p.mm3.Stereology,density (per mass/volume),NA,primary,Mammals,NA
 Lewitus_etal_2014,Lewitus_etal_2014_TableS1,Glial cell density,VisualCortex,VisualCortex,NA,G.p.mm3.Stereology,density (per mass/volume),NA,secondary,Mammals,NA
 Lewitus_etal_2014,Lewitus_etal_2014_TableS2,Glial cell density,VisualCortex,VisualCortex,NA,G.p.mm3.Stereology,density (per mass/volume),NA,secondary,Mammals,Ð adult visual cortex; cells per mm3
+Iwaniuk_etal_2001,Iwaniuk_etal_2001_Table2,Brain Size,WholeBrain,WholeBrain,cell_counts,BrainSize.residual,BrainSize.residual,NA,primary,Rodentia,relative brain size (residual from the brain-body regression)
+Iwaniuk_etal_2001,Iwaniuk_etal_2001_Table4,Brain size,WholeBrain,WholeBrain,cell_counts,BrainSize.residual,BrainSize.residual,NA,primary,Primates,relative brain size (residual from the regression against body size)
+Caspar_etal_2022,Caspar_etal_2022_Supplementaryfile3,female_endocranial_volume_ml,WholeBrain,WholeBrain,cell_counts,ECV.ml,ECV.ml,NA,primary,Primates,female endocranial volume in millilitres
+Heldstab_etal_2016,Heldstab_etal_2016_TableS1,ECV_ml,WholeBrain,WholeBrain,cell_counts,ECV.ml,ECV.ml,NA,primary,Primates,female endocranial volume in millilitres
+Iwaniuk_etal_2001,Iwaniuk_etal_2001_Table1,EQ,WholeBrain,WholeBrain,cell_counts,EQ,EQ,mean,primary,Mammals,mean encephalization quotient for the order
+Iwaniuk_etal_2001,Iwaniuk_etal_2001_Table3,EQ,WholeBrain,WholeBrain,cell_counts,EQ,EQ,NA,primary,Marsupialia,relative brain size / encephalization quotient as printed in Table 3 (index)
 deSousa_etal_2010,deSousa_etal_2010,brain_N,WholeBrain,WholeBrain,cell_counts,Count,count (number),N,metadata,Primates,number of specimens for brain volume
+Collins_etal_2016,Collins_etal_2016_Table1,brain_mass_g,WholeBrain,WholeBrain,cell_counts,Mass.g,mass,NA,info,Primates,whole brain mass
 Finlay_etal_2006,Finlay_etal_2006_Table6.1,brainweight_g,WholeBrain,WholeBrain,cell_counts,Mass.g,mass,NA,primary,Mammals (marsupial to primate),brain weight
+Young_etal_2013_b,Young_etal_2013_b_Table1,brain_weight_g,WholeBrain,WholeBrain,cell_counts,Mass.g,mass,NA,info,Primates,brain weight (Table S1)
 deSousa_etal_2010,deSousa_etal_2010,brain_mass_g,WholeBrain,WholeBrain,cell_counts,Mass.g,mass,NA,primary,NA,fresh brain mass
 deSousa_etal_2013,deSousa_etal_2013,brain_weight_g,WholeBrain,WholeBrain,cell_counts,Mass.g,mass,NA,primary,NA,species mean brain weight
 Ashwell__2020,Ashwell_2020,brain_volume_mm3,WholeBrain,WholeBrain,cell_counts,Volume.mm3,volume,NA,primary,Mammalia,whole brain volume in cubic millimetres

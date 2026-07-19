@@ -26,10 +26,15 @@ common names moved to `common_name`, binomial to `Species`. Columns defined in
 ## Species note
 `Species` holds the binomial with two obvious transcription typos corrected —
 *Erinaceous* → *Erinaceus* and *Macaca ira* → *Macaca irus* — while the exact printed string is
-kept in `Species_as_printed`. Taxonomy is **not** modernised (e.g. *Cercopithecus pygerythrus*,
-*Hylobates syndactylus*, *Galago crassicaudatus*, *Pongo pygmaeus* left as printed; reconcile to
-`_keys/Stephan/species_key.csv` downstream). Four rows are genus-only as printed
-(*Paraechinus*, *Didelphis*, *Tarsius*, and *Erinaceus*). Note *Macaca irus* = *M. fascicularis*.
+kept in `Species_as_printed`. The corrections are applied from
+`reference_tables/Heffner_Masterton_1983_TableI_species_crosswalk.csv` (the same crosswalk system
+used for the 1975 table; neither of these two is in Iwaniuk 1999, so both are marked as spelling
+fixes). One further row is **imputed** from Iwaniuk 1999 (flagged `Iwaniuk_etal_1999_imputed` in the
+new `species_basis` column): the genus-only *Didelphis* → *Didelphis virginiana*. Taxonomy is
+**not** modernised (e.g. *Cercopithecus pygerythrus*, *Hylobates syndactylus*, *Galago
+crassicaudatus*, *Pongo pygmaeus* left as printed; reconcile to `_keys/Stephan/species_key.csv`
+downstream). The remaining genus-only rows (*Paraechinus*, *Tarsius*, *Erinaceus*) are kept as
+printed. Note *Macaca irus* = *M. fascicularis*.
 
 ## Provenance
 Secondary compilation: most anatomical values are drawn from the bracketed literature sources,

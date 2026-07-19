@@ -67,13 +67,9 @@ val_of <- function(x) str_trim(str_replace(replace_na(x, ""), "\\[.*$", ""))
 ref_of <- function(x) { m <- str_extract(replace_na(x, ""), "\\[.*\\]"); ifelse(is.na(m), "", m) }
 as_num <- function(x) suppressWarnings(as.numeric(str_replace_all(val_of(x), ",", "")))
 
-# Obvious transcription typos corrected in Species (taxonomy NOT modernised).
-# Genus-only entries (Paraechinus, Didelphis, Tarsius) are kept as printed.
-species_fix <- c(
-  "Erinaceous" = "Erinaceus",   # misspelling of the genus Erinaceus
-  "Macaca ira" = "Macaca irus"  # truncation of "irus" (= M. fascicularis; not modernised here)
-)
-fix_species <- function(x) ifelse(x %in% names(species_fix), species_fix[x], x)
+# Species typos are corrected via the crosswalk file (applied after the table is
+# assembled): reference_tables/<item>_species_crosswalk.csv. Taxonomy NOT modernised;
+# genus-only entries (Paraechinus, Didelphis, Tarsius) are kept as printed.
 
 # ---- assemble the lean table (snapshot only) -------------------------------
 
@@ -82,8 +78,9 @@ snap <- read_snapshot(snapshot_file, snapshot_sheet)
 final.dataframe <- snap %>%
   transmute(
     common_name              = str_squish(common_name),
-    Species                  = fix_species(str_squish(species)),
+    Species                  = str_squish(species),         # printed; resolved via crosswalk below
     Species_as_printed       = str_squish(species),
+    species_basis            = NA_character_,                # provenance, filled by the crosswalk
     phyletic_level           = as.integer(as_num(phyletic_level)),
     digital_dexterity        = as.integer(as_num(digital_dexterity)),
     body_weight_kg           = as_num(body_weight_kg),
@@ -105,6 +102,22 @@ final.dataframe <- snap %>%
   )
 
 options(scipen = 999)
+
+## ---- species crosswalk: correct typos + impute genus-only names (Iwaniuk 1999 + spelling) ----
+## Single source of truth: reference_tables/<item>_species_crosswalk.csv. Species_as_printed is
+## kept verbatim; Species is overwritten for matches; species_basis records the provenance.
+final.dataframe$species_basis <- ifelse(is.na(final.dataframe$Species_as_printed) |
+                                          final.dataframe$Species_as_printed == "",
+                                        "unspecified_in_source", "as_printed")
+xwalk_file <- file.path(folder, "reference_tables", paste0(item_name, "_species_crosswalk.csv"))
+if (file.exists(xwalk_file)) {
+  xw <- read.csv(xwalk_file, stringsAsFactors = FALSE, check.names = FALSE)
+  sp <- xw[xw$match_on == "species", , drop = FALSE]
+  h  <- match(final.dataframe$Species_as_printed, sp$key); ok <- !is.na(h)
+  final.dataframe$Species[ok]       <- sp$Species[h[ok]]
+  final.dataframe$species_basis[ok] <- sp$basis[h[ok]]
+  message("Species crosswalk: ", sum(ok), " name(s) resolved")
+}
 
 ## ---- SAVE: local CSV + DOI-named TSV in the shared database folder --------
 

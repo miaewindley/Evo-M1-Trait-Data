@@ -1,6 +1,8 @@
 Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
 Animal,common name of the animal as printed (parentheses give breed/qualifier),,,info,Mammals,Heffner_Masterton_1975_TableI,"common-name column; binomial is in Species. NA in Species = paper gives no species (e.g. 'Cow, unspecified')",
-Species,species binomial as printed in Table I,,Species,,primary,Mammals,Heffner_Masterton_1975_TableI,"reconcile to _keys/Stephan/species_key.csv; several printed spellings are transcription typos (see ReadMe species note); taxonomy not modernised",
+Species,resolved species binomial (typos corrected + genus-only/unspecified rows imputed),,Species,,primary,Mammals,Heffner_Masterton_1975_TableI,"resolved via reference_tables/Heffner_Masterton_1975_TableI_species_crosswalk.csv; see species_basis for provenance; taxonomy not modernised; reconcile to _keys/Stephan/species_key.csv",
+Species_as_printed,species name exactly as printed in Table I (NA where the paper left it unspecified),,Species,,info,Mammals,Heffner_Masterton_1975_TableI,"differs from Species for the 13 crosswalk rows",
+species_basis,"provenance of the Species value: as_printed / spelling_correction / Iwaniuk_etal_1999 / Iwaniuk_etal_1999_imputed / unspecified_in_source",,,info,Mammals,Heffner_Masterton_1975_TableI,"'imputed' = species not stated by Heffner, supplied from Iwaniuk 1999",
 Digital dexterity,digital dexterity rank (1-7); higher = greater dexterity,Behaviour,,rank,primary,Mammals,Heffner_Masterton_1975_TableI,,
 Body weight kg,body weight in kilograms,Body,BodyMass.kg,,primary,Mammals,Heffner_Masterton_1975_TableI,,
 Number of fibers per tract,number of fibres in the pyramidal (corticospinal) tract,CorticospinalTract,FiberCount,,primary,Mammals,Heffner_Masterton_1975_TableI,absolute count (e.g. 807000),

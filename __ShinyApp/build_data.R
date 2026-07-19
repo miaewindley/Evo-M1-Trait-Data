@@ -37,17 +37,36 @@ file.copy(file.path(repo, "__merging_cellcounts", "cellcounts_long.csv"),
 
 # ---- 2. melt the EvoM1 trait tables -> evom1_traits_long.csv -----------------
 TT <- file.path(repo, "____EvoM1_TraitTable")
+# Label = the publication each file's values come from (shown as the app's
+# Source column). Per-cell "<col>_Ref"/"_Source" columns override this where the
+# source table records a value-specific primary reference (e.g. CST fibre data).
 trait_files <- c(
-  "dexterity_corticospinaltract.xlsx" = "Dexterity & corticospinal tract",
-  "corticospinaltract_etc.xlsx"       = "Corticospinal tract & ecology",
-  "glia_gyrification.xlsx"            = "Glia, gyrification & life history",
-  "interlaminar_astrocytes.xlsx"      = "Interlaminar astrocytes"
+  "dexterity_corticospinaltract.xlsx" = "Heffner & Masterton 1975 (dexterity)",
+  "corticospinaltract_etc.xlsx"       = "Iwaniuk et al. 1999 (corticospinal tract & ecology)",
+  "glia_gyrification.xlsx"            = "Lewitus et al. 2014 (glia, gyrification & life history)",
+  "interlaminar_astrocytes.xlsx"      = "Falcone et al. 2019 (interlaminar astrocytes)",
+  "locomotion.xlsx"                   = "Granatosky 2018 (locomotion)",
+  "gait.xlsx"                         = "Wimberly et al. 2021 (walking gait)",
+  "manipulation.xlsx"                 = "Heldstab et al. 2016 (manipulation)",
+  "handedness.xlsx"                   = "Caspar et al. 2022 (handedness)",
+  "diet_foraging.xlsx"               = "Wilman et al. 2014 (EltonTraits diet & foraging)",
+  "v1_synapses_karl.xlsx"            = "Karl et al. 2024 (V1 synapses & mitochondria)",
+  "vocal_repertoire_schniter.xlsx"   = "Schniter & Peñaherrera-Aguirre 2026 (vocal repertoire size)",
+  "vocal_repertoire_manyprimates.xlsx" = "ManyPrimates 2022 (vocal repertoire size)",
+  "sleep.xlsx"                       = "Eagleman & Vaughn 2021 / Herculano-Houzel 2015 (sleep)"
 )
 id_cols  <- c("species_sci", "Species", "Animal", "Species Generic Name")
 suffixes <- c("_Source", " Source", "_Ref", " Ref", "_ref", " ref")
 is_src   <- function(c) any(endsWith(c, suffixes))
 base_of  <- function(c) { for (s in suffixes) if (endsWith(c, s))
                             return(trimws(substr(c, 1, nchar(c) - nchar(s)))); c }
+# Species key: prefer the harmonised binomial (species_sci) over the paper's
+# printed name, then normalise (drop *, underscores->space) so trait species
+# match the cell-count / volume species and can be correlated.
+clean_sp <- function(x) {
+  x <- gsub("\\*", "", trim(x)); x <- gsub("_", " ", x)
+  trimws(gsub("\\s+", " ", x))
+}
 
 trait_rows <- vector("list", 0L)
 for (i in seq_along(trait_files)) {
@@ -58,11 +77,14 @@ for (i in seq_along(trait_files)) {
   cols <- names(d)
   src_map <- list()
   for (cn in cols) if (nzchar(cn) && is_src(cn)) src_map[[base_of(cn)]] <- cn
-  sp_col <- if ("Species" %in% cols) "Species" else cols[1]
+  has_sci <- "species_sci" %in% cols
+  sp_col  <- if ("Species" %in% cols) "Species" else cols[1]
   for (r in seq_len(nrow(d))) {
-    sp <- d[[sp_col]][r]
+    sci <- if (has_sci) d[["species_sci"]][r] else NA
+    sp  <- if (!is.na(sci) && nzchar(trim(sci)) && tolower(trim(sci)) != "none")
+             sci else d[[sp_col]][r]
     if (is.na(sp) || !nzchar(trim(sp)) || tolower(trim(sp)) == "none") next
-    sp <- trim(sp)
+    sp <- clean_sp(sp)
     for (cn in cols) {
       if (!nzchar(cn) || cn %in% id_cols || is_src(cn)) next
       v <- d[[cn]][r]

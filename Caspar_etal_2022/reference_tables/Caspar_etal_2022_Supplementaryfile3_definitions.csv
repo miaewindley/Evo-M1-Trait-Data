@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Family,primate family,,,info,Primates,Caspar_etal_2022_Supplementaryfile3,,
+Species,species scientific binomial as printed,,Species,,primary,Primates,Caspar_etal_2022_Supplementaryfile3,"some rows are pooled labels (e.g. 'Cercopithecus diana/roloway', 'Pongo sp.'); reconcile to _keys/Stephan/species_key.csv",
+ecology,"habitat/ecology category (Arboreal / Terrestrial)",Ecology,,,primary,Primates,Caspar_etal_2022_Supplementaryfile3,,
+ecology_ref,source reference for the ecology assignment,,,info,Primates,Caspar_etal_2022_Supplementaryfile3,,
+female_endocranial_volume_ml,female endocranial volume in millilitres,WholeBrain,ECV.ml,,primary,Primates,Caspar_etal_2022_Supplementaryfile3,mostly from Powell et al. 2017; may overlap the repo volume merge,
+endocranial_volume_ref,source reference for the endocranial volume,,,info,Primates,Caspar_etal_2022_Supplementaryfile3,,
+endocranial_volume_notes,notes on the endocranial volume value,,,info,Primates,Caspar_etal_2022_Supplementaryfile3,"e.g. pooled sexes / data from closely related species",
+habitual_tool_use,"habitual foraging-related tool use in the wild (Yes / No)",Behaviour,,,primary,Primates,Caspar_etal_2022_Supplementaryfile3,,
+tool_use_ref,source reference for the tool-use assignment,,,info,Primates,Caspar_etal_2022_Supplementaryfile3,'N.A.' -> NA,
+tool_use_notes,notes on tool use,,,info,Primates,Caspar_etal_2022_Supplementaryfile3,,
+name_in_tree,species label used in the phylogenetic tree,,,info,Primates,Caspar_etal_2022_Supplementaryfile3,may differ from Species (e.g. Cebus_apella for Sapajus apella),
+source,source identifier,,Source,,info,Primates,Caspar_etal_2022_Supplementaryfile3,,

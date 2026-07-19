@@ -105,6 +105,37 @@ final.dataframe <- merged_df
 library(rstudioapi)
 item_name <- gsub("\\.R$", "", basename(.sp))
 
+## ---- species crosswalk: correct typos + impute genus-only/unspecified names ----
+## (Iwaniuk 1999 + obvious spelling). Species_as_printed keeps the printed name verbatim;
+## Species is overwritten for matches; species_basis records the provenance of each Species.
+## Single source of truth: reference_tables/<item>_species_crosswalk.csv
+final.dataframe$Species_as_printed <- final.dataframe$Species
+final.dataframe$species_basis <- ifelse(is.na(final.dataframe$Species_as_printed),
+                                        "unspecified_in_source", "as_printed")
+xwalk_file <- file.path(folder, "reference_tables", paste0(item_name, "_species_crosswalk.csv"))
+if (file.exists(xwalk_file)) {
+  xw <- read.csv(xwalk_file, stringsAsFactors = FALSE, check.names = FALSE)
+  # (a) match on the printed species name (typo fixes + genus-only imputations)
+  sp <- xw[xw$match_on == "species", , drop = FALSE]
+  h  <- match(final.dataframe$Species_as_printed, sp$key); ok <- !is.na(h)
+  final.dataframe$Species[ok]       <- sp$Species[h[ok]]
+  final.dataframe$species_basis[ok] <- sp$basis[h[ok]]
+  # (b) match on common name for rows the paper left unspecified (Species still NA)
+  cn <- xw[xw$match_on == "common_name", , drop = FALSE]
+  if (nrow(cn)) {
+    miss <- is.na(final.dataframe$Species)
+    h2   <- match(final.dataframe$Animal, cn$key); ok2 <- miss & !is.na(h2)
+    final.dataframe$Species[ok2]       <- cn$Species[h2[ok2]]
+    final.dataframe$species_basis[ok2] <- cn$basis[h2[ok2]]
+  }
+  message("Species crosswalk: ", sum(final.dataframe$species_basis != "as_printed" &
+          final.dataframe$species_basis != "unspecified_in_source"), " name(s) resolved")
+}
+# place Species_as_printed + species_basis directly after Species
+.cn <- names(final.dataframe); .cn <- .cn[!.cn %in% c("Species_as_printed","species_basis")]
+.cn <- append(.cn, c("Species_as_printed","species_basis"), after = which(.cn == "Species"))
+final.dataframe <- final.dataframe[, .cn]
+
 # Get Item encoded
 library(readxl) 
 filecodes <- read_excel(file.path(base, "__ReadMe.xlsx"), sheet = "Sheet1")

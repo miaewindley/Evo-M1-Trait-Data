@@ -5,17 +5,19 @@ brain-trait data compiled in this project.
 
 ## What it contains
 
-- **Compiled database** — harmonized long tables across three datasets
-  (brain-structure volumes, cell counts, and the EvoM1 trait table:
-  dexterity / corticospinal tract, gyrification, interlaminar astrocytes,
-  life-history & ecology): 13,531 non-missing values across 503 species and
-  309 measurements. Filter by dataset, species, measurement, and source;
-  download the current selection; scatter any two numeric variables
+- **Compiled database** — harmonized long tables across three dataset families:
+  **brain-structure volumes**, **cell counts**, and the **EvoM1 trait table**
+  (behavioural, ecological, life-history, and cellular traits — dexterity,
+  corticospinal tract, gyrification, interlaminar astrocytes, locomotion, gait,
+  manipulation, handedness, diet & foraging, vocal repertoire, V1 synapse /
+  mitochondria / neuron density, and more). ~18,000 non-missing values across
+  ~580 species and ~350 measurements. Filter by dataset, species, measurement,
+  and source; download the current selection; scatter any two numeric variables
   (log-log with fit line).
-- **Source tables** — 180 per-publication TSVs, each shown with its full
-  citation and linked to its DOI / PubMed / ISBN / dissertation record
-  (the identifier is the clickable link text), with source notes where
-  available.
+- **Source tables** — every per-publication TSV in `__Public/comparative-data`
+  (~195), each shown with its full citation and linked to its DOI / PubMed /
+  ISBN / dissertation record (the identifier is the clickable link text), with
+  source notes where available.
 - **About tab** — dataset summary plus a CC BY 4.0 license and attribution
   notice.
 
@@ -66,13 +68,6 @@ git add __ShinyApp/data/evom1_traits_long.csv __ShinyApp/data/source_manifest.cs
 git commit -m "Refresh Shiny app data" && git push
 ```
 
-One-time cleanup (the old bundled copies of the 180 source tables are no longer
-needed):
-
-```bash
-git rm -r __ShinyApp/data/source-tables && git commit -m "Drop duplicated source tables" && git push
-```
-
 > To point the app at a different branch or fork, set the `EVOM1_GH_BASE`
 > environment variable (defaults to the `main` branch of this repo).
 
@@ -115,7 +110,7 @@ To update later, re-run the same `deployApp(...)` call.
 ### Notes for shinyapps.io
 
 - The free tier allows a limited number of active hours per month; the bundle
-  here (~3 MB) is well within limits.
+  here (~1.6 MB, the four `data/` fallback files) is well within limits.
 - No secrets or credentials are needed — all data is static and public.
 - If you prefer an institutional server (Posit Connect / self-hosted Shiny
   Server), the same `__ShinyApp/` folder deploys there unchanged.

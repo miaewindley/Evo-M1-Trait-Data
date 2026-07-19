@@ -1,0 +1,5 @@
+Species,specimen,hemisphere,CorticalSurface_Area.mm2,basis,note
+Otolemur garnetti,07-104,left,2261,paper_text,"galago #1; paper states 2,261 mm2. Dataset S1 piece-sum (1138) undercounts — ~10 of 46 pieces absent"
+Otolemur garnetti,08-07,right,1849,paper_text,galago #2; matches Dataset S1 piece-sum (1849.5)
+Aotus nancymae,07-78,left,2036.5,dataset_s1_piece_sum,owl monkey; no whole-hemisphere total stated in text — Dataset S1 piece-sum used (flag)
+Papio cynocephalus anubis,09-27,NA,18577,paper_text,baboon; matches Dataset S1 piece-sum (18577.4)

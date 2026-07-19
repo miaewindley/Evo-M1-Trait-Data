@@ -1,0 +1,9 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Family,marsupial family,,,info,Marsupialia,Iwaniuk_etal_2001_Table3,forward-filled to every row in the R script,
+Species,species scientific binomial as printed,,Species,,primary,Marsupialia,Iwaniuk_etal_2001_Table3,reconcile to _keys/Stephan/species_key.csv,
+Play frequency,play-frequency score as printed (some rows carry a combined '2/3C' code),Behaviour,,rank,primary,Marsupialia,Iwaniuk_etal_2001_Table3,see Minimum/Maximum for the numeric split,
+Play frequency Minimum,minimum play-frequency value (numeric),Behaviour,,min,primary,Marsupialia,Iwaniuk_etal_2001_Table3,derived: '2/3C' -> min 2,
+Play frequency Maximum,maximum play-frequency value (numeric),Behaviour,,max,primary,Marsupialia,Iwaniuk_etal_2001_Table3,derived: '2/3C' -> max 3,
+Play wrestling,"wrestling-play score (0/1)",Behaviour,,rank,primary,Marsupialia,Iwaniuk_etal_2001_Table3,NA where not assessed,
+EQ,relative brain size / encephalization quotient as printed in Table 3 (index),WholeBrain,EQ,,primary,Marsupialia,Iwaniuk_etal_2001_Table3,value scaling as tabulated in the source; verify against paper before combining across tables,
+Neocortex,relative neocortex size as printed in Table 3 (index),Neocortex,,,primary,Marsupialia,Iwaniuk_etal_2001_Table3,value scaling as tabulated in the source,

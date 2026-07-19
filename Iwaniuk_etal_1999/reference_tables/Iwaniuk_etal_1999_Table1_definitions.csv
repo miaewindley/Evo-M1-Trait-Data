@@ -1,0 +1,11 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species scientific binomial as printed by Iwaniuk et al. 1999 (modern/corrected names),,Species,,primary,Mammals,Iwaniuk_etal_1999_Table1,"these are the corrected binomials for the Heffner & Masterton species; usable as a crosswalk to fix the 1975/1983 spellings; reconcile to _keys/Stephan/species_key.csv",
+Species Generic Name,common name of the animal as printed (column labelled 'Species Generic Name' in the source),,,info,Mammals,Iwaniuk_etal_1999_Table1,holds the common name (e.g. 'Spider monkey'),
+Depth,"depth of corticospinal-tract terminations in the spinal grey matter (ordinal score, 1-5)",CorticospinalTract,,rank,primary,Mammals,Iwaniuk_etal_1999_Table1,paired with Depth_Ref; re-scored from the source literature by Iwaniuk et al.,
+Depth_Ref,reference number for Depth,,,info,Mammals,Iwaniuk_etal_1999_Table1,keys into Iwaniuk_etal_1999_References (ref_number),
+Length,"length of the corticospinal-tract projection down the spinal cord (ordinal score, 1-8)",CorticospinalTract,,rank,primary,Mammals,Iwaniuk_etal_1999_Table1,paired with Length_Ref,
+Length_Ref,reference number for Length,,,info,Mammals,Iwaniuk_etal_1999_Table1,keys into Iwaniuk_etal_1999_References (ref_number),
+Dexterity,digital dexterity score (Heffner & Masterton scale),Behaviour,,rank,primary,Mammals,Iwaniuk_etal_1999_Table1,same trait as Heffner & Masterton 1975/1983 digital dexterity,
+Arboreality,degree of arboreality (ordinal ecological score),Ecology,,rank,primary,Mammals,Iwaniuk_etal_1999_Table1,new variable added by Iwaniuk et al. 1999,
+Diet,diet category (ordinal score),Ecology,,rank,primary,Mammals,Iwaniuk_etal_1999_Table1,new variable added by Iwaniuk et al. 1999,
+Hand–eye,"hand-eye coordination score (ordinal, 0-2)",Behaviour,,rank,primary,Mammals,Iwaniuk_etal_1999_Table1,new variable added by Iwaniuk et al. 1999,

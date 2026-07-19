@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_sci,Harmonised accepted binomial (project species key),,,,info,mammals,Wimberly_etal_2021_MammalGait,join key,added in build
+Species,Species name as printed in the source (underscores replaced by spaces),,,,info,mammals,Wimberly_etal_2021_MammalGait,printed name preserved,
+Order,Taxonomic order (as printed),,,,info,mammals,Wimberly_etal_2021_MammalGait,,
+Habitat,Substrate-use category scored by Wimberly (arboreal / terrestrial),Locomotion,category,,secondary,mammals,Wimberly_etal_2021_MammalGait,substrate is compiled as primary in Granatosky2018,categorical
+Duty_Factor,Mean stance duty factor: percentage of the stride cycle a foot maintains ground contact,Locomotion,percent,mean,primary,mammals,Wimberly_etal_2021_MammalGait,focal gait trait,
+Phase,Limb phase (diagonality): timing of forelimb footfall as percent of the stride after the ipsilateral hindlimb (Hildebrand),Locomotion,percent,mean,primary,mammals,Wimberly_etal_2021_MammalGait,focal gait trait,
+Gait,Symmetrical walking-gait category: DSDC diagonal-sequence diagonal-couplet / LSDC lateral-sequence diagonal-couplet / LSLC lateral-sequence lateral-couplet,Locomotion,category,,primary,mammals,Wimberly_etal_2021_MammalGait,derived from Phase and Duty_Factor,
+Foot_Posture,Foot posture: plantigrade / digitigrade / unguligrade,Locomotion,category,,primary,mammals,Wimberly_etal_2021_MammalGait,locomotor morphology; blank where unscored,
+Hindlimb_Length.mm,Hindlimb length,Body,Length.mm,mean,secondary,mammals,Wimberly_etal_2021_MammalGait,morphology / size,mm as printed
+Body_Mass.g,Body mass,Body,Mass.g,mean,secondary,mammals,Wimberly_etal_2021_MammalGait,already compiled elsewhere; kept for reference,g as printed
+Method:transforms,Log_HL / Log_BM / Log_HL_BM.1.3 / ArcSin_Phase / ArcSin_DF are analysis transforms retained in the snapshot only (re-derivable; not carried to the analysis CSV),,,,method,mammals,Wimberly_etal_2021_MammalGait,,
+Method:gait_scheme,Gait categories follow Hildebrand symmetrical-gait scheme (sequence x couplet),,,,method,mammals,Wimberly_etal_2021_MammalGait,,

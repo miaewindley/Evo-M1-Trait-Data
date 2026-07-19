@@ -1,0 +1,31 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_sci,Harmonised accepted binomial (project species key),,,,info,mammals,Wilman_etal_2014_MamFuncDat,join key,added in build; synonyms bridged via _keys (source_publication Wilman2014)
+Species,Species name as printed in the source (MSW3 Scientific),,,,info,mammals,Wilman_etal_2014_MamFuncDat,printed name preserved,
+MSW3_ID,Mammal Species of the World (3rd ed.) row ID,,,,info,mammals,Wilman_etal_2014_MamFuncDat,source taxonomy,
+Family,Family (MSW3),,,,info,mammals,Wilman_etal_2014_MamFuncDat,,
+Diet_Inv,Percent of diet from invertebrates,Diet,percent,,primary,mammals,Wilman_etal_2014_MamFuncDat,10 diet categories sum to ~100,%
+Diet_Vend,Percent of diet from endothermic vertebrates (mammals/birds),Diet,percent,,primary,mammals,Wilman_etal_2014_MamFuncDat,,%
+Diet_Vect,Percent of diet from ectothermic vertebrates (reptiles/amphibians),Diet,percent,,primary,mammals,Wilman_etal_2014_MamFuncDat,,%
+Diet_Vfish,Percent of diet from fish,Diet,percent,,primary,mammals,Wilman_etal_2014_MamFuncDat,,%
+Diet_Vunk,Percent of diet from vertebrates of unknown type,Diet,percent,,primary,mammals,Wilman_etal_2014_MamFuncDat,,%
+Diet_Scav,Percent of diet from carrion/scavenging,Diet,percent,,primary,mammals,Wilman_etal_2014_MamFuncDat,,%
+Diet_Fruit,Percent of diet from fruit,Diet,percent,,primary,mammals,Wilman_etal_2014_MamFuncDat,,%
+Diet_Nect,Percent of diet from nectar,Diet,percent,,primary,mammals,Wilman_etal_2014_MamFuncDat,,%
+Diet_Seed,Percent of diet from seeds,Diet,percent,,primary,mammals,Wilman_etal_2014_MamFuncDat,,%
+Diet_PlantO,Percent of diet from other plant material (roots/leaves/etc.),Diet,percent,,primary,mammals,Wilman_etal_2014_MamFuncDat,,%
+Diet_dominant,Diet category with the highest percentage (derived),Diet,category,,primary,mammals,Wilman_etal_2014_MamFuncDat,derived in build; argmax of the 10 diet %s,
+Diet_breadth,Number of diet categories with >0 percent (derived),Diet,count,,primary,mammals,Wilman_etal_2014_MamFuncDat,derived in build; range 1-10,
+Trophic_guild,Coarse guild from animal vs plant diet share (derived): Faunivore >=70% animal / Herbivore >=70% plant / else Omnivore,Diet,category,,primary,mammals,Wilman_etal_2014_MamFuncDat,derived in build; 70% threshold,
+Diet_Certainty,Confidence in diet assignment (ABC high / D1 / D2),,,,info,mammals,Wilman_etal_2014_MamFuncDat,EltonTraits certainty code,
+ForStrat_Value,Foraging stratum code (M/G/Ar/S/A),Foraging,code,,info,mammals,Wilman_etal_2014_MamFuncDat,raw source code,
+ForStrat_stratum,Foraging stratum (derived label): Marine/Ground/Arboreal/Scansorial/Aerial,Foraging,category,,primary,mammals,Wilman_etal_2014_MamFuncDat,derived from ForStrat_Value,
+ForStrat_Certainty,Confidence in foraging-stratum assignment,,,,info,mammals,Wilman_etal_2014_MamFuncDat,EltonTraits certainty code,
+Activity_Nocturnal,Active at night (1/0),Activity,binary,,info,mammals,Wilman_etal_2014_MamFuncDat,,
+Activity_Crepuscular,Active at dawn/dusk (1/0),Activity,binary,,info,mammals,Wilman_etal_2014_MamFuncDat,,
+Activity_Diurnal,Active during day (1/0),Activity,binary,,info,mammals,Wilman_etal_2014_MamFuncDat,,
+Activity_pattern,Activity pattern (derived): Nocturnal / Diurnal / Crepuscular / Cathemeral (nocturnal+diurnal),Activity,category,,primary,mammals,Wilman_etal_2014_MamFuncDat,derived from the three activity flags,
+Activity_Certainty,Confidence in activity assignment,,,,info,mammals,Wilman_etal_2014_MamFuncDat,EltonTraits certainty code,
+BodyMass.g,Body mass,Body,Mass.g,mean,secondary,mammals,Wilman_etal_2014_MamFuncDat,already compiled elsewhere; kept for reference; not merged from here,g
+BodyMass_SpecLevel,Body mass measured at species level (1) vs inferred from genus/family (0),,,,info,mammals,Wilman_etal_2014_MamFuncDat,,
+Method:diet_pct,Diet percentages are as published (EltonTraits); rows with all-zero diet have no diet data and derived diet fields are NA,,,,method,mammals,Wilman_etal_2014_MamFuncDat,,
+Method:derived,"Diet_dominant, Diet_breadth, Trophic_guild, ForStrat_stratum and Activity_pattern are derived in the reformat script from the raw EltonTraits columns; raw columns are retained",,,,method,mammals,Wilman_etal_2014_MamFuncDat,,

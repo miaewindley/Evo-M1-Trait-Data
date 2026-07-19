@@ -1,7 +1,7 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__flow_comparison/Seymour_Boyer_flow_combined.R","FAILED","Error in deframe(.) : could not find function ""deframe""
 Calls: %>%
-Execution halted","2026-07-18 20:25:38.902931","2026-07-18 20:25:39.575572",0.672641038894653
+Execution halted","2026-07-19 10:48:21.85317","2026-07-19 10:48:22.578953",0.725783109664917
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__imputing_cellcounts/cellcounts_imputations_diagnostic.R","FAILED","|-------------------------------------|
 | misty 0.8.2 (2026-05-16)            |
 | Miscellaneous Functions T. Yanagida |
@@ -341,7 +341,7 @@ Number of logged events: 2379
 Error in density.default(x = c(NA_real_, NA_real_, NA_real_, NA_real_,  : 
   need at least 2 points to select a bandwidth automatically
 Calls: densityplot ... <Anonymous> -> do.call -> <Anonymous> -> density.default
-Execution halted","2026-07-18 20:25:39.582054","2026-07-18 20:25:58.428592",18.846538066864
+Execution halted","2026-07-19 10:48:22.602705","2026-07-19 10:48:40.910573",18.3078680038452
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/volumes_compiled_DeCasien.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
@@ -354,7 +354,7 @@ Execution halted","2026-07-18 20:25:39.582054","2026-07-18 20:25:58.428592",18.8
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 Laterality guard OK: 25 one-side column(s) correctly suffixed.
 Error: paper_long('Stephan_etal_1970_Tables1-6'): no measured columns matched the term map. df cols: Species, body_weight_g, brain_weight_mg, total_brain_net_mm3, medulla_oblongata_mm3, cerebellum_mm3, mesencephalon_mm3, diencephalon_mm3, telencephalon_mm3, bulbus_olfactorius_mm3, palaeocortex_plus_amygdala_mm3, septum_mm3, striatum_mm3, schizocortex_mm3, hippocampus_mm3, neocortex_mm3, source
-Execution halted","2026-07-18 20:26:10.016723","2026-07-18 20:26:11.270318",1.25359511375427
+Execution halted","2026-07-19 10:49:01.706925","2026-07-19 10:49:02.817734",1.1108090877533
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/app.R","FAILED","
 Attaching package: ‘bslib’
 
@@ -370,20 +370,20 @@ The following objects are masked from ‘package:shiny’:
     dataTableOutput, renderDataTable
 
 
-Listening on http://127.0.0.1:6447
+Listening on http://127.0.0.1:7579
 
 
-Execution halted","2026-07-18 20:26:14.311362","2026-07-18 20:31:14.394003",300.082640886307
+Execution halted","2026-07-19 10:49:05.704463","2026-07-19 10:54:05.774015",300.069551944733
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/build_data.R","FAILED","repo: /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data
 out:  /Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__ShinyApp/data
 [1] TRUE
 [1] TRUE
-evom1 traits rows: 3850
-source tables indexed (served from GitHub): 181
+evom1 traits rows: 8319
+source tables indexed (served from GitHub): 195
 Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
   more columns than column names
 Calls: lapply -> FUN -> read.delim -> read.table
-Execution halted","2026-07-18 20:31:14.403707","2026-07-18 20:31:15.979678",1.57597088813782
+Execution halted","2026-07-19 10:54:05.781228","2026-07-19 10:54:10.459309",4.67808103561401
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_Zilles_Rehkamper_1988_provenance.R","FAILED","New names:
 • `` -> `...2`
 • `` -> `...3`
@@ -454,7 +454,7 @@ One or more parsing issues, call `problems()` on your data frame for details,
 e.g.:
   dat <- vroom(...)
   problems(dat) 
-Execution halted","2026-07-18 20:31:15.983152","2026-07-18 20:31:17.123351",1.14019918441772
+Execution halted","2026-07-19 10:54:10.46305","2026-07-19 10:54:11.760656",1.2976062297821
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heffner_Masterton_1983/Heffner_Masterton_1983_TableI.R","FAILED","New names:
 • `` -> `...1`
 • `` -> `...2`
@@ -499,13 +499,13 @@ Backtrace:
  23. └─base::.handleSimpleError(...)
  24.   └─dplyr (local) h(simpleError(msg, call))
  25.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
-Execution halted","2026-07-18 20:37:47.974268","2026-07-18 20:37:48.910169",0.935900926589966
+Execution halted","2026-07-19 11:00:50.597755","2026-07-19 11:00:51.379612",0.781857013702393
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Kochiyama_etal_2018/Kochiyama_etal_2018_reconcile_relative_volumes.R","FAILED","Error in file(file, ""rt"") : cannot open the connection
 Calls: read.csv -> read.table -> file
 In addition: Warning message:
 In file(file, ""rt"") :
   cannot open file 'Kochiyama_etal_2018_Figure3.csv': No such file or directory
-Execution halted","2026-07-18 20:38:41.222406","2026-07-18 20:38:41.842089",0.619683027267456
+Execution halted","2026-07-19 11:01:27.066444","2026-07-19 11:01:27.338667",0.272222995758057
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Seymour_etal_2017/Seymour_etal_2017_TableS1_snapshot_extract.R","FAILED","Error in library(officer) : there is no package called ‘officer’
 Calls: suppressPackageStartupMessages -> withCallingHandlers -> library
-Execution halted","2026-07-18 20:39:07.370814","2026-07-18 20:39:07.753038",0.382223844528198
+Execution halted","2026-07-19 11:01:48.361337","2026-07-19 11:01:48.712205",0.350867986679077

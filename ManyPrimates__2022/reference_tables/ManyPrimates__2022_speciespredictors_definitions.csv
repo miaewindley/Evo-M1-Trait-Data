@@ -1,0 +1,10 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Species,species scientific binomial (from species_latin; underscores replaced with spaces),,Species,,primary,Primates,ManyPrimates__2022_speciespredictors,reconcile to _keys/Stephan/species_key.csv,
+common_name,common (English) name as printed,,,info,Primates,ManyPrimates__2022_speciespredictors,,,
+family,family as printed,,,info,Primates,ManyPrimates__2022_speciespredictors,,,
+superordinate_group,superordinate group (ape / old_world_monkey / new_world_monkey / lemur / ...),,,info,Primates,ManyPrimates__2022_speciespredictors,,,
+vocal_repertoire_types,vocal repertoire size = number of vocalization types,Behaviour,count.vocalizations,,primary,Primates,ManyPrimates__2022_speciespredictors,"source column header: ""vocal_repertoire (# vocalization types)""",
+vocal_repertoire_source,per-species primary reference for the vocal repertoire value,,,info,Primates,ManyPrimates__2022_speciespredictors,verbatim from the compilation Source column,,
+vocal_repertoire_comment,per-species comment on the vocal repertoire value,,,info,Primates,ManyPrimates__2022_speciespredictors,e.g. congeneric substitution notes,,
+source,source identifier,,Source,,info,Primates,ManyPrimates__2022_speciespredictors,,
+Method:count.vocalizations,repertoire size = count of distinct call/vocalization types catalogued for the species; a discrete count not a rate,Behaviour,,,method,Primates,ManyPrimates__2022_speciespredictors,shared definition with Schniter 2026 vocal_repertoire_size,

@@ -1,0 +1,6 @@
+Original_Term,Reference,Standardized_Term
+Species,Finlay_etal_2006_Table6.1,Species
+visual_areas,Finlay_etal_2006_Table6.1,n_visual_areas
+somatomotor_areas,Finlay_etal_2006_Table6.1,n_somatomotor_areas
+total_areas,Finlay_etal_2006_Table6.1,n_cortical_areas
+cortical_area_mm2,Finlay_etal_2006_Table6.1,CorticalSurface_Area.mm2

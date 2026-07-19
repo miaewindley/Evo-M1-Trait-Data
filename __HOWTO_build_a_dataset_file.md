@@ -301,7 +301,10 @@ Current and planned merge folders, each following the same `standardized_term` +
 
 - **`__merging_cellcounts/`** — optical-fractionator neuron/cell counts (Herculano-Houzel, Kverkova, …).
 - **`__merging_volumes/`** — histologically-derived structure volumes (Stephan collection + Bush, …).
-- **more in progress** — e.g. **`__merging_metabolic/`** (metabolic data), and others as new data
+- **`__merging_cerebral_metabolic_rate/`** — brain cerebral metabolic rate (CMRgl/CMRO2/CBF;
+  Kaufman, Karbowski, Heiss). Compilation-aware resolution (dedupes primary studies shared
+  between the Kaufman & Karbowski compilations). Whole-body/basal MR is a separate measure class.
+- **more in progress** — and others as new data
   types are added. Build each by copying an existing merge folder's structure and re-pointing it at
   the relevant primary tables; the per-paper build (this guide) is shared by all of them.
 

@@ -1,0 +1,3 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+ref_number,"reference number as printed in the paper's reference list ([N] markers)",,,info,,Iwaniuk_etal_1999_References,"lookup key: Table1 columns Depth_Ref and Length_Ref point to these numbers",
+citation,full bibliographic citation as printed,,,info,,Iwaniuk_etal_1999_References,parsed from the plain-text reference list; whitespace normalised,

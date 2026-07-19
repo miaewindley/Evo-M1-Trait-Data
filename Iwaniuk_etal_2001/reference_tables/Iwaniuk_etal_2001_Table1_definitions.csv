@@ -1,0 +1,4 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Order,mammalian order,,,info,Mammals,Iwaniuk_etal_2001_Table1,order-level summary (15 orders),
+Play,"mean play score for the order (ordinal, ~1-3)",Behaviour,,mean,primary,Mammals,Iwaniuk_etal_2001_Table1,higher = more play,
+EQ,mean encephalization quotient for the order,WholeBrain,EQ,mean,primary,Mammals,Iwaniuk_etal_2001_Table1,relative brain size (observed/expected brain mass),
