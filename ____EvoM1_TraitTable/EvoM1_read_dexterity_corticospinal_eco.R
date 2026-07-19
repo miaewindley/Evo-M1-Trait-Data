@@ -62,5 +62,21 @@ Iwaniuk_etal_1999_Table1$species_sci[Iwaniuk_etal_1999_Table1$Species == "Monode
 # Reorder the columns to make "species_sci" the first column
 Iwaniuk_etal_1999_Table1 <- Iwaniuk_etal_1999_Table1[, c("species_sci", setdiff(names(Iwaniuk_etal_1999_Table1), "species_sci"))]
 
+# Emit a dedicated dexterity-only input for the behaviour merge (species_sci +
+# value), BEFORE dropping the column. Not in build_data.R trait_files -> feeds
+# only __merging_behaviour/, never the app directly.
+write_xlsx(data.frame(
+  species_sci = Iwaniuk_etal_1999_Table1$species_sci,
+  Species     = Iwaniuk_etal_1999_Table1$Species,
+  Dexterity   = Iwaniuk_etal_1999_Table1$Dexterity,
+  stringsAsFactors = FALSE, check.names = FALSE),
+  paste0(folder_path, "dexterity_iwaniuk.xlsx"))
+
+# Drop the dexterity rating from the app-facing table: Iwaniuk 1999 re-uses
+# Heffner & Masterton's (1975) dexterity data unchanged, and it now lives once in
+# the behaviour merge (__merging_behaviour/ -> behaviour_long.csv). This table
+# keeps only the corticospinal-tract (depth/length) and socioecological columns.
+Iwaniuk_etal_1999_Table1[["Dexterity"]] <- NULL
+
 # Write the dataframe to an Excel file
 write_xlsx(Iwaniuk_etal_1999_Table1, paste0(folder_path, "corticospinaltract_etc.xlsx"))

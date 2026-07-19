@@ -1,0 +1,30 @@
+file,chosen_column,unit,all_brain_columns
+10.1016%2Fs0047-2484(03)00028-9_Table1.tsv,brainweight_known (non-numeric),,brainweight_known
+10.1016%2Fs0047-2484(03)00028-9_Table2.tsv,brainweight_known (non-numeric),,brainweight_known
+10.1002%2Fcne.25669_TABLE1.tsv,Brain mass (g),g,Brain mass (g)
+10.1002%2Fcne.70089_TABLE1.tsv,"Whole brain_Mass, g",g,"Whole brain_Mass, g"
+10.1016%2Fj.jhevol.2009.11.011_Table1.tsv,brain_mass_g,g,brain_mass_g
+10.1016%2Fj.jhevol.2012.12.003_Table1.tsv,brain_mass_mg,mg,brain_mass_mg
+10.1038%2Fs41598-018-26062-8_TableS1.tsv,Brain_Mass.g,g,Brain_Mass.g; Brain_Mass.g_SD
+10.1073%2Fpnas.0905777106_TableS1.tsv,Absolute Brain Mass (g),g,Absolute Brain Mass (g); Neonatal Brain Mass (g); Absolute Brain Mass (g) Ref
+10.1073%2Fpnas.1318894110_Table1.tsv,brain_weight_g,g,brain_weight_g
+10.1073%2Fpnas.1524208113_Table1.tsv,brain_mass_g,g,brain_mass_g
+10.1093%2Fjmammal%2Fgyz043_SupplementaryDataSD1.tsv,Mean_brain_mass_g,g,Mean_brain_mass_g
+10.1093%2Foso%2F9780198568742.003.0006_Table6.1.tsv,brainweight_g,g,brainweight_g
+10.1093%2Fscan%2Fnsv128_TableS1.tsv,brain_mass_g,g,brain_mass_g
+10.1098%2Frspb.2015.1853_Table1.tsv,brain.mass..g.or.cm3.,g,brain.mass..g.or.cm3.
+10.1159%2F000155963_TableI.tsv,Brain_weight,mg,Brain_weight
+10.1159%2F000155963_TableII.tsv,Brain_weight,mg,Brain_weight
+10.1159%2F000155963_TableIII.tsv,Brain_weight,mg,Brain_weight
+10.1159%2F000155963_TablesI-VI.tsv,Brain_weight,mg,Brain_weight
+10.1159%2F000346495_Table1.tsv,brain_weight_mg,mg,brain_weight_mg
+10.1159%2F000437413_Table5.tsv,"Brain mass, g",g,"Brain mass, g; Brain mass, g SD"
+10.1371%2Fjournal.pbio.1002000_TableS1.tsv,Brain_weight_g,g,Brain_weight_g; Neonate_brain_weight_g
+10.3389%2Ffnhum.2013.00424_TableS2partial.tsv,Brain_weight_g,g,Brain_weight_g
+ISBN%3A0390672505_TABLE1.tsv,brain_weight_mg,mg,brain_weight_mg
+ISBN%3A0390672505_TABLE2.tsv,brain_weight_mg,mg,brain_weight_mg
+ISBN%3A0390672505_TABLE3.tsv,brain_weight_mg,mg,brain_weight_mg
+ISBN%3A0390672505_Tables1-6.tsv,brain_weight_mg,mg,brain_weight_mg
+NQ%3A61662_APPENDIXI.tsv,brain_weight_g,g,brain_weight_g; brain_weight_raw; brainweight_known
+PMID%3A9672110_Table1.tsv,brain_weight_mg,mg,brain_weight_mg
+UMI%3A3017523_TableA-15.tsv,Brain_Mass.mg,mg,Brain_Mass.mg; NetBrain_Mass.mg

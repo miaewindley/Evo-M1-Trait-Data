@@ -105,6 +105,7 @@ JardimMesseder_etal_2017,JardimMesseder_etal_2017_Table1,O/N,NA,(structure-agnos
 Balzeau_etal_2012,Balzeau_etal_2012_Table2,Slope,NA,(structure-agnostic; see data columns),NA,regression,regression,slope,secondary,Homo,slope of the (log-log) regression of lobe surface on endocranial volume
 Balzeau_etal_2012,Balzeau_etal_2012_Table2,Intercept,NA,(structure-agnostic; see data columns),NA,regression,regression,intercept,secondary,Homo,intercept of the regression
 Balzeau_etal_2012,Balzeau_etal_2012_Table2,Rsquared,NA,(structure-agnostic; see data columns),NA,regression,regression,R2,secondary,Homo,coefficient of determination (R-squared) of the regression
+Burger_etal_2019,Burger_etal_2019_SupplementaryDataSD1,T_resid,NA,(structure-agnostic; see data columns),NA,residual,residual,NA,flagged,mammals,Residual (as printed) — NOT reproducible (see Brain.resid note)
 Balzeau_etal_2012,Balzeau_etal_2012_Table3,Mean_surface_sizecorrected,NA,(structure-agnostic; see data columns),NA,size.corrected.surface,surface area,Mean,secondary,Homo,mean size-corrected surface dimension of the lobe
 Balzeau_etal_2012,Balzeau_etal_2012_Table3,V_star,NA,(structure-agnostic; see data columns),NA,size.corrected.surface,surface area,V*,secondary,Homo,size-corrected coefficient of variation of the lobe surface
 Krubitzer_Kaas_1990,Krubitzer_Kaas_1990_Table1,pct_total_8fields,NA,(structure-agnostic; see data columns),NA,pct.neocortex_surface,surface area,NA,primary,Primates,Total column as printed = sum of the eight visual fields as percent of neocortex
@@ -219,6 +220,7 @@ Schniter_Penaherrera-Aguirre_2026,Schniter_Penaherrera-Aguirre_2026_data,vocal_r
 Caspar_etal_2022,Caspar_etal_2022_Table1,MeanHI,Behaviour,Behaviour,NA,HandednessIndex,size index (allometric),mean,primary,Primates,"mean handedness index (signed; positive = right-biased, negative = left-biased)"
 Caspar_etal_2022,Caspar_etal_2022_Table1,MeanAbsHI,Behaviour,Behaviour,NA,HandednessIndex,size index (allometric),mean,primary,Primates,"mean absolute handedness index (strength of lateralization, direction ignored)"
 Wimberly_etal_2021,Wimberly_etal_2021_MammalGait,Hindlimb_Length.mm,Body,Body,cell_counts,Length.mm,length,mean,secondary,mammals,Hindlimb length
+Burger_etal_2019,Burger_etal_2019_SupplementaryDataSD1,Mean_body_mass_g,Body,Body,cell_counts,Mass.g,mass,mean,secondary,mammals,Mean body mass
 Granatosky__2018,Granatosky__2018_TableS1,Body_Mass.g,Body,Body,cell_counts,Mass.g,mass,mean,secondary,mammals,Body mass
 Heffner_Masterton_1975,Heffner_Masterton_1975_TableI,Body weight kg,Body,Body,cell_counts,BodyMass.kg,mass,NA,primary,Mammals,body weight in kilograms
 Heffner_Masterton_1983,Heffner_Masterton_1983_TableI,body_weight_kg,Body,Body,cell_counts,BodyMass.kg,mass,NA,primary,Mammals,body weight in kilograms
@@ -238,9 +240,11 @@ Zilles_etal_2013,Zilles_etal_2013_Table1,Brain_size,Brain,Brain,cell_counts,Brai
 Karbowski__2007,Karbowski__2007_TableS1,CMRO2,Brain,Brain,cell_counts,CMR.ml/g/min,CMR.ml/g/min,mean,secondary,Mammals,cerebral metabolic rate of oxygen (whole brain; Table S1)
 Karbowski__2007,Karbowski__2007_TableS1,Total_O2_consumption,Brain,Brain,cell_counts,Rate.ml/min,Rate.ml/min,point,secondary,Mammals,whole-brain total oxygen consumption (Table S1)
 Karbowski__2007,Karbowski__2007_TableS2,Total_glucose_utilization,Brain,Brain,cell_counts,Rate.umol/min,Rate.umol/min,point,secondary,Mammals,whole-brain total glucose utilization (Table S2)
+Burger_etal_2019,Burger_etal_2019_SupplementaryDataSD1,Mean_brain_mass_g,Brain,Brain,cell_counts,Mass.g,mass,mean,secondary,mammals,Mean brain mass
 Lewitus_etal_2013,Lewitus_etal_2013_TableS2partial,Brain_weight_g,Brain,Brain,cell_counts,Mass.g,mass,NA,secondary,Mammals,Brain weight
 Weaver_2001,Weaver__2001_TableA-15,BrMass_g,Brain,Brain,cell_counts,Mass.g,mass,NA,primary,"monkeys, apes, fossil hominids, humans",brain mass as printed (g)
 Weaver_2001,Weaver__2001_TableA-15,Brain_Mass.mg,Brain,Brain,cell_counts,Mass.mg,mass,NA,primary,"monkeys, apes, fossil hominids, humans",brain mass in project units (mg)
+Burger_etal_2019,Burger_etal_2019_SupplementaryDataSD1,Brain.resid,Brain,Brain,cell_counts,residual,residual,NA,flagged,mammals,Brain-size residual (as printed) — NOT reproducible: authors could not reproduce it and advise deriving anew from a current tree
 Bauernfeind_etal_2013,Bauernfeind_etal_2013_Table1,brain_mass_mg,Brain_weight,Brain_weight,brain_structure_volume,Mass.mg,mass,NA,primary,Primates,brain mass in mg (printed in g; x1000)
 Frahm_etal_1997,Frahm_etal_1997_Table1,brain_weight_mg,Brain_weight,Brain_weight,brain_structure_volume,Mass.mg,mass,NA,secondary,Rodentia & Insectivora,Brain weight (Mass.mg)
 Frahm_etal_1998,Frahm_etal_1998_Table1,brain_weight_mg,Brain_weight,Brain_weight,brain_structure_volume,Mass.mg,mass,NA,secondary,Insectivora & Primates,Brain weight (Mass.mg)

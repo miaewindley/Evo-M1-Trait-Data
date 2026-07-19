@@ -34,6 +34,30 @@ invisible(file.copy(file.path(repo, "__merging_volumes", "volumes_long.csv"),
           file.path(out, "volumes_long.csv"), overwrite = TRUE))
 invisible(file.copy(file.path(repo, "__merging_cellcounts", "cellcounts_long.csv"),
           file.path(out, "cellcounts_long.csv"), overwrite = TRUE))
+# canonical variable map + species aliases (fallback copies for offline mode)
+invisible(file.copy(file.path(repo, "_keys", "variable_canonical.csv"),
+          file.path(out, "variable_canonical.csv"), overwrite = TRUE))
+invisible(file.copy(file.path(repo, "_keys", "species_display_aliases.csv"),
+          file.path(out, "species_display_aliases.csv"), overwrite = TRUE))
+# authoritative body-mass & brain-mass merges (single source of truth for those
+# measures; the app supersedes the raw body/brain-mass columns with these)
+invisible(file.copy(file.path(repo, "__merging_body_ecology", "body_ecology_long.csv"),
+          file.path(out, "body_ecology_long.csv"), overwrite = TRUE))
+invisible(file.copy(file.path(repo, "__merging_brain_mass", "brain_mass_long.csv"),
+          file.path(out, "brain_mass_long.csv"), overwrite = TRUE))
+# behavioural traits: one keyed merge (vocal repertoire, dexterity, gait,
+# locomotion, handedness, manipulation), resolved per species with source keys.
+invisible(file.copy(file.path(repo, "__merging_behaviour", "behaviour_long.csv"),
+          file.path(out, "behaviour_long.csv"), overwrite = TRUE))
+# species taxonomy lookup (Order/Family) for the plot clade filter
+invisible(file.copy(file.path(repo, "_keys", "species_taxonomy.csv"),
+          file.path(out, "species_taxonomy.csv"), overwrite = TRUE))
+# mammal phylogeny for PGLS (optional — copy whichever tree file is present)
+for (e in c("nwk", "tre", "newick", "nex", "tree")) {
+  src <- file.path(repo, "_keys", paste0("mammal_tree.", e))
+  if (file.exists(src))
+    invisible(file.copy(src, file.path(out, paste0("mammal_tree.", e)), overwrite = TRUE))
+}
 
 # ---- 2. melt the EvoM1 trait tables -> evom1_traits_long.csv -----------------
 TT <- file.path(repo, "____EvoM1_TraitTable")
@@ -41,21 +65,26 @@ TT <- file.path(repo, "____EvoM1_TraitTable")
 # Source column). Per-cell "<col>_Ref"/"_Source" columns override this where the
 # source table records a value-specific primary reference (e.g. CST fibre data).
 trait_files <- c(
-  "dexterity_corticospinaltract.xlsx" = "Heffner & Masterton 1975 (dexterity)",
+  "dexterity_corticospinaltract.xlsx" = "Heffner & Masterton 1975 (corticospinal tract)",
   "corticospinaltract_etc.xlsx"       = "Iwaniuk et al. 1999 (corticospinal tract & ecology)",
   "glia_gyrification.xlsx"            = "Lewitus et al. 2014 (glia, gyrification & life history)",
   "interlaminar_astrocytes.xlsx"      = "Falcone et al. 2019 (interlaminar astrocytes)",
-  "locomotion.xlsx"                   = "Granatosky 2018 (locomotion)",
-  "gait.xlsx"                         = "Wimberly et al. 2021 (walking gait)",
-  "manipulation.xlsx"                 = "Heldstab et al. 2016 (manipulation)",
-  "handedness.xlsx"                   = "Caspar et al. 2022 (handedness)",
   "diet_foraging.xlsx"               = "Wilman et al. 2014 (EltonTraits diet & foraging)",
   "v1_synapses_karl.xlsx"            = "Karl et al. 2024 (V1 synapses & mitochondria)",
-  "vocal_repertoire_schniter.xlsx"   = "Schniter & Peñaherrera-Aguirre 2026 (vocal repertoire size)",
-  "vocal_repertoire_manyprimates.xlsx" = "ManyPrimates 2022 (vocal repertoire size)",
   "sleep.xlsx"                       = "Eagleman & Vaughn 2021 / Herculano-Houzel 2015 (sleep)"
+  # NB: behavioural traits (vocal repertoire, dexterity, gait, locomotion,
+  # handedness, manipulation) are NOT melted here. They live in their own keyed
+  # merge, __merging_behaviour/behaviour_long.csv, loaded by the app via
+  # std_merge() like body_ecology / brain_mass. The dexterity_* and
+  # locomotion/gait/manipulation/handedness trait tables feed that merge, not the
+  # app melt.
 )
-id_cols  <- c("species_sci", "Species", "Animal", "Species Generic Name")
+# Columns skipped when melting: species identifiers + taxonomy. Taxonomy
+# (Order/Suborder/Family/…) is NOT a measurement — it lives in the separate
+# species_taxonomy.csv lookup used for the plot clade filter, not as a variable.
+id_cols  <- c("species_sci", "Species", "Animal", "Species Generic Name",
+              "Order", "Suborder", "Family", "Infraclass", "Parvorder",
+              "Phylo_rank", "phylo1_sci", "phylo2_sci")
 suffixes <- c("_Source", " Source", "_Ref", " Ref", "_ref", " ref")
 is_src   <- function(c) any(endsWith(c, suffixes))
 base_of  <- function(c) { for (s in suffixes) if (endsWith(c, s))

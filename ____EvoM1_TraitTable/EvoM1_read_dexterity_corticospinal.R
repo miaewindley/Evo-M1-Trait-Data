@@ -62,5 +62,21 @@ Heffner_Masterton_1975_TableI$species_sci[Heffner_Masterton_1975_TableI$Species 
 # Reorder the columns to make "species_sci" the first column
 Heffner_Masterton_1975_TableI <- Heffner_Masterton_1975_TableI[, c("species_sci", setdiff(names(Heffner_Masterton_1975_TableI), "species_sci"))]
 
+# Emit a dedicated dexterity-only input for the behaviour merge (species_sci +
+# value). Written BEFORE the column is dropped below. This is NOT listed in
+# build_data.R trait_files, so it feeds only __merging_behaviour/, never the app
+# directly (the app gets dexterity once, from behaviour_long.csv).
+write_xlsx(data.frame(
+  species_sci = Heffner_Masterton_1975_TableI$species_sci,
+  Species     = Heffner_Masterton_1975_TableI$Species,
+  Dexterity   = Heffner_Masterton_1975_TableI$`Digital dexterity`,
+  stringsAsFactors = FALSE, check.names = FALSE),
+  paste0(folder_path, "dexterity_heffner.xlsx"))
+
+# Drop the digital-dexterity rating from the app-facing table: it now lives once,
+# deduplicated, in the behaviour merge (__merging_behaviour/ -> behaviour_long.csv,
+# Measure "Dexterity"). This table keeps only the corticospinal-tract anatomy.
+Heffner_Masterton_1975_TableI[["Digital dexterity"]] <- NULL
+
 # Write the dataframe to an Excel file
 write_xlsx(Heffner_Masterton_1975_TableI, paste0(folder_path, "dexterity_corticospinaltract.xlsx"))

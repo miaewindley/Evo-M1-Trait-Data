@@ -1,0 +1,31 @@
+column,definition,unit
+Species,binomial species name (Tree Name with underscores replaced by spaces),name
+Tree_Name,original taxon label from the supplement phylogeny,name
+Tree_Clade,"clade grouping used by Baker et al. (adapiform, ape, owm, nwm, strepsirrhine, hominin, nonprimate, papionini, tarsier, Omomyidae)",category
+Individuals,"specimen/catalogue ID(s), 'taxon-level', or 'Both/Unspecified'",text
+Sex,male / female / Both/Unspecified,category
+Side,body side of the measured hand (or Mix/Unspecified),category
+log10_mcN_mm,log10 metacarpal length of digit N (mm),log10 mm
+log10_ppN_mm,log10 proximal phalanx length of digit N (mm),log10 mm
+log10_ipN_mm,log10 intermediate phalanx length of digit N (mm; digits 2-5),log10 mm
+log10_dpN_mm,log10 distal phalanx length of digit N (mm),log10 mm
+Bone_References,source reference number(s) for hand-bone measurements; keys to references.csv,ref key
+Bone_References_resolved,primary bone sources resolved to short citations,text
+bone_data_restricted,TRUE when hand-bone values are Lemelin (1996) restricted data withheld from the supplement (shown as '*'),boolean
+log10_brain_g,log10 brain mass (g),log10 g
+brain_notes,note on brain value (e.g. converted from volume using 1g=1cm3),text
+log10_body_g,log10 body mass (g),log10 g
+body_notes,note on body value,text
+log10_neocortex_cm3,log10 neocortex volume (cm3),log10 cm3
+log10_cerebellum_cm3,log10 cerebellum volume (cm3),log10 cm3
+Brain_References,source reference number(s) for brain/body values; keys to references.csv,ref key
+Brain_References_resolved,primary brain/body sources resolved to short citations,text
+Tool_Use,"1 = tool use recorded, 0 = none (Bentley-Condit 2010)",0/1
+Single_Individual,1 = behaviour based on a single individual,0/1
+Captive_Only,1 = behaviour recorded in captivity only,0/1
+Tool_Manufacture,1 = tool manufacture recorded,0/1
+True_Tool_Use,1 = true tool use (sensu Baker et al.),0/1
+Binocularity,log10 binocularity / orbit convergence index (Ross 1995),log10 index
+peak_workspace,peak manipulatory workspace metric (Feix et al. 2015),index
+relative_size,relative hand/thumb size metric (Baker et al. derived),index
+real_size,absolute size metric (Baker et al. derived),index

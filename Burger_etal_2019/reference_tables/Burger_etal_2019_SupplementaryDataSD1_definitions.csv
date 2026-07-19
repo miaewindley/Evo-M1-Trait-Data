@@ -1,0 +1,18 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species_sci,Harmonised accepted binomial (project species key),,,,info,mammals,Burger_etal_2019_SupplementaryDataSD1,join key,added in build
+Binomial,Species name as printed (Genus_species; Wilson & Reeder 2005 taxonomy),,,,info,mammals,Burger_etal_2019_SupplementaryDataSD1,printed name preserved,
+order,Taxonomic order (as printed),,,,info,mammals,Burger_etal_2019_SupplementaryDataSD1,,
+family,Taxonomic family (as printed),,,,info,mammals,Burger_etal_2019_SupplementaryDataSD1,,
+genus,Genus (as printed),,,,info,mammals,Burger_etal_2019_SupplementaryDataSD1,,
+species,Species epithet (as printed),,,,info,mammals,Burger_etal_2019_SupplementaryDataSD1,,
+Sample_size.brain,Sample size for the brain-mass estimate (as printed; may be a range/text),,,,info,mammals,Burger_etal_2019_SupplementaryDataSD1,text as printed,
+Sample_size.body,Sample size for the body-mass estimate (as printed; may be a range/text),,,,info,mammals,Burger_etal_2019_SupplementaryDataSD1,text as printed,
+Sex,Sex of the sample (Both/Female/Male/blank; source uses mixed casing),,,,info,mammals,Burger_etal_2019_SupplementaryDataSD1,verbatim,
+Mean_brain_mass_g,Mean brain mass,Brain,Mass.g,mean,secondary,mammals,Burger_etal_2019_SupplementaryDataSD1,compilation; 1 g = 1 cm3 conversion used when volumes reported (per source methods),g
+Mean_body_mass_g,Mean body mass,Body,Mass.g,mean,secondary,mammals,Burger_etal_2019_SupplementaryDataSD1,compilation; subspecies pooled by sample-size-weighted mean (per source methods),g
+BrainReference1,Primary literature reference for the brain-mass value,,,,info,mammals,Burger_etal_2019_SupplementaryDataSD1,full refs in gyz043_suppl_supplement_material.docx (SD2),
+BrainReference2,Second reference for the brain-mass value (where two are cited),,,,info,mammals,Burger_etal_2019_SupplementaryDataSD1,full refs in SD2,
+Brain.resid,"Brain-size residual (as printed) — NOT reproducible: authors could not reproduce it and advise deriving anew from a current tree",Brain,residual,,flagged,mammals,Burger_etal_2019_SupplementaryDataSD1,do not use as-is; derive anew,
+T_resid,"Residual (as printed) — NOT reproducible (see Brain.resid note)",,residual,,flagged,mammals,Burger_etal_2019_SupplementaryDataSD1,do not use as-is,
+Method:units,"Brain mass in grams; volumes converted at 1 cm3 = 1 g when a source reported volume (per Burger et al. methods, following Isler & van Schaik 2009)",,,,method,mammals,Burger_etal_2019_SupplementaryDataSD1,,
+Method:compilation,"SD1 is a compilation of published brain/body masses standardised to Wilson & Reeder (2005); each value carries its own primary reference (BrainReference1/2)",,,,method,mammals,Burger_etal_2019_SupplementaryDataSD1,,

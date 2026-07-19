@@ -74,8 +74,9 @@ git commit -m "Refresh Shiny app data" && git push
 ## Run locally
 
 ```r
-install.packages(c("shiny", "bslib", "DT", "ggplot2"))
+install.packages(c("shiny", "bslib", "DT", "ggplot2", "ape"))  # ape = optional, for PGLS
 shiny::runApp("__ShinyApp")   # reads from GitHub; falls back to data/ if offline
+shiny::runApp(".") # use this if already in ./__ShinyApp
 ```
 
 ## Deploy publicly to shinyapps.io
@@ -101,9 +102,13 @@ shiny::runApp("__ShinyApp")   # reads from GitHub; falls back to data/ if offlin
    )
    ```
 
-   `rsconnect` scans `app.R`, installs shiny/bslib/DT/ggplot2 on the server,
-   uploads the tiny `data/` fallback, and returns a public URL like
+   `rsconnect` scans `app.R`, installs shiny/bslib/DT/ggplot2 (and `ape`, if you
+   installed it locally, for PGLS) on the server, uploads the tiny `data/`
+   fallback, and returns a public URL like
    `https://<your-account>.shinyapps.io/evo-m1-brain-traits/`.
+
+   **Phylogenetic regression (PGLS)** is an optional Plot feature — it activates
+   once a mammal tree is added; see `PHYLO_SETUP.md`.
 
 To update later, re-run the same `deployApp(...)` call.
 

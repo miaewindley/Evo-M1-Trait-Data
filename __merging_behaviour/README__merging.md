@@ -1,79 +1,72 @@
 # Merging behaviour data
 
-Assembles a comparative **behavioural** dataset across six measure classes — **vocal repertoire
-size**, **digital dexterity**, **quadrupedal walking gait**, **locomotor diversity**, **hand
-preference (handedness)**, and **manipulation complexity** — one row per species, following the
-`standardized_term` + compile pattern of the other `__merging_*` folders.
+A keyed comparative **behavioural** merge across several measure classes — **vocal repertoire size**,
+**digital dexterity**, **quadrupedal walking gait**, **locomotor diversity**, **hand preference
+(handedness)**, and **manipulation complexity**. It produces the same long-table schema as the other
+keyed merges (`__merging_body_ecology`, `__merging_brain_mass`): **one row per (Species, Measure)**
+with the resolved `Value` plus source provenance (`n_sources`, `Teams`, `roles`, `value_min/max`).
+The Shiny app loads it via `std_merge()`, exactly like body mass and brain mass.
 
-## Why one folder for several traits
+## One variable per measure, from possibly several sources — never duplicated
 
-The single-measure merges (`__merging_volumes`, `__merging_gyrification`, …) each compile one
-measure class. Behaviour groups several small behavioural traits that each have too few sources to
-justify a folder of their own, while giving a single **cross-behaviour** table for correlation.
-Per `__HOWTO_build_a_dataset_file.md` §10, different measure classes are **never pooled into one
-value**: each keeps its own `Standardized_Term` and its own column. This folder only (a) dedups the
-two classes that have more than one source, and (b) places the classes side by side per species.
+Per `__HOWTO_build_a_dataset_file.md` §10 different measure classes are never pooled into one value:
+each `Measure` is its own row/variable. Where a measure has more than one source, the value is
+**resolved once** and the contributing sources are recorded as keys — the variable is **not**
+duplicated. Two measures are multi-source and citation-dependent:
 
-It composes the project's harmonised trait tables in `____EvoM1_TraitTable/` (each itself built from
-the sources' public TSVs by an `EvoM1_read_*.R`). The **species key mirrors
-`__ShinyApp/build_data.R`**: use `species_sci` where present, else the paper's printed `Species`,
-cleaned — so the merge species are identical to what the app correlates on. (This matters: the
-dexterity table leaves `species_sci` blank on its corticospinal-tract-only rows, whose dexterity
-ratings must still be kept via `Species`.)
+- **VocalRepertoire** — Schniter & Peñaherrera-Aguirre 2026 (primary, updated repertoire) +
+  ManyPrimates 2022 (secondary). Both descend from McComb & Semple 2005 → **never averaged**; the
+  resolved value is Schniter's, and where both report a species `value_min/value_max` show the spread
+  (e.g. *Pan paniscus* value 11, min 11, max 38; `Value_median` is informational only).
+- **Dexterity** — Heffner & Masterton 1975 (primary) + Iwaniuk 1999 (secondary). Iwaniuk is a
+  re-analysis of the *same* data — identical values on every shared species → prefer Heffner.
 
-## Domains, standardized terms, sources
+The other four measures are single-source: Wimberly 2021 (gait), Granatosky 2018 (locomotion),
+Caspar 2022 (handedness), Heldstab 2016 (manipulation).
 
-| Domain | Standardized_Term(s) | source(s) | dedup | species |
-|---|---|---|---|---|
-| Vocalization | `VocalRepertoire` | Schniter 2026 (primary) + ManyPrimates 2022 | citation-dependent (McComb & Semple 2005) → prefer Schniter updated | 65 |
-| Dexterity | `Dexterity` (Heffner & Masterton 1–7 scale) | Heffner & Masterton 1975 (primary) + Iwaniuk 1999 | citation-dependent → prefer Heffner & Masterton | 66 |
-| Gait | `Duty_Factor`, `Phase`, `Gait`, `Foot_Posture` | Wimberly et al. 2021 | single source | 154 |
-| Locomotion | `Locomotor_diversity_index`, `Intermembral_index`, `Arboreal_terrestrial` | Granatosky 2018 | single source | 113 |
-| Handedness | `Handedness_index_mean`, `Handedness_strength_mean` | Caspar et al. 2022 | single source | 38 |
-| Manipulation | `Manipulation_complexity`, `Tool_use`, `Extractive_foraging` | Heldstab et al. 2016 | single source | 37 |
+## Inputs
 
-### Dedup detail (the two multi-source classes)
-
-- **Vocalization.** Both sources draw substantially on McComb & Semple 2005 (the ManyPrimates values
-  mostly equal Schniter's MS2005 column). Citation-dependent → never averaged. Prefer Schniter's
-  *updated* repertoire (most recent, per-species refs); use ManyPrimates only for species Schniter
-  lacks. 65 species (42 Schniter + 23 ManyPrimates-only, 16 dependent overlaps).
-- **Dexterity.** Iwaniuk et al. 1999 is explicitly *"a re-analysis of the Heffner and Masterton
-  (1975) data"* — same 1–7 scale, **identical values on all 24 shared species**. Citation-dependent
-  → prefer Heffner & Masterton (the origin of the scale). 66 species (65 Heffner + 1 Iwaniuk-only).
-
-The other four domains are single-source (nothing to dedup); `Gait`/`Foot_Posture` and
-`Arboreal_terrestrial` are categorical, the rest continuous or ordinal.
-
-## Coverage
-
-**318 species** total. Distribution by number of behavioural domains present: 222 species in 1
-domain, 62 in 2, 18 in 3, 9 in 4, 5 in 5, and **2 in all six** (*Pan troglodytes*, *Sapajus apella*).
+Composes the harmonised, `species_sci`-keyed trait tables in `____EvoM1_TraitTable/`
+(`vocal_repertoire_schniter/manyprimates`, `gait`, `locomotion`, `handedness`, `manipulation`), plus
+two dedicated dexterity inputs **`dexterity_heffner.xlsx`** / **`dexterity_iwaniuk.xlsx`** (written by
+`EvoM1_read_dexterity_corticospinal*.R`). Dexterity has its own input tables because the
+corticospinal-tract trait tables the app melts no longer carry the dexterity column — that would
+duplicate this merge. The species key mirrors `build_data.R`: `species_sci` where present, else the
+printed `Species`, cleaned.
 
 ## Outputs
 
-- **`behaviour_long.csv`** — one row per (Species, source, Standardized_Term) observation
-  (1,245 rows). Columns: `Species, Domain, Standardized_Term, Value, source, team, dependency_group`.
-- **`behaviour_wide.csv`** — one row per species (318). Merged value per multi-source class plus
-  `*_source` / `*_citation_dependency` flags, the single-source term columns, and `n_domains`.
-- **`behaviour_source_species_ids.csv`** — provenance: which source contributed each value.
-- **`standardized_term_behaviour.csv`** (+ `standardized_term.R`, `standardized_term_by_reference/`)
-  — the original→standardized column map, stacked per source (8 sources).
+- **`behaviour_long.csv`** — the keyed merge, app-facing. One row per (Species, Measure). Columns:
+  `Species, measure_class, Measure, Units, Value, Value_median, n_sources, n_teams,
+  n_teams_primary, primary_used, Teams, roles, value_min, value_max` (same schema as
+  `body_ecology_long.csv`). 1,206 rows over 319 species; multi-source rows: Dexterity (24 species),
+  VocalRepertoire (16).
+- **`behaviour_observations_long.csv`** — the raw per-source rows behind the resolution
+  (`Species, measure_class, Measure, Team, role, Value`).
+- **`behaviour_wide.csv`** — one row per species, resolved value per measure (overview).
 
-The compile also writes **`____EvoM1_TraitTable/behaviour_merged.xlsx`** — the single behavioural
-trait table the Shiny app reads, with per-cell `_Source` attribution for every domain.
+## How the app shows it
+
+`build_data.R` copies `behaviour_long.csv` into `__ShinyApp/data/` and the app reads it with
+`std_merge(GH$behaviour, …, "Behaviour")`. Each measure appears **once** as
+`"<Measure> (<Units>)"` under dataset **Behaviour**, with `Source = "EvoM1 <measure> merge (N sources)"`
+and `N_sources`. No behavioural variable is melted from the trait tables any more, so nothing is
+duplicated between datasets.
+
+## Coverage
+
+319 species. Per measure: Duty_Factor/Gait/Phase 154, Foot_Posture 136, Locomotor_diversity_index
+113, Arboreal_terrestrial 96, Intermembral_index 80, Dexterity 67, VocalRepertoire 65, Handedness
+38, Manipulation/Tool_use/Extractive_foraging 37.
 
 ## Rebuild
 
-Run `behaviour_compiled.R` (reads the harmonised `____EvoM1_TraitTable/*.xlsx`; rebuild a source
-trait table first if its snapshot/CSV changed). `standardized_term.R` restacks the term map if a
-per-reference term file changes. Then re-run `__ShinyApp/build_data.R`.
+Run `behaviour_compiled.R` (reads the harmonised trait tables + the two dexterity inputs; rebuild a
+source trait table first if its snapshot/CSV changed), then re-run `__ShinyApp/build_data.R`.
 
-## Notes / future
-- **Not included:** brain-volume laterality/asymmetry (that is a volume measure in
-  `__merging_volumes`, not a behavioural trait), and Eagleman's developmental time-to-locomotion
-  (a life-history column excluded from `__merging_sleep`, unrelated to locomotor diversity here).
-- To add a future behavioural source, drop a `<Reference>_standardized_terms.csv` in
-  `standardized_term_by_reference/`, add a `melt_tab(...)` call in `behaviour_compiled.R` (with its
-  team + dependency group), and — if it shares a measure class with an existing source — decide the
-  dedup/dependency rule.
+## Not included / future
+- **Brain-volume laterality/asymmetry** (a volume measure in `__merging_volumes`) and Eagleman's
+  developmental *time-to-locomotion* (life-history, excluded from `__merging_sleep`) are different
+  constructs, not behavioural traits.
+- To add a future behavioural source, add a `grab(...)` call and a `META` row in
+  `behaviour_compiled.R`; if it shares a measure with an existing source, set its priority/role.

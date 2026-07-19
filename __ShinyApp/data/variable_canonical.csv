@@ -1,0 +1,7 @@
+raw_variable,match_dataset,canonical_variable,concept,raw_unit,canonical_unit,to_canonical_factor,action,superseded_by,notes
+Body_Mass.g,,Body_Mass,body mass,g,g,1,supersede,__merging_body_ecology,"volumes & cellcounts; authoritative pooled value is in body_ecology_long. Kept only as fallback for species the merge lacks."
+Body_weight,,Body_Mass,body mass,g,g,1,supersede,__merging_body_ecology,"Lewitus 2014 trait table; grams (verified)."
+Body weight kg,,Body_Mass,body mass,kg,g,1000,supersede,__merging_body_ecology,"Heffner & Masterton 1975; kg -> g."
+Brain_Mass.mg,,Brain_Mass,brain mass (whole brain),mg,g,0.001,supersede,__merging_brain_mass,"volumes; authoritative pooled value is in brain_mass_long. Fallback only."
+WholeBrain_Mass.g,,Brain_Mass,brain mass (whole brain),g,g,1,supersede,__merging_brain_mass,"cellcounts; whole-brain mass. Fallback only."
+Brain_weight_g,,Brain_Mass,brain mass (whole brain),g,g,1,supersede,__merging_brain_mass,"Lewitus 2014 trait table; grams. Fallback only."
