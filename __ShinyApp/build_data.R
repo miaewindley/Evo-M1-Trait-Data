@@ -30,10 +30,10 @@ message("out:  ", out)
 trim <- function(x) trimws(as.character(x))
 
 # ---- 1. fallback copies of the two compiled long tables ---------------------
-file.copy(file.path(repo, "__merging_volumes", "volumes_long.csv"),
-          file.path(out, "volumes_long.csv"), overwrite = TRUE)
-file.copy(file.path(repo, "__merging_cellcounts", "cellcounts_long.csv"),
-          file.path(out, "cellcounts_long.csv"), overwrite = TRUE)
+invisible(file.copy(file.path(repo, "__merging_volumes", "volumes_long.csv"),
+          file.path(out, "volumes_long.csv"), overwrite = TRUE))
+invisible(file.copy(file.path(repo, "__merging_cellcounts", "cellcounts_long.csv"),
+          file.path(out, "cellcounts_long.csv"), overwrite = TRUE))
 
 # ---- 2. melt the EvoM1 trait tables -> evom1_traits_long.csv -----------------
 TT <- file.path(repo, "____EvoM1_TraitTable")
@@ -162,11 +162,16 @@ rows <- lapply(tsvs, function(fn) {
   for (cand in c(paste0(base, ".ReadMe.md"), paste0(ident_enc, ".ReadMe.md")))
     if (cand %in% mds) { rm <- cand; break }
 
-  tab <- read.delim(file.path(pub, fn), stringsAsFactors = FALSE,
-                    check.names = FALSE, quote = "\"", colClasses = "character")
+  # Count rows/cols and read the header via readLines — robust to ragged rows
+  # and stray quotes/tabs that make read.delim throw "more columns than names".
+  ln <- readLines(file.path(pub, fn), warn = FALSE, encoding = "UTF-8")
+  ln <- ln[nzchar(ln)]
+  hdr <- if (length(ln)) strsplit(ln[1], "\t", fixed = TRUE)[[1]] else character(0)
+  hdr <- gsub('^"|"$', "", hdr)                 # strip surrounding quotes
   data.frame(file = fn, identifier = ident, id_type = kind, table_label = label,
-             url = url, readme = rm, n_rows = nrow(tab), n_cols = ncol(tab),
-             columns = paste(names(tab), collapse = "; "),
+             url = url, readme = rm,
+             n_rows = max(0L, length(ln) - 1L), n_cols = length(hdr),
+             columns = paste(hdr, collapse = "; "),
              citation = cit, citation_short = short,
              first_author = auth, year = yr,
              stringsAsFactors = FALSE)
