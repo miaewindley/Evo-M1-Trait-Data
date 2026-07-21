@@ -1,44 +1,53 @@
-[Final_Caves_etal_2018_TableS1_snapshot.csv](https://github.com/user-attachments/files/30224419/Final_Caves_etal_2018_TableS1_snapshot.csv)
+# Caves et al. (2018) — Table S1
 
-Caves_etal_2018_TableS1_snapshot
-Common Name,Latin Name,"Citation[Acuity, eye size]",Method
-wedge-tailed eagle,Aquila audax,"[1,2]",Behavior
-human,Homo sapiens,"[3,4]",Peak RGC
-rhesus macaque,Macaca mulatta,"[5,6]",Behavior
-common octopus,Octopus vulgaris,"[7,8]",Peak retinal cell density
-giraffe,Giraffa camelopardalis,"[9,10]",Peak RGC
-cheetah,Acinonyx jubatus,"[6,11,12]",Peak RGC
-Common ostrich,Struthio camelus,[13],Peak RGC
-African elephant,Loxodonta africana,"[6,14]",Peak RGC
-little penguin,Eudyptula minor,[15],Peak RGC
-fringed jumping spider,Portia fimbriata,[16],Interommatidial angle
-dromedary camel,Camelus dromedarius,[17],Peak RGC
-saltwater crocodile,Crocodylus porosus,[18],Peak RGC
-Atlantic blue marlin,Makaira nigricans,[19],Peak RGC
-Eurasian lynx,Lynx lynx,"[20,21]",VEP
-goldfish,Carassius auratus,"[22,23]",Behavior
-Domestic chicken,Gallus gallus,[24],Behavior
-great hammerhead shark,Sphyrna mokarran,[25],Peak RGC
-red-eared slider (turtle),Pseudemys scripta elegans,[26],VEP
-rufous-tailed hummingbird,Amazilia tzacatl,[27],Peak RGC
-Carolina chickadee,Parus carolinensis,[28],Peak RGC
-bluespotted stingray,Neotrygon kuhlii,[29],Peak RGC
-koala,Phascolarctos cinereus,[30–32],Peak RGC
-California ground squirrel,Spermophilus beecheyi,"[32,33]",Behavior
-walrus,Odobenus rosmarus,"[21,34]",Peak RGC
-common barn owl,Tyto alba,[35],Peak RGC
-northern leopard frog,Rana pipiens,[36],Behavior
-brown hawker dragonfly,Aeshna grandis,"[8,37]",Interommatidial angle
-American cockroach,Periplaneta americana,[38],VEP
-two toed sloth,Choloepus didactylus,"[6,39]",Peak RGC
-blue morpho butterfly,Morpho peleides,[40],Interommatidial angle
-hooded rat,Rattus norvegicus,"[21,41]",Behavior
-giant owl butterfly,Caligo memnon,[40],Interommatidial angle
-honeybee (worker),Apis mellifera,"[42,43]",Interommatidial angle
-naked mole rat,Heterocephalus glaber,"[32,44]",Peak RGC
-great scallop,Pecten maximus,"[45,46]",Behavior
-Jamaican fruit bat,Artibeus jamaicensis,"[32,47]",Behavior
-scarlet skunk cleaner shrimp,Lysmata amboinensis,[48],Behavior
-fruit fly,Drosophila melanogaster,"[42,49]",Interommatidial angle
-Mangrove mud-nesting ant,Polyrhachis sokolova,"[50,51]",Interommatidial angle
-Dust lice (Psocoptera),Psyllipsocus ramburi,[52],Acceptance angle
+**Source paper.** Caves, E. M., Brandley, N. C., & Johnsen, S. (2018). Visual acuity and the evolution of signals. *Trends in Ecology & Evolution*, 33(5), 358–372.
+
+**Table.** Supplementary Table S1: *"Acuity and eye size across species from Figure I (Box 1) in order of decreasing acuity from highest to lowest."*
+
+## Files in this folder
+
+| file | what it is |
+| --- | --- |
+| `Caves_etal_2018_TableS1_snapshot.csv` | frozen, faithful copy of Table S1 as printed |
+| `Caves_etal_2018_TableS1.csv` | cleaned, analysis-ready data ("use this") |
+| `Caves_etal_2018_TableS1.R` | script that turns the snapshot into the clean CSV |
+| `Caves_etal_2018_TableS1.ReadMe.md` | this file |
+
+## Pipeline
+
+`Source → Snapshot → Data readable → (Species notes) → Online database`
+
+## Snapshot
+
+**Method.** Manual entry from the supplementary raw-data Word document supplied by the authors (`Caves (2018) raw data (entire).docx`). The Word file embeds Mendeley `ADDIN CSL_CITATION` blocks in every cell of the citation column; these were stripped so only the final formatted reference codes (e.g. `[1,2]`) remain. All other content preserved as printed.
+
+**Columns kept, exactly as in the paper.**
+- `Common Name`
+- `Latin Name`
+- `Citation[Acuity, eye size]` — reference numbers as printed (e.g. `[1,2]`, `[30–32]`, `[6,11,12]`)
+- `Method`
+
+**Row order.** As published — species are ordered by decreasing visual acuity (row 1 = highest acuity, row 40 = lowest). The order is meaningful; it corresponds to the ranking implicit in Figure I of Box 1.
+
+**What was NOT included in the snapshot.**
+- Numerical acuity values (cpd) and eye diameters — these are in *Figure I of Box 1* in the main paper, not in Table S1 itself.
+- Interpretive notes or verification flags — those belong (if anywhere) in this ReadMe or as inline comments in the `.R` script, not baked into the snapshot.
+
+## Cleaning applied (in `.R`)
+
+- Column names → snake_case (`common_name`, `latin_name`, `citations`, `method`).
+- Added `acuity_rank` (1 = highest acuity as published) so the meaningful row order is preserved even if downstream code re-sorts.
+- Common names lowercased and parenthetical clade notes stripped (e.g. `"Dust lice (Psocoptera)"` → `"dust lice"`).
+- `"Peak retinal cell density"` normalised to `"Peak RGC"` (used everywhere else for the same technique).
+- Citation column kept as a character string. The Caves header states "first citation = acuity, second = eye size," but rows with one or three citations don't fit that scheme unambiguously, so no auto-split is applied here. Any split is a downstream analytical choice.
+
+## Notes for the database
+
+- 40 species. 33 have camera-type eyes, 6 have compound eyes, 1 (great scallop) has mirror-type eyes.
+- The four "Method" values used are: `Behavior`, `Peak RGC`, `VEP`, `Interommatidial angle`, `Acceptance angle`. `Peak RGC` = peak retinal ganglion cell density. `VEP` = visually evoked potential.
+- Citation ranges printed with an en-dash (e.g. `[30–32]`) are preserved verbatim in the snapshot; if downstream code needs to enumerate the individual references, expand these in the analysis script.
+- Some species names may need updating for NCBI taxonomic consistency (e.g. `Parus carolinensis` is now `Poecile carolinensis`). Species-name standardisation is deferred to a repo-level step, not this table.
+
+## To do before final submission
+
+- Add a row for this table to `__ReadMe.xlsx` (`Item name = Caves_etal_2018_TableS1`; `Item encoded = <DOI-encoded code>`) so the R script can write the public TSV.
