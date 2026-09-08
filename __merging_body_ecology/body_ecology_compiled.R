@@ -347,8 +347,8 @@ pool_one <- function(ix) {
   list(Value = pooled, Value_median = pooled_med,
        n_sources = length(ix), n_teams = length(teams), n_teams_primary = sum(team_primary),
        # radix = C byte order, so team/role lists don't reorder with the machine's locale
-       Teams = paste(sort(teams, method = "radix"), collapse = "; "),
-       roles = paste(sort(unique(d_role), method = "radix"), collapse = "; "),
+       Teams = paste(sort(enc2utf8(teams), method = "radix"), collapse = "; "),
+       roles = paste(sort(enc2utf8(unique(d_role)), method = "radix"), collapse = "; "),
        value_min = vmin, value_max = vmax, spread = spread_out, flag = flag,
        per_source = paste(sprintf("%s%s(%s,%s)=%s", uf$first_author[ix], uf$Year[ix],
                                   d_team, d_role, per), collapse = " | "))

@@ -191,6 +191,7 @@ ASSIGN = {
     ("MacLeod__2000", "brain_weight_g"):
         ("mass", "mass_unspecified", "unknown", "unknown", "no", "unknown",
          "mass_measured", True, "quoted", F),
+    ("Krompecher_Lipak_1966", "brain_weight_g"): A,
     # ---- weighed mass of ONE specimen -------------------------------------
     ("Karl_etal_2024", "Brain mass (g)"):
         ("mass", "mass_specimen", "fresh", "unknown", "unknown", "unknown",

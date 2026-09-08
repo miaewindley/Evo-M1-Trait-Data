@@ -67,6 +67,9 @@ stopifnot(sum(map$upstream_source == "Campos_Welker_1976") == 2L)
 get_values <- function(source, species) {
   if (source == "Stephan_etal_1981") {
     i <- match(species, stephan$Species)
+    # Halley's figure uses subspecies labels (e.g. "Homo sapiens sapiens") while
+    # Stephan uses the binomial ("Homo sapiens"); retry after stripping the last word.
+    if (is.na(i)) i <- match(sub("\\s+\\S+$", "", species), stephan$Species)
     if (is.na(i)) stop("Stephan species not found: ", species, call. = FALSE)
     return(c(thalamus_mm3 = stephan$Thalamus[i], neocortex_mm3 = stephan$Neocortex[i]))
   }

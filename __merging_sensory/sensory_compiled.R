@@ -177,7 +177,7 @@ tmap <- c(audible_freq_high_60dBSPL="Audible_freq_high_60dB.kHz",
           audible_freq_low_60dBSPL ="Audible_freq_low_60dB.kHz",
           sound_localization_threshold="Sound_localization_threshold.deg")
 for (i in seq_len(nrow(h20))) {
-  m <- tmap[[h20$trait[i]]]
+  m <- unname(tmap[h20$trait[i]])   # single [ returns NA for unknown keys; [[ errors
   if (is.null(m) || is.na(m)) next                   # hearing_range is derived; recomputed below
   addrow("Sylvilagus floridanus", m, h20$value[i], item["H2020"], character(0),
          "published", "primary", note = "value stated in the paper's text, not read off Figure 3")

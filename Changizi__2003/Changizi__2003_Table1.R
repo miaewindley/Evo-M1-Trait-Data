@@ -46,7 +46,7 @@ clean <- data.frame(
                 "order-level means; per-row primary citations retained"),
   source = item_name, stringsAsFactors = FALSE, check.names = FALSE
 )
-stopifnot(sum(clean$row_type == "order") == 12, sum(clean$row_type == "species") == 23)
+stopifnot(sum(clean$row_type == "order") == 11, sum(clean$row_type == "species") == 24)
 write.csv(clean, file.path(folder, paste0(item_name, ".csv")), row.names = FALSE)
 message(item_name, ": ", nrow(clean), " rows written")
 if (!is.na(base) && file.exists(file.path(base, "__ReadMe.xlsx"))) {
