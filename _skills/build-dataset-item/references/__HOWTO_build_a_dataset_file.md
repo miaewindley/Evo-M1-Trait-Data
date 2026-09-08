@@ -161,7 +161,25 @@ positional case (copy an existing `.R`):
 
 Granularity: usually **one row per species**. Some tables are **per-individual** (Bauernfeind 2011/
 2013, Smaers 2011, MacLeod 2003) — keep them per-individual here and aggregate to species means in
-the comparison/merge step, not in the reformat.
+the comparison/merge step, not in the reformat. Some tables are **per-group within one species**
+(sex, age, or performance groups — e.g. Jacob 2021's raccoon solver types): keep one row per printed
+group, and record the observation level explicitly (a `Method:observation_level` row in the
+definitions + a README note saying *pool across groups before any species-level use*) so a group
+mean is never mistaken for a species mean downstream.
+
+**Anti-pattern — the hardcoded "snapshot".** A *build/reformat* script that defines the table as
+cleaned `data.frame` literals and writes both the "snapshot" and the CSV from them has no frozen
+source at all: the two files are the same product twice, and nothing independent remains to audit
+the cleaning against (see the snapshot HOWTO, "The other way to fake a snapshot"). The build `.R`
+**reads** the frozen file — it never contains the table's values. Where the frozen file's values
+come from is a separate, earlier step with its own rules: **prefer a dedicated `*_extract_snapshot.R`
+that pulls the values from the PDF's text layer at run time** (regex captures + anchored printed
+literals, no values in the script — `Jacob_etal_2021_extract_snapshot.R` is the model, including
+two-column reading-order reconstruction and a guard that refuses to overwrite a differing frozen
+copy); when the source is a scan with no usable text layer, a hand transcription typed **into the
+frozen file** (or a verbatim printed-layout block inside the extract script, the
+`Jacobs_etal_2018_extract_snapshot.R` pattern) is the fallback. Either way the extract writes the
+hardcopy first and the build reads it.
 
 ---
 
@@ -219,6 +237,12 @@ in `species_key.csv` so it is visible, reusable, and consistent across papers.
 
 Record the table-legend / text notes and any corrections (typos, misidentifications, combined
 species) as their own columns or in `species_key.csv`, with the reason — don't overwrite silently.
+
+**Single-species papers are not exempt.** When the table prints groups, regions, or individuals and
+never a species name (the species lives in the title/methods), the analysis CSV still carries
+`species_as_published` on every row, the definitions say where the name comes from, and the paper's
+items are still listed in the collection's `species_key.csv`. A CSV with no species column cannot
+enter any merge.
 
 ---
 
@@ -367,13 +391,20 @@ applies this rubric.
 
 - [ ] frozen source in place — digital-native: original download kept verbatim (no derived snapshot);
       printed/scanned: `_snapshot` frozen + reads like the PDF (caption, headers, footnotes, units, row order kept)
+- [ ] the `.R` **reads** the frozen source — no table values hardcoded in the script, and the
+      snapshot is not just the clean CSV under another name
 - [ ] cleaning reproducible from the frozen source; names cleaned; units converted + documented
+- [ ] observation level recorded (species / individual / intraspecific group) when rows are not
+      species — definitions `Method:observation_level` row + README note
 - [ ] analysis CSV = right number of rows (species/individuals)
 - [ ] **DOI/PMID TSV in `__Public/comparative-data/`**; `Item number` set in `__ReadMe.xlsx` *(invariant)*
 - [ ] printed species name preserved; rows added to `species_key.csv`
 - [ ] comparison = **0 value mismatches** *(when a curated source exists)*; `csv_only`/`snapshot_only` explained
 - [ ] `definitions.csv` complete (10 cols; canonical Structure + Measure; role/taxon)
-- [ ] README written
+- [ ] README written — and it **names the reader**: who or what carried the values from the source
+      into the files (extraction script / Adobe export / RA / AI assistant), when, and how the
+      transcription was checked. Every pipeline has a reader somewhere; provenance means that step
+      is named and dated, never implicit
 - [ ] `Data role` set (primary/secondary/both); if secondary, **not** merged
 - [ ] if primary: standardized-terms file added + merge re-run
 

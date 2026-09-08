@@ -214,6 +214,66 @@ for (col in c("WholeBrain_N.n", "SpinalCord_N.n", "SpinalCord_N.n_SD",
 }
 cellcounts_data_list$Burish_etal_2010_Table1 <- df
 
+# 3.4c Laterality-basis fix for Jardim-Messeder et al. 2017 Table 1: Procyon lotor hippocampus mass.
+#      The published raccoon hippocampus row is internally inconsistent by exactly a factor of two:
+#      printed DNHP (16,076 /mg) is half of NHP / MHP (15.34e6 / 477 mg = 32,159 /mg). The printed
+#      O/NHP (4.564) equals OHP / NHP (70.00e6 / 15.34e6), so NHP and OHP are tied to each other,
+#      leaving two candidate readings -- a halved mass, or both counts doubled. A density is
+#      basis-invariant (N/M is the same for one side as for both), so DNHP cannot be corrupted by a
+#      side error, and every test points to MHP as the single printed error -- the mass of ONE
+#      hippocampus printed against bilateral counts:
+#        - Of the 42 checkable N.p.mg cells in this table, 41 agree with NHP/MHP to within 0.4%.
+#          This row is the only 2x cell, so it is not a table-wide convention.
+#        - Felis catus has almost the same brain mass (34.86 g vs 34.19 g). Its hippocampus is 2.51%
+#          of brain (dog 2.32%); the printed raccoon value is 1.40%, and doubled it is 2.79%.
+#        - OHP / MHP as printed is 146,751 /mg, the highest in the table by 1.65x; doubling the mass
+#          gives 73,375 /mg, between cat (63,870) and ferret (89,088).
+#        - Printed NHP is 0.71% of NBR, in line with ferret 0.79% and cat 0.66%. Halving the counts
+#          instead would drop it to 0.36%, so the counts look right.
+#        - DIRECT CONFIRMATION, same species and method: Jacob et al. 2021 (DOI 10.1002/cne.25197;
+#          Herculano-Houzel a co-author of both) reports raccoon hippocampus mass AND hippocampal
+#          nuclei counts by isotropic fractionation for ONE hemisphere: pooled mass 474.01 mg
+#          (n=18), total nuclei 42.60e6 (n=18). The printed mass matches Jacob's unilateral mass to
+#          0.6%; the printed total cell count is 2x Jacob's unilateral count to 0.3%; and on the
+#          doubled mass the total-cell density agrees with Jacob to 0.5% (89,455 vs 89,874 /mg),
+#          where on the printed mass it is off by exactly 2x. The neuronal/nonneuronal split does
+#          NOT agree (18.0% vs 13.4% neurons) but Jacob's neuron count is a difference of means
+#          over non-identical samples (n=18 vs 17), so it is not used as evidence. Check:
+#          restricted_checks/_cross_table/JardimMesseder_2017_vs_Jacob_2021_raccoon/
+#        - Congener cross-check: Reep et al. 2007 gives Procyon cancrivorus
+#          Hippocampus_Vol.mm3 = 1,025.76 at a comparable brain size (36,858 mm3 summed, vs 34,100
+#          for P. lotor), and __merging_volumes/laterality_known.csv records Reep values as already
+#          bilateral. Across size-comparable congeneric pairs, this table's mass / Reep volume runs
+#          0.72-1.14 (Canis 0.904, Panthera leo 0.788, P. leo vs pardus 1.135, Ursus 0.717). The
+#          raccoon sits at 0.451; doubled it is 0.902. (The Mustela pair is excluded -- ferret
+#          against the much smaller weasel is not size-matched.)
+#      So MHP is doubled to the bilateral basis of the counts. DNHP -- and therefore the reported
+#      Hippocampus_N.p.mg the merge carries -- is correct and untouched; what this fixes is
+#      Hippocampus_Mass.g itself and everything 3.7 derives from it (Hippocampus_O.p.mg was
+#      146,751 /mg on the halved mass and becomes 73,375 /mg). _C.n and _p.C.N are unaffected.
+#      The frozen source snapshot is deliberately NOT edited: it is the record of what the paper
+#      printed, and the printed value is confirmed verbatim from the PDF (Table 1, p. 6).
+#      NOT confirmed by the authors -- inferred. Revise if the Jardim-Messeder team supplies the
+#      underlying mass. Separately unresolved: this raccoon's CerebralCortex fails the same
+#      density check by 3.4%, which this correction does not explain.
+jardimmesseder_df <- cellcounts_data_list$JardimMesseder_etal_2017_Table1
+if (!is.null(jardimmesseder_df)) {
+  raccoon <- !is.na(jardimmesseder_df$Species) & jardimmesseder_df$Species == "Procyon lotor"
+  if (!("Hippocampus_Mass.g" %in% colnames(jardimmesseder_df)) || sum(raccoon) != 1L)
+    stop("3.4c: expected exactly one 'Procyon lotor' row with a Hippocampus_Mass.g column in ",
+         "JardimMesseder_etal_2017_Table1; found ", sum(raccoon), " row(s). The source table or ",
+         "its standardized terms changed -- re-check this correction before applying it.",
+         call. = FALSE)
+  printed_mass <- suppressWarnings(as.numeric(jardimmesseder_df$Hippocampus_Mass.g[raccoon]))
+  if (!isTRUE(all.equal(printed_mass, 0.477, tolerance = 1e-6)))
+    stop("3.4c: expected the printed Procyon lotor Hippocampus_Mass.g of 0.477 g, found ",
+         printed_mass, ". The source table changed -- re-check this correction before applying it.",
+         call. = FALSE)
+  jardimmesseder_df$Hippocampus_Mass.g[raccoon] <- printed_mass * 2
+  cellcounts_data_list$JardimMesseder_etal_2017_Table1 <- jardimmesseder_df
+}
+rm(jardimmesseder_df)
+
 ### DosSantos_etal_2020_Table1 omit ###
 # # 3.5 Calculate microglia per cells (I/C) data which was not reported in Dos Santos et al. 2020 Table 1 but must have been their primary data
 # # Formula: _I.p.C = _I.n/_C.n
@@ -256,29 +316,133 @@ cellcounts_data_list$Burish_etal_2010_Table1 <- df
 
 # 3.6 Calculate Cell number where not already available (it was only reported in Dos Santos et al., 2020)
 # Formula _C.n = _N.n + _O.n
-  
-  # Extract unique prefixes from column names
-  prefixes <- unique(sub("_.*", "", colnames(df)))
-  # Loop through each dataframe in the list
+#
+#   CORRECTED 2026-09: `prefixes` used to be computed ONCE, outside the loop, from whatever
+#   dataframe the variable `df` happened to be left holding by the preceding step (3.4b,
+#   Burish et al. 2010). Burish only has WholeBrain / SpinalCord / Body prefixes, so those
+#   were the only structures this step ever tried -- every regional _C.n was silently never
+#   derived (195 species x structure cells: Cerebellum 50, CerebralCortex 49, RoB 49,
+#   OlfactoryBulb 31, Hippocampus 9, and 7 single-species structures -- Amygdala,
+#   CerebralCortexGrey, CerebralCortexWhite, DiencephalonStriatum, Medulla, Mesencephalon,
+#   Pons). `prefixes` is now rebuilt from each dataframe in turn.
+#
+#   Also relaxed the NA test. `!any(is.na(df[[col]]))` gated the WHOLE column on a single
+#   missing row, so one blank species suppressed _C.n for every species in that table. The
+#   fill is now row-wise: derive where both inputs are present, leave NA elsewhere, and
+#   never overwrite a value the source itself reports.
   for (i in seq_along(cellcounts_data_list)) {
     # Extract the dataframe
     df <- cellcounts_data_list[[i]]
+    # Extract unique prefixes from THIS dataframe's column names
+    prefixes <- unique(sub("_.*", "", colnames(df)))
     # Loop through each unique prefix
     for (prefix in prefixes) {
       # Define column names
       Nn_column <- paste0(prefix, "_N.n")
       On_column <- paste0(prefix, "_O.n")
       Cn_column <- paste0(prefix, "_C.n")
-      # Check if both _N.n and _O.n columns exist and there are no NA values
-      if (Nn_column %in% colnames(df) && On_column %in% colnames(df) && 
-          !any(is.na(df[[Nn_column]])) && !any(is.na(df[[On_column]]))) {
-        # Calculate _C.n based on the given formula
-        df[[Cn_column]] <- df[[Nn_column]] + df[[On_column]]
+      # Both inputs must exist as columns
+      if (Nn_column %in% colnames(df) && On_column %in% colnames(df)) {
+        Nn <- suppressWarnings(as.numeric(df[[Nn_column]]))
+        On <- suppressWarnings(as.numeric(df[[On_column]]))
+        derived <- ifelse(!is.na(Nn) & !is.na(On), Nn + On, NA_real_)
+        if (!(Cn_column %in% colnames(df))) df[[Cn_column]] <- NA_real_
+        reported <- suppressWarnings(as.numeric(df[[Cn_column]]))
+        # Fill only where _C.n is absent; a reported _C.n always wins
+        df[[Cn_column]] <- ifelse(is.na(reported), derived, reported)
         # Update the dataframe in the list
         cellcounts_data_list[[i]] <- df
       }
     }
   }
+
+# 3.7 Derive the cellular densities and ratios WITHIN each source, from that source's own primaries.
+#
+#     Why this step exists. The ratio variables are not reported on a common footing across the
+#     literature. Isotropic fractionation measures a density in each DISSECTED piece, so the
+#     Herculano-Houzel-team tables print densities per structure (cerebral cortex, cerebellum,
+#     rest of brain) and print whole-brain TOTALS -- but no whole-brain density, because the whole
+#     brain is not a dissected piece. The consequence, before this step, was that
+#     WholeBrain_N.p.mg had exactly ONE value in cellcounts_long (Avelino de Souza et al. 2025,
+#     the only table that tabulates a whole-brain density row) while WholeBrain_N.n and
+#     WholeBrain_Mass.g were present in seven sources. The ratio was not missing from the data;
+#     it was simply never computed.
+#
+#     Formulae (see _keys/glossary.csv for the measure codes):
+#       _N.p.mg = _N.n   / (_Mass.g * 1000)   neurons per mg of tissue
+#       _O.p.mg = _O.n   / (_Mass.g * 1000)   non-neuronal ("other") cells per mg
+#       _I.p.mg = _I.n   / (_Mass.g * 1000)   microglia per mg
+#       _O.p.N  = _O.n   / _N.n               non-neuronal cells per neuron
+#       _I.p.C  = _I.n   / _C.n               microglia per cell
+#       _p.C.N  = 100 * _N.n / _C.n           percent of cells that are neurons
+#       _I.n    = _I.p.C * _C.n               microglia NUMBER -- the inverse direction, because
+#                                             the microglia source reports the ratio, not the count
+#
+#     FILL-ONLY. A value the source itself reports is never overwritten, and the fill is row-wise
+#     so one blank species never suppresses a column. Rationale: for isotropic-fractionation data
+#     the density is the measured quantity and the count is density x mass, so a printed density
+#     carries the authors' precision while a back-calculation from a rounded printed count and
+#     mass does not. Where a reported and a derivable value coexist they agree to a median
+#     |difference| of 0.02-0.24%; the handful that do not (85 species-cells above 2%, worst
+#     Procyon lotor Hippocampus_N.p.mg at 100%, i.e. a factor of two) are source-table
+#     inconsistencies worth inspecting, not values to silently overwrite.
+#
+#     Deriving here, inside each source, keeps a species x structure ratio tied to ONE paper's own
+#     specimens, and lets it compete in the section 8 within-team priority resolution exactly as a
+#     reported value would. Cross-table derivation -- unavoidable for microglia, whose ratio and
+#     whose cell counts come from different papers -- happens later, in 9.1, and only for cells
+#     that are still empty after filtering.
+
+# Combine two measures of the same structure into a third: (a <op> b) * scale, element-wise.
+# op is "/" for every ratio and density, and "*" for the one inverse rule (_I.n = _I.p.C * _C.n).
+# A zero or negative denominator yields NA rather than an Inf.
+combine_measures <- function(a, b, scale, op) {
+  usable <- !is.na(a) & !is.na(b) & (op == "*" | b > 0)
+  ifelse(usable, if (op == "*") a * b * scale else a / b * scale, NA_real_)
+}
+
+# Fill df[[prefix_target]] from (prefix_a <op> prefix_b) * scale, row-wise, only where the target
+# is absent or NA. Returns df unchanged if either input column is missing.
+fill_derived <- function(df, prefix, target, a, b, scale = 1, op = "/") {
+  target_column <- paste0(prefix, "_", target)
+  a_column      <- paste0(prefix, "_", a)
+  b_column      <- paste0(prefix, "_", b)
+  if (!(a_column %in% colnames(df)) || !(b_column %in% colnames(df))) return(df)
+  derived <- combine_measures(suppressWarnings(as.numeric(df[[a_column]])),
+                              suppressWarnings(as.numeric(df[[b_column]])), scale, op)
+  if (!(target_column %in% colnames(df))) df[[target_column]] <- NA_real_
+  reported <- suppressWarnings(as.numeric(df[[target_column]]))
+  df[[target_column]] <- ifelse(is.na(reported), derived, reported)
+  df
+}
+
+# target, a, b, scale, op. Order matters: _C.n is already in place from 3.6, so _I.n can be built
+# from _I.p.C * _C.n, and _I.p.mg can then be built from the new _I.n.
+cellcounts_derivations <- list(
+  c("I.n",    "I.p.C", "C.n",    "1",     "*"),
+  c("N.p.mg", "N.n",   "Mass.g", "0.001", "/"),
+  c("O.p.mg", "O.n",   "Mass.g", "0.001", "/"),
+  c("I.p.mg", "I.n",   "Mass.g", "0.001", "/"),
+  c("O.p.N",  "O.n",   "N.n",    "1",     "/"),
+  c("I.p.C",  "I.n",   "C.n",    "1",     "/"),
+  c("p.C.N",  "N.n",   "C.n",    "100",   "/")
+)
+
+for (i in seq_along(cellcounts_data_list)) {
+  df <- cellcounts_data_list[[i]]
+  prefixes <- unique(sub("_.*", "", colnames(df)))
+  for (derivation in cellcounts_derivations) {
+    for (prefix in prefixes) {
+      df <- fill_derived(df, prefix,
+                         target = derivation[1],
+                         a      = derivation[2],
+                         b      = derivation[3],
+                         scale  = as.numeric(derivation[4]),
+                         op     = derivation[5])
+    }
+  }
+  cellcounts_data_list[[i]] <- df
+}
 
 # Note: the published Dos Santos et al. (2020) Table 1 has transcription typos in its cell counts
 #   (e.g. Tragelaphus strepsiceros whole-brain cells). RESOLVED upstream: Table 1 is excluded from
@@ -529,8 +693,20 @@ filtered_all_variables
 # Extra taxonomic variables: "Species_Source", "Family", "Order", "Clade", "CommonName", "Micro.or.mega"    
 # Data Sources variables: variables ending in "_Source"
 # Sample information: "SampleInfo"
-# Derived variables created from datasets: variables ending in "_p.C.N", "_p.C.Brain", "_N.p.mg", "_O.p.mg", "_O.p.N"   
 # Statistics around means: "_SD", _n", "_S.n"
+# Structure fractions still annexed: variables ending in "_p.C.Brain"
+#
+# The cellular ratios are NO LONGER annexed. "_N.p.mg", "_O.p.mg", "_O.p.N" (previously commented
+# out below) and "_p.C.N" (uncommented 2026-09) are cellular-composition measures in their own
+# right, they are now derived on a common basis in 3.7 and 9.1, and they are what the trait table
+# needs. Annexing them was what left WholeBrain_N.p.mg with a single value.
+#
+# "_p.C.Brain" (Kverkova et al. 2018 Table S1) stays annexed, deliberately: it is a STRUCTURE
+# fraction, not a cellular ratio, and _keys/glossary.csv defines it as a volume fraction while the
+# masses and counts carried here would give a mass or neuron fraction. Restoring it needs its basis
+# pinned to the source table first, otherwise it would merge three different quantities under one
+# column. Note that Burish's "_p.C.CNS.mass", "_p.C.CNS.neurons" and "_p.C.Body.mass" were never
+# caught by the "_p.C.N" pattern and have always passed through.
 
 # Initialize annexed_metadata as a named list
 annexed_metadata <- setNames(vector("list", length(filtered_cellcounts_data_list)), names(filtered_cellcounts_data_list))
@@ -544,10 +720,8 @@ for (i in seq_along(filtered_cellcounts_data_list)) {
                          grep("_S.n$", names(filtered_cellcounts_data_list[[i]]), value = TRUE),
                          grep("_SD$", names(filtered_cellcounts_data_list[[i]]), value = TRUE),
                          grep("_n$", names(filtered_cellcounts_data_list[[i]]), value = TRUE),
-                         # grep("_N.p.mg", names(filtered_cellcounts_data_list[[i]]), value = TRUE),
-                         # grep("_O.p.mg", names(filtered_cellcounts_data_list[[i]]), value = TRUE),
-                         # grep("_O.p.N", names(filtered_cellcounts_data_list[[i]]), value = TRUE),
-                         grep("_p.C.N", names(filtered_cellcounts_data_list[[i]]), value = TRUE),
+                         # Cellular ratios kept in the merge (see the note above), NOT annexed:
+                         #   "_N.p.mg", "_O.p.mg", "_I.p.mg", "_O.p.N", "_I.p.C", "_p.C.N"
                          grep("_p.C.Brain", names(filtered_cellcounts_data_list[[i]]), value = TRUE))
 
   # Check if any of the variables to move are present in the dataframe
@@ -803,53 +977,77 @@ HerculanoHouzel_Team_data_long <- HerculanoHouzel_Team_data_long[HerculanoHouzel
 # Delete the 'priority' and 'DECISION' columns if they will not be used again # These are not available for mixed sources 
 HerculanoHouzel_Team_data_long <- HerculanoHouzel_Team_data_long[, !(names(HerculanoHouzel_Team_data_long) %in% c("priority", "DECISION"))]
 
-# #### 9.1 Calculate: within-team between-tables values using filtered dataset
-# # For each species with available data on microglia density ("_I.p.mg"), calculate the number of microglia ("_I.n") for each brain structure. 
-# # For a given species (identified by the column "Species") and a particular brain structure (identified by the prefix in the "Variable" column), the corresponding "_I.n" is computed by multiplying the microglia density ("_I.p.mg") by the mass ("_Mass.g") .
-# # Note the Source for "_I.p.mg" and "_Mass.g". The new value should combine BOTH Sources
-# # The result is then scaled by a factor of 1000 to convert from g to mg.
-# # Formula: "_I.n" = "_I.p.mg" "_Mass.g" x 1000
-# # Formula: "_I.n" = "_I.p.mg" "_Mass.g" x 1000
-# 
-# # Make Values numeric
-# HerculanoHouzel_Team_data_long$Value <- as.numeric(HerculanoHouzel_Team_data_long$Value)
-# 
-# # Shorthand for the dataframe name
-# df_long <- HerculanoHouzel_Team_data_long
-# 
-# # Split the Variable column into Type and Measure
-# df_widen <- df_long %>%
-#   separate(Variable, into = c("Type", "Measure"), sep = "_", remove = TRUE)
-# 
-# # Filter groups
-# filtered_groups <- df_widen %>%
-#   group_by(Species, Type) %>%
-#   filter(any(Measure == "I.p.mg") & any(Measure == "Mass.g"))
-# 
-# # Add new rows to the filtered groups
-# new_rows <- filtered_groups %>%
-#   group_by(Species, Type) %>%
-#   do(add_row(., 
-#              Species = unique(.$Species), 
-#              # Variable = paste0(unique(.$Type[.$Measure == "I.n"]), "_I.n"), 
-#              Type = unique(.$Type), 
-#              Measure = "I.n", 
-#              Source = paste0(unique(.$Source[.$Measure == "I.p.mg"]), "_", unique(.$Source[.$Measure == "Mass.g"])), 
-#              Value = sum(.$Value[.$Measure == "I.p.mg"]) * sum(.$Value[.$Measure == "Mass.g"]) * 1000))
-# 
-# # Remove rows with Measure "I.p.mg" or "Mass.g"
-# new_rows <- new_rows %>%
-#   filter(Measure != "I.p.mg" & Measure != "Mass.g")
-# 
-# # Re-unite Variable column
-# new_rows <- new_rows %>%
-#   unite(Variable, Type, Measure, sep = "_", remove = TRUE)
-# 
-# # Combine the original dataframe with the new rows
-# final_df <- bind_rows(df_long, new_rows)
-# 
-# # Return to previous name
-# HerculanoHouzel_Team_data_long <- final_df
+#### 9.1 Calculate: within-team between-tables values using the filtered dataset
+#
+#     Fill any cellular ratio still empty after the 8.3 priority resolution, using primaries that
+#     survived filtering for the SAME species and SAME structure within the SAME team -- even when
+#     the two inputs came from different tables. 3.7 has already covered everything derivable
+#     inside a single source, so this step only reaches cells that no one paper can supply on its
+#     own. The Source string becomes the two contributing sources joined, so a cross-table value is
+#     never mistaken for a single-source measurement.
+#
+#     This is the step that yields microglia numbers and densities. Dos Santos et al. 2020
+#     (unpublished) reports only the microglia/cell RATIO (_I.p.C); the cell counts (_C.n) and
+#     masses (_Mass.g) for those same species come from other Herculano-Houzel-team tables, so
+#     _I.n = _I.p.C * _C.n and _I.p.mg = _I.n / (_Mass.g * 1000) are only reachable here. This is
+#     also why "_I.p.mg" had no values at all: no live source reports it, and the excluded
+#     Dos Santos published Table 1 was the only table that ever printed one.
+#
+#     FILL-ONLY, on the same terms as 3.7: nothing already present is replaced, and a denominator
+#     of zero or a missing input yields no row rather than an Inf or a NaN.
+
+# Fill missing Species x Structure ratios in a team's long dataframe from its own primaries.
+# df_long has columns Species, Variable, Source, Value (Value character, as built in 8.1).
+# derivations: list of c(target, a, b, scale, op), applied in order, so a value derived by an
+# earlier rule is available to a later one.
+derive_within_team <- function(df_long, derivations) {
+  if (!nrow(df_long)) return(df_long)
+  measured <- df_long[grepl("_", df_long$Variable, fixed = TRUE), , drop = FALSE]
+  measured$Structure <- sub("_[^_]*$", "", measured$Variable)
+  measured$Measure   <- sub("^.*_",    "", measured$Variable)
+  measured$Numeric   <- suppressWarnings(as.numeric(measured$Value))
+  measured <- measured[!is.na(measured$Numeric), , drop = FALSE]
+  if (!nrow(measured)) return(df_long)
+
+  # Species \r Structure \r Measure -> value, and -> the source it came from
+  key         <- paste(measured$Species, measured$Structure, measured$Measure, sep = "\r")
+  value_of    <- setNames(measured$Numeric, key)
+  source_of   <- setNames(measured$Source,  key)
+  combination <- unique(paste(measured$Species, measured$Structure, sep = "\r"))
+  added       <- df_long[0, , drop = FALSE]
+
+  for (derivation in derivations) {
+    target <- derivation[1]; a <- derivation[2]; b <- derivation[3]
+    scale  <- as.numeric(derivation[4]); op <- derivation[5]
+    target_key <- paste(combination, target, sep = "\r")
+    a_key      <- paste(combination, a,      sep = "\r")
+    b_key      <- paste(combination, b,      sep = "\r")
+    derived  <- combine_measures(value_of[a_key], value_of[b_key], scale, op)
+    fillable <- is.na(value_of[target_key]) & !is.na(derived)
+    fillable[is.na(fillable)] <- FALSE
+    if (!any(fillable)) next
+    split_keys <- strsplit(combination[fillable], "\r", fixed = TRUE)
+    new_rows <- data.frame(
+      Species  = vapply(split_keys, `[`, character(1), 1L),
+      Variable = paste0(vapply(split_keys, `[`, character(1), 2L), "_", target),
+      Source   = mapply(function(x, y) paste(unique(c(x, y)), collapse = "_"),
+                        source_of[a_key[fillable]],
+                        source_of[b_key[fillable]], USE.NAMES = FALSE),
+      Value    = as.character(derived[fillable]),
+      stringsAsFactors = FALSE)
+    # make the new values visible to the remaining derivations in this same pass
+    refresh_key <- paste(new_rows$Species, sub("_[^_]*$", "", new_rows$Variable), target, sep = "\r")
+    value_of[refresh_key]  <- as.numeric(new_rows$Value)
+    source_of[refresh_key] <- new_rows$Source
+    added <- rbind(added, new_rows[, names(df_long), drop = FALSE])
+  }
+  rbind(df_long, added)
+}
+
+HerculanoHouzel_Team_data_long <- derive_within_team(HerculanoHouzel_Team_data_long,
+                                                     cellcounts_derivations)
+Kverkova_Team_data_long        <- derive_within_team(Kverkova_Team_data_long,
+                                                     cellcounts_derivations)
 
 #### 9.2 Calculate: between-team averages using filtered dataset
 ## Finalize dataset

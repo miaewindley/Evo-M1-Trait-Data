@@ -176,7 +176,7 @@ kauf_files = sorted(p for p in glob.glob(os.path.join(BASE, "Kaufman__2004", "Ka
                     if re.search(r"TableA([1-9]|1[0-4])\.csv$", p))
 for f in kauf_files:
     table = re.search(r"TableA[0-9]+", os.path.basename(f)).group(0)
-    for r in rows_of(f):
+    for src_row, r in enumerate(rows_of(f), 1):
         printed = (r.get("Species") or "").strip()
         if not printed:
             continue
@@ -191,19 +191,24 @@ for f in kauf_files:
             if v is None:
                 continue
             unit, mclass, _ = MEASURES[meas]
+            # Kaufman columns are already in the project standard units (per 100 g).
             U.append(dict(Compilation="Kaufman__2004", Species_printed=printed,
                           Species=species, genus=genus, Region_raw=reg_raw,
+                          Subregion_raw="",
                           Region=canon_region(reg_raw), Measure=meas, measure_class=mclass,
-                          Value=v, SD=None, n=num(r.get("n")),
+                          Value=v, Value_raw=(r.get(col) or "").strip(),
+                          SD=None, n=num(r.get("n")),
                           conscious=conscious_kauf(r.get("Anesthesia")),
                           ref_raw=r.get("Reference") or "",
-                          ref_keys=[ref_key(r.get("Reference"))], Units=unit, Table=table))
+                          ref_keys=[ref_key(r.get("Reference"))],
+                          Units=unit, Units_raw=unit, Table=table,
+                          source_row=src_row, source_snapshot_row=src_row))
 
 karb_files = sorted(glob.glob(os.path.join(BASE, "Karbowski__2007", "Karbowski__2007_TableS*.csv")))
 karb_files = [p for p in karb_files if re.search(r"TableS[0-9]+\.csv$", p)]
 for f in karb_files:
     table = re.search(r"TableS[0-9]+", os.path.basename(f)).group(0)
-    for r in rows_of(f):
+    for src_row, r in enumerate(rows_of(f), 1):
         if str(r.get("is_average", "")).strip().upper() == "TRUE":
             continue          # Karbowski's own per-species means are dropped
         meas = (r.get("measure") or "").strip()
@@ -222,62 +227,103 @@ for f in karb_files:
         U.append(dict(Compilation="Karbowski__2007",
                       Species_printed=(r.get("species_printed") or "").strip(),
                       Species=species, genus=species.split()[0] if species else "",
-                      Region_raw=reg_raw, Region=canon_region(reg_raw),
+                      Region_raw=reg_raw, Subregion_raw=(r.get("subregion") or "").strip(),
+                      Region=canon_region(reg_raw),
                       Measure=meas, measure_class=mclass, Value=v * scale,
+                      Value_raw=(r.get("value") or "").strip(),
                       SD=None if sd is None else sd * scale, n=None, conscious="unknown",
                       ref_raw=r.get("reference") or "",
-                      ref_keys=ref_keys_multi(r.get("reference")), Units=unit, Table=table))
+                      ref_keys=ref_keys_multi(r.get("reference")),
+                      Units=unit, Units_raw=(r.get("units") or "").strip(), Table=table,
+                      source_row=src_row, source_snapshot_row=src_row))
 
-for r in rows_of(os.path.join(BASE, "Heiss_etal_2004", "Heiss_etal_2004_TABLE1.csv")):
+for src_row, r in enumerate(
+        rows_of(os.path.join(BASE, "Heiss_etal_2004", "Heiss_etal_2004_TABLE1.csv")), 1):
     v = num(r.get("Both hemispheres Mean"))
     if v is None:
         continue
     reg_raw = (r.get("Region") or "").strip()
     U.append(dict(Compilation="Heiss_etal_2004", Species_printed="Homo sapiens",
                   Species="Homo sapiens", genus="Homo", Region_raw=reg_raw,
+                  Subregion_raw="",
                   Region=canon_region(reg_raw), Measure="CMRgl",
                   measure_class="cerebral_metabolic_rate", Value=v,
+                  Value_raw=(r.get("Both hemispheres Mean") or "").strip(),
                   SD=num(r.get("Both hemispheres SD")), n=None, conscious="conscious",
                   ref_raw="Heiss et al 2004", ref_keys=["heiss2004"],
-                  Units="umol/100g/min", Table="TABLE1"))
+                  Units="umol/100g/min", Units_raw="umol/100g/min", Table="TABLE1",
+                  source_row=src_row, source_snapshot_row=src_row))
 
+# ---- 1.5. derived provenance fields -----------------------------------------
+# Computed once on every unfiltered row; used in the provenance table and by the
+# restricted-repo cross-compilation audit.
 for u in U:
     u["ref_keys_str"] = ";".join(k for k in u["ref_keys"] if k)
+    nkeys = len(u["ref_keys"])
+    u["source_granularity"] = (
+        "single_primary_reference"    if nkeys == 1 else
+        "multiple_primary_references" if nkeys > 1 else
+        "no_primary_reference"
+    )
+    conscious = u["conscious"]
+    u["condition_group"] = (
+        "resting_conscious"    if conscious == "conscious"    else
+        "resting_anesthetized" if conscious == "anesthetized" else
+        "resting_unknown"
+    )
+    comp = u["Compilation"]
+    u["derivation_role"] = (
+        "self_primary_reported_in_compilation"
+        if comp == "Heiss_etal_2004" else
+        "reported_via_secondary_compilation"
+    )
+    u["source_reference_levels"] = "primary"
+    u["source_reference_types"]  = "journal_article"
+    # A ref_key is considered resolved if at least one key was successfully parsed
+    # (has a surname AND a year, rather than just "anonNA").
+    resolved = any(
+        bool(SURNAME_RX.search(k)) and bool(YEAR_RX.search(k))
+        for k in u["ref_keys"] if k
+    )
+    u["reference_resolution_status"] = "resolved" if resolved else "unresolved"
+    u["primary_reference_ids"]  = u["ref_keys_str"]
+    u["primary_references"]     = u["ref_raw"]
+    u["primary_reference_raw"]  = u["ref_raw"]
+    u["source_reference_ids"]   = u["ref_keys_str"]
+    u["source_references"]      = u["ref_raw"]
+    # Arm-identity columns: this builder does not yet track repeated-arm structure,
+    # so every row is treated as a single, unambiguous arm.
+    u["arm_identity_status"]    = "single"
+    u["arm_ambiguity_group_id"] = ""
 
 blank = lambda v: "" if v is None else (repr(v) if isinstance(v, str) else
                                         ("%g" % v if v == v else ""))
 
-# ---- 2. unfiltered long table (full provenance) -----------------------------
-UF_COLS = ["Species", "Species_printed", "Compilation", "Table", "Region", "Region_raw",
-           "Measure", "measure_class", "Value", "SD", "n", "Units", "conscious",
-           "ref_raw", "ref_keys_str"]
-uf = sorted(U, key=lambda u: (u["Measure"], u["Species"], u["Region"], u["Compilation"]))
-with open(os.path.join(HERE, "cerebral_metabolic_rate_unfiltered.csv"), "w", newline="",
-          encoding="utf-8") as fh:
-    w = csv.DictWriter(fh, fieldnames=UF_COLS, extrasaction="ignore")
-    w.writeheader()
-    for u in uf:
-        w.writerow({c: ("" if u.get(c) is None else u[c]) for c in UF_COLS})
+# ---- 2. filter: drop explicitly anesthetized (Kaufman's conscious-only rule) -
+# Run the filter and dedupe BEFORE writing the unfiltered table so that every row
+# can be annotated with include_in_primary_merge and exclusion_reason.
 
-# ---- 3. filter: drop explicitly anesthetized (Kaufman's conscious-only rule) -
-F = [u for u in U if u["conscious"] != "anesthetized"]
+# Map F-index -> U-index so we can later trace dedupe exclusions back to U.
+F_map = [(i, U[i]) for i in range(len(U)) if U[i]["conscious"] != "anesthetized"]
+F = [u for _, u in F_map]
+step3_excluded_U = {i for i in range(len(U)) if U[i]["conscious"] == "anesthetized"}
 
-# ---- 4. compilation-aware dedupe of shared primary studies ------------------
+# ---- 3. compilation-aware dedupe of shared primary studies ------------------
 by_cell_ref = defaultdict(list)
-for i, u in enumerate(F):
+for j, (u_idx, u) in enumerate(F_map):
     for k in u["ref_keys"]:
         if k:
-            by_cell_ref[(u["Species"], u["Region"], u["Measure"], k)].append(i)
-drop, report = set(), []
-for (sp, reg, meas, k), idx in by_cell_ref.items():
-    comps = {F[i]["Compilation"] for i in idx}
+            by_cell_ref[(u["Species"], u["Region"], u["Measure"], k)].append(j)
+drop_F, report = set(), []
+for (sp, reg, meas, k), jdx in by_cell_ref.items():
+    comps = {F[j]["Compilation"] for j in jdx}
     if len(comps) < 2:
         continue
     keep_comp = min(comps, key=lambda c: COMP_PRIORITY.get(c, 99))
     dropped = sorted(c for c in comps if c != keep_comp)
-    for i in idx:
-        if F[i]["Compilation"] != keep_comp:
-            drop.add(i)
+    for j in jdx:
+        if F[j]["Compilation"] != keep_comp:
+            drop_F.add(j)
     report.append(dict(Species=sp, Region=reg, Measure=meas, shared_ref=k,
                        reported_by="; ".join(sorted(comps)), kept=keep_comp,
                        dropped="; ".join(dropped)))
@@ -288,9 +334,49 @@ with open(os.path.join(HERE, "cerebral_metabolic_rate_dedupe_report.csv"), "w", 
                                        "reported_by", "kept", "dropped"])
     w.writeheader()
     w.writerows(report)
-D = [u for i, u in enumerate(F) if i not in drop]
 
-# ---- 5. aggregate: study-mean, then mean across distinct studies ------------
+# Map F-level drop set back to U indices.
+step4_excluded_U = {F_map[j][0] for j in drop_F}
+D = [F[j] for j in range(len(F)) if j not in drop_F]
+
+# Annotate every U row with merge eligibility and exclusion reason.
+for i, u in enumerate(U):
+    if i in step3_excluded_U:
+        u["include_in_primary_merge"] = "FALSE"
+        u["exclusion_reason"] = "anesthetized"
+    elif i in step4_excluded_U:
+        u["include_in_primary_merge"] = "FALSE"
+        u["exclusion_reason"] = "duplicate_secondary_compilation"
+    else:
+        u["include_in_primary_merge"] = "TRUE"
+        u["exclusion_reason"] = ""
+
+# ---- 4. unfiltered long table (full provenance) -----------------------------
+UF_COLS = [
+    "record_id", "Species", "Species_printed", "Compilation", "Table",
+    "source_row", "source_snapshot_row",
+    "Region", "Region_raw", "Subregion_raw", "Measure", "measure_class",
+    "Value_raw", "Units_raw", "Value", "SD", "n", "Units", "conscious",
+    "condition_group", "include_in_primary_merge", "source_granularity",
+    "arm_identity_status", "arm_ambiguity_group_id",
+    "derivation_role", "exclusion_reason",
+    "primary_reference_ids", "primary_references", "primary_reference_raw",
+    "source_reference_ids", "source_references",
+    "source_reference_levels", "source_reference_types", "reference_resolution_status",
+    # Legacy names retained for backward compatibility.
+    "ref_raw", "ref_keys_str",
+]
+uf = sorted(U, key=lambda u: (u["Measure"], u["Species"], u["Region"], u["Compilation"]))
+for rec_id, u in enumerate(uf, 1):
+    u["record_id"] = rec_id
+with open(os.path.join(HERE, "cerebral_metabolic_rate_unfiltered.csv"), "w", newline="",
+          encoding="utf-8") as fh:
+    w = csv.DictWriter(fh, fieldnames=UF_COLS, extrasaction="ignore")
+    w.writeheader()
+    for u in uf:
+        w.writerow({c: ("" if u.get(c) is None else u[c]) for c in UF_COLS})
+
+# ---- 5. aggregate: study-mean, then mean across distinct studies (unchanged) -
 study = defaultdict(lambda: {"vals": [], "comps": set()})
 for u in D:
     sid = u["ref_keys_str"] or f"{u['Compilation']}:{u['Table']}"

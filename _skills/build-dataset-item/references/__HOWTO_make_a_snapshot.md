@@ -49,6 +49,17 @@ The most common mistake is saving the snapshot *after* already renaming headers
 or stripping symbols — then it no longer matches the paper, and the whole point
 (comparison to source) is lost. Capture first, clean second.
 
+**The other way to fake a snapshot: hardcoding.** A `data.frame` typed into the
+build script — with cleaned column names, split mean/SEM columns, markers
+already converted to flags — written out as `..._snapshot.csv` on every run is
+**not a snapshot**; it is the product wearing the snapshot's name, and it leaves
+nothing to audit the cleaning against. The tell: the "snapshot" and the clean
+CSV are the same file. A hand transcription is fine (that's method 5 below),
+but it must be typed **as printed, into the frozen file**, and the `.R` must
+**read** that file — never regenerate it. An `*_extract.R` that *builds* a
+snapshot from the PDF/HTML source is different and fine: it saves the captured
+hardcopy first, then cleaning starts from that file.
+
 ## Choosing the format (evidence, not product)
 
 **The snapshot is evidence, not product.** Choose the capture that minimizes
@@ -115,7 +126,12 @@ later, in the script. Not here.
 3. **Extract from a PDF of the paper.** If the table is published in a PDF, write
    a script to use a tool like tabulapdf (R) to extract it programmatically. This 
    works best for text-based PDFs; scanned documents may require OCR (e.g., 
-   tesseract).  
+   tesseract). Plain `pdftools::pdf_text` + regex also works well for small
+   tables and for values printed in running text — worked example:
+   `Jacob_etal_2021/Jacob_etal_2021_extract_snapshot.R` (no values typed in the
+   script; anchored printed literals for headers/notes; two-column reading-order
+   reconstruction; refuses to overwrite a differing frozen copy). Prefer this
+   over manual entry whenever the PDF has a usable text layer.
 
 4. **PDF → Excel (our default for printed tables).** Open the PDF in Adobe
    Acrobat Pro → *Export a PDF → Microsoft Excel Workbook*. Copy/paste the table
@@ -125,7 +141,11 @@ later, in the script. Not here.
 5. **Manual entry** (when the PDF is a scan or export is garbled). Type it in,
    keeping the original layout. Then double-check it — e.g. ask an AI assistant
    to read the table from the PDF and diff it against your file, and correct any
-   mismatches by hand.
+   mismatches by hand. Record in the ReadMe **who typed it and when** — this
+   applies to an AI assistant exactly as to a person: "transcribed by <RA / AI
+   assistant> on <date>, verified against the PDF by <how>". A reading step
+   that leaves no record is how "hardcoded" numbers happen; the values always
+   come from somewhere, and the ReadMe must say where and through whom.
 
 Whatever the method, the result is the same kind of file: a faithful, frozen
 copy you can compare to the paper.
@@ -174,5 +194,7 @@ Copy the format of any existing `*.README.md`.
 - Is *every* change to the data written down in the `.R` script (and nothing
   baked silently into the snapshot)?
 - Did I save a local snapshot file, even though the data is online?
+- Does the `.R` **read** the snapshot (rather than write it from hardcoded
+  values), and does the snapshot actually differ from the clean CSV?
 
 If yes to all four, the snapshot is proper.

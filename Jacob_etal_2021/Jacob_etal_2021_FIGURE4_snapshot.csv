@@ -1,0 +1,8 @@
+"Constructed snapshot: Figure 4 prints no numbers; values below are extracted verbatim from the PDF text layer of Results §3.1 (PDF p. 7) and the Figure 4 caption (PDF p. 8) — the text layer renders the printed x-bar-c as ""xc"" and holds a stray space inside two panel-B means; kept as-is. See Jacob_etal_2021_FIGURE4.ReadMe.md.",,,,,,
+panel,measure_as_printed,group_as_printed,group_mean_as_printed,anova_as_printed,posthoc_vs_high_solvers_as_printed,provenance
+A,total HC nuclei,nonsolver group,"xc = 35,237,500","F(2,15) = 6.067, p = .0117, ηp2 = 0.447",p = .012,Results §3.1 text; Figure 4(a) caption: N = 6
+A,total HC nuclei,intermediate group,"xc = 39,017,500","F(2,15) = 6.067, p = .0117, ηp2 = 0.447",p = .0663 (n.s.),"Results §3.1 text; N derived: F(2,15) => total 18"
+A,total HC nuclei,high solvers,"xc = 51,472,917","F(2,15) = 6.067, p = .0117, ηp2 = 0.447",,Results §3.1 text; Figure 4(a) caption: N = 7
+B,total nonneuronal HC nuclei,nonsolver group,"xc = 31,523, 979","F(2,14) = 3.847, p = .0466, ηp2 = 0.355",p = .0706 (caption; text: p = .071),Results §3.1 text; caption N = 6
+B,total nonneuronal HC nuclei,intermediate group,"xc = 32,545,144","F(2,14) = 3.847, p = .0466, ηp2 = 0.355",p = .1006 (caption; text: p = .101),"Results §3.1 text; N = 4 (one NeuN exclusion; F(2,14))"
+B,total nonneuronal HC nuclei,high solvers,"xc = 43,959, 439","F(2,14) = 3.847, p = .0466, ηp2 = 0.355",,Results §3.1 text; caption N = 7

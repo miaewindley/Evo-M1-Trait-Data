@@ -22,7 +22,7 @@ VocalRepertoire (count),behaviour & cognition,vocalization,,VocalRepertoire,coun
 Adult_head_body_length_mm,body size,body_length,Body,Length.mm,mm,True,,Adult head body length mm,source_definition,Lewitus_etal_2014/reference_tables/Lewitus_etal_2014_TableS1_definitions.csv,Adult_head_body_length_mm,
 Body weight kg,body size,mass,Body,Mass.kg,kg,True,,body weight in kilograms,source_definition,Heffner_Masterton_1975/reference_tables/Heffner_Masterton_1975_TableI_definitions.csv,Body weight kg,
 Body_Mass (g),body size,mass,Body,Mass.g,g,True,,Whole-animal body mass in grams. Authoritative pooled value from the body/ecology merge; the per-paper body-mass columns are superseded by it and kept only as a fallback for species the merge does not cover.,glossary_definition,_keys/glossary.csv,Body_Mass,Mass
-Body_weight,body size,mass,Body,Mass.g,g,True,,body weight,source_definition,Stephan_etal_1981/reference_tables/Stephan_etal_1981_TablesI-VI_definitions.csv,Body_weight,
+Body_weight,body size,mass,Body,Mass.g,g,True,,body weight,source_definition,Stephan_etal_1981/reference_tables/Stephan_etal_1981_definitions.csv,Body_weight,
 Endocranial_volume (mL),brain structure & size,endocranial_volume,WholeBrain,Vol.mL,mL,True,endocranial_volume,WholeBrain,composed_structure_only,_keys/glossary.csv + _keys/variable_domain.csv,,
 Endocranial_volume_female (mL),brain structure & size,endocranial_volume,WholeBrain,Vol.mL,mL,True,endocranial_volume_female,WholeBrain,composed_structure_only,_keys/glossary.csv + _keys/variable_domain.csv,,
 Brain_Mass_excl_olfactory_bulb (g),brain structure & size,mass,WholeBrain,Mass.g,g,True,mass_measured_excl_ob,WholeBrain: mass in grams,composed,_keys/glossary.csv + _keys/variable_domain.csv,,Mass

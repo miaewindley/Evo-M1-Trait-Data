@@ -1,0 +1,12 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Group,Adoptee group: UK (n=21) or Romanian (n=67),Cerebral cortex parcels,,group,info,Homo sapiens,Mackes_etal_2020,ERA personal communication,
+Region_raw,FreeSurfer region label (lh_/rh_ prefix),Cerebral cortex parcels,,group,info,Homo sapiens,Mackes_etal_2020,Desikan-Killiany (FreeSurfer 6.0),
+Structure,Cortical parcel (hemisphere prefix removed),Cerebral cortex parcels,,group,info,Homo sapiens,Mackes_etal_2020,,
+Hemisphere,L or R,Cerebral cortex parcels,,group,info,Homo sapiens,Mackes_etal_2020,,
+n,Group sample size,Cerebral cortex parcels,,count,info,Homo sapiens,Mackes_etal_2020,UK 21; Romanian 67,
+mean.mm3,Mean regional volume (group),Cerebral cortex parcels,Vol.mm3,group mean,primary,Homo sapiens,Mackes_etal_2020,,ERABIS (personal communication)
+sd.mm3,SD of regional volume,Cerebral cortex parcels,Vol.mm3,SD,info,Homo sapiens,Mackes_etal_2020,,ERABIS
+se.mm3,SE of regional volume,Cerebral cortex parcels,Vol.mm3,SE,info,Homo sapiens,Mackes_etal_2020,,ERABIS
+Cortical_GM_per_hemisphere.cm3,Cerebral-cortex GM per hemisphere (sum of DK parcels, averaged L/R),Cerebral cortex,Vol.cm3,group mean,primary,Homo sapiens,Mackes_etal_2020,Analysis aggregate,Derived in analysis.R
+Volume_per_hemisphere.cm3,Subcortical volume per hemisphere (group mean),Subcortical nuclei,Vol.cm3,group mean,primary,Homo sapiens,Mackes_etal_2020,Thalamus/Caudate/Putamen/Pallidum/Hippocampus/Amygdala/Accumbens,ERA subcortical (personal communication)
+SD.cm3,SD of subcortical per-hemisphere volume,Subcortical nuclei,Vol.cm3,SD,info,Homo sapiens,Mackes_etal_2020,,ERA subcortical

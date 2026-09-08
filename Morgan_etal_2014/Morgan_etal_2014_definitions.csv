@@ -1,0 +1,20 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+Case,Specimen/case identifier,Amygdala,,per-individual,info,Homo sapiens,Morgan_etal_2014_DataS1,,
+Diagnosis,ASD or Control,Amygdala,,per-individual,info,Homo sapiens,Morgan_etal_2014_DataS1,Study 1a uses Control,
+Age_years,Age at death (years),Amygdala,,per-individual,info,Homo sapiens,Morgan_etal_2014_DataS1,,
+PMI_hours,Post-mortem interval (hours),Amygdala,,per-individual,info,Homo sapiens,Morgan_etal_2014_DataS1,,
+Hemisphere,Hemisphere measured,Amygdala,,per-individual,info,Homo sapiens,Morgan_etal_2014_DataS1,Densities hemisphere-invariant,
+Region,Canonical structure,Amygdala,,per-individual,info,Homo sapiens,Morgan_etal_2014_DataS1,,
+Amyg_Volume.mm3,Amygdala volume,Amygdala,Vol.mm3,per-individual,primary,Homo sapiens,Morgan_etal_2014_DataS1,,Data S1 (Cavalieri)
+Neuron_N,Total neuron number,Amygdala,count,per-individual,primary,Homo sapiens,Morgan_etal_2014_DataS1,,Data S1 (optical fractionator)
+Glia_N,Total glia number,Amygdala,count,per-individual,primary,Homo sapiens,Morgan_etal_2014_DataS1,,Data S1
+Astrocyte_N,Total astrocyte number,Amygdala,count,per-individual,primary,Homo sapiens,Morgan_etal_2014_DataS1,,Data S1
+Oligodendrocyte_N,Total oligodendrocyte number,Amygdala,count,per-individual,primary,Homo sapiens,Morgan_etal_2014_DataS1,,Data S1
+Microglia_N,Total microglia number,Amygdala,count,per-individual,primary,Homo sapiens,Morgan_etal_2014_DataS1,,Data S1
+Endothelial_N,Total endothelial cell number,Amygdala,count,per-individual,secondary,Homo sapiens,Morgan_etal_2014_DataS1,,Data S1
+Neuron_density.per.mm3,Neuron density = Neuron_N / Amyg_Volume.mm3,Amygdala,density.per.mm3,per-individual,primary,Homo sapiens,Morgan_etal_2014_DataS1,Derived in analysis.R,
+Glia_density.per.mm3,Glia density,Amygdala,density.per.mm3,per-individual,primary,Homo sapiens,Morgan_etal_2014_DataS1,Derived,
+Astrocyte_density.per.mm3,Astrocyte density,Amygdala,density.per.mm3,per-individual,primary,Homo sapiens,Morgan_etal_2014_DataS1,Derived,
+Oligodendrocyte_density.per.mm3,Oligodendrocyte density,Amygdala,density.per.mm3,per-individual,primary,Homo sapiens,Morgan_etal_2014_DataS1,Derived,
+Microglia_density.per.mm3,Microglia density,Amygdala,density.per.mm3,per-individual,primary,Homo sapiens,Morgan_etal_2014_DataS1,Derived,
+Glia_Neuron_ratio,Glia-to-neuron ratio,Amygdala,ratio,per-individual,primary,Homo sapiens,Morgan_etal_2014_DataS1,Derived,

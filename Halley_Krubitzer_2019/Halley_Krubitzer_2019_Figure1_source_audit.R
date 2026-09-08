@@ -5,6 +5,7 @@
 suppressPackageStartupMessages({
   library(readr)
   library(dplyr)
+  library(purrr)
 })
 
 .sp <- local({
@@ -24,9 +25,37 @@ setwd(folder)
 
 map <- read_csv("Halley_Krubitzer_2019_Figure1_source_map.csv",
                 show_col_types = FALSE, na = c("", "NA"))
-stephan <- read_csv(file.path(root, "Stephan_etal_1981",
-                             "Stephan_etal_1981_TablesI-VI.csv"),
-                    show_col_types = FALSE, na = c("", "NA"))
+
+stephan_files <- c(
+  "Stephan_etal_1981_TableI.csv",
+  "Stephan_etal_1981_TableII.csv",
+  "Stephan_etal_1981_TableIII.csv",
+  "Stephan_etal_1981_TableIV.csv",
+  "Stephan_etal_1981_TableV.csv",
+  "Stephan_etal_1981_TableVI.csv",
+  "Stephan_etal_1981_TableVII.csv",
+  "Stephan_etal_1981_TableVIII.csv",
+  "Stephan_etal_1981_TableIX.csv",
+  "Stephan_etal_1981_TableX.csv",
+  "Stephan_etal_1981_TableXI.csv",
+  "Stephan_etal_1981_TableXII.csv",
+  "Stephan_etal_1981_TableXIII.csv",
+  "Stephan_etal_1981_TableXIV.csv",
+  "Stephan_etal_1981_TableXV.csv",
+  "Stephan_etal_1981_TableXVI.csv"
+)
+
+stephan <- stephan_files |>
+  map(~ read_csv(
+    file.path(root, "Stephan_etal_1981", .x),
+    show_col_types = FALSE
+  ) |>
+    select(-any_of("source"))) |>
+  reduce(
+    full_join,
+    by = c("species", "group")
+  )
+
 campos <- read_csv(file.path(root, "Campos_Welker_1976",
                             "Campos_Welker_1976_Table1_snapshot.csv"),
                    show_col_types = FALSE, na = c("", "NA"))

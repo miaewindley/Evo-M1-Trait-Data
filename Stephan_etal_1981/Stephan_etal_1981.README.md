@@ -28,7 +28,7 @@ Fundamental / telencephalon / periventricular groups split into all three taxa; 
 palaeocortex and vestibular split insectivore-vs-pooled-primates; the visual table is
 primates-only. The taxon each table was captioned by is carried in each file's `group` column.
 
-Each printed table is its own item under `per_table/`: `Stephan_etal_1981_Table{I..XVI}` with a
+Each printed table is its own item under ``: `Stephan_etal_1981_Table{I..XVI}` with a
 matching `_snapshot.xlsx`, `.R`, `.csv`, and public TSV
 (`10.1159%2F000155963_Table{I..XVI}.tsv`).
 
@@ -48,7 +48,7 @@ Code 4 `Meninges_hypophysis_nerves_etc.` (Tables I-III) is intentionally **not**
 — it is not a brain-structure volume for the comparative merge (same as the bundled version).
 
 ## Cross-table QA
-`per_table/Stephan_etal_1981_crosstable_QA.R` checks the 8 telencephalon components (Tables IV-VI)
+`Stephan_etal_1981_crosstable_QA.R` checks the 8 telencephalon components (Tables IV-VI)
 sum to the fundamental Telencephalon total (Tables I-III), per species. n=76, median |diff|
 0.007 %. **One species flagged**: *Solenodon paradoxus* at 4.09 % — this deviation is present
 identically in the original source data (not a split artifact; 1981 reports palaeocortex/amygdala
