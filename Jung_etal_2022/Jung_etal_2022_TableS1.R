@@ -3,12 +3,34 @@
 
 if (!requireNamespace("readxl", quietly = TRUE)) stop("Package 'readxl' required.")
 
-script_path <- tryCatch(normalizePath(sys.frame(1)$ofile), error = function(e) NA_character_)
-if (is.na(script_path)) script_path <- normalizePath("Jung_etal_2022_TableS1.R", mustWork = FALSE)
-item_dir <- dirname(script_path)
+.sp <- local({
+  a <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+  if (length(a)) return(normalizePath(sub("^--file=", "", a[1])))
+  
+  if (requireNamespace("rstudioapi", quietly = TRUE) &&
+      rstudioapi::isAvailable()) {
+    p <- rstudioapi::getSourceEditorContext()$path
+    if (!nzchar(p))
+      p <- rstudioapi::getActiveDocumentContext()$path
+    if (nzchar(p))
+      return(normalizePath(p))
+  }
+  
+  stop("Cannot determine script path.")
+})
 
-snapshot_file <- file.path(item_dir, "Jung_etal_2022_TableS1_snapshot.xlsx")
-output_file <- file.path(item_dir, "Jung_etal_2022_TableS1.csv")
+folder <- dirname(.sp)
+item_name <- tools::file_path_sans_ext(basename(.sp))
+
+setwd(folder)
+item_dir  <- dirname(.sp)          # folder containing this .R script
+paper_dir <- dirname(item_dir)     # parent paper folder
+item_name <- tools::file_path_sans_ext(basename(.sp))
+
+setwd(paper_dir)
+
+snapshot_file <- file.path(folder, paste0(item_name, "_snapshot.xlsx"))
+output_file   <- file.path(folder, paste0(item_name, ".csv"))
 
 stopifnot(file.exists(snapshot_file))
 x <- readxl::read_excel(snapshot_file, sheet = "TableS1", skip = 2)

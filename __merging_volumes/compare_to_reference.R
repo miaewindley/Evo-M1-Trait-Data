@@ -25,8 +25,7 @@
 library(tidyverse)
 
 ## ---- options ---------------------------------------------------------------------------------
-#reference_csv <- "~/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure/data_raw/Stephan_primates.csv"
-reference_csv <- "~/Desktop/test_qc/qc_orig_stephan_primates/data_raw/Stephan_primates.csv"
+reference_csv <- "~/Library/CloudStorage/OneDrive-AllenInstitute/test_qc/qc_orig_stephan_primates/data_raw/Stephan_primates.csv"
 reference_name <- "Stephan_primates.csv"
 merge_suffix   <- "_select"          # which merge to compare against: "" (canonical) or "_select"
 # Where the merge output lives. Default "" = this script's own folder, i.e. the __merging_volumes

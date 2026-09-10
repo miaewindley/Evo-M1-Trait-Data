@@ -1,6 +1,14 @@
 ## Audit the upstream measurements behind Halley & Krubitzer (2019) Figure 1.
 ## This is intentionally NOT a dataset builder and writes no public TSV: the
 ## figure is a secondary visualization of already-held primary values.
+## Stephan tables to read
+## Neocortex:
+## TableIV   Insectivores
+## TableV    Prosimians
+## TableVI   Simians
+## Thalamus:
+## TableVII  Insectivores
+## TableVIII Prosimians + Simians
 
 suppressPackageStartupMessages({
   library(readr)
@@ -26,35 +34,20 @@ setwd(folder)
 map <- read_csv("Halley_Krubitzer_2019_Figure1_source_map.csv",
                 show_col_types = FALSE, na = c("", "NA"))
 
-stephan_files <- c(
-  "Stephan_etal_1981_TableI.csv",
-  "Stephan_etal_1981_TableII.csv",
-  "Stephan_etal_1981_TableIII.csv",
-  "Stephan_etal_1981_TableIV.csv",
-  "Stephan_etal_1981_TableV.csv",
-  "Stephan_etal_1981_TableVI.csv",
-  "Stephan_etal_1981_TableVII.csv",
-  "Stephan_etal_1981_TableVIII.csv",
-  "Stephan_etal_1981_TableIX.csv",
-  "Stephan_etal_1981_TableX.csv",
-  "Stephan_etal_1981_TableXI.csv",
-  "Stephan_etal_1981_TableXII.csv",
-  "Stephan_etal_1981_TableXIII.csv",
-  "Stephan_etal_1981_TableXIV.csv",
-  "Stephan_etal_1981_TableXV.csv",
-  "Stephan_etal_1981_TableXVI.csv"
-)
+neo <- bind_rows(
+  read_csv(file.path(root, "Stephan_etal_1981", "Stephan_etal_1981_TableIV.csv"), show_col_types = FALSE),
+  read_csv(file.path(root, "Stephan_etal_1981", "Stephan_etal_1981_TableV.csv"), show_col_types = FALSE),
+  read_csv(file.path(root, "Stephan_etal_1981", "Stephan_etal_1981_TableVI.csv"), show_col_types = FALSE)
+) %>%
+  select(species, Neocortex)
 
-stephan <- stephan_files |>
-  map(~ read_csv(
-    file.path(root, "Stephan_etal_1981", .x),
-    show_col_types = FALSE
-  ) |>
-    select(-any_of("source"))) |>
-  reduce(
-    full_join,
-    by = c("species", "group")
-  )
+thal <- bind_rows(
+  read_csv(file.path(root, "Stephan_etal_1981", "Stephan_etal_1981_TableVII.csv"), show_col_types = FALSE),
+  read_csv(file.path(root, "Stephan_etal_1981", "Stephan_etal_1981_TableVIII.csv"), show_col_types = FALSE)
+) %>%
+  select(species, Thalamus)
+
+stephan <- full_join(neo, thal, by = "species")
 
 campos <- read_csv(file.path(root, "Campos_Welker_1976",
                             "Campos_Welker_1976_Table1_snapshot.csv"),
@@ -66,10 +59,10 @@ stopifnot(sum(map$upstream_source == "Campos_Welker_1976") == 2L)
 
 get_values <- function(source, species) {
   if (source == "Stephan_etal_1981") {
-    i <- match(species, stephan$Species)
+    i <- match(species, stephan$species)
     # Halley's figure uses subspecies labels (e.g. "Homo sapiens sapiens") while
     # Stephan uses the binomial ("Homo sapiens"); retry after stripping the last word.
-    if (is.na(i)) i <- match(sub("\\s+\\S+$", "", species), stephan$Species)
+    if (is.na(i)) i <- match(sub("\\s+\\S+$", "", species), stephan$species)
     if (is.na(i)) stop("Stephan species not found: ", species, call. = FALSE)
     return(c(thalamus_mm3 = stephan$Thalamus[i], neocortex_mm3 = stephan$Neocortex[i]))
   }

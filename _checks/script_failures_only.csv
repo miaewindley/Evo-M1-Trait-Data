@@ -1,23 +1,4 @@
 "script","status","error","start_time","end_time","elapsed_seconds"
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_body_ecology/body_ecology_compiled.R","FAILED","Error in order(x, na.last = na.last, decreasing = decreasing, method = ""radix"") : 
-  Character encoding must be UTF-8, Latin-1 or bytes
-Calls: lapply ... FUN -> paste -> sort -> sort.default -> sort.int -> order
-Execution halted","2026-09-08 11:30:24.448875","2026-09-08 11:30:31.674739",7.22586393356323
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_brain_mass/brain_mass_compiled.R","FAILED","Error: no measurement basis on record for 10.1002%2Fcne.901270108_Table2.tsv / brain_weight_g (paper folder 'Krompecher_Lipak_1966'). Add it to ASSIGN in _keys/build_brain_size_basis.py and re-run that builder.
-Execution halted","2026-09-08 11:30:31.679108","2026-09-08 11:30:32.810231",1.13112306594849
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_sensory/sensory_compiled.R","FAILED","Warning messages:
-1: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
-  number of items to replace is not a multiple of replacement length
-2: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
-  number of items to replace is not a multiple of replacement length
-3: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
-  number of items to replace is not a multiple of replacement length
-4: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
-  number of items to replace is not a multiple of replacement length
-5: In x[nzchar(x)] <- str_split(x, "";"")[[1]][nzchar(str_split(x, "";"")[[1]])] :
-  number of items to replace is not a multiple of replacement length
-Error in tmap[[h20$trait[i]]] : subscript out of bounds
-Execution halted","2026-09-08 11:30:45.556978","2026-09-08 11:30:46.763495",1.20651698112488
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/__merging_volumes/compare_to_reference.R","FAILED","── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.2.1     ✔ readr     2.2.0
 ✔ forcats   1.0.1     ✔ stringr   1.6.0
@@ -28,8 +9,8 @@ Execution halted","2026-09-08 11:30:45.556978","2026-09-08 11:30:46.763495",1.20
 ✖ dplyr::filter() masks stats::filter()
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Error: reference_csv not found: /Users/crossmodal/Library/CloudStorage/Dropbox/COLLABORATIVE/Do expensive brain regions increase less in humans/analyses_metabol_rate_structure/data_raw/Stephan_primates.csv
-Execution halted","2026-09-08 11:30:58.308829","2026-09-08 11:30:59.225329",0.916499853134155
+Error: reference_csv not found: /Users/crossmodal/Desktop/test_qc/qc_orig_stephan_primates/data_raw/Stephan_primates.csv
+Execution halted","2026-09-09 09:56:22.651669","2026-09-09 09:56:23.818934",1.16726493835449
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/check_item_name_resolution.R","FAILED","registry Item names: 406   |   TSVs on disk: 323   |   NA.tsv present: no
 
 __merging_behaviour/behaviour_compiled.R                     0 item name(s) referenced   OK
@@ -71,22 +52,19 @@ rows with a citation but no Item name (need _tools/file_list.R): 9
       Sheet1 row 416: Mackes, N. K., Golm, D., Sarkar, S., Kumsta, R., Rutter, M.,...
 
 1 unresolved reference(s).
-run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-08 11:31:10.181215","2026-09-08 11:31:10.792299",0.611083984375
+run _tools/restore_registry_rows.R (adding any new row to its ROWS list), then _tools/file_list.R.","2026-09-09 09:56:38.050632","2026-09-09 09:56:38.961693",0.91106104850769
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_checks/find_csv_tsv_creators.R","TIMEOUT","
-Execution halted","2026-09-08 11:31:11.277003","2026-09-08 11:36:11.347398",300.070394992828
+Execution halted","2026-09-09 09:56:39.516543","2026-09-09 10:01:39.598513",300.081969976425
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/_tools/file_list.R","FAILED","Error: Non-canonical Sheet1 naming formula(s): F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, F13, F14, F15, F16, F17, F18, F19, F20, F21, F22, F23, F24, F25, F26, F27, F28, F29, F30, F31, F32, F33, F34, F35, F36, F37, F38, F39, F40, F41, F42, F43, F44, F45, F46, F47, F48, F49, F50, F51, F52, F53, F54, F55, F56, F57, F58, F59, F60, F61, F62, F63, F64, F65, F66, F67, F68, F69, F70, F71, F72, F73, F74, F75, F76, F77, F78, F79, F80, F81, F82, F83, F84, F85, F86, F87, F88, F89, F90, F91, F92, F93, F94, F95, F96, F97, F98, F99, F100, F101, F102, F103, F104, F105, F106, F107, F108, F109, F110, F111, F112, F113, F114, F115, F116, F117, F118, F119, F120, F121, F122, F123, F124, F125, F126, F127, F128, F129, F130, F131, F132, F133, F134, F135, F136, F137, F138, F139, F140, F141, F142, F143, F144, F145, F146, F147, F148, F149, F150, F151, F152, F153, F154, F155, F156, F157, F158, F159, F160, F161, F162, F163, F164, F165, F166, F167, F168, F169, F170, F171, F172, F173, F174, F175, F176, F177, F17
-Execution halted","2026-09-08 11:42:42.343367","2026-09-08 11:42:43.313803",0.970435857772827
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Changizi__2003/Changizi__2003_Table1.R","FAILED","Error: sum(clean$row_type == ""order"") == 12 is not TRUE
-Execution halted","2026-09-08 11:43:30.205102","2026-09-08 11:43:30.700272",0.495170116424561
+Execution halted","2026-09-09 10:06:26.619442","2026-09-09 10:06:27.839339",1.21989703178406
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Halley_Krubitzer_2019/Halley_Krubitzer_2019_Figure1_source_audit.R","FAILED","Error: Stephan species not found: Homo sapiens sapiens
-In addition: Warning message:
-Unknown or uninitialised column: `Species`. 
-Execution halted","2026-09-08 11:44:03.226775","2026-09-08 11:44:03.995229",0.768454074859619
-"/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Heesy__2004/Heesy__2004_Table1.R","FAILED","Error: `path` does not exist: ‘Heesy__2004/Heesy__2004_Table1_snapshot.xlsx’
-Execution halted","2026-09-08 11:44:05.218057","2026-09-08 11:44:05.713602",0.495545148849487
+In addition: Warning messages:
+1: Unknown or uninitialised column: `Species`. 
+2: Unknown or uninitialised column: `Species`. 
+Execution halted","2026-09-09 10:08:11.96394","2026-09-09 10:08:12.983102",1.01916217803955
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jung_etal_2022/Jung_etal_2022_Reportedresults.R","FAILED","Error: `path` does not exist: ‘Jung_etal_2022_Reportedresults_snapshot.xlsx’
-Execution halted","2026-09-08 11:44:44.986037","2026-09-08 11:44:45.386308",0.400270938873291
+Execution halted","2026-09-09 10:09:00.21021","2026-09-09 10:09:00.758563",0.548352956771851
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jung_etal_2022/Jung_etal_2022_TableS1.R","FAILED","Error: file.exists(snapshot_file) is not TRUE
-Execution halted","2026-09-08 11:44:45.38864","2026-09-08 11:44:45.670112",0.281471967697144
+Execution halted","2026-09-09 10:09:00.766884","2026-09-09 10:09:01.09235",0.32546591758728
 "/Users/crossmodal/Library/CloudStorage/OneDrive-AllenInstitute/Species/Evo-M1-Trait-Data/Jung_etal_2022/Jung_etal_2022_TableS2.R","FAILED","Error: file.exists(snapshot_file) is not TRUE
-Execution halted","2026-09-08 11:44:45.673174","2026-09-08 11:44:45.903696",0.230522155761719
+Execution halted","2026-09-09 10:09:01.135981","2026-09-09 10:09:01.461242",0.325260877609253

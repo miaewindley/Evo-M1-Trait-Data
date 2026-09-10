@@ -29,7 +29,7 @@
 "Alouatta pigra","mass","Brain_Mass_mass_or_volume","g",51.125,51.125,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",51.125,51.125
 "Alouatta sara","mass","Brain_Mass_mass_or_volume","g",59.0833,59.0833,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",59.0833,59.0833
 "Alouatta seniculus","mass","Brain_Mass_mass_or_volume","g",45.5,45.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",45.5,45.5
-"Alouatta seniculus","mass","Brain_Mass_measured","g",51.6,51.6,7,3,1,TRUE,"Lewitus; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",51,54.95
+"Alouatta seniculus","mass","Brain_Mass_measured","g",51.5,51.5,6,3,1,TRUE,"Lewitus; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",51,54.95
 "Amblonyx cinereus","mass","Brain_Mass_measured","g",38.1,38.1,2,1,0,FALSE,"Jacobs","info","mass_specimen",38.1,38.1
 "Amblysomus hottentotus","mass","Brain_Mass_excl_olfactory_bulb","g",0.812,0.812,1,1,1,TRUE,"HerculanoHouzel","primary","mass_excl_olfactory_bulb",0.812,0.812
 "Ametrida centurio","mass","Brain_Mass_mass_or_volume","g",0.29,0.29,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.29,0.29
@@ -62,7 +62,7 @@
 "Aotus sp.","mass","Brain_Mass_measured","g",16.35,16.35,1,1,0,FALSE,"MacLeod","secondary","mass_unspecified",16.35,16.35
 "Aotus trivirgatus","mass","Brain_Mass_excl_olfactory_bulb","g",15.73,15.73,1,1,1,TRUE,"HerculanoHouzel","primary","mass_excl_olfactory_bulb",15.73,15.73
 "Aotus trivirgatus","mass","Brain_Mass_mass_or_volume","g",15.75,15.75,2,2,1,TRUE,"Burger; HerculanoHouzel","primary; secondary","mass_or_volume_mixed",15.75,16.04
-"Aotus trivirgatus","mass","Brain_Mass_measured","g",17.0658,16.66,11,5,3,TRUE,"Changizi; Finlay; Lewitus; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",16,18.2
+"Aotus trivirgatus","mass","Brain_Mass_measured","g",17.0292,16.55,10,5,3,TRUE,"Changizi; Finlay; Lewitus; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",16,18.2
 "Aplodontia rufa","mass","Brain_Mass_mass_or_volume","g",7.04,7.04,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",7.04,7.04
 "Apodemus agrarius","mass","Brain_Mass_mass_or_volume","g",0.2,0.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.2,0.2
 "Apodemus flavicollis","mass","Brain_Mass_mass_or_volume","g",0.7,0.7,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.7,0.7
@@ -97,12 +97,12 @@
 "Atelerix albiventris","mass","Brain_Mass_mass_or_volume","g",2.24,2.24,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.24,2.24
 "Atelerix albiventris","mass","Brain_Mass_measured","g",2.2865,2.2865,2,2,2,TRUE,"Changizi; Nudo","primary","mass_compilation_unspecified; mass_unspecified",1.3,3.273
 "Atelerix algirus","mass","Brain_Mass_mass_or_volume","g",3.2,3.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.2,3.2
-"Atelerix algirus","mass","Brain_Mass_measured","g",3.375,3.375,4,1,1,TRUE,"Stephan_collection","primary","mass_fresh",3.2,3.55
+"Atelerix algirus","mass","Brain_Mass_measured","g",3.4333,3.4333,3,1,1,TRUE,"Stephan_collection","primary","mass_fresh",3.2,3.55
 "Ateles belzebuth","mass","Brain_Mass_mass_or_volume","g",112.7,112.7,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",112.7,112.7
 "Ateles chamek","mass","Brain_Mass_mass_or_volume","g",99,99,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",99,99
 "Ateles fusciceps","mass","Brain_Mass_mass_or_volume","g",113.6,113.6,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",113.6,113.6
 "Ateles geoffroyi","mass","Brain_Mass_mass_or_volume","g",104.96,104.96,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",104.96,104.96
-"Ateles geoffroyi","mass","Brain_Mass_measured","g",107.2,107.2,5,2,2,TRUE,"Stephan_collection; Zilles","primary","mass_fresh; mass_unspecified",106.4,108
+"Ateles geoffroyi","mass","Brain_Mass_measured","g",107.2,107.2,4,2,2,TRUE,"Stephan_collection; Zilles","primary","mass_fresh; mass_unspecified",106.4,108
 "Ateles hybridus","mass","Brain_Mass_mass_or_volume","g",103.0541,103.0541,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",103.0541,103.0541
 "Ateles marginatus","mass","Brain_Mass_mass_or_volume","g",97,97,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",97,97
 "Ateles paniscus","mass","Brain_Mass_mass_or_volume","g",108.96,108.96,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",108.96,108.96
@@ -112,9 +112,9 @@
 "Atherurus macrourus","mass","Brain_Mass_mass_or_volume","g",31.57,31.57,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",31.57,31.57
 "Atilax paludinosus","mass","Brain_Mass_mass_or_volume","g",28.5,28.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",28.5,28.5
 "Avahi laniger","mass","Brain_Mass_mass_or_volume","g",10.49,10.49,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",10.49,10.49
-"Avahi laniger","mass","Brain_Mass_measured","g",9.84,9.84,7,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",9.6,10.65
+"Avahi laniger","mass","Brain_Mass_measured","g",9.7717,9.7717,6,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",9.6,10.65
 "Avahi occidentalis","mass","Brain_Mass_mass_or_volume","g",7.95,7.95,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",7.95,7.95
-"Avahi occidentalis","mass","Brain_Mass_measured","g",9.67,9.67,4,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",9.67,9.69
+"Avahi occidentalis","mass","Brain_Mass_measured","g",9.67,9.67,3,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",9.67,9.69
 "Axis axis","mass","Brain_Mass_mass_or_volume","g",219,219,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",219,219
 "Axis axis","mass","Brain_Mass_measured","g",219,219,1,1,0,FALSE,"Garwicz","secondary","mass_compilation_unspecified",219,219
 "Axis porcinus","mass","Brain_Mass_mass_or_volume","g",142,142,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",142,142
@@ -145,6 +145,7 @@
 "Bettongia penicillata","mass","Brain_Mass_measured","g",9.6,9.6,1,1,1,TRUE,"Karl","primary","mass_specimen",9.6,9.6
 "Bettongia tropica","mass","Brain_Mass_mass_or_volume","g",8.92,8.92,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",8.92,8.92
 "Bison bison","mass","Brain_Mass_mass_or_volume","g",458,458,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",458,458
+"Blackheaded parrot (Adapornis personata)","mass","Brain_Mass_measured","g",1.92,1.92,1,1,0,FALSE,"Krompecher","secondary","mass_unspecified",1.92,1.92
 "Blarina brevicauda","mass","Brain_Mass_excl_olfactory_bulb","g",0.347,0.347,1,1,1,TRUE,"HerculanoHouzel","primary","mass_excl_olfactory_bulb",0.347,0.347
 "Blarina brevicauda","mass","Brain_Mass_mass_or_volume","g",0.34,0.34,2,2,1,TRUE,"Burger; HerculanoHouzel","primary; secondary","mass_or_volume_mixed",0.29,0.34
 "Blarina brevicauda","mass","Brain_Mass_measured","g",0.39,0.39,1,1,1,TRUE,"Finlay","primary","mass_compilation_unspecified",0.39,0.39
@@ -174,21 +175,21 @@
 "Callicebus lugens","mass","Brain_Mass_mass_or_volume","g",18.9725,18.9725,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",18.9725,18.9725
 "Callicebus medemi","mass","Brain_Mass_mass_or_volume","g",19.4359,19.4359,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",19.4359,19.4359
 "Callicebus moloch","mass","Brain_Mass_mass_or_volume","g",19,19,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",19,19
-"Callicebus moloch","mass","Brain_Mass_measured","g",17.6,17.6,7,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",15.5,19
+"Callicebus moloch","mass","Brain_Mass_measured","g",17.25,17.25,6,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",15.5,19
 "Callicebus regulus","mass","Brain_Mass_mass_or_volume","g",23,23,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",23,23
 "Callicebus torquatus","mass","Brain_Mass_mass_or_volume","g",19.1,19.1,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",19.1,19.1
 "Callimico goeldii","mass","Brain_Mass_mass_or_volume","g",11.4,11.4,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",11.4,11.4
-"Callimico goeldii","mass","Brain_Mass_measured","g",11,11,5,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",10.95,11
+"Callimico goeldii","mass","Brain_Mass_measured","g",11,11,4,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",10.95,11
 "Callithrix argentata","mass","Brain_Mass_mass_or_volume","g",8,8,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",8,8
 "Callithrix aurita","mass","Brain_Mass_mass_or_volume","g",7.2,7.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",7.2,7.2
 "Callithrix geoffroyi","mass","Brain_Mass_mass_or_volume","g",19.9,19.9,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",19.9,19.9
 "Callithrix humeralifera","mass","Brain_Mass_mass_or_volume","g",8.2,8.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",8.2,8.2
 "Callithrix jacchus","mass","Brain_Mass_excl_olfactory_bulb","g",7.78,7.78,1,1,1,TRUE,"HerculanoHouzel","primary","mass_excl_olfactory_bulb",7.78,7.78
 "Callithrix jacchus","mass","Brain_Mass_mass_or_volume","g",7.73,7.73,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",7.73,7.73
-"Callithrix jacchus","mass","Brain_Mass_measured","g",7.1899,7.6898,11,5,4,TRUE,"Changizi; Finlay; Lewitus; Nudo; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",5.48,7.9
+"Callithrix jacchus","mass","Brain_Mass_measured","g",7.1899,7.6898,10,5,4,TRUE,"Changizi; Finlay; Lewitus; Nudo; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",5.48,7.9
 "Callithrix penicillata","mass","Brain_Mass_mass_or_volume","g",7.3,7.3,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",7.3,7.3
 "Callithrix pygmaea","mass","Brain_Mass_mass_or_volume","g",4.64,4.64,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4.64,4.64
-"Callithrix pygmaea","mass","Brain_Mass_measured","g",4.2917,4.2917,6,3,2,TRUE,"Jacobs; Stephan_collection; Zilles","info; primary; secondary","mass_fresh; mass_specimen; mass_unspecified",4.1,4.5
+"Callithrix pygmaea","mass","Brain_Mass_measured","g",4.2625,4.2625,5,3,2,TRUE,"Jacobs; Stephan_collection; Zilles","info; primary; secondary","mass_fresh; mass_specimen; mass_unspecified",4.1,4.5
 "Callithrix sp.","mass","Brain_Mass_mass_or_volume","g",7.78,7.78,1,1,1,TRUE,"HerculanoHouzel","primary","mass_or_volume_mixed",7.78,7.78
 "Callithrix sp.","mass","Brain_Mass_measured","g",7.5,7.5,1,1,1,TRUE,"Brodmann","primary","mass_unspecified",7.5,7.5
 "Callorhinus ursinus","mass","Brain_Mass_mass_or_volume","g",334.83,334.83,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",334.83,334.83
@@ -224,13 +225,14 @@
 "Castor canadensis","mass","Brain_Mass_mass_or_volume","g",52.21,52.21,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",52.21,52.21
 "Castor canadensis","mass","Brain_Mass_measured","g",41.1683,41.1683,2,1,0,FALSE,"Lewitus","secondary","mass_unspecified",41.1667,41.17
 "Castor fiber","mass","Brain_Mass_mass_or_volume","g",44.978,44.978,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",44.978,44.978
+"Cat (Felis domestica)","mass","Brain_Mass_measured","g",32,32,1,1,0,FALSE,"Krompecher","secondary","mass_unspecified",32,32
 "Catopuma temminckii","mass","Brain_Mass_mass_or_volume","g",68.03,68.03,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",68.03,68.03
 "Cavia aperea","mass","Brain_Mass_mass_or_volume","g",4.04,4.04,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4.04,4.04
 "Cavia porcellus","mass","Brain_Mass_excl_olfactory_bulb","g",3.656,3.656,1,1,1,TRUE,"HerculanoHouzel","primary","mass_excl_olfactory_bulb",3.656,3.656
 "Cavia porcellus","mass","Brain_Mass_mass_or_volume","g",3.656,3.656,2,2,1,TRUE,"Burger; HerculanoHouzel","primary; secondary","mass_or_volume_mixed",3.656,4.83
 "Cavia porcellus","mass","Brain_Mass_measured","g",4,4,1,1,0,FALSE,"Garwicz","secondary","mass_compilation_unspecified",4,4
 "Cebus albifrons","mass","Brain_Mass_mass_or_volume","g",62.95,62.95,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",62.95,62.95
-"Cebus albifrons","mass","Brain_Mass_measured","g",76.9714,76.9714,9,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",71,80
+"Cebus albifrons","mass","Brain_Mass_measured","g",77.2333,77.2333,8,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",71,80
 "Cebus capucinus","mass","Brain_Mass_mass_or_volume","g",70.14,70.14,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",70.14,70.14
 "Cebus libidinosus","mass","Brain_Mass_mass_or_volume","g",64.6854,64.6854,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",64.6854,64.6854
 "Cebus nigritus","mass","Brain_Mass_mass_or_volume","g",67.066,67.066,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",67.066,67.066
@@ -256,7 +258,7 @@
 "Cercocebus torquatus","mass","Brain_Mass_mass_or_volume","g",105.9883,105.9883,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",105.9883,105.9883
 "Cercopithecus albogularis","mass","Brain_Mass_mass_or_volume","g",70.0998,70.0998,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",70.0998,70.0998
 "Cercopithecus ascanius","mass","Brain_Mass_mass_or_volume","g",54.9,54.9,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",54.9,54.9
-"Cercopithecus ascanius","mass","Brain_Mass_measured","g",66.2,66.2,8,3,1,TRUE,"Jacobs; Stephan_collection; Zilles","info; primary; secondary","mass_fresh; mass_specimen; mass_unspecified",58.4,67
+"Cercopithecus ascanius","mass","Brain_Mass_measured","g",66,66,7,3,1,TRUE,"Jacobs; Stephan_collection; Zilles","info; primary; secondary","mass_fresh; mass_specimen; mass_unspecified",58.4,67
 "Cercopithecus campbelli","mass","Brain_Mass_mass_or_volume","g",54.4,54.4,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",54.4,54.4
 "Cercopithecus cephus","mass","Brain_Mass_mass_or_volume","g",76,76,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",76,76
 "Cercopithecus diana","mass","Brain_Mass_mass_or_volume","g",55.2,55.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",55.2,55.2
@@ -266,7 +268,7 @@
 "Cercopithecus lhoesti","mass","Brain_Mass_mass_or_volume","g",74.2,74.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",74.2,74.2
 "Cercopithecus lowei","mass","Brain_Mass_mass_or_volume","g",51.2,51.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",51.2,51.2
 "Cercopithecus mitis","mass","Brain_Mass_mass_or_volume","g",75,75,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",75,75
-"Cercopithecus mitis","mass","Brain_Mass_measured","g",73.925,73.925,8,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",67,76
+"Cercopithecus mitis","mass","Brain_Mass_measured","g",73.975,73.975,7,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",67,76
 "Cercopithecus mona","mass","Brain_Mass_mass_or_volume","g",67,67,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",67,67
 "Cercopithecus neglectus","mass","Brain_Mass_mass_or_volume","g",60.9,60.9,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",60.9,60.9
 "Cercopithecus nictitans","mass","Brain_Mass_mass_or_volume","g",71.125,71.125,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",71.125,71.125
@@ -275,6 +277,7 @@
 "Cercopithecus sp.","mass","Brain_Mass_measured","g",106,106,1,1,1,TRUE,"Brodmann","primary","mass_unspecified",106,106
 "Cercopithecus wolfi","mass","Brain_Mass_mass_or_volume","g",61.45,61.45,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",61.45,61.45
 "Cerdocyon thous","mass","Brain_Mass_mass_or_volume","g",49.5,49.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",49.5,49.5
+"Cerkof monkey (Macacus sinicus)","mass","Brain_Mass_measured","g",67.5,67.5,1,1,0,FALSE,"Krompecher","secondary","mass_unspecified",67.5,67.5
 "Cervus canadensis","mass","Brain_Mass_measured","g",435,435,1,1,0,FALSE,"Garwicz","secondary","mass_compilation_unspecified",435,435
 "Cervus elaphus","mass","Brain_Mass_mass_or_volume","g",409.3,409.3,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",409.3,409.3
 "Cervus nippon","mass","Brain_Mass_mass_or_volume","g",200,200,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",200,200
@@ -293,9 +296,9 @@
 "Chalinolobus morio","mass","Brain_Mass_mass_or_volume","g",0.1845,0.1845,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.1845,0.1845
 "Cheirogaleus adipicaudatus","mass","Brain_Mass_mass_or_volume","g",3.0374,3.0374,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.0374,3.0374
 "Cheirogaleus major","mass","Brain_Mass_mass_or_volume","g",6.8,6.8,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",6.8,6.8
-"Cheirogaleus major","mass","Brain_Mass_measured","g",6.8,6.8,7,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",6.43,6.8
+"Cheirogaleus major","mass","Brain_Mass_measured","g",6.8,6.8,6,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",6.43,6.8
 "Cheirogaleus medius","mass","Brain_Mass_mass_or_volume","g",3.34,3.34,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.34,3.34
-"Cheirogaleus medius","mass","Brain_Mass_measured","g",3.14,3.14,6,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",3.01,3.14
+"Cheirogaleus medius","mass","Brain_Mass_measured","g",3.14,3.14,5,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",3.01,3.14
 "Cheirogaleus sibreei","mass","Brain_Mass_mass_or_volume","g",4.4,4.4,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4.4,4.4
 "Cheirogaleus sp.","mass","Brain_Mass_measured","g",5.3,5.3,1,1,1,TRUE,"Brodmann","primary","mass_unspecified",5.3,5.3
 "Cheiromeles torquatus","mass","Brain_Mass_mass_or_volume","g",1.366,1.366,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.366,1.366
@@ -323,12 +326,13 @@
 "Choloepus hoffmanni","mass","Brain_Mass_mass_or_volume","g",24.54,24.54,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",24.54,24.54
 "Chrotopterus auritus","mass","Brain_Mass_mass_or_volume","g",1.74,1.74,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.74,1.74
 "Chrysochloris asiatica","mass","Brain_Mass_mass_or_volume","g",0.7,0.7,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.7,0.7
-"Chrysochloris asiatica","mass","Brain_Mass_measured","g",0.7,0.7,2,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.7,0.7
+"Chrysochloris asiatica","mass","Brain_Mass_measured","g",0.7,0.7,1,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.7,0.7
 "Chrysochloris stuhlmanni","mass","Brain_Mass_mass_or_volume","g",1.06,1.06,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.06,1.06
-"Chrysochloris stuhlmanni","mass","Brain_Mass_measured","g",0.74,0.74,4,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.74,0.74
+"Chrysochloris stuhlmanni","mass","Brain_Mass_measured","g",0.74,0.74,3,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.74,0.74
 "Chrysocyon brachyurus","mass","Brain_Mass_mass_or_volume","g",120.3,120.3,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",120.3,120.3
 "Civettictis civetta","mass","Brain_Mass_mass_or_volume","g",37,37,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",37,37
 "Clyomys laticeps","mass","Brain_Mass_mass_or_volume","g",3.52,3.52,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.52,3.52
+"Cock (Gallus domest.)","mass","Brain_Mass_measured","g",7.59,7.59,2,1,0,FALSE,"Krompecher","secondary","mass_unspecified",3.68,11.5
 "Coendou prehensilis","mass","Brain_Mass_mass_or_volume","g",16.73,16.73,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",16.73,16.73
 "Coendou rothschildi","mass","Brain_Mass_mass_or_volume","g",20.85,20.85,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",20.85,20.85
 "Coleura afra","mass","Brain_Mass_mass_or_volume","g",0.2585,0.2585,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.2585,0.2585
@@ -357,11 +361,11 @@
 "Cricetulus barabensis","mass","Brain_Mass_mass_or_volume","g",0.6699,0.6699,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.6699,0.6699
 "Cricetus cricetus","mass","Brain_Mass_mass_or_volume","g",2.2,2.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.2,2.2
 "Cro-Magnon","mass","Brain_Mass_from_volume_or_ecv","g",1477.34,1477.34,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",1477.34,1477.34
-"Crocidura flavescens","mass","Brain_Mass_measured","g",0.44,0.44,5,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",0.41,0.44
+"Crocidura flavescens","mass","Brain_Mass_measured","g",0.44,0.44,4,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",0.41,0.44
 "Crocidura fuscomurina","mass","Brain_Mass_mass_or_volume","g",0.13,0.13,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.13,0.13
 "Crocidura russala","mass","Brain_Mass_measured","g",0.19,0.19,1,1,0,FALSE,"Lewitus","secondary","mass_unspecified",0.19,0.19
 "Crocidura russula","mass","Brain_Mass_mass_or_volume","g",0.19,0.19,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.19,0.19
-"Crocidura russula","mass","Brain_Mass_measured","g",0.19,0.19,4,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.19,0.19
+"Crocidura russula","mass","Brain_Mass_measured","g",0.19,0.19,3,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.19,0.19
 "Crocuta crocuta","mass","Brain_Mass_mass_or_volume","g",175,175,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",175,175
 "Crocuta crocuta","mass","Brain_Mass_measured","g",153.2675,153.2675,2,1,0,FALSE,"Lewitus","secondary","mass_unspecified",153.265,153.27
 "Crossarchus obscurus","mass","Brain_Mass_mass_or_volume","g",9.99,9.99,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",9.99,9.99
@@ -419,7 +423,7 @@
 "Dasyurus spartacus","mass","Brain_Mass_mass_or_volume","g",5.3,5.3,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",5.3,5.3
 "Dasyurus viverrinus","mass","Brain_Mass_mass_or_volume","g",5.33,5.33,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",5.33,5.33
 "Daubentonia madagascariensis","mass","Brain_Mass_mass_or_volume","g",45.15,45.15,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",45.15,45.15
-"Daubentonia madagascariensis","mass","Brain_Mass_measured","g",45.15,45.15,7,3,1,TRUE,"Lewitus; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",44.8875,45.2
+"Daubentonia madagascariensis","mass","Brain_Mass_measured","g",45.15,45.15,6,3,1,TRUE,"Lewitus; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",44.8875,45.2
 "Delphinapterus leucas","mass","Brain_Mass_mass_or_volume","g",1921,1921,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1921,1921
 "Delphinapterus leucas","mass","Brain_Mass_measured","g",2083,2083,1,1,0,FALSE,"Manger","secondary","mass_compilation_unspecified",2083,2083
 "Delphinus delphis","mass","Brain_Mass_mass_or_volume","g",797.26,797.26,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",797.26,797.26
@@ -437,7 +441,7 @@
 "Dendrolagus spadix","mass","Brain_Mass_mass_or_volume","g",28.5,28.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",28.5,28.5
 "Dendrolagus ursinus","mass","Brain_Mass_mass_or_volume","g",26.3,26.3,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",26.3,26.3
 "Desmana moschata","mass","Brain_Mass_mass_or_volume","g",4,4,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4,4
-"Desmana moschata","mass","Brain_Mass_measured","g",4,4,4,1,1,TRUE,"Stephan_collection","primary","mass_fresh",4,4
+"Desmana moschata","mass","Brain_Mass_measured","g",4,4,3,1,1,TRUE,"Stephan_collection","primary","mass_fresh",4,4
 "Desmodus rotundus","mass","Brain_Mass_mass_or_volume","g",0.916,0.916,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.916,0.916
 "Diaemus youngi","mass","Brain_Mass_mass_or_volume","g",0.971,0.971,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.971,0.971
 "Diaemus youngi (DES)","mass","Brain_Mass_measured","g",1.09,1.09,1,1,0,FALSE,"Baron","secondary","mass_compilation_unspecified",1.09,1.09
@@ -467,8 +471,10 @@
 "Dobsonia inermis","mass","Brain_Mass_mass_or_volume","g",2.7,2.7,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.7,2.7
 "Dobsonia moluccensis","mass","Brain_Mass_mass_or_volume","g",4.43,4.43,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4.43,4.43
 "Dobsonia praedatrix","mass","Brain_Mass_mass_or_volume","g",2.9749,2.9749,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.9749,2.9749
+"Dog (Canis familiaris)","mass","Brain_Mass_measured","g",72.5,72.5,2,1,0,FALSE,"Krompecher","secondary","mass_unspecified",62,83
 "Dolichotis patagonum","mass","Brain_Mass_mass_or_volume","g",30.5,30.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",30.5,30.5
 "Dolichotis salinicola","mass","Brain_Mass_mass_or_volume","g",15.31,15.31,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",15.31,15.31
+"Domestic mouse (Mus musculus)","mass","Brain_Mass_measured","g",0.35,0.35,1,1,0,FALSE,"Krompecher","secondary","mass_unspecified",0.35,0.35
 "Dorcopsis atrata","mass","Brain_Mass_mass_or_volume","g",16.7,16.7,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",16.7,16.7
 "Dorcopsis hageni","mass","Brain_Mass_mass_or_volume","g",22.5,22.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",22.5,22.5
 "Dorcopsis luctuosa","mass","Brain_Mass_mass_or_volume","g",20.6,20.6,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",20.6,20.6
@@ -481,7 +487,7 @@
 "Dugong dugon","mass","Brain_Mass_mass_or_volume","g",264.67,264.67,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",264.67,264.67
 "Echimys chrysurus","mass","Brain_Mass_mass_or_volume","g",5.02,5.02,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",5.02,5.02
 "Echinops telfairi","mass","Brain_Mass_mass_or_volume","g",0.62,0.62,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.62,0.62
-"Echinops telfairi","mass","Brain_Mass_measured","g",1.2593,0.62,6,3,3,TRUE,"Changizi; Finlay; Stephan_collection","primary","mass_compilation_unspecified; mass_fresh",0.62,2.538
+"Echinops telfairi","mass","Brain_Mass_measured","g",1.2593,0.62,5,3,3,TRUE,"Changizi; Finlay; Stephan_collection","primary","mass_compilation_unspecified; mass_fresh",0.62,2.538
 "Echinosorex gymnura","mass","Brain_Mass_mass_or_volume","g",5.5,5.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",5.5,5.5
 "Echymipera clara","mass","Brain_Mass_mass_or_volume","g",4.48,4.48,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4.48,4.48
 "Echymipera kalubu","mass","Brain_Mass_mass_or_volume","g",3.67,3.67,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.67,3.67
@@ -489,7 +495,7 @@
 "Eidolon helvum","mass","Brain_Mass_mass_or_volume","g",4.4325,4.4325,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4.4325,4.4325
 "Eira barbara","mass","Brain_Mass_mass_or_volume","g",47.05,47.05,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",47.05,47.05
 "Elephantulus fuscipes","mass","Brain_Mass_mass_or_volume","g",1.33,1.33,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.33,1.33
-"Elephantulus fuscipes","mass","Brain_Mass_measured","g",1.33,1.33,5,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",1.33,1.33
+"Elephantulus fuscipes","mass","Brain_Mass_measured","g",1.33,1.33,4,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",1.33,1.33
 "Elephantulus intufi","mass","Brain_Mass_mass_or_volume","g",1.14,1.14,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.14,1.14
 "Elephantulus myurus","mass","Brain_Mass_excl_olfactory_bulb","g",1.04,1.04,1,1,1,TRUE,"HerculanoHouzel","primary","mass_excl_olfactory_bulb",1.04,1.04
 "Elephantulus myurus","mass","Brain_Mass_mass_or_volume","g",1.37,1.37,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.37,1.37
@@ -520,9 +526,9 @@
 "Erethizon dorsata","mass","Brain_Mass_mass_or_volume","g",24.6,24.6,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",24.6,24.6
 "Erignathus barbatus","mass","Brain_Mass_mass_or_volume","g",460,460,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",460,460
 "Erinaceus europaeus","mass","Brain_Mass_mass_or_volume","g",3.23,3.23,2,2,1,TRUE,"Burger; HerculanoHouzel","primary; secondary","mass_or_volume_mixed",3.23,3.67
-"Erinaceus europaeus","mass","Brain_Mass_measured","g",3.225,3.32,10,6,4,TRUE,"Brodmann; Finlay; Garwicz; Lewitus; Nudo; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",2.26,4
+"Erinaceus europaeus","mass","Brain_Mass_measured","g",3.225,3.32,9,6,4,TRUE,"Brodmann; Finlay; Garwicz; Lewitus; Nudo; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",2.26,4
 "Erythrocebus patas","mass","Brain_Mass_mass_or_volume","g",100.2,100.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",100.2,100.2
-"Erythrocebus patas","mass","Brain_Mass_measured","g",108,108,7,4,1,TRUE,"Lewitus; Sherwood; Stephan_collection; Zilles","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",94.2,108
+"Erythrocebus patas","mass","Brain_Mass_measured","g",108,108,6,4,1,TRUE,"Lewitus; Sherwood; Stephan_collection; Zilles","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",94.2,108
 "Eschrichtius robustus","mass","Brain_Mass_mass_or_volume","g",4316.67,4316.67,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4316.67,4316.67
 "Eschrichtius robustus","mass","Brain_Mass_measured","g",4316.67,4316.67,1,1,0,FALSE,"Manger","secondary","mass_compilation_unspecified",4316.67,4316.67
 "Eudorcas thomsonii","mass","Brain_Mass_mass_or_volume","g",91.8,91.8,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",91.8,91.8
@@ -530,7 +536,7 @@
 "Eulemur albocollaris","mass","Brain_Mass_mass_or_volume","g",22.1,22.1,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",22.1,22.1
 "Eulemur coronatus","mass","Brain_Mass_mass_or_volume","g",20.651,20.651,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",20.651,20.651
 "Eulemur fulvus","mass","Brain_Mass_mass_or_volume","g",25.8,25.8,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",25.8,25.8
-"Eulemur fulvus","mass","Brain_Mass_measured","g",23.3,23.3,6,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",23.3,28.1
+"Eulemur fulvus","mass","Brain_Mass_measured","g",23.3,23.3,5,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",23.3,28.1
 "Eulemur macaco","mass","Brain_Mass_mass_or_volume","g",22.6,22.6,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",22.6,22.6
 "Eulemur macaco","mass","Brain_Mass_measured","g",28.3,28.3,1,1,1,TRUE,"Brodmann","primary","mass_unspecified",28.3,28.3
 "Eulemur mongoz","mass","Brain_Mass_mass_or_volume","g",24.03,24.03,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",24.03,24.03
@@ -553,6 +559,7 @@
 "Felis silvestris","mass","Brain_Mass_mass_or_volume","g",35.5,35.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",35.5,35.5
 "Forpus passerinus","mass","Brain_Mass_measured","g",1.1464,1.1464,1,1,1,TRUE,"Olkowicz","primary","mass_fixed",1.1464,1.1464
 "Fossa fossana","mass","Brain_Mass_mass_or_volume","g",19.69,19.69,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",19.69,19.69
+"Frog (Rana esculenta)","mass","Brain_Mass_measured","g",0.117,0.117,1,1,0,FALSE,"Krompecher","secondary","mass_unspecified",0.117,0.117
 "Fukomys anselli","mass","Brain_size_sum_of_structures","g",1.25,1.25,1,1,0,FALSE,"Kverkova","secondary","sum_of_structure_volumes",1.25,1.25
 "Fukomys damarensis","mass","Brain_size_sum_of_structures","g",1.39,1.39,1,1,0,FALSE,"Kverkova","secondary","sum_of_structure_volumes",1.39,1.39
 "Fukomys darlingi","mass","Brain_size_sum_of_structures","g",1.23,1.23,1,1,0,FALSE,"Kverkova","secondary","sum_of_structure_volumes",1.23,1.23
@@ -569,15 +576,15 @@
 "Galago matschiei","mass","Brain_Mass_mass_or_volume","g",4.6219,4.6219,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4.6219,4.6219
 "Galago moholi","mass","Brain_Mass_mass_or_volume","g",3.7052,3.7052,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.7052,3.7052
 "Galago senegalensis","mass","Brain_Mass_mass_or_volume","g",5.9,5.9,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",5.9,5.9
-"Galago senegalensis","mass","Brain_Mass_measured","g",3.9233,4.57,10,5,3,TRUE,"Changizi; Lewitus; Nudo; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",2.4,4.8
+"Galago senegalensis","mass","Brain_Mass_measured","g",3.9233,4.57,9,5,3,TRUE,"Changizi; Lewitus; Nudo; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",2.4,4.8
 "Galago sp.","mass","Brain_Mass_measured","g",4.8,4.8,1,1,1,TRUE,"Finlay","primary","mass_compilation_unspecified",4.8,4.8
 "Galago thomasi","mass","Brain_Mass_mass_or_volume","g",3.1175,3.1175,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.1175,3.1175
 "Galago zanzibaricus","mass","Brain_Mass_mass_or_volume","g",3.5,3.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.5,3.5
 "Galagoides demidoff","mass","Brain_Mass_mass_or_volume","g",3.38,3.38,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.38,3.38
-"Galagoides demidoff","mass","Brain_Mass_measured","g",3.34,3.34,8,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",3.3,3.38
+"Galagoides demidoff","mass","Brain_Mass_measured","g",3.34,3.34,7,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",3.3,3.38
 "Galea musteloides","mass","Brain_Mass_mass_or_volume","g",2.72,2.72,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.72,2.72
 "Galemys pyrenaicus","mass","Brain_Mass_mass_or_volume","g",1.33,1.33,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.33,1.33
-"Galemys pyrenaicus","mass","Brain_Mass_measured","g",1.33,1.33,5,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",1.33,1.33
+"Galemys pyrenaicus","mass","Brain_Mass_measured","g",1.33,1.33,4,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",1.33,1.33
 "Galerella pulverulenta","mass","Brain_Mass_mass_or_volume","g",11.02,11.02,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",11.02,11.02
 "Galerella sanguinea","mass","Brain_Mass_mass_or_volume","g",8.8,8.8,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",8.8,8.8
 "Galictis cuja","mass","Brain_Mass_mass_or_volume","g",18.8,18.8,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",18.8,18.8
@@ -620,12 +627,14 @@
 "Gorilla beringei","mass","Brain_Mass_mass_or_volume","g",491.27,491.27,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",491.27,491.27
 "Gorilla gorilla","mass","Brain_Mass_from_volume_or_ecv","g",313.14,313.14,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",313.14,313.14
 "Gorilla gorilla","mass","Brain_Mass_mass_or_volume","g",454.55,454.55,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",454.55,454.55
-"Gorilla gorilla","mass","Brain_Mass_measured","g",446.0357,446.0357,33,8,2,TRUE,"Armstrong; Garwicz; Lewitus; MacLeod; Sherwood; Stephan_collection; Zilles; deSousa","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_fresh_or_fixed_mixed; mass_unspecified",376,540
+"Gorilla gorilla","mass","Brain_Mass_measured","g",443.119,443.119,32,8,2,TRUE,"Armstrong; Garwicz; Lewitus; MacLeod; Sherwood; Stephan_collection; Zilles; deSousa","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_fresh_or_fixed_mixed; mass_unspecified",376,540
 "Gracula religiosa","mass","Brain_Mass_measured","g",3.6696,3.6696,1,1,1,TRUE,"Olkowicz","primary","mass_fixed",3.6696,3.6696
 "Grammomys cometes","mass","Brain_Mass_mass_or_volume","g",0.96,0.96,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.96,0.96
 "Grammomys poensis","mass","Brain_Mass_mass_or_volume","g",1.55,1.55,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.55,1.55
 "Grampus griseus","mass","Brain_Mass_mass_or_volume","g",2551,2551,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2551,2551
 "Grampus griseus","mass","Brain_Mass_measured","g",2098.084,2098.084,2,2,0,FALSE,"Lewitus; Manger","secondary","mass_compilation_unspecified; mass_unspecified",1645.168,2551
+"Grey rat (Mus decomanus gris)","mass","Brain_Mass_measured","g",1.705,1.705,2,1,0,FALSE,"Krompecher","secondary","mass_unspecified",1.66,1.75
+"Guinea-pig (Cavia porcellus)","mass","Brain_Mass_measured","g",4,4,1,1,0,FALSE,"Krompecher","secondary","mass_unspecified",4,4
 "Gulo gulo","mass","Brain_Mass_mass_or_volume","g",72.5,72.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",72.5,72.5
 "Gymnobelideus leadbeateri","mass","Brain_Mass_mass_or_volume","g",2.85,2.85,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.85,2.85
 "Halichoerus grypus","mass","Brain_Mass_mass_or_volume","g",307.5,307.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",307.5,307.5
@@ -644,11 +653,12 @@
 "Helogale parvula","mass","Brain_Mass_mass_or_volume","g",4.8,4.8,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4.8,4.8
 "Hemibelideus lemuroides","mass","Brain_Mass_mass_or_volume","g",3.15,3.15,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.15,3.15
 "Hemicentetes semispinosus","mass","Brain_Mass_mass_or_volume","g",0.83,0.83,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.83,0.83
-"Hemicentetes semispinosus","mass","Brain_Mass_measured","g",0.83,0.83,4,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.83,0.83
+"Hemicentetes semispinosus","mass","Brain_Mass_measured","g",0.83,0.83,3,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.83,0.83
 "Hemiechinus auritus","mass","Brain_Mass_mass_or_volume","g",1.9,1.9,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.9,1.9
-"Hemiechinus auritus","mass","Brain_Mass_measured","g",1.4325,1.4325,3,2,2,TRUE,"Nudo; Stephan_collection","primary","mass_fresh; mass_unspecified",0.965,1.9
+"Hemiechinus auritus","mass","Brain_Mass_measured","g",1.4325,1.4325,2,2,2,TRUE,"Nudo; Stephan_collection","primary","mass_fresh; mass_unspecified",0.965,1.9
 "Hemigalus derbyanus","mass","Brain_Mass_mass_or_volume","g",18.9,18.9,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",18.9,18.9
 "Hemitragus jemlahicus","mass","Brain_Mass_mass_or_volume","g",166,166,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",166,166
+"Hen (Gallus domest.)","mass","Brain_Mass_measured","g",3.3,3.3,1,1,0,FALSE,"Krompecher","secondary","mass_unspecified",3.3,3.3
 "Herpestes edwardsi","mass","Brain_Mass_mass_or_volume","g",10.49,10.49,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",10.49,10.49
 "Herpestes fuscus","mass","Brain_Mass_mass_or_volume","g",12.55,12.55,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",12.55,12.55
 "Herpestes ichneumon","mass","Brain_Mass_mass_or_volume","g",23.3,23.3,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",23.3,23.3
@@ -692,9 +702,10 @@
 "Holochilus sciureus","mass","Brain_Mass_mass_or_volume","g",1.41,1.41,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.41,1.41
 "Homo sapiens","mass","Brain_Mass_excl_olfactory_bulb","g",1508.91,1508.91,1,1,1,TRUE,"HerculanoHouzel","primary","mass_excl_olfactory_bulb",1508.91,1508.91
 "Homo sapiens","mass","Brain_Mass_mass_or_volume","g",1509,1509,2,2,1,TRUE,"Burger; HerculanoHouzel","primary; secondary","mass_or_volume_mixed",1250.43,1509
-"Homo sapiens","mass","Brain_Mass_measured","g",1365.0984,1335.9469,46,9,4,TRUE,"Armstrong; Brodmann; Garwicz; Karl; Lewitus; Sherwood; Stephan_collection; Zilles; deSousa","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_fresh_or_fixed_mixed; mass_specimen; mass_unspecified",1046,1890
+"Homo sapiens","mass","Brain_Mass_measured","g",1365.0984,1335.9469,46,10,4,TRUE,"Armstrong; Brodmann; Garwicz; Karl; Krompecher; Lewitus; Sherwood; Stephan_collection; Zilles; deSousa","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_fresh_or_fixed_mixed; mass_specimen; mass_unspecified",1046,1890
 "Homo sapiens (MRI)","mass","Brain_Mass_from_volume_or_ecv","g",1302,1302,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",1302,1302
 "Hoplomys gymnurus","mass","Brain_Mass_mass_or_volume","g",4.13,4.13,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4.13,4.13
+"Horse (Equus caballus)","mass","Brain_Mass_measured","g",532,532,1,1,0,FALSE,"Krompecher","secondary","mass_unspecified",532,532
 "Hyaena brunnea","mass","Brain_Mass_mass_or_volume","g",106.7,106.7,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",106.7,106.7
 "Hyaena hyaena","mass","Brain_Mass_mass_or_volume","g",97.5,97.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",97.5,97.5
 "Hybomys trivirgatus","mass","Brain_Mass_mass_or_volume","g",1.1,1.1,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.1,1.1
@@ -710,7 +721,7 @@
 "Hylobates agilis","mass","Brain_Mass_mass_or_volume","g",88.1,88.1,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",88.1,88.1
 "Hylobates klossii","mass","Brain_Mass_mass_or_volume","g",87.9913,87.9913,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",87.9913,87.9913
 "Hylobates lar","mass","Brain_Mass_mass_or_volume","g",93.99,93.99,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",93.99,93.99
-"Hylobates lar","mass","Brain_Mass_measured","g",102.25,102.25,23,6,2,TRUE,"Armstrong; Jacobs; Lewitus; Stephan_collection; Zilles; deSousa","info; primary; secondary","mass_fresh; mass_fresh_or_fixed_mixed; mass_specimen; mass_unspecified",92,134.8
+"Hylobates lar","mass","Brain_Mass_measured","g",102.25,102.25,22,6,2,TRUE,"Armstrong; Jacobs; Lewitus; Stephan_collection; Zilles; deSousa","info; primary; secondary","mass_fresh; mass_fresh_or_fixed_mixed; mass_specimen; mass_unspecified",92,134.8
 "Hylobates moloch","mass","Brain_Mass_mass_or_volume","g",103,103,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",103,103
 "Hylobates muelleri","mass","Brain_Mass_mass_or_volume","g",95.31,95.31,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",95.31,95.31
 "Hylobates muelleri","mass","Brain_Mass_measured","g",101.8,101.8,2,1,1,TRUE,"Zilles","primary; secondary","mass_unspecified",101.8,101.8
@@ -731,7 +742,7 @@
 "Ictonyx libyca","mass","Brain_Mass_mass_or_volume","g",4.48,4.48,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4.48,4.48
 "Ictonyx striatus","mass","Brain_Mass_mass_or_volume","g",8.5,8.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",8.5,8.5
 "Indri indri","mass","Brain_Mass_mass_or_volume","g",38.3,38.3,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",38.3,38.3
-"Indri indri","mass","Brain_Mass_measured","g",36,36,8,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",33.7,38.3
+"Indri indri","mass","Brain_Mass_measured","g",36,36,7,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",33.7,38.3
 "Inia geoffrensis","mass","Brain_Mass_mass_or_volume","g",633.645,633.645,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",633.645,633.645
 "Inia geoffrensis","mass","Brain_Mass_measured","g",610,610,1,1,0,FALSE,"Manger","secondary","mass_compilation_unspecified",610,610
 "Iomys horsfieldii","mass","Brain_Mass_mass_or_volume","g",3.38,3.38,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.38,3.38
@@ -774,7 +785,7 @@
 "Lagostrophus fasciatus","mass","Brain_Mass_mass_or_volume","g",7,7,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",7,7
 "Lagothrix cana","mass","Brain_Mass_mass_or_volume","g",99.3441,99.3441,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",99.3441,99.3441
 "Lagothrix lagothricha","mass","Brain_Mass_mass_or_volume","g",89.35,89.35,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",89.35,89.35
-"Lagothrix lagothricha","mass","Brain_Mass_measured","g",101,101,7,3,1,TRUE,"Lewitus; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",95.575,101
+"Lagothrix lagothricha","mass","Brain_Mass_measured","g",101,101,6,3,1,TRUE,"Lewitus; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",95.575,101
 "Lagothrix poeppigii","mass","Brain_Mass_mass_or_volume","g",99.23,99.23,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",99.23,99.23
 "Lagurus lagurus","mass","Brain_Mass_mass_or_volume","g",0.42,0.42,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.42,0.42
 "Lama glama","mass","Brain_Mass_mass_or_volume","g",264.2,264.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",264.2,264.2
@@ -803,7 +814,7 @@
 "Lepilemur microdon","mass","Brain_Mass_mass_or_volume","g",9.75,9.75,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",9.75,9.75
 "Lepilemur mustelinus","mass","Brain_Mass_mass_or_volume","g",9.5599,9.5599,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",9.5599,9.5599
 "Lepilemur ruficaudatus","mass","Brain_Mass_mass_or_volume","g",8.25,8.25,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",8.25,8.25
-"Lepilemur ruficaudatus","mass","Brain_Mass_measured","g",7.6,7.6,6,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",7.5,7.6
+"Lepilemur ruficaudatus","mass","Brain_Mass_measured","g",7.6,7.6,5,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",7.5,7.6
 "Leptailurus serval","mass","Brain_Mass_mass_or_volume","g",54.1,54.1,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",54.1,54.1
 "Leptonychotes weddellii","mass","Brain_Mass_mass_or_volume","g",564.17,564.17,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",564.17,564.17
 "Leptonycteris curasoae","mass","Brain_Mass_mass_or_volume","g",0.5875,0.5875,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.5875,0.5875
@@ -833,13 +844,13 @@
 "Lontra felina","mass","Brain_Mass_mass_or_volume","g",38.9,38.9,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",38.9,38.9
 "Lontra longicaudis","mass","Brain_Mass_mass_or_volume","g",57.4,57.4,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",57.4,57.4
 "Lophocebus albigena","mass","Brain_Mass_mass_or_volume","g",96.8,96.8,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",96.8,96.8
-"Lophocebus albigena","mass","Brain_Mass_measured","g",107.25,107.25,9,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",103.375,110.5
+"Lophocebus albigena","mass","Brain_Mass_measured","g",107.25,107.25,8,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",103.375,110.5
 "Lophocebus aterrimus","mass","Brain_Mass_mass_or_volume","g",101.5909,101.5909,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",101.5909,101.5909
 "Lophuromys flavopunctatus","mass","Brain_Mass_mass_or_volume","g",1.01,1.01,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.01,1.01
 "Lophuromys sikapusi","mass","Brain_Mass_mass_or_volume","g",1.13,1.13,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.13,1.13
 "Loris lydekkerianus","mass","Brain_Mass_mass_or_volume","g",6.3,6.3,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",6.3,6.3
 "Loris tardigradus","mass","Brain_Mass_mass_or_volume","g",6,6,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",6,6
-"Loris tardigradus","mass","Brain_Mass_measured","g",6.75,6.75,9,4,2,TRUE,"Lewitus; Sherwood; Stephan_collection; Zilles","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",6.6,6.9
+"Loris tardigradus","mass","Brain_Mass_measured","g",6.75,6.75,8,4,2,TRUE,"Lewitus; Sherwood; Stephan_collection; Zilles","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",6.6,6.9
 "Loxodonta africana","mass","Brain_Mass_excl_olfactory_bulb","g",4618.62,4618.62,1,1,1,TRUE,"HerculanoHouzel","primary","mass_excl_olfactory_bulb",4618.62,4618.62
 "Loxodonta africana","mass","Brain_Mass_mass_or_volume","g",4618,4618,2,2,1,TRUE,"Burger; HerculanoHouzel","primary; secondary","mass_or_volume_mixed",4618,5436.4
 "Loxodonta africana","mass","Brain_Mass_measured","g",4835,4835,3,3,1,TRUE,"Garwicz; Karl; Lewitus","primary; secondary","mass_compilation_unspecified; mass_specimen; mass_unspecified",4480,5253.5556
@@ -869,7 +880,7 @@
 "Macaca mulatta","mass","Brain_Mass_excl_olfactory_bulb","g",87.346,87.346,1,1,1,TRUE,"HerculanoHouzel","primary","mass_excl_olfactory_bulb",87.346,87.346
 "Macaca mulatta","mass","Brain_Mass_from_volume_or_ecv","g",79.1,79.1,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",79.1,79.1
 "Macaca mulatta","mass","Brain_Mass_mass_or_volume","g",87.346,87.346,2,2,1,TRUE,"Burger; HerculanoHouzel","primary; secondary","mass_or_volume_mixed",87.346,87.99
-"Macaca mulatta","mass","Brain_Mass_measured","g",81.5854,88.8208,14,8,4,TRUE,"Changizi; Finlay; Garwicz; Lewitus; Nudo; Stephan_collection; Turner; Zilles","info; primary; secondary","mass_compilation_unspecified; mass_fixed; mass_fresh; mass_unspecified",33.2,95
+"Macaca mulatta","mass","Brain_Mass_measured","g",81.5854,88.8208,13,8,4,TRUE,"Changizi; Finlay; Garwicz; Lewitus; Nudo; Stephan_collection; Turner; Zilles","info; primary; secondary","mass_compilation_unspecified; mass_fixed; mass_fresh; mass_unspecified",33.2,95
 "Macaca nemestrina","mass","Brain_Mass_mass_or_volume","g",110,110,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",110,110
 "Macaca nemestrina","mass","Brain_Mass_measured","g",36.4,36.4,1,1,0,FALSE,"Turner","info","mass_fixed",36.4,36.4
 "Macaca nigra","mass","Brain_Mass_mass_or_volume","g",97.5,97.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",97.5,97.5
@@ -917,6 +928,7 @@
 "Marmosa murina","mass","Brain_Mass_mass_or_volume","g",1.1,1.1,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.1,1.1
 "Marmosa robinsoni","mass","Brain_Mass_mass_or_volume","g",0.7,0.7,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.7,0.7
 "Marmosa rubra","mass","Brain_Mass_mass_or_volume","g",1.2,1.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.2,1.2
+"Marmot (Arctomys marmota)","mass","Brain_Mass_measured","g",13.2,13.2,1,1,0,FALSE,"Krompecher","secondary","mass_unspecified",13.2,13.2
 "Marmota baibacina","mass","Brain_Mass_mass_or_volume","g",13.75,13.75,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",13.75,13.75
 "Marmota bobak","mass","Brain_Mass_mass_or_volume","g",12.56,12.56,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",12.56,12.56
 "Marmota broweri","mass","Brain_Mass_mass_or_volume","g",13.94,13.94,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",13.94,13.94
@@ -980,21 +992,21 @@
 "Micaelamys namaquensis","mass","Brain_Mass_mass_or_volume","g",0.89,0.89,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.89,0.89
 "Microcebus murinus","mass","Brain_Mass_excl_olfactory_bulb","g",1.799,1.799,1,1,1,TRUE,"HerculanoHouzel","primary","mass_excl_olfactory_bulb",1.799,1.799
 "Microcebus murinus","mass","Brain_Mass_mass_or_volume","g",1.84,1.84,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.84,1.84
-"Microcebus murinus","mass","Brain_Mass_measured","g",1.78,1.78,7,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",1.78,1.85
+"Microcebus murinus","mass","Brain_Mass_measured","g",1.78,1.78,6,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",1.78,1.85
 "Microcebus rufus","mass","Brain_Mass_mass_or_volume","g",1.7164,1.7164,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.7164,1.7164
 "Microdipodops megacephalus","mass","Brain_Mass_mass_or_volume","g",0.56,0.56,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.56,0.56
 "Microdipodops pallidus","mass","Brain_Mass_mass_or_volume","g",0.55,0.55,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.55,0.55
 "Microgale cowani","mass","Brain_Mass_mass_or_volume","g",0.42,0.42,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.42,0.42
-"Microgale cowani","mass","Brain_Mass_measured","g",0.42,0.42,2,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.42,0.42
+"Microgale cowani","mass","Brain_Mass_measured","g",0.42,0.42,1,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.42,0.42
 "Microgale mergulus","mass","Brain_Mass_mass_or_volume","g",1.15,1.15,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.15,1.15
-"Microgale mergulus","mass","Brain_Mass_measured","g",1.15,1.15,4,1,1,TRUE,"Stephan_collection","primary","mass_fresh",1.15,1.15
+"Microgale mergulus","mass","Brain_Mass_measured","g",1.15,1.15,3,1,1,TRUE,"Stephan_collection","primary","mass_fresh",1.15,1.15
 "Micromys minutus","mass","Brain_Mass_mass_or_volume","g",0.29,0.29,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.29,0.29
 "Micronycteris megalotis","mass","Brain_Mass_mass_or_volume","g",0.274,0.274,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.274,0.274
 "Micronycteris minuta","mass","Brain_Mass_mass_or_volume","g",0.286,0.286,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.286,0.286
 "Micronycteris schmidtorum","mass","Brain_Mass_mass_or_volume","g",0.308,0.308,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.308,0.308
 "Microperoryctes longicauda","mass","Brain_Mass_mass_or_volume","g",3.81,3.81,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.81,3.81
 "Micropotamogale lamottei","mass","Brain_Mass_mass_or_volume","g",0.8,0.8,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.8,0.8
-"Micropotamogale lamottei","mass","Brain_Mass_measured","g",0.8,0.8,2,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.8,0.8
+"Micropotamogale lamottei","mass","Brain_Mass_measured","g",0.8,0.8,1,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.8,0.8
 "Micropteropus pusillus","mass","Brain_Mass_mass_or_volume","g",0.82,0.82,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.82,0.82
 "Microtus agrestis","mass","Brain_Mass_mass_or_volume","g",0.74,0.74,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.74,0.74
 "Microtus arvalis","mass","Brain_Mass_mass_or_volume","g",0.55,0.55,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.55,0.55
@@ -1019,7 +1031,7 @@
 "Miniopterus tristis","mass","Brain_Mass_mass_or_volume","g",0.333,0.333,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.333,0.333
 "Miopithecus ogouensis","mass","Brain_Mass_mass_or_volume","g",37.351,37.351,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",37.351,37.351
 "Miopithecus talapoin","mass","Brain_Mass_mass_or_volume","g",34.8,34.8,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",34.8,34.8
-"Miopithecus talapoin","mass","Brain_Mass_measured","g",39.6,39.6,8,3,1,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",39,41.1
+"Miopithecus talapoin","mass","Brain_Mass_measured","g",39.5,39.5,7,3,1,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",39,41.1
 "Mirounga angustirostris","mass","Brain_Mass_mass_or_volume","g",670,670,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",670,670
 "Mirounga leonina","mass","Brain_Mass_mass_or_volume","g",1205,1205,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1205,1205
 "Mirza coquereli","mass","Brain_Mass_mass_or_volume","g",5.7959,5.7959,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",5.7959,5.7959
@@ -1112,7 +1124,7 @@
 "Nanger granti","mass","Brain_Mass_mass_or_volume","g",139,139,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",139,139
 "Napaeozapus insignis","mass","Brain_Mass_mass_or_volume","g",0.48,0.48,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.48,0.48
 "Nasalis larvatus","mass","Brain_Mass_mass_or_volume","g",83.8,83.8,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",83.8,83.8
-"Nasalis larvatus","mass","Brain_Mass_measured","g",97,97,4,2,1,TRUE,"Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",64.25,97
+"Nasalis larvatus","mass","Brain_Mass_measured","g",97,97,3,2,1,TRUE,"Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",64.25,97
 "Nasua narica","mass","Brain_Mass_mass_or_volume","g",44.17,44.17,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",44.17,44.17
 "Nasua nasua","mass","Brain_Mass_mass_or_volume","g",37.5,37.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",37.5,37.5
 "Natalus tumidirostris","mass","Brain_Mass_mass_or_volume","g",0.245,0.245,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.245,0.245
@@ -1120,7 +1132,7 @@
 "Neofelis nebulosa","mass","Brain_Mass_measured","g",68.3,68.3,1,1,1,TRUE,"Karl","primary","mass_specimen",68.3,68.3
 "Neofiber alleni","mass","Brain_Mass_mass_or_volume","g",2.72,2.72,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.72,2.72
 "Neomys fodiens","mass","Brain_Mass_mass_or_volume","g",0.31,0.31,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.31,0.31
-"Neomys fodiens","mass","Brain_Mass_measured","g",0.32,0.32,5,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",0.32,0.32
+"Neomys fodiens","mass","Brain_Mass_measured","g",0.32,0.32,4,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",0.32,0.32
 "Neophascogale lorentzi","mass","Brain_Mass_mass_or_volume","g",2.45,2.45,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.45,2.45
 "Neophoca cinerea","mass","Brain_Mass_mass_or_volume","g",388.75,388.75,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",388.75,388.75
 "Neophocaena asiaeorientalis","mass","Brain_Mass_measured","g",422,422,1,1,0,FALSE,"Manger","secondary","mass_compilation_unspecified",422,422
@@ -1135,9 +1147,9 @@
 "Neotoma micropus","mass","Brain_Mass_mass_or_volume","g",2.66,2.66,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.66,2.66
 "Neotragus moschatus","mass","Brain_Mass_mass_or_volume","g",32,32,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",32,32
 "Nesogale dobsoni","mass","Brain_Mass_mass_or_volume","g",0.56,0.56,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.56,0.56
-"Nesogale dobsoni","mass","Brain_Mass_measured","g",0.56,0.56,2,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.56,0.56
+"Nesogale dobsoni","mass","Brain_Mass_measured","g",0.56,0.56,1,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.56,0.56
 "Nesogale talazaci","mass","Brain_Mass_mass_or_volume","g",0.79,0.79,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.79,0.79
-"Nesogale talazaci","mass","Brain_Mass_measured","g",0.79,0.79,4,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.79,0.79
+"Nesogale talazaci","mass","Brain_Mass_measured","g",0.79,0.79,3,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.79,0.79
 "Nestor notabilis","mass","Brain_Mass_measured","g",13.5916,13.5916,1,1,1,TRUE,"Olkowicz","primary","mass_fixed",13.5916,13.5916
 "Neurotrichus gibbsii","mass","Brain_Mass_mass_or_volume","g",0.91,0.91,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.91,0.91
 "Ningaui ridei","mass","Brain_Mass_mass_or_volume","g",0.24,0.24,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.24,0.24
@@ -1164,7 +1176,7 @@
 "Nycteris tragata","mass","Brain_Mass_mass_or_volume","g",0.476,0.476,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.476,0.476
 "Nycticebus bengalensis","mass","Brain_Mass_mass_or_volume","g",13.5,13.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",13.5,13.5
 "Nycticebus coucang","mass","Brain_Mass_mass_or_volume","g",12.74,12.74,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",12.74,12.74
-"Nycticebus coucang","mass","Brain_Mass_measured","g",10.19,10.19,7,3,2,TRUE,"Lewitus; Nudo; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",7.88,12.5
+"Nycticebus coucang","mass","Brain_Mass_measured","g",10.19,10.19,6,3,2,TRUE,"Lewitus; Nudo; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",7.88,12.5
 "Nycticebus pygmaeus","mass","Brain_Mass_mass_or_volume","g",7.8,7.8,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",7.8,7.8
 "Nyctimene albiventer","mass","Brain_Mass_mass_or_volume","g",0.825,0.825,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.825,0.825
 "Nyctimene robinsoni","mass","Brain_Mass_mass_or_volume","g",1.2307,1.2307,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.2307,1.2307
@@ -1209,12 +1221,12 @@
 "Oryx gazella","mass","Brain_Mass_mass_or_volume","g",292,292,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",292,292
 "Oryzomys palustris","mass","Brain_Mass_mass_or_volume","g",0.88,0.88,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.88,0.88
 "Oryzorictes hova","mass","Brain_Mass_mass_or_volume","g",0.58,0.58,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.58,0.58
-"Oryzorictes hova","mass","Brain_Mass_measured","g",0.58,0.58,2,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.58,0.58
+"Oryzorictes hova","mass","Brain_Mass_measured","g",0.58,0.58,1,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.58,0.58
 "Osphranter rufus","mass","Brain_Mass_mass_or_volume","g",62.4,62.4,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",62.4,62.4
 "Otaria flavescens","mass","Brain_Mass_mass_or_volume","g",506.25,506.25,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",506.25,506.25
 "Otocyon megalotis","mass","Brain_Mass_mass_or_volume","g",26.09,26.09,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",26.09,26.09
 "Otolemur crassicaudatus","mass","Brain_Mass_mass_or_volume","g",11.7775,11.7775,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",11.7775,11.7775
-"Otolemur crassicaudatus","mass","Brain_Mass_measured","g",10.3,10.3,8,3,1,TRUE,"Lewitus; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",10.3,11.8
+"Otolemur crassicaudatus","mass","Brain_Mass_measured","g",10.3,10.3,7,3,1,TRUE,"Lewitus; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",10.3,11.8
 "Otolemur garnettii","mass","Brain_Mass_excl_olfactory_bulb","g",10.15,10.15,1,1,1,TRUE,"HerculanoHouzel","primary","mass_excl_olfactory_bulb",10.15,10.15
 "Otolemur garnettii","mass","Brain_Mass_mass_or_volume","g",11.4958,11.4958,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",11.4958,11.4958
 "Otolemur monteiri","mass","Brain_Mass_mass_or_volume","g",11.4,11.4,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",11.4,11.4
@@ -1236,7 +1248,7 @@
 "Pan paniscus","mass","Brain_Mass_mass_or_volume","g",329.7,329.7,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",329.7,329.7
 "Pan paniscus","mass","Brain_Mass_measured","g",353.3571,353.3571,15,3,1,TRUE,"Stimpson; Zilles; deSousa","primary; secondary","mass_fresh; mass_unspecified",295.7,395
 "Pan troglodytes","mass","Brain_Mass_mass_or_volume","g",354.81,354.81,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",354.81,354.81
-"Pan troglodytes","mass","Brain_Mass_measured","g",373.1643,393.3286,49,11,4,TRUE,"Armstrong; Brodmann; Collins; Garwicz; Karl; Lewitus; Sherwood; Stephan_collection; Stimpson; Zilles; deSousa","info; primary; secondary","mass_compilation_unspecified; mass_fixed; mass_fresh; mass_fresh_or_fixed_mixed; mass_specimen; mass_unspecified",295,440
+"Pan troglodytes","mass","Brain_Mass_measured","g",373.5393,393.3286,48,11,4,TRUE,"Armstrong; Brodmann; Collins; Garwicz; Karl; Lewitus; Sherwood; Stephan_collection; Stimpson; Zilles; deSousa","info; primary; secondary","mass_compilation_unspecified; mass_fixed; mass_fresh; mass_fresh_or_fixed_mixed; mass_specimen; mass_unspecified",295,440
 "Panthera leo","mass","Brain_Mass_mass_or_volume","g",259.5,259.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",259.5,259.5
 "Panthera leo","mass","Brain_Mass_measured","g",259,259,5,3,1,TRUE,"Brodmann; Jacobs; Lewitus","info; primary; secondary","mass_specimen; mass_unspecified",223.5,24721
 "Panthera onca","mass","Brain_Mass_mass_or_volume","g",149,149,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",149,149
@@ -1245,7 +1257,7 @@
 "Panthera tigris","mass","Brain_Mass_mass_or_volume","g",269.73,269.73,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",269.73,269.73
 "Panthera tigris altaica","mass","Brain_Mass_measured","g",279.3,279.3,2,1,0,FALSE,"Jacobs","info","mass_specimen",279.3,279.3
 "Papio anubis","mass","Brain_Mass_mass_or_volume","g",152.4,152.4,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",152.4,152.4
-"Papio anubis","mass","Brain_Mass_measured","g",187.65,187.65,6,4,2,TRUE,"Karl; Sherwood; Stephan_collection; Zilles","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_specimen; mass_unspecified",174.3,206.5
+"Papio anubis","mass","Brain_Mass_measured","g",187.65,187.65,5,4,2,TRUE,"Karl; Sherwood; Stephan_collection; Zilles","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_specimen; mass_unspecified",174.3,206.5
 "Papio cynocephalus","mass","Brain_Mass_excl_olfactory_bulb","g",151.194,151.194,1,1,1,TRUE,"HerculanoHouzel","primary","mass_excl_olfactory_bulb",151.194,151.194
 "Papio cynocephalus","mass","Brain_Mass_mass_or_volume","g",151.19,151.19,2,2,1,TRUE,"Burger; HerculanoHouzel","primary; secondary","mass_or_volume_mixed",151.19,156.1
 "Papio cynocephalus","mass","Brain_Mass_measured","g",169.1,169.1,1,1,0,FALSE,"Sherwood","secondary","mass_compilation_unspecified",169.1,169.1
@@ -1276,7 +1288,7 @@
 "Perameles gunnii","mass","Brain_Mass_mass_or_volume","g",4.5,4.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4.5,4.5
 "Perameles nasuta","mass","Brain_Mass_mass_or_volume","g",4.96,4.96,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4.96,4.96
 "Perodicticus potto","mass","Brain_Mass_mass_or_volume","g",12.07,12.07,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",12.07,12.07
-"Perodicticus potto","mass","Brain_Mass_measured","g",12.75,12.75,8,4,2,TRUE,"Lewitus; Sherwood; Stephan_collection; Zilles","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",11.5,14.3
+"Perodicticus potto","mass","Brain_Mass_measured","g",12.75,12.75,7,4,2,TRUE,"Lewitus; Sherwood; Stephan_collection; Zilles","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",11.5,14.3
 "Perognathus flavus","mass","Brain_Mass_mass_or_volume","g",0.31,0.31,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.31,0.31
 "Perognathus longimembris","mass","Brain_Mass_mass_or_volume","g",0.33,0.33,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.33,0.33
 "Perognathus parvus","mass","Brain_Mass_mass_or_volume","g",0.49,0.49,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.49,0.49
@@ -1365,8 +1377,9 @@
 "Physeter catadon","mass","Brain_Mass_measured","g",7818,7818,1,1,0,FALSE,"Manger","secondary","mass_compilation_unspecified",7818,7818
 "Physeter catodon","mass","Brain_Mass_mass_or_volume","g",8183,8183,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",8183,8183
 "Pica pica","mass","Brain_Mass_measured","g",5.4253,5.4253,1,1,1,TRUE,"Olkowicz","primary","mass_fixed",5.4253,5.4253
+"Pigeon (Columba domest.)","mass","Brain_Mass_measured","g",1.91,1.91,2,1,0,FALSE,"Krompecher","secondary","mass_unspecified",1.79,2.03
 "Piliocolobus badius","mass","Brain_Mass_mass_or_volume","g",78,78,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",78,78
-"Piliocolobus badius","mass","Brain_Mass_measured","g",76.9625,76.9625,8,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",75,78
+"Piliocolobus badius","mass","Brain_Mass_measured","g",76.9625,76.9625,7,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",75,78
 "Piliocolobus kirkii","mass","Brain_Mass_mass_or_volume","g",57.25,57.25,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",57.25,57.25
 "Piliocolobus tephrosceles","mass","Brain_Mass_mass_or_volume","g",70.9519,70.9519,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",70.9519,70.9519
 "Pipistrellus ceylonicus","mass","Brain_Mass_mass_or_volume","g",0.182,0.182,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.182,0.182
@@ -1379,7 +1392,7 @@
 "Pith VIII /Sangiran 17","mass","Brain_Mass_from_volume_or_ecv","g",949.01,949.01,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",949.01,949.01
 "Pithecia irrorata","mass","Brain_Mass_mass_or_volume","g",39.5,39.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",39.5,39.5
 "Pithecia monachus","mass","Brain_Mass_mass_or_volume","g",35,35,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",35,35
-"Pithecia monachus","mass","Brain_Mass_measured","g",35,35,5,1,1,TRUE,"Stephan_collection","primary; secondary","mass_fresh",35,35
+"Pithecia monachus","mass","Brain_Mass_measured","g",35,35,4,1,1,TRUE,"Stephan_collection","primary; secondary","mass_fresh",35,35
 "Pithecia pithecia","mass","Brain_Mass_mass_or_volume","g",32.6,32.6,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",32.6,32.6
 "Pithecia pithecia","mass","Brain_Mass_measured","g",30,30,1,1,1,TRUE,"Zilles","primary","mass_unspecified",30,30
 "Planigale gilesi","mass","Brain_Mass_mass_or_volume","g",0.17,0.17,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.17,0.17
@@ -1403,13 +1416,13 @@
 "Pogonomys sylvestris","mass","Brain_Mass_mass_or_volume","g",1.13,1.13,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.13,1.13
 "Pongo","mass","Brain_Mass_from_volume_or_ecv","g",433.13,433.13,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",433.13,433.13
 "Pongo pygmaeus","mass","Brain_Mass_mass_or_volume","g",341.99,341.99,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",341.99,341.99
-"Pongo pygmaeus","mass","Brain_Mass_measured","g",376.6112,376.6112,9,4,1,TRUE,"Lewitus; Sherwood; Zilles; deSousa","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",345,440
+"Pongo pygmaeus","mass","Brain_Mass_measured","g",376.6112,376.6112,10,5,1,TRUE,"Krompecher; Lewitus; Sherwood; Zilles; deSousa","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",316,440
 "Pongo sp.","mass","Brain_Mass_mass_or_volume","g",389.495,389.495,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",389.495,389.495
 "Pongo sp.","mass","Brain_Mass_measured","g",345.9,345.9,2,1,1,TRUE,"Zilles","primary","mass_unspecified",333.8,358
 "Pontoporia blainvillei","mass","Brain_Mass_measured","g",220,220,1,1,0,FALSE,"Manger","secondary","mass_compilation_unspecified",220,220
 "Potamochoerus porcus","mass","Brain_Mass_mass_or_volume","g",138,138,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",138,138
 "Potamogale velox","mass","Brain_Mass_mass_or_volume","g",4.05,4.05,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4.05,4.05
-"Potamogale velox","mass","Brain_Mass_measured","g",4.13,4.13,5,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",3.88,4.16
+"Potamogale velox","mass","Brain_Mass_measured","g",4.12,4.12,4,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",3.88,4.16
 "Potorous platyops","mass","Brain_Mass_mass_or_volume","g",6.3,6.3,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",6.3,6.3
 "Potorous tridactylus","mass","Brain_Mass_mass_or_volume","g",9.53,9.53,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",9.53,9.53
 "Potos flavus","mass","Brain_Mass_mass_or_volume","g",33.08,33.08,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",33.08,33.08
@@ -1452,7 +1465,7 @@
 "Propithecus diadema","mass","Brain_Mass_mass_or_volume","g",39.7993,39.7993,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",39.7993,39.7993
 "Propithecus edwardsi","mass","Brain_Mass_mass_or_volume","g",39.5,39.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",39.5,39.5
 "Propithecus verreauxi","mass","Brain_Mass_mass_or_volume","g",26.7,26.7,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",26.7,26.7
-"Propithecus verreauxi","mass","Brain_Mass_measured","g",26.7,26.7,7,3,1,TRUE,"Lewitus; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",26.7,26.9
+"Propithecus verreauxi","mass","Brain_Mass_measured","g",26.7,26.7,6,3,1,TRUE,"Lewitus; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",26.7,26.9
 "Proteles cristata","mass","Brain_Mass_mass_or_volume","g",35.2,35.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",35.2,35.2
 "Protoxerus stangeri","mass","Brain_Mass_mass_or_volume","g",11.33,11.33,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",11.33,11.33
 "Psammomys obesus","mass","Brain_Mass_mass_or_volume","g",1.3,1.3,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.3,1.3
@@ -1507,8 +1520,10 @@
 "Pusa hispida","mass","Brain_Mass_mass_or_volume","g",196.25,196.25,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",196.25,196.25
 "Pusa sibirica","mass","Brain_Mass_mass_or_volume","g",187.5,187.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",187.5,187.5
 "Pygathrix nemaeus","mass","Brain_Mass_mass_or_volume","g",77,77,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",77,77
-"Pygathrix nemaeus","mass","Brain_Mass_measured","g",77,77,5,3,1,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",69,84.8333
+"Pygathrix nemaeus","mass","Brain_Mass_measured","g",77,77,4,3,1,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",69,84.8333
 "Pygathrix nigripes","mass","Brain_Mass_mass_or_volume","g",82.7476,82.7476,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",82.7476,82.7476
+"Rabbit (Race III) (Oryctolagus cuniculus)","mass","Brain_Mass_measured","g",11.7,11.7,1,1,0,FALSE,"Krompecher","secondary","mass_unspecified",11.7,11.7
+"Rabbit (Race X) (Oryctolagus cuniculus)","mass","Brain_Mass_measured","g",9.1,9.1,1,1,0,FALSE,"Krompecher","secondary","mass_unspecified",9.1,9.1
 "Rangifer tarandus","mass","Brain_Mass_mass_or_volume","g",278,278,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",278,278
 "Rangifer tarandus","mass","Brain_Mass_measured","g",252.9,252.9,1,1,1,TRUE,"Karl","primary","mass_specimen",252.9,252.9
 "Raphicerus campestris","mass","Brain_Mass_mass_or_volume","g",51.3,51.3,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",51.3,51.3
@@ -1570,7 +1585,7 @@
 "Rhogeessa parvula","mass","Brain_Mass_mass_or_volume","g",0.111,0.111,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.111,0.111
 "Rhogeessa tumida","mass","Brain_Mass_mass_or_volume","g",0.1055,0.1055,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.1055,0.1055
 "Rhynchocyon cirnei","mass","Brain_Mass_mass_or_volume","g",5.9,5.9,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",5.9,5.9
-"Rhynchocyon cirnei","mass","Brain_Mass_measured","g",6.1,6.1,4,1,1,TRUE,"Stephan_collection","primary","mass_fresh",6.1,6.1
+"Rhynchocyon cirnei","mass","Brain_Mass_measured","g",6.1,6.1,3,1,1,TRUE,"Stephan_collection","primary","mass_fresh",6.1,6.1
 "Rhynchocyon petersi","mass","Brain_Mass_mass_or_volume","g",5.4,5.4,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",5.4,5.4
 "Rhynchogale melleri","mass","Brain_Mass_mass_or_volume","g",16.95,16.95,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",16.95,16.95
 "Rhyncholestes raphanurus","mass","Brain_Mass_mass_or_volume","g",0.65,0.65,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.65,0.65
@@ -1591,20 +1606,20 @@
 "Saguinus labiatus","mass","Brain_Mass_mass_or_volume","g",10.0117,10.0117,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",10.0117,10.0117
 "Saguinus leucopus","mass","Brain_Mass_mass_or_volume","g",9.702,9.702,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",9.702,9.702
 "Saguinus midas","mass","Brain_Mass_mass_or_volume","g",9.7839,9.7839,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",9.7839,9.7839
-"Saguinus midas","mass","Brain_Mass_measured","g",10.3,10.3,7,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",10.3,10.5
+"Saguinus midas","mass","Brain_Mass_measured","g",10.3,10.3,6,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",10.3,10.5
 "Saguinus mystax","mass","Brain_Mass_mass_or_volume","g",11.1,11.1,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",11.1,11.1
 "Saguinus mystax","mass","Brain_Mass_measured","g",10.1,10.1,1,1,0,FALSE,"Sherwood","secondary","mass_compilation_unspecified",10.1,10.1
 "Saguinus niger","mass","Brain_Mass_mass_or_volume","g",9.4811,9.4811,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",9.4811,9.4811
 "Saguinus nigricollis","mass","Brain_Mass_mass_or_volume","g",8.9,8.9,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",8.9,8.9
 "Saguinus oedipus","mass","Brain_Mass_mass_or_volume","g",9.64,9.64,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",9.64,9.64
-"Saguinus oedipus","mass","Brain_Mass_measured","g",9.65,9.65,9,4,2,TRUE,"Jacobs; Lewitus; Stephan_collection; Zilles","info; primary; secondary","mass_fresh; mass_specimen; mass_unspecified",8.9,10
+"Saguinus oedipus","mass","Brain_Mass_measured","g",9.65,9.65,8,4,2,TRUE,"Jacobs; Lewitus; Stephan_collection; Zilles","info; primary; secondary","mass_fresh; mass_specimen; mass_unspecified",8.9,10
 "Saguinus pileatus","mass","Brain_Mass_mass_or_volume","g",9.5552,9.5552,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",9.5552,9.5552
 "Saimiri boliviensis","mass","Brain_Mass_mass_or_volume","g",24.06,24.06,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",24.06,24.06
 "Saimiri boliviensis","mass","Brain_Mass_measured","g",25.5,25.5,2,1,0,FALSE,"Jacobs","info","mass_specimen",25.5,25.5
 "Saimiri oerstedii","mass","Brain_Mass_mass_or_volume","g",22.45,22.45,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",22.45,22.45
 "Saimiri sciureus","mass","Brain_Mass_excl_olfactory_bulb","g",30.216,30.216,1,1,1,TRUE,"HerculanoHouzel","primary","mass_excl_olfactory_bulb",30.216,30.216
 "Saimiri sciureus","mass","Brain_Mass_mass_or_volume","g",30.216,30.216,2,2,1,TRUE,"Burger; HerculanoHouzel","primary; secondary","mass_or_volume_mixed",23.35,30.216
-"Saimiri sciureus","mass","Brain_Mass_measured","g",22.284,23,10,6,5,TRUE,"Changizi; Finlay; Karl; Lewitus; Nudo; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_specimen; mass_unspecified",17.04,24.9
+"Saimiri sciureus","mass","Brain_Mass_measured","g",22.2173,22.6667,9,6,5,TRUE,"Changizi; Finlay; Karl; Lewitus; Nudo; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_specimen; mass_unspecified",17.04,24.9
 "Salanoia concolor","mass","Brain_Mass_mass_or_volume","g",11.02,11.02,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",11.02,11.02
 "Sapajus apella","mass","Brain_Mass_excl_olfactory_bulb","g",52.208,52.208,1,1,1,TRUE,"HerculanoHouzel","primary","mass_excl_olfactory_bulb",52.208,52.208
 "Sapajus apella","mass","Brain_Mass_mass_or_volume","g",52.508,52.508,2,2,1,TRUE,"Burger; HerculanoHouzel","primary; secondary","mass_or_volume_mixed",52.508,71.3
@@ -1637,8 +1652,9 @@
 "Semnopithecus priam","mass","Brain_Mass_mass_or_volume","g",83.0685,83.0685,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",83.0685,83.0685
 "Semnopithecus schistaceus","mass","Brain_Mass_mass_or_volume","g",129.2495,129.2495,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",129.2495,129.2495
 "Setifer setosus","mass","Brain_Mass_mass_or_volume","g",1.51,1.51,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.51,1.51
-"Setifer setosus","mass","Brain_Mass_measured","g",1.51,1.51,4,1,1,TRUE,"Stephan_collection","primary","mass_fresh",1.51,1.51
+"Setifer setosus","mass","Brain_Mass_measured","g",1.51,1.51,3,1,1,TRUE,"Stephan_collection","primary","mass_fresh",1.51,1.51
 "Setonix brachyurus","mass","Brain_Mass_mass_or_volume","g",13.9,13.9,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",13.9,13.9
+"Sheep (Ovis aries)","mass","Brain_Mass_measured","g",102,102,1,1,0,FALSE,"Krompecher","secondary","mass_unspecified",102,102
 "Sigmodon hispidus","mass","Brain_Mass_mass_or_volume","g",1.14,1.14,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.14,1.14
 "Simias concolor","mass","Brain_Mass_mass_or_volume","g",56.2,56.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",56.2,56.2
 "Sminthopsis bindi","mass","Brain_Mass_mass_or_volume","g",0.35,0.35,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.35,0.35
@@ -1651,9 +1667,9 @@
 "Sminthopsis murina","mass","Brain_Mass_mass_or_volume","g",0.44,0.44,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.44,0.44
 "Sminthopsis virginiae","mass","Brain_Mass_mass_or_volume","g",0.34,0.34,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.34,0.34
 "Solenodon paradoxus","mass","Brain_Mass_mass_or_volume","g",4.67,4.67,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4.67,4.67
-"Solenodon paradoxus","mass","Brain_Mass_measured","g",4.67,4.67,4,1,1,TRUE,"Stephan_collection","primary","mass_fresh",4.67,4.67
+"Solenodon paradoxus","mass","Brain_Mass_measured","g",4.67,4.67,3,1,1,TRUE,"Stephan_collection","primary","mass_fresh",4.67,4.67
 "Sorex araneus","mass","Brain_Mass_mass_or_volume","g",0.23,0.23,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.23,0.23
-"Sorex araneus","mass","Brain_Mass_measured","g",0.2,0.2,6,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",0.2,0.2
+"Sorex araneus","mass","Brain_Mass_measured","g",0.2,0.2,5,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",0.2,0.2
 "Sorex arcticus","mass","Brain_Mass_mass_or_volume","g",0.27,0.27,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.27,0.27
 "Sorex cinereus","mass","Brain_Mass_mass_or_volume","g",0.17,0.17,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.17,0.17
 "Sorex cinereus","mass","Brain_Mass_measured","g",0.17,0.17,1,1,1,TRUE,"Finlay","primary","mass_compilation_unspecified",0.17,0.17
@@ -1661,7 +1677,7 @@
 "Sorex fumeus","mass","Brain_Mass_mass_or_volume","g",0.21,0.21,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.21,0.21
 "Sorex hoyi","mass","Brain_Mass_mass_or_volume","g",0.09,0.09,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.09,0.09
 "Sorex minutus","mass","Brain_Mass_mass_or_volume","g",0.13,0.13,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.13,0.13
-"Sorex minutus","mass","Brain_Mass_measured","g",0.11,0.11,5,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",0.11,0.11
+"Sorex minutus","mass","Brain_Mass_measured","g",0.11,0.11,4,2,1,TRUE,"Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",0.11,0.11
 "Sorex monticolus","mass","Brain_Mass_mass_or_volume","g",0.23,0.23,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.23,0.23
 "Sorex ornatus","mass","Brain_Mass_mass_or_volume","g",0.12,0.12,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.12,0.12
 "Sorex palustris","mass","Brain_Mass_mass_or_volume","g",0.31,0.31,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.31,0.31
@@ -1675,6 +1691,7 @@
 "Spalacopus cyanus","mass","Brain_Mass_mass_or_volume","g",1.58,1.58,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.58,1.58
 "Spalax ehrenbergi","mass","Brain_Mass_mass_or_volume","g",1.88,1.88,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.88,1.88
 "Spalax leucodon","mass","Brain_Mass_mass_or_volume","g",3,3,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3,3
+"Sparrow (Passer domesticus)","mass","Brain_Mass_measured","g",1,1,1,1,0,FALSE,"Krompecher","secondary","mass_unspecified",1,1
 "Speothos venaticus","mass","Brain_Mass_mass_or_volume","g",40.5,40.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",40.5,40.5
 "Spermophilopsis leptodactylus","mass","Brain_Mass_mass_or_volume","g",6.18,6.18,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",6.18,6.18
 "Spermophilus adocetus","mass","Brain_Mass_mass_or_volume","g",3.01,3.01,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.01,3.01
@@ -1736,7 +1753,7 @@
 "Sturnus vulgaris","mass","Brain_Mass_measured","g",1.8553,1.8553,1,1,1,TRUE,"Olkowicz","primary","mass_fixed",1.8553,1.8553
 "Suncus etruscus","mass","Brain_Mass_mass_or_volume","g",0.07,0.07,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.07,0.07
 "Suncus murinus","mass","Brain_Mass_mass_or_volume","g",0.39,0.39,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.39,0.39
-"Suncus murinus","mass","Brain_Mass_measured","g",0.38,0.38,4,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.38,0.38
+"Suncus murinus","mass","Brain_Mass_measured","g",0.38,0.38,3,1,1,TRUE,"Stephan_collection","primary","mass_fresh",0.38,0.38
 "Sundamys muelleri","mass","Brain_Mass_mass_or_volume","g",3.5,3.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.5,3.5
 "Surdisorex polulus","mass","Brain_Mass_mass_or_volume","g",0.4,0.4,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.4,0.4
 "Suricata suricatta","mass","Brain_Mass_mass_or_volume","g",10.3,10.3,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",10.3,10.3
@@ -1744,6 +1761,7 @@
 "Sus scrofa","mass","Brain_Mass_measured","g",112,112,2,2,1,TRUE,"Brodmann; Lewitus","primary; secondary","mass_unspecified",112,13765
 "Sus scrofa domesticus","mass","Brain_Mass_excl_olfactory_bulb","g",62.5745,62.5745,3,2,2,TRUE,"HerculanoHouzel; Kazu","primary","mass_excl_olfactory_bulb",57.758,64.18
 "Sus scrofa domesticus","mass","Brain_Mass_measured","g",137.65,137.65,1,1,0,FALSE,"Lewitus","secondary","mass_unspecified",137.65,137.65
+"Swallow (Hirundo rustica)","mass","Brain_Mass_measured","g",0.5135,0.5135,2,1,0,FALSE,"Krompecher","secondary","mass_unspecified",0.492,0.535
 "Swanscombe","mass","Brain_Mass_from_volume_or_ecv","g",1184.63,1184.63,1,1,1,TRUE,"Weaver","primary","mass_from_volume_or_ecv",1184.63,1184.63
 "Syconycteris australis","mass","Brain_Mass_mass_or_volume","g",0.592,0.592,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.592,0.592
 "Sylvia atricapilla","mass","Brain_Mass_measured","g",0.7743,0.7743,1,1,1,TRUE,"Olkowicz","primary","mass_fixed",0.7743,0.7743
@@ -1762,7 +1780,7 @@
 "Tadarida aegyptiaca","mass","Brain_Mass_mass_or_volume","g",0.393,0.393,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.393,0.393
 "Taenipygia guttata","mass","Brain_Mass_measured","g",0.4935,0.4935,1,1,1,TRUE,"Olkowicz","primary","mass_fixed",0.4935,0.4935
 "Talpa europaea","mass","Brain_Mass_mass_or_volume","g",1.4,1.4,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.4,1.4
-"Talpa europaea","mass","Brain_Mass_measured","g",1.41,1.41,6,3,2,TRUE,"Brodmann; Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",1.02,1.8
+"Talpa europaea","mass","Brain_Mass_measured","g",1.41,1.41,5,3,2,TRUE,"Brodmann; Lewitus; Stephan_collection","primary; secondary","mass_fresh; mass_unspecified",1.02,1.8
 "Tamandua tetradactyla","mass","Brain_Mass_mass_or_volume","g",27.5,27.5,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",27.5,27.5
 "Tamias amoenus","mass","Brain_Mass_mass_or_volume","g",1.39,1.39,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.39,1.39
 "Tamias cinereicollis","mass","Brain_Mass_mass_or_volume","g",1.8,1.8,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.8,1.8
@@ -1790,7 +1808,7 @@
 "Tarsius bancanus","mass","Brain_Mass_mass_or_volume","g",2.7,2.7,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.7,2.7
 "Tarsius bancanus","mass","Brain_Mass_measured","g",3,3,1,1,0,FALSE,"Lewitus","secondary","mass_unspecified",3,3
 "Tarsius dentatus","mass","Brain_Mass_mass_or_volume","g",2.9954,2.9954,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.9954,2.9954
-"Tarsius sp.","mass","Brain_Mass_measured","g",3.6,3.6,3,1,1,TRUE,"Stephan_collection","primary; secondary","mass_fresh",3.6,3.6
+"Tarsius sp.","mass","Brain_Mass_measured","g",3.6,3.6,2,1,1,TRUE,"Stephan_collection","primary; secondary","mass_fresh",3.6,3.6
 "Tarsius syrichta","mass","Brain_Mass_mass_or_volume","g",3.3587,3.3587,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.3587,3.3587
 "Tarsius syrichta","mass","Brain_Mass_measured","g",3.63,3.63,4,3,1,TRUE,"Lewitus; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",3.63,4
 "Tarsius tarsier","mass","Brain_Mass_mass_or_volume","g",3.4,3.4,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.4,3.4
@@ -1800,7 +1818,7 @@
 "Taxidea taxus","mass","Brain_Mass_mass_or_volume","g",48.9,48.9,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",48.9,48.9
 "Tayassu pecari","mass","Brain_Mass_mass_or_volume","g",145.8,145.8,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",145.8,145.8
 "Tenrec ecaudatus","mass","Brain_Mass_mass_or_volume","g",2.84,2.84,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.84,2.84
-"Tenrec ecaudatus","mass","Brain_Mass_measured","g",2.585,2.585,5,2,2,TRUE,"Brodmann; Stephan_collection","primary","mass_fresh; mass_unspecified",2.57,2.6
+"Tenrec ecaudatus","mass","Brain_Mass_measured","g",2.585,2.585,4,2,2,TRUE,"Brodmann; Stephan_collection","primary","mass_fresh; mass_unspecified",2.57,2.6
 "Theropithecus gelada","mass","Brain_Mass_mass_or_volume","g",130,130,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",130,130
 "Thomomys bottae","mass","Brain_Mass_mass_or_volume","g",1.47,1.47,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1.47,1.47
 "Thomomys bulbivorus","mass","Brain_Mass_mass_or_volume","g",2.2,2.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.2,2.2
@@ -1852,10 +1870,10 @@
 "Tupaia belangeri","mass","Brain_Mass_measured","g",2.806,2.806,4,3,2,TRUE,"Changizi; Finlay; Garwicz","primary; secondary","mass_compilation_unspecified",2.5,3.15
 "Tupaia glis","mass","Brain_Mass_excl_olfactory_bulb","g",2.752,2.752,1,1,1,TRUE,"HerculanoHouzel","primary","mass_excl_olfactory_bulb",2.752,2.752
 "Tupaia glis","mass","Brain_Mass_mass_or_volume","g",3.2,3.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",3.2,3.2
-"Tupaia glis","mass","Brain_Mass_measured","g",2.8275,2.8275,8,4,2,TRUE,"Lewitus; Nudo; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",2.48,3.2
+"Tupaia glis","mass","Brain_Mass_measured","g",2.8233,2.8233,7,4,2,TRUE,"Lewitus; Nudo; Sherwood; Stephan_collection","primary; secondary","mass_compilation_unspecified; mass_fresh; mass_unspecified",2.48,3.2
 "Tupaia javanica","mass","Brain_Mass_mass_or_volume","g",2.3,2.3,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.3,2.3
 "Tupaia minor","mass","Brain_Mass_mass_or_volume","g",2.58,2.58,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.58,2.58
-"Tupaia minor","mass","Brain_Mass_measured","g",2.58,2.58,2,1,1,TRUE,"Stephan_collection","primary","mass_fresh",2.58,2.58
+"Tupaia minor","mass","Brain_Mass_measured","g",2.58,2.58,1,1,1,TRUE,"Stephan_collection","primary","mass_fresh",2.58,2.58
 "Tupaia sp.","mass","Brain_Mass_mass_or_volume","g",3.04,3.04,1,1,1,TRUE,"HerculanoHouzel","primary","mass_or_volume_mixed",3.04,3.04
 "Turdus merula","mass","Brain_Mass_measured","g",1.8872,1.8872,1,1,1,TRUE,"Olkowicz","primary","mass_fixed",1.8872,1.8872
 "Tursiops aduncus","mass","Brain_Mass_mass_or_volume","g",1498,1498,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",1498,1498
@@ -1870,7 +1888,7 @@
 "Urocyon littoralis","mass","Brain_Mass_mass_or_volume","g",27.7,27.7,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",27.7,27.7
 "Uroderma bilobatum","mass","Brain_Mass_mass_or_volume","g",0.5773,0.5773,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.5773,0.5773
 "Urogale everetti","mass","Brain_Mass_mass_or_volume","g",4.28,4.28,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",4.28,4.28
-"Urogale everetti","mass","Brain_Mass_measured","g",4.28,4.28,4,1,1,TRUE,"Stephan_collection","primary","mass_fresh",4.28,4.28
+"Urogale everetti","mass","Brain_Mass_measured","g",4.28,4.28,3,1,1,TRUE,"Stephan_collection","primary","mass_fresh",4.28,4.28
 "Ursus americanus","mass","Brain_Mass_mass_or_volume","g",248,248,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",248,248
 "Ursus arctos","mass","Brain_Mass_mass_or_volume","g",335.97,335.97,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",335.97,335.97
 "Ursus arctos","mass","Brain_Mass_measured","g",385,385,1,1,1,TRUE,"Karl","primary","mass_specimen",385,385
@@ -1883,7 +1901,7 @@
 "Vampyrum spectrum","mass","Brain_Mass_mass_or_volume","g",2.8685,2.8685,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",2.8685,2.8685
 "Varecia rubra","mass","Brain_Mass_mass_or_volume","g",31.0839,31.0839,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",31.0839,31.0839
 "Varecia variegata","mass","Brain_Mass_mass_or_volume","g",31.2,31.2,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",31.2,31.2
-"Varecia variegata","mass","Brain_Mass_measured","g",31.5,31.5,7,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",31.5,49.83
+"Varecia variegata","mass","Brain_Mass_measured","g",31.5,31.5,6,3,2,TRUE,"Lewitus; Stephan_collection; Zilles","primary; secondary","mass_fresh; mass_unspecified",31.5,49.83
 "Vespadelus pumilus","mass","Brain_Mass_mass_or_volume","g",0.122,0.122,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.122,0.122
 "Vespertilio murinus","mass","Brain_Mass_mass_or_volume","g",0.445,0.445,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",0.445,0.445
 "Vicugna vicugna","mass","Brain_Mass_mass_or_volume","g",199.9,199.9,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",199.9,199.9
@@ -1904,6 +1922,8 @@
 "Vulpes vulpes","mass","Brain_Mass_measured","g",45.6283,45.6283,2,1,0,FALSE,"Lewitus","secondary","mass_unspecified",45.6267,45.63
 "Vulpes zerda","mass","Brain_Mass_mass_or_volume","g",17.3,17.3,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",17.3,17.3
 "Wallabia bicolor","mass","Brain_Mass_mass_or_volume","g",32.9,32.9,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",32.9,32.9
+"White mouse (mus musculus albus)","mass","Brain_Mass_measured","g",0.4275,0.4275,2,1,0,FALSE,"Krompecher","secondary","mass_unspecified",0.425,0.43
+"White rat (Mus decom. alb.)","mass","Brain_Mass_measured","g",1.8615,1.8615,2,1,0,FALSE,"Krompecher","secondary","mass_unspecified",1.793,1.93
 "Wyulda squamicaudata","mass","Brain_Mass_mass_or_volume","g",10.1,10.1,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",10.1,10.1
 "Xerus erythropus","mass","Brain_Mass_mass_or_volume","g",6.68,6.68,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",6.68,6.68
 "Xerus inauris","mass","Brain_Mass_mass_or_volume","g",7.65,7.65,1,1,0,FALSE,"Burger","secondary","mass_or_volume_mixed",7.65,7.65

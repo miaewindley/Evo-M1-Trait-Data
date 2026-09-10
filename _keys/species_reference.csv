@@ -59,7 +59,7 @@ Didelphis marsupialis,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorp
 Echinops telfairi,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Tenrecinae,5,Afrosoricida,Tenrecidae,Echinops telfairi,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE
 Echinosorex gymnura,NA,TRUE,FALSE,FALSE,Insectivora,NA,NA,NA,NA,NA,NA,TRUE,Eulipotyphla,Erinaceidae,NCBI:name,NA
 Elephantulus fuscipes,NA,TRUE,FALSE,FALSE,Macroscelidea,NA,NA,31,Macroscelidea,Macroscelididae,Elephantulus fuscipes,FALSE,Macroscelidea,Macroscelididae,NCBI:name,TRUE
-Elephantulus myurus,113277,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Macroscelidea,Macroscelididae,NCBI:name,NA
+Elephantulus myurus,113277,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Macroscelidea,Macroscelididae,NCBI:taxid,NA
 Epomophorus wahlbergi,58067,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA
 Epomops franqueti,77231,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Pteropodidae,NCBI:taxid,NA
 Equus burchelli,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Perissodactyla,Equidae,NCBI:name,NA
@@ -68,7 +68,7 @@ Erythrocebus patas,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,234,Primates,Cercopit
 Eulemur fulvus,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Lemuridae,118,Primates,Lemuridae,Eulemur fulvus,FALSE,Primates,Lemuridae,NCBI:name,TRUE
 Eulemur mongoz,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Lemuridae,NCBI:name,NA
 Felis catus,9685,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Felidae,NCBI:taxid,NA
-Fukomys anselli,261002,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:name,NA
+Fukomys anselli,261002,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
 Fukomys damarensis,885580,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
 Fukomys darlingi,63616,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
 Fukomys mechowii,423607,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
@@ -76,15 +76,15 @@ Galago senegalensis,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Lorisidae,143,Primate
 Galagoides demidoff,NA,TRUE,FALSE,FALSE,Primates,Prosimians,Lorisidae,142,Primates,Galagidae,Galagoides demidoff,FALSE,Primates,Galagidae,NCBI:name,TRUE
 Galemys pyrenaicus,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,84,Eulipotyphla,Talpidae,Galemys pyrenaicus,FALSE,Eulipotyphla,Talpidae,NCBI:name,TRUE
 Galictis vittatus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Mustelidae,GBIF,NA
-Georychus capensis,10177,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:name,NA
-Giraffa camelopardalis,9894,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Giraffidae,NCBI:name,NA
+Georychus capensis,10177,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
+Giraffa camelopardalis,9894,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Giraffidae,NCBI:taxid,NA
 Gorilla gorilla,9593,FALSE,TRUE,FALSE,NA,NA,NA,NA,Primates,Hominidae,Gorilla gorilla,FALSE,Primates,Hominidae,NCBI:taxid,TRUE
 Gorilla sp.,NA,TRUE,FALSE,FALSE,Primates,Simians,NA,279,Primates,Hominidae,Gorilla gorilla,FALSE,Primates,Hominidae,GBIF,TRUE
 Heliophobius argenteocinereus,10179,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
 Hemicentetes semispinosus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Tenrecinae,4,Afrosoricida,Tenrecidae,Hemicentetes semispinosus,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE
 Hemiechinus auritus,NA,TRUE,FALSE,FALSE,Insectivora,Basal Insectivora,Erinaceidae,23,Eulipotyphla,Erinaceidae,Hemiechinus auritus,FALSE,Eulipotyphla,Erinaceidae,NCBI:name,TRUE
 Heterocephalus glaber,10181,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Bathyergidae,NCBI:taxid,NA
-Homo sapiens,9606,TRUE,TRUE,TRUE,Primates,Simians,NA,280,Primates,Hominidae,Homo sapiens,FALSE,Primates,Hominidae,NCBI:name,TRUE
+Homo sapiens,9606,TRUE,TRUE,TRUE,Primates,Simians,NA,280,Primates,Hominidae,Homo sapiens,FALSE,Primates,Hominidae,NCBI:taxid,TRUE
 Hyaena hyaena,95912,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Carnivora,Hyaenidae,NCBI:taxid,NA
 Hydrochoerus hydrochaeris,10149,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Rodentia,Hydrochaeridae,NCBI:taxid,NA
 Hylobates lar,NA,TRUE,FALSE,TRUE,Primates,Simians,NA,271,Primates,Hylobatidae,Hylobates lar,FALSE,Primates,Hylobatidae,NCBI:name,TRUE
@@ -105,7 +105,7 @@ Macaca maura,NA,TRUE,FALSE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopitheci
 Macaca mulatta,9544,TRUE,TRUE,TRUE,Primates,Simians,NA,202,Primates,Cercopithecidae,Macaca mulatta,FALSE,Primates,Cercopithecidae,NCBI:taxid,TRUE
 Macaca nemestrina,9545,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA
 Macaca radiata,9548,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:taxid,NA
-Macronycteris commersoni,110941,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Hipposideridae,NCBI:name,NA
+Macronycteris commersoni,110941,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Chiroptera,Hipposideridae,NCBI:taxid,NA
 Macropus fuliginosus,9316,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA
 Mandrillus sphinx,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Primates,Cercopithecidae,NCBI:name,NA
 Marmosa mitis,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Didelphimorphia,Didelphidae,GBIF,NA
@@ -141,7 +141,7 @@ Notamacropus parma,413582,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodont
 Notamacropus rufogriseus,1960652,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA
 Nycticebus coucang,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Lorisidae,138,Primates,Lorisidae,Nycticebus coucang,FALSE,Primates,Lorisidae,NCBI:name,TRUE
 Odocoileus virginianus,NA,FALSE,FALSE,TRUE,NA,NA,NA,NA,NA,NA,NA,TRUE,Artiodactyla,Cervidae,NCBI:name,NA
-Oryctolagus cuniculus,9986,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Lagomorpha,Leporidae,NCBI:name,NA
+Oryctolagus cuniculus,9986,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Lagomorpha,Leporidae,NCBI:taxid,NA
 Oryzorictes hova,NA,TRUE,FALSE,FALSE,Insectivora,Progressive Insectivora,NA,6,Afrosoricida,Tenrecidae,Oryzorictes hova,FALSE,Afrosoricida,Tenrecidae,NCBI:name,TRUE
 Osphranter rufus,9321,FALSE,TRUE,FALSE,NA,NA,NA,NA,NA,NA,NA,TRUE,Diprotodontia,Macropodidae,NCBI:taxid,NA
 Otolemur crassicaudatus,NA,TRUE,FALSE,TRUE,Primates,Prosimians,Lorisidae,141,Primates,Galagidae,Otolemur crassicaudatus,FALSE,Primates,Galagidae,NCBI:name,TRUE

@@ -86,12 +86,27 @@ derive_formula_values <- function(data_row) {
   year <- text_before(text_after(citation, "("), ")")
   authors <- text_before(citation, paste0(" (", year, ")"))
   first_author <- gsub("[- ]", "", text_before(citation, ","))
-  has_amp <- grepl("&", authors, fixed = TRUE)
+  # has_amp <- grepl("&", authors, fixed = TRUE)
+  # other_author <- ""
+  # if (has_amp) {
+  #   before_amp <- text_before(authors, "&")
+  #   comma_count <- nchar(before_amp) - nchar(gsub(",", "", before_amp, fixed = TRUE))
+  #   other_author <- if (comma_count > 2L) "etal" else trimws(text_before(text_after(authors, "& "), ","))
+  # }
+  has_amp      <- grepl("&", authors, fixed = TRUE)
+  has_ellipsis <- grepl("…", authors, fixed = TRUE)
   other_author <- ""
-  if (has_amp) {
+  if (has_ellipsis) {
+    other_author <- "etal"
+  } else if (has_amp) {
     before_amp <- text_before(authors, "&")
-    comma_count <- nchar(before_amp) - nchar(gsub(",", "", before_amp, fixed = TRUE))
-    other_author <- if (comma_count > 2L) "etal" else trimws(text_before(text_after(authors, "& "), ","))
+    comma_count <- nchar(before_amp) -
+      nchar(gsub(",", "", before_amp, fixed = TRUE))
+    other_author <- if (comma_count > 2L) {
+      "etal"
+    } else {
+      trimws(text_before(text_after(authors, "& "), ","))
+    }
   }
   publication_name <- paste0(
     first_author,
@@ -144,12 +159,22 @@ wb <- loadWorkbook(openxlsx_input)
 # genuinely missing formula cells on rows whose citation in column A is present.
 formula_family <- function(r) c(
   sprintf('SUBSTITUTE(SUBSTITUTE(_xlfn.TEXTBEFORE(A%d,","), "-", ""), " ", "")', r),   # E: 1st Author
+  # paste0(                                                                              # F: other author(s)
+  #   "_xlfn.LET(\n",
+  #   sprintf('_xlpm.authors,_xlfn.TEXTBEFORE(A%d," ("&G%d&")"),\n', r, r),
+  #   '_xlpm.hasAmp,ISNUMBER(SEARCH("&",_xlpm.authors)),\n',
+  #   '_xlpm.commasBeforeAmp,IF(_xlpm.hasAmp,LEN(_xlfn.TEXTBEFORE(_xlpm.authors,"&"))-LEN(SUBSTITUTE(_xlfn.TEXTBEFORE(_xlpm.authors,"&"),",","")),0),\n',
+  #   'IF(NOT(_xlpm.hasAmp),"",IF(_xlpm.commasBeforeAmp>2,"etal",TRIM(_xlfn.TEXTBEFORE(_xlfn.TEXTAFTER(_xlpm.authors,"& "),","))))\n',
+  #   ")"
+  # ),
   paste0(                                                                              # F: other author(s)
     "_xlfn.LET(\n",
     sprintf('_xlpm.authors,_xlfn.TEXTBEFORE(A%d," ("&G%d&")"),\n', r, r),
     '_xlpm.hasAmp,ISNUMBER(SEARCH("&",_xlpm.authors)),\n',
+    '_xlpm.hasEllipsis,ISNUMBER(SEARCH(_xlfn.UNICHAR(8230),_xlpm.authors)),\n',
+  # '_xlpm.hasEllipsis,ISNUMBER(SEARCH("…",_xlpm.authors)),\n',
     '_xlpm.commasBeforeAmp,IF(_xlpm.hasAmp,LEN(_xlfn.TEXTBEFORE(_xlpm.authors,"&"))-LEN(SUBSTITUTE(_xlfn.TEXTBEFORE(_xlpm.authors,"&"),",","")),0),\n',
-    'IF(NOT(_xlpm.hasAmp),"",IF(_xlpm.commasBeforeAmp>2,"etal",TRIM(_xlfn.TEXTBEFORE(_xlfn.TEXTAFTER(_xlpm.authors,"& "),","))))\n',
+    'IF(_xlpm.hasEllipsis,"etal",IF(NOT(_xlpm.hasAmp),"",IF(_xlpm.commasBeforeAmp>2,"etal",TRIM(_xlfn.TEXTBEFORE(_xlfn.TEXTAFTER(_xlpm.authors,"& "),",")))))\n',
     ")"
   ),
   sprintf('_xlfn.TEXTBEFORE(_xlfn.TEXTAFTER(A%d, "("), ")")', r),                       # G: year
@@ -214,6 +239,53 @@ if (any(formula_cells)) {
   wb$worksheets[[sheet1_index]]$sheet_data <- sheet_data
 }
 
+# ---- One-time migration of the old column-F formula family -------------------
+migrated_f <- character()
+
+for (r in populated_rows) {
+  hit <- which(sheet_data$rows == r & sheet_data$cols == 6L)
+  
+  if (!length(hit) || is.na(sheet_data$f[hit[1]])) {
+    next
+  }
+  
+  actual <- formula_text(sheet_data$f[hit[1]])
+  
+  old_f <- paste0(
+    "_xlfn.LET(\n",
+    sprintf('_xlpm.authors,_xlfn.TEXTBEFORE(A%d," ("&G%d&")"),\n', r, r),
+    '_xlpm.hasAmp,ISNUMBER(SEARCH("&",_xlpm.authors)),\n',
+    '_xlpm.commasBeforeAmp,IF(_xlpm.hasAmp,LEN(_xlfn.TEXTBEFORE(_xlpm.authors,"&"))-LEN(SUBSTITUTE(_xlfn.TEXTBEFORE(_xlpm.authors,"&"),",","")),0),\n',
+    'IF(NOT(_xlpm.hasAmp),"",IF(_xlpm.commasBeforeAmp>2,"etal",TRIM(_xlfn.TEXTBEFORE(_xlfn.TEXTAFTER(_xlpm.authors,"& "),","))))\n',
+    ")"
+  )
+  
+  new_f <- formula_family(r)[2]
+  
+  # Replace only formulas that exactly match the known historical family.
+  if (identical(normalize_formula(actual), normalize_formula(old_f))) {
+    writeFormula(
+      wb,
+      sheet = "Sheet1",
+      x     = new_f,
+      startCol = 6L,
+      startRow = r
+    )
+    
+    migrated_f <- c(migrated_f, sprintf("F%d", r))
+  }
+}
+
+# Reload internal sheet data after writeFormula() changed the workbook.
+sheet_data <- wb$worksheets[[sheet1_index]]$sheet_data
+
+if (length(migrated_f)) {
+  message(
+    "Migrated ", length(migrated_f),
+    " historical column-F formula(s) to the Unicode-ellipsis-aware family."
+  )
+}
+# Formula audit
 missing_formulas <- list()
 formula_mismatches <- character()
 for (r in populated_rows) {
