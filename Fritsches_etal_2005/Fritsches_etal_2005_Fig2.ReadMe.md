@@ -1,56 +1,71 @@
-# Fritsches et al. (2005) — Figure 2 (comparative retinal Q10 across billfish)
+# Fritsches et al. (2005) — Figure 2
 
-**Source paper.** Fritsches, K. A., Brill, R. W., & Warrant, E. J. (2005). Warm eyes provide superior vision in swordfish. *Current Biology*, 15(1), 55–58.
+**Source paper.** Fritsches, K. A., Brill, R. W., & Warrant, E. J. (2005). Warm eyes provide superior
+vision in swordfish. *Current Biology*, 15(1), 55–58.
 
-**Data location in the paper.** The paper does **not** publish a formal comparative table. The three-species comparison of retinal temperature sensitivity (Q10) and flicker fusion frequency (FFF) is presented in **Figure 2** and quoted in the main text on p. 55. This snapshot digitises those values.
+**Data location.** The paper publishes no table. The three-species comparison of retinal temperature
+sensitivity appears in Figure 2 and in the main text on p. 55, so this is a constructed snapshot and
+is named for its locus.
 
-Because the source is a figure and not a printed table, the folder is named `Fritsches_etal_2005_Fig2` rather than `..._Table1`. Placeholder files with `_Table1` in the name were used during scaffolding — those can be deleted; only the `_Fig2` files should be uploaded to the repo.
-
-## Files in this folder (uploaded)
+## Files in this folder
 
 | file | what it is |
 | --- | --- |
-| `Fritsches_etal_2005_Fig2_snapshot.csv` | frozen, faithful copy of the three-species Figure 2 comparison |
-| `Fritsches_etal_2005_Fig2.csv` | cleaned, analysis-ready data |
+| `Fritsches_etal_2005_Fig2_snapshot.csv` | the three-species comparison as stated in the paper |
+| `Fritsches_etal_2005_Fig2.csv` | cleaned, analysis-ready data ("use this") |
 | `Fritsches_etal_2005_Fig2.R` | script that turns the snapshot into the clean CSV |
 | `Fritsches_etal_2005_Fig2.ReadMe.md` | this file |
 
-## Files NOT to upload (legacy placeholders)
+## Pipeline
 
-- `Fritsches_etal_2005_Table1_snapshot.csv`
-- `Fritsches_etal_2005_Table1.R`
-- `Fritsches_etal_2005_Table1.ReadMe.md`
+`Source → Snapshot → Data readable → (Species notes) → Online database`
 
 ## Snapshot
 
-**Method.** Manual entry from Fritsches et al. (2005) main text (p. 55) and Figure 2 legends. Values as reported by the authors — no digitisation of the Q10 curves themselves.
+**Method.** Manual entry from the stated values, transcribed by an AI assistant on 10 September 2026
+from the Figure 2 legend and the paragraph on p. 55 supplied by M. Windley.
 
-**Columns kept.**
+**Sentences the values come from.** *"The light-adapted swordfish retina showed a Q10 (the fractional
+increase in FFF per 10°C) of 5.1 (n = 6, r2 = 0.80). … The surface-living yellowfin tuna (Thunnus
+albacares) and the deep-diving bigeye tuna (Thunnus obesus) revealed Q10 values of 2.3 (nyellowfin
+tuna = 5, r2 = 0.72) and 2.5 (nbigeye tuna = 6, r2 = 0.76), respectively."* The Figure 2 legend gives
+the same sample sizes: swordfish n = 6 (2A), bigeye n = 6 and yellowfin n = 5 (2B).
 
-- Species (Latin binomial)
-- Common name
-- Habitat depth (Fritsches' verbal description — kept as free text)
-- Retinal Q10 (light-adapted) — Fritsches' reported value
-- FFF at 10°C (Hz) — reported only for swordfish
-- FFF at 20°C (Hz) — reported only for swordfish
-- n (number of retinas measured)
-- r-squared (goodness-of-fit for the Q10 curve)
-- Source (paper location for each value)
+**Columns.**
 
-## Why this in the database
+- `Common name`
+- `Species`
+- `Habitat descriptor as printed` — the paper applies "surface-living" and "deep-diving" to the two
+  tunas only; blank for the swordfish
+- `Retinal Q10 (light-adapted)`
+- `n` — number of retinas measured
+- `r-squared` — goodness of fit for the Q10 curve
+- `Source in paper`
 
-Fritsches is a rare paper that places **visual acuity** and **thermoregulation** on the same species. The retinal Q10 quantifies how much visual temporal resolution changes per 10°C of retinal warming — swordfish's Q10 of 5.1 is more than double that of tunas (2.3, 2.5), which the authors attribute to the specialised heater organ that warms swordfish eyes ~10–15°C above ambient.
+Species: *Xiphias gladius*, *Thunnus albacares*, *Thunnus obesus*.
 
-Direct extension of Caves (2018) into the aquatic thermal domain and of Siegel (2022)'s thermoregulation frame into the visual system.
+**What was NOT included in the snapshot.**
+
+- FFF values at particular temperatures. The paper reports none for the swordfish; the temperature
+  response is published only as the curve in Figure 2A, which prints no per-point values and no
+  per-point source. The "40 Hz" figure quoted elsewhere in the text belongs to Figure 3A, which plots
+  FFF against light intensity at a fixed retinal temperature of 22 °C.
+- The diving-depth and light-attenuation modelling in the rest of the paper.
 
 ## Cleaning applied (in `.R`)
 
-- Column names → snake_case.
-- Em-dashes `—` in the snapshot (marking values not reported per species) converted to `NA` on the numeric side.
-- Common name lowercased.
+- Column names → snake_case; common names lowercased.
+- Q10, `n` and r² coerced to numeric.
 
-## Notes
+## Notes for the database
 
-- Three species is small but the paper is the standard reference for the swordfish/tuna Q10 comparison; this is the whole point of the paper.
-- Fritsches reports swordfish FFF at 20°C as ">40 Hz" (i.e. an inequality) rather than a point value. Preserved as the string `"greater than 40"` in the snapshot; user should decide downstream whether to code as `40` or leave as `NA`.
+- The swordfish Q10 of 5.1 is more than twice that of either tuna, which the authors attribute to the
+  heater organ warming the eye and brain 10–15 °C above ambient.
+- Both tunas achieve whole-body warming by vascular counter-current exchange rather than a
+  dedicated cranial heater, so the two thermal mechanisms are not equivalent.
 - Species names may need updating for NCBI taxonomic consistency at the repo level.
+
+## Public export
+
+Add the row to `__ReadMe.xlsx` (`Item name = Fritsches_etal_2005_Fig2` plus the derived `Item
+encoded`) and run the `.R`, which writes `__Public/comparative-data/<Item encoded>.tsv`.

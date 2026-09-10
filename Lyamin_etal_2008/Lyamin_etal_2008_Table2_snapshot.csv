@@ -1,5 +1,14 @@
-Species,Common name,Number of animals,Sex,Age,Total SWS (% of 24-h),SWS left hemisphere (% of 24-h),SWS right hemisphere (% of 24-h),Low amplitude USWS (% of TST),High amplitude USWS (% of TST),Asymmetrical SWS (% of TST),Low amplitude bilateral SWS (% of TST),High amplitude bilateral SWS (% of TST),Reference
-Tursiops truncatus,Bottlenose dolphin,6,"3 males, 3 females",Adults,33.9,20.4,17.5,51.0,37.2,4.4,7.4,0.0,Mukhametov et al. (1988)
-Phocoena phocoena,Harbor porpoise,1,Male,2 years,46.4,28.6,33.1,48.5,18.5,10.6,22.4,0.0,Mukhametov and Polyakova (1981)
-Inia geoffrensis,Amazon river dolphin,1,Male,Calf (several weeks),57.0,31.0,42.0,35.1,36.8,14.0,14.0,0.0,Mukhametov (1987)
-Delphinapterus leucas,Beluga,1,Male,Adult,43.0,25.5,28.5,46.8,21.3,14.7,17.0,0.2,Lyamin et al. (2002b)
+Parameter,Bottlenose dolphin^a,Harbor porpoise^b,Amazon river dolphin^c,Beluga^d
+Number of animals,6,1,1,1
+Sex,"3 males, 3 females",Male,Male,Male
+Age,Adults,2 years,Calf (several weeks),Adult
+Amount of (% of 24-h),,,,
+Total SWS time^e,33.9,46.4,57.0,43.0
+SWS left hemisphere,20.4,28.6,31.0,25.5
+SWS in right hemisphere,17.5,33.1,42.0,28.5
+Composition of SWS (% of TST),,,,
+Low amplitude USWS,51.0,48.5,35.1,46.8
+High amplitude USWS,37.2,18.5,36.8,21.3
+Asymmetrical SWS,4.4,10.6,14.0,14.7
+Low amplitude bilateral SWS,7.4,22.4,14.0,17.0
+High amplitude bilateral SWS,0.0,0.0,0.0,0.2

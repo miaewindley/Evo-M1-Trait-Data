@@ -29,17 +29,17 @@ library(readxl)
 
 ## 2. LOAD SNAPSHOT -------------------------------------------------
 # Ruf & Geiser (2015) Table 1: torpor characteristics in birds and mammals.
-# 213 species extracted from the printed Table 1 across pages 894-905.
-# Column key (from paper's caption):
+# 214 species (43 birds, 171 mammals) from the printed Table 1, pp. 894-901.
+# Column key (from the table footnote, p. 901):
 #   T       = torpor type ('DT' = daily torpor, 'HIB' = hibernation)
 #   BM      = body mass (kg)
 #   Tb min  = minimum torpor body temperature (°C)
 #   TMRmin  = minimum torpor metabolic rate (ml O2 / g / h)
 #   TMRrel  = TMRmin as % of basal metabolic rate
-#   TBDmax  = maximum torpor bout duration (h for daily; h for hibernation)
-#   TBDmean = mean torpor bout duration (units as printed)
+#   TBDmax  = maximum torpor bout duration (h)
+#   TBDmean = mean torpor bout duration (h)
 #   IBE     = interbout euthermia duration (h)
-#   LAT     = latitude of study site (° N positive, S negative)
+#   LAT     = latitude of mid species range (° N positive, S negative)
 df_snapshot <- read.csv(snapshot_csv, stringsAsFactors = FALSE,
                         check.names = FALSE, encoding = "UTF-8")
 
