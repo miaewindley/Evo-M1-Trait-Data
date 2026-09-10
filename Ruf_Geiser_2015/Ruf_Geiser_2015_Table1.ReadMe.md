@@ -1,60 +1,100 @@
 # Ruf & Geiser (2015) — Table 1
 
-**Source paper.** Ruf, T., & Geiser, F. (2015). Daily torpor and hibernation in birds and mammals. *Biological Reviews*, 90(3), 891–926.
+**Source paper.** Ruf, T., & Geiser, F. (2015). Daily torpor and hibernation in birds and mammals.
+*Biological Reviews*, 90(3), 891–926.
 
-**Table.** Table 1 ("Torpor characteristics in birds and mammals", pp. 894–905): torpor phenotype and physiology across 213 species.
+**Table.** Table 1: *"Torpor characteristics in birds and mammals"*, pp. 894–901. 214 species — 43
+birds and 171 mammals, per the paper's abstract.
 
 ## Files in this folder
 
 | file | what it is |
 | --- | --- |
-| `Ruf_Geiser_2015_Table1_snapshot.csv` | frozen, faithful copy of Table 1 as printed |
-| `Ruf_Geiser_2015_Table1.csv` | cleaned, analysis-ready data |
+| `Ruf_Geiser_2015_Table1_snapshot.csv` | Table 1 as printed |
+| `Ruf_Geiser_2015_Table1.csv` | cleaned, analysis-ready data ("use this") |
 | `Ruf_Geiser_2015_Table1.R` | script that turns the snapshot into the clean CSV |
 | `Ruf_Geiser_2015_Table1.ReadMe.md` | this file |
+| `reference_tables/Ruf_Geiser_2015_Table1_definitions.csv` | measurement basis per column |
+| `reference_tables/Ruf_Geiser_2015_Table1_references.csv` | the 265 works cited in the `References` column |
+
+## Pipeline
+
+`Source → Snapshot → Data readable → (Species notes) → Online database`
 
 ## Snapshot
 
-**Method.** The printed Table 1 spans roughly a dozen printed pages of the *Biological Reviews* PDF. It was extracted programmatically from the paper's PDF text layer (rows matched by fixed-format species-line pattern with `DT` or `HIB` in the second field), then written to CSV. Class-level headings (`AVES`, `MAMMALIA`) and Order-level headings (`Coraciiformes`, `Trochiliformes`, `Rodentia`, …) were tracked as the extractor walked down the text and attached to each row.
+**Method.** Extracted from the PDF text layer, matching rows on a fixed-format species line, then
+checked cell by cell against page images of pp. 894–901 by an AI assistant on 10 September 2026;
+section headings re-derived from the printed page, reference strings completed where the printed cell
+wraps to a second line, and the row count reconciled with the printed table. Five reference cells
+(*Cricetus cricetus*, *Marmota marmota*, *Spermophilus parryii*, *Tenrec ecaudatus*, *Dromiciops
+gliroides*) were re-checked against the PDF by M. Windley.
 
-**Columns kept, as in the paper.**
+**Columns kept, exactly as in the paper.**
 
-- Class (`AVES` / `MAMMALIA`) — inferred from the taxonomic section heading in the paper.
-- Order — inferred from the taxonomic section heading.
-- Taxon (species Latin binomial)
-- T — torpor type: `DT` (daily torpor) or `HIB` (hibernation)
-- BM — body mass (kg)
-- Tb min — minimum torpor body temperature (°C)
-- TMRmin — minimum torpor metabolic rate (ml O₂ / g / h)
-- TMRrel — TMRmin as % of basal metabolic rate
-- TBDmax — maximum torpor bout duration
-- TBDmean — mean torpor bout duration
-- IBE — interbout euthermia duration (h)
-- LAT — latitude of study site (°)
-- References — as printed
+- `Taxon` — species binomial
+- `T` — torpor type, `DT` or `HIB`
+- `BM` — body mass
+- `Tb min` — minimum body temperature in torpor
+- `TMRmin` — minimum torpor metabolic rate
+- `TMRrel` — TMRmin as a percentage of basal metabolic rate
+- `TBDmax` — maximum torpor bout duration
+- `TBDmean` — mean torpor bout duration
+- `IBE` — duration of interbout euthermia
+- `LAT` — latitude of the mid-point of the species range
+- `References` — as printed
 
-## Why this table for the database
+Units are given in the footnote to the printed table, p. 901: BM in kg, `Tb min` in °C, `TMRmin` in
+ml O₂ g⁻¹ h⁻¹, `TBDmax` / `TBDmean` / `IBE` in hours, `LAT` in degrees (>0 °N, <0 °S).
 
-The comprehensive comparative torpor dataset. Directly extends:
+**Row order.** As published.
 
-- **Arendt et al. (2003)** on tau reversibility in hibernation — Ruf & Geiser provide the phylogenetic map on which Arendt's molecular finding sits.
-- **Hrvatin et al. (2020)** on QRFP-induced torpor in mice — Ruf & Geiser tell you which species already possess natural torpor and which don't.
-- **Siegel (2022)** on adaptive inactivity as sleep's core function — torpor is Siegel's extreme case, and this table gives it quantitative shape.
+**`Class` and `Order` are not printed columns.** The printed table separates its groups with in-table
+section headings — `AVES` → `Coraciiformes`, `Coliiformes`, … and `MAMMALIA` → `Monotremata`,
+`Placentalia` → `Rodentia`, `Primates`, … — and both fields carry the nearest preceding heading. The
+infraclass headings `Placentalia` and `Marsupialia` are not carried into a column.
+
+**What was NOT included in the snapshot.**
+
+- The paper's own analyses of these data (cluster analysis, PGLS models, Figs 2–8).
+
+## References table
+
+`reference_tables/Ruf_Geiser_2015_Table1_references.csv` carries the 265 works cited in the
+`References` column, one row per work, with the full entry transcribed from the paper's reference
+list, pp. 918–926. Columns: `ref_key` (the citation string exactly as printed in the data column),
+`cited_in_column`, `citation`, `note`.
+
+Where a single printed key covers more than one work — `Hiebert (1990, 1993)`, `Lasiewski (1963,
+1964)`, `Dausmann et al. (2004, 2005, 2009)` — both entries are given in `citation`, separated by
+` | `, and the `note` records it. Four keys are not published works and are marked as such:
+`T. Ruf (unpublished data)`, `T. Ruf & W. Arnold (unpublished data)`, `C. Bieber & T. Ruf
+(unpublished data)` and `C. Siutz (personal communication)`. Two carry the printed indirection
+verbatim: `F. Lachiver cited in Kayser (1961)` and `Moyle in Reardon (1999)`.
 
 ## Cleaning applied (in `.R`)
 
 - Column names → snake_case.
-- Em-dash `—` and Unicode minus `−` normalised. `—` in numeric columns becomes `NA`.
-- Numeric columns coerced to numeric.
-- Character columns (taxon, references) trimmed.
+- Em-dash `—` and Unicode minus `−` normalised; `—` in numeric columns becomes `NA`.
+- Numeric columns coerced to numeric; `Taxon` and `References` trimmed.
+- `References` split on `"; "` so multi-citation cells resolve to one work each.
 
-## Known caveats — please verify before submitting
+## Notes for the database
 
-1. **Order-heading inference is imperfect.** The extractor tracks the most recent taxonomic heading it detected. For classes with many small orders (e.g., mammalian marsupials, insectivores), some rows may be attached to the wrong order because the heading text was not matched. Manual verification against the printed table is worthwhile before submission — the rest of the row values are correct even where the order label is wrong.
-2. **Reference strings may be truncated.** Where the paper prints a reference that wraps onto a second line of the table row (e.g. `"Hoffmann & Prinzinger (1984) and McKechnie & Lovegrove (2001a)"`), the extractor sometimes only captured the first line. Rows ending in `"and"`, `","` or an ampersand are candidates for manual completion.
-3. **Missing values.** `—` (em-dash) in the printed table means "not reported" for that species — preserved as such in the snapshot and coerced to `NA` in the cleaned CSV.
-4. **Some species (mostly marsupials at the end of the table) may have been extracted with the wrong `Order` field.** Cross-check any species you plan to use in analysis.
+- `LAT` is the latitude of the **mid-point of the species range**, not of the study site. Mammal
+  values come from PanTHERIA (Jones et al., 2009) for 159 species; 12 further mammals and all birds
+  were estimated by the authors from IUCN range maps (p. 902).
+- `T` is the authors' classification, cut at a maximum torpor bout duration of 24 h.
+- `TMRrel` is a ratio as printed and is not recomputed here.
+- The paper excludes `IBE` from its own cluster analyses, on the grounds that it may be affected by
+  prior torpor episodes (p. 902).
+- Ruf & Geiser (2015) is a review; the measurer of each row is the work cited in `References`. Those
+  works are a roadmap for primary ingestion and should not be re-ingested as primary.
+- *Spermophilus* is now split across several genera and *Fukomys damarensis* appears in older sources
+  as *Cryptomys*. Species-name standardisation is deferred to the repo-level step.
+- *Dasycercus cristicauda/blythi* (p. 900) carries a solidus in the printed binomial; kept as printed.
 
-## Alternative if manual verification is too much work
+## Public export
 
-Wiley journals often provide a supplementary Excel file. If `brv.12137` has one at *Biological Reviews*'s online supplement page, downloading it and re-saving as the snapshot would be more faithful than the text-layer extraction used here. As of the ReadMe date I could not verify whether such a file exists — worth checking before you spend hours on manual proofreading.
+Add the row to `__ReadMe.xlsx` (`Item name = Ruf_Geiser_2015_Table1` plus the derived `Item
+encoded`) and run the `.R`, which writes `__Public/comparative-data/<Item encoded>.tsv`.
