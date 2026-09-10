@@ -1,4 +1,4 @@
-Species,Common name,Habitat depth,Retinal Q10 (light-adapted),FFF at 10°C (Hz),FFF at 20°C (Hz),n,r-squared,Source
-Xiphias gladius,Swordfish,"Deep-diving (surface to ~500 m)",5.1,5,"greater than 40",—,0.80,Fig. 2A and text (p. 55)
-Thunnus albacares,Yellowfin tuna,Surface-living,2.3,—,—,5,0.72,Fig. 2B and text (p. 55)
-Thunnus obesus,Bigeye tuna,Deep-diving,2.5,—,—,6,0.76,Fig. 2B and text (p. 55)
+Common name,Species,Habitat descriptor as printed,Retinal Q10 (light-adapted),n,r-squared,Source in paper
+Swordfish,Xiphias gladius,,5.1,6,0.80,text p. 55 and Fig. 2A legend
+Yellowfin tuna,Thunnus albacares,surface-living,2.3,5,0.72,text p. 55 and Fig. 2B legend
+Bigeye tuna,Thunnus obesus,deep-diving,2.5,6,0.76,text p. 55 and Fig. 2B legend
