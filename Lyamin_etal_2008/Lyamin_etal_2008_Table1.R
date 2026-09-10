@@ -17,10 +17,11 @@ base <- dataset_root <- local({
   if (file.exists(file.path(d, "__ReadMe.xlsx"))) d else NA_character_
 })
 setwd(folder)
-snapshot_csv  <- file.path(paper_dir, paste0(table_name, "_snapshot.csv"))
-final_csv     <- file.path(paper_dir, paste0(table_name, ".csv"))
-public_tsv_dir<- if (!is.na(dataset_root)) file.path(dataset_root, "__Public", "comparative-data") else NA
-readme_xlsx   <- if (!is.na(dataset_root)) file.path(dataset_root, "__ReadMe.xlsx") else NA
+snapshot_csv   <- file.path(paper_dir, paste0(table_name, "_snapshot.csv"))
+final_csv      <- file.path(paper_dir, paste0(table_name, ".csv"))
+resolution_csv <- file.path(paper_dir, "species_resolution_Lyamin_Table1.csv")
+public_tsv_dir <- if (!is.na(dataset_root)) file.path(dataset_root, "__Public", "comparative-data") else NA
+readme_xlsx    <- if (!is.na(dataset_root)) file.path(dataset_root, "__ReadMe.xlsx") else NA
 
 ## 1. PACKAGES ------------------------------------------------------
 library(tidyverse)
@@ -28,37 +29,62 @@ library(stringr)
 library(readxl)
 
 ## 2. LOAD SNAPSHOT -------------------------------------------------
-# Snapshot columns as printed in Lyamin et al. (2008) Table 1:
-#   Species | Common name | Body mass (kg) | Brain mass (g)
-#   | Total sleep time (h/day) | Unihemispheric SWS (%) | Bilateral SWS (%)
-#   | REM sleep (%) | Method | Reference
+# Lyamin et al. (2008) Table 1, "Number of muscle jerks in cetaceans".
+# Printed columns: Cetacean species | Age | Number of jerks | Reference
 df_snapshot <- read.csv(snapshot_csv, stringsAsFactors = FALSE,
+                        check.names = FALSE, encoding = "UTF-8")
+resolution  <- read.csv(resolution_csv, stringsAsFactors = FALSE,
                         check.names = FALSE, encoding = "UTF-8")
 
 ## 3. STANDARDISE --> FINAL TABLE ----------------------------------
+# number_of_jerks is kept verbatim. The printed values use incompatible
+# denominators -- totals over a period, per-day rates, means with SD, upper
+# bounds, per-individual splits, and one qualitative entry -- so the column is
+# not a comparable quantity and is not coerced to numeric here.
 final.dataframe <- df_snapshot %>%
   rename(
-    species                  = Species,
-    common_name              = `Common name`,
-    body_mass_kg             = `Body mass (kg)`,
-    brain_mass_g             = `Brain mass (g)`,
-    total_sleep_time_h_day   = `Total sleep time (h/day)`,
-    unihemispheric_sws_pct   = `Unihemispheric SWS (% of sleep)`,
-    bilateral_sws_pct        = `Bilateral SWS (% of sleep)`,
-    rem_sleep_pct            = `REM sleep (% of sleep)`,
-    method                   = Method,
-    reference                = Reference
+    common_name_printed = `Cetacean species`,
+    age_printed         = Age,
+    number_of_jerks     = `Number of jerks`,
+    reference           = Reference
   ) %>%
   mutate(
-    common_name              = tolower(trimws(common_name)),
-    species                  = trimws(species),
-    body_mass_kg             = as.numeric(gsub("[^0-9.\\-]", "", body_mass_kg)),
-    brain_mass_g             = as.numeric(gsub("[^0-9.\\-]", "", brain_mass_g)),
-    total_sleep_time_h_day   = as.numeric(gsub("[^0-9.\\-]", "", total_sleep_time_h_day)),
-    unihemispheric_sws_pct   = as.numeric(gsub("[^0-9.\\-]", "", unihemispheric_sws_pct)),
-    bilateral_sws_pct        = as.numeric(gsub("[^0-9.\\-]", "", bilateral_sws_pct)),
-    rem_sleep_pct            = as.numeric(gsub("[^0-9.\\-]", "", rem_sleep_pct))
-  )
+    common_name_printed = str_squish(common_name_printed),
+    common_name         = tolower(common_name_printed),
+    age_printed         = str_squish(age_printed),
+    number_of_jerks     = str_squish(number_of_jerks),
+    reference           = str_squish(reference),
+    n_animals = case_when(
+      str_detect(age_printed, regex("^one\\b",   ignore_case = TRUE)) ~ 1L,
+      str_detect(age_printed, regex("^two\\b",   ignore_case = TRUE)) ~ 2L,
+      str_detect(age_printed, regex("^three\\b", ignore_case = TRUE)) ~ 3L,
+      str_detect(age_printed, regex("three .* and one", ignore_case = TRUE)) ~ 4L,
+      TRUE ~ NA_integer_
+    ),
+    age_class = case_when(
+      str_detect(age_printed, regex("calf",   ignore_case = TRUE)) ~ "calf",
+      str_detect(age_printed, regex("adult",  ignore_case = TRUE)) ~ "adult",
+      str_detect(age_printed, regex("year",   ignore_case = TRUE)) ~ "juvenile",
+      TRUE ~ NA_character_
+    ),
+    reference_unpublished = str_detect(reference, regex("unpublished", ignore_case = TRUE)),
+    reference_in_press    = str_detect(reference, regex("in press",    ignore_case = TRUE))
+  ) %>%
+  left_join(resolution %>% select(Common_name_printed, Species, species_confidence),
+            by = c("common_name_printed" = "Common_name_printed")) %>%
+  rename(species = Species) %>%
+  select(species, species_confidence, common_name, common_name_printed,
+         n_animals, age_class, age_printed,
+         number_of_jerks, reference, reference_unpublished, reference_in_press)
+
+## 3b. CHECKS ------------------------------------------------------
+# The bottlenose row is "Three adult males and one adult female" = 4 animals;
+# the ^three rule would otherwise catch it first. Verify the override held.
+unresolved <- final.dataframe %>% filter(is.na(species))
+if (nrow(unresolved)) warning("No binomial for: ",
+                              paste(unique(unresolved$common_name_printed), collapse = ", "))
+
+if (nrow(final.dataframe) != 7) warning("Expected 7 printed rows, got ", nrow(final.dataframe))
 
 ## 4. SAVE OUTPUTS -------------------------------------------------
 options(scipen = 999)
@@ -72,11 +98,8 @@ if (!is.na(dataset_root) && file.exists(readme_xlsx)) {
             " -- add a row to __ReadMe.xlsx before final submission.")
   } else {
     dir.create(public_tsv_dir, recursive = TRUE, showWarnings = FALSE)
-    write.table(
-      final.dataframe,
-      file      = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
-      sep       = "\t",
-      row.names = FALSE
-    )
+    write.table(final.dataframe,
+                file = file.path(public_tsv_dir, paste0(item_encoded, ".tsv")),
+                sep = "\t", row.names = FALSE)
   }
 }
