@@ -1,0 +1,20 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,binomial harmonized to key,,Species,,primary,"Cetartiodactyla, Perissodactyla, Afrotheria, Primates",Raghanti_etal_2015_Table1,via _keys/Hof/species_key.csv,the table prints common names; the binomials are in Materials and methods
+species_as_published,as printed,,Species,,primary,,Raghanti_etal_2015_Table1,common name,
+frontal_pole_ven_pct,VENs as a percentage of layer V neurons,Frontal_pole,pct.neurons,,primary,,Raghanti_etal_2015_Table1,,
+frontal_pole_fork_pct,fork cells as a percentage of layer V neurons,Frontal_pole,pct.neurons,,primary,,Raghanti_etal_2015_Table1,,
+acc_ven_pct,VENs as a percentage of layer V neurons,Anterior_cingulate_cortex,pct.neurons,,primary,,Raghanti_etal_2015_Table1,,"printed as ACC with no area given; not the same locus as Nimchinsky's area 24"
+acc_fork_pct,fork cells as a percentage of layer V neurons,Anterior_cingulate_cortex,pct.neurons,,primary,,Raghanti_etal_2015_Table1,,
+anterior_insula_ven_pct,VENs as a percentage of layer V neurons,Anterior_insula,pct.neurons,,primary,,Raghanti_etal_2015_Table1,,
+anterior_insula_fork_pct,fork cells as a percentage of layer V neurons,Anterior_insula,pct.neurons,,primary,,Raghanti_etal_2015_Table1,,
+occipital_pole_ven_pct,VENs as a percentage of layer V neurons,Occipital_pole,pct.neurons,,primary,,Raghanti_etal_2015_Table1,,
+occipital_pole_fork_pct,fork cells as a percentage of layer V neurons,Occipital_pole,pct.neurons,,primary,,Raghanti_etal_2015_Table1,,
+cortical_layer,layer the percentages are counted in,,,,info,,Raghanti_etal_2015_Table1,V throughout,"layer V was chosen as the layer where VENs have most frequently been reported; VENs were also seen in layer II (Fig. 4) and layer III (Fig. 5) but are not quantified"
+n_individuals,individuals analysed for that species,,,,info,,Raghanti_etal_2015_Table1,1 for every species,"Materials and methods: ""Only one individual per species was analyzed in this study."""
+adult,specimen was an adult,,,,info,,Raghanti_etal_2015_Table1,FALSE for the cow only,"Materials and methods: ""These brains were all from adults, with the exception of the cow."" The figure legends call the same specimen a calf."
+source,source id,,Source,,primary,,Raghanti_etal_2015_Table1,,
+Method:derived_values,percentages as published,,,,method,,Raghanti_etal_2015_Table1,"ratios, not measured quantities; not recomputed here because the numerator and denominator are not tabulated","table footnote: percentages were calculated as the population estimate of VENs or fork cells divided by the total neuron population estimates. The population estimates themselves appear only in Figs 6-8, as scatterplots."
+Method:cell_counting,stereologic density estimation,,,,method,,Raghanti_etal_2015_Table1,"optical fractionator; layer V outlined at 4x and counted at 40x; 100 x 100 um counting frames, 7 um frame height with 2 um guard zones; ~20 sampling sites per section, minimum three sections per area per individual; coefficient of error below 0.08 per data point","Stereo Investigator v11, Olympus BX-51. 40 or 60 um sections, every 10th stained with 0.05% cresyl violet."
+Method:cell_identification,criteria for VENs and fork cells,,,,method,,Raghanti_etal_2015_Table1,"VEN: elongated spindle-shaped soma with thick basal and apical dendrites, appreciably larger than surrounding pyramidal neurons. Fork cell: distinct basal dendrite and bifid apical dendrites.","spindle-shaped or fusiform neurons not appreciably larger than surrounding pyramidal neurons were not counted as VENs"
+Method:observation_level,species,,,,method,,Raghanti_etal_2015_Table1,one row per species and one individual per species,every value rests on a single brain; right hemisphere only
+Method:region_homology,regions are sampling positions,,,,method,,Raghanti_etal_2015_Table1,do not treat the four regions as homologous across these species,"Materials and methods: the regions ""were chosen to provide consistency in anatomical sampling among diverse species and no homology of function was assumed"""
