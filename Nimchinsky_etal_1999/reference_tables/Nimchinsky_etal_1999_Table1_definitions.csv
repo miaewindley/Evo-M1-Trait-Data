@@ -1,0 +1,13 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,binomial harmonized to key,,Species,,primary,Primates,Nimchinsky_etal_1999_Table1,via _keys/Allman/species_key.csv,
+species_as_published,as printed,,Species,,primary,,Nimchinsky_etal_1999_Table1,,
+suborder,suborder the species is printed under,,,,info,,Nimchinsky_etal_1999_Table1,unnested from the table's clade rows,"Prosimii or Anthropoidea; the caption gives the ranks as families, superfamilies and suborders"
+superfamily,superfamily the species is printed under,,,,info,,Nimchinsky_etal_1999_Table1,unnested from the table's clade rows,
+family,family the species is printed under,,,,info,,Nimchinsky_etal_1999_Table1,unnested from the table's clade rows,"Pongidae and Hominidae are the paper's 1999 usage; Pongidae is not current"
+spindle_cells,abundance of layer Vb spindle cells as printed,Anterior_cingulate_cortex_area_24,abundance.class,,primary,Primates,Nimchinsky_etal_1999_Table1,"ordered None < Rare < Frequent < Abundant < Abundant/clusters; qualitative, not a count",the paper's own five printed levels; no density figure is given per species
+spindle_cells_present,TRUE where spindle_cells is not None,Anterior_cingulate_cortex_area_24,presence,,primary,Primates,Nimchinsky_etal_1999_Table1,derived in the .R from spindle_cells,"the caption marks the same taxa in bold: observed with certainty only among hominoids, in all extant pongid and hominid species"
+n_specimens,specimens available for that species,,,,info,,Nimchinsky_etal_1999_Table1,74 specimens across the 28 species,"single specimens are common; the paper says only one specimen was obtained in many cases because of the scarcity of such tissue"
+source,source id,,Source,,primary,,Nimchinsky_etal_1999_Table1,,
+Method:cell_identification,criteria for calling a neuron a spindle cell,Anterior_cingulate_cortex_area_24,,,method,,Nimchinsky_etal_1999_Table1,"elongate large soma in layer Vb, lighter staining than surrounding pyramidal neurons, symmetrical about the horizontal and vertical axes; scored by two independent observers","Nissl-stained 40-um cryostat sections; layer VI atypical pyramidal cells and small vertical fusiform neurons excluded by reading laminar boundaries at low magnification"
+Method:observation_level,species,,,,method,,Nimchinsky_etal_1999_Table1,one row per species; n_specimens varies from 1 to 8,
+Method:absence_confidence,basis for scoring None,Anterior_cingulate_cortex_area_24,,,method,,Nimchinsky_etal_1999_Table1,"absence is a negative result, not a zero count","the paper argues it is unlikely isolated spindle neurons were overlooked in prosimians, monkeys and lesser apes, because spindle cells were unambiguous when present and sampling was serial"

@@ -1,0 +1,16 @@
+Code,Definition,Structure,Measure,Stat,role,taxon,Reference,Note,Source Note
+species,binomial harmonized to key,,Species,,primary,Hominoidea,Nimchinsky_etal_1999_Table2,via _keys/Allman/species_key.csv,
+species_as_published,as printed,,Species,,primary,,Nimchinsky_etal_1999_Table2,the table abbreviates the genus,
+pyramidal_vol_um3_mean,soma volume of layer V pyramidal cells,Anterior_cingulate_cortex_area_24,Vol.um3,mean,primary,Hominoidea,Nimchinsky_etal_1999_Table2,,
+pyramidal_vol_um3_sd,soma volume of layer V pyramidal cells,Anterior_cingulate_cortex_area_24,Vol.um3,SD,primary,Hominoidea,Nimchinsky_etal_1999_Table2,,
+spindle_vol_um3_mean,soma volume of layer V spindle cells,Anterior_cingulate_cortex_area_24,Vol.um3,mean,primary,Hominoidea,Nimchinsky_etal_1999_Table2,,
+spindle_vol_um3_sd,soma volume of layer V spindle cells,Anterior_cingulate_cortex_area_24,Vol.um3,SD,primary,Hominoidea,Nimchinsky_etal_1999_Table2,,
+fusiform_vol_um3_mean,soma volume of small layer VI fusiform neurons,Anterior_cingulate_cortex_area_24,Vol.um3,mean,primary,Hominoidea,Nimchinsky_etal_1999_Table2,,
+fusiform_vol_um3_sd,soma volume of small layer VI fusiform neurons,Anterior_cingulate_cortex_area_24,Vol.um3,SD,primary,Hominoidea,Nimchinsky_etal_1999_Table2,,
+spindle_gt_pyramidal_p05,spindle cell volume exceeds layer V pyramidal cell volume,Anterior_cingulate_cortex_area_24,,,info,Hominoidea,Nimchinsky_etal_1999_Table2,"from the asterisk printed on the spindle-cell cell; TRUE for Pongo, Pan troglodytes and Homo","caption: *, P < 0.05"
+spindle_gt_fusiform_p01,spindle cell volume exceeds small layer VI fusiform neuron volume,Anterior_cingulate_cortex_area_24,,,info,Hominoidea,Nimchinsky_etal_1999_Table2,from the dagger printed on the spindle-cell cell; TRUE for all five species,"caption: +, P < 0.01"
+n_neurons_per_layer,neurons sampled in each layer in each case,,,,info,,Nimchinsky_etal_1999_Table2,constant across the table,caption: volumes estimated in a sample of 50 neurons in each layer from each case
+source,source id,,Source,,primary,,Nimchinsky_etal_1999_Table2,,
+Method:volume_estimation,stereologic soma volume,Anterior_cingulate_cortex_area_24,,,method,,Nimchinsky_etal_1999_Table2,rotator protocol in neurozoom software at x100,"caption cites ref. 18 for the rotator; Methods cite refs 16 and 18"
+Method:units,um3 kept as published,,,,method,,Nimchinsky_etal_1999_Table2,"not converted to the project's mm3, which is the standard for structure volumes","these are somata: 1 um3 = 1e-9 mm3, so every value would read as ~1e-6 mm3"
+Method:observation_level,species,,,,method,,Nimchinsky_etal_1999_Table2,"one row per species; the mean pools 50 neurons per layer per case, over the cases in Table 1","specimen counts per species are in Nimchinsky_etal_1999_Table1 (n_specimens): Pongo 1, Gorilla 5, P. troglodytes 8, P. paniscus 1, Homo 6"
